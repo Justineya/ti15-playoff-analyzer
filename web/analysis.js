@@ -775,7 +775,7 @@ function dayKey(dt) {
 function whenNice(dt) {
   const m = String(dt || "").match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}:\d{2})/);
   if (!m) return dt || "";
-  return `${Number(m[2])}月${Number(m[3])}日 ${m[4]}`;
+  return `北京时间 ${Number(m[2])}月${Number(m[3])}日 ${m[4]}`;
 }
 
 function namedSides(m) {
@@ -804,26 +804,94 @@ function focusMatch(matches, preferId) {
   return list.find(namedSides) || list[0] || null;
 }
 
-function countdown(dt) {
-  const t = parsePlayoffTime(dt);
-  if (!t) return "";
-  const diff = t.getTime() - Date.now();
-  if (diff > 36e5 * 48) return `还有 ${Math.round(diff / 36e5 / 24)} 天`;
-  if (diff > 0) {
-    const h = Math.floor(diff / 36e5);
-    const min = Math.floor((diff % 36e5) / 6e4);
-    return h >= 1 ? `还有 ${h} 小时 ${min} 分` : `还有 ${min} 分钟`;
+const TEAM_META = {};
+function indexTeams(data) {
+  for (const t of data.playoffs?.teams || []) {
+    TEAM_META[t.name] = t;
   }
-  return "";
+}
+function crest(name) {
+  const t = TEAM_META[name];
+  if (t?.id) return `<img class="crest" src="./logos/${t.id}.png" alt="${name}" />`;
+  const tag = TAG[name] || (name || "?").slice(0, 3);
+  return `<div class="crest ghost">${tag}</div>`;
 }
 
-function phaseLabel(m) {
-  const t = parsePlayoffTime(m?.datetime);
-  if (!t) return m?.round || "";
-  const now = Date.now();
-  if (now < t.getTime()) return countdown(m.datetime);
-  if (now < t.getTime() + windowMsSafe()) return "进行中";
-  return m.round || "";
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+function clockParts(dt) {
+  const t = parsePlayoffTime(dt);
+  if (!t) return { missing: true };
+  const diff = t.getTime() - Date.now();
+  if (diff <= 0) {
+    if (Date.now() < t.getTime() + windowMsSafe()) return { live: true };
+    return { done: true };
+  }
+  const sec = Math.floor(diff / 1000);
+  return {
+    d: Math.floor(sec / 86400),
+    h: Math.floor((sec % 86400) / 3600),
+    m: Math.floor((sec % 3600) / 60),
+    s: sec % 60,
+  };
+}
+
+function clockHtml(dt) {
+  return `<div class="clock" id="clock" data-start="${dt || ""}">
+    <div class="clock-label" id="clock-label">开战倒计时 · 北京时间</div>
+    <div class="clock-digits" id="clock-digits"></div>
+    <div class="clock-kickoff">${whenNice(dt)} 开赛</div>
+  </div>`;
+}
+
+function paintClock() {
+  const root = document.getElementById("clock");
+  const digits = document.getElementById("clock-digits");
+  const label = document.getElementById("clock-label");
+  if (!root || !digits) return;
+  const p = clockParts(root.dataset.start);
+  if (p.live) {
+    if (label) label.textContent = "正在打";
+    digits.innerHTML = '<span class="live-pulse">LIVE</span>';
+    return;
+  }
+  if (p.done || p.missing) {
+    if (label) label.textContent = "这场已开过";
+    digits.innerHTML = "";
+    return;
+  }
+  if (label) label.textContent = "开战倒计时 · 北京时间";
+  const cells = [
+    ["天", p.d],
+    ["时", p.h],
+    ["分", p.m],
+    ["秒", p.s],
+  ];
+  digits.innerHTML = cells
+    .map(([lab, n]) => `<div class="clock-cell"><b>${pad2(n)}</b><span>${lab}</span></div>`)
+    .join("");
+}
+
+let clockTimer = null;
+function armClock() {
+  clearInterval(clockTimer);
+  paintClock();
+  if (document.getElementById("clock")) clockTimer = setInterval(paintClock, 250);
+}
+
+function beijingStamp(d = new Date()) {
+  return new Intl.DateTimeFormat("zh-CN", {
+    timeZone: "Asia/Shanghai",
+    month: "numeric",
+    day: "numeric",
+    weekday: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  }).format(d);
 }
 
 function shortWhy(sim) {
@@ -835,23 +903,17 @@ function shortWhy(sim) {
     .replace(/常用中单 /g, "中单爱拿 ");
 }
 
-function shortAct(text) {
-  const t = String(text || "");
-  if (t.includes("无盘")) return "无盘";
-  if (t.includes("小注")) return "小注";
-  if (t === "下" || t.includes("压缩")) return "下";
-  if (t.includes("空仓") || t.includes("观察") || t.includes("没有明显")) return "空仓";
-  return t || "空仓";
-}
-
-function stampClass(act) {
-  if (act === "下" || act === "小注") return "go";
-  if (act === "无盘") return "none";
-  return "skip";
-}
-
-function marketRow(sim, name) {
-  return (sim?.betting?.rows || []).find((r) => r.market.includes(name));
+function polyPrice(sim, team) {
+  const s = sim?.polyLive?.series || sim?.poly?.series;
+  if (!s?.outcomes || !s?.prices) return null;
+  const t = String(team).toLowerCase();
+  const i = s.outcomes.findIndex((o) => {
+    const x = String(o).toLowerCase();
+    return x.includes(t) || t.includes(x) || t.split(" ").some((w) => w.length > 3 && x.includes(w));
+  });
+  if (i < 0) return null;
+  const n = Number(s.prices[i]);
+  return Number.isFinite(n) ? n : null;
 }
 
 function splitStyle(p) {
@@ -859,16 +921,70 @@ function splitStyle(p) {
   return `--split:${a}% ${100 - a}%`;
 }
 
-function marketCard(title, pick, modelP, marketP, action) {
-  const act = shortAct(action);
-  const mkt = marketP == null ? "无" : pct(marketP);
+function decOdds(p) {
+  if (p == null || p <= 0) return "—";
+  return (1 / p).toFixed(2);
+}
+
+function leanCall(teamA, teamB, pA, mktA) {
+  const p = pA ?? 0.5;
+  const leanA = p >= 0.5;
+  const lean = leanA ? teamA : teamB;
+  const pLean = leanA ? p : 1 - p;
+  const be = decOdds(pLean);
+  const mkt = leanA ? mktA : mktA == null ? null : 1 - mktA;
+  const mktOdds = mkt > 0 ? decOdds(mkt) : null;
+  const tag = TAG[lean] || lean;
+  if (mktOdds == null) {
+    return { lean, klass: "hunt", text: `看好 ${tag}。现场赔率 ≥ ${be} 再买，点下面的站去找价。` };
+  }
+  if (Number(mktOdds) >= Number(be) + 0.08) {
+    return { lean, klass: "go", text: `看好 ${tag}。盘口 ${mktOdds} 已经高于门槛 ${be}，可以下。` };
+  }
+  if (Number(mktOdds) + 0.03 >= Number(be)) {
+    return { lean, klass: "hunt", text: `看好 ${tag}，但几乎打平。盘口 ${mktOdds}，门槛 ${be}，去别的站再比一眼。` };
+  }
+  return {
+    lean,
+    klass: "hunt",
+    text: `看好 ${tag}（${pct(pLean)}）。现在盘口只有 ${mktOdds}，要 ${be} 才有优势——点下面去找价。`,
+  };
+}
+
+function marketCard(title, teamA, teamB, pA, mktA) {
+  const p = pA ?? 0.5;
+  const call = leanCall(teamA, teamB, p, mktA);
+  const mktB = mktA == null ? null : 1 - mktA;
   return `<article class="market">
     <div class="m-label">${title}</div>
-    <div class="m-pick">${pick || "—"}</div>
-    <div class="m-odds"><span>我们 <b>${pct(modelP)}</b></span><span>盘口 <b>${mkt}</b></span></div>
-    <div class="bar" style="${splitStyle(modelP)}"><i></i><i></i></div>
-    <span class="stamp ${stampClass(act)}">${act}</span>
+    <div class="m-pick">看好 ${call.lean}</div>
+    <div class="side-row on"><span>${teamA}</span><span>${pct(p)} · ${decOdds(p)}</span></div>
+    <div class="side-row"><span>${teamB}</span><span>${pct(1 - p)} · ${decOdds(1 - p)}</span></div>
+    <div class="bar" style="${splitStyle(p)}"><i></i><i></i></div>
+    ${
+      mktA != null
+        ? `<div class="side-row"><span>盘口 ${teamA}</span><span>${pct(mktA)} · ${decOdds(mktA)}</span></div>
+           <div class="side-row"><span>盘口 ${teamB}</span><span>${pct(mktB)} · ${decOdds(mktB)}</span></div>`
+        : `<div class="side-row"><span>盘口</span><span>这场没有公开盘</span></div>`
+    }
+    <p class="call ${call.klass}">${call.text}</p>
   </article>`;
+}
+
+function oddsLinks(m) {
+  const slug = m.polySlug;
+  const links = [];
+  if (slug) links.push(["Polymarket 这场", `https://polymarket.com/event/${slug}`, ""]);
+  links.push(
+    ["Thunderpick", "https://thunderpick.io/en/esports/dota-2", "ghost"],
+    ["GG.BET", "https://gg.bet/en/esports/dota-2", "ghost"],
+    ["Pinnacle", "https://www.pinnacle.com/en/esports/dota-2/match-odds/", "ghost"],
+    ["Oddsportal", "https://www.oddsportal.com/esports/dota-2/", "ghost"],
+    ["液体百科", "https://liquipedia.net/dota2/The_International/2026", "ghost"]
+  );
+  return `<nav class="odds-links">${links
+    .map(([name, href, klass]) => `<a class="${klass}" href="${href}" target="_blank" rel="noopener">${name}</a>`)
+    .join("")}</nav>`;
 }
 
 function liveCalc(m, sim, br) {
@@ -881,17 +997,17 @@ function liveCalc(m, sim, br) {
   ].filter((s) => s.p != null);
   const seriesRow = marketRow(sim, "系列");
   const defaultOdds = seriesRow?.odds || br?.defaultOdds || 1.7;
-  const opts = sides.map((s, i) => `<option value="${i}">${s.label}</option>`).join("");
+  const opts = sides.map((s, i) => `<option value="${i}">${s.label} · 门槛 ${decOdds(s.p)}</option>`).join("");
   return `<section class="live-calc" id="live-calc">
-    <h3>下多少</h3>
-    <p class="hint">填你盘口上的真实赔率。没有优势就是 0。</p>
+    <h3>现场赔率对得上再下</h3>
+    <p class="hint">门槛是我们的概率换算出来的。你拿到的价高于门槛，才会出金额。</p>
     <form class="calc-form" id="live-form">
       <label>本金（元）<input type="number" id="live-bank" min="1" step="1" value="${br?.start || 1000}"></label>
       <label>买哪边<select id="live-side">${opts}</select></label>
-      <label>赔率<input type="number" id="live-odds" min="1.01" step="0.01" value="${Number(defaultOdds).toFixed(2)}"></label>
+      <label>你拿到的赔率<input type="number" id="live-odds" min="1.01" step="0.01" value="${Number(defaultOdds).toFixed(2)}"></label>
       <button type="submit" class="calc-btn">算</button>
     </form>
-    <div class="live-result empty" id="live-result">填好点「算」。</div>
+    <div class="live-result empty" id="live-result">填现场赔率，点「算」。</div>
   </section>`;
 }
 
@@ -917,27 +1033,27 @@ function wireLiveCalc(sim) {
       return;
     }
     const t = calcTicket(side.p, odds, bank, "稳健");
+    const be = decOdds(side.p);
     if (!t.stake) {
       box.className = "live-result";
-      box.innerHTML = `<div class="big">空仓</div><div class="sub">${side.label} · 这个价没有优势。</div>`;
+      box.innerHTML = `<div class="big">这个价不够</div><div class="sub">${side.label} 至少要 ${be}。现在 ${odds.toFixed(2)}，去上面的站再找。</div>`;
       return;
     }
     box.className = "live-result";
-    box.innerHTML = `<div class="big">${yuan(t.stake)}</div><div class="sub">${side.label} · 赢到 ${yuan(t.ifWin)} · 输到 ${yuan(t.ifLose)}</div>`;
+    box.innerHTML = `<div class="big">${yuan(t.stake)}</div><div class="sub">${side.label} · ${odds.toFixed(2)} 过了门槛 ${be} · 赢到 ${yuan(t.ifWin)}</div>`;
   });
 }
 
 function slateChip(m, sim, on) {
-  const series = marketRow(sim, "系列");
-  const act = shortAct(series?.action || (sim ? "空仓" : "待定"));
+  const p = sim?.series?.pSeriesA;
+  const lean = p == null ? "" : p >= 0.5 ? TAG[m.teamA] || m.teamA : TAG[m.teamB] || m.teamB;
   const a = TAG[m.teamA] || m.teamA;
   const b = TAG[m.teamB] || m.teamB;
   const time = String(m.datetime || "").slice(11, 16);
-  const who = series?.pick ? TAG[series.pick] || series.pick : "";
   return `<button type="button" class="slate-chip ${on ? "on" : ""}" data-match="${m.id}">
     <span class="t">${time}</span>
     <span class="pair">${a} / ${b}</span>
-    <span class="a">${act}${who ? " · " + who : ""}</span>
+    <span class="a">${lean ? "看好 " + lean : "待定"}</span>
   </button>`;
 }
 
@@ -952,51 +1068,48 @@ function renderNow(data, matchId) {
   const known = Object.fromEntries((data.simulations?.known || []).map((s) => [s.id, s]));
   const byId = Object.fromEntries(matches.map((x) => [x.id, x]));
   const sim = namedSides(m) ? known[m.id] : null;
-  const a = namedSides(m)
-    ? { name: m.teamA, tag: TAG[m.teamA] || m.teamA }
-    : resolveSide(m.teamA, byId);
-  const b = namedSides(m)
-    ? { name: m.teamB, tag: TAG[m.teamB] || m.teamB }
-    : resolveSide(m.teamB, byId);
-  const series = marketRow(sim, "系列");
-  const f10 = marketRow(sim, "先到");
+  const aName = namedSides(m) ? m.teamA : resolveSide(m.teamA, byId).name;
+  const bName = namedSides(m) ? m.teamB : resolveSide(m.teamB, byId).name;
+  const aTag = namedSides(m) ? TAG[m.teamA] || m.teamA : resolveSide(m.teamA, byId).tag;
+  const bTag = namedSides(m) ? TAG[m.teamB] || m.teamB : resolveSide(m.teamB, byId).tag;
   const day = dayKey(m.datetime);
   const sameDay = matches.filter((x) => namedSides(x) && dayKey(x.datetime) === day);
   const slate = sameDay.length
     ? `<div class="slate">
-        <div class="slate-head">同一天</div>
+        <div class="slate-head">同一天 · 北京时间</div>
         <div class="slate-row">${sameDay.map((x) => slateChip(x, known[x.id], x.id === m.id)).join("")}</div>
       </div>`
     : "";
-  const seriesPick = series?.pick || (sim && (sim.series?.pSeriesA >= sim.series?.pSeriesB ? m.teamA : m.teamB));
-  const f10Pick = f10?.pick || (sim && (sim.pF10A >= sim.pF10B ? m.teamA : m.teamB));
   const markets =
     namedSides(m) && sim
       ? `<div class="markets">
-        ${marketCard("系列", seriesPick, series?.modelP ?? sim.series?.pSeriesA, series?.marketP, series?.action)}
-        ${marketCard("先到 10 杀", f10Pick, f10?.modelP ?? sim.pF10A, f10?.marketP, f10?.action)}
+        ${marketCard("系列", m.teamA, m.teamB, sim.series?.pSeriesA, polyPrice(sim, m.teamA))}
+        ${marketCard("先到 10 杀", m.teamA, m.teamB, sim.pF10A, null)}
       </div>`
-      : `<p class="live-why">对阵还没出来。出线后这里会换成买谁、下多少。</p>`;
+      : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
   const why = shortWhy(sim);
   app.innerHTML = `<section class="live-stage">
-    <div class="live-kicker">
+    <div class="arena-kicker">
+      <span>上海 · 东方体育中心</span>
       <span>${m.round || ""}</span>
-      <span>${whenNice(m.datetime)} · ${m.format || "Bo3"}</span>
-      <span class="phase">${phaseLabel(m)}</span>
+      <span>${m.format || "Bo3"}</span>
     </div>
+    ${clockHtml(m.datetime)}
     <div class="live-poster">
       <div class="live-teams">
-        <div class="live-team"><div class="tagline">${a.tag || ""}</div><h2>${a.name || "待定"}</h2></div>
+        <div class="live-team">${namedSides(m) ? crest(m.teamA) : ""}<div class="tagline">${aTag || ""}</div><h2>${aName || "待定"}</h2></div>
         <div class="live-vs">VS</div>
-        <div class="live-team"><div class="tagline">${b.tag || ""}</div><h2>${b.name || "待定"}</h2></div>
+        <div class="live-team">${namedSides(m) ? crest(m.teamB) : ""}<div class="tagline">${bTag || ""}</div><h2>${bName || "待定"}</h2></div>
       </div>
       ${why ? `<p class="live-why">${why}</p>` : ""}
+      ${oddsLinks(m)}
       ${markets}
     </div>
     ${slate}
     ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll) : ""}
   </section>`;
   wireLiveCalc(sim);
+  armClock();
 }
 
 function historyItems(data) {
@@ -1022,13 +1135,21 @@ function closeHistory() {
 }
 
 function setup(data) {
+  indexTeams(data);
   const menu = document.getElementById("history-menu");
   const histBtn = document.getElementById("history-btn");
   const homeBtn = document.getElementById("home-btn");
   const oddsStatus = document.getElementById("odds-status");
+  const beijingNow = document.getElementById("beijing-now");
   let mode = "now";
   let matchId = "";
   let liveNote = "";
+
+  const paintBeijing = () => {
+    if (beijingNow) beijingNow.textContent = `北京 ${beijingStamp()}`;
+  };
+  paintBeijing();
+  setInterval(paintBeijing, 250);
 
   const updateOddsStatus = () => {
     if (!oddsStatus) return;
@@ -1047,6 +1168,7 @@ function setup(data) {
       renderNow(data, matchId);
       return;
     }
+    clearInterval(clockTimer);
     const app = document.getElementById("app");
     const label = historyItems(data).find((x) => x[0] === mode)?.[1] || "";
     render(data, mode === "all" ? "all" : mode, liveNote);

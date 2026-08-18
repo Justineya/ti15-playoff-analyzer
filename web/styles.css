@@ -466,30 +466,91 @@ code { color: var(--gold); font-size: 0.92em; }
 
 footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px solid var(--line); font-size: 13px; }
 
+.clock-now {
+  color: var(--gold);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
 .live-stage { margin: 0 0 28px; }
-.live-kicker {
+.arena-kicker {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 16px;
+  gap: 8px 14px;
   align-items: baseline;
   color: var(--gold);
-  letter-spacing: 0.16em;
-  font-size: 12px;
+  letter-spacing: 0.18em;
+  font-size: 11px;
   text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.clock {
+  text-align: center;
   margin: 0 0 18px;
 }
-.live-kicker .phase {
-  color: var(--paper);
-  letter-spacing: 0.04em;
-  text-transform: none;
+.clock-label {
+  color: var(--gold);
+  letter-spacing: 0.28em;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.clock-digits {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.clock-cell {
+  min-width: 76px;
+  background: #14120f;
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  padding: 10px 8px 8px;
+  box-shadow: 0 0 24px rgba(201, 162, 39, 0.08);
+}
+.clock-cell b {
+  display: block;
+  font-family: "Noto Serif SC", serif;
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+.clock-cell span {
+  display: block;
+  margin-top: 4px;
+  color: var(--mute);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+}
+.clock-kickoff {
+  margin-top: 10px;
+  color: #d8d1c0;
   font-size: 14px;
 }
+.live-pulse {
+  display: inline-block;
+  font-family: "Noto Serif SC", serif;
+  font-size: 42px;
+  color: #e35b4a;
+  letter-spacing: 0.2em;
+  animation: pulse 1.1s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; text-shadow: 0 0 18px rgba(227, 91, 74, 0.6); }
+  50% { opacity: 0.45; text-shadow: none; }
+}
+
 .live-poster {
   background:
-    radial-gradient(1200px 280px at 50% -40%, rgba(201, 162, 39, 0.16), transparent 60%),
+    radial-gradient(900px 340px at 50% -10%, rgba(201, 162, 39, 0.22), transparent 55%),
+    radial-gradient(500px 220px at 10% 110%, rgba(154, 59, 47, 0.18), transparent 55%),
+    radial-gradient(500px 220px at 90% 110%, rgba(63, 107, 74, 0.16), transparent 55%),
     var(--card);
-  border: 1px solid var(--line);
-  padding: 28px 24px 22px;
+  border: 1px solid rgba(201, 162, 39, 0.28);
+  padding: 28px 22px 22px;
 }
 .live-teams {
   display: grid;
@@ -501,16 +562,32 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
   text-align: center;
   min-width: 0;
 }
+.crest {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.45));
+}
+.crest.ghost {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
 .live-team .tagline {
   color: var(--mute);
   font-size: 12px;
-  letter-spacing: 0.12em;
-  margin-bottom: 6px;
+  letter-spacing: 0.16em;
+  margin-bottom: 4px;
 }
 .live-team h2 {
   font-family: "Noto Serif SC", serif;
-  font-size: clamp(26px, 4.4vw, 42px);
-  line-height: 1.1;
+  font-size: clamp(22px, 3.6vw, 36px);
+  line-height: 1.15;
   margin: 0;
   border: 0;
   padding: 0;
@@ -518,16 +595,40 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
 .live-vs {
   font-family: "Noto Serif SC", serif;
   color: var(--gold);
-  font-size: 18px;
-  letter-spacing: 0.2em;
+  font-size: 22px;
+  letter-spacing: 0.28em;
+  text-shadow: 0 0 18px rgba(201, 162, 39, 0.45);
 }
 .live-why {
-  margin: 18px auto 0;
-  max-width: 36em;
+  margin: 16px auto 0;
+  max-width: 38em;
   text-align: center;
   color: #d8d1c0;
   font-size: 15px;
 }
+.odds-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0 0;
+}
+.odds-links a {
+  color: var(--ink);
+  background: var(--gold);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 7px 11px;
+}
+.odds-links a.ghost {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+.odds-links a:hover { filter: brightness(1.08); }
+
 .markets {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -537,11 +638,7 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
 .market {
   background: #14120f;
   border: 1px solid var(--line);
-  padding: 18px 18px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-height: 176px;
+  padding: 16px 16px 14px;
 }
 .market .m-label {
   color: var(--mute);
@@ -553,41 +650,34 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
   font-family: "Noto Serif SC", serif;
   font-size: 22px;
   line-height: 1.2;
+  margin: 6px 0 10px;
 }
-.market .m-odds {
+.side-row {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 8px;
   font-size: 13px;
-  color: var(--mute);
+  margin-bottom: 4px;
 }
-.market .m-odds b { color: var(--paper); font-size: 16px; font-weight: 600; }
+.side-row.on { color: var(--gold); font-weight: 600; }
+.side-row span:last-child { font-variant-numeric: tabular-nums; }
 .market .bar {
   display: grid;
   grid-template-columns: var(--split, 50% 50%);
-  height: 6px;
+  height: 8px;
   background: #2a2722;
   overflow: hidden;
+  margin: 8px 0 12px;
 }
 .market .bar i:first-child { background: var(--gold); }
-.market .bar i:last-child { background: #5a5548; }
-.stamp {
-  margin-top: auto;
-  align-self: flex-start;
+.market .bar i:last-child { background: #6a3b34; }
+.call {
   font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  padding: 5px 10px;
-  border: 1px solid var(--line);
-  color: var(--mute);
+  line-height: 1.45;
+  color: #d8d1c0;
 }
-.stamp.go {
-  color: var(--ink);
-  background: var(--gold);
-  border-color: var(--gold);
-}
-.stamp.skip { color: #b07068; border-color: rgba(154, 59, 47, 0.55); }
-.stamp.none { color: var(--gold-dim); }
+.call.go { color: #8fbf96; }
+.call.hunt { color: var(--gold); }
 
 .slate { margin: 28px 0 8px; }
 .slate-head {
@@ -667,7 +757,9 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
   .grid-2, .ia, .matches, .phases, .hero-meta, .stat-row, .compare, .lenses, .draft, .stake-stats, .calc-form, .markets, .slate-row, .live-calc .calc-form { grid-template-columns: 1fr; }
   nav { display: none; }
   .topbar { padding: 12px 16px; gap: 12px; }
-  .status { font-size: 11px; }
+  .status, .clock-now { font-size: 11px; }
   .live-teams { gap: 8px; }
   .live-poster { padding: 20px 16px; }
+  .crest { width: 72px; height: 72px; }
+  .clock-cell { min-width: 64px; }
 }
