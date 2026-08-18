@@ -3,40 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TI15 淘汰赛分析台</title>
+  <title>TI15 观赛</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
+<body class="live-page">
   <div class="bg-grid"></div>
   <header class="topbar">
-    <div class="brand">
+    <button type="button" class="brand" id="home-btn" title="回到现场">
       <span class="aegis">TI15</span>
-      <span>逐场分析</span>
+      <span>观赛</span>
+    </button>
+    <div class="top-right">
+      <div class="status" id="odds-status">更新中…</div>
+      <div class="history-wrap">
+        <button type="button" class="history-btn" id="history-btn" aria-expanded="false" aria-controls="history-menu">历史数据</button>
+        <div class="history-menu" id="history-menu" hidden></div>
+      </div>
     </div>
-    <nav>
-      <a href="./design.html">设计</a>
-      <a href="./analysis.html">逐场</a>
-    </nav>
-    <div class="status" id="odds-status">Polymarket …</div>
-    <button type="button" class="odds-refresh" id="odds-refresh" title="从 Polymarket 拉最新价格">刷新赔率</button>
   </header>
-  <main>
-    <section class="hero">
-      <p class="kicker">只做八强的 TI15 场次 · 8/20–8/23</p>
-      <h1>对阵图、每局 5 次 BP 模拟，再估先到 10 杀、胜率和 Polymarket 回报率。</h1>
-      <p class="lede">
-        参与次数 = 击杀 + 助攻，不再写「出几刀」。助攻来自同一波团战伤害或同团阵亡（OpenDota 没有逐次助攻日志）。
-        淘汰赛四天格子都在对阵图里；后面场次一出，用已算好的情景预测就能看。
-      </p>
-    </section>
-    <div class="filters" id="filters"></div>
-    <div id="app">加载数据…</div>
+  <main class="live-main">
+    <div id="app">加载中…</div>
   </main>
   <footer>
-    <p>上海观赛只打开本页。数据由 GitHub Actions 自动更新。赔率已烧进页面；国内点「刷新赔率」可能失败。非投注建议。</p>
+    <p>只看这一页就够。非投注建议。</p>
   </footer>
   <script src="./data.js"></script>
   <script src="./odds.js"></script>

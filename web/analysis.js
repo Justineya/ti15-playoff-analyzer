@@ -758,70 +758,354 @@ function render(data, mode, liveNote) {
     list = data.games.filter((g) => g.radiant === mode || g.dire === mode);
   }
   list = [...list].sort((a, b) => b.start_time - a.start_time);
-  app.innerHTML = `<p class="section-lead">${list.length} 局 · 按时间倒序 · 参与次数 = 击杀 + 助攻</p>` + list.map(gameCard).join("");
+  app.innerHTML = `<p class="section-lead">${list.length} 局 · 按时间倒序</p>` + list.map(gameCard).join("");
+}
+
+function parsePlayoffTime(dt) {
+  const m = String(dt || "").match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/);
+  if (!m) return null;
+  return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] - 8, +m[5]));
+}
+
+function dayKey(dt) {
+  const m = String(dt || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+  return m ? `${m[1]}-${m[2]}-${m[3]}` : "";
+}
+
+function whenNice(dt) {
+  const m = String(dt || "").match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}:\d{2})/);
+  if (!m) return dt || "";
+  return `${Number(m[2])}月${Number(m[3])}日 ${m[4]}`;
+}
+
+function namedSides(m) {
+  return typeof m?.teamA === "string" && typeof m?.teamB === "string";
+}
+
+function windowMsSafe() {
+  return 3 * 3600 * 1000;
+}
+
+function focusMatch(matches, preferId) {
+  const list = [...(matches || [])]
+    .filter((m) => m.datetime)
+    .sort((a, b) => String(a.datetime).localeCompare(b.datetime));
+  if (preferId) {
+    const hit = list.find((m) => m.id === preferId);
+    if (hit) return hit;
+  }
+  const now = Date.now();
+  for (const m of list) {
+    if (m.status === "complete") continue;
+    const t = parsePlayoffTime(m.datetime);
+    if (!t) continue;
+    if (now < t.getTime() + windowMsSafe()) return m;
+  }
+  return list.find(namedSides) || list[0] || null;
+}
+
+function countdown(dt) {
+  const t = parsePlayoffTime(dt);
+  if (!t) return "";
+  const diff = t.getTime() - Date.now();
+  if (diff > 36e5 * 48) return `还有 ${Math.round(diff / 36e5 / 24)} 天`;
+  if (diff > 0) {
+    const h = Math.floor(diff / 36e5);
+    const min = Math.floor((diff % 36e5) / 6e4);
+    return h >= 1 ? `还有 ${h} 小时 ${min} 分` : `还有 ${min} 分钟`;
+  }
+  return "";
+}
+
+function phaseLabel(m) {
+  const t = parsePlayoffTime(m?.datetime);
+  if (!t) return m?.round || "";
+  const now = Date.now();
+  if (now < t.getTime()) return countdown(m.datetime);
+  if (now < t.getTime() + windowMsSafe()) return "进行中";
+  return m.round || "";
+}
+
+function shortWhy(sim) {
+  const w = sim?.why || "";
+  if (!w) return "";
+  return w
+    .replace(/H2H 0 局/g, "本届没交过手")
+    .replace(/H2H [\d.]+ 局/g, "本届有交手")
+    .replace(/常用中单 /g, "中单爱拿 ");
+}
+
+function shortAct(text) {
+  const t = String(text || "");
+  if (t.includes("无盘")) return "无盘";
+  if (t.includes("小注")) return "小注";
+  if (t === "下" || t.includes("压缩")) return "下";
+  if (t.includes("空仓") || t.includes("观察") || t.includes("没有明显")) return "空仓";
+  return t || "空仓";
+}
+
+function stampClass(act) {
+  if (act === "下" || act === "小注") return "go";
+  if (act === "无盘") return "none";
+  return "skip";
+}
+
+function marketRow(sim, name) {
+  return (sim?.betting?.rows || []).find((r) => r.market.includes(name));
+}
+
+function splitStyle(p) {
+  const a = Math.round(Math.min(Math.max(p ?? 0.5, 0.05), 0.95) * 100);
+  return `--split:${a}% ${100 - a}%`;
+}
+
+function marketCard(title, pick, modelP, marketP, action) {
+  const act = shortAct(action);
+  const mkt = marketP == null ? "无" : pct(marketP);
+  return `<article class="market">
+    <div class="m-label">${title}</div>
+    <div class="m-pick">${pick || "—"}</div>
+    <div class="m-odds"><span>我们 <b>${pct(modelP)}</b></span><span>盘口 <b>${mkt}</b></span></div>
+    <div class="bar" style="${splitStyle(modelP)}"><i></i><i></i></div>
+    <span class="stamp ${stampClass(act)}">${act}</span>
+  </article>`;
+}
+
+function liveCalc(m, sim, br) {
+  const series = sim?.series || {};
+  const sides = [
+    { label: `${m.teamA} 赢系列`, p: series.pSeriesA },
+    { label: `${m.teamB} 赢系列`, p: series.pSeriesB },
+    { label: `${m.teamA} 先到 10 杀`, p: sim?.pF10A },
+    { label: `${m.teamB} 先到 10 杀`, p: sim?.pF10B },
+  ].filter((s) => s.p != null);
+  const seriesRow = marketRow(sim, "系列");
+  const defaultOdds = seriesRow?.odds || br?.defaultOdds || 1.7;
+  const opts = sides.map((s, i) => `<option value="${i}">${s.label}</option>`).join("");
+  return `<section class="live-calc" id="live-calc">
+    <h3>下多少</h3>
+    <p class="hint">填你盘口上的真实赔率。没有优势就是 0。</p>
+    <form class="calc-form" id="live-form">
+      <label>本金（元）<input type="number" id="live-bank" min="1" step="1" value="${br?.start || 1000}"></label>
+      <label>买哪边<select id="live-side">${opts}</select></label>
+      <label>赔率<input type="number" id="live-odds" min="1.01" step="0.01" value="${Number(defaultOdds).toFixed(2)}"></label>
+      <button type="submit" class="calc-btn">算</button>
+    </form>
+    <div class="live-result empty" id="live-result">填好点「算」。</div>
+  </section>`;
+}
+
+function wireLiveCalc(sim) {
+  const form = document.getElementById("live-form");
+  if (!form || !sim) return;
+  const series = sim.series || {};
+  const sides = [
+    { label: `${sim.teamA} 赢系列`, p: series.pSeriesA },
+    { label: `${sim.teamB} 赢系列`, p: series.pSeriesB },
+    { label: `${sim.teamA} 先到 10 杀`, p: sim.pF10A },
+    { label: `${sim.teamB} 先到 10 杀`, p: sim.pF10B },
+  ].filter((s) => s.p != null);
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const bank = Number(document.getElementById("live-bank").value);
+    const odds = Number(document.getElementById("live-odds").value);
+    const side = sides[Number(document.getElementById("live-side").value)] || sides[0];
+    const box = document.getElementById("live-result");
+    if (!side || !bank || bank <= 0 || !odds || odds <= 1) {
+      box.className = "live-result";
+      box.innerHTML = "请填本金和赔率。";
+      return;
+    }
+    const t = calcTicket(side.p, odds, bank, "稳健");
+    if (!t.stake) {
+      box.className = "live-result";
+      box.innerHTML = `<div class="big">空仓</div><div class="sub">${side.label} · 这个价没有优势。</div>`;
+      return;
+    }
+    box.className = "live-result";
+    box.innerHTML = `<div class="big">${yuan(t.stake)}</div><div class="sub">${side.label} · 赢到 ${yuan(t.ifWin)} · 输到 ${yuan(t.ifLose)}</div>`;
+  });
+}
+
+function slateChip(m, sim, on) {
+  const series = marketRow(sim, "系列");
+  const act = shortAct(series?.action || (sim ? "空仓" : "待定"));
+  const a = TAG[m.teamA] || m.teamA;
+  const b = TAG[m.teamB] || m.teamB;
+  const time = String(m.datetime || "").slice(11, 16);
+  const who = series?.pick ? TAG[series.pick] || series.pick : "";
+  return `<button type="button" class="slate-chip ${on ? "on" : ""}" data-match="${m.id}">
+    <span class="t">${time}</span>
+    <span class="pair">${a} / ${b}</span>
+    <span class="a">${act}${who ? " · " + who : ""}</span>
+  </button>`;
+}
+
+function renderNow(data, matchId) {
+  const matches = data.playoffs?.matches || [];
+  const m = focusMatch(matches, matchId);
+  const app = document.getElementById("app");
+  if (!m) {
+    app.innerHTML = '<p class="empty">还没有赛程。</p>';
+    return;
+  }
+  const known = Object.fromEntries((data.simulations?.known || []).map((s) => [s.id, s]));
+  const byId = Object.fromEntries(matches.map((x) => [x.id, x]));
+  const sim = namedSides(m) ? known[m.id] : null;
+  const a = namedSides(m)
+    ? { name: m.teamA, tag: TAG[m.teamA] || m.teamA }
+    : resolveSide(m.teamA, byId);
+  const b = namedSides(m)
+    ? { name: m.teamB, tag: TAG[m.teamB] || m.teamB }
+    : resolveSide(m.teamB, byId);
+  const series = marketRow(sim, "系列");
+  const f10 = marketRow(sim, "先到");
+  const day = dayKey(m.datetime);
+  const sameDay = matches.filter((x) => namedSides(x) && dayKey(x.datetime) === day);
+  const slate = sameDay.length
+    ? `<div class="slate">
+        <div class="slate-head">同一天</div>
+        <div class="slate-row">${sameDay.map((x) => slateChip(x, known[x.id], x.id === m.id)).join("")}</div>
+      </div>`
+    : "";
+  const seriesPick = series?.pick || (sim && (sim.series?.pSeriesA >= sim.series?.pSeriesB ? m.teamA : m.teamB));
+  const f10Pick = f10?.pick || (sim && (sim.pF10A >= sim.pF10B ? m.teamA : m.teamB));
+  const markets =
+    namedSides(m) && sim
+      ? `<div class="markets">
+        ${marketCard("系列", seriesPick, series?.modelP ?? sim.series?.pSeriesA, series?.marketP, series?.action)}
+        ${marketCard("先到 10 杀", f10Pick, f10?.modelP ?? sim.pF10A, f10?.marketP, f10?.action)}
+      </div>`
+      : `<p class="live-why">对阵还没出来。出线后这里会换成买谁、下多少。</p>`;
+  const why = shortWhy(sim);
+  app.innerHTML = `<section class="live-stage">
+    <div class="live-kicker">
+      <span>${m.round || ""}</span>
+      <span>${whenNice(m.datetime)} · ${m.format || "Bo3"}</span>
+      <span class="phase">${phaseLabel(m)}</span>
+    </div>
+    <div class="live-poster">
+      <div class="live-teams">
+        <div class="live-team"><div class="tagline">${a.tag || ""}</div><h2>${a.name || "待定"}</h2></div>
+        <div class="live-vs">VS</div>
+        <div class="live-team"><div class="tagline">${b.tag || ""}</div><h2>${b.name || "待定"}</h2></div>
+      </div>
+      ${why ? `<p class="live-why">${why}</p>` : ""}
+      ${markets}
+    </div>
+    ${slate}
+    ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll) : ""}
+  </section>`;
+  wireLiveCalc(sim);
+}
+
+function historyItems(data) {
+  return [
+    ["now", "回到现场"],
+    ["bracket", "对阵图"],
+    ["predict", "预测明细"],
+    ["series", "交手复盘"],
+    ["stake", "注码说明"],
+    ["all", "已打的局"],
+    ...Object.keys(data.teams || {}).map((n) => [n, n]),
+  ];
+}
+
+function closeHistory() {
+  const menu = document.getElementById("history-menu");
+  const btn = document.getElementById("history-btn");
+  if (menu) menu.hidden = true;
+  if (btn) {
+    btn.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+  }
 }
 
 function setup(data) {
-  const filters = document.getElementById("filters");
-  const oddsBtn = document.getElementById("odds-refresh");
+  const menu = document.getElementById("history-menu");
+  const histBtn = document.getElementById("history-btn");
+  const homeBtn = document.getElementById("home-btn");
   const oddsStatus = document.getElementById("odds-status");
-  const buttons = [
-    ["stake", "注码"],
-    ["bracket", "对阵图"],
-    ["predict", "预测与押注"],
-    ["series", "8/20 四场"],
-    ["all", "全部局"],
-    ...Object.keys(data.teams).map((n) => [n, n]),
-  ];
-  let mode = "stake";
+  let mode = "now";
+  let matchId = "";
   let liveNote = "";
+
   const updateOddsStatus = () => {
     if (!oddsStatus) return;
     const pub = data.publishedAt || data.asOf || "";
-    const asOf = data.polymarket?.asOf;
-    const fmt = window.TI15_ODDS?.formatAsOf(asOf) || asOf || "";
-    oddsStatus.textContent = pub ? `更新 ${pub}` : fmt ? `Polymarket ${fmt}` : "待更新";
+    oddsStatus.textContent = pub ? `更新 ${pub.replace(" CST", "")}` : "待更新";
   };
+
   const paint = () => {
-    for (const btn of filters.querySelectorAll("button")) {
-      btn.classList.toggle("on", btn.dataset.mode === mode);
+    document.body.classList.toggle("is-archive", mode !== "now");
+    if (menu) {
+      for (const btn of menu.querySelectorAll("button[data-mode]")) {
+        btn.classList.toggle("on", btn.dataset.mode === mode);
+      }
     }
+    if (mode === "now") {
+      renderNow(data, matchId);
+      return;
+    }
+    const app = document.getElementById("app");
+    const label = historyItems(data).find((x) => x[0] === mode)?.[1] || "";
     render(data, mode === "all" ? "all" : mode, liveNote);
+    app.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="archive-banner"><span>历史数据 · ${label}</span><button type="button" class="history-btn" data-back>回到现场</button></div>`
+    );
+    app.querySelector("[data-back]")?.addEventListener("click", () => {
+      mode = "now";
+      paint();
+    });
   };
-  filters.innerHTML = buttons
-    .map(([id, label]) => `<button type="button" data-mode="${id}">${label}</button>`)
-    .join("");
-  filters.addEventListener("click", (e) => {
-    const btn = e.target.closest("button");
+
+  if (menu) {
+    const items = historyItems(data);
+    const top = items.slice(0, 6);
+    const teams = items.slice(6);
+    menu.innerHTML =
+      `<div class="hist-label">赛程与模型</div>` +
+      top.map(([id, label]) => `<button type="button" data-mode="${id}">${label}</button>`).join("") +
+      (teams.length
+        ? `<div class="hist-label">队伍</div>` +
+          teams.map(([id, label]) => `<button type="button" data-mode="${id}">${label}</button>`).join("")
+        : "");
+  }
+
+  histBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (!menu) return;
+    const open = menu.hidden;
+    menu.hidden = !open;
+    histBtn.classList.toggle("open", Boolean(open));
+    histBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu?.addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-mode]");
     if (!btn) return;
     mode = btn.dataset.mode;
+    if (mode === "now") matchId = "";
+    closeHistory();
     paint();
   });
-  if (oddsBtn && window.TI15_ODDS) {
-    oddsBtn.addEventListener("click", async () => {
-      oddsBtn.disabled = true;
-      oddsBtn.textContent = "拉取中…";
-      try {
-        const res = await window.TI15_ODDS.refreshOdds(data);
-        liveNote = ` · 已刷新 ${window.TI15_ODDS.formatAsOf(res.asOf)}`;
-        updateOddsStatus();
-        paint();
-        oddsBtn.textContent = "已更新";
-        setTimeout(() => {
-          oddsBtn.textContent = "刷新赔率";
-          oddsBtn.disabled = false;
-        }, 2000);
-      } catch (err) {
-        oddsBtn.textContent = "刷新失败";
-        if (oddsStatus) oddsStatus.textContent = String(err.message || err);
-        setTimeout(() => {
-          oddsBtn.textContent = "刷新赔率";
-          oddsBtn.disabled = false;
-          updateOddsStatus();
-        }, 3000);
-      }
-    });
-  }
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".history-wrap")) closeHistory();
+  });
+  homeBtn?.addEventListener("click", () => {
+    mode = "now";
+    matchId = "";
+    closeHistory();
+    paint();
+  });
+  document.getElementById("app")?.addEventListener("click", (e) => {
+    const chip = e.target.closest(".slate-chip");
+    if (!chip) return;
+    matchId = chip.dataset.match || "";
+    mode = "now";
+    paint();
+  });
+
   updateOddsStatus();
   paint();
 }
@@ -829,6 +1113,5 @@ function setup(data) {
 if (window.TI15_DATA) {
   setup(window.TI15_DATA);
 } else {
-  document.getElementById("app").innerHTML =
-    "数据文件没加载到。请打开本站首页，不要打开 GitHub 的源码预览页。";
+  document.getElementById("app").innerHTML = "数据没加载到。请打开站点首页。";
 }
