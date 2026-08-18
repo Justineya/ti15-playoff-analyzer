@@ -1,4 +1,4 @@
-name: Test Cursor briefing
+name: Refresh now
 
 on:
   workflow_dispatch:
@@ -31,10 +31,3 @@ jobs:
           fi
           git commit -m "TI15 局间战报：上一局结果 + 下一局预测"
           git push
-      - name: Launch Cursor bot
-        continue-on-error: true
-        env:
-          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
-          EOD_REPO_URL: https://github.com/${{ github.repository }}
-          FORCE_CURSOR: "true"
-        run: python3 scripts/launch_eod_cursor.py

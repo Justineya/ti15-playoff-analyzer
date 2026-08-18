@@ -1368,14 +1368,35 @@ function setup(data) {
     });
   };
 
+  const pullSnapshot = async () => {
+    const bust = `?t=${Date.now()}`;
+    try {
+      const r = await fetch("./data/daily.json" + bust, { cache: "no-store" });
+      if (r.ok) data.daily = await r.json();
+    } catch {}
+    try {
+      const r = await fetch("./data/bundle.json" + bust, { cache: "no-store" });
+      if (!r.ok) return;
+      const bundle = await r.json();
+      if (bundle.playoffs) data.playoffs = bundle.playoffs;
+      if (bundle.simulations) data.simulations = bundle.simulations;
+      if (bundle.games) data.games = bundle.games;
+      if (bundle.publishedAt) data.publishedAt = bundle.publishedAt;
+      if (bundle.asOf) data.asOf = bundle.asOf;
+      if (bundle.polySlugs) data.polySlugs = bundle.polySlugs;
+    } catch {}
+  };
+
   const pullOdds = async () => {
     if (document.hidden) return;
-    if (typeof window.TI15_ODDS?.refreshOdds !== "function") return;
-    try {
-      await window.TI15_ODDS.refreshOdds(data);
-    } catch (err) {
-      data.oddsLiveOk = false;
-      data.oddsLiveError = String(err?.message || err);
+    await pullSnapshot();
+    if (typeof window.TI15_ODDS?.refreshOdds === "function") {
+      try {
+        await window.TI15_ODDS.refreshOdds(data);
+      } catch (err) {
+        data.oddsLiveOk = false;
+        data.oddsLiveError = String(err?.message || err);
+      }
     }
     updateOddsStatus();
     if (mode === "now") paint();
@@ -1434,14 +1455,6 @@ function setup(data) {
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) pullOdds();
   });
-  fetch("./data/daily.json", { cache: "no-store" })
-    .then((r) => (r.ok ? r.json() : null))
-    .then((daily) => {
-      if (!daily) return;
-      data.daily = daily;
-      if (mode === "now") paint();
-    })
-    .catch(() => {});
 }
 
 try {
