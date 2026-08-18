@@ -1,0 +1,69 @@
+{
+  "event": "Esports World Cup 2026",
+  "patch": "7.41d",
+  "tiPatch": "7.41e",
+  "dates": "2026-07-07 ~ 2026-07-19",
+  "leagueId": 19785,
+  "asOf": "2026-08-17",
+  "verdict": "include-weighted-in-model",
+  "sampleWeight": 0.45,
+  "gap": "small",
+  "whyInclude": "同属 7.41、无 Facet。7.41e 是字母补丁不是换地图。八强 EWC 102 局按 45% 权重并进模型；TI15 80 局为 100%。Hoodwink / Earth Spirit / Treant 骨架没换。",
+  "whyWeightNotFull": "7.41e（7/30）削了 Drow 高地、叠神杖法伤、Lone Druid 拆塔和 Snapfire 全能。EWC 是 7.41d，不给满权重，避免把旧补丁当真值。",
+  "patchDiff": [
+    "EWC 全程 7.41d（6/4 起）。7.41e 在 7/30 才出。",
+    "英雄池差距不大：Hoodwink、Earth Spirit 两边都是第一梯队；Centaur/Mirana 在 TI 更靠前。",
+    "禁用：两边第一禁都是 Treant；EWC 更常禁 Lone Druid / Drow，TI 更常禁 KotL / Largo。",
+    "风格：EWC 八强场均约 42 分，TI 约 46 分，都是偏慢拉锯，不是换版本。"
+  ],
+  "meta": {
+    "ewcMapsAll": 157,
+    "ewcMapsEight": 102,
+    "ewcAvgMinEight": 42.0,
+    "tiAvgMinEight": 45.8,
+    "modelWeight": 0.45,
+    "ewcTopPicks": ["Hoodwink", "Earth Spirit", "Clockwerk", "Ember Spirit", "Bane"],
+    "tiTopPicks": ["Hoodwink", "Earth Spirit", "Centaur Warrunner", "Mirana", "Winter Wyvern"],
+    "sharedTop": ["Hoodwink", "Earth Spirit", "Clockwerk", "Ember Spirit", "Centaur Warrunner", "Dark Willow", "Shadow Fiend", "Windranger", "Undying"]
+  },
+  "eight": {
+    "TEAM VISION": {"as": "PVISION", "maps": "16/19", "place": "冠军"},
+    "BoomBoys": {"as": "BB Team", "maps": "15/20", "place": "亚军"},
+    "Team Yandex": {"as": "Team Yandex", "maps": "14/17", "place": "季军"},
+    "Nigma Galaxy": {"as": "Nigma Galaxy", "maps": "9/12", "place": "5–8，四分之一负 BoomBoys"},
+    "Team Falcons": {"as": "Team Falcons", "maps": "9/12", "place": "5–8，四分之一负 VG"},
+    "Team Spirit": {"as": "Team Spirit", "maps": "10/15", "place": "5–8，四分之一负 Yandex"},
+    "Team Liquid": {"as": "Team Liquid", "maps": "9/16", "place": "9–12，生存赛负 Spirit"},
+    "Iron Wing": {"as": "Iron Wing", "maps": "8/13", "place": "9–12"}
+  },
+  "h2hAmongEight": [
+    "VISION 3-1 BoomBoys（决赛 + 瑞士前兆）",
+    "Yandex 2-1 VISION（半决赛）",
+    "Spirit 2-1 Liquid（生存赛）",
+    "Yandex 2-0 Spirit",
+    "BoomBoys 2-0 NGX",
+    "Liquid 0-2 NGX"
+  ],
+  "forAug20": [
+    {
+      "id": "ubqf2",
+      "use": "系列 + 模型",
+      "text": "EWC 决赛 3-1 + 瑞士 2-0 都已进加权样本。系列低保站得住；先到10杀仍不要跟 F10K 低保。"
+    },
+    {
+      "id": "ubqf3",
+      "use": "模型",
+      "text": "EWC 无直接交手，但 Yandex/Liquid 各自 EWC 地图已进模型。Liquid 加权先到10杀仍偏高。"
+    },
+    {
+      "id": "ubqf1",
+      "use": "模型",
+      "text": "EWC 无 IW–Spirit 交手；两边 EWC 个人样本已并进。"
+    },
+    {
+      "id": "ubqf4",
+      "use": "模型",
+      "text": "EWC 无 NGX–Falcons 交手；Falcons EWC 9/12 已并进先到10杀率。"
+    }
+  ]
+}

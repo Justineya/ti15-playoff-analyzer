@@ -1,0 +1,8 @@
+name = "ti15-playoff-analyzer"
+compatibility_date = "2026-08-17"
+workers_dev = true
+
+[assets]
+directory = "./web"
+not_found_handling = "none"
+html_handling = "auto-trailing-slash"

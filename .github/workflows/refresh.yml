@@ -1,0 +1,51 @@
+name: Refresh playoff data
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Skip outside playoff window
+        id: window
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime, timezone
+          n = datetime.now(timezone.utc)
+          start = datetime(2026, 8, 19, 14, tzinfo=timezone.utc)
+          end = datetime(2026, 8, 24, 18, tzinfo=timezone.utc)
+          open("window.txt", "w").write("yes" if start <= n <= end else "no")
+          print("now", n.isoformat(), "in_window", start <= n <= end)
+          PY
+          echo "in_window=$(cat window.txt)" >> "$GITHUB_OUTPUT"
+      - name: Ingest, odds, simulate, bundle
+        if: steps.window.outputs.in_window == 'yes' || github.event_name == 'workflow_dispatch'
+        run: python3 scripts/refresh.py
+      - name: Commit if changed
+        if: steps.window.outputs.in_window == 'yes' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "ti15-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data web
+          if git diff --staged --quiet; then
+            echo "no data changes"
+            exit 0
+          fi
+          git commit -m "Auto-refresh TI15 playoff data."
+          git push

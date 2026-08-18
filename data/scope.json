@@ -1,0 +1,29 @@
+{
+  "rule": "只分析 TI15（leagueid 19719）里至少有一支八强出战的比赛。淘汰队互打、以及 TI 之前的历史比赛一律不做参考。",
+  "asOf": "2026-08-17",
+  "leagueId": 19719,
+  "playoffTeamIds": [9572001, 2163, 10136357, 7119388, 10150413, 9247354, 8255888, 9823272],
+  "allTi15Games": 109,
+  "inScopeGames": 80,
+  "outOfScopeElimVsElim": 29,
+  "gamesPerTeam": {
+    "Falcons": 17,
+    "Yandex": 17,
+    "Iron Wing": 16,
+    "BoomBoys": 14,
+    "Liquid": 14,
+    "Spirit": 14,
+    "NGX": 10,
+    "VISION": 10
+  },
+  "exclude": [
+    "TI15 之前的所有职业比赛",
+    "两支都已淘汰的队伍之间的瑞士轮（OG / GL / HULIGANI / XG 等互打）",
+    "选手生涯签名英雄、赛季积分赛英雄池"
+  ],
+  "include": [
+    "八强在瑞士轮打过的所有比赛（含对阵已淘汰队）",
+    "突围赛（淘汰赛轮）里八强打过的比赛",
+    "正赛淘汰赛所有系列"
+  ]
+}
