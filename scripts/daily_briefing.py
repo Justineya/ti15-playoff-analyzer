@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
-"""Write today's results + next-match lean to web/data/daily.json."""
+"""After each finished map: last result + next map/series lean.
+
+Writes web/data/daily.json and data/cursor-launch.json (launch Cursor only
+when a new playoff map appears).
+"""
 from __future__ import annotations
 
 import json
 from datetime import datetime, timedelta, timezone
+from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CST = timezone(timedelta(hours=8))
+PLAYOFF_START = datetime(2026, 8, 20, 0, 0, tzinfo=CST)
+STATE_PATH = ROOT / "data" / "briefing-state.json"
+LAUNCH_PATH = ROOT / "data" / "cursor-launch.json"
 TAG = {
     "TEAM VISION": "VSN",
     "Team Liquid": "Liquid",
@@ -34,12 +42,20 @@ def tag(name) -> str:
     return TAG.get(name, name)
 
 
-def short_why(sim: dict | None) -> str:
-    w = (sim or {}).get("why") or ""
-    return (
-        w.replace("H2H 0 局", "本届没交过手")
-        .replace("常用中单 ", "中单爱拿 ")
-    )
+def need_wins(fmt: str) -> int:
+    return 3 if (fmt or "").lower() == "bo5" else 2
+
+
+def p_series_from_score(p_map: float, wins_a: int, wins_b: int, need: int) -> float:
+    @lru_cache(None)
+    def p(a: int, b: int) -> float:
+        if a >= need:
+            return 1.0
+        if b >= need:
+            return 0.0
+        return p_map * p(a + 1, b) + (1.0 - p_map) * p(a, b + 1)
+
+    return p(wins_a, wins_b)
 
 
 def find_sim(known: dict[str, dict], match: dict) -> dict | None:
@@ -52,30 +68,38 @@ def find_sim(known: dict[str, dict], match: dict) -> dict | None:
     return None
 
 
-def series_prices(sim: dict | None) -> dict | None:
-    poly = (sim or {}).get("poly") or {}
-    series = poly.get("series") or {}
-    outcomes = series.get("outcomes") or []
-    prices = [float(x) for x in (series.get("prices") or [])]
+def parse_score(match: dict) -> tuple[int, int]:
+    raw = str(match.get("score") or "")
+    if "-" in raw:
+        left, right = raw.split("-", 1)
+        try:
+            return int(left.strip()), int(right.strip())
+        except ValueError:
+            pass
+    return 0, 0
+
+
+def short_why(sim: dict | None) -> str:
+    w = (sim or {}).get("why") or ""
+    return w.replace("H2H 0 局", "本届没交过手").replace("常用中单 ", "中单爱拿 ")
+
+
+def market_prices(poly: dict | None, key: str) -> dict | None:
+    row = (poly or {}).get(key) or {}
+    outcomes = row.get("outcomes") or []
+    prices = [float(x) for x in (row.get("prices") or [])]
     if len(outcomes) != 2 or len(prices) != 2:
         return None
     return {"outcomes": outcomes, "prices": [round(prices[0], 3), round(prices[1], 3)]}
 
 
-def lean_block(sim: dict | None, team_a: str | None, team_b: str | None) -> dict | None:
-    if not (named(team_a) and named(team_b) and sim):
-        return None
-    p_a = (sim.get("series") or {}).get("pSeriesA")
-    if p_a is None:
+def lean_from_p(team_a: str, team_b: str, p_a: float | None, market: dict | None, why: str = "") -> dict | None:
+    if p_a is None or not named(team_a) or not named(team_b):
         return None
     p_a = float(p_a)
     lean_a = p_a >= 0.5
     lean = team_a if lean_a else team_b
     p_lean = p_a if lean_a else 1 - p_a
-    f10_a = sim.get("pF10A")
-    f10_lean = None
-    if f10_a is not None:
-        f10_lean = team_a if float(f10_a) >= 0.5 else team_b
     return {
         "team": lean,
         "tag": tag(lean),
@@ -83,14 +107,71 @@ def lean_block(sim: dict | None, team_a: str | None, team_b: str | None) -> dict
         "pA": round(p_a, 3),
         "pB": round(1 - p_a, 3),
         "breakEven": round(1 / p_lean, 2) if p_lean else None,
-        "f10Team": f10_lean,
-        "f10A": round(float(f10_a), 3) if f10_a is not None else None,
-        "market": series_prices(sim),
-        "why": short_why(sim),
+        "market": market,
+        "why": why,
     }
 
 
-def pack_match(match: dict, sim: dict | None) -> dict:
+def playoff_maps(games: list[dict]) -> list[dict]:
+    start = PLAYOFF_START.timestamp()
+    out = []
+    for g in games:
+        if g.get("source") == "ewc":
+            continue
+        if int(g.get("start_time") or 0) < start:
+            continue
+        out.append(g)
+    return sorted(out, key=lambda g: g.get("start_time") or 0)
+
+
+def maps_for_match(match: dict, games: list[dict]) -> list[dict]:
+    a, b = match.get("teamA"), match.get("teamB")
+    if not (named(a) and named(b)):
+        return []
+    ids = match.get("matchIds") or []
+    if ids:
+        by_id = {g.get("match_id"): g for g in games}
+        return [by_id[i] for i in ids if i in by_id]
+    pair = {a, b}
+    return [g for g in playoff_maps(games) if {g.get("radiant"), g.get("dire")} == pair]
+
+
+def f10_name(game: dict) -> str | None:
+    f = game.get("f10k") or {}
+    side = f.get("side")
+    if side == "radiant":
+        return game.get("radiant")
+    if side == "dire":
+        return game.get("dire")
+    return None
+
+
+def pack_map(game: dict, n: int) -> dict:
+    return {
+        "game": n,
+        "matchId": game.get("match_id"),
+        "winner": game.get("winner"),
+        "score": game.get("score"),
+        "f10": f10_name(game),
+        "durationMin": round((game.get("duration") or 0) / 60, 1),
+    }
+
+
+def next_upcoming(packed_matches: list[dict]) -> dict | None:
+    for m in sorted(packed_matches, key=lambda x: x.get("when") or ""):
+        if m.get("status") not in {"completed", "complete"}:
+            return m
+    return None
+
+
+def side_label(slot) -> str:
+    if named(slot):
+        return slot
+    kind = "胜者" if (slot or {}).get("as") == "winner" else "败者"
+    return f"{(slot or {}).get('from') or '?'} {kind}"
+
+
+def pack_match(match: dict) -> dict:
     a, b = match.get("teamA"), match.get("teamB")
     return {
         "id": match.get("id"),
@@ -106,164 +187,211 @@ def pack_match(match: dict, sim: dict | None) -> dict:
         "score": match.get("score"),
         "winner": match.get("winner"),
         "polySlug": match.get("polySlug"),
-        "lean": lean_block(sim, a if named(a) else None, b if named(b) else None),
+        "mapsPlayed": match.get("mapsPlayed") or 0,
     }
 
 
-def side_label(slot) -> str:
-    if named(slot):
-        return slot
-    kind = "胜者" if (slot or {}).get("as") == "winner" else "败者"
-    return f"{(slot or {}).get('from') or '?'} {kind}"
-
-
-def done(match: dict) -> bool:
-    return match.get("status") in {"completed", "complete"}
-
-
-def upcoming(match: dict) -> bool:
-    return match.get("status") not in {"completed", "complete"}
-
-
-def day_label(playoffs: dict, day: str) -> str:
-    for row in playoffs.get("days") or []:
-        if row.get("date") == day:
-            return row.get("label") or day
-    return day
-
-
-def headline(prev: dict | None, nxt: dict | None, today: str, today_results: list[dict]) -> str:
-    if prev and nxt and nxt.get("teamA") and nxt.get("teamB") and nxt.get("lean"):
-        return (
-            f"上一把 {tag(prev['winner'])} 赢了 {prev.get('score') or ''}。"
-            f"下一把 {tag(nxt['teamA'])} vs {tag(nxt['teamB'])}，"
-            f"看好 {nxt['lean']['tag']}（{round(nxt['lean']['p'] * 100)}%）。"
-        )
-    if nxt and nxt.get("teamA") and nxt.get("teamB") and nxt.get("lean"):
-        prefix = "还没打完。" if (today_results or prev) else "还没开打。"
-        return (
-            f"{prefix}下一把 {tag(nxt['teamA'])} vs {tag(nxt['teamB'])}，"
-            f"看好 {nxt['lean']['tag']}（{round(nxt['lean']['p'] * 100)}%）。"
-        )
-    if today_results:
-        bits = [
-            f"{tag(r['winner'])} {r.get('score') or ''}"
-            for r in today_results
-            if r.get("winner")
-        ]
-        return f"{today[5:].replace('-', '/')} 已打：{' · '.join(bits) or '赛果写入中'}。"
-    return "淘汰赛还没开打。下一把看好谁会写在这里。"
-
-
-def narrative(
-    prev: dict | None,
-    nxt: dict | None,
-    today_results: list[dict],
-    tomorrow: list[dict],
-    include_tomorrow: bool,
-) -> str:
-    lines = []
-    if today_results:
-        bits = []
-        for r in today_results:
-            if r.get("winner") and named(r.get("teamA")) and named(r.get("teamB")):
-                bits.append(f"{tag(r['teamA'])} vs {tag(r['teamB'])} {r.get('score') or ''}，{tag(r['winner'])} 赢")
-            elif named(r.get("teamA")) and named(r.get("teamB")):
-                bits.append(f"{tag(r['teamA'])} vs {tag(r['teamB'])} {r.get('status')}")
-        if bits:
-            lines.append("今天：" + "；".join(bits) + "。")
-    if prev and prev.get("winner"):
-        lines.append(
-            f"上一把 {prev.get('round') or ''} {tag(prev.get('teamA'))} vs {tag(prev.get('teamB'))}，"
-            f"{tag(prev['winner'])} {prev.get('score') or ''} 拿下。"
-        )
-    if nxt:
-        a, b = nxt.get("teamA"), nxt.get("teamB")
-        lean = nxt.get("lean") or {}
-        when = (nxt.get("when") or "")[11:16]
-        if named(a) and named(b) and lean.get("team"):
-            be = lean.get("breakEven")
-            extra = f"现场赔率至少 {be} 再买。" if be else ""
-            why = lean.get("why") or ""
-            if why and not why.endswith("。"):
-                why += "。"
-            lines.append(
-                f"下一把 {when} {nxt.get('round') or ''} {tag(a)} vs {tag(b)}，"
-                f"模型看好 {lean.get('tag')}（系列 {round(lean['p'] * 100)}%）。{extra}{why}"
-            )
-        else:
-            lines.append(
-                f"下一把 {when} {nxt.get('round') or ''} {nxt.get('teamALabel') or '待定'} vs {nxt.get('teamBLabel') or '待定'}，对阵还没出来。"
-            )
-    if include_tomorrow and tomorrow:
-        names = []
-        for m in tomorrow:
-            clock = (m.get("when") or "")[11:16]
-            if m.get("teamA") and m.get("teamB") and m.get("lean"):
-                names.append(f"{clock} {tag(m['teamA'])}/{tag(m['teamB'])} 看好 {m['lean']['tag']}")
-            else:
-                names.append(f"{clock} {m.get('teamALabel') or '待定'} vs {m.get('teamBLabel') or '待定'}")
-        if names:
-            lines.append("明天：" + "；".join(names) + "。")
-    return "".join(lines) or "赛果和下一把预测会在每天收工后写进这里。"
+def map_model(sim: dict | None, game_n: int) -> dict | None:
+    maps = (sim or {}).get("maps") or []
+    for row in maps:
+        if row.get("game") == game_n:
+            return row
+    if maps and game_n - 1 < len(maps):
+        return maps[game_n - 1]
+    return maps[0] if maps else None
 
 
 def main() -> None:
     playoffs = load("playoffs.json")
     sims = load("simulations.json")
+    games = load("games.json").get("games") or []
     known = {item["id"]: item for item in sims.get("known") or [] if item.get("id")}
     matches = list(playoffs.get("matches") or [])
-    packed = [pack_match(m, find_sim(known, m)) for m in matches]
-
+    packed = [pack_match(m) for m in matches]
     now = datetime.now(CST)
-    today = now.strftime("%Y-%m-%d")
-    days = [d.get("date") for d in playoffs.get("days") or [] if d.get("date")]
-    playoff_day = today if today in days else None
-    if playoff_day is None:
-        future = [d for d in days if d >= today]
-        playoff_day = future[0] if future else (days[-1] if days else today)
-    tomorrow_date = (datetime.strptime(playoff_day, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
 
-    today_results = [p for p in packed if p.get("day") == playoff_day and done(p)]
-    today_results.sort(key=lambda m: m.get("when") or "")
-    tomorrow = [p for p in packed if p.get("day") == tomorrow_date]
-    tomorrow.sort(key=lambda m: m.get("when") or "")
+    prev_map = None
+    next_map = None
+    series_lean = None
+    prev_series = None
+    nxt_series = next_upcoming(packed)
+    kind = "preview"
+    focus = None
 
-    completed = [p for p in packed if done(p)]
-    completed.sort(key=lambda m: m.get("when") or "")
-    prev = completed[-1] if completed else None
+    live_or_open = [
+        m
+        for m in matches
+        if named(m.get("teamA")) and named(m.get("teamB")) and m.get("status") in {"live", "scheduled"}
+    ]
+    live_or_open.sort(key=lambda m: m.get("datetime") or "")
+    completed = [m for m in matches if m.get("status") in {"completed", "complete"} and m.get("winner")]
+    completed.sort(key=lambda m: m.get("datetime") or "")
 
-    nxt = None
-    for p in sorted(packed, key=lambda m: m.get("when") or ""):
-        if upcoming(p):
-            nxt = p
+    focus_match = None
+    for m in live_or_open:
+        if maps_for_match(m, games) or m.get("status") == "live":
+            focus_match = m
             break
-    if nxt is None and tomorrow:
-        nxt = tomorrow[0]
+    if focus_match is None and live_or_open:
+        focus_match = live_or_open[0]
+    if focus_match is None and completed:
+        focus_match = completed[-1]
 
+    if focus_match:
+        focus = pack_match(focus_match)
+        sim = find_sim(known, focus_match)
+        a, b = focus_match.get("teamA"), focus_match.get("teamB")
+        wins_a, wins_b = parse_score(focus_match)
+        played = wins_a + wins_b or len(maps_for_match(focus_match, games))
+        need = need_wins(focus_match.get("format") or "Bo3")
+        done = focus_match.get("status") in {"completed", "complete"} or max(wins_a, wins_b) >= need
+        rows = maps_for_match(focus_match, games)
+        if rows:
+            prev_map = pack_map(rows[-1], len(rows))
+        p_map = float((sim or {}).get("pMapA") or 0.5)
+        p_series = p_series_from_score(p_map, wins_a, wins_b, need) if not done else None
+        series_lean = lean_from_p(a, b, p_series if p_series is not None else (sim or {}).get("series", {}).get("pSeriesA"), market_prices((sim or {}).get("poly"), "series"), short_why(sim))
+        if not done:
+            kind = "next-map" if played else "preview"
+            nxt_n = played + 1
+            model = map_model(sim, nxt_n) or {}
+            next_map = {
+                "game": nxt_n,
+                "teamA": a,
+                "teamB": b,
+                "lean": lean_from_p(
+                    a,
+                    b,
+                    model.get("pWinA"),
+                    market_prices((sim or {}).get("poly"), f"g{nxt_n}"),
+                    short_why(sim),
+                ),
+                "f10": lean_from_p(a, b, model.get("pF10A"), None),
+            }
+            nxt_series = pack_match(focus_match)
+            nxt_series["lean"] = series_lean
+        else:
+            kind = "next-series"
+            prev_series = pack_match(focus_match)
+            prev_series["lean"] = series_lean
+            nxt = next_upcoming(packed)
+            nxt_series = nxt
+            if nxt and nxt.get("teamA") and nxt.get("teamB"):
+                src = next((row for row in matches if row.get("id") == nxt["id"]), None)
+                nsim = find_sim(known, src) if src else None
+                nxt["lean"] = lean_from_p(
+                    nxt["teamA"],
+                    nxt["teamB"],
+                    (nsim or {}).get("series", {}).get("pSeriesA"),
+                    market_prices((nsim or {}).get("poly"), "series"),
+                    short_why(nsim),
+                )
+                next_map = {
+                    "game": 1,
+                    "teamA": nxt["teamA"],
+                    "teamB": nxt["teamB"],
+                    "lean": lean_from_p(
+                        nxt["teamA"],
+                        nxt["teamB"],
+                        (map_model(nsim, 1) or {}).get("pWinA"),
+                        market_prices((nsim or {}).get("poly"), "g1"),
+                        short_why(nsim),
+                    ),
+                    "f10": lean_from_p(nxt["teamA"], nxt["teamB"], (map_model(nsim, 1) or {}).get("pF10A"), None),
+                }
+
+    map_ids = [g.get("match_id") for g in playoff_maps(games) if g.get("match_id")]
+    prev_state = {}
+    if STATE_PATH.exists():
+        prev_state = json.loads(STATE_PATH.read_text())
+    seen = [x for x in (prev_state.get("mapIds") or [])]
+    new_ids = [i for i in map_ids if i not in seen]
+    launch = bool(new_ids)
+
+    headline, narrative = compose(kind, prev_map, next_map, series_lean, prev_series, nxt_series)
     payload = {
         "asOf": now.strftime("%Y-%m-%d %H:%M") + " CST",
         "timezone": "Asia/Shanghai",
-        "playoffDay": playoff_day,
-        "playoffDayLabel": day_label(playoffs, playoff_day),
-        "headline": headline(prev, nxt, playoff_day, today_results),
-        "narrative": narrative(prev, nxt, today_results, tomorrow, playoff_day == today),
-        "previous": prev,
-        "next": nxt,
-        "todayResults": today_results,
-        "tomorrow": tomorrow,
+        "kind": kind,
+        "headline": headline,
+        "narrative": narrative,
+        "previousMap": prev_map,
+        "nextMap": next_map,
+        "seriesLean": series_lean,
+        "previous": prev_series,
+        "next": nxt_series,
+        "focus": focus,
+        "todayResults": [
+            pack_match(m)
+            for m in matches
+            if m.get("day") == now.strftime("%Y-%m-%d") and m.get("status") in {"completed", "complete"}
+        ],
+        "newMapIds": new_ids,
     }
     out = ROOT / "web" / "data" / "daily.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
-    md = ROOT / "web" / "data" / "daily.md"
-    md.write_text(
-        f"# TI15 收工战报 · {payload['asOf']}\n\n"
-        f"{payload['headline']}\n\n"
-        f"{payload['narrative']}\n"
+    (ROOT / "web" / "data" / "daily.md").write_text(f"# TI15 局间战报 · {payload['asOf']}\n\n{headline}\n\n{narrative}\n")
+    STATE_PATH.write_text(json.dumps({"mapIds": map_ids, "lastReason": headline, "asOf": payload["asOf"]}, ensure_ascii=False, indent=2) + "\n")
+    LAUNCH_PATH.write_text(
+        json.dumps(
+            {
+                "launch": launch,
+                "reason": headline if launch else "no new playoff map",
+                "newMapIds": new_ids,
+                "asOf": payload["asOf"],
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n"
     )
-    print("wrote", out, "headline", payload["headline"])
+    print("wrote", out, "kind", kind, "launch", launch, "headline", headline)
+
+
+def compose(kind, prev_map, next_map, series_lean, prev_series, nxt_series) -> tuple[str, str]:
+    bits = []
+    if prev_map and prev_map.get("winner"):
+        f10 = f"，先到10杀 {tag(prev_map['f10'])}" if prev_map.get("f10") else ""
+        bits.append(f"第{prev_map['game']}局 {tag(prev_map['winner'])} 赢了{f10}。")
+    if kind == "next-map" and next_map and next_map.get("lean"):
+        lean = next_map["lean"]
+        be = f"现场赔率至少 {lean['breakEven']}。" if lean.get("breakEven") else ""
+        bits.append(f"下一局第{next_map['game']}局看好 {lean['tag']}（{round(lean['p'] * 100)}%）。{be}")
+        if series_lean:
+            bits.append(f"系列现在看好 {series_lean['tag']}（{round(series_lean['p'] * 100)}%）。")
+        if next_map.get("f10"):
+            bits.append(f"先到10杀看好 {next_map['f10']['tag']}。")
+    elif nxt_series and nxt_series.get("lean"):
+        lean = nxt_series["lean"]
+        extra = ""
+        if prev_series and prev_series.get("winner"):
+            extra = f"上一把 {tag(prev_series['winner'])} {prev_series.get('score') or ''}。"
+        bits.append(
+            extra
+            + f"下一把 {tag(nxt_series.get('teamA'))} vs {tag(nxt_series.get('teamB'))}，看好 {lean['tag']}（系列 {round(lean['p'] * 100)}%）。"
+        )
+        if next_map and next_map.get("lean"):
+            bits.append(f"第1局看好 {next_map['lean']['tag']}（{round(next_map['lean']['p'] * 100)}%）。")
+    elif nxt_series:
+        bits.append(
+            f"下一把 {nxt_series.get('when','')[11:16]} {nxt_series.get('round') or ''} "
+            f"{nxt_series.get('teamALabel') or '待定'} vs {nxt_series.get('teamBLabel') or '待定'}。"
+        )
+    else:
+        bits.append("淘汰赛还没开打。局一打完会写下局看好谁。")
+    why = ""
+    if next_map and next_map.get("lean") and next_map["lean"].get("why"):
+        why = next_map["lean"]["why"]
+        if why and not why.endswith("。"):
+            why += "。"
+    headline = "".join(bits[:2]) if bits else "等待下一局。"
+    narrative = "".join(bits) + why
+    return headline, narrative
 
 
 if __name__ == "__main__":
+    assert abs(p_series_from_score(0.5, 0, 0, 2) - 0.5) < 1e-9
+    assert abs(p_series_from_score(0.5, 1, 0, 2) - 0.75) < 1e-9
+    assert abs(p_series_from_score(0.5, 0, 1, 2) - 0.25) < 1e-9
     main()

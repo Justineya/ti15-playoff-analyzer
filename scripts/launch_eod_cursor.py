@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Launch a Cursor cloud agent for the end-of-day briefing, if CURSOR_API_KEY is set."""
+"""Launch a Cursor cloud agent after a playoff map finishes, if CURSOR_API_KEY is set."""
 from __future__ import annotations
 
 import json
@@ -11,8 +11,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROMPT = ROOT / ".github" / "eod-cursor-prompt.md"
+LAUNCH = ROOT / "data" / "cursor-launch.json"
+DAILY = ROOT / "web" / "data" / "daily.json"
 API = "https://api.cursor.com/v0/agents"
 REPO = os.environ.get("EOD_REPO_URL") or "https://github.com/Justineya/ti15-playoff-analyzer"
+
+
+def truthy(name: str) -> bool:
+    return os.environ.get(name, "").strip().lower() in {"1", "true", "yes"}
 
 
 def main() -> int:
@@ -20,7 +26,14 @@ def main() -> int:
     if not key.strip():
         print("no CURSOR_API_KEY; skip Cursor bot launch")
         return 0
+    force = truthy("FORCE_CURSOR")
+    trigger = json.loads(LAUNCH.read_text()) if LAUNCH.exists() else {}
+    if not force and not trigger.get("launch"):
+        print("no new map; skip Cursor bot", trigger.get("reason") or "")
+        return 0
     prompt = PROMPT.read_text()
+    if DAILY.exists():
+        prompt += "\n\n当前 web/data/daily.json：\n```json\n" + DAILY.read_text()[:8000] + "\n```\n"
     payload = {
         "prompt": {"text": prompt},
         "source": {"repository": REPO, "ref": "main"},

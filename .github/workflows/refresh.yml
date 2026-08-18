@@ -2,7 +2,8 @@ name: Refresh playoff data
 
 on:
   schedule:
-    - cron: "*/20 * * * *"
+    # Catch G1→G2 in the draft pause. Window step still skips off-event.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -49,3 +50,11 @@ jobs:
           fi
           git commit -m "Auto-refresh TI15 playoff data."
           git push
+      - name: Launch Cursor bot after a new map
+        if: steps.window.outputs.in_window == 'yes' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          EOD_REPO_URL: https://github.com/${{ github.repository }}
+          FORCE_CURSOR: ${{ github.event_name == 'workflow_dispatch' }}
+        run: python3 scripts/launch_eod_cursor.py

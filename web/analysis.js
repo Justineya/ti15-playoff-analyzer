@@ -838,8 +838,8 @@ function clockParts(dt) {
   };
 }
 
-function clockHtml(dt) {
-  return `<div class="clock" id="clock" data-start="${dt || ""}">
+function clockHtml(dt, info = {}) {
+  return `<div class="clock" id="clock" data-start="${dt || ""}" data-score="${info.score || ""}" data-next="${info.nextGame || ""}" data-live="${info.live ? "1" : ""}">
     <div class="clock-label" id="clock-label">开战倒计时 · 北京时间</div>
     <div class="clock-digits" id="clock-digits"></div>
     <div class="clock-kickoff">${whenNice(dt)} 开赛</div>
@@ -852,9 +852,13 @@ function paintClock() {
   const label = document.getElementById("clock-label");
   if (!root || !digits) return;
   const p = clockParts(root.dataset.start);
-  if (p.live) {
-    if (label) label.textContent = "正在打";
-    digits.innerHTML = '<span class="live-pulse">LIVE</span>';
+  if (p.live || root.dataset.live === "1") {
+    const score = root.dataset.score || "";
+    const next = root.dataset.next || "";
+    if (label) label.textContent = score ? `正在打 · ${score}` : "正在打";
+    digits.innerHTML = next
+      ? `<span class="live-pulse">LIVE</span><span class="clock-next">第${next}局</span>`
+      : '<span class="live-pulse">LIVE</span>';
     return;
   }
   if (p.done || p.missing) {
@@ -923,17 +927,53 @@ function seriesMarket(sim) {
   return sim?.poly?.series || null;
 }
 
-function polyPrice(sim, team) {
-  const s = seriesMarket(sim);
-  if (!s?.outcomes || !s?.prices) return null;
+function priceFromMarket(mkt, team) {
+  if (!mkt?.outcomes || !mkt?.prices) return null;
   const t = String(team).toLowerCase();
-  const i = s.outcomes.findIndex((o) => {
+  const i = mkt.outcomes.findIndex((o) => {
     const x = String(o).toLowerCase();
     return x.includes(t) || t.includes(x) || t.split(" ").some((w) => w.length > 3 && x.includes(w));
   });
   if (i < 0) return null;
-  const n = Number(s.prices[i]);
+  const n = Number(mkt.prices[i]);
   return Number.isFinite(n) ? n : null;
+}
+
+function polyPrice(sim, team) {
+  return priceFromMarket(seriesMarket(sim), team);
+}
+
+function gameMarket(sim, n) {
+  return sim?.poly?.["g" + n] || null;
+}
+
+function seriesWins(m) {
+  const raw = String(m?.score || "");
+  const hit = raw.match(/^(\d+)\s*[-:]\s*(\d+)$/);
+  const played = Number(m?.mapsPlayed) || 0;
+  if (!hit) return { a: 0, b: 0, played };
+  const a = Number(hit[1]);
+  const b = Number(hit[2]);
+  return { a, b, played: a + b || played };
+}
+
+function needWins(fmt) {
+  return String(fmt || "").toLowerCase() === "bo5" ? 3 : 2;
+}
+
+function pSeriesAfter(pMap, winsA, winsB, need) {
+  const memo = new Map();
+  const walk = (a, b) => {
+    const k = `${a},${b}`;
+    if (memo.has(k)) return memo.get(k);
+    let v;
+    if (a >= need) v = 1;
+    else if (b >= need) v = 0;
+    else v = pMap * walk(a + 1, b) + (1 - pMap) * walk(a, b + 1);
+    memo.set(k, v);
+    return v;
+  };
+  return walk(winsA, winsB);
 }
 
 function splitStyle(p) {
@@ -1011,18 +1051,22 @@ function oddsLinks(m) {
     .join("")}</nav>`;
 }
 
-function liveCalc(m, sim, br) {
-  const series = sim?.series || {};
+function liveCalc(m, sim, br, nextGame, pSeriesA) {
+  const n = nextGame || 1;
+  const map = sim?.maps?.[n - 1] || sim?.maps?.[0];
+  const pS = pSeriesA ?? sim?.series?.pSeriesA;
   const sides = [
-    { label: `${m.teamA} 赢系列`, p: series.pSeriesA },
-    { label: `${m.teamB} 赢系列`, p: series.pSeriesB },
-    { label: `${m.teamA} 先到 10 杀`, p: sim?.pF10A },
-    { label: `${m.teamB} 先到 10 杀`, p: sim?.pF10B },
+    { label: `${m.teamA} 赢系列`, p: pS },
+    { label: `${m.teamB} 赢系列`, p: pS == null ? null : 1 - pS },
+    { label: `${m.teamA} 赢第${n}局`, p: map?.pWinA },
+    { label: `${m.teamB} 赢第${n}局`, p: map?.pWinB },
+    { label: `${m.teamA} 先到 10 杀`, p: map?.pF10A ?? sim?.pF10A },
+    { label: `${m.teamB} 先到 10 杀`, p: map?.pF10B ?? sim?.pF10B },
   ].filter((s) => s.p != null);
   const seriesRow = marketRow(sim, "系列");
   const defaultOdds = seriesRow?.odds || br?.defaultOdds || 1.7;
   const opts = sides.map((s, i) => `<option value="${i}">${s.label} · 门槛 ${decOdds(s.p)}</option>`).join("");
-  return `<section class="live-calc" id="live-calc">
+  return `<section class="live-calc" id="live-calc" data-next="${n}" data-pseries="${pS ?? ""}">
     <h3>现场赔率对得上再下</h3>
     <p class="hint">门槛是我们的概率换算出来的。你拿到的价高于门槛，才会出金额。</p>
     <form class="calc-form" id="live-form">
@@ -1037,13 +1081,18 @@ function liveCalc(m, sim, br) {
 
 function wireLiveCalc(sim) {
   const form = document.getElementById("live-form");
+  const root = document.getElementById("live-calc");
   if (!form || !sim) return;
-  const series = sim.series || {};
+  const n = Number(root?.dataset.next || 1);
+  const pS = root?.dataset.pseries ? Number(root.dataset.pseries) : sim.series?.pSeriesA;
+  const map = sim.maps?.[n - 1] || sim.maps?.[0];
   const sides = [
-    { label: `${sim.teamA} 赢系列`, p: series.pSeriesA },
-    { label: `${sim.teamB} 赢系列`, p: series.pSeriesB },
-    { label: `${sim.teamA} 先到 10 杀`, p: sim.pF10A },
-    { label: `${sim.teamB} 先到 10 杀`, p: sim.pF10B },
+    { label: `${sim.teamA} 赢系列`, p: pS },
+    { label: `${sim.teamB} 赢系列`, p: pS == null ? null : 1 - pS },
+    { label: `${sim.teamA} 赢第${n}局`, p: map?.pWinA },
+    { label: `${sim.teamB} 赢第${n}局`, p: map?.pWinB },
+    { label: `${sim.teamA} 先到 10 杀`, p: map?.pF10A ?? sim.pF10A },
+    { label: `${sim.teamB} 先到 10 杀`, p: map?.pF10B ?? sim.pF10B },
   ].filter((s) => s.p != null);
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -1091,16 +1140,40 @@ function lastBoutHtml(prev) {
   </div>`;
 }
 
+function lastMapHtml(data, m, prevSeries) {
+  const ids = m?.matchIds || [];
+  const byId = Object.fromEntries((data.games || []).map((g) => [g.match_id, g]));
+  const maps = ids.map((id) => byId[id]).filter(Boolean);
+  if (maps.length) {
+    const g = maps[maps.length - 1];
+    const n = maps.length;
+    const f10 = g.f10k ? (g.f10k.side === "radiant" ? g.radiant : g.dire) : null;
+    return `<div class="last-bout">
+      <span class="k">上一局 · 第${n}局</span>
+      <span>${TAG[g.winner] || g.winner} 赢了</span>
+      ${f10 ? `<span class="mute">先到10杀 ${TAG[f10] || f10}</span>` : ""}
+    </div>`;
+  }
+  const row = data.daily?.previousMap;
+  if (row?.winner && data.daily?.focus?.id === m?.id) {
+    return `<div class="last-bout">
+      <span class="k">上一局 · 第${row.game}局</span>
+      <span>${TAG[row.winner] || row.winner} 赢了</span>
+      ${row.f10 ? `<span class="mute">先到10杀 ${TAG[row.f10] || row.f10}</span>` : ""}
+    </div>`;
+  }
+  return lastBoutHtml(prevSeries);
+}
+
 function dailyHtml(daily) {
   if (!daily) return "";
-  const results = daily.todayResults || [];
-  if (!daily.previous && !results.length) return "";
-  const resultBits = results
+  if (daily.kind === "preview" && !daily.previousMap) return "";
+  const resultBits = (daily.todayResults || [])
     .filter((r) => r.winner)
     .map((r) => `${TAG[r.winner] || r.winner} ${r.score || ""}`)
     .join(" · ");
   return `<section class="brief-card">
-    <div class="brief-kicker">收工战报 · 北京时间</div>
+    <div class="brief-kicker">上一局 · 下一局</div>
     ${daily.headline ? `<p class="brief-head">${daily.headline}</p>` : ""}
     ${daily.narrative ? `<p class="brief-body">${daily.narrative}</p>` : ""}
     ${resultBits ? `<p class="brief-meta">${resultBits}</p>` : ""}
@@ -1133,6 +1206,15 @@ function renderNow(data, matchId) {
   const day = dayKey(m.datetime);
   const sameDay = matches.filter((x) => namedSides(x) && dayKey(x.datetime) === day);
   const live = Boolean(data.oddsLiveOk);
+  const wins = seriesWins(m);
+  const need = needWins(m.format);
+  const seriesDone = m.status === "completed" || m.status === "complete" || wins.a >= need || wins.b >= need;
+  const nextGame = seriesDone ? 1 : wins.played + 1;
+  const pMap = sim?.pMapA;
+  const pSeriesNow =
+    sim && pMap != null && !seriesDone ? pSeriesAfter(pMap, wins.a, wins.b, need) : sim?.series?.pSeriesA;
+  const nextMap = sim?.maps?.[nextGame - 1] || sim?.maps?.[0];
+  const gMkt = seriesDone ? null : priceFromMarket(gameMarket(sim, nextGame), m.teamA);
   const slate = sameDay.length
     ? `<div class="slate">
         <div class="slate-head">同一天 · 北京时间</div>
@@ -1142,19 +1224,25 @@ function renderNow(data, matchId) {
   const markets =
     namedSides(m) && sim
       ? `<div class="markets">
-        ${marketCard("系列", m.teamA, m.teamB, sim.series?.pSeriesA, polyPrice(sim, m.teamA), live)}
-        ${marketCard("先到 10 杀", m.teamA, m.teamB, sim.pF10A, null, false)}
+        ${marketCard("系列", m.teamA, m.teamB, pSeriesNow, polyPrice(sim, m.teamA), live)}
+        ${
+          seriesDone
+            ? marketCard("先到 10 杀", m.teamA, m.teamB, sim.pF10A, null, false)
+            : `${marketCard(`第${nextGame}局`, m.teamA, m.teamB, nextMap?.pWinA, gMkt, live)}
+               ${marketCard("先到 10 杀", m.teamA, m.teamB, nextMap?.pF10A ?? sim.pF10A, null, false)}`
+        }
       </div>`
       : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
   const why = shortWhy(sim);
+  const inSeries = !seriesDone && wins.played > 0;
   app.innerHTML = `<section class="live-stage">
-    ${lastBoutHtml(previousMatch(matches, m))}
+    ${lastMapHtml(data, m, previousMatch(matches, m))}
     <div class="arena-kicker">
       <span>上海 · 东方体育中心</span>
       <span>${m.round || ""}</span>
-      <span>${m.format || "Bo3"}</span>
+      <span>${m.format || "Bo3"}${wins.played ? " · " + (m.score || wins.a + "-" + wins.b) : ""}</span>
     </div>
-    ${clockHtml(m.datetime)}
+    ${clockHtml(m.datetime, { live: inSeries || m.status === "live", score: m.score || "", nextGame: seriesDone ? "" : nextGame })}
     <div class="live-poster">
       <div class="live-teams">
         <div class="live-team">${namedSides(m) ? crest(m.teamA) : ""}<div class="tagline">${aTag || ""}</div><h2>${aName || "待定"}</h2></div>
@@ -1167,7 +1255,7 @@ function renderNow(data, matchId) {
     </div>
     ${slate}
     ${dailyHtml(data.daily)}
-    ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll) : ""}
+    ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}
   </section>`;
   wireLiveCalc(sim);
   armClock();

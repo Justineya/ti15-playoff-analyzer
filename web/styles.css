@@ -631,7 +631,7 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
 
 .markets {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 14px;
   margin: 22px 0 0;
 }
@@ -756,6 +756,12 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
   letter-spacing: 0.08em;
 }
 .odds-stamp.hot { color: #8fbf96; }
+.clock-next {
+  margin-left: 10px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  font-size: 14px;
+}
 
 .live-calc {
   margin-top: 28px;

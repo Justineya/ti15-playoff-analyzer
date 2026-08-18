@@ -40,6 +40,9 @@
       if (q.includes("(BO3)") && !q.includes("Game")) out.series = row;
       else if (q.includes("Game 1 Winner")) out.g1 = row;
       else if (q.includes("Game 2 Winner")) out.g2 = row;
+      else if (q.includes("Game 3 Winner")) out.g3 = row;
+      else if (q.includes("Game 4 Winner")) out.g4 = row;
+      else if (q.includes("Game 5 Winner")) out.g5 = row;
       else if (q.includes("O/U 2.5")) out.ou25 = row;
       else if (q.includes("Handicap")) out.handicap = row;
     }
