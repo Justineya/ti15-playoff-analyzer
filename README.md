@@ -8,7 +8,7 @@
 
 淘汰赛期间（8/20–8/23）现场页每 30 秒向 Polymarket 拉实时序列赔率；仓库里还有大约每 20 分钟的快照兜底。每晚北京时间 23:05 会写收工战报：上一把比分 + 下一把看好谁。Thunderpick / GG.BET / Pinnacle 没有浏览器能直读的公开接口，只做跳转。先到 10 杀没有公开盘，用页面里的计算器手填现场赔率。
 
-Cursor bot 收工任务怎么开：见 [`AUTOMATION.md`](AUTOMATION.md)。
+Cursor bot：仓库 Secrets 里加一条 `CURSOR_API_KEY` 就行，见 [`AUTOMATION.md`](AUTOMATION.md)。
 
 ## 口径
 
