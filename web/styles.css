@@ -55,6 +55,7 @@ body {
   font: inherit;
   cursor: pointer;
   padding: 0;
+  text-decoration: none;
 }
 .top-right {
   margin-left: auto;
@@ -808,6 +809,17 @@ footer { text-align: center; color: var(--mute); padding: 24px; border-top: 1px 
   color: var(--mute);
   font-size: 13px;
 }
+
+.demo-banner {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--gold);
+  background: rgba(201, 162, 39, 0.1);
+  color: #f0e6c8;
+  font-size: 14px;
+}
+.demo-banner a { color: var(--gold); }
+.ladder-match.completed { border-color: rgba(201, 162, 39, 0.35); }
 
 @media (max-width: 860px) {
   .grid-2, .ia, .matches, .phases, .hero-meta, .stat-row, .compare, .lenses, .draft, .stake-stats, .calc-form, .markets, .slate-row, .live-calc .calc-form { grid-template-columns: 1fr; }

@@ -4,7 +4,9 @@
 
 **https://justineya.github.io/ti15-playoff-analyzer/**
 
-打开就是下一场：谁打谁、买哪边、下多少。对阵图、已打的局和模型说明收在右上角「历史数据」。
+打开就是下一场：谁打谁、买哪边、下多少。对阵图、已打的局和模型说明收在右上角「历史数据」。想先看第一轮打完之后长什么样，打开模拟页：
+
+**https://justineya.github.io/ti15-playoff-analyzer/demo.html**
 
 淘汰赛期间（8/20–8/23）现场页每 30 秒向 Polymarket 拉实时赔率；仓库大约每 5 分钟拉 OpenDota。**每打完一局**，上一局结果和下一局看好谁会直接写进这个网页。不用打开 Cursor。Thunderpick / GG.BET / Pinnacle 只做跳转。先到 10 杀没有公开盘，用计算器手填。
 

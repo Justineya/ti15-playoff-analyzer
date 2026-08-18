@@ -78,10 +78,11 @@ function ladderMatch(id, byId, known) {
   if (!m) return "";
   const a = resolveSide(m.teamA, byId);
   const b = resolveSide(m.teamB, byId);
-  const sim = known[id];
+  const sim = findSim(known, m);
   const odds = sim ? `模型 ${pct(sim.series.pSeriesA)} / ${pct(sim.series.pSeriesB)}` : "";
+  const result = m.winner && m.score ? `${m.score} ${TAG[m.winner] || m.winner}` : m.format;
   return `<div class="ladder-match ${m.status || ""}">
-    <div class="ladder-meta"><span>${whenShort(m.datetime)}</span><span>${m.format}</span></div>
+    <div class="ladder-meta"><span>${whenShort(m.datetime)}</span><span>${result}</span></div>
     ${teamRow(a)}${teamRow(b)}
     ${odds ? `<div class="ladder-odds">${odds}</div>` : '<div class="ladder-odds mute">待填</div>'}
   </div>`;
@@ -225,7 +226,7 @@ function simPanel(sim, liveNote) {
 function renderBracket(data) {
   const matches = data.playoffs?.matches || [];
   const byId = Object.fromEntries(matches.map((m) => [m.id, m]));
-  const known = Object.fromEntries((data.simulations?.known || []).map((s) => [s.id, s]));
+  const known = indexSims(data);
   const upper = [
     roundCol("胜者组首轮 · 8/20", ["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId, known),
     joinCol(2, "pair"),
@@ -911,6 +912,17 @@ function marketRow(sim, name) {
   return (sim?.betting?.rows || []).find((r) => r.market.includes(name));
 }
 
+function indexSims(data) {
+  const out = {};
+  for (const s of data.simulations?.known || []) {
+    if (s?.id) out[s.id] = s;
+  }
+  for (const s of data.simulations?.scenarios || []) {
+    if (s?.id) out[s.id] = s;
+  }
+  return out;
+}
+
 function findSim(known, m) {
   if (!m || !known) return null;
   if (known[m.id]) return known[m.id];
@@ -1196,7 +1208,7 @@ function renderNow(data, matchId) {
     app.innerHTML = '<p class="empty">还没有赛程。</p>';
     return;
   }
-  const known = Object.fromEntries((data.simulations?.known || []).map((s) => [s.id, s]));
+  const known = indexSims(data);
   const byId = Object.fromEntries(matches.map((x) => [x.id, x]));
   const sim = namedSides(m) ? findSim(known, m) : null;
   const aName = namedSides(m) ? m.teamA : resolveSide(m.teamA, byId).name;
@@ -1235,7 +1247,11 @@ function renderNow(data, matchId) {
       : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
   const why = shortWhy(sim);
   const inSeries = !seriesDone && wins.played > 0;
+  const demoBar = data.demo
+    ? `<div class="demo-banner"><b>${data.demo.title}</b> ${data.demo.note} <a href="./">回正式站</a></div>`
+    : "";
   app.innerHTML = `<section class="live-stage">
+    ${demoBar}
     ${lastMapHtml(data, m, previousMatch(matches, m))}
     <div class="arena-kicker">
       <span>上海 · 东方体育中心</span>
@@ -1389,7 +1405,7 @@ function setup(data) {
 
   const pullOdds = async () => {
     if (document.hidden) return;
-    await pullSnapshot();
+    if (!data.demo) await pullSnapshot();
     if (typeof window.TI15_ODDS?.refreshOdds === "function") {
       try {
         await window.TI15_ODDS.refreshOdds(data);
