@@ -903,6 +903,10 @@ function shortWhy(sim) {
     .replace(/常用中单 /g, "中单爱拿 ");
 }
 
+function marketRow(sim, name) {
+  return (sim?.betting?.rows || []).find((r) => r.market.includes(name));
+}
+
 function polyPrice(sim, team) {
   const s = sim?.polyLive?.series || sim?.poly?.series;
   if (!s?.outcomes || !s?.prices) return null;
@@ -1232,8 +1236,11 @@ function setup(data) {
   paint();
 }
 
-if (window.TI15_DATA) {
-  setup(window.TI15_DATA);
-} else {
-  document.getElementById("app").innerHTML = "数据没加载到。请打开站点首页。";
+try {
+  if (window.TI15_DATA) setup(window.TI15_DATA);
+  else document.getElementById("app").innerHTML = "数据没加载到。";
+} catch (err) {
+  const app = document.getElementById("app");
+  if (app) app.innerHTML = "页面出错，刷新试试。";
+  console.error(err);
 }
