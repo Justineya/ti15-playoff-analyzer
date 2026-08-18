@@ -136,6 +136,8 @@ def main() -> None:
         for m in playoffs.get("matches") or []
         if m.get("polySlug") and isinstance(m.get("teamA"), str) and isinstance(m.get("teamB"), str)
     ]
+    daily_path = ROOT / "web" / "data" / "daily.json"
+    daily = json.loads(daily_path.read_text()) if daily_path.exists() else None
     sims = json.loads((ROOT / "data" / "simulations.json").read_text())
     sim_by_id = {item["id"]: item for item in sims.get("known") or []}
     for item in series:
@@ -153,6 +155,7 @@ def main() -> None:
         "polymarket": poly,
         "teams": {name: team_profile(games, name) for name in EIGHT},
         "playoffs": playoffs,
+        "daily": daily,
         "simulations": sims,
         "ewc": json.loads((ROOT / "data" / "ewc.json").read_text()),
         "series": series,

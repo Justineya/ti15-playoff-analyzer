@@ -1,0 +1,57 @@
+name: End-of-day briefing
+
+on:
+  schedule:
+    # 23:05 Beijing = 15:05 UTC
+    - cron: "5 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Skip outside playoff nights
+        id: window
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime, timedelta, timezone
+          cst = timezone(timedelta(hours=8))
+          d = datetime.now(cst).date()
+          ok = d.isoformat() >= "2026-08-20" and d.isoformat() <= "2026-08-23"
+          open("window.txt", "w").write("yes" if ok else "no")
+          print("beijing", d.isoformat(), "in_window", ok)
+          PY
+          echo "in_window=$(cat window.txt)" >> "$GITHUB_OUTPUT"
+      - name: Refresh data and write briefing
+        if: steps.window.outputs.in_window == 'yes' || github.event_name == 'workflow_dispatch'
+        run: python3 scripts/refresh.py
+      - name: Commit if changed
+        if: steps.window.outputs.in_window == 'yes' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "ti15-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data web
+          if git diff --staged --quiet; then
+            echo "no data changes"
+            exit 0
+          fi
+          git commit -m "TI15 收工战报：上一把结果 + 下一把预测"
+          git push
+      - name: Launch Cursor bot
+        if: steps.window.outputs.in_window == 'yes' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          EOD_REPO_URL: https://github.com/${{ github.repository }}
+        run: python3 scripts/launch_eod_cursor.py

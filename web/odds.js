@@ -176,7 +176,14 @@
 
   async function fetchEvent(slug) {
     const url = `${GAMMA}/events?slug=${encodeURIComponent(slug)}`;
-    const res = await fetch(url);
+    const ac = new AbortController();
+    const timer = setTimeout(() => ac.abort(), 8000);
+    let res;
+    try {
+      res = await fetch(url, { cache: "no-store", signal: ac.signal, credentials: "omit" });
+    } finally {
+      clearTimeout(timer);
+    }
     if (!res.ok) throw new Error(`Polymarket ${slug}: HTTP ${res.status}`);
     const rows = await res.json();
     if (!rows?.length) throw new Error(`Polymarket ${slug}: 无事件`);
@@ -211,9 +218,12 @@
   }
 
   async function refreshOdds(data) {
-    const slugs = data.polySlugs || [];
+    const slugs = [...new Set(data.polySlugs || [])];
     if (!slugs.length) throw new Error("没有 polySlug 配置");
-    const events = await Promise.all(slugs.map(fetchEvent));
+    const settled = await Promise.allSettled(slugs.map(fetchEvent));
+    const events = settled.filter((s) => s.status === "fulfilled").map((s) => s.value);
+    const failed = settled.filter((s) => s.status === "rejected").length;
+    if (!events.length) throw new Error(failed ? "Polymarket 被挡或全失败" : "没有盘口");
     const bySlug = Object.fromEntries(events.map((e) => [e.slug, e]));
     const asOf = new Date().toISOString();
 
@@ -237,9 +247,14 @@
     data.polymarket = {
       asOf,
       source: GAMMA,
+      live: true,
+      failed,
       events,
     };
-    return { asOf, count: events.length };
+    data.oddsLiveAt = asOf;
+    data.oddsLiveOk = true;
+    data.oddsLiveError = failed ? `${failed} 场没拉到` : "";
+    return { asOf, count: events.length, failed };
   }
 
   function formatAsOf(iso) {

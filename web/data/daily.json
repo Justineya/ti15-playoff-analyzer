@@ -1,0 +1,112 @@
+{
+  "asOf": "2026-08-18 14:52 CST",
+  "timezone": "Asia/Shanghai",
+  "playoffDay": "2026-08-20",
+  "playoffDayLabel": "第1天 · 胜者组首轮",
+  "headline": "还没开打。下一把 IW vs Spirit，看好 IW（51%）。",
+  "narrative": "下一把 10:00 胜者组首轮 IW vs Spirit，模型看好 IW（系列 51%）。现场赔率至少 1.95 再买。本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit。",
+  "previous": null,
+  "next": {
+    "id": "ubqf1",
+    "round": "胜者组首轮",
+    "day": "2026-08-20",
+    "when": "2026-08-20 10:00",
+    "format": "Bo3",
+    "teamA": "Iron Wing",
+    "teamB": "Team Spirit",
+    "teamALabel": "Iron Wing",
+    "teamBLabel": "Team Spirit",
+    "status": "scheduled",
+    "score": null,
+    "winner": null,
+    "polySlug": "dota2-ironwi-ts8-2026-08-19",
+    "lean": {
+      "team": "Iron Wing",
+      "tag": "IW",
+      "p": 0.514,
+      "pA": 0.514,
+      "pB": 0.486,
+      "breakEven": 1.95,
+      "f10Team": "Iron Wing",
+      "f10A": 0.502,
+      "market": {
+        "outcomes": [
+          "Iron Wing",
+          "Team Spirit"
+        ],
+        "prices": [
+          0.525,
+          0.475
+        ]
+      },
+      "why": "本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit"
+    }
+  },
+  "todayResults": [],
+  "tomorrow": [
+    {
+      "id": "lbr1a",
+      "round": "败者组首轮",
+      "day": "2026-08-21",
+      "when": "2026-08-21 10:00",
+      "format": "Bo3",
+      "teamA": null,
+      "teamB": null,
+      "teamALabel": "ubqf1 败者",
+      "teamBLabel": "ubqf2 败者",
+      "status": "awaiting",
+      "score": null,
+      "winner": null,
+      "polySlug": null,
+      "lean": null
+    },
+    {
+      "id": "lbr1b",
+      "round": "败者组首轮",
+      "day": "2026-08-21",
+      "when": "2026-08-21 13:00",
+      "format": "Bo3",
+      "teamA": null,
+      "teamB": null,
+      "teamALabel": "ubqf3 败者",
+      "teamBLabel": "ubqf4 败者",
+      "status": "awaiting",
+      "score": null,
+      "winner": null,
+      "polySlug": null,
+      "lean": null
+    },
+    {
+      "id": "ubsf1",
+      "round": "胜者组半决赛",
+      "day": "2026-08-21",
+      "when": "2026-08-21 16:00",
+      "format": "Bo3",
+      "teamA": null,
+      "teamB": null,
+      "teamALabel": "ubqf1 胜者",
+      "teamBLabel": "ubqf2 胜者",
+      "status": "awaiting",
+      "score": null,
+      "winner": null,
+      "polySlug": null,
+      "lean": null
+    },
+    {
+      "id": "ubsf2",
+      "round": "胜者组半决赛",
+      "day": "2026-08-21",
+      "when": "2026-08-21 19:00",
+      "format": "Bo3",
+      "teamA": null,
+      "teamB": null,
+      "teamALabel": "ubqf3 胜者",
+      "teamBLabel": "ubqf4 胜者",
+      "status": "awaiting",
+      "score": null,
+      "winner": null,
+      "polySlug": null,
+      "lean": null
+    }
+  ]
+}

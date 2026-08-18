@@ -20,6 +20,7 @@ def main() -> None:
     run("resolve_bracket.py")
     run("fetch_polymarket.py")
     run("simulate_playoffs.py")
+    run("daily_briefing.py")
     run("build_bundle.py")
     print("refresh ok")
 

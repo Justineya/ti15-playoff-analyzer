@@ -796,7 +796,7 @@ function focusMatch(matches, preferId) {
   }
   const now = Date.now();
   for (const m of list) {
-    if (m.status === "complete") continue;
+    if (m.status === "completed" || m.status === "complete") continue;
     const t = parsePlayoffTime(m.datetime);
     if (!t) continue;
     if (now < t.getTime() + windowMsSafe()) return m;
@@ -907,8 +907,24 @@ function marketRow(sim, name) {
   return (sim?.betting?.rows || []).find((r) => r.market.includes(name));
 }
 
+function findSim(known, m) {
+  if (!m || !known) return null;
+  if (known[m.id]) return known[m.id];
+  if (typeof m.teamA === "string" && typeof m.teamB === "string") {
+    return known[`${m.id}__${m.teamA}__${m.teamB}`] || known[`${m.id}__${m.teamB}__${m.teamA}`] || null;
+  }
+  return null;
+}
+
+function seriesMarket(sim) {
+  const live = sim?.polyLive;
+  if (live?.outcomes && live?.prices) return live;
+  if (live?.series?.outcomes) return live.series;
+  return sim?.poly?.series || null;
+}
+
 function polyPrice(sim, team) {
-  const s = sim?.polyLive?.series || sim?.poly?.series;
+  const s = seriesMarket(sim);
   if (!s?.outcomes || !s?.prices) return null;
   const t = String(team).toLowerCase();
   const i = s.outcomes.findIndex((o) => {
@@ -955,10 +971,14 @@ function leanCall(teamA, teamB, pA, mktA) {
   };
 }
 
-function marketCard(title, teamA, teamB, pA, mktA) {
+function marketCard(title, teamA, teamB, pA, mktA, live) {
   const p = pA ?? 0.5;
   const call = leanCall(teamA, teamB, p, mktA);
   const mktB = mktA == null ? null : 1 - mktA;
+  const stamp =
+    mktA != null
+      ? `<div class="odds-stamp ${live ? "hot" : ""}">${live ? "实时 Polymarket" : "仓库快照"}</div>`
+      : "";
   return `<article class="market">
     <div class="m-label">${title}</div>
     <div class="m-pick">看好 ${call.lean}</div>
@@ -968,7 +988,7 @@ function marketCard(title, teamA, teamB, pA, mktA) {
     ${
       mktA != null
         ? `<div class="side-row"><span>盘口 ${teamA}</span><span>${pct(mktA)} · ${decOdds(mktA)}</span></div>
-           <div class="side-row"><span>盘口 ${teamB}</span><span>${pct(mktB)} · ${decOdds(mktB)}</span></div>`
+           <div class="side-row"><span>盘口 ${teamB}</span><span>${pct(mktB)} · ${decOdds(mktB)}</span></div>${stamp}`
         : `<div class="side-row"><span>盘口</span><span>这场没有公开盘</span></div>`
     }
     <p class="call ${call.klass}">${call.text}</p>
@@ -1061,6 +1081,40 @@ function slateChip(m, sim, on) {
   </button>`;
 }
 
+function lastBoutHtml(prev) {
+  if (!prev?.winner) return "";
+  const other = prev.winner === prev.teamA ? prev.teamB : prev.teamA;
+  return `<div class="last-bout">
+    <span class="k">上一场</span>
+    <span>${TAG[prev.winner] || prev.winner} ${prev.score || ""} 赢了 ${TAG[other] || other || ""}</span>
+    <span class="mute">${prev.round || ""}</span>
+  </div>`;
+}
+
+function dailyHtml(daily) {
+  if (!daily) return "";
+  const results = daily.todayResults || [];
+  if (!daily.previous && !results.length) return "";
+  const resultBits = results
+    .filter((r) => r.winner)
+    .map((r) => `${TAG[r.winner] || r.winner} ${r.score || ""}`)
+    .join(" · ");
+  return `<section class="brief-card">
+    <div class="brief-kicker">收工战报 · 北京时间</div>
+    ${daily.headline ? `<p class="brief-head">${daily.headline}</p>` : ""}
+    ${daily.narrative ? `<p class="brief-body">${daily.narrative}</p>` : ""}
+    ${resultBits ? `<p class="brief-meta">${resultBits}</p>` : ""}
+  </section>`;
+}
+
+function previousMatch(matches, current) {
+  const list = [...(matches || [])]
+    .filter((m) => (m.status === "completed" || m.status === "complete") && m.winner)
+    .sort((a, b) => String(a.datetime).localeCompare(String(b.datetime)));
+  const other = list.filter((m) => m.id !== current?.id);
+  return other[other.length - 1] || null;
+}
+
 function renderNow(data, matchId) {
   const matches = data.playoffs?.matches || [];
   const m = focusMatch(matches, matchId);
@@ -1071,28 +1125,30 @@ function renderNow(data, matchId) {
   }
   const known = Object.fromEntries((data.simulations?.known || []).map((s) => [s.id, s]));
   const byId = Object.fromEntries(matches.map((x) => [x.id, x]));
-  const sim = namedSides(m) ? known[m.id] : null;
+  const sim = namedSides(m) ? findSim(known, m) : null;
   const aName = namedSides(m) ? m.teamA : resolveSide(m.teamA, byId).name;
   const bName = namedSides(m) ? m.teamB : resolveSide(m.teamB, byId).name;
   const aTag = namedSides(m) ? TAG[m.teamA] || m.teamA : resolveSide(m.teamA, byId).tag;
   const bTag = namedSides(m) ? TAG[m.teamB] || m.teamB : resolveSide(m.teamB, byId).tag;
   const day = dayKey(m.datetime);
   const sameDay = matches.filter((x) => namedSides(x) && dayKey(x.datetime) === day);
+  const live = Boolean(data.oddsLiveOk);
   const slate = sameDay.length
     ? `<div class="slate">
         <div class="slate-head">同一天 · 北京时间</div>
-        <div class="slate-row">${sameDay.map((x) => slateChip(x, known[x.id], x.id === m.id)).join("")}</div>
+        <div class="slate-row">${sameDay.map((x) => slateChip(x, findSim(known, x), x.id === m.id)).join("")}</div>
       </div>`
     : "";
   const markets =
     namedSides(m) && sim
       ? `<div class="markets">
-        ${marketCard("系列", m.teamA, m.teamB, sim.series?.pSeriesA, polyPrice(sim, m.teamA))}
-        ${marketCard("先到 10 杀", m.teamA, m.teamB, sim.pF10A, null)}
+        ${marketCard("系列", m.teamA, m.teamB, sim.series?.pSeriesA, polyPrice(sim, m.teamA), live)}
+        ${marketCard("先到 10 杀", m.teamA, m.teamB, sim.pF10A, null, false)}
       </div>`
       : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
   const why = shortWhy(sim);
   app.innerHTML = `<section class="live-stage">
+    ${lastBoutHtml(previousMatch(matches, m))}
     <div class="arena-kicker">
       <span>上海 · 东方体育中心</span>
       <span>${m.round || ""}</span>
@@ -1110,6 +1166,7 @@ function renderNow(data, matchId) {
       ${markets}
     </div>
     ${slate}
+    ${dailyHtml(data.daily)}
     ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll) : ""}
   </section>`;
   wireLiveCalc(sim);
@@ -1158,10 +1215,46 @@ function setup(data) {
   const updateOddsStatus = () => {
     if (!oddsStatus) return;
     const pub = data.publishedAt || data.asOf || "";
-    oddsStatus.textContent = pub ? `更新 ${pub.replace(" CST", "")}` : "待更新";
+    if (data.oddsLiveOk && data.oddsLiveAt) {
+      oddsStatus.textContent = `实时盘 ${beijingStamp(new Date(data.oddsLiveAt))}`;
+      return;
+    }
+    if (data.oddsLiveError) {
+      oddsStatus.textContent = `实时盘被挡 · 快照 ${String(pub).replace(" CST", "")}`;
+      return;
+    }
+    oddsStatus.textContent = pub ? `快照 ${String(pub).replace(" CST", "")}` : "待更新";
+  };
+
+  const grabCalc = () => {
+    const bank = document.getElementById("live-bank");
+    if (!bank) return null;
+    return {
+      bank: bank.value,
+      side: document.getElementById("live-side")?.value,
+      odds: document.getElementById("live-odds")?.value,
+      html: document.getElementById("live-result")?.innerHTML,
+      klass: document.getElementById("live-result")?.className,
+    };
+  };
+  const restoreCalc = (snap) => {
+    if (!snap) return;
+    const bank = document.getElementById("live-bank");
+    if (!bank) return;
+    bank.value = snap.bank;
+    const side = document.getElementById("live-side");
+    const odds = document.getElementById("live-odds");
+    const box = document.getElementById("live-result");
+    if (side && snap.side != null) side.value = snap.side;
+    if (odds && snap.odds != null) odds.value = snap.odds;
+    if (box && snap.html) {
+      box.innerHTML = snap.html;
+      box.className = snap.klass || "live-result";
+    }
   };
 
   const paint = () => {
+    const keep = mode === "now" ? grabCalc() : null;
     document.body.classList.toggle("is-archive", mode !== "now");
     if (menu) {
       for (const btn of menu.querySelectorAll("button[data-mode]")) {
@@ -1170,6 +1263,7 @@ function setup(data) {
     }
     if (mode === "now") {
       renderNow(data, matchId);
+      restoreCalc(keep);
       return;
     }
     clearInterval(clockTimer);
@@ -1184,6 +1278,19 @@ function setup(data) {
       mode = "now";
       paint();
     });
+  };
+
+  const pullOdds = async () => {
+    if (document.hidden) return;
+    if (typeof window.TI15_ODDS?.refreshOdds !== "function") return;
+    try {
+      await window.TI15_ODDS.refreshOdds(data);
+    } catch (err) {
+      data.oddsLiveOk = false;
+      data.oddsLiveError = String(err?.message || err);
+    }
+    updateOddsStatus();
+    if (mode === "now") paint();
   };
 
   if (menu) {
@@ -1234,6 +1341,19 @@ function setup(data) {
 
   updateOddsStatus();
   paint();
+  pullOdds();
+  setInterval(pullOdds, 30000);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) pullOdds();
+  });
+  fetch("./data/daily.json", { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((daily) => {
+      if (!daily) return;
+      data.daily = daily;
+      if (mode === "now") paint();
+    })
+    .catch(() => {});
 }
 
 try {
