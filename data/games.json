@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-17",
+  "asOf": "2026-08-18 15:45 CST",
   "n": 80,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
@@ -313,7 +313,9 @@
         "f10k": "LGD Gaming先到 10 杀（当时 7-10，14分43秒）。这 10 次击杀里，中单 Topson/Windranger 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Malr1ne/Huskar 参与 5 次（击杀4+助攻1），辅Cr1t-/Shadow Demon 参与 3 次，中辅合计10 · 中辅驱动；夜魇中单 Topson/Windranger 参与 6 次（击杀4+助攻2），辅KingJungles/Hoodwink 参与 5 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8942993144"
+      "opendota": "https://www.opendota.com/matches/8942993144",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943000927,
@@ -618,7 +620,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 3-10，16分48秒）。这 10 次击杀里，中单 bzm/Earthshaker 参与 0 次（击杀 0 + 助攻 0），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 lorenof/Huskar 参与 2 次（击杀2+助攻0），辅GH/Mirana 参与 0 次，中辅合计2；夜魇中单 bzm/Earthshaker 参与 0 次（击杀0+助攻0），辅Whitemon/Undying 参与 8 次，中辅合计15 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943000927"
+      "opendota": "https://www.opendota.com/matches/8943000927",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943010675,
@@ -923,7 +927,9 @@
         "f10k": "Team Resilience先到 10 杀（当时 10-7，18分12秒）。这 10 次击杀里，中单 Echozz/Earth Spirit 参与 8 次（击杀 3 + 助攻 5），中单+双辅合计参与 23 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Echozz/Earth Spirit 参与 8 次（击杀3+助攻5），辅planet/Rubick 参与 8 次，中辅合计23 · 中辅驱动；夜魇中单 No[o]ne-/Lina 参与 7 次（击杀1+助攻6），辅9Class/Dark Willow 参与 6 次，中辅合计19 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943010675"
+      "opendota": "https://www.opendota.com/matches/8943010675",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943013334,
@@ -1228,7 +1234,9 @@
         "f10k": "OG先到 10 杀（当时 9-10，28分12秒）。这 10 次击杀里，中单 Yopaj-/Lina 参与 7 次（击杀 5 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 gpk~/Ember Spirit 参与 5 次（击杀3+助攻2），辅Save-/Windranger 参与 4 次，中辅合计13 · 中辅驱动；夜魇中单 Yopaj-/Lina 参与 7 次（击杀5+助攻2），辅skem/Mirana 参与 4 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943013334"
+      "opendota": "https://www.opendota.com/matches/8943013334",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943034557,
@@ -1533,7 +1541,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 10-4，17分34秒）。这 10 次击杀里，中单 Malr1ne/Pangolier 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 19 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 Malr1ne/Pangolier 参与 8 次（击杀5+助攻3），辅Sneyking/Mirana 参与 8 次，中辅合计19 · 中辅驱动；夜魇中单 Topson/Gyrocopter 参与 1 次（击杀0+助攻1），辅KingJungles/Clockwerk 参与 1 次，中辅合计4。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943034557"
+      "opendota": "https://www.opendota.com/matches/8943034557",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943038404,
@@ -1838,7 +1848,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 1-10，9分46秒）。这 10 次击杀里，中单 bzm/Earth Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 1 杀。",
         "mid_support": "天辉中单 lorenof/Storm Spirit 参与 0 次（击杀0+助攻0），辅GH/Bane 参与 1 次，中辅合计1；夜魇中单 bzm/Earth Spirit 参与 5 次（击杀3+助攻2），辅Whitemon/Ringmaster 参与 4 次，中辅合计12 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943038404"
+      "opendota": "https://www.opendota.com/matches/8943038404",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943053016,
@@ -2143,7 +2155,9 @@
         "f10k": "TEAM VISION先到 10 杀（当时 10-3，10分04秒）。这 10 次击杀里，中单 No[o]ne-/Slardar 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 No[o]ne-/Slardar 参与 5 次（击杀2+助攻3），辅9Class/Rubick 参与 7 次，中辅合计16 · 中辅驱动；夜魇中单 Echozz/Earth Spirit 参与 3 次（击杀1+助攻2），辅planet/Clockwerk 参与 3 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943053016"
+      "opendota": "https://www.opendota.com/matches/8943053016",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943055466,
@@ -2448,7 +2462,9 @@
         "f10k": "BoomBoys先到 10 杀（当时 3-10，16分45秒）。这 10 次击杀里，中单 gpk~/Lina 参与 6 次（击杀 5 + 助攻 1），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 Yopaj-/Tiny 参与 1 次（击杀0+助攻1），辅TIMS/Hoodwink 参与 2 次，中辅合计4；夜魇中单 gpk~/Lina 参与 6 次（击杀5+助攻1），辅Save-/Dark Willow 参与 4 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943055466"
+      "opendota": "https://www.opendota.com/matches/8943055466",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943072784,
@@ -2753,7 +2769,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 10-7，11分47秒）。这 10 次击杀里，中单 Malr1ne/Lina 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Malr1ne/Lina 参与 6 次（击杀4+助攻2），辅Sneyking/Crystal Maiden 参与 7 次，中辅合计18 · 中辅驱动；夜魇中单 Topson/Dragon Knight 参与 3 次（击杀1+助攻2），辅Thiolicor/Shadow Demon 参与 5 次，中辅合计11 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943072784"
+      "opendota": "https://www.opendota.com/matches/8943072784",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943091110,
@@ -3058,7 +3076,9 @@
         "f10k": "Vici Gaming先到 10 杀（当时 8-10，16分06秒）。这 10 次击杀里，中单 Xm/Earth Spirit 参与 4 次（击杀 1 + 助攻 3），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 Nisha/Lina 参与 6 次（击杀5+助攻1），辅Boxi/Clockwerk 参与 7 次，中辅合计18 · 中辅驱动；夜魇中单 Xm/Earth Spirit 参与 4 次（击杀1+助攻3），辅y`/Tusk 参与 6 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943091110"
+      "opendota": "https://www.opendota.com/matches/8943091110",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943098449,
@@ -3363,7 +3383,9 @@
         "f10k": "TEAM VISION先到 10 杀（当时 10-0，8分50秒）。这 10 次击杀里，中单 No[o]ne-/Snapfire 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 0 杀。",
         "mid_support": "天辉中单 No[o]ne-/Snapfire 参与 7 次（击杀4+助攻3），辅9Class/Dark Willow 参与 2 次，中辅合计15 · 中辅驱动；夜魇中单 Echozz/Sand King 参与 0 次（击杀0+助攻0），辅zzq/Winter Wyvern 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943098449"
+      "opendota": "https://www.opendota.com/matches/8943098449",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943142948,
@@ -3668,7 +3690,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 10-3，13分37秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Slark 参与 4 次（击杀 4 + 助攻 0），中单+双辅合计参与 6 次。对手当时 3 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Slark 参与 4 次（击杀4+助攻0），辅Saksa/Keeper of the Light 参与 2 次，中辅合计6；夜魇中单 Mirage`雨/Ember Spirit 参与 0 次（击杀0+助攻0），辅sayuw/Hoodwink 参与 3 次，中辅合计3。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943142948"
+      "opendota": "https://www.opendota.com/matches/8943142948",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943143428,
@@ -3973,7 +3997,9 @@
         "f10k": "Team Spirit先到 10 杀（当时 10-5，11分19秒）。这 10 次击杀里，中单 Larl/Storm Spirit 参与 4 次（击杀 4 + 助攻 0），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 Larl/Storm Spirit 参与 4 次（击杀4+助攻0），辅rue/Undying 参与 6 次，中辅合计17 · 中辅驱动；夜魇中单 NothingToSay/Tinker 参与 1 次（击杀1+助攻0），辅xNova/Winter Wyvern 参与 3 次，中辅合计8 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943143428"
+      "opendota": "https://www.opendota.com/matches/8943143428",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943148045,
@@ -4278,7 +4304,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 3-10，17分08秒）。这 10 次击杀里，中单 Nisha/Ember Spirit 参与 2 次（击杀 1 + 助攻 1），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 Xm/Puck 参与 2 次（击杀1+助攻1），辅y`/Elder Titan 参与 2 次，中辅合计5；夜魇中单 Nisha/Ember Spirit 参与 2 次（击杀1+助攻1），辅tOfu/Winter Wyvern 参与 3 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943148045"
+      "opendota": "https://www.opendota.com/matches/8943148045",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943182700,
@@ -4583,7 +4611,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 10-7，16分32秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 7 次（击杀 2 + 助攻 5），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Earth Spirit 参与 7 次（击杀2+助攻5），辅Saksa/Bounty Hunter 参与 5 次，中辅合计17 · 中辅驱动；夜魇中单 Mirage`雨/Invoker 参与 3 次（击杀1+助攻2），辅RESPECT/Hoodwink 参与 2 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943182700"
+      "opendota": "https://www.opendota.com/matches/8943182700",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943200897,
@@ -4888,7 +4918,9 @@
         "f10k": "Xtreme Gaming先到 10 杀（当时 10-7，19分45秒）。这 10 次击杀里，中单 NothingToSay/Ember Spirit 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 NothingToSay/Ember Spirit 参与 6 次（击杀4+助攻2），辅xNova/Winter Wyvern 参与 6 次，中辅合计16 · 中辅驱动；夜魇中单 Larl/Io 参与 4 次（击杀0+助攻4），辅not_me/Rubick 参与 5 次，中辅合计13 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943200897"
+      "opendota": "https://www.opendota.com/matches/8943200897",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943202720,
@@ -5193,7 +5225,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 8-10，13分26秒）。这 10 次击杀里，中单 bzm/Earthshaker 参与 3 次（击杀 0 + 助攻 3），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 gpk~/Snapfire 参与 7 次（击杀3+助攻4），辅Save-/Ringmaster 参与 5 次，中辅合计14 · 中辅驱动；夜魇中单 bzm/Earthshaker 参与 3 次（击杀0+助攻3），辅Whitemon/Tusk 参与 4 次，中辅合计12 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943202720"
+      "opendota": "https://www.opendota.com/matches/8943202720",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943244303,
@@ -5498,7 +5532,9 @@
         "f10k": "Nigma Galaxy先到 10 杀（当时 10-8，24分46秒）。这 10 次击杀里，中单 OmaR/Shadow Shaman 参与 2 次（击杀 0 + 助攻 2），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 OmaR/Shadow Shaman 参与 2 次（击杀0+助攻2），辅lorenof/Ember Spirit 参与 5 次，中辅合计9 · 中辅驱动；夜魇中单 Yopaj-/Earthshaker 参与 4 次（击杀1+助攻3），辅TIMS/Dark Willow 参与 6 次，中辅合计15 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943244303"
+      "opendota": "https://www.opendota.com/matches/8943244303",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943267925,
@@ -5803,7 +5839,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 10-9，22分31秒）。这 10 次击杀里，中单 Malr1ne/Huskar 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 19 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 Malr1ne/Huskar 参与 6 次（击杀4+助攻2），辅Cr1t-/Shadow Demon 参与 5 次，中辅合计19 · 中辅驱动；夜魇中单 No[o]ne-/Viper 参与 4 次（击杀2+助攻2），辅9Class/Bounty Hunter 参与 4 次，中辅合计13 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943267925"
+      "opendota": "https://www.opendota.com/matches/8943267925",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943278347,
@@ -6108,7 +6146,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 6-10，18分58秒）。这 10 次击杀里，中单 bzm/Tiny 参与 6 次（击杀 5 + 助攻 1），中单+双辅合计参与 8 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 gpk~/Puck 参与 3 次（击杀3+助攻0），辅Kataomi`/Elder Titan 参与 5 次，中辅合计11 · 中辅驱动；夜魇中单 bzm/Tiny 参与 6 次（击杀5+助攻1），辅Ari/Hoodwink 参与 1 次，中辅合计8 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943278347"
+      "opendota": "https://www.opendota.com/matches/8943278347",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943324841,
@@ -6413,7 +6453,9 @@
         "f10k": "OG先到 10 杀（当时 10-9，17分47秒）。这 10 次击杀里，中单 Yopaj-/Dragon Knight 参与 7 次（击杀 3 + 助攻 4），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 Yopaj-/Dragon Knight 参与 7 次（击杀3+助攻4），辅TIMS/Rubick 参与 5 次，中辅合计17 · 中辅驱动；夜魇中单 lorenof/Lina 参与 8 次（击杀6+助攻2），辅OmaR/Clockwerk 参与 6 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943324841"
+      "opendota": "https://www.opendota.com/matches/8943324841",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943357930,
@@ -6718,7 +6760,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 9-10，16分36秒）。这 10 次击杀里，中单 bzm/Ember Spirit 参与 4 次（击杀 0 + 助攻 4），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 gpk~/Puck 参与 4 次（击杀0+助攻4），辅Save-/Mirana 参与 7 次，中辅合计17 · 中辅驱动；夜魇中单 bzm/Ember Spirit 参与 4 次（击杀0+助攻4），辅Whitemon/Ringmaster 参与 7 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943357930"
+      "opendota": "https://www.opendota.com/matches/8943357930",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943364918,
@@ -7023,7 +7067,9 @@
         "f10k": "TEAM VISION先到 10 杀（当时 2-10，10分58秒）。这 10 次击杀里，中单 No[o]ne-/Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 2 杀。",
         "mid_support": "天辉中单 Malr1ne/Razor 参与 2 次（击杀1+助攻1），辅Sneyking/Mirana 参与 2 次，中辅合计6；夜魇中单 No[o]ne-/Ember Spirit 参与 5 次（击杀3+助攻2），辅9Class/Pudge 参与 5 次，中辅合计13 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943364918"
+      "opendota": "https://www.opendota.com/matches/8943364918",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8943477775,
@@ -7328,7 +7374,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 9-10，21分03秒）。这 10 次击杀里，中单 Malr1ne/Earth Spirit 参与 3 次（击杀 2 + 助攻 1），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 No[o]ne-/Ember Spirit 参与 6 次（击杀5+助攻1），辅Dukalis/Elder Titan 参与 4 次，中辅合计12 · 中辅驱动；夜魇中单 Malr1ne/Earth Spirit 参与 3 次（击杀2+助攻1），辅Sneyking/Treant Protector 参与 4 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8943477775"
+      "opendota": "https://www.opendota.com/matches/8943477775",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944475950,
@@ -7633,7 +7681,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 4-10，11分34秒）。这 10 次击杀里，中单 Nisha/Earth Spirit 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Invoker 参与 4 次（击杀3+助攻1），辅Saksa/Rubick 参与 3 次，中辅合计7；夜魇中单 Nisha/Earth Spirit 参与 3 次（击杀3+助攻0），辅tOfu/Hoodwink 参与 5 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944475950"
+      "opendota": "https://www.opendota.com/matches/8944475950",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944475884,
@@ -7938,7 +7988,9 @@
         "f10k": "Aurora Gaming先到 10 杀（当时 9-10，20分41秒）。这 10 次击杀里，中单 Mikoto/Ember Spirit 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 Larl/Dragon Knight 参与 4 次（击杀3+助攻1），辅rue/Undying 参与 4 次，中辅合计9 · 中辅驱动；夜魇中单 Mikoto/Ember Spirit 参与 1 次（击杀0+助攻1），辅Mira/Hoodwink 参与 4 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944475884"
+      "opendota": "https://www.opendota.com/matches/8944475884",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944521792,
@@ -8243,7 +8295,9 @@
         "f10k": "Team Spirit先到 10 杀（当时 8-10，12分07秒）。这 10 次击杀里，中单 Larl/Earth Spirit 参与 4 次（击杀 3 + 助攻 1），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 Mikoto/Lina 参与 2 次（击杀2+助攻0），辅Mira/Shadow Demon 参与 5 次，中辅合计8 · 中辅驱动；夜魇中单 Larl/Earth Spirit 参与 4 次（击杀3+助攻1），辅not_me/Bane 参与 7 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944521792"
+      "opendota": "https://www.opendota.com/matches/8944521792",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944525313,
@@ -8548,7 +8602,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 10-8，11分39秒）。这 10 次击杀里，中单 Nisha/Lina 参与 6 次（击杀 0 + 助攻 6），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 Nisha/Lina 参与 6 次（击杀0+助攻6），辅Boxi/Hoodwink 参与 7 次，中辅合计21 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Invoker 参与 7 次（击杀3+助攻4），辅Maladych/Bane 参与 8 次，中辅合计22 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944525313"
+      "opendota": "https://www.opendota.com/matches/8944525313",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944553935,
@@ -8853,7 +8909,9 @@
         "f10k": "LGD Gaming先到 10 杀（当时 10-4，9分34秒）。这 10 次击杀里，中单 Topson/Viper 参与 7 次（击杀 1 + 助攻 6），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 Topson/Viper 参与 7 次（击杀1+助攻6），辅Thiolicor/Dark Willow 参与 5 次，中辅合计17 · 中辅驱动；夜魇中单 lorenof/Nature's Prophet 参与 4 次（击杀4+助攻0），辅OmaR/Clockwerk 参与 3 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944553935"
+      "opendota": "https://www.opendota.com/matches/8944553935",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944565060,
@@ -9158,7 +9216,9 @@
         "f10k": "TEAM VISION先到 10 杀（当时 7-10，23分24秒）。这 10 次击杀里，中单 No[o]ne-/Earth Spirit 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 gpk~/Puck 参与 3 次（击杀3+助攻0），辅Kataomi`/Hoodwink 参与 1 次，中辅合计5；夜魇中单 No[o]ne-/Earth Spirit 参与 7 次（击杀4+助攻3），辅9Class/Dark Willow 参与 7 次，中辅合计20 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944565060"
+      "opendota": "https://www.opendota.com/matches/8944565060",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944570404,
@@ -9463,7 +9523,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 10-4，18分00秒）。这 10 次击杀里，中单 Nisha/Earth Spirit 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 8 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 Nisha/Earth Spirit 参与 3 次（击杀1+助攻2），辅tOfu/Hoodwink 参与 2 次，中辅合计8 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Primal Beast 参与 2 次（击杀2+助攻0），辅Maladych/Jakiro 参与 2 次，中辅合计5。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944570404"
+      "opendota": "https://www.opendota.com/matches/8944570404",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944602781,
@@ -9768,7 +9830,9 @@
         "f10k": "LGD Gaming先到 10 杀（当时 10-7，15分45秒）。这 10 次击杀里，中单 Topson/Riki 参与 9 次（击杀 7 + 助攻 2），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Topson/Riki 参与 9 次（击杀7+助攻2），辅Thiolicor/Dark Willow 参与 5 次，中辅合计18 · 中辅驱动；夜魇中单 lorenof/Puck 参与 4 次（击杀0+助攻4），辅OmaR/Shadow Shaman 参与 4 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944602781"
+      "opendota": "https://www.opendota.com/matches/8944602781",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944612322,
@@ -10073,7 +10137,9 @@
         "f10k": "BoomBoys先到 10 杀（当时 5-10，17分30秒）。这 10 次击杀里，中单 gpk~/Pangolier 参与 5 次（击杀 5 + 助攻 0），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 No[o]ne-/Earth Spirit 参与 4 次（击杀3+助攻1），辅9Class/Bounty Hunter 参与 2 次，中辅合计7；夜魇中单 gpk~/Pangolier 参与 5 次（击杀5+助攻0），辅Save-/Keeper of the Light 参与 7 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944612322"
+      "opendota": "https://www.opendota.com/matches/8944612322",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944611964,
@@ -10378,7 +10444,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 4-10，8分25秒）。这 10 次击杀里，中单 Malr1ne/Snapfire 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 19 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 bzm/Earth Spirit 参与 2 次（击杀0+助攻2），辅Whitemon/Ringmaster 参与 4 次，中辅合计6；夜魇中单 Malr1ne/Snapfire 参与 8 次（击杀5+助攻3），辅Cr1t-/Hoodwink 参与 7 次，中辅合计19 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944611964"
+      "opendota": "https://www.opendota.com/matches/8944611964",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944680063,
@@ -10683,7 +10751,9 @@
         "f10k": "Team Spirit先到 10 杀（当时 4-10，14分47秒）。这 10 次击杀里，中单 Larl/Slardar 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 19 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 Nisha/Earth Spirit 参与 1 次（击杀1+助攻0），辅tOfu/Hoodwink 参与 1 次，中辅合计4；夜魇中单 Larl/Slardar 参与 6 次（击杀2+助攻4），辅not_me/Windranger 参与 7 次，中辅合计19 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944680063"
+      "opendota": "https://www.opendota.com/matches/8944680063",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944695348,
@@ -10988,7 +11058,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 8-10，13分02秒）。这 10 次击杀里，中单 Malr1ne/Lina 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 Whitemon/Tusk 参与 3 次（击杀1+助攻2），辅33/Night Stalker 参与 4 次，中辅合计9 · 中辅驱动；夜魇中单 Malr1ne/Lina 参与 7 次（击杀4+助攻3），辅Sneyking/Enchantress 参与 5 次，中辅合计15 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944695348"
+      "opendota": "https://www.opendota.com/matches/8944695348",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944752572,
@@ -11293,7 +11365,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 6-10，13分15秒）。这 10 次击杀里，中单 Nisha/Ember Spirit 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 5 次。对手当时 6 杀。",
         "mid_support": "天辉中单 Larl/Puck 参与 0 次（击杀0+助攻0），辅rue/Winter Wyvern 参与 2 次，中辅合计3；夜魇中单 Nisha/Ember Spirit 参与 1 次（击杀0+助攻1），辅Boxi/Tusk 参与 1 次，中辅合计5。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944752572"
+      "opendota": "https://www.opendota.com/matches/8944752572",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944764687,
@@ -11598,7 +11672,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 10-0，8分49秒）。这 10 次击杀里，中单 bzm/Sand King 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 0 杀。",
         "mid_support": "天辉中单 bzm/Sand King 参与 3 次（击杀1+助攻2），辅Whitemon/Ringmaster 参与 6 次，中辅合计12 · 中辅驱动；夜魇中单 Malr1ne/Pangolier 参与 0 次（击杀0+助攻0），辅Cr1t-/Shadow Demon 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944764687"
+      "opendota": "https://www.opendota.com/matches/8944764687",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944819470,
@@ -11903,7 +11979,9 @@
         "f10k": "Team Spirit先到 10 杀（当时 7-10，14分10秒）。这 10 次击杀里，中单 Larl/Earth Spirit 参与 4 次（击杀 2 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Nisha/Lina 参与 5 次（击杀5+助攻0），辅tOfu/Witch Doctor 参与 2 次，中辅合计11 · 中辅驱动；夜魇中单 Larl/Earth Spirit 参与 4 次（击杀2+助攻2），辅rue/Tusk 参与 4 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944819470"
+      "opendota": "https://www.opendota.com/matches/8944819470",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944841068,
@@ -12208,7 +12286,9 @@
         "f10k": "Aurora Gaming先到 10 杀（当时 9-10，16分39秒）。这 10 次击杀里，中单 Mikoto/Earth Spirit 参与 4 次（击杀 2 + 助攻 2），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Monkey King 参与 8 次（击杀4+助攻4），辅Saksa/Hoodwink 参与 4 次，中辅合计19 · 中辅驱动；夜魇中单 Mikoto/Earth Spirit 参与 4 次（击杀2+助攻2），辅Mira/Mirana 参与 9 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944841068"
+      "opendota": "https://www.opendota.com/matches/8944841068",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8944931337,
@@ -12513,7 +12593,9 @@
         "f10k": "Aurora Gaming先到 10 杀（当时 10-2，18分22秒）。这 10 次击杀里，中单 Mikoto/Invoker 参与 5 次（击杀 5 + 助攻 0），中单+双辅合计参与 8 次 · 中辅驱动。对手当时 2 杀。",
         "mid_support": "天辉中单 Mikoto/Invoker 参与 5 次（击杀5+助攻0），辅kaori/Winter Wyvern 参与 1 次，中辅合计8 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Ember Spirit 参与 1 次（击杀0+助攻1），辅Saksa/Mirana 参与 1 次，中辅合计3。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8944931337"
+      "opendota": "https://www.opendota.com/matches/8944931337",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8945052416,
@@ -12818,7 +12900,9 @@
         "f10k": "Aurora Gaming先到 10 杀（当时 5-10，18分04秒）。这 10 次击杀里，中单 Mikoto/Earth Spirit 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Necrophos 参与 3 次（击杀1+助攻2），辅Maladych/Undying 参与 4 次，中辅合计10 · 中辅驱动；夜魇中单 Mikoto/Earth Spirit 参与 6 次（击杀4+助攻2），辅kaori/Jakiro 参与 4 次，中辅合计12 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8945052416"
+      "opendota": "https://www.opendota.com/matches/8945052416",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946161660,
@@ -13123,7 +13207,9 @@
         "f10k": "GamerLegion先到 10 杀（当时 10-1，16分25秒）。这 10 次击杀里，中单 RCY/Invoker 参与 5 次（击杀 1 + 助攻 4），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 1 杀。",
         "mid_support": "天辉中单 RCY/Invoker 参与 5 次（击杀1+助攻4），辅Bignum/Tusk 参与 4 次，中辅合计13 · 中辅驱动；夜魇中单 Sneyking/Phoenix 参与 1 次（击杀0+助攻1），辅Cr1t-/Clockwerk 参与 0 次，中辅合计1。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946161660"
+      "opendota": "https://www.opendota.com/matches/8946161660",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946161629,
@@ -13428,7 +13514,9 @@
         "f10k": "Team Resilience先到 10 杀（当时 10-9，17分38秒）。这 10 次击杀里，中单 Echozz/Ember Spirit 参与 7 次（击杀 1 + 助攻 6），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 Echozz/Ember Spirit 参与 7 次（击杀1+助攻6），辅planet/Mirana 参与 8 次，中辅合计21 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Earth Spirit 参与 6 次（击杀4+助攻2），辅Saksa/Hoodwink 参与 6 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946161629"
+      "opendota": "https://www.opendota.com/matches/8946161629",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946228107,
@@ -13733,7 +13821,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 10-3，10分08秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Puck 参与 2 次（击杀 0 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Puck 参与 2 次（击杀0+助攻2），辅Maladych/Witch Doctor 参与 5 次，中辅合计10 · 中辅驱动；夜魇中单 Echozz/Invoker 参与 1 次（击杀0+助攻1），辅planet/Shadow Shaman 参与 2 次，中辅合计4。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946228107"
+      "opendota": "https://www.opendota.com/matches/8946228107",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946228708,
@@ -14038,7 +14128,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 10-9，15分15秒）。这 10 次击杀里，中单 Malr1ne/Earth Spirit 参与 5 次（击杀 4 + 助攻 1），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 Malr1ne/Earth Spirit 参与 5 次（击杀4+助攻1），辅Cr1t-/Mirana 参与 6 次，中辅合计13 · 中辅驱动；夜魇中单 RCY/Centaur Warrunner 参与 2 次（击杀2+助攻0），辅Speeed/Undying 参与 6 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946228708"
+      "opendota": "https://www.opendota.com/matches/8946228708",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946260898,
@@ -14343,7 +14435,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 10-5，14分00秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Snapfire 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Snapfire 参与 5 次（击杀3+助攻2），辅Saksa/Nature's Prophet 参与 4 次，中辅合计13 · 中辅驱动；夜魇中单 Echozz/Pangolier 参与 1 次（击杀0+助攻1），辅zzq/Winter Wyvern 参与 1 次，中辅合计6。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946260898"
+      "opendota": "https://www.opendota.com/matches/8946260898",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946285985,
@@ -14648,7 +14742,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 10-6，23分17秒）。这 10 次击杀里，中单 Malr1ne/Earth Spirit 参与 2 次（击杀 2 + 助攻 0），中单+双辅合计参与 6 次。对手当时 6 杀。",
         "mid_support": "天辉中单 Malr1ne/Earth Spirit 参与 2 次（击杀2+助攻0），辅Cr1t-/Lion 参与 4 次，中辅合计6；夜魇中单 RCY/Void Spirit 参与 2 次（击杀2+助攻0），辅Bignum/Hoodwink 参与 3 次，中辅合计5。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946285985"
+      "opendota": "https://www.opendota.com/matches/8946285985",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946303764,
@@ -14953,7 +15049,9 @@
         "f10k": "Nigma Galaxy先到 10 杀（当时 7-10，16分11秒）。这 10 次击杀里，中单 lorenof/Viper 参与 1 次（击杀 1 + 助攻 0），中单+双辅合计参与 6 次。对手当时 7 杀。",
         "mid_support": "天辉中单 Xm/Shadow Fiend 参与 2 次（击杀2+助攻0），辅y`/Mirana 参与 4 次，中辅合计8 · 中辅驱动；夜魇中单 lorenof/Viper 参与 1 次（击杀1+助攻0），辅OmaR/Hoodwink 参与 5 次，中辅合计6。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946303764"
+      "opendota": "https://www.opendota.com/matches/8946303764",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946337070,
@@ -15258,7 +15356,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 10-7，18分11秒）。这 10 次击杀里，中单 Nisha/Storm Spirit 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 24 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Nisha/Storm Spirit 参与 8 次（击杀5+助攻3），辅tOfu/Mirana 参与 8 次，中辅合计24 · 中辅驱动；夜魇中单 bzm/Earth Spirit 参与 2 次（击杀1+助攻1），辅Whitemon/Ringmaster 参与 3 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946337070"
+      "opendota": "https://www.opendota.com/matches/8946337070",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946343023,
@@ -15563,7 +15663,9 @@
         "f10k": "BoomBoys先到 10 杀（当时 10-4，18分34秒）。这 10 次击杀里，中单 gpk~/Slardar 参与 8 次（击杀 2 + 助攻 6），中单+双辅合计参与 23 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 gpk~/Slardar 参与 8 次（击杀2+助攻6），辅Kataomi`/Undying 参与 8 次，中辅合计23 · 中辅驱动；夜魇中单 Mikoto/Earth Spirit 参与 3 次（击杀1+助攻2），辅Mira/Mirana 参与 4 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946343023"
+      "opendota": "https://www.opendota.com/matches/8946343023",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946351114,
@@ -15868,7 +15970,9 @@
         "f10k": "TEAM VISION先到 10 杀（当时 4-10，15分43秒）。这 10 次击杀里，中单 No[o]ne-/Earth Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 Larl/Slardar 参与 3 次（击杀1+助攻2），辅rue/Clockwerk 参与 4 次，中辅合计10 · 中辅驱动；夜魇中单 No[o]ne-/Earth Spirit 参与 5 次（击杀2+助攻3），辅9Class/Dark Willow 参与 7 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946351114"
+      "opendota": "https://www.opendota.com/matches/8946351114",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946386614,
@@ -16173,7 +16277,9 @@
         "f10k": "Vici Gaming先到 10 杀（当时 9-10，24分48秒）。这 10 次击杀里，中单 Xm/Puck 参与 6 次（击杀 3 + 助攻 3），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 lorenof/Void Spirit 参与 6 次（击杀3+助攻3），辅GH/Mirana 参与 4 次，中辅合计14 · 中辅驱动；夜魇中单 Xm/Puck 参与 6 次（击杀3+助攻3），辅y`/Tusk 参与 5 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946386614"
+      "opendota": "https://www.opendota.com/matches/8946386614",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946414154,
@@ -16478,7 +16584,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 10-8，12分26秒）。这 10 次击杀里，中单 Nisha/Earth Spirit 参与 7 次（击杀 2 + 助攻 5），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 Nisha/Earth Spirit 参与 7 次（击杀2+助攻5），辅tOfu/Shadow Demon 参与 8 次，中辅合计22 · 中辅驱动；夜魇中单 bzm/Ember Spirit 参与 5 次（击杀0+助攻5），辅Ari/Tusk 参与 8 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946414154"
+      "opendota": "https://www.opendota.com/matches/8946414154",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946416702,
@@ -16783,7 +16891,9 @@
         "f10k": "Aurora Gaming先到 10 杀（当时 10-2，12分25秒）。这 10 次击杀里，中单 Mikoto/Earth Spirit 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 2 杀。",
         "mid_support": "天辉中单 Mikoto/Earth Spirit 参与 3 次（击杀1+助攻2），辅Mira/Hoodwink 参与 6 次，中辅合计13 · 中辅驱动；夜魇中单 gpk~/Slardar 参与 2 次（击杀1+助攻1），辅Save-/Ringmaster 参与 1 次，中辅合计4。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946416702"
+      "opendota": "https://www.opendota.com/matches/8946416702",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946428867,
@@ -17088,7 +17198,9 @@
         "f10k": "TEAM VISION先到 10 杀（当时 10-9，28分37秒）。这 10 次击杀里，中单 No[o]ne-/Earth Spirit 参与 8 次（击杀 6 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 No[o]ne-/Earth Spirit 参与 8 次（击杀6+助攻2），辅9Class/Dark Willow 参与 4 次，中辅合计14 · 中辅驱动；夜魇中单 Larl/Ember Spirit 参与 4 次（击杀3+助攻1），辅rue/Ringmaster 参与 4 次，中辅合计12 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946428867"
+      "opendota": "https://www.opendota.com/matches/8946428867",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946495628,
@@ -17393,7 +17505,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 10-6，12分02秒）。这 10 次击杀里，中单 Nisha/Earth Spirit 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 Nisha/Earth Spirit 参与 3 次（击杀1+助攻2），辅tOfu/Shadow Demon 参与 6 次，中辅合计12 · 中辅驱动；夜魇中单 bzm/Ember Spirit 参与 6 次（击杀3+助攻3），辅Whitemon/Mirana 参与 6 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946495628"
+      "opendota": "https://www.opendota.com/matches/8946495628",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946648249,
@@ -17698,7 +17812,9 @@
         "f10k": "BoomBoys先到 10 杀（当时 7-10，16分12秒）。这 10 次击杀里，中单 gpk~/Monkey King 参与 7 次（击杀 5 + 助攻 2），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Malr1ne/Pangolier 参与 7 次（击杀5+助攻2），辅Cr1t-/Lion 参与 7 次，中辅合计17 · 中辅驱动；夜魇中单 gpk~/Monkey King 参与 7 次（击杀5+助攻2），辅Kataomi`/Hoodwink 参与 6 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946648249"
+      "opendota": "https://www.opendota.com/matches/8946648249",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946735226,
@@ -18003,7 +18119,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 9-10，14分35秒）。这 10 次击杀里，中单 Ari/Lion 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Centaur Warrunner 参与 5 次（击杀1+助攻4），辅Saksa/Hoodwink 参与 6 次，中辅合计14 · 中辅驱动；夜魇中单 Ari/Lion 参与 6 次（击杀4+助攻2），辅Whitemon/Winter Wyvern 参与 3 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946735226"
+      "opendota": "https://www.opendota.com/matches/8946735226",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946740853,
@@ -18308,7 +18426,9 @@
         "f10k": "Aurora Gaming先到 10 杀（当时 10-6，12分44秒）。这 10 次击杀里，中单 Mikoto/Ember Spirit 参与 7 次（击杀 1 + 助攻 6），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 Mikoto/Ember Spirit 参与 7 次（击杀1+助攻6），辅Mira/Mirana 参与 7 次，中辅合计14 · 中辅驱动；夜魇中单 Nisha/Huskar 参与 4 次（击杀4+助攻0），辅tOfu/Hoodwink 参与 3 次，中辅合计8 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946740853"
+      "opendota": "https://www.opendota.com/matches/8946740853",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946758310,
@@ -18613,7 +18733,9 @@
         "f10k": "BoomBoys先到 10 杀（当时 5-10，13分18秒）。这 10 次击杀里，中单 gpk~/Snapfire 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 Malr1ne/Centaur Warrunner 参与 2 次（击杀0+助攻2），辅Sneyking/Undying 参与 4 次，中辅合计7；夜魇中单 gpk~/Snapfire 参与 6 次（击杀2+助攻4），辅Kataomi`/Winter Wyvern 参与 5 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946758310"
+      "opendota": "https://www.opendota.com/matches/8946758310",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946860406,
@@ -18918,7 +19040,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 10-6，9分54秒）。这 10 次击杀里，中单 Nisha/Invoker 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 Nisha/Invoker 参与 6 次（击杀2+助攻4），辅Boxi/Hoodwink 参与 8 次，中辅合计20 · 中辅驱动；夜魇中单 Mikoto/Lina 参与 6 次（击杀4+助攻2），辅kaori/Jakiro 参与 4 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946860406"
+      "opendota": "https://www.opendota.com/matches/8946860406",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946858055,
@@ -19223,7 +19347,9 @@
         "f10k": "Team Spirit先到 10 杀（当时 6-10，11分20秒）。这 10 次击杀里，中单 Larl/Lina 参与 7 次（击杀 3 + 助攻 4），中单+双辅合计参与 19 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 lorenof/Ember Spirit 参与 3 次（击杀1+助攻2），辅OmaR/Hoodwink 参与 2 次，中辅合计6；夜魇中单 Larl/Lina 参与 7 次（击杀3+助攻4），辅rue/Clockwerk 参与 7 次，中辅合计19 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946858055"
+      "opendota": "https://www.opendota.com/matches/8946858055",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946872708,
@@ -19528,7 +19654,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 10-8，18分40秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Invoker 参与 4 次（击杀 1 + 助攻 3），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Invoker 参与 4 次（击杀1+助攻3），辅Saksa/Nature's Prophet 参与 5 次，中辅合计13 · 中辅驱动；夜魇中单 bzm/Earth Spirit 参与 2 次（击杀2+助攻0），辅Ari/Hoodwink 参与 2 次，中辅合计6。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946872708"
+      "opendota": "https://www.opendota.com/matches/8946872708",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946889239,
@@ -19833,7 +19961,9 @@
         "f10k": "BoomBoys先到 10 杀（当时 8-10，22分12秒）。这 10 次击杀里，中单 gpk~/Lina 参与 6 次（击杀 3 + 助攻 3），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀1+助攻4），辅Cr1t-/Lion 参与 5 次，中辅合计15 · 中辅驱动；夜魇中单 gpk~/Lina 参与 6 次（击杀3+助攻3），辅Kataomi`/Winter Wyvern 参与 4 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946889239"
+      "opendota": "https://www.opendota.com/matches/8946889239",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8946996385,
@@ -20138,7 +20268,9 @@
         "f10k": "Team Liquid先到 10 杀（当时 7-10，13分01秒）。这 10 次击杀里，中单 Nisha/Pangolier 参与 6 次（击杀 1 + 助攻 5），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 Mikoto/Lina 参与 3 次（击杀1+助攻2），辅kaori/Jakiro 参与 6 次，中辅合计12 · 中辅驱动；夜魇中单 Nisha/Pangolier 参与 6 次（击杀1+助攻5），辅tOfu/Treant Protector 参与 5 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8946996385"
+      "opendota": "https://www.opendota.com/matches/8946996385",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8947008125,
@@ -20443,7 +20575,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 10-3，12分50秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Snapfire 参与 4 次（击杀 3 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Snapfire 参与 4 次（击杀3+助攻1），辅Saksa/Rubick 参与 3 次，中辅合计11 · 中辅驱动；夜魇中单 bzm/Storm Spirit 参与 0 次（击杀0+助攻0），辅Whitemon/Bane 参与 2 次，中辅合计2。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8947008125"
+      "opendota": "https://www.opendota.com/matches/8947008125",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8947050343,
@@ -20748,7 +20882,9 @@
         "f10k": "Nigma Galaxy先到 10 杀（当时 5-10，13分15秒）。这 10 次击杀里，中单 lorenof/Ember Spirit 参与 6 次（击杀 3 + 助攻 3），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 Larl/Invoker 参与 4 次（击杀3+助攻1），辅rue/Hoodwink 参与 0 次，中辅合计8 · 中辅驱动；夜魇中单 lorenof/Ember Spirit 参与 6 次（击杀3+助攻3），辅GH/Dazzle 参与 4 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8947050343"
+      "opendota": "https://www.opendota.com/matches/8947050343",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8947983249,
@@ -21053,7 +21189,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 3-10，15分13秒）。这 10 次击杀里，中单 Malr1ne/Snapfire 参与 5 次（击杀 4 + 助攻 1），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 Xm/Storm Spirit 参与 2 次（击杀0+助攻2），辅y`/Undying 参与 3 次，中辅合计7；夜魇中单 Malr1ne/Snapfire 参与 5 次（击杀4+助攻1），辅Sneyking/Treant Protector 参与 4 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8947983249"
+      "opendota": "https://www.opendota.com/matches/8947983249",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948026518,
@@ -21358,7 +21496,9 @@
         "f10k": "BoomBoys先到 10 杀（当时 10-9，20分24秒）。这 10 次击杀里，中单 gpk~/Dragon Knight 参与 7 次（击杀 3 + 助攻 4），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 9 杀。",
         "mid_support": "天辉中单 gpk~/Dragon Knight 参与 7 次（击杀3+助攻4），辅Kataomi`/Undying 参与 8 次，中辅合计22 · 中辅驱动；夜魇中单 Mikoto/Invoker 参与 8 次（击杀5+助攻3），辅kaori/Jakiro 参与 7 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948026518"
+      "opendota": "https://www.opendota.com/matches/8948026518",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948040486,
@@ -21663,7 +21803,9 @@
         "f10k": "Team Falcons先到 10 杀（当时 10-5，18分48秒）。这 10 次击杀里，中单 Malr1ne/Sand King 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 Malr1ne/Sand King 参与 5 次（击杀3+助攻2），辅Sneyking/Crystal Maiden 参与 5 次，中辅合计14 · 中辅驱动；夜魇中单 Xm/Pangolier 参与 2 次（击杀2+助攻0），辅XinQ/Shadow Demon 参与 2 次，中辅合计4。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948040486"
+      "opendota": "https://www.opendota.com/matches/8948040486",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948094765,
@@ -21968,7 +22110,9 @@
         "f10k": "Aurora Gaming先到 10 杀（当时 10-5，13分42秒）。这 10 次击杀里，中单 Mikoto/Ember Spirit 参与 7 次（击杀 2 + 助攻 5），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 5 杀。",
         "mid_support": "天辉中单 Mikoto/Ember Spirit 参与 7 次（击杀2+助攻5），辅Mira/Hoodwink 参与 8 次，中辅合计20 · 中辅驱动；夜魇中单 gpk~/Slark 参与 3 次（击杀3+助攻0），辅Save-/Keeper of the Light 参与 4 次，中辅合计11 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948094765"
+      "opendota": "https://www.opendota.com/matches/8948094765",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948094346,
@@ -22273,7 +22417,9 @@
         "f10k": "Team Spirit先到 10 杀（当时 10-6，10分14秒）。这 10 次击杀里，中单 Larl/Earth Spirit 参与 5 次（击杀 1 + 助攻 4），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 Larl/Earth Spirit 参与 5 次（击杀1+助攻4），辅not_me/Windranger 参与 3 次，中辅合计13 · 中辅驱动；夜魇中单 Echozz/Invoker 参与 3 次（击杀0+助攻3），辅zzq/Winter Wyvern 参与 5 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948094346"
+      "opendota": "https://www.opendota.com/matches/8948094346",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948151326,
@@ -22578,7 +22724,9 @@
         "f10k": "Team Resilience先到 10 杀（当时 10-6，11分36秒）。这 10 次击杀里，中单 Echozz/Ember Spirit 参与 6 次（击杀 3 + 助攻 3），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 Echozz/Ember Spirit 参与 6 次（击杀3+助攻3），辅zzq/Winter Wyvern 参与 5 次，中辅合计16 · 中辅驱动；夜魇中单 Larl/Dragon Knight 参与 3 次（击杀0+助攻3），辅rue/Witch Doctor 参与 5 次，中辅合计11 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948151326"
+      "opendota": "https://www.opendota.com/matches/8948151326",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948155771,
@@ -22883,7 +23031,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 3-10，10分15秒）。这 10 次击杀里，中单 bzm/Earth Spirit 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 3 杀。",
         "mid_support": "天辉中单 RCY/Ember Spirit 参与 0 次（击杀0+助攻0），辅Bignum/Hoodwink 参与 2 次，中辅合计2；夜魇中单 bzm/Earth Spirit 参与 9 次（击杀4+助攻5），辅Whitemon/Undying 参与 6 次，中辅合计21 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948155771"
+      "opendota": "https://www.opendota.com/matches/8948155771",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948235815,
@@ -23188,7 +23338,9 @@
         "f10k": "Team Spirit先到 10 杀（当时 4-10，10分34秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 7 次（击杀 1 + 助攻 6），中单+双辅合计参与 19 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 Echozz/Puck 参与 2 次（击杀0+助攻2），辅zzq/Enchantress 参与 3 次，中辅合计6；夜魇中单 Larl/Ember Spirit 参与 7 次（击杀1+助攻6），辅rue/Jakiro 参与 6 次，中辅合计19 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948235815"
+      "opendota": "https://www.opendota.com/matches/8948235815",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948244379,
@@ -23493,7 +23645,9 @@
         "f10k": "Iron Wing先到 10 杀（当时 4-10，10分51秒）。这 10 次击杀里，中单 Ari/Lion 参与 4 次（击杀 2 + 助攻 2），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。",
         "mid_support": "天辉中单 RCY/Centaur Warrunner 参与 2 次（击杀0+助攻2），辅Bignum/Dark Willow 参与 3 次，中辅合计8 · 中辅驱动；夜魇中单 Ari/Lion 参与 4 次（击杀2+助攻2），辅Pure/Kez 参与 7 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948244379"
+      "opendota": "https://www.opendota.com/matches/8948244379",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948311007,
@@ -23798,7 +23952,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 6-10，19分11秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 7 次（击杀 0 + 助攻 7），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 6 杀。",
         "mid_support": "天辉中单 Topson/Dragon Knight 参与 6 次（击杀3+助攻3），辅Thiolicor/Mirana 参与 5 次，中辅合计16 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Earth Spirit 参与 7 次（击杀0+助攻7），辅Maladych/Witch Doctor 参与 7 次，中辅合计22 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948311007"
+      "opendota": "https://www.opendota.com/matches/8948311007",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948420293,
@@ -24103,7 +24259,9 @@
         "f10k": "Team Yandex先到 10 杀（当时 10-7，15分34秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Dragon Knight 参与 6 次（击杀 0 + 助攻 6），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 7 杀。",
         "mid_support": "天辉中单 CHIRA_JUNIOR/Dragon Knight 参与 6 次（击杀0+助攻6），辅Saksa/Bounty Hunter 参与 7 次，中辅合计21 · 中辅驱动；夜魇中单 Topson/Lina 参与 4 次（击杀3+助攻1），辅Thiolicor/Mirana 参与 4 次，中辅合计11 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948420293"
+      "opendota": "https://www.opendota.com/matches/8948420293",
+      "source": "ti15",
+      "patch": "7.41e"
     },
     {
       "match_id": 8948533452,
@@ -24408,7 +24566,9 @@
         "f10k": "LGD Gaming先到 10 杀（当时 10-8，19分42秒）。这 10 次击杀里，中单 Topson/Dragon Knight 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 8 杀。",
         "mid_support": "天辉中单 Topson/Dragon Knight 参与 5 次（击杀3+助攻2），辅Thiolicor/Dark Willow 参与 3 次，中辅合计12 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Snapfire 参与 4 次（击杀3+助攻1），辅Saksa/Bounty Hunter 参与 3 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
-      "opendota": "https://www.opendota.com/matches/8948533452"
+      "opendota": "https://www.opendota.com/matches/8948533452",
+      "source": "ti15",
+      "patch": "7.41e"
     }
   ]
 }
