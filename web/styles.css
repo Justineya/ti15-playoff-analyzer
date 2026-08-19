@@ -57,6 +57,28 @@ body {
   padding: 0;
   text-decoration: none;
 }
+.live-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  background: #14120f;
+}
+.live-tab {
+  border: 0;
+  background: transparent;
+  color: var(--mute);
+  font: inherit;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.live-tab:hover { color: var(--gold); }
+.live-tab.on {
+  color: var(--ink);
+  background: var(--gold);
+}
 .top-right {
   margin-left: auto;
   display: flex;
@@ -770,13 +792,24 @@ footer a { color: var(--gold); }
 .slate-chip .a { font-size: 12px; color: var(--mute); }
 
 .sched-board { margin: 28px 0 8px; }
-.sched-head {
+.sched-head, .sched-foot {
   color: var(--mute);
   font-size: 12px;
   letter-spacing: 0.08em;
-  margin-bottom: 10px;
+  margin: 10px 0 0;
 }
-.sched-head a { color: var(--gold); }
+.sched-head { margin: 0 0 10px; }
+.sched-head a, .sched-foot a { color: var(--gold); }
+.sched-page h1 {
+  font-family: "Noto Serif SC", serif;
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 0 0 18px;
+  border: 0;
+  padding: 0;
+}
+.sched-page .sched-days { margin-top: 4px; }
+.sched-page .slate-chip { padding: 14px 14px 12px; }
+.sched-page .slate-chip .t { font-size: 13px; }
 .sched-days {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -928,6 +961,7 @@ footer a { color: var(--gold); }
   nav { display: none; }
   .topbar { padding: 12px 16px; gap: 12px; }
   .status, .clock-now { font-size: 11px; }
+  .live-tab { padding: 6px 10px; font-size: 12px; }
   .live-teams { gap: 8px; }
   .live-poster { padding: 20px 16px; }
   .crest { width: 72px; height: 72px; }

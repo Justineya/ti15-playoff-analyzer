@@ -1253,9 +1253,28 @@ function scheduleBoard(data, current, byId, known) {
       </div>`;
     })
     .join("");
-  return `<section class="sched-board">
-    <div class="sched-head">四天赛程 · 北京时间 · <a href="${src}" target="_blank" rel="noopener">液体百科</a> · ${err}</div>
-    <div class="sched-days">${cols}</div>
+  return `<div class="sched-days">${cols}</div>
+    <p class="sched-foot">四天 · 北京时间 · <a href="${src}" target="_blank" rel="noopener">液体百科</a> · ${err}</p>`;
+}
+
+function renderSchedulePage(data, matchId) {
+  const matches = data.playoffs?.matches || [];
+  const current = focusMatch(matches, matchId);
+  const known = indexSims(data);
+  const byId = Object.fromEntries(matches.map((x) => [x.id, x]));
+  const app = document.getElementById("app");
+  const demoBar = data.demo
+    ? `<div class="demo-banner"><b>${data.demo.title}</b> ${data.demo.note} <a href="./">回正式站</a></div>`
+    : "";
+  app.innerHTML = `<section class="sched-page">
+    ${demoBar}
+    <div class="arena-kicker">
+      <span>上海 · 东方体育中心</span>
+      <span>四天赛程</span>
+      <span>点一场回现场</span>
+    </div>
+    <h1>赛程</h1>
+    ${scheduleBoard(data, current, byId, known)}
   </section>`;
 }
 
@@ -1342,7 +1361,6 @@ function renderNow(data, matchId) {
     sim && pMap != null && !seriesDone ? pSeriesAfter(pMap, wins.a, wins.b, need) : sim?.series?.pSeriesA;
   const nextMap = sim?.maps?.[nextGame - 1] || sim?.maps?.[0];
   const gMkt = seriesDone ? null : priceFromMarket(gameMarket(sim, nextGame), m.teamA);
-  const slate = scheduleBoard(data, m, byId, known);
   const markets =
     namedSides(m) && sim
       ? `<div class="markets">
@@ -1380,7 +1398,6 @@ function renderNow(data, matchId) {
       ${markets}
     </div>
     ${renderBracket(data, { compact: true, focusId: m.id })}
-    ${slate}
     ${dailyHtml(data.daily)}
     ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}
   </section>`;
@@ -1470,15 +1487,26 @@ function setup(data) {
 
   const paint = () => {
     const keep = mode === "now" ? grabCalc() : null;
-    document.body.classList.toggle("is-archive", mode !== "now");
+    document.body.classList.toggle("is-archive", mode !== "now" && mode !== "sched");
     if (menu) {
       for (const btn of menu.querySelectorAll("button[data-mode]")) {
         btn.classList.toggle("on", btn.dataset.mode === mode);
       }
     }
+    const tabs = document.getElementById("live-tabs");
+    if (tabs) {
+      for (const btn of tabs.querySelectorAll(".live-tab")) {
+        btn.classList.toggle("on", btn.dataset.tab === mode);
+      }
+    }
     if (mode === "now") {
       renderNow(data, matchId);
       restoreCalc(keep);
+      return;
+    }
+    if (mode === "sched") {
+      clearInterval(clockTimer);
+      renderSchedulePage(data, matchId);
       return;
     }
     clearInterval(clockTimer);
@@ -1526,15 +1554,35 @@ function setup(data) {
       }
     }
     updateOddsStatus();
-    if (mode === "now") paint();
+    if (mode === "now" || mode === "sched") paint();
   };
+
+  const brand = document.querySelector(".topbar .brand");
+  if (brand && !document.getElementById("live-tabs")) {
+    const nav = document.createElement("div");
+    nav.className = "live-tabs";
+    nav.id = "live-tabs";
+    nav.setAttribute("role", "tablist");
+    nav.setAttribute("aria-label", "现场导航");
+    nav.innerHTML =
+      '<button type="button" class="live-tab on" data-tab="now">现场</button>' +
+      '<button type="button" class="live-tab" data-tab="sched">赛程</button>';
+    brand.after(nav);
+    nav.addEventListener("click", (e) => {
+      const btn = e.target.closest(".live-tab");
+      if (!btn) return;
+      mode = btn.dataset.tab || "now";
+      closeHistory();
+      paint();
+    });
+  }
 
   if (menu) {
     const items = historyItems(data);
     const top = items.slice(0, 6);
     const teams = items.slice(6);
     menu.innerHTML =
-      `<div class="hist-label">赛程与模型</div>` +
+      `<div class="hist-label">模型</div>` +
       top.map(([id, label]) => `<button type="button" data-mode="${id}">${label}</button>`).join("") +
       (teams.length
         ? `<div class="hist-label">队伍</div>` +
