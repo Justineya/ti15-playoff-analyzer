@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 01:35 CST",
+  "asOf": "2026-08-20 01:55 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -2760,8 +2760,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.535,
-            0.465
+            0.54,
+            0.46
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 2 Winner"
         },
