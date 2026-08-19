@@ -8,7 +8,7 @@
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
   "asOf": "2026-08-18 15:45 CST",
-  "note": "对阵图按液体百科/赛程稿排好，后续场次队伍会随结果填入。时间均为北京时间。",
+  "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
     "Team Liquid",
@@ -189,8 +189,8 @@
       "date": "2026-08-22",
       "label": "第3天 · 败者组四分之一 + 胜者组决赛 + 败者组半决赛",
       "slots": [
-        "lbqf1",
         "lbqf2",
+        "lbqf1",
         "ubf",
         "lbsf"
       ]
@@ -335,7 +335,7 @@
       "id": "lbqf1",
       "round": "败者组四分之一决赛",
       "day": "2026-08-22",
-      "datetime": "2026-08-22 10:00",
+      "datetime": "2026-08-22 13:00",
       "format": "Bo3",
       "teamA": {
         "from": "lbr1a",
@@ -352,7 +352,7 @@
       "id": "lbqf2",
       "round": "败者组四分之一决赛",
       "day": "2026-08-22",
-      "datetime": "2026-08-22 13:00",
+      "datetime": "2026-08-22 10:00",
       "format": "Bo3",
       "teamA": {
         "from": "lbr1b",
@@ -433,5 +433,7 @@
       },
       "status": "awaiting"
     }
-  ]
+  ],
+  "scheduleAsOf": "2026-08-19 09:43 CST",
+  "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
 }
