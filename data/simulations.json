@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 00:42 CST",
+  "asOf": "2026-08-20 01:03 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -853,8 +853,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.525,
-            0.475
+            0.535,
+            0.465
           ],
           "question": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner"
         },
@@ -920,12 +920,12 @@
             "market": "第一局",
             "pick": "Iron Wing",
             "modelP": 0.513,
-            "marketP": 0.525,
-            "odds": 1.9,
-            "roi": -0.023,
-            "ev": -0.012,
+            "marketP": 0.535,
+            "odds": 1.87,
+            "roi": -0.041,
+            "ev": -0.022,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.525，模型 0.513，期望回报率 -2.3%"
+            "note": "买 YES 成本 0.535，模型 0.513，期望回报率 -4.1%"
           },
           {
             "market": "总局数 O/U 2.5",
