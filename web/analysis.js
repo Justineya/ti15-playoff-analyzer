@@ -1278,6 +1278,104 @@ function renderSchedulePage(data, matchId) {
   </section>`;
 }
 
+function placeLabel(k) {
+  return { 1: "冠军", 2: "亚军", 3: "季军", 4: "第四", "5-6": "5–6", "7-8": "7–8" }[k] || k;
+}
+
+function renderTreePage(data) {
+  const tree = data.simulations?.tree;
+  const app = document.getElementById("app");
+  if (!tree) {
+    app.innerHTML = '<p class="empty">还没有 1000 次整树模拟。</p>';
+    return;
+  }
+  const champ = tree.champion || [];
+  const top = champ[0];
+  const bars = champ
+    .map((r) => {
+      const w = Math.max(3, Math.round((r.p || 0) * 100));
+      return `<div class="champ-row">
+        <div class="champ-who">${crest(r.name, "sm")}<span>${TAG[r.name] || r.name}</span></div>
+        <div class="champ-bar"><i style="width:${w}%"></i></div>
+        <b>${pct(r.p)}</b>
+      </div>`;
+    })
+    .join("");
+  const placeHead = ["1", "2", "3", "4", "5-6", "7-8"];
+  const placeRows = Object.entries(tree.place || {})
+    .sort((a, b) => (b[1]["1"] || 0) - (a[1]["1"] || 0) || (b[1]["2"] || 0) - (a[1]["2"] || 0))
+    .map(([name, row]) => {
+      const cells = placeHead.map((k) => `<td>${pct(row[k])}</td>`).join("");
+      return `<tr><td>${crest(name, "sm")} ${TAG[name] || name}</td>${cells}</tr>`;
+    })
+    .join("");
+  const path = (tree.path || [])
+    .map((step, i) => {
+      const when = whenShort(step.when);
+      return `<li>
+        <span class="t">${when || i + 1}</span>
+        <span class="r">${step.round || ""}</span>
+        <b>${TAG[step.winner] || step.winner}</b>
+        <span class="mute">${step.topPair || ""} · ${step.scoreMode || ""} · 这一步 ${pct(step.p)}（${step.n}/${step.of}）</span>
+      </li>`;
+    })
+    .join("");
+  const slotCards = (["ubqf1", "ubqf2", "ubqf3", "ubqf4", "lbr1a", "lbr1b", "ubsf1", "ubsf2", "lbqf2", "lbqf1", "ubf", "lbsf", "lbf", "gf"]
+    .map((id) => {
+      const m = (data.playoffs?.matches || []).find((x) => x.id === id);
+      const slot = tree.slots?.[id];
+      if (!m || !slot) return "";
+      const wins = (slot.winners || [])
+        .slice(0, 3)
+        .map((w) => `${TAG[w.name] || w.name} ${pct(w.p)}`)
+        .join(" · ");
+      const pair = (slot.pairings || [])[0]?.pair || "";
+      return `<article class="tree-slot">
+        <div class="t">${whenShort(m.datetime)} · ${m.round}</div>
+        <div class="p">${pair || "对阵随前面结果"}</div>
+        <div>${wins || "—"}</div>
+      </article>`;
+    })
+    .join(""));
+  app.innerHTML = `<section class="tree-page">
+    <div class="arena-kicker"><span>1000 次整树</span><span>种子 ${tree.seed || ""}</span><span>已锁 ${Object.keys(tree.locked || {}).length} 场</span></div>
+    <h1>走向</h1>
+    <p class="lede">1000 次里冠军出现最多的是 <b>${TAG[top?.name] || top?.name || "—"}</b> ${pct(top?.p)}。下面是名次、最可能一条路、以及每一格谁最常赢。</p>
+    <section class="caveat">
+      <h3>模型没算进去的</h3>
+      <ol>
+        <li>每局独立同分布：没有连胜、没有败者组复仇、没有一天四场的体力。</li>
+        <li>总决赛按一场 Bo5，胜者组冠军没有少赢一局。</li>
+        <li>样本只有本届八强 80 局 + EWC 45%。很多对子 H2H 是 0。</li>
+        <li>BP 用赛前平均阵容。现场锁了英雄，这一页不会立刻改骰子。</li>
+        <li>开赛时间跟液体百科；上一场打满三局，下一场实际会晚，倒计时仍用百科点。</li>
+        <li>没有伤病/替补，也没有上海主场加减成。</li>
+      </ol>
+    </section>
+    <h2>冠军</h2>
+    <div class="champ-list">${bars}</div>
+    <h2>名次</h2>
+    <div class="table-wrap"><table class="src-table compact">
+      <thead><tr><th>队</th><th>冠</th><th>亚</th><th>季</th><th>4</th><th>5–6</th><th>7–8</th></tr></thead>
+      <tbody>${placeRows}</tbody>
+    </table></div>
+    <h2>最可能的一条路</h2>
+    <p class="section-lead">每一步都是：在已经走到这里的那些次里，谁赢的次数最多。不是 14 场各自取众数硬拼。</p>
+    <ol class="tree-path">${path}</ol>
+    <h2>每一格</h2>
+    <div class="tree-grid">${slotCards}</div>
+    <p class="foot-note">${tree.note || ""} 这不是稳胆。</p>
+  </section>`;
+}
+
+function treeTeaser(data) {
+  const top = data.simulations?.tree?.champion?.[0];
+  if (!top) return "";
+  return `<button type="button" class="tree-teaser" data-tab="tree">
+    1000 次模拟 · 冠军最可能 <b>${TAG[top.name] || top.name} ${pct(top.p)}</b> · 看全部走向
+  </button>`;
+}
+
 function lastBoutHtml(prev) {
   if (!prev?.winner) return "";
   const other = prev.winner === prev.teamA ? prev.teamB : prev.teamA;
@@ -1398,6 +1496,7 @@ function renderNow(data, matchId) {
       ${markets}
     </div>
     ${renderBracket(data, { compact: true, focusId: m.id })}
+    ${treeTeaser(data)}
     ${dailyHtml(data.daily)}
     ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}
   </section>`;
@@ -1487,7 +1586,7 @@ function setup(data) {
 
   const paint = () => {
     const keep = mode === "now" ? grabCalc() : null;
-    document.body.classList.toggle("is-archive", mode !== "now" && mode !== "sched");
+    document.body.classList.toggle("is-archive", mode !== "now" && mode !== "sched" && mode !== "tree");
     if (menu) {
       for (const btn of menu.querySelectorAll("button[data-mode]")) {
         btn.classList.toggle("on", btn.dataset.mode === mode);
@@ -1507,6 +1606,11 @@ function setup(data) {
     if (mode === "sched") {
       clearInterval(clockTimer);
       renderSchedulePage(data, matchId);
+      return;
+    }
+    if (mode === "tree") {
+      clearInterval(clockTimer);
+      renderTreePage(data);
       return;
     }
     clearInterval(clockTimer);
@@ -1554,7 +1658,7 @@ function setup(data) {
       }
     }
     updateOddsStatus();
-    if (mode === "now" || mode === "sched") paint();
+    if (mode === "now" || mode === "sched" || mode === "tree") paint();
   };
 
   const brand = document.querySelector(".topbar .brand");
@@ -1566,7 +1670,8 @@ function setup(data) {
     nav.setAttribute("aria-label", "现场导航");
     nav.innerHTML =
       '<button type="button" class="live-tab on" data-tab="now">现场</button>' +
-      '<button type="button" class="live-tab" data-tab="sched">赛程</button>';
+      '<button type="button" class="live-tab" data-tab="sched">赛程</button>' +
+      '<button type="button" class="live-tab" data-tab="tree">走向</button>';
     brand.after(nav);
     nav.addEventListener("click", (e) => {
       const btn = e.target.closest(".live-tab");
@@ -1616,6 +1721,13 @@ function setup(data) {
     paint();
   });
   document.getElementById("app")?.addEventListener("click", (e) => {
+    const jump = e.target.closest("[data-tab='tree']");
+    if (jump && !jump.classList.contains("live-tab")) {
+      mode = "tree";
+      closeHistory();
+      paint();
+      return;
+    }
     const chip = e.target.closest(".slate-chip, .sched-chip, .ladder-match[data-match]");
     if (!chip) return;
     matchId = chip.dataset.match || "";

@@ -952,6 +952,77 @@ footer a { color: var(--gold); }
 .demo-banner a { color: var(--gold); }
 .ladder-match.completed { border-color: rgba(201, 162, 39, 0.35); }
 
+.tree-teaser {
+  display: block;
+  width: 100%;
+  margin: 18px 0 8px;
+  padding: 14px 16px;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.tree-teaser:hover { border-color: var(--gold); }
+.tree-page h1, .tree-page h2 {
+  font-family: "Noto Serif SC", serif;
+  border: 0;
+  padding: 0;
+}
+.tree-page h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 0 0 12px;
+}
+.tree-page h2 { font-size: 22px; margin: 28px 0 12px; }
+.tree-page .lede { max-width: 40em; }
+.caveat {
+  border: 1px solid var(--line);
+  background: #161410;
+  padding: 14px 16px;
+  margin: 18px 0 8px;
+}
+.caveat h3 { margin: 0 0 8px; font-size: 14px; color: var(--gold); }
+.caveat ol { margin: 0; padding-left: 1.2em; color: #d8d1c0; font-size: 14px; }
+.champ-list { display: grid; gap: 8px; }
+.champ-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 48px;
+  gap: 10px;
+  align-items: center;
+}
+.champ-who { display: flex; align-items: center; gap: 8px; }
+.champ-bar { height: 10px; background: #2a2722; overflow: hidden; }
+.champ-bar i { display: block; height: 100%; background: var(--gold); }
+.tree-page .src-table td { vertical-align: middle; }
+.tree-page .src-table .crest-sm { display: inline-block; vertical-align: middle; margin-right: 6px; }
+.table-wrap { overflow-x: auto; }
+.tree-path { list-style: none; margin: 0; padding: 0; }
+.tree-path li {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 8px 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+.tree-path .t { color: var(--gold); font-size: 12px; }
+.tree-path .r { color: var(--mute); font-size: 13px; grid-column: 2; }
+.tree-path b { grid-column: 3; }
+.tree-path .mute { grid-column: 2 / 4; font-size: 12px; }
+.tree-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.tree-slot {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 12px 14px;
+}
+.tree-slot .t { color: var(--gold); font-size: 12px; }
+.tree-slot .p { color: var(--mute); font-size: 12px; margin: 4px 0 6px; }
+
 @media (max-width: 1100px) {
   .sched-days { grid-template-columns: 1fr 1fr; }
 }
@@ -965,5 +1036,7 @@ footer a { color: var(--gold); }
   .live-teams { gap: 8px; }
   .live-poster { padding: 20px 16px; }
   .crest { width: 72px; height: 72px; }
+  .tree-grid, .champ-row { grid-template-columns: 1fr; }
+  .tree-path li { grid-template-columns: 1fr; }
   .clock-cell { min-width: 64px; }
 }

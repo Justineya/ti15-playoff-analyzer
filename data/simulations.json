@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-18 15:45 CST",
+  "asOf": "2026-08-19 16:02 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -5506,6 +5506,1134 @@
       }
     }
   ],
+  "tree": {
+    "runs": 1000,
+    "seed": 20260820,
+    "locked": {},
+    "pMap": {
+      "BoomBoys vs Team Yandex": 0.486,
+      "Iron Wing vs BoomBoys": 0.485,
+      "Iron Wing vs Team Falcons": 0.539,
+      "Iron Wing vs Team Yandex": 0.506,
+      "Nigma Galaxy vs BoomBoys": 0.539,
+      "Nigma Galaxy vs Iron Wing": 0.487,
+      "Nigma Galaxy vs Team Falcons": 0.574,
+      "Nigma Galaxy vs Team Spirit": 0.682,
+      "Nigma Galaxy vs Team Yandex": 0.575,
+      "TEAM VISION vs BoomBoys": 0.71,
+      "TEAM VISION vs Iron Wing": 0.6,
+      "TEAM VISION vs Nigma Galaxy": 0.529,
+      "TEAM VISION vs Team Falcons": 0.625,
+      "TEAM VISION vs Team Liquid": 0.63,
+      "TEAM VISION vs Team Spirit": 0.696,
+      "TEAM VISION vs Team Yandex": 0.637,
+      "Team Falcons vs BoomBoys": 0.556,
+      "Team Falcons vs Team Yandex": 0.5,
+      "Team Liquid vs BoomBoys": 0.514,
+      "Team Liquid vs Iron Wing": 0.539,
+      "Team Liquid vs Nigma Galaxy": 0.369,
+      "Team Liquid vs Team Falcons": 0.483,
+      "Team Liquid vs Team Spirit": 0.46,
+      "Team Liquid vs Team Yandex": 0.527,
+      "Team Spirit vs BoomBoys": 0.51,
+      "Team Spirit vs Iron Wing": 0.498,
+      "Team Spirit vs Team Falcons": 0.479,
+      "Team Spirit vs Team Yandex": 0.428
+    },
+    "champion": [
+      {
+        "name": "TEAM VISION",
+        "n": 423,
+        "p": 0.423
+      },
+      {
+        "name": "Nigma Galaxy",
+        "n": 206,
+        "p": 0.206
+      },
+      {
+        "name": "Iron Wing",
+        "n": 91,
+        "p": 0.091
+      },
+      {
+        "name": "Team Falcons",
+        "n": 67,
+        "p": 0.067
+      },
+      {
+        "name": "Team Yandex",
+        "n": 61,
+        "p": 0.061
+      },
+      {
+        "name": "Team Liquid",
+        "n": 60,
+        "p": 0.06
+      },
+      {
+        "name": "BoomBoys",
+        "n": 50,
+        "p": 0.05
+      },
+      {
+        "name": "Team Spirit",
+        "n": 42,
+        "p": 0.042
+      }
+    ],
+    "place": {
+      "TEAM VISION": {
+        "1": 0.423,
+        "2": 0.192,
+        "3": 0.109,
+        "4": 0.077,
+        "5-6": 0.13,
+        "7-8": 0.069
+      },
+      "Team Liquid": {
+        "1": 0.06,
+        "2": 0.1,
+        "3": 0.139,
+        "4": 0.127,
+        "5-6": 0.298,
+        "7-8": 0.276
+      },
+      "Nigma Galaxy": {
+        "1": 0.206,
+        "2": 0.191,
+        "3": 0.153,
+        "4": 0.103,
+        "5-6": 0.188,
+        "7-8": 0.159
+      },
+      "Team Spirit": {
+        "1": 0.042,
+        "2": 0.072,
+        "3": 0.138,
+        "4": 0.121,
+        "5-6": 0.358,
+        "7-8": 0.269
+      },
+      "Iron Wing": {
+        "1": 0.091,
+        "2": 0.115,
+        "3": 0.123,
+        "4": 0.14,
+        "5-6": 0.256,
+        "7-8": 0.275
+      },
+      "Team Falcons": {
+        "1": 0.067,
+        "2": 0.123,
+        "3": 0.112,
+        "4": 0.146,
+        "5-6": 0.27,
+        "7-8": 0.282
+      },
+      "BoomBoys": {
+        "1": 0.05,
+        "2": 0.062,
+        "3": 0.09,
+        "4": 0.141,
+        "5-6": 0.27,
+        "7-8": 0.387
+      },
+      "Team Yandex": {
+        "1": 0.061,
+        "2": 0.145,
+        "3": 0.136,
+        "4": 0.145,
+        "5-6": 0.23,
+        "7-8": 0.283
+      }
+    },
+    "slots": {
+      "ubqf1": {
+        "winners": [
+          {
+            "name": "Team Spirit",
+            "n": 507,
+            "p": 0.507
+          },
+          {
+            "name": "Iron Wing",
+            "n": 493,
+            "p": 0.493
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Iron Wing vs Team Spirit",
+            "n": 1000,
+            "p": 1.0
+          }
+        ]
+      },
+      "ubqf2": {
+        "winners": [
+          {
+            "name": "TEAM VISION",
+            "n": 784,
+            "p": 0.784
+          },
+          {
+            "name": "BoomBoys",
+            "n": 216,
+            "p": 0.216
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "TEAM VISION vs BoomBoys",
+            "n": 1000,
+            "p": 1.0
+          }
+        ]
+      },
+      "ubqf3": {
+        "winners": [
+          {
+            "name": "Team Liquid",
+            "n": 516,
+            "p": 0.516
+          },
+          {
+            "name": "Team Yandex",
+            "n": 484,
+            "p": 0.484
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Team Liquid vs Team Yandex",
+            "n": 1000,
+            "p": 1.0
+          }
+        ]
+      },
+      "ubqf4": {
+        "winners": [
+          {
+            "name": "Nigma Galaxy",
+            "n": 606,
+            "p": 0.606
+          },
+          {
+            "name": "Team Falcons",
+            "n": 394,
+            "p": 0.394
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Nigma Galaxy vs Team Falcons",
+            "n": 1000,
+            "p": 1.0
+          }
+        ]
+      },
+      "lbr1a": {
+        "winners": [
+          {
+            "name": "BoomBoys",
+            "n": 397,
+            "p": 0.397
+          },
+          {
+            "name": "Iron Wing",
+            "n": 232,
+            "p": 0.232
+          },
+          {
+            "name": "Team Spirit",
+            "n": 224,
+            "p": 0.224
+          },
+          {
+            "name": "TEAM VISION",
+            "n": 147,
+            "p": 0.147
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Team Spirit vs BoomBoys",
+            "n": 394,
+            "p": 0.394
+          },
+          {
+            "pair": "Iron Wing vs BoomBoys",
+            "n": 390,
+            "p": 0.39
+          },
+          {
+            "pair": "Iron Wing vs TEAM VISION",
+            "n": 117,
+            "p": 0.117
+          },
+          {
+            "pair": "Team Spirit vs TEAM VISION",
+            "n": 99,
+            "p": 0.099
+          }
+        ]
+      },
+      "lbr1b": {
+        "winners": [
+          {
+            "name": "Team Falcons",
+            "n": 324,
+            "p": 0.324
+          },
+          {
+            "name": "Nigma Galaxy",
+            "n": 235,
+            "p": 0.235
+          },
+          {
+            "name": "Team Yandex",
+            "n": 233,
+            "p": 0.233
+          },
+          {
+            "name": "Team Liquid",
+            "n": 208,
+            "p": 0.208
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Team Yandex vs Team Falcons",
+            "n": 314,
+            "p": 0.314
+          },
+          {
+            "pair": "Team Liquid vs Team Falcons",
+            "n": 292,
+            "p": 0.292
+          },
+          {
+            "pair": "Team Yandex vs Nigma Galaxy",
+            "n": 202,
+            "p": 0.202
+          },
+          {
+            "pair": "Team Liquid vs Nigma Galaxy",
+            "n": 192,
+            "p": 0.192
+          }
+        ]
+      },
+      "ubsf1": {
+        "winners": [
+          {
+            "name": "TEAM VISION",
+            "n": 542,
+            "p": 0.542
+          },
+          {
+            "name": "Iron Wing",
+            "n": 197,
+            "p": 0.197
+          },
+          {
+            "name": "Team Spirit",
+            "n": 147,
+            "p": 0.147
+          },
+          {
+            "name": "BoomBoys",
+            "n": 114,
+            "p": 0.114
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Iron Wing vs TEAM VISION",
+            "n": 394,
+            "p": 0.394
+          },
+          {
+            "pair": "Team Spirit vs TEAM VISION",
+            "n": 390,
+            "p": 0.39
+          },
+          {
+            "pair": "Team Spirit vs BoomBoys",
+            "n": 117,
+            "p": 0.117
+          },
+          {
+            "pair": "Iron Wing vs BoomBoys",
+            "n": 99,
+            "p": 0.099
+          }
+        ]
+      },
+      "ubsf2": {
+        "winners": [
+          {
+            "name": "Nigma Galaxy",
+            "n": 406,
+            "p": 0.406
+          },
+          {
+            "name": "Team Yandex",
+            "n": 211,
+            "p": 0.211
+          },
+          {
+            "name": "Team Falcons",
+            "n": 193,
+            "p": 0.193
+          },
+          {
+            "name": "Team Liquid",
+            "n": 190,
+            "p": 0.19
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Team Liquid vs Nigma Galaxy",
+            "n": 314,
+            "p": 0.314
+          },
+          {
+            "pair": "Team Yandex vs Nigma Galaxy",
+            "n": 292,
+            "p": 0.292
+          },
+          {
+            "pair": "Team Liquid vs Team Falcons",
+            "n": 202,
+            "p": 0.202
+          },
+          {
+            "pair": "Team Yandex vs Team Falcons",
+            "n": 192,
+            "p": 0.192
+          }
+        ]
+      },
+      "lbqf2": {
+        "winners": [
+          {
+            "name": "Iron Wing",
+            "n": 155,
+            "p": 0.155
+          },
+          {
+            "name": "Team Falcons",
+            "n": 152,
+            "p": 0.152
+          },
+          {
+            "name": "TEAM VISION",
+            "n": 147,
+            "p": 0.147
+          },
+          {
+            "name": "Nigma Galaxy",
+            "n": 138,
+            "p": 0.138
+          },
+          {
+            "name": "Team Yandex",
+            "n": 131,
+            "p": 0.131
+          },
+          {
+            "name": "Team Spirit",
+            "n": 130,
+            "p": 0.13
+          },
+          {
+            "name": "Team Liquid",
+            "n": 91,
+            "p": 0.091
+          },
+          {
+            "name": "BoomBoys",
+            "n": 56,
+            "p": 0.056
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Team Falcons vs Team Spirit",
+            "n": 117,
+            "p": 0.117
+          },
+          {
+            "pair": "Team Falcons vs Iron Wing",
+            "n": 91,
+            "p": 0.091
+          },
+          {
+            "pair": "Team Yandex vs Team Spirit",
+            "n": 86,
+            "p": 0.086
+          },
+          {
+            "pair": "Nigma Galaxy vs Team Spirit",
+            "n": 83,
+            "p": 0.083
+          },
+          {
+            "pair": "Team Falcons vs TEAM VISION",
+            "n": 83,
+            "p": 0.083
+          },
+          {
+            "pair": "Team Liquid vs Iron Wing",
+            "n": 74,
+            "p": 0.074
+          }
+        ]
+      },
+      "lbqf1": {
+        "winners": [
+          {
+            "name": "BoomBoys",
+            "n": 173,
+            "p": 0.173
+          },
+          {
+            "name": "Team Yandex",
+            "n": 145,
+            "p": 0.145
+          },
+          {
+            "name": "Team Liquid",
+            "n": 145,
+            "p": 0.145
+          },
+          {
+            "name": "Iron Wing",
+            "n": 117,
+            "p": 0.117
+          },
+          {
+            "name": "TEAM VISION",
+            "n": 112,
+            "p": 0.112
+          },
+          {
+            "name": "Nigma Galaxy",
+            "n": 109,
+            "p": 0.109
+          },
+          {
+            "name": "Team Falcons",
+            "n": 103,
+            "p": 0.103
+          },
+          {
+            "name": "Team Spirit",
+            "n": 96,
+            "p": 0.096
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "BoomBoys vs Team Liquid",
+            "n": 131,
+            "p": 0.131
+          },
+          {
+            "pair": "BoomBoys vs Team Yandex",
+            "n": 108,
+            "p": 0.108
+          },
+          {
+            "pair": "BoomBoys vs Nigma Galaxy",
+            "n": 81,
+            "p": 0.081
+          },
+          {
+            "pair": "BoomBoys vs Team Falcons",
+            "n": 77,
+            "p": 0.077
+          },
+          {
+            "pair": "Team Spirit vs Team Liquid",
+            "n": 73,
+            "p": 0.073
+          },
+          {
+            "pair": "Iron Wing vs Team Liquid",
+            "n": 69,
+            "p": 0.069
+          }
+        ]
+      },
+      "ubf": {
+        "winners": [
+          {
+            "name": "TEAM VISION",
+            "n": 346,
+            "p": 0.346
+          },
+          {
+            "name": "Nigma Galaxy",
+            "n": 210,
+            "p": 0.21
+          },
+          {
+            "name": "Iron Wing",
+            "n": 97,
+            "p": 0.097
+          },
+          {
+            "name": "Team Yandex",
+            "n": 87,
+            "p": 0.087
+          },
+          {
+            "name": "Team Falcons",
+            "n": 79,
+            "p": 0.079
+          },
+          {
+            "name": "Team Liquid",
+            "n": 74,
+            "p": 0.074
+          },
+          {
+            "name": "BoomBoys",
+            "n": 57,
+            "p": 0.057
+          },
+          {
+            "name": "Team Spirit",
+            "n": 50,
+            "p": 0.05
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "TEAM VISION vs Nigma Galaxy",
+            "n": 218,
+            "p": 0.218
+          },
+          {
+            "pair": "TEAM VISION vs Team Yandex",
+            "n": 120,
+            "p": 0.12
+          },
+          {
+            "pair": "TEAM VISION vs Team Falcons",
+            "n": 103,
+            "p": 0.103
+          },
+          {
+            "pair": "TEAM VISION vs Team Liquid",
+            "n": 101,
+            "p": 0.101
+          },
+          {
+            "pair": "Iron Wing vs Nigma Galaxy",
+            "n": 77,
+            "p": 0.077
+          },
+          {
+            "pair": "Team Spirit vs Nigma Galaxy",
+            "n": 61,
+            "p": 0.061
+          }
+        ]
+      },
+      "lbsf": {
+        "winners": [
+          {
+            "name": "TEAM VISION",
+            "n": 182,
+            "p": 0.182
+          },
+          {
+            "name": "Nigma Galaxy",
+            "n": 144,
+            "p": 0.144
+          },
+          {
+            "name": "Iron Wing",
+            "n": 132,
+            "p": 0.132
+          },
+          {
+            "name": "Team Yandex",
+            "n": 131,
+            "p": 0.131
+          },
+          {
+            "name": "Team Liquid",
+            "n": 109,
+            "p": 0.109
+          },
+          {
+            "name": "Team Falcons",
+            "n": 109,
+            "p": 0.109
+          },
+          {
+            "name": "Team Spirit",
+            "n": 105,
+            "p": 0.105
+          },
+          {
+            "name": "BoomBoys",
+            "n": 88,
+            "p": 0.088
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Team Liquid vs Team Yandex",
+            "n": 36,
+            "p": 0.036
+          },
+          {
+            "pair": "Iron Wing vs Team Spirit",
+            "n": 33,
+            "p": 0.033
+          },
+          {
+            "pair": "BoomBoys vs TEAM VISION",
+            "n": 33,
+            "p": 0.033
+          },
+          {
+            "pair": "Team Spirit vs Iron Wing",
+            "n": 33,
+            "p": 0.033
+          },
+          {
+            "pair": "Team Yandex vs Team Liquid",
+            "n": 32,
+            "p": 0.032
+          },
+          {
+            "pair": "Team Falcons vs Nigma Galaxy",
+            "n": 32,
+            "p": 0.032
+          }
+        ]
+      },
+      "lbf": {
+        "winners": [
+          {
+            "name": "TEAM VISION",
+            "n": 269,
+            "p": 0.269
+          },
+          {
+            "name": "Nigma Galaxy",
+            "n": 187,
+            "p": 0.187
+          },
+          {
+            "name": "Team Yandex",
+            "n": 119,
+            "p": 0.119
+          },
+          {
+            "name": "Team Falcons",
+            "n": 111,
+            "p": 0.111
+          },
+          {
+            "name": "Iron Wing",
+            "n": 109,
+            "p": 0.109
+          },
+          {
+            "name": "Team Liquid",
+            "n": 86,
+            "p": 0.086
+          },
+          {
+            "name": "Team Spirit",
+            "n": 64,
+            "p": 0.064
+          },
+          {
+            "name": "BoomBoys",
+            "n": 55,
+            "p": 0.055
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "TEAM VISION vs Iron Wing",
+            "n": 42,
+            "p": 0.042
+          },
+          {
+            "pair": "Nigma Galaxy vs Team Liquid",
+            "n": 41,
+            "p": 0.041
+          },
+          {
+            "pair": "TEAM VISION vs Team Spirit",
+            "n": 40,
+            "p": 0.04
+          },
+          {
+            "pair": "Team Yandex vs Nigma Galaxy",
+            "n": 38,
+            "p": 0.038
+          },
+          {
+            "pair": "Team Spirit vs TEAM VISION",
+            "n": 35,
+            "p": 0.035
+          },
+          {
+            "pair": "Iron Wing vs TEAM VISION",
+            "n": 33,
+            "p": 0.033
+          }
+        ]
+      },
+      "gf": {
+        "winners": [
+          {
+            "name": "TEAM VISION",
+            "n": 423,
+            "p": 0.423
+          },
+          {
+            "name": "Nigma Galaxy",
+            "n": 206,
+            "p": 0.206
+          },
+          {
+            "name": "Iron Wing",
+            "n": 91,
+            "p": 0.091
+          },
+          {
+            "name": "Team Falcons",
+            "n": 67,
+            "p": 0.067
+          },
+          {
+            "name": "Team Yandex",
+            "n": 61,
+            "p": 0.061
+          },
+          {
+            "name": "Team Liquid",
+            "n": 60,
+            "p": 0.06
+          },
+          {
+            "name": "BoomBoys",
+            "n": 50,
+            "p": 0.05
+          },
+          {
+            "name": "Team Spirit",
+            "n": 42,
+            "p": 0.042
+          }
+        ],
+        "pairings": [
+          {
+            "pair": "Nigma Galaxy vs TEAM VISION",
+            "n": 120,
+            "p": 0.12
+          },
+          {
+            "pair": "TEAM VISION vs Nigma Galaxy",
+            "n": 98,
+            "p": 0.098
+          },
+          {
+            "pair": "TEAM VISION vs Team Yandex",
+            "n": 74,
+            "p": 0.074
+          },
+          {
+            "pair": "TEAM VISION vs Team Falcons",
+            "n": 68,
+            "p": 0.068
+          },
+          {
+            "pair": "TEAM VISION vs Team Liquid",
+            "n": 50,
+            "p": 0.05
+          },
+          {
+            "pair": "Team Yandex vs TEAM VISION",
+            "n": 40,
+            "p": 0.04
+          }
+        ]
+      }
+    },
+    "path": [
+      {
+        "id": "ubqf1",
+        "round": "胜者组首轮",
+        "when": "2026-08-20 10:00",
+        "winner": "Team Spirit",
+        "p": 0.507,
+        "n": 507,
+        "of": 1000,
+        "topPair": "Iron Wing vs Team Spirit",
+        "scoreMode": "Team Spirit 2-1"
+      },
+      {
+        "id": "ubqf2",
+        "round": "胜者组首轮",
+        "when": "2026-08-20 13:00",
+        "winner": "TEAM VISION",
+        "p": 0.769,
+        "n": 390,
+        "of": 507,
+        "topPair": "TEAM VISION vs BoomBoys",
+        "scoreMode": "TEAM VISION 2-0"
+      },
+      {
+        "id": "ubqf3",
+        "round": "胜者组首轮",
+        "when": "2026-08-20 16:00",
+        "winner": "Team Liquid",
+        "p": 0.523,
+        "n": 204,
+        "of": 390,
+        "topPair": "Team Liquid vs Team Yandex",
+        "scoreMode": "Team Liquid 2-1"
+      },
+      {
+        "id": "ubqf4",
+        "round": "胜者组首轮",
+        "when": "2026-08-20 19:00",
+        "winner": "Nigma Galaxy",
+        "p": 0.574,
+        "n": 117,
+        "of": 204,
+        "topPair": "Nigma Galaxy vs Team Falcons",
+        "scoreMode": "Nigma Galaxy 2-0"
+      },
+      {
+        "id": "lbr1a",
+        "round": "败者组首轮",
+        "when": "2026-08-21 10:00",
+        "winner": "BoomBoys",
+        "p": 0.59,
+        "n": 69,
+        "of": 117,
+        "topPair": "Iron Wing vs BoomBoys",
+        "scoreMode": "BoomBoys 2-0"
+      },
+      {
+        "id": "lbr1b",
+        "round": "败者组首轮",
+        "when": "2026-08-21 13:00",
+        "winner": "Team Falcons",
+        "p": 0.594,
+        "n": 41,
+        "of": 69,
+        "topPair": "Team Yandex vs Team Falcons",
+        "scoreMode": "Team Falcons 2-1"
+      },
+      {
+        "id": "ubsf1",
+        "round": "胜者组半决赛",
+        "when": "2026-08-21 16:00",
+        "winner": "TEAM VISION",
+        "p": 0.732,
+        "n": 30,
+        "of": 41,
+        "topPair": "Team Spirit vs TEAM VISION",
+        "scoreMode": "TEAM VISION 2-0"
+      },
+      {
+        "id": "ubsf2",
+        "round": "胜者组半决赛",
+        "when": "2026-08-21 19:00",
+        "winner": "Nigma Galaxy",
+        "p": 0.867,
+        "n": 26,
+        "of": 30,
+        "topPair": "Team Liquid vs Nigma Galaxy",
+        "scoreMode": "Nigma Galaxy 2-1"
+      },
+      {
+        "id": "lbqf2",
+        "round": "败者组四分之一决赛",
+        "when": "2026-08-22 10:00",
+        "winner": "Team Falcons",
+        "p": 0.615,
+        "n": 16,
+        "of": 26,
+        "topPair": "Team Falcons vs Team Spirit",
+        "scoreMode": "Team Falcons 2-1"
+      },
+      {
+        "id": "lbqf1",
+        "round": "败者组四分之一决赛",
+        "when": "2026-08-22 13:00",
+        "winner": "BoomBoys",
+        "p": 0.625,
+        "n": 10,
+        "of": 16,
+        "topPair": "BoomBoys vs Team Liquid",
+        "scoreMode": "BoomBoys 2-1"
+      },
+      {
+        "id": "ubf",
+        "round": "胜者组决赛",
+        "when": "2026-08-22 16:00",
+        "winner": "TEAM VISION",
+        "p": 0.5,
+        "n": 5,
+        "of": 10,
+        "topPair": "TEAM VISION vs Nigma Galaxy",
+        "scoreMode": "TEAM VISION 2-1"
+      },
+      {
+        "id": "lbsf",
+        "round": "败者组半决赛",
+        "when": "2026-08-22 19:00",
+        "winner": "BoomBoys",
+        "p": 0.6,
+        "n": 3,
+        "of": 5,
+        "topPair": "BoomBoys vs Team Falcons",
+        "scoreMode": "BoomBoys 2-1"
+      },
+      {
+        "id": "lbf",
+        "round": "败者组决赛",
+        "when": "2026-08-23 10:00",
+        "winner": "Nigma Galaxy",
+        "p": 1.0,
+        "n": 3,
+        "of": 3,
+        "topPair": "BoomBoys vs Nigma Galaxy",
+        "scoreMode": "Nigma Galaxy 2-0"
+      },
+      {
+        "id": "gf",
+        "round": "总决赛",
+        "when": "2026-08-23 13:00",
+        "winner": "Nigma Galaxy",
+        "p": 0.667,
+        "n": 2,
+        "of": 3,
+        "topPair": "TEAM VISION vs Nigma Galaxy",
+        "scoreMode": "Nigma Galaxy 3-2"
+      }
+    ],
+    "topTrees": [
+      {
+        "n": 4,
+        "p": 0.004,
+        "winners": {
+          "ubqf1": "Team Spirit",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Yandex",
+          "ubqf4": "Team Falcons",
+          "lbr1a": "BoomBoys",
+          "lbr1b": "Nigma Galaxy",
+          "ubsf1": "TEAM VISION",
+          "ubsf2": "Team Falcons",
+          "lbqf2": "Nigma Galaxy",
+          "lbqf1": "Team Yandex",
+          "ubf": "TEAM VISION",
+          "lbsf": "Team Yandex",
+          "lbf": "Team Falcons",
+          "gf": "TEAM VISION"
+        }
+      },
+      {
+        "n": 3,
+        "p": 0.003,
+        "winners": {
+          "ubqf1": "Iron Wing",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Liquid",
+          "ubqf4": "Nigma Galaxy",
+          "lbr1a": "Team Spirit",
+          "lbr1b": "Team Yandex",
+          "ubsf1": "TEAM VISION",
+          "ubsf2": "Nigma Galaxy",
+          "lbqf2": "Team Yandex",
+          "lbqf1": "Team Spirit",
+          "ubf": "TEAM VISION",
+          "lbsf": "Team Spirit",
+          "lbf": "Nigma Galaxy",
+          "gf": "Nigma Galaxy"
+        }
+      },
+      {
+        "n": 3,
+        "p": 0.003,
+        "winners": {
+          "ubqf1": "Iron Wing",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Liquid",
+          "ubqf4": "Nigma Galaxy",
+          "lbr1a": "Team Spirit",
+          "lbr1b": "Team Yandex",
+          "ubsf1": "TEAM VISION",
+          "ubsf2": "Nigma Galaxy",
+          "lbqf2": "Iron Wing",
+          "lbqf1": "Team Spirit",
+          "ubf": "Nigma Galaxy",
+          "lbsf": "Team Spirit",
+          "lbf": "TEAM VISION",
+          "gf": "TEAM VISION"
+        }
+      },
+      {
+        "n": 3,
+        "p": 0.003,
+        "winners": {
+          "ubqf1": "Iron Wing",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Liquid",
+          "ubqf4": "Nigma Galaxy",
+          "lbr1a": "Team Spirit",
+          "lbr1b": "Team Falcons",
+          "ubsf1": "Iron Wing",
+          "ubsf2": "Nigma Galaxy",
+          "lbqf2": "TEAM VISION",
+          "lbqf1": "Team Liquid",
+          "ubf": "Nigma Galaxy",
+          "lbsf": "TEAM VISION",
+          "lbf": "TEAM VISION",
+          "gf": "Nigma Galaxy"
+        }
+      },
+      {
+        "n": 3,
+        "p": 0.003,
+        "winners": {
+          "ubqf1": "Team Spirit",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Liquid",
+          "ubqf4": "Nigma Galaxy",
+          "lbr1a": "Iron Wing",
+          "lbr1b": "Team Falcons",
+          "ubsf1": "TEAM VISION",
+          "ubsf2": "Nigma Galaxy",
+          "lbqf2": "Team Falcons",
+          "lbqf1": "Team Liquid",
+          "ubf": "TEAM VISION",
+          "lbsf": "Team Liquid",
+          "lbf": "Nigma Galaxy",
+          "gf": "TEAM VISION"
+        }
+      }
+    ],
+    "note": "1000 次是把每张地图的模型胜率当骰子，按双败对阵图整棵掷完。每局独立，没有连胜惯性、没有败者组复仇、总决赛没有胜者组少赢一局。已结束的系列会锁死，不再重掷。"
+  },
   "bankroll": {
     "start": 1000,
     "method": "quarter-kelly-on-current-bankroll",

@@ -21,7 +21,35 @@ SIMS_PER_MAP = 5
 MAPS_BO3 = 3
 MAPS_BO5 = 5
 SEED = 20260817
+TREE_RUNS = 1000
+TREE_SEED = 20260820
 EWC_SAMPLE_WEIGHT = 0.45  # 7.41d at EWC vs 7.41e at TI — same skeleton, lighter weight
+EIGHT = [
+    "TEAM VISION",
+    "Team Liquid",
+    "Nigma Galaxy",
+    "Team Spirit",
+    "Iron Wing",
+    "Team Falcons",
+    "BoomBoys",
+    "Team Yandex",
+]
+MATCH_ORDER = [
+    "ubqf1",
+    "ubqf2",
+    "ubqf3",
+    "ubqf4",
+    "lbr1a",
+    "lbr1b",
+    "ubsf1",
+    "ubsf2",
+    "lbqf2",
+    "lbqf1",
+    "ubf",
+    "lbsf",
+    "lbf",
+    "gf",
+]
 
 # 7.41 captain's mode as observed in TI15 parses. 0 = first picker, 1 = second.
 CM = [
@@ -510,6 +538,206 @@ def simulate_series(stats: dict, team_a: str, team_b: str, fmt: str, rng: random
     }
 
 
+def side_name(slot, by_id: dict) -> str | None:
+    if isinstance(slot, str):
+        return slot
+    src = by_id.get((slot or {}).get("from") or "")
+    if not src:
+        return None
+    key = "winner" if slot.get("as") == "winner" else "loser"
+    name = src.get(key)
+    return name if isinstance(name, str) else None
+
+
+def play_series(p_map_a: float, fmt: str, rng: random.Random) -> tuple[bool, str]:
+    need = 3 if (fmt or "").lower() == "bo5" else 2
+    wins_a = wins_b = 0
+    while wins_a < need and wins_b < need:
+        if rng.random() < p_map_a:
+            wins_a += 1
+        else:
+            wins_b += 1
+    return wins_a > wins_b, f"{wins_a}-{wins_b}"
+
+
+def pair_p_map(stats: dict, team_a: str, team_b: str, rng: random.Random) -> float:
+    ps = []
+    for s in range(SIMS_PER_MAP):
+        draft = simulate_draft(random.Random(rng.randint(1, 10**9) + s), stats, team_a, team_b, s % 2 == 0)
+        ps.append(matchup_probs(stats, team_a, team_b, draft)["pWinA"])
+    return sum(ps) / len(ps)
+
+
+def p_map_lookup(cache: dict[tuple[str, str], float], a: str, b: str) -> float:
+    if (a, b) in cache:
+        return cache[(a, b)]
+    if (b, a) in cache:
+        return 1 - cache[(b, a)]
+    return 0.5
+
+
+def one_bracket(matches: list[dict], p_cache: dict[tuple[str, str], float], rng: random.Random) -> dict:
+    state = {m["id"]: dict(m) for m in matches}
+    for _ in range(16):
+        progressed = False
+        for m in state.values():
+            if isinstance(m.get("winner"), str):
+                continue
+            a = side_name(m.get("teamA"), state)
+            b = side_name(m.get("teamB"), state)
+            if not (isinstance(a, str) and isinstance(b, str) and a != b):
+                continue
+            if m.get("status") in {"completed", "complete"} and isinstance(m.get("winner"), str):
+                continue
+            a_wins, score = play_series(p_map_lookup(p_cache, a, b), m.get("format") or "Bo3", rng)
+            m["teamA"] = a
+            m["teamB"] = b
+            m["winner"] = a if a_wins else b
+            m["loser"] = b if a_wins else a
+            if not a_wins:
+                left, right = score.split("-")
+                score = f"{right}-{left}"
+            m["score"] = score
+            progressed = True
+        if not progressed:
+            break
+    return state
+
+
+def finish_place(state: dict) -> dict[str, str]:
+    out = {}
+    gf = state.get("gf") or {}
+    if gf.get("winner"):
+        out[gf["winner"]] = "1"
+    if gf.get("loser"):
+        out[gf["loser"]] = "2"
+    lbf = state.get("lbf") or {}
+    if lbf.get("loser"):
+        out[lbf["loser"]] = "3"
+    lbsf = state.get("lbsf") or {}
+    if lbsf.get("loser"):
+        out[lbsf["loser"]] = "4"
+    for mid in ("lbqf1", "lbqf2"):
+        loser = (state.get(mid) or {}).get("loser")
+        if loser:
+            out[loser] = "5-6"
+    for mid in ("lbr1a", "lbr1b"):
+        loser = (state.get(mid) or {}).get("loser")
+        if loser:
+            out[loser] = "7-8"
+    return out
+
+
+def ranked(counter: Counter, runs: int, limit: int | None = None) -> list[dict]:
+    rows = [{"name": name, "n": n, "p": round(n / runs, 3)} for name, n in counter.most_common(limit)]
+    return rows
+
+
+def simulate_tree(stats: dict, matches: list[dict], rng: random.Random, runs: int = TREE_RUNS) -> dict:
+    p_cache: dict[tuple[str, str], float] = {}
+    for i, a in enumerate(EIGHT):
+        for b in EIGHT[i + 1 :]:
+            p_cache[(a, b)] = pair_p_map(stats, a, b, rng)
+    champ = Counter()
+    place = {name: Counter() for name in EIGHT}
+    slot_win = {mid: Counter() for mid in MATCH_ORDER}
+    slot_pair = {mid: Counter() for mid in MATCH_ORDER}
+    slot_score = {mid: Counter() for mid in MATCH_ORDER}
+    run_log: list[dict[str, dict]] = []
+    locked = {
+        m["id"]: m.get("winner")
+        for m in matches
+        if m.get("status") in {"completed", "complete"} and m.get("winner")
+    }
+    for _ in range(runs):
+        state = one_bracket(matches, p_cache, rng)
+        record: dict[str, dict] = {}
+        for mid in MATCH_ORDER:
+            m = state.get(mid) or {}
+            w = m.get("winner")
+            if not w:
+                continue
+            a, b = m.get("teamA"), m.get("teamB")
+            rec = {"winner": w, "a": a, "b": b, "score": m.get("score") or ""}
+            record[mid] = rec
+            slot_win[mid][w] += 1
+            if isinstance(a, str) and isinstance(b, str):
+                slot_pair[mid][f"{a} vs {b}"] += 1
+            if rec["score"]:
+                slot_score[mid][f"{w} {rec['score']}"] += 1
+        if state.get("gf", {}).get("winner"):
+            champ[state["gf"]["winner"]] += 1
+        for name, bucket in finish_place(state).items():
+            if name in place:
+                place[name][bucket] += 1
+        run_log.append(record)
+    remaining = run_log
+    path = []
+    for mid in MATCH_ORDER:
+        cnt = Counter(r[mid]["winner"] for r in remaining if mid in r)
+        if not cnt:
+            break
+        winner, n = cnt.most_common(1)[0]
+        subset = [r for r in remaining if r.get(mid, {}).get("winner") == winner]
+        match = next((m for m in matches if m["id"] == mid), {})
+        pairs = Counter(
+            f"{r[mid]['a']} vs {r[mid]['b']}"
+            for r in subset
+            if isinstance(r[mid].get("a"), str) and isinstance(r[mid].get("b"), str)
+        )
+        scores = Counter(f"{r[mid]['winner']} {r[mid]['score']}" for r in subset if r[mid].get("score"))
+        path.append(
+            {
+                "id": mid,
+                "round": match.get("round") or mid,
+                "when": match.get("datetime"),
+                "winner": winner,
+                "p": round(n / max(len(remaining), 1), 3),
+                "n": n,
+                "of": len(remaining),
+                "topPair": pairs.most_common(1)[0][0] if pairs else "",
+                "scoreMode": scores.most_common(1)[0][0] if scores else "",
+            }
+        )
+        remaining = subset
+    tree_keys = Counter(tuple(r.get(mid, {}).get("winner", "") for mid in MATCH_ORDER) for r in run_log)
+    top_trees = []
+    for key, n in tree_keys.most_common(5):
+        top_trees.append(
+            {
+                "n": n,
+                "p": round(n / runs, 3),
+                "winners": {mid: key[i] for i, mid in enumerate(MATCH_ORDER) if key[i]},
+            }
+        )
+    p_maps = {f"{a} vs {b}": round(p, 3) for (a, b), p in sorted(p_cache.items())}
+    return {
+        "runs": runs,
+        "seed": TREE_SEED,
+        "locked": locked,
+        "pMap": p_maps,
+        "champion": ranked(champ, runs),
+        "place": {
+            name: {k: round(place[name][k] / runs, 3) for k in ("1", "2", "3", "4", "5-6", "7-8")}
+            for name in EIGHT
+        },
+        "slots": {
+            mid: {
+                "winners": ranked(slot_win[mid], max(sum(slot_win[mid].values()), 1)),
+                "pairings": [{"pair": k, "n": v, "p": round(v / max(sum(slot_pair[mid].values()), 1), 3)} for k, v in slot_pair[mid].most_common(6)],
+            }
+            for mid in MATCH_ORDER
+        },
+        "path": path,
+        "topTrees": top_trees,
+        "note": (
+            "1000 次是把每张地图的模型胜率当骰子，按双败对阵图整棵掷完。"
+            "每局独立，没有连胜惯性、没有败者组复仇、总决赛没有胜者组少赢一局。"
+            "已结束的系列会锁死，不再重掷。"
+        ),
+    }
+
+
 def betting_card(sim: dict, poly: dict | None, sample_n: int) -> dict:
     a, b = sim["teamA"], sim["teamB"]
     series = sim["series"]
@@ -634,11 +862,13 @@ def main() -> None:
         },
         "known": known,
         "scenarios": scenarios,
+        "tree": simulate_tree(stats, matches, random.Random(TREE_SEED)),
         "bankroll": build_bankroll(known, teams_for_bank),
     }
     path = ROOT / "data" / "simulations.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2))
-    print("wrote", path, "known", len(known), "scenarios", len(scenarios))
+    champs = ", ".join(f"{r['name']} {round(r['p']*100)}%" for r in (out["tree"].get("champion") or [])[:3])
+    print("wrote", path, "known", len(known), "scenarios", len(scenarios), "tree", champs)
 
 
 if __name__ == "__main__":
