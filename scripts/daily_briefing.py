@@ -81,7 +81,11 @@ def parse_score(match: dict) -> tuple[int, int]:
 
 def short_why(sim: dict | None) -> str:
     w = (sim or {}).get("why") or ""
-    return w.replace("H2H 0 局", "本届没交过手").replace("常用中单 ", "中单爱拿 ")
+    if "H2H 0 局" in w:
+        w = w.replace("H2H 0 局", "样本没交过手")
+    else:
+        w = w.replace("H2H ", "样本交手 ").replace(" 局", "局")
+    return w.replace("常用中单 ", "中单爱拿 ")
 
 
 def market_prices(poly: dict | None, key: str) -> dict | None:

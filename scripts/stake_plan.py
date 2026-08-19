@@ -423,10 +423,11 @@ def build_bankroll(known: list[dict], teams: dict) -> dict:
         t = teams.get(name) or {}
         n_ti = t.get("gamesTi") or 0
         n_ewc = t.get("gamesEwc") or 0
+        n_maj = t.get("gamesMajor") or 0
         n = t.get("games") or 0
-        got = t.get("f10k_got") or 0
         rate = t.get("f10k_rate")
-        return f"模型样本 TI {n_ti} + EWC {n_ewc}（有效 {round(n,1)}）· 先到10杀 {round((rate or 0)*100)}%"
+        extra = f"+ 大赛 {n_maj} " if n_maj else ""
+        return f"模型样本 TI {n_ti} + EWC {n_ewc} {extra}（有效 {round(n,1)}）· 先到10杀 {round((rate or 0)*100)}%"
 
     picks = [
         {
