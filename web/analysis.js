@@ -42,7 +42,7 @@ function whenShort(dt) {
 
 function resolveSide(slot, byId) {
   if (typeof slot === "string") {
-    return { tag: TAG[slot] || slot.slice(0, 4), name: slot, tbd: false, drop: "" };
+    return { tag: TAG[slot] || slot.slice(0, 4), name: slot, team: slot, tbd: false, drop: "" };
   }
   const src = byId[slot?.from];
   const kind = slot?.as === "winner" ? "胜者" : "败者";
@@ -65,15 +65,23 @@ function resolveSide(slot, byId) {
   };
 }
 
-function teamRow(t) {
-  return `<div class="ladder-team ${t.tbd ? "tbd" : ""}">
-    <span class="ladder-tag">${t.tag}</span>
-    <span class="ladder-name">${t.name}</span>
+function teamCrest(t) {
+  if (t.team) return crest(t.team, "sm");
+  return `<div class="crest-sm ghost" aria-hidden="true"></div>`;
+}
+
+function teamRow(t, opts = {}) {
+  const win = Boolean(opts.winner && t.team && t.team === opts.winner);
+  const primary = opts.compact && t.tbd ? t.name : t.tag;
+  return `<div class="ladder-team ${t.tbd ? "tbd" : ""} ${win ? "win" : ""}">
+    ${teamCrest(t)}
+    <span class="ladder-tag">${primary}</span>
+    ${opts.compact ? "" : `<span class="ladder-name">${t.name}</span>`}
     ${t.drop ? `<span class="ladder-drop">${t.drop}</span>` : ""}
   </div>`;
 }
 
-function ladderMatch(id, byId, known) {
+function ladderMatch(id, byId, known, opts = {}) {
   const m = byId[id];
   if (!m) return "";
   const a = resolveSide(m.teamA, byId);
@@ -81,18 +89,25 @@ function ladderMatch(id, byId, known) {
   const sim = findSim(known, m);
   const odds = sim ? `模型 ${pct(sim.series.pSeriesA)} / ${pct(sim.series.pSeriesB)}` : "";
   const result = m.winner && m.score ? `${m.score} ${TAG[m.winner] || m.winner}` : m.format;
-  return `<div class="ladder-match ${m.status || ""}">
+  const on = opts.focusId && opts.focusId === id ? "on" : "";
+  const oddsLine = opts.compact
+    ? ""
+    : odds
+      ? `<div class="ladder-odds">${odds}</div>`
+      : '<div class="ladder-odds mute">待填</div>';
+  return `<button type="button" class="ladder-match ${m.status || ""} ${on}" data-match="${id}">
     <div class="ladder-meta"><span>${whenShort(m.datetime)}</span><span>${result}</span></div>
-    ${teamRow(a)}${teamRow(b)}
-    ${odds ? `<div class="ladder-odds">${odds}</div>` : '<div class="ladder-odds mute">待填</div>'}
-  </div>`;
+    ${teamRow(a, { compact: opts.compact, winner: m.winner })}
+    ${teamRow(b, { compact: opts.compact, winner: m.winner })}
+    ${oddsLine}
+  </button>`;
 }
 
-function roundCol(title, ids, byId, known) {
+function roundCol(title, ids, byId, known, opts = {}) {
   return `<div class="ladder-round n${ids.length}">
     <div class="ladder-round-title">${title}</div>
     <div class="ladder-round-body">${ids
-      .map((id) => `<div class="ladder-slot">${ladderMatch(id, byId, known)}</div>`)
+      .map((id) => `<div class="ladder-slot">${ladderMatch(id, byId, known, opts)}</div>`)
       .join("")}</div>
   </div>`;
 }
@@ -241,46 +256,52 @@ function roundWhen(ids, byId) {
   return days.length ? ` · ${days.join(" / ")}` : "";
 }
 
-function renderBracket(data) {
+function renderBracket(data, opts = {}) {
   const matches = data.playoffs?.matches || [];
   const byId = Object.fromEntries(matches.map((m) => [m.id, m]));
   const known = indexSims(data);
+  const colOpts = { compact: Boolean(opts.compact), focusId: opts.focusId || "" };
   const upper = [
-    roundCol("胜者组首轮" + roundWhen(["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId), ["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId, known),
+    roundCol("胜者组首轮" + roundWhen(["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId), ["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId, known, colOpts),
     joinCol(2, "pair"),
-    roundCol("胜者组半决赛" + roundWhen(["ubsf1", "ubsf2"], byId), ["ubsf1", "ubsf2"], byId, known),
+    roundCol("胜者组半决赛" + roundWhen(["ubsf1", "ubsf2"], byId), ["ubsf1", "ubsf2"], byId, known, colOpts),
     joinCol(1, "pair"),
-    roundCol("胜者组决赛" + roundWhen(["ubf"], byId), ["ubf"], byId, known),
+    roundCol("胜者组决赛" + roundWhen(["ubf"], byId), ["ubf"], byId, known, colOpts),
     joinCol(1, "line"),
-    roundCol("总决赛 Bo5" + roundWhen(["gf"], byId), ["gf"], byId, known),
+    roundCol("总决赛 Bo5" + roundWhen(["gf"], byId), ["gf"], byId, known, colOpts),
   ].join("");
   const lower = [
-    roundCol("败者组首轮" + roundWhen(["lbr1a", "lbr1b"], byId), ["lbr1a", "lbr1b"], byId, known),
+    roundCol("败者组首轮" + roundWhen(["lbr1a", "lbr1b"], byId), ["lbr1a", "lbr1b"], byId, known, colOpts),
     joinCol(2, "line"),
-    roundCol("败者组四分之一" + roundWhen(["lbqf1", "lbqf2"], byId), ["lbqf1", "lbqf2"], byId, known),
+    roundCol("败者组四分之一" + roundWhen(["lbqf1", "lbqf2"], byId), ["lbqf1", "lbqf2"], byId, known, colOpts),
     joinCol(1, "pair"),
-    roundCol("败者组半决赛" + roundWhen(["lbsf"], byId), ["lbsf"], byId, known),
+    roundCol("败者组半决赛" + roundWhen(["lbsf"], byId), ["lbsf"], byId, known, colOpts),
     joinCol(1, "line"),
-    roundCol("败者组决赛" + roundWhen(["lbf"], byId), ["lbf"], byId, known),
+    roundCol("败者组决赛" + roundWhen(["lbf"], byId), ["lbf"], byId, known, colOpts),
   ].join("");
   const sched = data.playoffs?.scheduleAsOf
     ? `开赛时间 ${String(data.playoffs.scheduleAsOf).replace(" CST", "")} 已跟液体百科核对`
     : "双败 · 总决赛 Bo5 · 其余 Bo3";
-  return `<section class="series-block">
-    <div class="series-head"><h2>淘汰赛对阵图</h2><div class="poly">${sched}</div></div>
-    <p class="section-lead">和液体百科同一张阶梯：上面胜者组往右晋级，下面败者组接住掉下来的队。金标是已排好的队，灰标是「谁赢谁进」。开赛时间以百科为准，主办方改点这里跟着改。</p>
+  const compact = Boolean(opts.compact);
+  return `<section class="${compact ? "bracket-home" : "series-block"}">
+    <div class="series-head"><h2>${compact ? "对阵图" : "淘汰赛对阵图"}</h2><div class="poly">${sched}</div></div>
+    ${
+      compact
+        ? '<p class="section-lead">上面胜者组，下面败者组。点一场，倒计时换成那场。</p>'
+        : '<p class="section-lead">和液体百科同一张阶梯：上面胜者组往右晋级，下面败者组接住掉下来的队。金标是已排好的队，灰标是「谁赢谁进」。开赛时间以百科为准，主办方改点这里跟着改。</p>'
+    }
     <div class="ladder-legend">
       <span><i class="lg gold"></i>已排对阵</span>
-      <span><i class="lg mute"></i>待填 / 情景</span>
-      <span><i class="lg drop"></i>从胜者组掉进败者组</span>
+      <span><i class="lg mute"></i>待填</span>
+      <span><i class="lg drop"></i>从胜者组掉下来</span>
     </div>
     <div class="ladder-scroll">
       <div class="ladder-block">
-        <div class="ladder-kicker">胜者组 Upper</div>
+        <div class="ladder-kicker">胜者组</div>
         <div class="ladder upper">${upper}</div>
       </div>
       <div class="ladder-block">
-        <div class="ladder-kicker">败者组 Lower</div>
+        <div class="ladder-kicker">败者组</div>
         <div class="ladder lower">${lower}</div>
       </div>
     </div>
@@ -832,11 +853,12 @@ function indexTeams(data) {
     TEAM_META[t.name] = t;
   }
 }
-function crest(name) {
+function crest(name, size) {
+  const klass = size === "sm" ? "crest-sm" : "crest";
   const t = TEAM_META[name];
-  if (t?.id) return `<img class="crest" src="./logos/${t.id}.png" alt="${name}" />`;
+  if (t?.id) return `<img class="${klass}" src="./logos/${t.id}.png" alt="${name}" />`;
   const tag = TAG[name] || (name || "?").slice(0, 3);
-  return `<div class="crest ghost">${tag}</div>`;
+  return `<div class="${klass} ghost">${tag}</div>`;
 }
 
 function pad2(n) {
@@ -1357,6 +1379,7 @@ function renderNow(data, matchId) {
       ${oddsLinks(m)}
       ${markets}
     </div>
+    ${renderBracket(data, { compact: true, focusId: m.id })}
     ${slate}
     ${dailyHtml(data.daily)}
     ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}
@@ -1545,11 +1568,14 @@ function setup(data) {
     paint();
   });
   document.getElementById("app")?.addEventListener("click", (e) => {
-    const chip = e.target.closest(".slate-chip, .sched-chip");
+    const chip = e.target.closest(".slate-chip, .sched-chip, .ladder-match[data-match]");
     if (!chip) return;
     matchId = chip.dataset.match || "";
     mode = "now";
     paint();
+    if (chip.classList.contains("ladder-match")) {
+      document.getElementById("clock")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   });
 
   updateOddsStatus();
