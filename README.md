@@ -8,7 +8,7 @@
 
 **https://justineya.github.io/ti15-playoff-analyzer/demo.html**
 
-淘汰赛期间（8/20–8/23）现场页每 30 秒向 Polymarket 拉实时赔率；仓库大约每 5 分钟拉 OpenDota。**每打完一局**，上一局结果和下一局看好谁会直接写进这个网页。不用打开 Cursor。Thunderpick / GG.BET / Pinnacle 只做跳转。先到 10 杀没有公开盘，用计算器手填。
+淘汰赛期间（8/20–8/23）现场页每 30 秒向 Polymarket 拉实时赔率；仓库大约每 5 分钟拉 OpenDota，并跟液体百科核对四天开赛时间（主办方改点，倒计时跟着改）。**每打完一局**，上一局结果和下一局看好谁会直接写进这个网页。不用打开 Cursor。Thunderpick / GG.BET / Pinnacle 只做跳转。先到 10 杀没有公开盘，用计算器手填。
 
 ## 口径
 

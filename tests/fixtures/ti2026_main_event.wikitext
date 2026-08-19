@@ -1,0 +1,65 @@
+{{Bracket|Bracket/8U4L2DSL1D|id=TI2026Main|matchsection=Playoffs
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+|opponent1={{TeamOpponent|Iron Wing}}
+|opponent2={{TeamOpponent|Team Spirit}}
+|date=August 20, 2026 - 10:00 {{Abbr/CST}}
+|map1={{Map|winner=}}
+|map2={{Map|winner=}}
+|map3={{Map|winner=}}
+}}
+|R1M2={{Match
+|opponent1={{TeamOpponent|TEAM VISION}}
+|opponent2={{TeamOpponent|BoomBoys}}
+|date=August 20, 2026 - 13:00 {{Abbr/CST}}
+}}
+|R1M3={{Match
+|date=August 20, 2026 - 16:00 {{Abbr/CST}}
+}}
+|R1M4={{Match
+|date=August 20, 2026 - 19:00 {{Abbr/CST}}
+}}
+<!-- Upper Bracket Semifinals -->
+|R2M1={{Match
+|date=August 21, 2026 - 16:00 {{Abbr/CST}}
+}}
+|R2M2={{Match
+|date=August 21, 2026 - 19:00 {{Abbr/CST}}
+}}
+<!-- Upper Bracket Final -->
+|R4M1={{Match
+|date=August 22, 2026 - 16:00 {{Abbr/CST}}
+}}
+<!-- Lower Bracket Round 1 -->
+|R1M5={{Match
+|date=August 21, 2026 - 10:00 {{Abbr/CST}}
+}}
+|R1M6={{Match
+|date=August 21, 2026 - 13:00 {{Abbr/CST}}
+}}
+<!-- Lower Bracket Quarterfinals -->
+|R2M3={{Match
+|date=August 22, 2026 - 13:00 {{Abbr/CST}}
+}}
+|R2M4={{Match
+|date=August 22, 2026 - 10:00 {{Abbr/CST}}
+}}
+<!-- Lower Bracket Semifinal -->
+|R3M1={{Match
+|date=August 22, 2026 - 19:00 {{Abbr/CST}}
+}}
+<!-- Lower Bracket Final -->
+|R4M2={{Match
+|date=August 23, 2026 - 10:00 {{Abbr/CST}}
+}}
+<!-- Grand Final -->
+|R5M1={{Match
+|date=August 23, 2026 - 13:00 {{Abbr/CST}}
+|bestof=5
+|map1={{Map|winner=}}
+|map2={{Map|winner=}}
+|map3={{Map|winner=}}
+|map4={{Map|winner=}}
+|map5={{Map|winner=}}
+}}
+}}

@@ -223,31 +223,52 @@ function simPanel(sim, liveNote) {
   </div>`;
 }
 
+function monthDay(dt) {
+  const m = String(dt || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+  return m ? `${Number(m[2])}/${Number(m[3])}` : "";
+}
+
+function roundWhen(ids, byId) {
+  const days = [];
+  const seen = new Set();
+  for (const id of ids) {
+    const d = monthDay(byId[id]?.datetime);
+    if (d && !seen.has(d)) {
+      seen.add(d);
+      days.push(d);
+    }
+  }
+  return days.length ? ` · ${days.join(" / ")}` : "";
+}
+
 function renderBracket(data) {
   const matches = data.playoffs?.matches || [];
   const byId = Object.fromEntries(matches.map((m) => [m.id, m]));
   const known = indexSims(data);
   const upper = [
-    roundCol("胜者组首轮 · 8/20", ["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId, known),
+    roundCol("胜者组首轮" + roundWhen(["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId), ["ubqf1", "ubqf2", "ubqf3", "ubqf4"], byId, known),
     joinCol(2, "pair"),
-    roundCol("胜者组半决赛 · 8/21", ["ubsf1", "ubsf2"], byId, known),
+    roundCol("胜者组半决赛" + roundWhen(["ubsf1", "ubsf2"], byId), ["ubsf1", "ubsf2"], byId, known),
     joinCol(1, "pair"),
-    roundCol("胜者组决赛 · 8/22", ["ubf"], byId, known),
+    roundCol("胜者组决赛" + roundWhen(["ubf"], byId), ["ubf"], byId, known),
     joinCol(1, "line"),
-    roundCol("总决赛 Bo5 · 8/23", ["gf"], byId, known),
+    roundCol("总决赛 Bo5" + roundWhen(["gf"], byId), ["gf"], byId, known),
   ].join("");
   const lower = [
-    roundCol("败者组首轮 · 8/21", ["lbr1a", "lbr1b"], byId, known),
+    roundCol("败者组首轮" + roundWhen(["lbr1a", "lbr1b"], byId), ["lbr1a", "lbr1b"], byId, known),
     joinCol(2, "line"),
-    roundCol("败者组四分之一 · 8/22", ["lbqf1", "lbqf2"], byId, known),
+    roundCol("败者组四分之一" + roundWhen(["lbqf1", "lbqf2"], byId), ["lbqf1", "lbqf2"], byId, known),
     joinCol(1, "pair"),
-    roundCol("败者组半决赛 · 8/22", ["lbsf"], byId, known),
+    roundCol("败者组半决赛" + roundWhen(["lbsf"], byId), ["lbsf"], byId, known),
     joinCol(1, "line"),
-    roundCol("败者组决赛 · 8/23", ["lbf"], byId, known),
+    roundCol("败者组决赛" + roundWhen(["lbf"], byId), ["lbf"], byId, known),
   ].join("");
+  const sched = data.playoffs?.scheduleAsOf
+    ? `开赛时间 ${String(data.playoffs.scheduleAsOf).replace(" CST", "")} 已跟液体百科核对`
+    : "双败 · 总决赛 Bo5 · 其余 Bo3";
   return `<section class="series-block">
-    <div class="series-head"><h2>淘汰赛对阵图</h2><div class="poly">双败 · 总决赛 Bo5 · 其余 Bo3</div></div>
-    <p class="section-lead">和液体百科同一张阶梯：上面胜者组往右晋级，下面败者组接住掉下来的队。金标是已排好的队，灰标是「谁赢谁进」。</p>
+    <div class="series-head"><h2>淘汰赛对阵图</h2><div class="poly">${sched}</div></div>
+    <p class="section-lead">和液体百科同一张阶梯：上面胜者组往右晋级，下面败者组接住掉下来的队。金标是已排好的队，灰标是「谁赢谁进」。开赛时间以百科为准，主办方改点这里跟着改。</p>
     <div class="ladder-legend">
       <span><i class="lg gold"></i>已排对阵</span>
       <span><i class="lg mute"></i>待填 / 情景</span>
@@ -1129,17 +1150,91 @@ function wireLiveCalc(sim) {
   });
 }
 
-function slateChip(m, sim, on) {
-  const p = sim?.series?.pSeriesA;
-  const lean = p == null ? "" : p >= 0.5 ? TAG[m.teamA] || m.teamA : TAG[m.teamB] || m.teamB;
-  const a = TAG[m.teamA] || m.teamA;
-  const b = TAG[m.teamB] || m.teamB;
-  const time = String(m.datetime || "").slice(11, 16);
-  return `<button type="button" class="slate-chip ${on ? "on" : ""}" data-match="${m.id}">
+function slateChip(m, sim, on, byId = {}) {
+  const time = String(m.datetime || "").slice(11, 16) || "待定";
+  const done = m.status === "completed" || m.status === "complete";
+  let pair;
+  let lean = "";
+  if (namedSides(m)) {
+    const p = sim?.series?.pSeriesA;
+    lean = p == null ? "" : p >= 0.5 ? TAG[m.teamA] || m.teamA : TAG[m.teamB] || m.teamB;
+    pair = `${TAG[m.teamA] || m.teamA} / ${TAG[m.teamB] || m.teamB}`;
+    if (done && m.winner) lean = `${TAG[m.winner] || m.winner} ${m.score || "赢了"}`.trim();
+  } else {
+    const a = resolveSide(m.teamA, byId);
+    const b = resolveSide(m.teamB, byId);
+    pair = `${a.tag} / ${b.tag}`;
+    lean = m.round || "待定";
+  }
+  return `<button type="button" class="slate-chip ${on ? "on" : ""} ${done ? "done" : ""}" data-match="${m.id}">
     <span class="t">${time}</span>
-    <span class="pair">${a} / ${b}</span>
-    <span class="a">${lean ? "看好 " + lean : "待定"}</span>
+    <span class="pair">${pair}</span>
+    <span class="a">${lean ? (namedSides(m) && !done ? "看好 " + lean : lean) : "待定"}</span>
   </button>`;
+}
+
+function weekdayCn(dateStr) {
+  const m = String(dateStr || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return "";
+  const names = ["日", "一", "二", "三", "四", "五", "六"];
+  const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], 4));
+  return "周" + names[d.getUTCDay()];
+}
+
+function scheduleDays(playoffs) {
+  const matches = playoffs?.matches || [];
+  if (playoffs?.days?.length) {
+    return playoffs.days.map((d) => ({
+      date: d.date,
+      label: d.label,
+      matches: (d.slots || []).map((id) => matches.find((m) => m.id === id)).filter(Boolean),
+    }));
+  }
+  const grouped = {};
+  for (const m of matches) {
+    const day = dayKey(m.datetime);
+    if (!day) continue;
+    (grouped[day] ||= []).push(m);
+  }
+  return Object.keys(grouped)
+    .sort()
+    .map((date, i) => ({
+      date,
+      label: `第${i + 1}天`,
+      matches: grouped[date].sort((a, b) => String(a.datetime).localeCompare(String(b.datetime))),
+    }));
+}
+
+function scheduleBoard(data, current, byId, known) {
+  const po = data.playoffs || {};
+  const days = scheduleDays(po);
+  if (!days.length) return "";
+  const focusDay = dayKey(current?.datetime);
+  const asOf = po.scheduleAsOf ? String(po.scheduleAsOf).replace(" CST", "") : "";
+  const err = po.scheduleError
+    ? "刚才没拉到新赛程，仍用上次时间。"
+    : asOf
+      ? `核对 ${asOf} · 主办方改点会跟着改`
+      : "开赛时间跟液体百科，会改";
+  const src = po.scheduleSource || "https://liquipedia.net/dota2/The_International/2026/Main_Event";
+  const cols = days
+    .map((d) => {
+      const on = d.date === focusDay;
+      const md = monthDay(d.date + " 00:00");
+      const chips = d.matches
+        .map((m) => slateChip(m, namedSides(m) ? findSim(known, m) : null, m.id === current?.id, byId))
+        .join("");
+      return `<div class="sched-day ${on ? "on" : ""}">
+        <h3>${md} ${weekdayCn(d.date)}</h3>
+        <p>${d.label || ""}</p>
+        ${chips}
+      </div>`;
+    })
+    .join("");
+  return `<section class="sched-board">
+    <div class="sched-head">四天赛程 · 北京时间 · <a href="${src}" target="_blank" rel="noopener">液体百科</a> · ${err}</div>
+    <div class="sched-days">${cols}</div>
+  </section>`;
 }
 
 function lastBoutHtml(prev) {
@@ -1215,8 +1310,6 @@ function renderNow(data, matchId) {
   const bName = namedSides(m) ? m.teamB : resolveSide(m.teamB, byId).name;
   const aTag = namedSides(m) ? TAG[m.teamA] || m.teamA : resolveSide(m.teamA, byId).tag;
   const bTag = namedSides(m) ? TAG[m.teamB] || m.teamB : resolveSide(m.teamB, byId).tag;
-  const day = dayKey(m.datetime);
-  const sameDay = matches.filter((x) => namedSides(x) && dayKey(x.datetime) === day);
   const live = Boolean(data.oddsLiveOk);
   const wins = seriesWins(m);
   const need = needWins(m.format);
@@ -1227,12 +1320,7 @@ function renderNow(data, matchId) {
     sim && pMap != null && !seriesDone ? pSeriesAfter(pMap, wins.a, wins.b, need) : sim?.series?.pSeriesA;
   const nextMap = sim?.maps?.[nextGame - 1] || sim?.maps?.[0];
   const gMkt = seriesDone ? null : priceFromMarket(gameMarket(sim, nextGame), m.teamA);
-  const slate = sameDay.length
-    ? `<div class="slate">
-        <div class="slate-head">同一天 · 北京时间</div>
-        <div class="slate-row">${sameDay.map((x) => slateChip(x, findSim(known, x), x.id === m.id)).join("")}</div>
-      </div>`
-    : "";
+  const slate = scheduleBoard(data, m, byId, known);
   const markets =
     namedSides(m) && sim
       ? `<div class="markets">
@@ -1457,7 +1545,7 @@ function setup(data) {
     paint();
   });
   document.getElementById("app")?.addEventListener("click", (e) => {
-    const chip = e.target.closest(".slate-chip");
+    const chip = e.target.closest(".slate-chip, .sched-chip");
     if (!chip) return;
     matchId = chip.dataset.match || "";
     mode = "now";

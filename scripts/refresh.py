@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-shot playoff refresh: ingest → bracket → odds → simulate → bundle."""
+"""One-shot playoff refresh: ingest → schedule → bracket → odds → simulate → bundle."""
 from __future__ import annotations
 
 import subprocess
@@ -17,6 +17,7 @@ def run(name: str) -> None:
 
 def main() -> None:
     run("ingest_games.py")
+    run("fetch_schedule.py")
     run("resolve_bracket.py")
     run("fetch_polymarket.py")
     run("simulate_playoffs.py")
