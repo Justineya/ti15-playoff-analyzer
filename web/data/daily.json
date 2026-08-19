@@ -1,21 +1,21 @@
 {
-  "asOf": "2026-08-18 15:45 CST",
+  "asOf": "2026-08-19 17:56 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
-  "headline": "下一把 IW vs Spirit，看好 IW（系列 51%）。第1局看好 IW（51%）。",
-  "narrative": "下一把 IW vs Spirit，看好 IW（系列 51%）。第1局看好 IW（51%）。本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit。",
+  "headline": "下一把 IW vs Spirit，看好 Spirit（系列 59%）。第1局看好 Spirit（56%）。",
+  "narrative": "下一把 IW vs Spirit，看好 Spirit（系列 59%）。第1局看好 Spirit（56%）。加权胜率 Iron Wing 55% / Team Spirit 59%；先到10杀 54% / 54%；样本交手 0.6局；Iron Wing 中单爱拿 Earth Spirit。",
   "previousMap": null,
   "nextMap": {
     "game": 1,
     "teamA": "Iron Wing",
     "teamB": "Team Spirit",
     "lean": {
-      "team": "Iron Wing",
-      "tag": "IW",
-      "p": 0.513,
-      "pA": 0.513,
-      "pB": 0.487,
-      "breakEven": 1.95,
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.556,
+      "pA": 0.444,
+      "pB": 0.556,
+      "breakEven": 1.8,
       "market": {
         "outcomes": [
           "Iron Wing",
@@ -26,26 +26,26 @@
           0.495
         ]
       },
-      "why": "本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit"
+      "why": "加权胜率 Iron Wing 55% / Team Spirit 59%；先到10杀 54% / 54%；样本交手 0.6局；Iron Wing 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "Iron Wing",
-      "tag": "IW",
-      "p": 0.503,
-      "pA": 0.503,
-      "pB": 0.497,
-      "breakEven": 1.99,
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.501,
+      "pA": 0.499,
+      "pB": 0.501,
+      "breakEven": 2.0,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Iron Wing",
-    "tag": "IW",
-    "p": 0.513,
-    "pA": 0.513,
-    "pB": 0.487,
-    "breakEven": 1.95,
+    "team": "Team Spirit",
+    "tag": "Spirit",
+    "p": 0.591,
+    "pA": 0.409,
+    "pB": 0.591,
+    "breakEven": 1.69,
     "market": {
       "outcomes": [
         "Iron Wing",
@@ -56,7 +56,7 @@
         0.475
       ]
     },
-    "why": "本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit"
+    "why": "加权胜率 Iron Wing 55% / Team Spirit 59%；先到10杀 54% / 54%；样本交手 0.6局；Iron Wing 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -75,12 +75,12 @@
     "polySlug": "dota2-ironwi-ts8-2026-08-19",
     "mapsPlayed": 0,
     "lean": {
-      "team": "Iron Wing",
-      "tag": "IW",
-      "p": 0.513,
-      "pA": 0.513,
-      "pB": 0.487,
-      "breakEven": 1.95,
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.591,
+      "pA": 0.409,
+      "pB": 0.591,
+      "breakEven": 1.69,
       "market": {
         "outcomes": [
           "Iron Wing",
@@ -91,7 +91,7 @@
           0.475
         ]
       },
-      "why": "本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit"
+      "why": "加权胜率 Iron Wing 55% / Team Spirit 59%；先到10杀 54% / 54%；样本交手 0.6局；Iron Wing 中单爱拿 Earth Spirit"
     }
   },
   "focus": {

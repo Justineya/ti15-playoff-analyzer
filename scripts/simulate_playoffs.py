@@ -14,6 +14,7 @@ from datetime import datetime, timedelta, timezone
 from itertools import product
 from pathlib import Path
 
+from majors import EWC_WEIGHT, majors_with_weights
 from stake_plan import build_bankroll
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,7 +24,7 @@ MAPS_BO5 = 5
 SEED = 20260817
 TREE_RUNS = 1000
 TREE_SEED = 20260820
-EWC_SAMPLE_WEIGHT = 0.45  # 7.41d at EWC vs 7.41e at TI — same skeleton, lighter weight
+EWC_SAMPLE_WEIGHT = EWC_WEIGHT  # 7.41d at EWC vs 7.41e at TI — same skeleton, lighter weight
 EIGHT = [
     "TEAM VISION",
     "Team Liquid",
@@ -126,13 +127,21 @@ def load_model_games() -> list[dict]:
     ti = load_json("games.json")["games"]
     for g in ti:
         g["sample_weight"] = 1.0
-    ewc_path = ROOT / "data" / "ewc_games.json"
+        g.setdefault("source", "ti15")
     ewc: list[dict] = []
-    if ewc_path.exists():
+    if (ROOT / "data" / "ewc_games.json").exists():
         ewc = load_json("ewc_games.json").get("games") or []
         for g in ewc:
             g["sample_weight"] = EWC_SAMPLE_WEIGHT
-    return ti + ewc
+    majors: list[dict] = []
+    if (ROOT / "data" / "majors_games.json").exists():
+        blob = load_json("majors_games.json")
+        weights = {m["id"]: m["weight"] for m in majors_with_weights()}
+        majors = blob.get("games") or []
+        for g in majors:
+            g["source"] = "major"
+            g["sample_weight"] = float(g.get("sample_weight") or weights.get(g.get("eventId"), 0.15))
+    return ti + ewc + majors
 
 
 def build_team_stats(games: list[dict]) -> dict:
@@ -154,8 +163,10 @@ def build_team_stats(games: list[dict]) -> dict:
                     "games": 0.0,
                     "wins": 0.0,
                     "f10k": 0.0,
+                    "f10k_games": 0.0,
                     "games_ti": 0.0,
                     "games_ewc": 0.0,
+                    "games_major": 0.0,
                     "picks": Counter(),
                     "bans": Counter(),
                     "mid": Counter(),
@@ -169,9 +180,14 @@ def build_team_stats(games: list[dict]) -> dict:
             )
             rec["games"] += w
             rec["wins"] += w * int(won)
-            rec["f10k"] += w * int(got_f10k)
-            if game.get("source") == "ewc":
+            if "f10k" in game:
+                rec["f10k"] += w * int(got_f10k)
+                rec["f10k_games"] += w
+            src = game.get("source")
+            if src == "ewc":
                 rec["games_ewc"] += w / EWC_SAMPLE_WEIGHT
+            elif src == "major":
+                rec["games_major"] += 1
             else:
                 rec["games_ti"] += w
             rec["picks"].update({h: w for h in picks})
@@ -286,8 +302,10 @@ def matchup_probs(stats: dict, team_a: str, team_b: str, draft: dict) -> dict:
     b = stats.get(team_b) or {"games": 0, "wins": 0, "f10k": 0, "h2h_n": {}, "h2h_win": {}, "mid": Counter()}
     wr_a = shrink(a.get("wins", 0), a.get("games", 0), 0.5)
     wr_b = shrink(b.get("wins", 0), b.get("games", 0), 0.5)
-    f_a = shrink(a.get("f10k", 0), a.get("games", 0), 0.5)
-    f_b = shrink(b.get("f10k", 0), b.get("games", 0), 0.5)
+    f_na = a.get("f10k_games") or a.get("games", 0)
+    f_nb = b.get("f10k_games") or b.get("games", 0)
+    f_a = shrink(a.get("f10k", 0), f_na, 0.5)
+    f_b = shrink(b.get("f10k", 0), f_nb, 0.5)
     picks_a = draft["teamA"]["picks"]
     picks_b = draft["teamB"]["picks"]
     win_hero = 0.0
@@ -319,9 +337,9 @@ def matchup_probs(stats: dict, team_a: str, team_b: str, draft: dict) -> dict:
         "sampleA": a.get("games", 0),
         "sampleB": b.get("games", 0),
         "why": (
-            f"本届胜率 {team_a} {round(wr_a*100)}% / {team_b} {round(wr_b*100)}%；"
+            f"加权胜率 {team_a} {round(wr_a*100)}% / {team_b} {round(wr_b*100)}%；"
             f"先到10杀 {round(f_a*100)}% / {round(f_b*100)}%；"
-            f"H2H {h2h_n} 局"
+            f"H2H {round(h2h_n, 1)} 局"
             + (f"；{team_a} 常用中单 {mid_a[0][0]}" if mid_a else "")
         ),
     }
@@ -776,8 +794,10 @@ def betting_card(sim: dict, poly: dict | None, sample_n: int) -> dict:
 
 def main() -> None:
     games = load_model_games()
-    ti_n = sum(1 for g in games if g.get("source") != "ewc")
+    ti_n = sum(1 for g in games if g.get("source") not in {"ewc", "major"})
     ewc_n = sum(1 for g in games if g.get("source") == "ewc")
+    major_n = sum(1 for g in games if g.get("source") == "major")
+    major_w = {m["id"]: m["weight"] for m in majors_with_weights()}
     playoffs = load_json("playoffs.json")
     poly = load_json("polymarket-playoffs.json")
     stats = build_team_stats(games)
@@ -838,12 +858,14 @@ def main() -> None:
             continue
         n = rec.get("games") or 0
         got = rec.get("f10k") or 0
+        f_n = rec.get("f10k_games") or 0
         teams_for_bank[name] = {
             "games": round(n, 1),
             "gamesTi": int(rec.get("games_ti") or 0),
             "gamesEwc": int(rec.get("games_ewc") or 0),
+            "gamesMajor": int(rec.get("games_major") or 0),
             "f10k_got": round(got, 1),
-            "f10k_rate": (got / n) if n else 0,
+            "f10k_rate": (got / f_n) if f_n else 0,
         }
 
     cst = timezone(timedelta(hours=8))
@@ -852,13 +874,14 @@ def main() -> None:
         "seed": SEED,
         "simsPerMap": SIMS_PER_MAP,
         "definition": {
-            "bp": "TI15 80 局 + EWC 八强地图（45% 权重）里的选禁频率，7.41 队长模式每局 5 次",
-            "win": "加权队胜率 + 阵容英雄收缩胜率 + 有限 H2H（含 EWC 八强交手）",
-            "f10k": "加权先到10杀率 + 阵容英雄先到10杀倾向",
+            "bp": "TI15 80 局 + EWC 八强地图（45% 权重）里的选禁频率，7.41 队长模式每局 5 次。近半年大赛不进 BP。",
+            "win": "加权队胜率 + 阵容英雄收缩胜率 + 有限 H2H（含 EWC 与近半年大赛交手）",
+            "f10k": "TI+EWC 加权先到10杀率 + 阵容英雄先到10杀倾向（大赛不含 F10K）",
             "roi": "买 Polymarket YES：期望回报率 = 模型概率/市场价格 - 1",
             "stake": "默认¼Kelly；大胆½Kelly（p 不往上加）；全Kelly样本撑不住",
             "ewcWeight": EWC_SAMPLE_WEIGHT,
-            "sampleMaps": {"ti15": ti_n, "ewc": ewc_n},
+            "majorWeights": major_w,
+            "sampleMaps": {"ti15": ti_n, "ewc": ewc_n, "majors": major_n},
         },
         "known": known,
         "scenarios": scenarios,

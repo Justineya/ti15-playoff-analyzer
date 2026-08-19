@@ -156,6 +156,11 @@ def main() -> None:
     daily = json.loads(daily_path.read_text()) if daily_path.exists() else None
     sims = json.loads((ROOT / "data" / "simulations.json").read_text())
     sim_by_id = {item["id"]: item for item in sims.get("known") or []}
+    majors_path = ROOT / "data" / "majors_games.json"
+    majors_meta = None
+    if majors_path.exists():
+        blob = json.loads(majors_path.read_text())
+        majors_meta = {k: blob[k] for k in blob if k != "games"}
     for item in series:
         item["h2hIds"] = [game["match_id"] for game in h2h(games, item["teamA"], item["teamB"])]
         item["profileA"] = team_profile(games, item["teamA"])
@@ -166,7 +171,7 @@ def main() -> None:
     bundle = {
         "asOf": published,
         "publishedAt": published,
-        "note": "逐场页列 TI15 八强地图（含淘汰赛新局）。BP/F10K/胜率模拟 = TI15 100% + EWC 八强地图 45%。",
+        "note": "逐场页列 TI15 八强地图（含淘汰赛新局）。胜率模拟 = TI 100% + EWC 45% + 近半年大赛（越远越轻）。BP/F10K 仍只用 TI+EWC。",
         "polySlugs": poly_slugs,
         "polymarket": poly,
         "teams": {name: team_profile(games, name) for name in EIGHT},
@@ -174,6 +179,7 @@ def main() -> None:
         "daily": daily,
         "simulations": sims,
         "ewc": json.loads((ROOT / "data" / "ewc.json").read_text()),
+        "majors": majors_meta,
         "series": series,
         "games": games,
     }

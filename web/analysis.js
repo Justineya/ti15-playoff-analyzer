@@ -216,7 +216,7 @@ function betTable(betting, liveNote) {
       <thead><tr><th>盘口</th><th>买谁</th><th>模型</th><th>市场</th><th>期望回报率</th><th>建议</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>
-    <p class="foot-note">期望回报率 = 模型概率 ÷ 市场价格 − 1。按 $1 买 YES 计。不是稳胆，样本只有本届 80 局。</p>
+    <p class="foot-note">期望回报率 = 模型概率 ÷ 市场价格 − 1。按 $1 买 YES 计。不是稳胆。样本是本届 + EWC + 近半年大赛。</p>
   </div>`;
 }
 
@@ -675,7 +675,7 @@ function renderStake(data) {
     <ol class="engine">${why}</ol>
     <h3>规则</h3>
     <ol class="engine">${rules}</ol>
-    <p class="foot-note">这是资金公式示意，不是投注建议。p 来自本届 80 局样本，赔率请换成你盘口上的真实价格。</p>
+    <p class="foot-note">这是资金公式示意，不是投注建议。p 来自 TI+EWC+近半年大赛加权样本，赔率请换成你盘口上的真实价格。</p>
   </section>`;
 }
 
@@ -946,8 +946,8 @@ function shortWhy(sim) {
   const w = sim?.why || "";
   if (!w) return "";
   return w
-    .replace(/H2H 0 局/g, "本届没交过手")
-    .replace(/H2H [\d.]+ 局/g, "本届有交手")
+    .replace(/H2H 0 局/g, "样本没交过手")
+    .replace(/H2H [\d.]+ 局/g, "样本有交手")
     .replace(/常用中单 /g, "中单爱拿 ");
 }
 
@@ -1346,7 +1346,7 @@ function renderTreePage(data) {
       <ol>
         <li>每局独立同分布：没有连胜、没有败者组复仇、没有一天四场的体力。</li>
         <li>总决赛按一场 Bo5，胜者组冠军没有少赢一局。</li>
-        <li>样本只有本届八强 80 局 + EWC 45%。很多对子 H2H 是 0。</li>
+        <li>样本：本届 80 局（100%）+ EWC 45% + 近半年 T1 大赛（越远权重越低）。大赛只改队胜率和 H2H，不改 BP。</li>
         <li>BP 用赛前平均阵容。现场锁了英雄，这一页不会立刻改骰子。</li>
         <li>开赛时间跟液体百科；上一场打满三局，下一场实际会晚，倒计时仍用百科点。</li>
         <li>没有伤病/替补，也没有上海主场加减成。</li>
