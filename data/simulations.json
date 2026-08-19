@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-19 23:05 CST",
+  "asOf": "2026-08-19 23:42 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -875,8 +875,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.535,
-            0.465
+            0.525,
+            0.475
           ],
           "question": "Dota 2: Iron Wing vs Team Spirit (BO3) - The International Playoffs"
         },
@@ -909,12 +909,12 @@
             "market": "系列胜者",
             "pick": "Iron Wing",
             "modelP": 0.514,
-            "marketP": 0.535,
-            "odds": 1.87,
-            "roi": -0.039,
-            "ev": -0.021,
+            "marketP": 0.525,
+            "odds": 1.9,
+            "roi": -0.021,
+            "ev": -0.011,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.535，模型 0.514，期望回报率 -3.9%"
+            "note": "买 YES 成本 0.525，模型 0.514，期望回报率 -2.1%"
           },
           {
             "market": "第一局",
@@ -1801,8 +1801,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.645,
-            0.355
+            0.655,
+            0.345
           ],
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner"
         },
@@ -1868,12 +1868,12 @@
             "market": "第一局",
             "pick": "TEAM VISION",
             "modelP": 0.698,
-            "marketP": 0.645,
-            "odds": 1.55,
-            "roi": 0.082,
-            "ev": 0.053,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.645，模型 0.698，期望回报率 8.2%"
+            "marketP": 0.655,
+            "odds": 1.53,
+            "roi": 0.066,
+            "ev": 0.043,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.655，模型 0.698，期望回报率 6.6%"
           },
           {
             "market": "总局数 O/U 2.5",
