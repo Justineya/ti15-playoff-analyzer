@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 01:55 CST",
+  "asOf": "2026-08-20 02:59 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -864,8 +864,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.525,
-            0.475
+            0.535,
+            0.465
           ],
           "question": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner"
         },
@@ -2760,8 +2760,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.54,
-            0.46
+            0.545,
+            0.455
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 2 Winner"
         },
@@ -2793,8 +2793,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.285,
-            0.715
+            0.28,
+            0.72
           ],
           "question": "Game Handicap: Liquid (-1.5) vs Team Yandex (+1.5)"
         }
@@ -2838,12 +2838,12 @@
             "market": "让分",
             "pick": "Team Yandex +1.5",
             "modelP": 0.728,
-            "marketP": 0.715,
-            "odds": 1.4,
-            "roi": 0.018,
-            "ev": 0.013,
+            "marketP": 0.72,
+            "odds": 1.39,
+            "roi": 0.011,
+            "ev": 0.008,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.715，模型 0.728，期望回报率 1.8%"
+            "note": "买 YES 成本 0.72，模型 0.728，期望回报率 1.1%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
