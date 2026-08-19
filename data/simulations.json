@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 02:59 CST",
+  "asOf": "2026-08-20 03:27 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -864,8 +864,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.535,
-            0.465
+            0.525,
+            0.475
           ],
           "question": "Dota 2: Iron Wing vs Team Spirit - Game 2 Winner"
         },
@@ -875,8 +875,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.535,
-            0.465
+            0.525,
+            0.475
           ],
           "question": "Dota 2: Iron Wing vs Team Spirit (BO3) - The International Playoffs"
         },
@@ -909,12 +909,12 @@
             "market": "系列胜者",
             "pick": "Iron Wing",
             "modelP": 0.514,
-            "marketP": 0.535,
-            "odds": 1.87,
-            "roi": -0.039,
-            "ev": -0.021,
+            "marketP": 0.525,
+            "odds": 1.9,
+            "roi": -0.021,
+            "ev": -0.011,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.535，模型 0.514，期望回报率 -3.9%"
+            "note": "买 YES 成本 0.525，模型 0.514，期望回报率 -2.1%"
           },
           {
             "market": "第一局",
@@ -2793,8 +2793,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.28,
-            0.72
+            0.285,
+            0.715
           ],
           "question": "Game Handicap: Liquid (-1.5) vs Team Yandex (+1.5)"
         }
@@ -2838,12 +2838,12 @@
             "market": "让分",
             "pick": "Team Yandex +1.5",
             "modelP": 0.728,
-            "marketP": 0.72,
-            "odds": 1.39,
-            "roi": 0.011,
-            "ev": 0.008,
+            "marketP": 0.715,
+            "odds": 1.4,
+            "roi": 0.018,
+            "ev": 0.013,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.72，模型 0.728，期望回报率 1.1%"
+            "note": "买 YES 成本 0.715，模型 0.728，期望回报率 1.8%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
