@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-20 05:01 CST",
+  "asOf": "2026-08-20 05:31 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -434,6 +434,6 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-20 05:01 CST",
+  "scheduleAsOf": "2026-08-20 05:31 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
 }
