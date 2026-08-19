@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 00:04 CST",
+  "asOf": "2026-08-20 00:42 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -897,8 +897,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.275,
-            0.725
+            0.265,
+            0.735
           ],
           "question": "Game Handicap: IW (-1.5) vs Team Spirit (+1.5)"
         }
@@ -942,12 +942,12 @@
             "market": "让分",
             "pick": "Team Spirit +1.5",
             "modelP": 0.741,
-            "marketP": 0.725,
-            "odds": 1.38,
-            "roi": 0.022,
-            "ev": 0.016,
+            "marketP": 0.735,
+            "odds": 1.36,
+            "roi": 0.008,
+            "ev": 0.006,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.725，模型 0.741，期望回报率 2.2%"
+            "note": "买 YES 成本 0.735，模型 0.741，期望回报率 0.8%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -1801,8 +1801,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.655,
-            0.345
+            0.665,
+            0.335
           ],
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner"
         },
@@ -1834,8 +1834,8 @@
             "Under"
           ],
           "prices": [
-            0.435,
-            0.565
+            0.43,
+            0.57
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -1868,23 +1868,23 @@
             "market": "第一局",
             "pick": "TEAM VISION",
             "modelP": 0.698,
-            "marketP": 0.655,
-            "odds": 1.53,
-            "roi": 0.066,
-            "ev": 0.043,
+            "marketP": 0.665,
+            "odds": 1.5,
+            "roi": 0.05,
+            "ev": 0.033,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.655，模型 0.698，期望回报率 6.6%"
+            "note": "买 YES 成本 0.665，模型 0.698，期望回报率 5.0%"
           },
           {
             "market": "总局数 O/U 2.5",
             "pick": "Under 2.5",
             "modelP": 0.581,
-            "marketP": 0.565,
-            "odds": 1.77,
-            "roi": 0.028,
-            "ev": 0.016,
+            "marketP": 0.57,
+            "odds": 1.75,
+            "roi": 0.019,
+            "ev": 0.011,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.565，模型 0.581，期望回报率 2.8%"
+            "note": "买 YES 成本 0.57，模型 0.581，期望回报率 1.9%"
           },
           {
             "market": "让分",
