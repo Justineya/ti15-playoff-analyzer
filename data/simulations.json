@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 07:01 CST",
+  "asOf": "2026-08-20 07:30 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -1823,8 +1823,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.725,
-            0.275
+            0.735,
+            0.265
           ],
           "question": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs"
         },
@@ -1857,12 +1857,12 @@
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.785,
-            "marketP": 0.725,
-            "odds": 1.38,
-            "roi": 0.083,
-            "ev": 0.06,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.725，模型 0.785，期望回报率 8.3%"
+            "marketP": 0.735,
+            "odds": 1.36,
+            "roi": 0.068,
+            "ev": 0.05,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.735，模型 0.785，期望回报率 6.8%"
           },
           {
             "market": "第一局",
