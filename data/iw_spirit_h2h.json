@@ -1,0 +1,368 @@
+{
+  "asOf": "2026-08-20 01:41 UTC",
+  "pair": [
+    "Iron Wing",
+    "Team Spirit"
+  ],
+  "note": "Iron Wing 前身是 Tundra。这里只把本届五人（Pure / bzm / 33 / Ari / Whitemon）至少 4 人在场的局算进样本。TI25 的 Tundra 是 Crystallis 阵容，另列、不进统计。",
+  "current": {
+    "maps": 7,
+    "seriesN": 5,
+    "iwMaps": 3,
+    "spiritMaps": 4,
+    "iwF10": 2,
+    "spiritF10": 5,
+    "iwF10ThenWin": 2,
+    "spiritF10ThenWin": 4,
+    "g1Iw": 2,
+    "g1Spirit": 3,
+    "g1IwF10": 1,
+    "g1SpiritF10": 4,
+    "series": [
+      {
+        "series_id": 1023577,
+        "date": "2025-10-16",
+        "event": "SLAM IV",
+        "score": "1-0",
+        "winner": "Iron Wing",
+        "g1Winner": "Iron Wing",
+        "g1F10": "Iron Wing",
+        "maps": [
+          {
+            "game": 1,
+            "winner": "Iron Wing",
+            "f10": "Iron Wing",
+            "f10TimeMin": 15.3,
+            "converted": true
+          }
+        ]
+      },
+      {
+        "series_id": 1061789,
+        "date": "2026-02-05",
+        "event": "BLAST SLAM VI",
+        "score": "0-1",
+        "winner": "Team Spirit",
+        "g1Winner": "Team Spirit",
+        "g1F10": "Team Spirit",
+        "maps": [
+          {
+            "game": 1,
+            "winner": "Team Spirit",
+            "f10": "Team Spirit",
+            "f10TimeMin": 10.9,
+            "converted": true
+          }
+        ]
+      },
+      {
+        "series_id": 1065970,
+        "date": "2026-02-18",
+        "event": "DreamLeague Season 28",
+        "score": "2-0",
+        "winner": "Iron Wing",
+        "g1Winner": "Iron Wing",
+        "g1F10": "Team Spirit",
+        "maps": [
+          {
+            "game": 1,
+            "winner": "Iron Wing",
+            "f10": "Team Spirit",
+            "f10TimeMin": 11.1,
+            "converted": false
+          },
+          {
+            "game": 2,
+            "winner": "Iron Wing",
+            "f10": "Iron Wing",
+            "f10TimeMin": 12.9,
+            "converted": true
+          }
+        ]
+      },
+      {
+        "series_id": 1074197,
+        "date": "2026-03-14",
+        "event": "PGL Wallachia 2026 Season 7",
+        "score": "0-2",
+        "winner": "Team Spirit",
+        "g1Winner": "Team Spirit",
+        "g1F10": "Team Spirit",
+        "maps": [
+          {
+            "game": 1,
+            "winner": "Team Spirit",
+            "f10": "Team Spirit",
+            "f10TimeMin": 7.1,
+            "converted": true
+          },
+          {
+            "game": 2,
+            "winner": "Team Spirit",
+            "f10": "Team Spirit",
+            "f10TimeMin": 12.2,
+            "converted": true
+          }
+        ]
+      },
+      {
+        "series_id": 1102393,
+        "date": "2026-05-26",
+        "event": "BLAST SLAM VII",
+        "score": "0-1",
+        "winner": "Team Spirit",
+        "g1Winner": "Team Spirit",
+        "g1F10": "Team Spirit",
+        "maps": [
+          {
+            "game": 1,
+            "winner": "Team Spirit",
+            "f10": "Team Spirit",
+            "f10TimeMin": 9.1,
+            "converted": true
+          }
+        ]
+      }
+    ]
+  },
+  "droppedTi25": {
+    "maps": 3,
+    "seriesN": 1,
+    "iwMaps": 1,
+    "spiritMaps": 2,
+    "iwF10": 1,
+    "spiritF10": 2,
+    "iwF10ThenWin": 1,
+    "spiritF10ThenWin": 2,
+    "g1Iw": 1,
+    "g1Spirit": 0,
+    "g1IwF10": 1,
+    "g1SpiritF10": 0,
+    "series": [
+      {
+        "series_id": 1008479,
+        "date": "2025-09-05",
+        "event": "The International 2025",
+        "score": "1-2",
+        "winner": "Team Spirit",
+        "g1Winner": "Iron Wing",
+        "g1F10": "Iron Wing",
+        "maps": [
+          {
+            "game": 1,
+            "winner": "Iron Wing",
+            "f10": "Iron Wing",
+            "f10TimeMin": 25.5,
+            "converted": true
+          },
+          {
+            "game": 2,
+            "winner": "Team Spirit",
+            "f10": "Team Spirit",
+            "f10TimeMin": 23.6,
+            "converted": true
+          },
+          {
+            "game": 3,
+            "winner": "Team Spirit",
+            "f10": "Team Spirit",
+            "f10TimeMin": 16.4,
+            "converted": true
+          }
+        ]
+      }
+    ]
+  },
+  "maps": [
+    {
+      "match_id": 8447555180,
+      "start_time": 1757059425,
+      "date": "2025-09-05",
+      "leagueId": 18324,
+      "event": "The International 2025",
+      "series_id": 1008479,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Iron Wing",
+      "f10": "Iron Wing",
+      "f10Time": 1532,
+      "duration": 2194,
+      "parsed": true,
+      "iwRoster": 2,
+      "spiritRoster": 4,
+      "currentIw": false,
+      "opendota": "https://www.opendota.com/matches/8447555180"
+    },
+    {
+      "match_id": 8447604181,
+      "start_time": 1757063584,
+      "date": "2025-09-05",
+      "leagueId": 18324,
+      "event": "The International 2025",
+      "series_id": 1008479,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Team Spirit",
+      "f10": "Team Spirit",
+      "f10Time": 1419,
+      "duration": 2430,
+      "parsed": true,
+      "iwRoster": 2,
+      "spiritRoster": 4,
+      "currentIw": false,
+      "opendota": "https://www.opendota.com/matches/8447604181"
+    },
+    {
+      "match_id": 8447659831,
+      "start_time": 1757067988,
+      "date": "2025-09-05",
+      "leagueId": 18324,
+      "event": "The International 2025",
+      "series_id": 1008479,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Team Spirit",
+      "f10": "Team Spirit",
+      "f10Time": 981,
+      "duration": 2585,
+      "parsed": true,
+      "iwRoster": 2,
+      "spiritRoster": 4,
+      "currentIw": false,
+      "opendota": "https://www.opendota.com/matches/8447659831"
+    },
+    {
+      "match_id": 8514376804,
+      "start_time": 1760643245,
+      "date": "2025-10-16",
+      "leagueId": 17419,
+      "event": "SLAM IV",
+      "series_id": 1023577,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Iron Wing",
+      "f10": "Iron Wing",
+      "f10Time": 918,
+      "duration": 2068,
+      "parsed": true,
+      "iwRoster": 5,
+      "spiritRoster": 4,
+      "currentIw": true,
+      "opendota": "https://www.opendota.com/matches/8514376804"
+    },
+    {
+      "match_id": 8678737586,
+      "start_time": 1770304711,
+      "date": "2026-02-05",
+      "leagueId": 19099,
+      "event": "BLAST SLAM VI",
+      "series_id": 1061789,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Team Spirit",
+      "f10": "Team Spirit",
+      "f10Time": 652,
+      "duration": 2280,
+      "parsed": true,
+      "iwRoster": 5,
+      "spiritRoster": 3,
+      "currentIw": true,
+      "opendota": "https://www.opendota.com/matches/8678737586"
+    },
+    {
+      "match_id": 8696428864,
+      "start_time": 1771440475,
+      "date": "2026-02-18",
+      "leagueId": 19269,
+      "event": "DreamLeague Season 28",
+      "series_id": 1065970,
+      "radiant": "Iron Wing",
+      "dire": "Team Spirit",
+      "winner": "Iron Wing",
+      "f10": "Team Spirit",
+      "f10Time": 668,
+      "duration": 3413,
+      "parsed": true,
+      "iwRoster": 5,
+      "spiritRoster": 3,
+      "currentIw": true,
+      "opendota": "https://www.opendota.com/matches/8696428864"
+    },
+    {
+      "match_id": 8696528491,
+      "start_time": 1771445759,
+      "date": "2026-02-18",
+      "leagueId": 19269,
+      "event": "DreamLeague Season 28",
+      "series_id": 1065970,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Iron Wing",
+      "f10": "Iron Wing",
+      "f10Time": 777,
+      "duration": 2477,
+      "parsed": true,
+      "iwRoster": 5,
+      "spiritRoster": 3,
+      "currentIw": true,
+      "opendota": "https://www.opendota.com/matches/8696528491"
+    },
+    {
+      "match_id": 8728226716,
+      "start_time": 1773475374,
+      "date": "2026-03-14",
+      "leagueId": 19435,
+      "event": "PGL Wallachia 2026 Season 7",
+      "series_id": 1074197,
+      "radiant": "Iron Wing",
+      "dire": "Team Spirit",
+      "winner": "Team Spirit",
+      "f10": "Team Spirit",
+      "f10Time": 424,
+      "duration": 2417,
+      "parsed": true,
+      "iwRoster": 4,
+      "spiritRoster": 4,
+      "currentIw": true,
+      "opendota": "https://www.opendota.com/matches/8728226716"
+    },
+    {
+      "match_id": 8728298716,
+      "start_time": 1773479524,
+      "date": "2026-03-14",
+      "leagueId": 19435,
+      "event": "PGL Wallachia 2026 Season 7",
+      "series_id": 1074197,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Team Spirit",
+      "f10": "Team Spirit",
+      "f10Time": 729,
+      "duration": 2297,
+      "parsed": true,
+      "iwRoster": 4,
+      "spiritRoster": 4,
+      "currentIw": true,
+      "opendota": "https://www.opendota.com/matches/8728298716"
+    },
+    {
+      "match_id": 8826341985,
+      "start_time": 1779802987,
+      "date": "2026-05-26",
+      "leagueId": 19101,
+      "event": "BLAST SLAM VII",
+      "series_id": 1102393,
+      "radiant": "Team Spirit",
+      "dire": "Iron Wing",
+      "winner": "Team Spirit",
+      "f10": "Team Spirit",
+      "f10Time": 543,
+      "duration": 2983,
+      "parsed": true,
+      "iwRoster": 5,
+      "spiritRoster": 5,
+      "currentIw": true,
+      "opendota": "https://www.opendota.com/matches/8826341985"
+    }
+  ]
+}

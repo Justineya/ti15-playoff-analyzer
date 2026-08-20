@@ -1394,6 +1394,57 @@ function f10kDefaultIndex(sides, nextGame) {
   return hits[0].i;
 }
 
+function shortEvent(name) {
+  const n = String(name || "");
+  if (/SLAM VII/i.test(n)) return "Slam VII";
+  if (/SLAM VI/i.test(n)) return "Slam VI";
+  if (/SLAM IV/i.test(n)) return "Slam IV";
+  if (/DreamLeague Season 28/i.test(n)) return "DL28";
+  if (/Wallachia/i.test(n) && /7/.test(n)) return "PGL7";
+  return n;
+}
+
+function h2hSeriesRow(s) {
+  const same = s.g1Winner === s.g1F10;
+  const g1f = TAG[s.g1F10] || s.g1F10 || "?";
+  const g1w = TAG[s.g1Winner] || s.g1Winner || "?";
+  const g1note = same ? `G1 ${g1f} 先到并赢` : `G1 ${g1f} 先到，${g1w} 赢图`;
+  const more = (s.maps || [])
+    .slice(1)
+    .map((x) => `G${x.game} ${TAG[x.winner] || x.winner} 赢 / ${TAG[x.f10] || x.f10} 先到`)
+    .join(" · ");
+  return `<tr>
+    <td>${s.date.slice(5).replace("-", "/")} ${shortEvent(s.event)}</td>
+    <td>${TAG[s.winner] || s.winner} ${s.score}</td>
+    <td>${g1note}${more ? " · " + more : ""}</td>
+  </tr>`;
+}
+
+function iwSpiritStudyHtml(h2h, sim, nextGame) {
+  const cur = h2h.current || {};
+  const pA = (sim.maps && sim.maps[0] ? sim.maps[0].pF10A : null) ?? sim.pF10A;
+  const leanA = (pA ?? 0.5) >= 0.5;
+  const lean = leanA ? "Iron Wing" : "Team Spirit";
+  const pLean = leanA ? pA : 1 - pA;
+  const heading = nextGame === 1 ? "Tundra / IW 对 Spirit · 第一局先到 10 杀" : "Tundra / IW 对 Spirit · 先到 10 杀";
+  const rows = (cur.series || []).map(h2hSeriesRow).join("");
+  const dropped = h2h.droppedTi25;
+  const dropNote = dropped?.maps
+    ? `TI25 那次 Tundra 还是 Crystallis 阵容（${dropped.spiritMaps}-${dropped.iwMaps} Spirit），没算进来。`
+    : "";
+  return `<section class="f10k-study">
+    <div class="arena-kicker"><span>交手</span><span>Tundra → IW vs Spirit</span><span>没有公开盘</span></div>
+    <h2>${heading}</h2>
+    <p class="lede">本届五人（Pure / bzm / 33 / Ari / Whitemon）从 Slam IV 起对 Spirit：<b>${cur.seriesN} 个系列 ${cur.maps} 局</b>。地图 <b>Spirit ${cur.spiritMaps}-${cur.iwMaps}</b>。先到 10 杀 <b>Spirit ${cur.spiritF10}-${cur.iwF10}</b>。先到之后赢图 ${cur.iwF10ThenWin + cur.spiritF10ThenWin}/${cur.maps}——只有 DL28 第一局 Spirit 先到、IW 仍赢。</p>
+    <p class="lede">系列第一局：Spirit 赢 ${cur.g1Spirit}、IW 赢 ${cur.g1Iw}。第一局先到 Spirit ${cur.g1SpiritF10}、IW ${cur.g1IwF10}。这一局模型看好 <b>${TAG[lean] || lean}</b> ${pct(pLean)} 先到，但交手里 Spirit 更常先堆到 10。</p>
+    <div class="table-wrap"><table class="src-table compact">
+      <thead><tr><th>赛事</th><th>系列</th><th>10 杀 / 胜负</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    <p class="foot-note">${h2h.note || ""} ${dropNote} EWC 没打过。Polymarket 没有先到 10 杀盘。</p>
+  </section>`;
+}
+
 function f10kTeamBits(row) {
   const g1 = row?.g1 || {};
   const all = row?.all || {};
@@ -1407,6 +1458,10 @@ function f10kTeamBits(row) {
 
 function f10kStudyHtml(data, m, sim, nextGame) {
   if (!namedSides(m) || !sim) return "";
+  const pair = new Set([m.teamA, m.teamB]);
+  if (pair.has("Iron Wing") && pair.has("Team Spirit") && data.iwSpiritH2h?.current) {
+    return iwSpiritStudyHtml(data.iwSpiritH2h, sim, nextGame);
+  }
   const pA = (sim.maps && sim.maps[0] ? sim.maps[0].pF10A : null) ?? sim.pF10A;
   if (pA == null) return "";
   const leanA = pA >= 0.5;

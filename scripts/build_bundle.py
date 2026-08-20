@@ -23,6 +23,15 @@ EIGHT = [
 ]
 
 
+def load_iw_spirit_h2h() -> dict | None:
+    path = ROOT / "data" / "iw_spirit_h2h.json"
+    if not path.exists():
+        return None
+    blob = json.loads(path.read_text())
+    blob.pop("maps", None)
+    return blob
+
+
 def when_label(dt: str) -> str:
     m = re.match(r"(\d{4})-(\d{2})-(\d{2}) (\d{2}:\d{2})", dt or "")
     if not m:
@@ -177,6 +186,7 @@ def main() -> None:
         "simulations": sims,
         "ewc": json.loads((ROOT / "data" / "ewc.json").read_text()),
         "f10kG1": build_report(),
+        "iwSpiritH2h": load_iw_spirit_h2h(),
         "series": series,
         "games": games,
     }
