@@ -2304,7 +2304,7 @@ function setup(data) {
     nav.setAttribute("aria-label", "观赛导航");
     nav.innerHTML =
       '<button type="button" class="live-tab on" data-tab="now">战局</button>' +
-      '<button type="button" class="live-tab" data-tab="bracket">对阵图</button>' +
+      '<button type="button" class="live-tab" data-tab="bracket">对阵</button>' +
       '<button type="button" class="live-tab" data-tab="sched">赛程</button>' +
       '<button type="button" class="live-tab" data-tab="tree">走向</button>';
     brand.after(nav);

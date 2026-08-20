@@ -11,7 +11,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
   color: var(--paper);
@@ -59,11 +59,12 @@ body {
 }
 .live-tabs {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2px;
   padding: 3px;
   border: 1px solid var(--line);
   background: #14120f;
+  min-width: 0;
 }
 .live-tab {
   border: 0;
@@ -96,6 +97,7 @@ body {
   font-size: 12px;
   letter-spacing: 0.08em;
   cursor: pointer;
+  white-space: nowrap;
 }
 .history-btn:hover, .history-btn.open { color: var(--gold); border-color: var(--gold); }
 .history-menu {
@@ -1312,9 +1314,31 @@ footer a { color: var(--gold); }
   .grid-2, .ia, .matches, .phases, .hero-meta, .stat-row, .compare, .lenses, .draft, .stake-stats, .calc-form, .markets, .slate-row, .live-calc .calc-form, .sched-days, .f10k-pair, .hero-pair { grid-template-columns: 1fr; }
   .hero-grid { grid-template-columns: repeat(4, 1fr); }
   nav { display: none; }
-  .topbar { padding: 12px 16px; gap: 12px; }
-  .status, .clock-now { font-size: 11px; }
-  .live-tab { padding: 6px 10px; font-size: 12px; }
+  .topbar {
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 4px max(10px, env(safe-area-inset-right, 0px)) 4px max(10px, env(safe-area-inset-left, 0px));
+    gap: 8px;
+    line-height: 1.2;
+  }
+  .status, .clock-now { display: none; }
+  .brand > span:not(.aegis) { display: none; }
+  .hist-rest { display: none; }
+  .live-tabs {
+    flex: 1;
+    justify-content: stretch;
+    padding: 2px;
+  }
+  .live-tab {
+    flex: 1;
+    padding: 8px 4px;
+    font-size: 13px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  .history-btn { padding: 8px 10px; font-size: 13px; letter-spacing: 0; }
+  .live-main { padding: 10px 12px 28px; }
+  .live-page footer { padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px)); }
   .live-teams { gap: 8px; }
   .live-poster { padding: 20px 16px; }
   .crest { width: 72px; height: 72px; }

@@ -2,12 +2,13 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#12110e" />
   <title>TI15 观赛</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=iphone" />
 </head>
 <body class="live-page">
   <div class="bg-grid"></div>
@@ -20,7 +21,7 @@
       <div class="clock-now" id="beijing-now">北京时间 …</div>
       <div class="status" id="odds-status">更新中…</div>
       <div class="history-wrap">
-        <button type="button" class="history-btn" id="history-btn" aria-expanded="false" aria-controls="history-menu">历史数据</button>
+        <button type="button" class="history-btn" id="history-btn" aria-expanded="false" aria-controls="history-menu">历史<span class="hist-rest">数据</span></button>
         <div class="history-menu" id="history-menu" hidden></div>
       </div>
     </div>
@@ -32,8 +33,8 @@
     <p>现场只打开这一页。不用开 Cursor。非投注建议。 <a href="./demo.html">模拟：第一轮打完会怎样</a></p>
   </footer>
   <script src="./data.js" onerror="document.getElementById('app').textContent='数据文件没下来，刷新一下。'"></script>
-  <script src="./odds.js?v=venue2"></script>
-  <script src="./live.js?v=venue2"></script>
-  <script src="./analysis.js?v=venue2"></script>
+  <script src="./odds.js?v=iphone"></script>
+  <script src="./live.js?v=iphone"></script>
+  <script src="./analysis.js?v=iphone"></script>
 </body>
 </html>
