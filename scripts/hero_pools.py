@@ -22,6 +22,25 @@ TOP_FIRST = 5
 TOP_BANS = 6
 TOP_ROLE = 4
 
+_SLUGS: dict[str, str] | None = None
+
+
+def hero_slugs() -> dict[str, str]:
+    global _SLUGS
+    if _SLUGS is not None:
+        return _SLUGS
+    path = ROOT / "data" / "heroes.json"
+    out: dict[str, str] = {}
+    if path.exists():
+        for row in json.loads(path.read_text()):
+            loc = row.get("localized_name") or ""
+            npc = str(row.get("name") or "")
+            slug = npc.replace("npc_dota_hero_", "") if npc.startswith("npc_dota_hero_") else ""
+            if loc and slug:
+                out[loc] = slug
+    _SLUGS = out
+    return out
+
 
 def _load_ti_games() -> list[dict]:
     blob = json.loads((ROOT / "data" / "games.json").read_text())
@@ -37,7 +56,8 @@ def _side(game: dict, name: str) -> str | None:
     return None
 
 
-def _rows(counter: Counter, wins: Counter | None = None, extra: Counter | None = None, limit: int = 8) -> list[dict]:
+def _rows(counter: Counter, wins: Counter | None = None, extra: Counter | None = None, limit: int = 8, ids: dict[str, int] | None = None) -> list[dict]:
+    slugs = hero_slugs()
     out = []
     for hero, n in counter.most_common(limit):
         if not hero or hero == "?":
@@ -49,13 +69,17 @@ def _rows(counter: Counter, wins: Counter | None = None, extra: Counter | None =
             row["wr"] = round(w / n, 3) if n else None
         if extra is not None:
             row["first"] = int(extra[hero])
+        if slugs.get(hero):
+            row["slug"] = slugs[hero]
+        if ids and hero in ids:
+            row["heroId"] = int(ids[hero])
         out.append(row)
     return out
 
 
-def _role_pool(hero_counts: Counter, player_counts: Counter, limit: int = TOP_ROLE) -> dict:
+def _role_pool(hero_counts: Counter, player_counts: Counter, ids: dict[str, int] | None = None, limit: int = TOP_ROLE) -> dict:
     return {
-        "heroes": _rows(hero_counts, limit=limit),
+        "heroes": _rows(hero_counts, limit=limit, ids=ids),
         "players": [{"player": p, "n": n} for p, n in player_counts.most_common(3) if p],
     }
 
@@ -102,18 +126,15 @@ def team_pool(games: list[dict], name: str) -> dict:
                 roles[key][slot["hero"]] += 1
             if slot.get("player"):
                 role_players[key][slot["player"]] += 1
-    pick_rows = _rows(picks, pick_wins, first, TOP_PICKS)
-    for row in pick_rows:
-        if row["hero"] in hero_ids:
-            row["heroId"] = hero_ids[row["hero"]]
+    pick_rows = _rows(picks, pick_wins, first, TOP_PICKS, hero_ids)
     return {
         "name": name,
         "maps": maps,
         "wins": wins,
         "picks": pick_rows,
-        "firstPicks": _rows(first, limit=TOP_FIRST),
-        "bans": _rows(bans, limit=TOP_BANS),
-        "roles": {key: _role_pool(roles[key], role_players[key]) for key in ("mid", "pos4", "pos5")},
+        "firstPicks": _rows(first, limit=TOP_FIRST, ids=hero_ids),
+        "bans": _rows(bans, limit=TOP_BANS, ids=hero_ids),
+        "roles": {key: _role_pool(roles[key], role_players[key], hero_ids) for key in ("mid", "pos4", "pos5")},
         "pickIndex": {hero: {"n": n, "wins": pick_wins[hero]} for hero, n in picks.items()},
         "banIndex": dict(bans),
     }

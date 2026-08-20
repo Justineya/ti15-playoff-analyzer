@@ -1645,71 +1645,73 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-function heroChip(row, maps) {
-  const wr = row.wr != null ? pct(row.wr) : "—";
-  const first = row.first >= 2 ? ` · 第一手 ${row.first}` : "";
-  const hot = row.n >= 5 || (row.first || 0) >= 3;
-  return `<span class="hero-chip${hot ? " hot" : ""}"><b>${esc(row.hero)}</b> ${row.n}/${maps} ${wr}${first}</span>`;
+function heroArt(name, row, heroes) {
+  const slug = row?.slug || slugForHero(name, heroes);
+  if (!slug) return `<span class="hero-ph" title="${esc(name)}">${esc(String(name).slice(0, 2))}</span>`;
+  return `<img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${esc(slug)}.png" alt="${esc(name)}" title="${esc(name)}" />`;
 }
 
-function roleLine(label, role) {
-  const heroes = (role?.heroes || []).map((h) => h.hero).slice(0, 3).join(" / ");
-  const who = (role?.players || []).map((p) => p.player).filter(Boolean)[0];
-  if (!heroes) return "";
-  return `${who ? esc(who) + " · " : ""}${label}常拿 ${heroes}`;
+function heroTile(row, maps, heroes, kind) {
+  const name = row.hero;
+  const hot = kind === "pick" && (row.n >= 5 || (row.first || 0) >= 3);
+  const wr = kind === "pick" && row.wr != null ? " " + pct(row.wr) : "";
+  const first = kind === "pick" && row.first >= 2 ? `<i>1st×${row.first}</i>` : "";
+  const num = kind === "pick" ? `${row.n}/${maps}${wr}` : String(row.n || "");
+  return `<div class="hero-tile ${kind}${hot ? " hot" : ""}" title="${esc(name)}">
+    ${heroArt(name, row, heroes)}
+    ${num ? `<em>${num}</em>` : ""}
+    ${first}
+  </div>`;
 }
 
-function pairHeroNote(a, b, nameA, nameB) {
+function roleRow(label, role, heroes) {
+  const who = (role?.players || []).map((p) => p.player).filter(Boolean)[0] || label;
+  const tiles = (role?.heroes || []).slice(0, 3).map((row) => heroTile(row, row.n, heroes, "role")).join("");
+  if (!tiles) return "";
+  return `<div class="hero-role"><span>${esc(who)}</span><div class="hero-mini">${tiles}</div></div>`;
+}
+
+function contestRow(a, b, nameA, nameB, heroes) {
   const idxA = a.pickIndex || {};
   const idxB = b.pickIndex || {};
+  const byName = {};
+  for (const row of [...(a.picks || []), ...(b.picks || [])]) byName[row.hero] = row;
   const contest = [];
   for (const hero of Object.keys(idxA)) {
     const na = idxA[hero]?.n || 0;
     const nb = idxB[hero]?.n || 0;
-    if (na >= 2 && nb >= 2) contest.push({ hero, na, nb, tot: na + nb });
+    if (na >= 2 && nb >= 2) contest.push({ hero, na, nb, tot: na + nb, row: byName[hero] });
   }
   contest.sort((x, y) => y.tot - x.tot);
-  const openFor = (them, myBans) =>
-    (them.picks || [])
-      .filter((r) => r.n >= 3 && (myBans[r.hero] || 0) <= 1)
-      .map((r) => r.hero)
-      .slice(0, 3);
-  const openB = openFor(b, a.banIndex || {});
-  const openA = openFor(a, b.banIndex || {});
+  if (!contest.length) return "";
   const tagA = TAG[nameA] || nameA;
   const tagB = TAG[nameB] || nameB;
-  const bits = [];
-  if (contest.length) {
-    bits.push(
-      "两边都常拿 " +
-        contest
-          .slice(0, 3)
-          .map((c) => `${c.hero}（${tagA} ${c.na} · ${tagB} ${c.nb}）`)
-          .join("、") +
-        "。BP 会抢。"
-    );
-  }
-  if (openB.length) bits.push(`${tagA} 很少禁对方的 ${openB.join(" / ")}。`);
-  if (openA.length) bits.push(`${tagB} 很少禁对方的 ${openA.join(" / ")}。`);
-  return bits.join(" ");
+  const items = contest
+    .slice(0, 4)
+    .map(
+      (c) => `<div class="hero-share-item" title="${esc(c.hero)}">
+        ${heroArt(c.hero, c.row, heroes)}
+        <em>${tagA} ${c.na} · ${tagB} ${c.nb}</em>
+      </div>`
+    )
+    .join("");
+  return `<div class="hero-share">${items}</div>`;
 }
 
-function heroTeamCard(pool) {
+function heroTeamCard(pool, heroes) {
   if (!pool) return "";
-  const chips = (pool.picks || []).map((row) => heroChip(row, pool.maps)).join("");
+  const tiles = (pool.picks || []).map((row) => heroTile(row, pool.maps, heroes, "pick")).join("");
   const roles = [
-    roleLine("中单", pool.roles?.mid),
-    roleLine("四号", pool.roles?.pos4),
-    roleLine("五号", pool.roles?.pos5),
+    roleRow("中", pool.roles?.mid, heroes),
+    roleRow("四", pool.roles?.pos4, heroes),
+    roleRow("五", pool.roles?.pos5, heroes),
   ].filter(Boolean);
-  const bans = (pool.bans || []).map((r) => r.hero).slice(0, 4).join(" / ");
+  const bans = (pool.bans || []).slice(0, 6).map((row) => heroTile(row, pool.maps, heroes, "ban")).join("");
   return `<article>
-    ${crest(pool.name, "sm")}
-    <h3>${TAG[pool.name] || pool.name}</h3>
-    <p class="hero-maps">TI ${pool.wins}/${pool.maps}</p>
-    <div class="hero-chips">${chips}</div>
-    ${roles.length ? `<p>${roles.join("。")}。</p>` : ""}
-    ${bans ? `<p>爱禁 ${bans}。</p>` : ""}
+    <div class="hero-head">${crest(pool.name, "sm")}<h3>${TAG[pool.name] || pool.name}</h3><span>TI ${pool.wins}/${pool.maps}</span></div>
+    <div class="hero-grid">${tiles}</div>
+    ${roles.length ? `<div class="hero-roles">${roles.join("")}</div>` : ""}
+    ${bans ? `<div class="hero-bans">${bans}</div>` : ""}
   </article>`;
 }
 
@@ -1719,16 +1721,14 @@ function heroesStudyHtml(data, m) {
   const a = report.teams?.[m.teamA];
   const b = report.teams?.[m.teamB];
   if (!a || !b) return "";
-  const note = pairHeroNote(a, b, m.teamA, m.teamB);
-  return `<section class="f10k-study hero-study">
-    <div class="arena-kicker"><span>英雄</span><span>TI15 常用</span><span>${report.sample || "本届八强"}</span></div>
-    <h2>他们在 TI 上最常拿谁</h2>
-    <p class="lede">${note || "下面是两边在本届八强局里拿得最多的英雄。"}</p>
-    <div class="f10k-pair hero-pair">
-      ${heroTeamCard(a)}
-      ${heroTeamCard(b)}
+  const heroes = data.heroes || {};
+  return `<section class="hero-study">
+    <div class="arena-kicker"><span>英雄</span><span>TI15</span><span>${report.sample || ""}</span></div>
+    ${contestRow(a, b, m.teamA, m.teamB, heroes)}
+    <div class="hero-pair">
+      ${heroTeamCard(a, heroes)}
+      ${heroTeamCard(b, heroes)}
     </div>
-    <p class="foot-note">${report.note || ""} 不改胜率模型，只给 BP 盯人用。</p>
   </section>`;
 }
 
