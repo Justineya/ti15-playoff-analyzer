@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-20T16:52Z",
+  "asOf": "2026-08-20T17:17Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
       "slug": "dota2-ironwi-ts8-2026-08-19",
       "title": "Dota 2: Iron Wing vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 4848608.607904999,
+      "volume": 4848608.607905002,
       "markets": [
         {
           "question": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
@@ -386,7 +386,7 @@
     {
       "slug": "dota2-vsn2-boombo-2026-08-20",
       "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 9385804.276143,
+      "volume": 9385804.276143014,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 8328754.559454999,
+      "volume": 8328754.559454996,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 7519474.990453003,
+      "volume": 8615141.923819,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1245,8 +1245,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.415",
-            "0.585"
+            "0.395",
+            "0.605"
           ]
         },
         {
@@ -1432,8 +1432,8 @@
             "No"
           ],
           "prices": [
-            "0.165",
-            "0.835"
+            "0.5",
+            "0.5"
           ]
         },
         {
