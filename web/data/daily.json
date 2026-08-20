@@ -1,43 +1,43 @@
 {
-  "asOf": "2026-08-20 23:46 CST",
+  "asOf": "2026-08-21 00:16 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 FLCN 赢了，先到10杀 FLCN，41.7分钟。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。",
-  "narrative": "第1局 FLCN 赢了，先到10杀 FLCN，41.7分钟。上一局阵容 FLCN Centaur Warrunner、Shadow Demon、Mirana / NGX Nature's Prophet、Clockwerk、Dark Seer。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。系列现在看好 FLCN（77%）。先到10杀看好 FLCN。本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit。",
+  "headline": "第2局 NGX 40-8 扳平，先到10杀 NGX（10分43秒）。决胜局第3局重算后看好 NGX（57%），门槛 1.76。",
+  "narrative": "第1局 Team Falcons 天辉 25-8 赢了，41.7分钟慢节奏滚雪球。先到10杀 FLCN（当时 10-7，25分34秒），中单 Malr1ne/Centaur Warrunner 参与 5 次。FLCN 第1手 Centaur + Shadow Demon，后手 Huskar、Sven；NGX 第1手 Nature's Prophet，第5手 Lifestealer 给 SumaiL 中单。第2局 NGX 天辉 40-8 扳平，40.1分钟进攻转线。先到10杀 NGX（当时 10-2，10分43秒），中单 lorenof/Nature's Prophet 自己 4 杀。NGX 一阶段禁掉上局 Huskar 后第1手仍是 NP + Mirana、Bounty Hunter；FLCN 再禁 Ember Spirit，第1手还是 Centaur + Clockwerk，后手 Necrophos、Alchemist。液体百科局分 1-1。第3局大厅已开（Falcons 天辉 / NGX 夜魇），还在选人。\n\n因为第2局把第1局的慢滚雪球拧成 10 分钟雪崩，Centaur 中单连打两局、第2局被压到 2 杀。H2H 从 FLCN 先拿 1 局变成 1-1。第1局后系列还看好 FLCN 77%；扳平后整棵模型重算，系列翻到 NGX 57%（门槛 1.76）。第3局模型看好 NGX 57%（FLCN 43%），门槛 1.76。先到10杀仍看好 FLCN 61%，没有公开盘。Polymarket 没有单独第3局胜负盘，未编；系列盘 NGX 0.395 / FLCN 0.605。本届胜率 NGX 66% / FLCN 58%；先到10杀 46% / 58%；H2H 2.0 局；NGX 中单爱拿 Ember Spirit。这不是投注建议。",
   "previousMap": {
-    "game": 1,
-    "matchId": 8955796155,
-    "winner": "Team Falcons",
+    "game": 2,
+    "matchId": 8955934230,
+    "winner": "Nigma Galaxy",
     "score": [
-      25,
+      40,
       8
     ],
-    "f10": "Team Falcons",
-    "f10Time": 1534,
-    "durationMin": 41.7,
-    "pace": "慢",
-    "stance": "滚雪球",
+    "f10": "Nigma Galaxy",
+    "f10Time": 643,
+    "durationMin": 40.1,
+    "pace": "快",
+    "stance": "进攻转线",
     "picks": {
-      "Team Falcons": [
-        "Centaur Warrunner",
-        "Shadow Demon",
-        "Mirana",
-        "Huskar",
-        "Sven"
-      ],
       "Nigma Galaxy": [
         "Nature's Prophet",
-        "Clockwerk",
+        "Mirana",
+        "Bounty Hunter",
         "Dark Seer",
-        "Elder Titan",
-        "Lifestealer"
+        "Windranger"
+      ],
+      "Team Falcons": [
+        "Centaur Warrunner",
+        "Clockwerk",
+        "Necrophos",
+        "Jakiro",
+        "Alchemist"
       ]
     },
     "mid": {
-      "Team Falcons": "Centaur Warrunner",
-      "Nigma Galaxy": "Lifestealer"
+      "Nigma Galaxy": "Nature's Prophet",
+      "Team Falcons": "Centaur Warrunner"
     },
-    "blurb": "Team Falcons先到 10 杀（当时 10-7，25分34秒）。这 10 次击杀里，中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。"
+    "blurb": "Nigma Galaxy先到 10 杀（当时 10-2，10分43秒）。这 10 次击杀里，中单 lorenof/Nature's Prophet 参与 4 次（击杀 4 + 助攻 0），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 2 杀。"
   },
   "previousMaps": [
     {
@@ -74,60 +74,86 @@
         "Nigma Galaxy": "Lifestealer"
       },
       "blurb": "Team Falcons先到 10 杀（当时 10-7，25分34秒）。这 10 次击杀里，中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。"
+    },
+    {
+      "game": 2,
+      "matchId": 8955934230,
+      "winner": "Nigma Galaxy",
+      "score": [
+        40,
+        8
+      ],
+      "f10": "Nigma Galaxy",
+      "f10Time": 643,
+      "durationMin": 40.1,
+      "pace": "快",
+      "stance": "进攻转线",
+      "picks": {
+        "Nigma Galaxy": [
+          "Nature's Prophet",
+          "Mirana",
+          "Bounty Hunter",
+          "Dark Seer",
+          "Windranger"
+        ],
+        "Team Falcons": [
+          "Centaur Warrunner",
+          "Clockwerk",
+          "Necrophos",
+          "Jakiro",
+          "Alchemist"
+        ]
+      },
+      "mid": {
+        "Nigma Galaxy": "Nature's Prophet",
+        "Team Falcons": "Centaur Warrunner"
+      },
+      "blurb": "Nigma Galaxy先到 10 杀（当时 10-2，10分43秒）。这 10 次击杀里，中单 lorenof/Nature's Prophet 参与 4 次（击杀 4 + 助攻 0），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 2 杀。"
     }
   ],
   "nextMap": {
-    "game": 2,
+    "game": 3,
     "teamA": "Nigma Galaxy",
     "teamB": "Team Falcons",
     "lean": {
-      "team": "Team Falcons",
-      "tag": "FLCN",
-      "p": 0.535,
-      "pA": 0.465,
-      "pB": 0.535,
-      "breakEven": 1.87,
-      "market": {
-        "outcomes": [
-          "Nigma Galaxy",
-          "Team Falcons"
-        ],
-        "prices": [
-          0.865,
-          0.135
-        ]
-      },
-      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.569,
+      "pA": 0.569,
+      "pB": 0.431,
+      "breakEven": 1.76,
+      "market": null,
+      "why": "本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
     },
     "f10": {
       "team": "Team Falcons",
       "tag": "FLCN",
-      "p": 0.642,
-      "pA": 0.358,
-      "pB": 0.642,
-      "breakEven": 1.56,
+      "p": 0.612,
+      "pA": 0.388,
+      "pB": 0.612,
+      "breakEven": 1.63,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Team Falcons",
-    "tag": "FLCN",
-    "p": 0.77,
-    "pA": 0.23,
-    "pB": 0.77,
-    "breakEven": 1.3,
+    "team": "Nigma Galaxy",
+    "tag": "NGX",
+    "p": 0.567,
+    "pA": 0.567,
+    "pB": 0.433,
+    "breakEven": 1.76,
     "market": {
       "outcomes": [
         "Nigma Galaxy",
         "Team Falcons"
       ],
       "prices": [
-        0.34,
-        0.66
+        0.395,
+        0.605
       ]
     },
-    "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+    "why": "本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
   },
   "previous": null,
   "next": {
@@ -141,28 +167,28 @@
     "teamALabel": "Nigma Galaxy",
     "teamBLabel": "Team Falcons",
     "status": "live",
-    "score": "0-1",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-ngx-flc-2026-08-20",
-    "mapsPlayed": 1,
+    "mapsPlayed": 2,
     "lean": {
-      "team": "Team Falcons",
-      "tag": "FLCN",
-      "p": 0.77,
-      "pA": 0.23,
-      "pB": 0.77,
-      "breakEven": 1.3,
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.567,
+      "pA": 0.567,
+      "pB": 0.433,
+      "breakEven": 1.76,
       "market": {
         "outcomes": [
           "Nigma Galaxy",
           "Team Falcons"
         ],
         "prices": [
-          0.34,
-          0.66
+          0.395,
+          0.605
         ]
       },
-      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "why": "本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
@@ -176,60 +202,13 @@
     "teamALabel": "Nigma Galaxy",
     "teamBLabel": "Team Falcons",
     "status": "live",
-    "score": "0-1",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-ngx-flc-2026-08-20",
-    "mapsPlayed": 1
+    "mapsPlayed": 2
   },
-  "todayResults": [
-    {
-      "id": "ubqf1",
-      "round": "胜者组首轮",
-      "day": "2026-08-20",
-      "when": "2026-08-20 10:30",
-      "format": "Bo3",
-      "teamA": "Iron Wing",
-      "teamB": "Team Spirit",
-      "teamALabel": "Iron Wing",
-      "teamBLabel": "Team Spirit",
-      "status": "completed",
-      "score": "0-2",
-      "winner": "Team Spirit",
-      "polySlug": "dota2-ironwi-ts8-2026-08-19",
-      "mapsPlayed": 2
-    },
-    {
-      "id": "ubqf2",
-      "round": "胜者组首轮",
-      "day": "2026-08-20",
-      "when": "2026-08-20 13:45",
-      "format": "Bo3",
-      "teamA": "TEAM VISION",
-      "teamB": "BoomBoys",
-      "teamALabel": "TEAM VISION",
-      "teamBLabel": "BoomBoys",
-      "status": "completed",
-      "score": "2-1",
-      "winner": "TEAM VISION",
-      "polySlug": "dota2-vsn2-boombo-2026-08-20",
-      "mapsPlayed": 3
-    },
-    {
-      "id": "ubqf3",
-      "round": "胜者组首轮",
-      "day": "2026-08-20",
-      "when": "2026-08-20 18:30",
-      "format": "Bo3",
-      "teamA": "Team Liquid",
-      "teamB": "Team Yandex",
-      "teamALabel": "Team Liquid",
-      "teamBLabel": "Team Yandex",
-      "status": "completed",
-      "score": "0-2",
-      "winner": "Team Yandex",
-      "polySlug": "dota2-liquid-ty-2026-08-20",
-      "mapsPlayed": 2
-    }
-  ],
-  "newMapIds": []
+  "todayResults": [],
+  "newMapIds": [
+    8955934230
+  ]
 }
