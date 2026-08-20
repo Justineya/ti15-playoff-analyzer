@@ -1,43 +1,43 @@
 {
-  "asOf": "2026-08-20 17:49 CST",
+  "asOf": "2026-08-20 18:17 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。下一局第3局按上一局重算后看好 VSN（67%）。现场赔率至少 1.49。",
-  "narrative": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。上一局阵容 VSN Nature's Prophet、Winter Wyvern、Pudge / BB Largo、Undying、Mirana。下一局第3局按上一局重算后看好 VSN（67%）。现场赔率至少 1.49。系列现在看好 VSN（67%）。先到10杀看好 VSN。本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit。",
+  "headline": "第3局 VSN 赢了，先到10杀 VSN，31.0分钟。下一场系列第1局看好 Liquid（54%）。",
+  "narrative": "第3局 TEAM VISION 赢了，31.0分钟（OpenDota 30分59秒），人头 BoomBoys 8–VSN 32。VSN 先到 10 杀（16分51秒，当时 6-10），中单 No[o]ne-/Ember Spirit 参与 4 次，Satanic/Nature's Prophet 补上第 10 杀。BB 第一手又拿 Lina 给 gpk~ 中单，前两手 Lina、Mirana，后手 Lone Druid、Underlord；VSN 一阶禁掉 BB 第2局前两手的 Largo，前两手 Bounty Hunter、Winter Wyvern，中单第三手 Ember Spirit，再拿 Nature's Prophet、Slardar。液体百科这场 maps 仍是空的、score 仍写 1-0，局分按 OpenDota 已解析的三局算：VSN、BB、VSN。第1局 VSN 赢了，77.5分钟慢节奏发育对线，人头 BB 31–VSN 25（BB 人头更多，VSN 推掉基地）。BB 先到 10 杀（24分07秒，当时 10-7），中单 gpk~/Lina 参与 8 次；BB 中单第一手 Lina，对位 VSN Snapfire。第2局 BB 赢了，51.0分钟正常节奏滚雪球，19-27。VSN 先到 10 杀（13分31秒，当时 10-4）却没能把优势变成图；BB 前两手 Largo、Undying，中单 Ember Spirit。因为第3局 VSN 把先到 10 杀一次性打穿、系列 2-1 结束，模型里这对 H2H 从约 5.8 局变成 6.8 局，VSN 本届胜率 70% / BB 55%，中单样本改成爱拿 Ember Spirit。VSN 进胜者组半决赛对 Spirit，BB 进败者组打 Iron Wing。所以这一把不是 VSN 的第4局，是 Liquid vs TY 的第1局。整棵模型重算后看好 Liquid：第1局 54%（门槛 1.86），先到 10 杀 57%（门槛 1.76，没有公开盘），系列 53%（门槛 1.89）。Polymarket 第1局价 Liquid 0.565 / TY 0.435，系列价 0.575 / 0.425。本届胜率 Liquid 58% / TY 59%；先到10杀 57% / 51%；H2H 3 局；Liquid 中单爱拿 Earth Spirit。这不是投注建议。",
   "previousMap": {
-    "game": 2,
-    "matchId": 8955383956,
-    "winner": "BoomBoys",
+    "game": 3,
+    "matchId": 8955456108,
+    "winner": "TEAM VISION",
     "score": [
-      19,
-      27
+      8,
+      32
     ],
     "f10": "TEAM VISION",
-    "f10Time": 811,
-    "durationMin": 51.0,
-    "pace": "正常",
-    "stance": "滚雪球",
+    "f10Time": 1011,
+    "durationMin": 31.0,
+    "pace": "慢",
+    "stance": "来回拉锯",
     "picks": {
-      "TEAM VISION": [
-        "Nature's Prophet",
-        "Winter Wyvern",
-        "Pudge",
-        "Puck",
-        "Slardar"
-      ],
       "BoomBoys": [
-        "Largo",
-        "Undying",
+        "Lina",
         "Mirana",
+        "Bane",
+        "Lone Druid",
+        "Underlord"
+      ],
+      "TEAM VISION": [
+        "Bounty Hunter",
+        "Winter Wyvern",
         "Ember Spirit",
-        "Tiny"
+        "Nature's Prophet",
+        "Slardar"
       ]
     },
     "mid": {
-      "TEAM VISION": "Puck",
-      "BoomBoys": "Ember Spirit"
+      "BoomBoys": "Lina",
+      "TEAM VISION": "Ember Spirit"
     },
-    "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分31秒）。这 10 次击杀里，中单 No[o]ne-/Puck 参与 9 次（击杀 5 + 助攻 4），中单+双辅合计参与 23 次 · 中辅驱动。对手当时 4 杀。"
+    "blurb": "TEAM VISION先到 10 杀（当时 6-10，16分51秒）。这 10 次击杀里，中单 No[o]ne-/Ember Spirit 参与 4 次（击杀 2 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 6 杀。"
   },
   "previousMaps": [
     {
@@ -109,54 +109,97 @@
         "BoomBoys": "Ember Spirit"
       },
       "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分31秒）。这 10 次击杀里，中单 No[o]ne-/Puck 参与 9 次（击杀 5 + 助攻 4），中单+双辅合计参与 23 次 · 中辅驱动。对手当时 4 杀。"
+    },
+    {
+      "game": 3,
+      "matchId": 8955456108,
+      "winner": "TEAM VISION",
+      "score": [
+        8,
+        32
+      ],
+      "f10": "TEAM VISION",
+      "f10Time": 1011,
+      "durationMin": 31.0,
+      "pace": "慢",
+      "stance": "来回拉锯",
+      "picks": {
+        "BoomBoys": [
+          "Lina",
+          "Mirana",
+          "Bane",
+          "Lone Druid",
+          "Underlord"
+        ],
+        "TEAM VISION": [
+          "Bounty Hunter",
+          "Winter Wyvern",
+          "Ember Spirit",
+          "Nature's Prophet",
+          "Slardar"
+        ]
+      },
+      "mid": {
+        "BoomBoys": "Lina",
+        "TEAM VISION": "Ember Spirit"
+      },
+      "blurb": "TEAM VISION先到 10 杀（当时 6-10，16分51秒）。这 10 次击杀里，中单 No[o]ne-/Ember Spirit 参与 4 次（击杀 2 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 6 杀。"
     }
   ],
   "nextMap": {
-    "game": 3,
-    "teamA": "TEAM VISION",
-    "teamB": "BoomBoys",
+    "game": 1,
+    "teamA": "Team Liquid",
+    "teamB": "Team Yandex",
     "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.672,
-      "pA": 0.672,
-      "pB": 0.328,
-      "breakEven": 1.49,
-      "market": null,
-      "why": "本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit"
+      "team": "Team Liquid",
+      "tag": "Liquid",
+      "p": 0.537,
+      "pA": 0.537,
+      "pB": 0.463,
+      "breakEven": 1.86,
+      "market": {
+        "outcomes": [
+          "Team Liquid",
+          "Team Yandex"
+        ],
+        "prices": [
+          0.565,
+          0.435
+        ]
+      },
+      "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.578,
-      "pA": 0.578,
-      "pB": 0.422,
-      "breakEven": 1.73,
+      "team": "Team Liquid",
+      "tag": "Liquid",
+      "p": 0.567,
+      "pA": 0.567,
+      "pB": 0.433,
+      "breakEven": 1.76,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "TEAM VISION",
-    "tag": "VSN",
-    "p": 0.672,
-    "pA": 0.672,
-    "pB": 0.328,
-    "breakEven": 1.49,
+    "team": "Team Liquid",
+    "tag": "Liquid",
+    "p": 0.53,
+    "pA": 0.53,
+    "pB": 0.47,
+    "breakEven": 1.89,
     "market": {
       "outcomes": [
-        "TEAM VISION",
-        "BoomBoys"
+        "Team Liquid",
+        "Team Yandex"
       ],
       "prices": [
-        0.943,
-        0.057
+        0.575,
+        0.425
       ]
     },
-    "why": "本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
   },
-  "previous": null,
-  "next": {
+  "previous": {
     "id": "ubqf2",
     "round": "胜者组首轮",
     "day": "2026-08-20",
@@ -166,46 +209,62 @@
     "teamB": "BoomBoys",
     "teamALabel": "TEAM VISION",
     "teamBLabel": "BoomBoys",
-    "status": "live",
-    "score": "1-1",
-    "winner": null,
+    "status": "completed",
+    "score": "2-1",
+    "winner": "TEAM VISION",
     "polySlug": "dota2-vsn2-boombo-2026-08-20",
-    "mapsPlayed": 2,
+    "mapsPlayed": 3
+  },
+  "next": {
+    "id": "ubqf3",
+    "round": "胜者组首轮",
+    "day": "2026-08-20",
+    "when": "2026-08-20 18:00",
+    "format": "Bo3",
+    "teamA": "Team Liquid",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
+    "winner": null,
+    "polySlug": "dota2-liquid-ty-2026-08-20",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.672,
-      "pA": 0.672,
-      "pB": 0.328,
-      "breakEven": 1.49,
+      "team": "Team Liquid",
+      "tag": "Liquid",
+      "p": 0.53,
+      "pA": 0.53,
+      "pB": 0.47,
+      "breakEven": 1.89,
       "market": {
         "outcomes": [
-          "TEAM VISION",
-          "BoomBoys"
+          "Team Liquid",
+          "Team Yandex"
         ],
         "prices": [
-          0.943,
-          0.057
+          0.575,
+          0.425
         ]
       },
-      "why": "本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
-    "id": "ubqf2",
+    "id": "ubqf3",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 13:45",
+    "when": "2026-08-20 18:00",
     "format": "Bo3",
-    "teamA": "TEAM VISION",
-    "teamB": "BoomBoys",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "BoomBoys",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Liquid",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-vsn2-boombo-2026-08-20",
-    "mapsPlayed": 2
+    "polySlug": "dota2-liquid-ty-2026-08-20",
+    "mapsPlayed": 0
   },
   "todayResults": [
     {
@@ -223,7 +282,25 @@
       "winner": "Team Spirit",
       "polySlug": "dota2-ironwi-ts8-2026-08-19",
       "mapsPlayed": 2
+    },
+    {
+      "id": "ubqf2",
+      "round": "胜者组首轮",
+      "day": "2026-08-20",
+      "when": "2026-08-20 13:45",
+      "format": "Bo3",
+      "teamA": "TEAM VISION",
+      "teamB": "BoomBoys",
+      "teamALabel": "TEAM VISION",
+      "teamBLabel": "BoomBoys",
+      "status": "completed",
+      "score": "2-1",
+      "winner": "TEAM VISION",
+      "polySlug": "dota2-vsn2-boombo-2026-08-20",
+      "mapsPlayed": 3
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8955456108
+  ]
 }
