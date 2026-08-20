@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 22:27 CST",
+  "asOf": "2026-08-20 23:05 CST",
   "n": 88,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
@@ -26724,7 +26724,7 @@
       "series_id": 1132197,
       "start_time": 1787232121,
       "duration": 2501,
-      "parsed": false,
+      "parsed": true,
       "radiant": "Team Falcons",
       "dire": "Nigma Galaxy",
       "radiant_team_id": 9247354,
@@ -26735,20 +26735,33 @@
         25,
         8
       ],
-      "pace": "未知",
+      "pace": "慢",
       "length": "偏长",
-      "stance": "来回拉锯",
-      "f10k": null,
-      "f10k_mid_share": 0,
-      "first_tower": null,
-      "gold": {
-        "m5": null,
-        "m10": null,
-        "m15": null,
-        "m20": null
+      "stance": "滚雪球",
+      "f10k": {
+        "side": "radiant",
+        "time": 1534,
+        "score": {
+          "radiant": 10,
+          "dire": 7
+        },
+        "completing_killer": "Sneyking",
+        "completing_hero": "Mirana"
       },
-      "kills_8min": 0,
-      "kills_15min": 0,
+      "f10k_mid_share": 5,
+      "first_tower": {
+        "time": 665,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -139,
+        "m10": 980,
+        "m15": 5324,
+        "m20": 5806
+      },
+      "kills_8min": 3,
+      "kills_15min": 8,
       "draft": {
         "radiant": {
           "bans": [
@@ -26937,77 +26950,77 @@
             "player": "Malr1ne",
             "hero": "Centaur Warrunner",
             "hero_id": 96,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 3612,
+            "xp_t10": 4831,
             "kills": 2,
             "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "assists_before_10": 5,
+            "participate_before_10": 5
           },
           "pos4": {
-            "player": "Sneyking",
-            "hero": "Mirana",
-            "kills": 1,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
-          },
-          "pos5": {
             "player": "Cr1t-",
             "hero": "Shadow Demon",
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills": 6,
+            "kills_before_10": 1,
+            "assists_before_10": 5,
+            "participate_before_10": 6
+          },
+          "pos5": {
+            "player": "Sneyking",
+            "hero": "Mirana",
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
-          "mid_sup_driven": false
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 2,
+          "first10_mid_sup_ka": 14,
+          "mid_sup_driven": true
         },
         "dire": {
           "mid": {
-            "player": "lorenof",
-            "hero": "Nature's Prophet",
-            "hero_id": 53,
-            "gold_t10": null,
-            "xp_t10": null,
-            "kills": 4,
-            "kills_before_10": 0,
+            "player": "SumaiL-",
+            "hero": "Lifestealer",
+            "hero_id": 54,
+            "gold_t10": 3749,
+            "xp_t10": 4409,
+            "kills": 1,
+            "kills_before_10": 1,
             "assists_before_10": 0,
-            "participate_before_10": 0
+            "participate_before_10": 1
           },
           "pos4": {
-            "player": "GH",
-            "hero": "Elder Titan",
-            "kills": 0,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
-          },
-          "pos5": {
             "player": "OmaR",
             "hero": "Clockwerk",
+            "kills": 1,
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
+          },
+          "pos5": {
+            "player": "GH",
+            "hero": "Elder Titan",
             "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "assists_before_10": 1,
+            "participate_before_10": 1
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
+          "kills_at_f10k": 7,
+          "first10_mid_sup_kills": 2,
+          "first10_mid_sup_ka": 5,
           "mid_sup_driven": false
         }
       },
       "blurb": {
         "bp": {
           "radiant": "一阶段禁Io、Keeper of the Light；前两手Centaur Warrunner、Shadow Demon；中单Centaur Warrunner第1手拿",
-          "dire": "一阶段禁Treant Protector、Earth Spirit；前两手Nature's Prophet、Clockwerk；中单Nature's Prophet第1手拿"
+          "dire": "一阶段禁Treant Protector、Earth Spirit；前两手Nature's Prophet、Clockwerk；中单Lifestealer第5手拿"
         },
-        "pace": "未知节奏 / 偏长局（41分41秒）；先到10杀出现在 ?分",
-        "stance": "来回拉锯",
-        "f10k": "没有队伍先堆到 10 杀",
-        "mid_support": "天辉中单 Malr1ne/Centaur Warrunner 参与 0 次（击杀0+助攻0），辅Sneyking/Mirana 参与 0 次，中辅合计0；夜魇中单 lorenof/Nature's Prophet 参与 0 次（击杀0+助攻0），辅GH/Elder Titan 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+        "pace": "慢节奏 / 偏长局（41分41秒）；先到10杀出现在 25分34秒",
+        "stance": "滚雪球",
+        "f10k": "Team Falcons先到 10 杀（当时 10-7，25分34秒）。这 10 次击杀里，中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。",
+        "mid_support": "天辉中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀0+助攻5），辅Cr1t-/Shadow Demon 参与 6 次，中辅合计14 · 中辅驱动；夜魇中单 SumaiL-/Lifestealer 参与 1 次（击杀1+助攻0），辅OmaR/Clockwerk 参与 3 次，中辅合计5。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8955796155",
       "source": "ti15",

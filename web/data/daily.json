@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-20 22:27 CST",
+  "asOf": "2026-08-20 23:05 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 FLCN 赢了，41.7分钟。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。",
-  "narrative": "第1局 FLCN 赢了，41.7分钟。上一局阵容 FLCN Centaur Warrunner、Shadow Demon、Mirana / NGX Nature's Prophet、Clockwerk、Dark Seer。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。系列现在看好 FLCN（77%）。先到10杀看好 FLCN。本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit。",
+  "headline": "第1局 FLCN 赢了，先到10杀 FLCN，41.7分钟。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。",
+  "narrative": "第1局 FLCN 赢了，先到10杀 FLCN，41.7分钟。上一局阵容 FLCN Centaur Warrunner、Shadow Demon、Mirana / NGX Nature's Prophet、Clockwerk、Dark Seer。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。系列现在看好 FLCN（77%）。先到10杀看好 FLCN。本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit。",
   "previousMap": {
     "game": 1,
     "matchId": 8955796155,
@@ -12,11 +12,11 @@
       25,
       8
     ],
-    "f10": null,
-    "f10Time": null,
+    "f10": "Team Falcons",
+    "f10Time": 1534,
     "durationMin": 41.7,
-    "pace": "未知",
-    "stance": "来回拉锯",
+    "pace": "慢",
+    "stance": "滚雪球",
     "picks": {
       "Team Falcons": [
         "Centaur Warrunner",
@@ -35,9 +35,9 @@
     },
     "mid": {
       "Team Falcons": "Centaur Warrunner",
-      "Nigma Galaxy": "Nature's Prophet"
+      "Nigma Galaxy": "Lifestealer"
     },
-    "blurb": "没有队伍先堆到 10 杀"
+    "blurb": "Team Falcons先到 10 杀（当时 10-7，25分34秒）。这 10 次击杀里，中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。"
   },
   "previousMaps": [
     {
@@ -48,11 +48,11 @@
         25,
         8
       ],
-      "f10": null,
-      "f10Time": null,
+      "f10": "Team Falcons",
+      "f10Time": 1534,
       "durationMin": 41.7,
-      "pace": "未知",
-      "stance": "来回拉锯",
+      "pace": "慢",
+      "stance": "滚雪球",
       "picks": {
         "Team Falcons": [
           "Centaur Warrunner",
@@ -71,9 +71,9 @@
       },
       "mid": {
         "Team Falcons": "Centaur Warrunner",
-        "Nigma Galaxy": "Nature's Prophet"
+        "Nigma Galaxy": "Lifestealer"
       },
-      "blurb": "没有队伍先堆到 10 杀"
+      "blurb": "Team Falcons先到 10 杀（当时 10-7，25分34秒）。这 10 次击杀里，中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。"
     }
   ],
   "nextMap": {
@@ -93,19 +93,19 @@
           "Team Falcons"
         ],
         "prices": [
-          0.375,
-          0.625
+          0.395,
+          0.605
         ]
       },
-      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
     },
     "f10": {
       "team": "Team Falcons",
       "tag": "FLCN",
-      "p": 0.615,
-      "pA": 0.385,
-      "pB": 0.615,
-      "breakEven": 1.63,
+      "p": 0.642,
+      "pA": 0.358,
+      "pB": 0.642,
+      "breakEven": 1.56,
       "market": null,
       "why": ""
     }
@@ -123,11 +123,11 @@
         "Team Falcons"
       ],
       "prices": [
-        0.165,
-        0.835
+        0.155,
+        0.845
       ]
     },
-    "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+    "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
   },
   "previous": null,
   "next": {
@@ -158,11 +158,11 @@
           "Team Falcons"
         ],
         "prices": [
-          0.165,
-          0.835
+          0.155,
+          0.845
         ]
       },
-      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 60%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
@@ -231,7 +231,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8955796155
-  ]
+  "newMapIds": []
 }
