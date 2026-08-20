@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 03:04 CST",
+  "asOf": "2026-08-21 03:39 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -3719,8 +3719,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.9995,
-            0.0005
+            1.0,
+            0.0
           ],
           "question": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs"
         },
@@ -3730,8 +3730,8 @@
             "Under"
           ],
           "prices": [
-            0.9995,
-            0.0005
+            1.0,
+            0.0
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -3772,14 +3772,14 @@
           },
           {
             "market": "总局数 O/U 2.5",
-            "pick": "Under 2.5",
-            "modelP": 0.531,
-            "marketP": 0.0,
-            "odds": 2000.0,
-            "roi": 1061.0,
-            "ev": 0.531,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.0，模型 0.531，期望回报率 106100.0%"
+            "pick": "Over 2.5",
+            "modelP": 0.469,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.531,
+            "ev": -0.531,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.469，期望回报率 -53.1%"
           },
           {
             "market": "让分",
