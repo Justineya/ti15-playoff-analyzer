@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 13:20 CST",
+  "asOf": "2026-08-20 13:52 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
   "headline": "下一把 VSN vs BB，看好 VSN（系列 79%）。第1局看好 VSN（70%）。",
@@ -52,8 +52,8 @@
         "BoomBoys"
       ],
       "prices": [
-        0.725,
-        0.275
+        0.755,
+        0.245
       ]
     },
     "why": "本届胜率 TEAM VISION 71% / BoomBoys 57%；先到10杀 62% / 54%；H2H 3.8000000000000007 局；TEAM VISION 中单爱拿 Earth Spirit"
@@ -63,7 +63,7 @@
     "id": "ubqf2",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 13:30",
+    "when": "2026-08-20 13:45",
     "format": "Bo3",
     "teamA": "TEAM VISION",
     "teamB": "BoomBoys",
@@ -87,8 +87,8 @@
           "BoomBoys"
         ],
         "prices": [
-          0.725,
-          0.275
+          0.755,
+          0.245
         ]
       },
       "why": "本届胜率 TEAM VISION 71% / BoomBoys 57%；先到10杀 62% / 54%；H2H 3.8000000000000007 局；TEAM VISION 中单爱拿 Earth Spirit"
@@ -98,7 +98,7 @@
     "id": "ubqf2",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 13:30",
+    "when": "2026-08-20 13:45",
     "format": "Bo3",
     "teamA": "TEAM VISION",
     "teamB": "BoomBoys",
@@ -128,8 +128,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8955197224,
-    8955247801
-  ]
+  "newMapIds": []
 }
