@@ -1,5 +1,5 @@
-# TI15 局间战报 · 2026-08-20 19:13 CST
+# TI15 局间战报 · 2026-08-20 19:43 CST
 
-下一把 Liquid vs TY，看好 Liquid（系列 53%）。第1局看好 Liquid（54%）。
+第1局 TY 赢了，54.5分钟。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。
 
-下一把 Liquid vs TY，看好 Liquid（系列 53%）。第1局看好 Liquid（54%）。本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit。
+第1局 TY 赢了，54.5分钟。上一局阵容 TY Io、Largo、Hoodwink / Liquid Nature's Prophet、Mirana、Tusk。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。系列现在看好 TY（79%）。先到10杀看好 Liquid。本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit。

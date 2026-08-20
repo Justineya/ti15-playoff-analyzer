@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 19:13 CST",
+  "asOf": "2026-08-20 19:43 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -10,7 +10,7 @@
     "stake": "默认¼Kelly；大胆½Kelly（p 不往上加）；全Kelly样本撑不住",
     "ewcWeight": 0.45,
     "sampleMaps": {
-      "ti15": 85,
+      "ti15": 86,
       "ewc": 102
     }
   },
@@ -24,8 +24,8 @@
       "pF10A": 0.448,
       "pF10B": 0.552,
       "series": {
-        "pSeriesA": 0.317,
-        "pSeriesB": 0.683,
+        "pSeriesA": 0.318,
+        "pSeriesB": 0.682,
         "pOver": 0.469,
         "pUnder": 0.531,
         "pCoverMinus15A": 0.141,
@@ -41,10 +41,10 @@
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.397,
-              "pWinB": 0.603,
-              "pF10A": 0.446,
-              "pF10B": 0.554,
+              "pWinA": 0.396,
+              "pWinB": 0.604,
+              "pF10A": 0.445,
+              "pF10B": 0.555,
               "h2hGames": 2.0,
               "sampleA": 23.84999999999999,
               "sampleB": 22.74999999999999,
@@ -95,8 +95,8 @@
               "sim": 2,
               "pWinA": 0.352,
               "pWinB": 0.648,
-              "pF10A": 0.46,
-              "pF10B": 0.54,
+              "pF10A": 0.459,
+              "pF10B": 0.541,
               "h2hGames": 2.0,
               "sampleA": 23.84999999999999,
               "sampleB": 22.74999999999999,
@@ -242,17 +242,17 @@
                     "Kez",
                     "Sand King",
                     "Treant Protector",
-                    "Huskar"
+                    "Kunkka"
                   ]
                 }
               }
             },
             {
               "sim": 5,
-              "pWinA": 0.394,
-              "pWinB": 0.606,
-              "pF10A": 0.449,
-              "pF10B": 0.551,
+              "pWinA": 0.395,
+              "pWinB": 0.605,
+              "pF10A": 0.45,
+              "pF10B": 0.55,
               "h2hGames": 2.0,
               "sampleA": 23.84999999999999,
               "sampleB": 22.74999999999999,
@@ -303,15 +303,15 @@
         },
         {
           "game": 2,
-          "pWinA": 0.361,
-          "pWinB": 0.639,
+          "pWinA": 0.362,
+          "pWinB": 0.638,
           "pF10A": 0.449,
           "pF10B": 0.551,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.336,
-              "pWinB": 0.664,
+              "pWinA": 0.337,
+              "pWinB": 0.663,
               "pF10A": 0.438,
               "pF10B": 0.562,
               "h2hGames": 2.0,
@@ -362,8 +362,8 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.386,
-              "pWinB": 0.614,
+              "pWinA": 0.388,
+              "pWinB": 0.612,
               "pF10A": 0.454,
               "pF10B": 0.546,
               "h2hGames": 2.0,
@@ -468,8 +468,8 @@
               "sim": 4,
               "pWinA": 0.384,
               "pWinB": 0.616,
-              "pF10A": 0.448,
-              "pF10B": 0.552,
+              "pF10A": 0.447,
+              "pF10B": 0.553,
               "h2hGames": 2.0,
               "sampleA": 23.84999999999999,
               "sampleB": 22.74999999999999,
@@ -683,10 +683,10 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.408,
-              "pWinB": 0.592,
-              "pF10A": 0.46,
-              "pF10B": 0.54,
+              "pWinA": 0.409,
+              "pWinB": 0.591,
+              "pF10A": 0.461,
+              "pF10B": 0.539,
               "h2hGames": 2.0,
               "sampleA": 23.84999999999999,
               "sampleB": 22.74999999999999,
@@ -787,10 +787,10 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.409,
-              "pWinB": 0.591,
-              "pF10A": 0.448,
-              "pF10B": 0.552,
+              "pWinA": 0.41,
+              "pWinB": 0.59,
+              "pF10A": 0.447,
+              "pF10B": 0.553,
               "h2hGames": 2.0,
               "sampleA": 23.84999999999999,
               "sampleB": 22.74999999999999,
@@ -908,13 +908,13 @@
           {
             "market": "系列胜者",
             "pick": "Team Spirit",
-            "modelP": 0.683,
+            "modelP": 0.682,
             "marketP": 1.0,
             "odds": 1.0,
-            "roi": -0.317,
-            "ev": -0.317,
+            "roi": -0.318,
+            "ev": -0.318,
             "action": "市场更贵，不买",
-            "note": "买 YES 成本 1.0，模型 0.683，期望回报率 -31.7%"
+            "note": "买 YES 成本 1.0，模型 0.682，期望回报率 -31.8%"
           },
           {
             "market": "第一局",
@@ -967,17 +967,17 @@
       "teamA": "TEAM VISION",
       "teamB": "BoomBoys",
       "format": "Bo3",
-      "pMapA": 0.708,
-      "pMapB": 0.292,
+      "pMapA": 0.706,
+      "pMapB": 0.294,
       "pF10A": 0.606,
       "pF10B": 0.394,
       "series": {
-        "pSeriesA": 0.793,
-        "pSeriesB": 0.207,
-        "pOver": 0.414,
-        "pUnder": 0.586,
-        "pCoverMinus15A": 0.501,
-        "pCoverPlus15B": 0.499
+        "pSeriesA": 0.792,
+        "pSeriesB": 0.208,
+        "pOver": 0.415,
+        "pUnder": 0.585,
+        "pCoverMinus15A": 0.499,
+        "pCoverPlus15B": 0.501
       },
       "maps": [
         {
@@ -1015,7 +1015,7 @@
                     "Hoodwink",
                     "Kez",
                     "Lycan",
-                    "Shadow Demon"
+                    "Monkey King"
                   ]
                 },
                 "teamB": {
@@ -1093,10 +1093,10 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.732,
-              "pWinB": 0.268,
-              "pF10A": 0.621,
-              "pF10B": 0.379,
+              "pWinA": 0.731,
+              "pWinB": 0.269,
+              "pF10A": 0.62,
+              "pF10B": 0.38,
               "h2hGames": 6.800000000000001,
               "sampleA": 21.549999999999986,
               "sampleB": 25.999999999999986,
@@ -1147,8 +1147,8 @@
               "sim": 4,
               "pWinA": 0.682,
               "pWinB": 0.318,
-              "pF10A": 0.606,
-              "pF10B": 0.394,
+              "pF10A": 0.605,
+              "pF10B": 0.395,
               "h2hGames": 6.800000000000001,
               "sampleA": 21.549999999999986,
               "sampleB": 25.999999999999986,
@@ -1197,10 +1197,10 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.718,
-              "pWinB": 0.282,
-              "pF10A": 0.591,
-              "pF10B": 0.409,
+              "pWinA": 0.716,
+              "pWinB": 0.284,
+              "pF10A": 0.59,
+              "pF10B": 0.41,
               "h2hGames": 6.800000000000001,
               "sampleA": 21.549999999999986,
               "sampleB": 25.999999999999986,
@@ -1251,8 +1251,8 @@
         },
         {
           "game": 2,
-          "pWinA": 0.697,
-          "pWinB": 0.303,
+          "pWinA": 0.694,
+          "pWinB": 0.306,
           "pF10A": 0.601,
           "pF10B": 0.399,
           "sims": [
@@ -1310,8 +1310,8 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.734,
-              "pWinB": 0.266,
+              "pWinA": 0.735,
+              "pWinB": 0.265,
               "pF10A": 0.59,
               "pF10B": 0.41,
               "h2hGames": 6.800000000000001,
@@ -1362,8 +1362,8 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.697,
-              "pWinB": 0.303,
+              "pWinA": 0.698,
+              "pWinB": 0.302,
               "pF10A": 0.597,
               "pF10B": 0.403,
               "h2hGames": 6.800000000000001,
@@ -1414,10 +1414,10 @@
             },
             {
               "sim": 4,
-              "pWinA": 0.737,
-              "pWinB": 0.263,
-              "pF10A": 0.619,
-              "pF10B": 0.381,
+              "pWinA": 0.722,
+              "pWinB": 0.278,
+              "pF10A": 0.617,
+              "pF10B": 0.383,
               "h2hGames": 6.800000000000001,
               "sampleA": 21.549999999999986,
               "sampleB": 25.999999999999986,
@@ -1428,7 +1428,7 @@
                   "name": "TEAM VISION",
                   "picks": [
                     "Nature's Prophet",
-                    "Earth Spirit",
+                    "Enchantress",
                     "Lifestealer",
                     "Slardar",
                     "Sven"
@@ -1437,19 +1437,19 @@
                     "Clockwerk",
                     "Kez",
                     "Dark Willow",
-                    "Tiny",
+                    "Earth Spirit",
                     "Keeper of the Light",
                     "Bane",
-                    "Centaur Warrunner"
+                    "Lina"
                   ]
                 },
                 "teamB": {
                   "name": "BoomBoys",
                   "picks": [
                     "Enigma",
-                    "Shadow Demon",
+                    "Doom",
                     "Necrophos",
-                    "Lina",
+                    "Centaur Warrunner",
                     "Mirana"
                   ],
                   "bans": [
@@ -1457,17 +1457,17 @@
                     "Snapfire",
                     "Dawnbreaker",
                     "Treant Protector",
-                    "Dark Seer",
-                    "Puck",
-                    "Hoodwink"
+                    "Bounty Hunter",
+                    "Omniknight",
+                    "Dark Seer"
                   ]
                 }
               }
             },
             {
               "sim": 5,
-              "pWinA": 0.629,
-              "pWinB": 0.371,
+              "pWinA": 0.628,
+              "pWinB": 0.372,
               "pF10A": 0.608,
               "pF10B": 0.392,
               "h2hGames": 6.800000000000001,
@@ -1520,17 +1520,17 @@
         },
         {
           "game": 3,
-          "pWinA": 0.712,
-          "pWinB": 0.288,
-          "pF10A": 0.608,
-          "pF10B": 0.392,
+          "pWinA": 0.711,
+          "pWinB": 0.289,
+          "pF10A": 0.606,
+          "pF10B": 0.394,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.724,
-              "pWinB": 0.276,
-              "pF10A": 0.578,
-              "pF10B": 0.422,
+              "pWinA": 0.725,
+              "pWinB": 0.275,
+              "pF10A": 0.577,
+              "pF10B": 0.423,
               "h2hGames": 6.800000000000001,
               "sampleA": 21.549999999999986,
               "sampleB": 25.999999999999986,
@@ -1552,7 +1552,7 @@
                     "Io",
                     "Doom",
                     "Timbersaw",
-                    "Monkey King",
+                    "Rubick",
                     "Bane"
                   ]
                 },
@@ -1571,7 +1571,7 @@
                     "Winter Wyvern",
                     "Clinkz",
                     "Centaur Warrunner",
-                    "Dawnbreaker",
+                    "Underlord",
                     "Pangolier"
                   ]
                 }
@@ -1579,8 +1579,8 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.702,
-              "pWinB": 0.298,
+              "pWinA": 0.7,
+              "pWinB": 0.3,
               "pF10A": 0.646,
               "pF10B": 0.354,
               "h2hGames": 6.800000000000001,
@@ -1631,8 +1631,8 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.734,
-              "pWinB": 0.266,
+              "pWinA": 0.735,
+              "pWinB": 0.265,
               "pF10A": 0.611,
               "pF10B": 0.389,
               "h2hGames": 6.800000000000001,
@@ -1683,8 +1683,8 @@
             },
             {
               "sim": 4,
-              "pWinA": 0.664,
-              "pWinB": 0.336,
+              "pWinA": 0.663,
+              "pWinB": 0.337,
               "pF10A": 0.59,
               "pF10B": 0.41,
               "h2hGames": 6.800000000000001,
@@ -1735,10 +1735,10 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.735,
-              "pWinB": 0.265,
-              "pF10A": 0.615,
-              "pF10B": 0.385,
+              "pWinA": 0.731,
+              "pWinB": 0.269,
+              "pF10A": 0.608,
+              "pF10B": 0.392,
               "h2hGames": 6.800000000000001,
               "sampleA": 21.549999999999986,
               "sampleB": 25.999999999999986,
@@ -1757,7 +1757,7 @@
                   "bans": [
                     "Winter Wyvern",
                     "Hoodwink",
-                    "Shadow Shaman",
+                    "Elder Titan",
                     "Puck",
                     "Undying",
                     "Clockwerk",
@@ -1771,7 +1771,7 @@
                     "Slardar",
                     "Witch Doctor",
                     "Axe",
-                    "Elder Titan"
+                    "Shadow Shaman"
                   ],
                   "bans": [
                     "Lycan",
@@ -1856,13 +1856,13 @@
           {
             "market": "系列胜者",
             "pick": "TEAM VISION",
-            "modelP": 0.793,
+            "modelP": 0.792,
             "marketP": 1.0,
             "odds": 1.0,
-            "roi": -0.207,
-            "ev": -0.207,
+            "roi": -0.208,
+            "ev": -0.208,
             "action": "市场更贵，不买",
-            "note": "买 YES 成本 1.0，模型 0.793，期望回报率 -20.7%"
+            "note": "买 YES 成本 1.0，模型 0.792，期望回报率 -20.8%"
           },
           {
             "market": "第一局",
@@ -1878,24 +1878,24 @@
           {
             "market": "总局数 O/U 2.5",
             "pick": "Under 2.5",
-            "modelP": 0.586,
+            "modelP": 0.585,
             "marketP": 0.0,
             "odds": 2000.0,
-            "roi": 1171.0,
-            "ev": 0.586,
+            "roi": 1169.0,
+            "ev": 0.585,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.0，模型 0.586，期望回报率 117100.0%"
+            "note": "买 YES 成本 0.0，模型 0.585，期望回报率 116900.0%"
           },
           {
             "market": "让分",
             "pick": "TEAM VISION -1.5",
-            "modelP": 0.501,
+            "modelP": 0.499,
             "marketP": 1.0,
             "odds": 1.0,
-            "roi": -0.499,
-            "ev": -0.499,
+            "roi": -0.501,
+            "ev": -0.501,
             "action": "市场更贵，不买",
-            "note": "买 YES 成本 1.0，模型 0.501，期望回报率 -49.9%"
+            "note": "买 YES 成本 1.0，模型 0.499，期望回报率 -50.1%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -1915,192 +1915,192 @@
       "teamA": "Team Liquid",
       "teamB": "Team Yandex",
       "format": "Bo3",
-      "pMapA": 0.52,
-      "pMapB": 0.48,
-      "pF10A": 0.561,
-      "pF10B": 0.439,
+      "pMapA": 0.463,
+      "pMapB": 0.537,
+      "pF10A": 0.554,
+      "pF10B": 0.446,
       "series": {
-        "pSeriesA": 0.53,
-        "pSeriesB": 0.47,
-        "pOver": 0.499,
-        "pUnder": 0.501,
-        "pCoverMinus15A": 0.271,
-        "pCoverPlus15B": 0.729
+        "pSeriesA": 0.445,
+        "pSeriesB": 0.555,
+        "pOver": 0.497,
+        "pUnder": 0.503,
+        "pCoverMinus15A": 0.215,
+        "pCoverPlus15B": 0.785
       },
       "maps": [
         {
           "game": 1,
-          "pWinA": 0.537,
-          "pWinB": 0.463,
-          "pF10A": 0.567,
-          "pF10B": 0.433,
+          "pWinA": 0.471,
+          "pWinB": 0.529,
+          "pF10A": 0.554,
+          "pF10B": 0.446,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.502,
-              "pWinB": 0.498,
-              "pF10A": 0.534,
-              "pF10B": 0.466,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.463,
+              "pWinB": 0.537,
+              "pF10A": 0.533,
+              "pF10B": 0.467,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Liquid",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
                     "Underlord",
-                    "Spectre",
+                    "Mirana",
                     "Storm Spirit",
-                    "Witch Doctor",
-                    "Lycan"
-                  ],
-                  "bans": [
-                    "Pangolier",
-                    "Clockwerk",
-                    "Snapfire",
-                    "Hoodwink",
-                    "Slardar",
-                    "Phoenix",
-                    "Centaur Warrunner"
-                  ]
-                },
-                "teamB": {
-                  "name": "Team Yandex",
-                  "picks": [
-                    "Tiny",
-                    "Nature's Prophet",
-                    "Undying",
-                    "Mirana",
-                    "Earthshaker"
-                  ],
-                  "bans": [
-                    "Keeper of the Light",
-                    "Dark Seer",
-                    "Invoker",
-                    "Winter Wyvern",
-                    "Axe",
-                    "Shadow Fiend",
-                    "Lina"
-                  ]
-                }
-              }
-            },
-            {
-              "sim": 2,
-              "pWinA": 0.541,
-              "pWinB": 0.459,
-              "pF10A": 0.583,
-              "pF10B": 0.417,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
-              "draft": {
-                "firstPick": "Team Yandex",
-                "teamA": {
-                  "name": "Team Liquid",
-                  "picks": [
-                    "Treant Protector",
                     "Spectre",
-                    "Shadow Fiend",
-                    "Lycan",
-                    "Ember Spirit"
+                    "Tidehunter"
                   ],
                   "bans": [
-                    "Tusk",
-                    "Hoodwink",
-                    "Tiny",
-                    "Windranger",
-                    "Bane",
-                    "Kez",
-                    "Shadow Demon"
+                    "Enigma",
+                    "Clockwerk",
+                    "Timbersaw",
+                    "Jakiro",
+                    "Largo",
+                    "Ursa",
+                    "Hoodwink"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Centaur Warrunner",
-                    "Mirana",
-                    "Puck",
-                    "Dragon Knight",
-                    "Timbersaw"
-                  ],
-                  "bans": [
-                    "Drow Ranger",
-                    "Witch Doctor",
-                    "Lina",
-                    "Slardar",
-                    "Lone Druid",
-                    "Dark Seer",
-                    "Nature's Prophet"
-                  ]
-                }
-              }
-            },
-            {
-              "sim": 3,
-              "pWinA": 0.568,
-              "pWinB": 0.432,
-              "pF10A": 0.584,
-              "pF10B": 0.416,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
-              "draft": {
-                "firstPick": "Team Liquid",
-                "teamA": {
-                  "name": "Team Liquid",
-                  "picks": [
-                    "Underlord",
-                    "Dawnbreaker",
-                    "Shadow Fiend",
-                    "Tusk",
-                    "Ember Spirit"
-                  ],
-                  "bans": [
-                    "Slark",
-                    "Axe",
+                    "Tiny",
+                    "Shadow Demon",
                     "Undying",
-                    "Drow Ranger",
-                    "Viper",
-                    "Tiny",
-                    "Mirana"
-                  ]
-                },
-                "teamB": {
-                  "name": "Team Yandex",
-                  "picks": [
-                    "Necrophos",
-                    "Centaur Warrunner",
-                    "Rubick",
-                    "Hoodwink",
-                    "Timbersaw"
+                    "Doom",
+                    "Slardar"
                   ],
                   "bans": [
-                    "Lina",
-                    "Witch Doctor",
-                    "Earth Spirit",
-                    "Ringmaster",
                     "Keeper of the Light",
-                    "Invoker",
+                    "Dawnbreaker",
+                    "Treant Protector",
+                    "Lina",
+                    "Nature's Prophet",
+                    "Shadow Fiend",
                     "Kez"
                   ]
                 }
               }
             },
             {
+              "sim": 2,
+              "pWinA": 0.446,
+              "pWinB": 0.554,
+              "pF10A": 0.561,
+              "pF10B": 0.439,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Liquid",
+                  "picks": [
+                    "Huskar",
+                    "Mirana",
+                    "Centaur Warrunner",
+                    "Monkey King",
+                    "Slardar"
+                  ],
+                  "bans": [
+                    "Ember Spirit",
+                    "Hoodwink",
+                    "Lion",
+                    "Storm Spirit",
+                    "Jakiro",
+                    "Kez",
+                    "Puck"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Tusk",
+                    "Necrophos",
+                    "Snapfire",
+                    "Kunkka",
+                    "Clockwerk"
+                  ],
+                  "bans": [
+                    "Drow Ranger",
+                    "Spectre",
+                    "Lina",
+                    "Sven",
+                    "Lone Druid",
+                    "Dark Seer",
+                    "Invoker"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 3,
+              "pWinA": 0.526,
+              "pWinB": 0.474,
+              "pF10A": 0.572,
+              "pF10B": 0.428,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
+              "draft": {
+                "firstPick": "Team Liquid",
+                "teamA": {
+                  "name": "Team Liquid",
+                  "picks": [
+                    "Underlord",
+                    "Dark Seer",
+                    "Shadow Fiend",
+                    "Tidehunter",
+                    "Hoodwink"
+                  ],
+                  "bans": [
+                    "Slark",
+                    "Jakiro",
+                    "Undying",
+                    "Drow Ranger",
+                    "Ursa",
+                    "Tiny",
+                    "Bane"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Centaur Warrunner",
+                    "Tusk",
+                    "Invoker",
+                    "Necrophos",
+                    "Witch Doctor"
+                  ],
+                  "bans": [
+                    "Lina",
+                    "Spectre",
+                    "Earth Spirit",
+                    "Night Stalker",
+                    "Keeper of the Light",
+                    "Treant Protector",
+                    "Windranger"
+                  ]
+                }
+              }
+            },
+            {
               "sim": 4,
-              "pWinA": 0.491,
-              "pWinB": 0.509,
-              "pF10A": 0.546,
-              "pF10B": 0.454,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.438,
+              "pWinB": 0.562,
+              "pF10A": 0.545,
+              "pF10B": 0.455,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Yandex",
                 "teamA": {
@@ -2108,35 +2108,35 @@
                   "picks": [
                     "Winter Wyvern",
                     "Dawnbreaker",
-                    "Necrophos",
+                    "Alchemist",
                     "Huskar",
-                    "Windranger"
+                    "Slardar"
                   ],
                   "bans": [
-                    "Viper",
-                    "Tiny",
-                    "Ember Spirit",
-                    "Phantom Lancer",
-                    "Templar Assassin",
-                    "Clockwerk",
-                    "Elder Titan"
+                    "Ursa",
+                    "Io",
+                    "Shadow Demon",
+                    "Largo",
+                    "Windranger",
+                    "Puck",
+                    "Ember Spirit"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Enigma",
+                    "Phantom Lancer",
                     "Bounty Hunter",
-                    "Kez",
+                    "Doom",
                     "Underlord",
-                    "Io"
+                    "Enchantress"
                   ],
                   "bans": [
                     "Keeper of the Light",
                     "Dragon Knight",
-                    "Tusk",
+                    "Luna",
                     "Mirana",
-                    "Bane",
+                    "Beastmaster",
                     "Sven",
                     "Hoodwink"
                   ]
@@ -2145,50 +2145,50 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.583,
-              "pWinB": 0.417,
-              "pF10A": 0.59,
-              "pF10B": 0.41,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.482,
+              "pWinB": 0.518,
+              "pF10A": 0.561,
+              "pF10B": 0.439,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Liquid",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Tidehunter",
-                    "Windranger",
-                    "Tiny",
-                    "Shadow Demon",
+                    "Centaur Warrunner",
+                    "Earth Spirit",
+                    "Storm Spirit",
+                    "Monkey King",
                     "Shadow Fiend"
                   ],
                   "bans": [
                     "Lone Druid",
                     "Undying",
-                    "Io",
-                    "Hoodwink",
+                    "Largo",
+                    "Jakiro",
                     "Bounty Hunter",
                     "Drow Ranger",
-                    "Doom"
+                    "Winter Wyvern"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Clockwerk",
-                    "Primal Beast",
+                    "Snapfire",
+                    "Axe",
                     "Slardar",
-                    "Centaur Warrunner",
+                    "Hoodwink",
                     "Kez"
                   ],
                   "bans": [
                     "Keeper of the Light",
                     "Sven",
-                    "Invoker",
+                    "Treant Protector",
                     "Necrophos",
-                    "Ember Spirit",
+                    "Windranger",
                     "Enigma",
                     "Ringmaster"
                   ]
@@ -2199,90 +2199,90 @@
         },
         {
           "game": 2,
-          "pWinA": 0.501,
-          "pWinB": 0.499,
-          "pF10A": 0.554,
-          "pF10B": 0.446,
+          "pWinA": 0.451,
+          "pWinB": 0.549,
+          "pF10A": 0.552,
+          "pF10B": 0.448,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.496,
-              "pWinB": 0.504,
-              "pF10A": 0.559,
-              "pF10B": 0.441,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.457,
+              "pWinB": 0.543,
+              "pF10A": 0.551,
+              "pF10B": 0.449,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Yandex",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Dark Willow",
-                    "Keeper of the Light",
-                    "Lina",
-                    "Invoker",
+                    "Undying",
+                    "Earth Spirit",
+                    "Clockwerk",
+                    "Nature's Prophet",
                     "Beastmaster"
                   ],
                   "bans": [
                     "Ember Spirit",
                     "Shadow Fiend",
-                    "Lycan",
-                    "Monkey King",
+                    "Ringmaster",
+                    "Lina",
                     "Doom",
-                    "Kez",
-                    "Shadow Demon"
+                    "Invoker",
+                    "Necrophos"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Dark Seer",
-                    "Undying",
-                    "Necrophos",
-                    "Tusk",
-                    "Earth Spirit"
+                    "Bounty Hunter",
+                    "Keeper of the Light",
+                    "Centaur Warrunner",
+                    "Shadow Demon",
+                    "Rubick"
                   ],
                   "bans": [
                     "Hoodwink",
                     "Bane",
-                    "Snapfire",
-                    "Winter Wyvern",
-                    "Puck",
+                    "Leshrac",
+                    "Kez",
+                    "Largo",
                     "Underlord",
-                    "Mirana"
+                    "Tiny"
                   ]
                 }
               }
             },
             {
               "sim": 2,
-              "pWinA": 0.531,
-              "pWinB": 0.469,
-              "pF10A": 0.56,
-              "pF10B": 0.44,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.484,
+              "pWinB": 0.516,
+              "pF10A": 0.563,
+              "pF10B": 0.437,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Liquid",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
                     "Monkey King",
-                    "Enigma",
+                    "Templar Assassin",
                     "Shadow Fiend",
-                    "Sven",
+                    "Shadow Demon",
                     "Clockwerk"
                   ],
                   "bans": [
                     "Earth Spirit",
-                    "Axe",
+                    "Jakiro",
                     "Tusk",
                     "Winter Wyvern",
-                    "Shadow Demon",
+                    "Nature's Prophet",
                     "Centaur Warrunner",
                     "Ember Spirit"
                   ]
@@ -2290,18 +2290,18 @@
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Mirana",
+                    "Bane",
                     "Hoodwink",
-                    "Nature's Prophet",
-                    "Io",
+                    "Timbersaw",
+                    "Windranger",
                     "Undying"
                   ],
                   "bans": [
-                    "Zeus",
-                    "Luna",
+                    "Rubick",
+                    "Witch Doctor",
                     "Kez",
-                    "Spectre",
-                    "Alchemist",
+                    "Mirana",
+                    "Puck",
                     "Ringmaster",
                     "Lina"
                   ]
@@ -2310,84 +2310,84 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.478,
-              "pWinB": 0.522,
-              "pF10A": 0.543,
-              "pF10B": 0.457,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.435,
+              "pWinB": 0.565,
+              "pF10A": 0.535,
+              "pF10B": 0.465,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Yandex",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Slardar",
-                    "Witch Doctor",
+                    "Keeper of the Light",
                     "Tiny",
-                    "Centaur Warrunner",
+                    "Dark Seer",
+                    "Spectre",
                     "Alchemist"
                   ],
                   "bans": [
-                    "Tusk",
+                    "Ember Spirit",
                     "Hoodwink",
-                    "Viper",
-                    "Dark Seer",
-                    "Enigma",
-                    "Phantom Lancer",
-                    "Doom"
+                    "Sven",
+                    "Shadow Fiend",
+                    "Beastmaster",
+                    "Largo",
+                    "Naga Siren"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
                     "Lone Druid",
-                    "Beastmaster",
-                    "Nature's Prophet",
-                    "Winter Wyvern",
-                    "Bounty Hunter"
+                    "Enigma",
+                    "Puck",
+                    "Doom",
+                    "Invoker"
                   ],
                   "bans": [
                     "Mirana",
-                    "Ringmaster",
-                    "Keeper of the Light",
+                    "Night Stalker",
                     "Earth Spirit",
-                    "Sven",
+                    "Tidehunter",
+                    "Shadow Demon",
                     "Monkey King",
-                    "Drow Ranger"
+                    "Treant Protector"
                   ]
                 }
               }
             },
             {
               "sim": 4,
-              "pWinA": 0.521,
-              "pWinB": 0.479,
-              "pF10A": 0.558,
-              "pF10B": 0.442,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.446,
+              "pWinB": 0.554,
+              "pF10A": 0.547,
+              "pF10B": 0.453,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Liquid",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Lycan",
+                    "Shadow Demon",
                     "Hoodwink",
-                    "Largo",
+                    "Puck",
                     "Clockwerk",
                     "Keeper of the Light"
                   ],
                   "bans": [
                     "Shadow Fiend",
-                    "Lifestealer",
+                    "Clinkz",
                     "Ember Spirit",
-                    "Doom",
+                    "Mirana",
                     "Lina",
-                    "Shadow Demon",
+                    "Nature's Prophet",
                     "Alchemist"
                   ]
                 },
@@ -2396,9 +2396,9 @@
                   "picks": [
                     "Undying",
                     "Slark",
-                    "Snapfire",
-                    "Mirana",
-                    "Drow Ranger"
+                    "Drow Ranger",
+                    "Doom",
+                    "Io"
                   ],
                   "bans": [
                     "Witch Doctor",
@@ -2406,41 +2406,41 @@
                     "Axe",
                     "Windranger",
                     "Monkey King",
-                    "Slardar",
-                    "Dark Seer"
+                    "Kez",
+                    "Tiny"
                   ]
                 }
               }
             },
             {
               "sim": 5,
-              "pWinA": 0.479,
-              "pWinB": 0.521,
-              "pF10A": 0.55,
-              "pF10B": 0.45,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.433,
+              "pWinB": 0.567,
+              "pF10A": 0.566,
+              "pF10B": 0.434,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Yandex",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Earth Spirit",
-                    "Luna",
-                    "Centaur Warrunner",
+                    "Lycan",
+                    "Tusk",
+                    "Tidehunter",
                     "Mirana",
-                    "Drow Ranger"
+                    "Axe"
                   ],
                   "bans": [
                     "Keeper of the Light",
                     "Undying",
                     "Kez",
                     "Winter Wyvern",
-                    "Rubick",
-                    "Beastmaster",
-                    "Nature's Prophet"
+                    "Bounty Hunter",
+                    "Io",
+                    "Ember Spirit"
                   ]
                 },
                 "teamB": {
@@ -2450,15 +2450,15 @@
                     "Slark",
                     "Clockwerk",
                     "Snapfire",
-                    "Monkey King"
+                    "Centaur Warrunner"
                   ],
                   "bans": [
                     "Shadow Fiend",
                     "Largo",
                     "Sven",
-                    "Invoker",
-                    "Dark Seer",
-                    "Shadow Demon",
+                    "Treant Protector",
+                    "Tiny",
+                    "Earth Spirit",
                     "Bane"
                   ]
                 }
@@ -2468,58 +2468,58 @@
         },
         {
           "game": 3,
-          "pWinA": 0.523,
-          "pWinB": 0.477,
-          "pF10A": 0.56,
-          "pF10B": 0.44,
+          "pWinA": 0.468,
+          "pWinB": 0.532,
+          "pF10A": 0.555,
+          "pF10B": 0.445,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.538,
-              "pWinB": 0.462,
-              "pF10A": 0.541,
-              "pF10B": 0.459,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.486,
+              "pWinB": 0.514,
+              "pF10A": 0.544,
+              "pF10B": 0.456,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Liquid",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
                     "Hoodwink",
-                    "Witch Doctor",
+                    "Spectre",
                     "Winter Wyvern",
                     "Dawnbreaker",
-                    "Luna"
+                    "Witch Doctor"
                   ],
                   "bans": [
                     "Centaur Warrunner",
-                    "Timbersaw",
-                    "Largo",
                     "Clockwerk",
-                    "Death Prophet",
+                    "Techies",
+                    "Snapfire",
+                    "Viper",
                     "Invoker",
-                    "Tusk"
+                    "Ember Spirit"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Underlord",
+                    "Shadow Fiend",
                     "Nature's Prophet",
                     "Doom",
-                    "Terrorblade",
-                    "Snapfire"
+                    "Tiny",
+                    "Drow Ranger"
                   ],
                   "bans": [
-                    "Shadow Fiend",
-                    "Necrophos",
-                    "Drow Ranger",
-                    "Kez",
+                    "Tusk",
+                    "Timbersaw",
+                    "Axe",
                     "Windranger",
-                    "Dark Willow",
+                    "Kez",
+                    "Largo",
                     "Keeper of the Light"
                   ]
                 }
@@ -2527,170 +2527,170 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.495,
-              "pWinB": 0.505,
-              "pF10A": 0.564,
-              "pF10B": 0.436,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.44,
+              "pWinB": 0.56,
+              "pF10A": 0.566,
+              "pF10B": 0.434,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Yandex",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Tidehunter",
-                    "Earth Spirit",
-                    "Storm Spirit",
+                    "Tusk",
                     "Monkey King",
+                    "Tiny",
+                    "Earth Spirit",
                     "Witch Doctor"
                   ],
                   "bans": [
                     "Winter Wyvern",
                     "Shadow Demon",
+                    "Treant Protector",
                     "Hoodwink",
-                    "Centaur Warrunner",
                     "Kez",
-                    "Largo",
+                    "Slardar",
                     "Muerta"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Axe",
+                    "Centaur Warrunner",
                     "Mirana",
                     "Doom",
-                    "Snapfire",
+                    "Terrorblade",
                     "Lina"
                   ],
                   "bans": [
                     "Necrophos",
                     "Spectre",
-                    "Treant Protector",
-                    "Pangolier",
+                    "Huskar",
+                    "Drow Ranger",
                     "Lone Druid",
                     "Clockwerk",
-                    "Sven"
+                    "Keeper of the Light"
                   ]
                 }
               }
             },
             {
               "sim": 3,
-              "pWinA": 0.548,
-              "pWinB": 0.452,
-              "pF10A": 0.564,
-              "pF10B": 0.436,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.477,
+              "pWinB": 0.523,
+              "pF10A": 0.534,
+              "pF10B": 0.466,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Liquid",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Tusk",
-                    "Kez",
+                    "Witch Doctor",
+                    "Windranger",
                     "Alchemist",
-                    "Shadow Fiend",
+                    "Centaur Warrunner",
                     "Dawnbreaker"
                   ],
                   "bans": [
-                    "Tiny",
+                    "Lion",
                     "Axe",
                     "Rubick",
-                    "Io",
-                    "Mirana",
+                    "Largo",
                     "Bane",
+                    "Invoker",
                     "Drow Ranger"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
-                    "Ember Spirit",
+                    "Shadow Demon",
                     "Winter Wyvern",
-                    "Doom",
+                    "Kez",
                     "Snapfire",
-                    "Bounty Hunter"
+                    "Earth Spirit"
                   ],
                   "bans": [
                     "Hoodwink",
-                    "Spectre",
+                    "Mirana",
                     "Lina",
                     "Necrophos",
                     "Ogre Magi",
-                    "Monkey King",
-                    "Treant Protector"
+                    "Shadow Fiend",
+                    "Dark Seer"
                   ]
                 }
               }
             },
             {
               "sim": 4,
-              "pWinA": 0.514,
-              "pWinB": 0.486,
-              "pF10A": 0.576,
-              "pF10B": 0.424,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.467,
+              "pWinB": 0.533,
+              "pF10A": 0.58,
+              "pF10B": 0.42,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Yandex",
                 "teamA": {
                   "name": "Team Liquid",
                   "picks": [
-                    "Sven",
-                    "Ember Spirit",
                     "Hoodwink",
+                    "Sven",
+                    "Shadow Demon",
                     "Dawnbreaker",
-                    "Underlord"
+                    "Windranger"
                   ],
                   "bans": [
-                    "Nature's Prophet",
-                    "Lina",
-                    "Centaur Warrunner",
-                    "Slark",
-                    "Enigma",
+                    "Elder Titan",
+                    "Ember Spirit",
+                    "Monkey King",
+                    "Underlord",
+                    "Largo",
                     "Keeper of the Light",
-                    "Undying"
+                    "Slark"
                   ]
                 },
                 "teamB": {
                   "name": "Team Yandex",
                   "picks": [
                     "Lone Druid",
+                    "Necrophos",
                     "Mirana",
-                    "Doom",
-                    "Bounty Hunter",
-                    "Invoker"
+                    "Kez",
+                    "Bounty Hunter"
                   ],
                   "bans": [
                     "Earth Spirit",
                     "Clockwerk",
-                    "Kez",
+                    "Winter Wyvern",
                     "Arc Warden",
                     "Axe",
-                    "Spectre",
-                    "Winter Wyvern"
+                    "Witch Doctor",
+                    "Lina"
                   ]
                 }
               }
             },
             {
               "sim": 5,
-              "pWinA": 0.518,
-              "pWinB": 0.482,
-              "pF10A": 0.556,
-              "pF10B": 0.444,
-              "h2hGames": 3.0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 24.649999999999988,
-              "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+              "pWinA": 0.472,
+              "pWinB": 0.528,
+              "pF10A": 0.552,
+              "pF10B": 0.448,
+              "h2hGames": 4.0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 25.649999999999988,
+              "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
               "draft": {
                 "firstPick": "Team Liquid",
                 "teamA": {
@@ -2699,14 +2699,14 @@
                     "Necrophos",
                     "Windranger",
                     "Earth Spirit",
-                    "Keeper of the Light",
-                    "Tusk"
+                    "Sven",
+                    "Tidehunter"
                   ],
                   "bans": [
                     "Shadow Fiend",
                     "Winter Wyvern",
-                    "Terrorblade",
-                    "Nature's Prophet",
+                    "Tiny",
+                    "Elder Titan",
                     "Bane",
                     "Lone Druid",
                     "Doom"
@@ -2718,8 +2718,8 @@
                     "Slardar",
                     "Kez",
                     "Bounty Hunter",
-                    "Clockwerk",
-                    "Witch Doctor"
+                    "Snapfire",
+                    "Nature's Prophet"
                   ],
                   "bans": [
                     "Drow Ranger",
@@ -2728,7 +2728,7 @@
                     "Lina",
                     "Shadow Demon",
                     "Treant Protector",
-                    "Night Stalker"
+                    "Lifestealer"
                   ]
                 }
               }
@@ -2736,7 +2736,7 @@
           ]
         }
       ],
-      "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
+      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 常用中单 Earth Spirit",
       "id": "ubqf3",
       "round": "胜者组首轮",
       "when": "2026-08-20 18:30",
@@ -2749,8 +2749,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.645,
-            0.355
+            0.6,
+            0.4
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner"
         },
@@ -2771,8 +2771,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.625,
-            0.375
+            0.58,
+            0.42
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs"
         },
@@ -2782,8 +2782,8 @@
             "Under"
           ],
           "prices": [
-            0.57,
-            0.43
+            0.44,
+            0.56
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -2793,8 +2793,8 @@
             "Team Liquid"
           ],
           "prices": [
-            0.5,
-            0.5
+            0.3,
+            0.7
           ],
           "question": "Game Handicap: TY (-1.5) vs Team Liquid (+1.5)"
         }
@@ -2803,52 +2803,52 @@
         "rows": [
           {
             "market": "系列胜者",
-            "pick": "Team Liquid",
-            "modelP": 0.53,
-            "marketP": 0.625,
-            "odds": 1.6,
-            "roi": -0.152,
-            "ev": -0.095,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.625，模型 0.53，期望回报率 -15.2%"
+            "pick": "Team Yandex",
+            "modelP": 0.555,
+            "marketP": 0.42,
+            "odds": 2.38,
+            "roi": 0.321,
+            "ev": 0.135,
+            "action": "小注买",
+            "note": "买 YES 成本 0.42，模型 0.555，期望回报率 32.1%"
           },
           {
             "market": "第一局",
-            "pick": "Team Liquid",
-            "modelP": 0.537,
-            "marketP": 0.645,
-            "odds": 1.55,
-            "roi": -0.167,
-            "ev": -0.108,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.645，模型 0.537，期望回报率 -16.7%"
+            "pick": "Team Yandex",
+            "modelP": 0.529,
+            "marketP": 0.4,
+            "odds": 2.5,
+            "roi": 0.323,
+            "ev": 0.129,
+            "action": "小注买",
+            "note": "买 YES 成本 0.4，模型 0.529，期望回报率 32.2%"
           },
           {
             "market": "总局数 O/U 2.5",
-            "pick": "Under 2.5",
-            "modelP": 0.501,
-            "marketP": 0.43,
-            "odds": 2.33,
-            "roi": 0.165,
-            "ev": 0.071,
+            "pick": "Over 2.5",
+            "modelP": 0.497,
+            "marketP": 0.44,
+            "odds": 2.27,
+            "roi": 0.13,
+            "ev": 0.057,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.43，模型 0.501，期望回报率 16.5%"
+            "note": "买 YES 成本 0.44，模型 0.497，期望回报率 13.0%"
           },
           {
             "market": "让分",
             "pick": "Team Yandex +1.5",
-            "modelP": 0.729,
-            "marketP": 0.5,
-            "odds": 2.0,
-            "roi": 0.458,
-            "ev": 0.229,
-            "action": "小注买",
-            "note": "买 YES 成本 0.5，模型 0.729，期望回报率 45.8%"
+            "modelP": 0.785,
+            "marketP": 0.3,
+            "odds": 3.33,
+            "roi": 1.617,
+            "ev": 0.485,
+            "action": "观察 / 极小注",
+            "note": "买 YES 成本 0.3，模型 0.785，期望回报率 161.7%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
             "pick": "Team Liquid",
-            "modelP": 0.561,
+            "modelP": 0.554,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -2856,39 +2856,39 @@
             "note": "Polymarket 没有这格"
           }
         ],
-        "plan": "若只按模型 vs Polymarket 差价：让分买Team Yandex +1.5（期望回报率 45.8%）。单场合计不超过银行资金 3%。"
+        "plan": "若只按模型 vs Polymarket 差价：系列胜者买Team Yandex（期望回报率 32.1%）；第一局买Team Yandex（期望回报率 32.3%）。单场合计不超过银行资金 3%。"
       }
     },
     {
       "teamA": "Nigma Galaxy",
       "teamB": "Team Falcons",
       "format": "Bo3",
-      "pMapA": 0.57,
-      "pMapB": 0.43,
-      "pF10A": 0.385,
-      "pF10B": 0.615,
+      "pMapA": 0.571,
+      "pMapB": 0.429,
+      "pF10A": 0.384,
+      "pF10B": 0.616,
       "series": {
         "pSeriesA": 0.605,
         "pSeriesB": 0.395,
         "pOver": 0.49,
         "pUnder": 0.51,
-        "pCoverMinus15A": 0.325,
-        "pCoverPlus15B": 0.675
+        "pCoverMinus15A": 0.326,
+        "pCoverPlus15B": 0.674
       },
       "maps": [
         {
           "game": 1,
-          "pWinA": 0.573,
-          "pWinB": 0.427,
-          "pF10A": 0.386,
-          "pF10B": 0.614,
+          "pWinA": 0.575,
+          "pWinB": 0.425,
+          "pF10A": 0.385,
+          "pF10B": 0.615,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.575,
-              "pWinB": 0.425,
-              "pF10A": 0.388,
-              "pF10B": 0.612,
+              "pWinA": 0.587,
+              "pWinB": 0.413,
+              "pF10A": 0.384,
+              "pF10B": 0.616,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -2910,8 +2910,8 @@
                     "Centaur Warrunner",
                     "Spectre",
                     "Lion",
-                    "Weaver",
-                    "Ancient Apparition"
+                    "Dawnbreaker",
+                    "Techies"
                   ]
                 },
                 "teamB": {
@@ -2921,14 +2921,14 @@
                     "Enchantress",
                     "Gyrocopter",
                     "Timbersaw",
-                    "Pangolier"
+                    "Sven"
                   ],
                   "bans": [
                     "Lina",
                     "Dark Willow",
                     "Tusk",
                     "Ember Spirit",
-                    "Muerta",
+                    "Crystal Maiden",
                     "Hoodwink",
                     "Mirana"
                   ]
@@ -2937,10 +2937,10 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.536,
-              "pWinB": 0.464,
-              "pF10A": 0.394,
-              "pF10B": 0.606,
+              "pWinA": 0.535,
+              "pWinB": 0.465,
+              "pF10A": 0.395,
+              "pF10B": 0.605,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -2989,8 +2989,8 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.609,
-              "pWinB": 0.391,
+              "pWinA": 0.607,
+              "pWinB": 0.393,
               "pF10A": 0.376,
               "pF10B": 0.624,
               "h2hGames": 0,
@@ -3041,8 +3041,8 @@
             },
             {
               "sim": 4,
-              "pWinA": 0.554,
-              "pWinB": 0.446,
+              "pWinA": 0.555,
+              "pWinB": 0.445,
               "pF10A": 0.391,
               "pF10B": 0.609,
               "h2hGames": 0,
@@ -3093,10 +3093,10 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.592,
-              "pWinB": 0.408,
-              "pF10A": 0.381,
-              "pF10B": 0.619,
+              "pWinA": 0.593,
+              "pWinB": 0.407,
+              "pF10A": 0.38,
+              "pF10B": 0.62,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -3147,8 +3147,8 @@
         },
         {
           "game": 2,
-          "pWinA": 0.555,
-          "pWinB": 0.445,
+          "pWinA": 0.554,
+          "pWinB": 0.446,
           "pF10A": 0.384,
           "pF10B": 0.616,
           "sims": [
@@ -3206,10 +3206,10 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.573,
-              "pWinB": 0.427,
-              "pF10A": 0.382,
-              "pF10B": 0.618,
+              "pWinA": 0.572,
+              "pWinB": 0.428,
+              "pF10A": 0.381,
+              "pF10B": 0.619,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -3364,8 +3364,8 @@
               "sim": 5,
               "pWinA": 0.539,
               "pWinB": 0.461,
-              "pF10A": 0.37,
-              "pF10B": 0.63,
+              "pF10A": 0.369,
+              "pF10B": 0.631,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -3416,17 +3416,17 @@
         },
         {
           "game": 3,
-          "pWinA": 0.583,
-          "pWinB": 0.417,
-          "pF10A": 0.385,
-          "pF10B": 0.615,
+          "pWinA": 0.582,
+          "pWinB": 0.418,
+          "pF10A": 0.384,
+          "pF10B": 0.616,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.618,
-              "pWinB": 0.382,
-              "pF10A": 0.375,
-              "pF10B": 0.625,
+              "pWinA": 0.617,
+              "pWinB": 0.383,
+              "pF10A": 0.374,
+              "pF10B": 0.626,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -3477,8 +3477,8 @@
               "sim": 2,
               "pWinA": 0.536,
               "pWinB": 0.464,
-              "pF10A": 0.381,
-              "pF10B": 0.619,
+              "pF10A": 0.38,
+              "pF10B": 0.62,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -3527,8 +3527,8 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.605,
-              "pWinB": 0.395,
+              "pWinA": 0.604,
+              "pWinB": 0.396,
               "pF10A": 0.378,
               "pF10B": 0.622,
               "h2hGames": 0,
@@ -3579,10 +3579,10 @@
             },
             {
               "sim": 4,
-              "pWinA": 0.569,
-              "pWinB": 0.431,
-              "pF10A": 0.389,
-              "pF10B": 0.611,
+              "pWinA": 0.57,
+              "pWinB": 0.43,
+              "pF10A": 0.388,
+              "pF10B": 0.612,
               "h2hGames": 0,
               "sampleA": 15.399999999999991,
               "sampleB": 22.39999999999999,
@@ -3631,8 +3631,8 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.586,
-              "pWinB": 0.414,
+              "pWinA": 0.585,
+              "pWinB": 0.415,
               "pF10A": 0.4,
               "pF10B": 0.6,
               "h2hGames": 0,
@@ -3719,8 +3719,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.325,
-            0.675
+            0.335,
+            0.665
           ],
           "question": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs"
         },
@@ -3753,23 +3753,23 @@
             "market": "系列胜者",
             "pick": "Nigma Galaxy",
             "modelP": 0.605,
-            "marketP": 0.325,
-            "odds": 3.08,
-            "roi": 0.862,
-            "ev": 0.28,
+            "marketP": 0.335,
+            "odds": 2.99,
+            "roi": 0.806,
+            "ev": 0.27,
             "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.325，模型 0.605，期望回报率 86.2%"
+            "note": "买 YES 成本 0.335，模型 0.605，期望回报率 80.6%"
           },
           {
             "market": "第一局",
             "pick": "Nigma Galaxy",
-            "modelP": 0.573,
+            "modelP": 0.575,
             "marketP": 0.385,
             "odds": 2.6,
-            "roi": 0.488,
-            "ev": 0.188,
+            "roi": 0.494,
+            "ev": 0.19,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.385，模型 0.573，期望回报率 48.8%"
+            "note": "买 YES 成本 0.385，模型 0.575，期望回报率 49.4%"
           },
           {
             "market": "总局数 O/U 2.5",
@@ -3785,18 +3785,18 @@
           {
             "market": "让分",
             "pick": "Nigma Galaxy +1.5",
-            "modelP": 0.815,
+            "modelP": 0.816,
             "marketP": 0.615,
             "odds": 1.63,
-            "roi": 0.325,
-            "ev": 0.2,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.615，模型 0.815，期望回报率 32.5%"
+            "roi": 0.327,
+            "ev": 0.201,
+            "action": "和市场差太大，只观察",
+            "note": "买 YES 成本 0.615，模型 0.816，期望回报率 32.7%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
             "pick": "Team Falcons",
-            "modelP": 0.615,
+            "modelP": 0.616,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -3811,32 +3811,32 @@
       "teamA": "Iron Wing",
       "teamB": "BoomBoys",
       "format": "Bo3",
-      "pMapA": 0.47,
-      "pMapB": 0.53,
+      "pMapA": 0.467,
+      "pMapB": 0.533,
       "pF10A": 0.489,
       "pF10B": 0.511,
       "series": {
-        "pSeriesA": 0.455,
-        "pSeriesB": 0.545,
+        "pSeriesA": 0.451,
+        "pSeriesB": 0.549,
         "pOver": 0.498,
         "pUnder": 0.502,
-        "pCoverMinus15A": 0.221,
-        "pCoverPlus15B": 0.779
+        "pCoverMinus15A": 0.218,
+        "pCoverPlus15B": 0.782
       },
       "maps": [
         {
           "game": 1,
-          "pWinA": 0.484,
-          "pWinB": 0.516,
+          "pWinA": 0.478,
+          "pWinB": 0.522,
           "pF10A": 0.488,
           "pF10B": 0.512,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.495,
-              "pWinB": 0.505,
-              "pF10A": 0.483,
-              "pF10B": 0.517,
+              "pWinA": 0.467,
+              "pWinB": 0.533,
+              "pF10A": 0.488,
+              "pF10B": 0.512,
               "h2hGames": 3.0,
               "sampleA": 23.84999999999999,
               "sampleB": 25.999999999999986,
@@ -3848,37 +3848,37 @@
                   "picks": [
                     "Lina",
                     "Ember Spirit",
-                    "Bane",
-                    "Mirana",
-                    "Brewmaster"
+                    "Tusk",
+                    "Sand King",
+                    "Templar Assassin"
                   ],
                   "bans": [
                     "Clinkz",
-                    "Viper",
+                    "Tidehunter",
                     "Lycan",
                     "Undying",
-                    "Drow Ranger",
-                    "Night Stalker",
+                    "Puck",
+                    "Techies",
                     "Largo"
                   ]
                 },
                 "teamB": {
                   "name": "BoomBoys",
                   "picks": [
-                    "Hoodwink",
-                    "Ringmaster",
-                    "Lone Druid",
                     "Keeper of the Light",
+                    "Kez",
+                    "Lone Druid",
+                    "Mirana",
                     "Slardar"
                   ],
                   "bans": [
                     "Io",
                     "Nature's Prophet",
                     "Windranger",
-                    "Dark Willow",
-                    "Invoker",
-                    "Underlord",
-                    "Puck"
+                    "Alchemist",
+                    "Necrophos",
+                    "Enigma",
+                    "Clockwerk"
                   ]
                 }
               }
@@ -3937,8 +3937,8 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.469,
-              "pWinB": 0.531,
+              "pWinA": 0.47,
+              "pWinB": 0.53,
               "pF10A": 0.485,
               "pF10B": 0.515,
               "h2hGames": 3.0,
@@ -3989,10 +3989,10 @@
             },
             {
               "sim": 4,
-              "pWinA": 0.46,
-              "pWinB": 0.54,
-              "pF10A": 0.499,
-              "pF10B": 0.501,
+              "pWinA": 0.459,
+              "pWinB": 0.541,
+              "pF10A": 0.498,
+              "pF10B": 0.502,
               "h2hGames": 3.0,
               "sampleA": 23.84999999999999,
               "sampleB": 25.999999999999986,
@@ -4041,8 +4041,8 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.512,
-              "pWinB": 0.488,
+              "pWinA": 0.511,
+              "pWinB": 0.489,
               "pF10A": 0.505,
               "pF10B": 0.495,
               "h2hGames": 3.0,
@@ -4095,17 +4095,17 @@
         },
         {
           "game": 2,
-          "pWinA": 0.469,
-          "pWinB": 0.531,
-          "pF10A": 0.485,
-          "pF10B": 0.515,
+          "pWinA": 0.466,
+          "pWinB": 0.534,
+          "pF10A": 0.483,
+          "pF10B": 0.517,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.453,
-              "pWinB": 0.547,
-              "pF10A": 0.472,
-              "pF10B": 0.528,
+              "pWinA": 0.452,
+              "pWinB": 0.548,
+              "pF10A": 0.473,
+              "pF10B": 0.527,
               "h2hGames": 3.0,
               "sampleA": 23.84999999999999,
               "sampleB": 25.999999999999986,
@@ -4206,10 +4206,10 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.444,
-              "pWinB": 0.556,
-              "pF10A": 0.493,
-              "pF10B": 0.507,
+              "pWinA": 0.43,
+              "pWinB": 0.57,
+              "pF10A": 0.485,
+              "pF10B": 0.515,
               "h2hGames": 3.0,
               "sampleA": 23.84999999999999,
               "sampleB": 25.999999999999986,
@@ -4220,37 +4220,37 @@
                   "name": "Iron Wing",
                   "picks": [
                     "Earth Spirit",
-                    "Templar Assassin",
+                    "Winter Wyvern",
                     "Dark Willow",
                     "Hoodwink",
-                    "Lion"
+                    "Templar Assassin"
                   ],
                   "bans": [
                     "Rubick",
                     "Io",
                     "Underlord",
-                    "Mirana",
-                    "Centaur Warrunner",
-                    "Dawnbreaker",
-                    "Kez"
+                    "Drow Ranger",
+                    "Necrophos",
+                    "Clockwerk",
+                    "Bane"
                   ]
                 },
                 "teamB": {
                   "name": "BoomBoys",
                   "picks": [
-                    "Bane",
+                    "Centaur Warrunner",
                     "Axe",
-                    "Lina",
-                    "Drow Ranger",
-                    "Slardar"
+                    "Ember Spirit",
+                    "Shadow Shaman",
+                    "Kez"
                   ],
                   "bans": [
                     "Beastmaster",
                     "Alchemist",
-                    "Lone Druid",
+                    "Mirana",
                     "Dark Seer",
                     "Shadow Fiend",
-                    "Lich",
+                    "Nature's Prophet",
                     "Tusk"
                   ]
                 }
@@ -4336,7 +4336,7 @@
                     "Underlord",
                     "Dark Willow",
                     "Ringmaster",
-                    "Sven"
+                    "Dragon Knight"
                   ]
                 },
                 "teamB": {
@@ -4366,8 +4366,8 @@
           "game": 3,
           "pWinA": 0.457,
           "pWinB": 0.543,
-          "pF10A": 0.495,
-          "pF10B": 0.505,
+          "pF10A": 0.496,
+          "pF10B": 0.504,
           "sims": [
             {
               "sim": 1,
@@ -4423,8 +4423,8 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.41,
-              "pWinB": 0.59,
+              "pWinA": 0.409,
+              "pWinB": 0.591,
               "pF10A": 0.511,
               "pF10B": 0.489,
               "h2hGames": 3.0,
@@ -4477,8 +4477,8 @@
               "sim": 3,
               "pWinA": 0.467,
               "pWinB": 0.533,
-              "pF10A": 0.468,
-              "pF10B": 0.532,
+              "pF10A": 0.474,
+              "pF10B": 0.526,
               "h2hGames": 3.0,
               "sampleA": 23.84999999999999,
               "sampleB": 25.999999999999986,
@@ -4501,7 +4501,7 @@
                     "Lycan",
                     "Dark Willow",
                     "Keeper of the Light",
-                    "Doom"
+                    "Monkey King"
                   ]
                 },
                 "teamB": {
@@ -4511,7 +4511,7 @@
                     "Snapfire",
                     "Undying",
                     "Ringmaster",
-                    "Pangolier"
+                    "Underlord"
                   ],
                   "bans": [
                     "Puck",
@@ -4519,8 +4519,8 @@
                     "Lion",
                     "Void Spirit",
                     "Batrider",
-                    "Rubick",
-                    "Storm Spirit"
+                    "Pangolier",
+                    "Templar Assassin"
                   ]
                 }
               }
@@ -4529,8 +4529,8 @@
               "sim": 4,
               "pWinA": 0.42,
               "pWinB": 0.58,
-              "pF10A": 0.491,
-              "pF10B": 0.509,
+              "pF10A": 0.492,
+              "pF10B": 0.508,
               "h2hGames": 3.0,
               "sampleA": 23.84999999999999,
               "sampleB": 25.999999999999986,
@@ -4579,10 +4579,10 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.475,
-              "pWinB": 0.525,
-              "pF10A": 0.49,
-              "pF10B": 0.51,
+              "pWinA": 0.476,
+              "pWinB": 0.524,
+              "pF10A": 0.489,
+              "pF10B": 0.511,
               "h2hGames": 3.0,
               "sampleA": 23.84999999999999,
               "sampleB": 25.999999999999986,
@@ -4644,7 +4644,7 @@
           {
             "market": "系列胜者",
             "pick": "BoomBoys",
-            "modelP": 0.545,
+            "modelP": 0.549,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -4654,7 +4654,7 @@
           {
             "market": "第一局",
             "pick": "BoomBoys",
-            "modelP": 0.516,
+            "modelP": 0.522,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -4763,8 +4763,8 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.312,
-              "pWinB": 0.688,
+              "pWinA": 0.313,
+              "pWinB": 0.687,
               "pF10A": 0.46,
               "pF10B": 0.54,
               "h2hGames": 2.9000000000000004,
@@ -4815,8 +4815,8 @@
             },
             {
               "sim": 3,
-              "pWinA": 0.346,
-              "pWinB": 0.654,
+              "pWinA": 0.345,
+              "pWinB": 0.655,
               "pF10A": 0.427,
               "pF10B": 0.573,
               "h2hGames": 2.9000000000000004,
@@ -4867,10 +4867,10 @@
             },
             {
               "sim": 4,
-              "pWinA": 0.317,
-              "pWinB": 0.683,
-              "pF10A": 0.445,
-              "pF10B": 0.555,
+              "pWinA": 0.316,
+              "pWinB": 0.684,
+              "pF10A": 0.444,
+              "pF10B": 0.556,
               "h2hGames": 2.9000000000000004,
               "sampleA": 22.74999999999999,
               "sampleB": 21.549999999999986,
@@ -4975,8 +4975,8 @@
           "game": 2,
           "pWinA": 0.328,
           "pWinB": 0.672,
-          "pF10A": 0.443,
-          "pF10B": 0.557,
+          "pF10A": 0.444,
+          "pF10B": 0.556,
           "sims": [
             {
               "sim": 1,
@@ -5032,8 +5032,8 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.357,
-              "pWinB": 0.643,
+              "pWinA": 0.356,
+              "pWinB": 0.644,
               "pF10A": 0.448,
               "pF10B": 0.552,
               "h2hGames": 2.9000000000000004,
@@ -5086,8 +5086,8 @@
               "sim": 3,
               "pWinA": 0.299,
               "pWinB": 0.701,
-              "pF10A": 0.424,
-              "pF10B": 0.576,
+              "pF10A": 0.425,
+              "pF10B": 0.575,
               "h2hGames": 2.9000000000000004,
               "sampleA": 22.74999999999999,
               "sampleB": 21.549999999999986,
@@ -5136,10 +5136,10 @@
             },
             {
               "sim": 4,
-              "pWinA": 0.338,
-              "pWinB": 0.662,
-              "pF10A": 0.468,
-              "pF10B": 0.532,
+              "pWinA": 0.337,
+              "pWinB": 0.663,
+              "pF10A": 0.469,
+              "pF10B": 0.531,
               "h2hGames": 2.9000000000000004,
               "sampleA": 22.74999999999999,
               "sampleB": 21.549999999999986,
@@ -5188,8 +5188,8 @@
             },
             {
               "sim": 5,
-              "pWinA": 0.314,
-              "pWinB": 0.686,
+              "pWinA": 0.315,
+              "pWinB": 0.685,
               "pF10A": 0.439,
               "pF10B": 0.561,
               "h2hGames": 2.9000000000000004,
@@ -5301,8 +5301,8 @@
             },
             {
               "sim": 2,
-              "pWinA": 0.307,
-              "pWinB": 0.693,
+              "pWinA": 0.306,
+              "pWinB": 0.694,
               "pF10A": 0.421,
               "pF10B": 0.579,
               "h2hGames": 2.9000000000000004,
@@ -5378,7 +5378,7 @@
                     "Lone Druid",
                     "Treant Protector",
                     "Mirana",
-                    "Shadow Shaman",
+                    "Gyrocopter",
                     "Enchantress"
                   ]
                 },
@@ -5397,7 +5397,7 @@
                     "Bane",
                     "Jakiro",
                     "Clockwerk",
-                    "Huskar",
+                    "Viper",
                     "Snapfire"
                   ]
                 }
@@ -5407,8 +5407,8 @@
               "sim": 4,
               "pWinA": 0.303,
               "pWinB": 0.697,
-              "pF10A": 0.427,
-              "pF10B": 0.573,
+              "pF10A": 0.428,
+              "pF10B": 0.572,
               "h2hGames": 2.9000000000000004,
               "sampleA": 22.74999999999999,
               "sampleB": 21.549999999999986,
@@ -5569,56 +5569,56 @@
       "teamA": "Team Liquid",
       "teamB": "Nigma Galaxy",
       "format": "Bo3",
-      "pMapA": 0.362,
-      "pMapB": 0.638,
-      "pF10A": 0.608,
-      "pF10B": 0.392,
+      "pMapA": 0.35,
+      "pMapB": 0.65,
+      "pF10A": 0.59,
+      "pF10B": 0.41,
       "series": {
-        "pSeriesA": 0.298,
-        "pSeriesB": 0.702,
-        "pOver": 0.462,
-        "pUnder": 0.538,
-        "pCoverMinus15A": 0.131,
-        "pCoverPlus15B": 0.869
+        "pSeriesA": 0.281,
+        "pSeriesB": 0.719,
+        "pOver": 0.455,
+        "pUnder": 0.545,
+        "pCoverMinus15A": 0.122,
+        "pCoverPlus15B": 0.878
       },
       "maps": [
         {
           "game": 1,
-          "pWinA": 0.352,
-          "pWinB": 0.648,
-          "pF10A": 0.604,
-          "pF10B": 0.396,
+          "pWinA": 0.335,
+          "pWinB": 0.665,
+          "pF10A": 0.583,
+          "pF10B": 0.417,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.36,
-              "pWinB": 0.64,
-              "pF10A": 0.59,
-              "pF10B": 0.41,
+              "pWinA": 0.333,
+              "pWinB": 0.667,
+              "pF10A": 0.582,
+              "pF10B": 0.418,
               "h2hGames": 0.9,
-              "sampleA": 21.19999999999999,
+              "sampleA": 22.19999999999999,
               "sampleB": 15.399999999999991,
-              "why": "本届胜率 Team Liquid 58% / Nigma Galaxy 67%；先到10杀 57% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
+              "why": "本届胜率 Team Liquid 56% / Nigma Galaxy 67%；先到10杀 55% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
               "picksA": [
-                "Spectre",
-                "Witch Doctor",
+                "Mirana",
+                "Luna",
                 "Axe",
-                "Tiny",
+                "Storm Spirit",
                 "Tusk"
               ],
               "picksB": [
                 "Clockwerk",
                 "Ember Spirit",
-                "Sniper",
-                "Windranger",
-                "Slardar"
+                "Ancient Apparition",
+                "Viper",
+                "Shadow Shaman"
               ],
               "firstPick": "Team Liquid"
             }
           ]
         }
       ],
-      "why": "本届胜率 Team Liquid 58% / Nigma Galaxy 67%；先到10杀 57% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
+      "why": "本届胜率 Team Liquid 56% / Nigma Galaxy 67%；先到10杀 55% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
       "id": "lbr1b__Team Liquid__Nigma Galaxy",
       "slot": "lbr1b",
       "round": "败者组首轮",
@@ -5630,7 +5630,7 @@
           {
             "market": "系列胜者",
             "pick": "Nigma Galaxy",
-            "modelP": 0.702,
+            "modelP": 0.719,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -5640,7 +5640,7 @@
           {
             "market": "第一局",
             "pick": "Nigma Galaxy",
-            "modelP": 0.648,
+            "modelP": 0.665,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -5650,7 +5650,7 @@
           {
             "market": "总局数 O/U 2.5",
             "pick": "Over 2.5",
-            "modelP": 0.462,
+            "modelP": 0.455,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -5660,7 +5660,7 @@
           {
             "market": "先到 10 杀（无盘，仅模型）",
             "pick": "Team Liquid",
-            "modelP": 0.608,
+            "modelP": 0.59,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -5675,41 +5675,41 @@
       "teamA": "Team Liquid",
       "teamB": "Team Falcons",
       "format": "Bo3",
-      "pMapA": 0.482,
-      "pMapB": 0.518,
-      "pF10A": 0.482,
-      "pF10B": 0.518,
+      "pMapA": 0.467,
+      "pMapB": 0.533,
+      "pF10A": 0.468,
+      "pF10B": 0.532,
       "series": {
-        "pSeriesA": 0.472,
-        "pSeriesB": 0.528,
-        "pOver": 0.499,
-        "pUnder": 0.501,
-        "pCoverMinus15A": 0.232,
-        "pCoverPlus15B": 0.768
+        "pSeriesA": 0.451,
+        "pSeriesB": 0.549,
+        "pOver": 0.498,
+        "pUnder": 0.502,
+        "pCoverMinus15A": 0.219,
+        "pCoverPlus15B": 0.781
       },
       "maps": [
         {
           "game": 1,
-          "pWinA": 0.486,
-          "pWinB": 0.514,
-          "pF10A": 0.483,
-          "pF10B": 0.517,
+          "pWinA": 0.466,
+          "pWinB": 0.534,
+          "pF10A": 0.469,
+          "pF10B": 0.531,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.493,
-              "pWinB": 0.507,
-              "pF10A": 0.496,
-              "pF10B": 0.504,
+              "pWinA": 0.483,
+              "pWinB": 0.517,
+              "pF10A": 0.484,
+              "pF10B": 0.516,
               "h2hGames": 0,
-              "sampleA": 21.19999999999999,
+              "sampleA": 22.19999999999999,
               "sampleB": 22.39999999999999,
-              "why": "本届胜率 Team Liquid 58% / Team Falcons 59%；先到10杀 57% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
+              "why": "本届胜率 Team Liquid 56% / Team Falcons 59%；先到10杀 55% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
               "picksA": [
+                "Earth Spirit",
                 "Keeper of the Light",
-                "Sven",
                 "Windranger",
-                "Shadow Demon",
+                "Shadow Fiend",
                 "Tiny"
               ],
               "picksB": [
@@ -5724,7 +5724,7 @@
           ]
         }
       ],
-      "why": "本届胜率 Team Liquid 58% / Team Falcons 59%；先到10杀 57% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
+      "why": "本届胜率 Team Liquid 56% / Team Falcons 59%；先到10杀 55% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
       "id": "lbr1b__Team Liquid__Team Falcons",
       "slot": "lbr1b",
       "round": "败者组首轮",
@@ -5736,7 +5736,7 @@
           {
             "market": "系列胜者",
             "pick": "Team Falcons",
-            "modelP": 0.528,
+            "modelP": 0.549,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -5746,7 +5746,431 @@
           {
             "market": "第一局",
             "pick": "Team Falcons",
-            "modelP": 0.514,
+            "modelP": 0.534,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "总局数 O/U 2.5",
+            "pick": "Over 2.5",
+            "modelP": 0.498,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "先到 10 杀（无盘，仅模型）",
+            "pick": "Team Falcons",
+            "modelP": 0.532,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          }
+        ],
+        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
+      }
+    },
+    {
+      "teamA": "Team Yandex",
+      "teamB": "Nigma Galaxy",
+      "format": "Bo3",
+      "pMapA": 0.442,
+      "pMapB": 0.558,
+      "pF10A": 0.533,
+      "pF10B": 0.467,
+      "series": {
+        "pSeriesA": 0.414,
+        "pSeriesB": 0.586,
+        "pOver": 0.493,
+        "pUnder": 0.507,
+        "pCoverMinus15A": 0.196,
+        "pCoverPlus15B": 0.804
+      },
+      "maps": [
+        {
+          "game": 1,
+          "pWinA": 0.447,
+          "pWinB": 0.553,
+          "pF10A": 0.531,
+          "pF10B": 0.469,
+          "sims": [
+            {
+              "sim": 1,
+              "pWinA": 0.469,
+              "pWinB": 0.531,
+              "pF10A": 0.546,
+              "pF10B": 0.454,
+              "h2hGames": 0,
+              "sampleA": 25.649999999999988,
+              "sampleB": 15.399999999999991,
+              "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 67%；先到10杀 49% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
+              "picksA": [
+                "Necrophos",
+                "Bounty Hunter",
+                "Lone Druid",
+                "Shadow Fiend",
+                "Tiny"
+              ],
+              "picksB": [
+                "Windranger",
+                "Void Spirit",
+                "Invoker",
+                "Doom",
+                "Clockwerk"
+              ],
+              "firstPick": "Team Yandex"
+            }
+          ]
+        }
+      ],
+      "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 67%；先到10杀 49% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
+      "id": "lbr1b__Team Yandex__Nigma Galaxy",
+      "slot": "lbr1b",
+      "round": "败者组首轮",
+      "when": "2026-08-21 13:00",
+      "status": "scenario",
+      "if": "若 Team Yandex 对上 Nigma Galaxy",
+      "betting": {
+        "rows": [
+          {
+            "market": "系列胜者",
+            "pick": "Nigma Galaxy",
+            "modelP": 0.586,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "第一局",
+            "pick": "Nigma Galaxy",
+            "modelP": 0.553,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "总局数 O/U 2.5",
+            "pick": "Over 2.5",
+            "modelP": 0.493,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "先到 10 杀（无盘，仅模型）",
+            "pick": "Team Yandex",
+            "modelP": 0.533,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          }
+        ],
+        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
+      }
+    },
+    {
+      "teamA": "Team Yandex",
+      "teamB": "Team Falcons",
+      "format": "Bo3",
+      "pMapA": 0.504,
+      "pMapB": 0.496,
+      "pF10A": 0.412,
+      "pF10B": 0.588,
+      "series": {
+        "pSeriesA": 0.506,
+        "pSeriesB": 0.494,
+        "pOver": 0.5,
+        "pUnder": 0.5,
+        "pCoverMinus15A": 0.254,
+        "pCoverPlus15B": 0.746
+      },
+      "maps": [
+        {
+          "game": 1,
+          "pWinA": 0.503,
+          "pWinB": 0.497,
+          "pF10A": 0.415,
+          "pF10B": 0.585,
+          "sims": [
+            {
+              "sim": 1,
+              "pWinA": 0.545,
+              "pWinB": 0.455,
+              "pF10A": 0.42,
+              "pF10B": 0.58,
+              "h2hGames": 0,
+              "sampleA": 25.649999999999988,
+              "sampleB": 22.39999999999999,
+              "why": "本届胜率 Team Yandex 60% / Team Falcons 59%；先到10杀 49% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
+              "picksA": [
+                "Earth Spirit",
+                "Dark Seer",
+                "Techies",
+                "Necrophos",
+                "Nature's Prophet"
+              ],
+              "picksB": [
+                "Clockwerk",
+                "Phoenix",
+                "Centaur Warrunner",
+                "Enchantress",
+                "Mars"
+              ],
+              "firstPick": "Team Yandex"
+            }
+          ]
+        }
+      ],
+      "why": "本届胜率 Team Yandex 60% / Team Falcons 59%；先到10杀 49% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
+      "id": "lbr1b__Team Yandex__Team Falcons",
+      "slot": "lbr1b",
+      "round": "败者组首轮",
+      "when": "2026-08-21 13:00",
+      "status": "scenario",
+      "if": "若 Team Yandex 对上 Team Falcons",
+      "betting": {
+        "rows": [
+          {
+            "market": "系列胜者",
+            "pick": "Team Yandex",
+            "modelP": 0.506,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "第一局",
+            "pick": "Team Yandex",
+            "modelP": 0.503,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "总局数 O/U 2.5",
+            "pick": "Over 2.5",
+            "modelP": 0.5,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "先到 10 杀（无盘，仅模型）",
+            "pick": "Team Falcons",
+            "modelP": 0.588,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          }
+        ],
+        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
+      }
+    },
+    {
+      "teamA": "Team Liquid",
+      "teamB": "Nigma Galaxy",
+      "format": "Bo3",
+      "pMapA": 0.355,
+      "pMapB": 0.645,
+      "pF10A": 0.586,
+      "pF10B": 0.414,
+      "series": {
+        "pSeriesA": 0.289,
+        "pSeriesB": 0.711,
+        "pOver": 0.458,
+        "pUnder": 0.542,
+        "pCoverMinus15A": 0.126,
+        "pCoverPlus15B": 0.874
+      },
+      "maps": [
+        {
+          "game": 1,
+          "pWinA": 0.364,
+          "pWinB": 0.636,
+          "pF10A": 0.586,
+          "pF10B": 0.414,
+          "sims": [
+            {
+              "sim": 1,
+              "pWinA": 0.379,
+              "pWinB": 0.621,
+              "pF10A": 0.57,
+              "pF10B": 0.43,
+              "h2hGames": 0.9,
+              "sampleA": 22.19999999999999,
+              "sampleB": 15.399999999999991,
+              "why": "本届胜率 Team Liquid 56% / Nigma Galaxy 67%；先到10杀 55% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
+              "picksA": [
+                "Dark Seer",
+                "Clockwerk",
+                "Ember Spirit",
+                "Witch Doctor",
+                "Sven"
+              ],
+              "picksB": [
+                "Largo",
+                "Tiny",
+                "Nature's Prophet",
+                "Necrophos",
+                "Void Spirit"
+              ],
+              "firstPick": "Team Liquid"
+            }
+          ]
+        }
+      ],
+      "why": "本届胜率 Team Liquid 56% / Nigma Galaxy 67%；先到10杀 55% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
+      "id": "ubsf2__Team Liquid__Nigma Galaxy",
+      "slot": "ubsf2",
+      "round": "胜者组半决赛",
+      "when": "2026-08-21 19:00",
+      "status": "scenario",
+      "if": "若 Team Liquid 对上 Nigma Galaxy",
+      "betting": {
+        "rows": [
+          {
+            "market": "系列胜者",
+            "pick": "Nigma Galaxy",
+            "modelP": 0.711,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "第一局",
+            "pick": "Nigma Galaxy",
+            "modelP": 0.636,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "总局数 O/U 2.5",
+            "pick": "Over 2.5",
+            "modelP": 0.458,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "先到 10 杀（无盘，仅模型）",
+            "pick": "Team Liquid",
+            "modelP": 0.586,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          }
+        ],
+        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
+      }
+    },
+    {
+      "teamA": "Team Liquid",
+      "teamB": "Team Falcons",
+      "format": "Bo3",
+      "pMapA": 0.475,
+      "pMapB": 0.525,
+      "pF10A": 0.469,
+      "pF10B": 0.531,
+      "series": {
+        "pSeriesA": 0.462,
+        "pSeriesB": 0.538,
+        "pOver": 0.499,
+        "pUnder": 0.501,
+        "pCoverMinus15A": 0.225,
+        "pCoverPlus15B": 0.775
+      },
+      "maps": [
+        {
+          "game": 1,
+          "pWinA": 0.479,
+          "pWinB": 0.521,
+          "pF10A": 0.463,
+          "pF10B": 0.537,
+          "sims": [
+            {
+              "sim": 1,
+              "pWinA": 0.478,
+              "pWinB": 0.522,
+              "pF10A": 0.445,
+              "pF10B": 0.555,
+              "h2hGames": 0,
+              "sampleA": 22.19999999999999,
+              "sampleB": 22.39999999999999,
+              "why": "本届胜率 Team Liquid 56% / Team Falcons 59%；先到10杀 55% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
+              "picksA": [
+                "Clockwerk",
+                "Sven",
+                "Drow Ranger",
+                "Tusk",
+                "Invoker"
+              ],
+              "picksB": [
+                "Ringmaster",
+                "Weaver",
+                "Alchemist",
+                "Clinkz",
+                "Sand King"
+              ],
+              "firstPick": "Team Liquid"
+            }
+          ]
+        }
+      ],
+      "why": "本届胜率 Team Liquid 56% / Team Falcons 59%；先到10杀 55% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
+      "id": "ubsf2__Team Liquid__Team Falcons",
+      "slot": "ubsf2",
+      "round": "胜者组半决赛",
+      "when": "2026-08-21 19:00",
+      "status": "scenario",
+      "if": "若 Team Liquid 对上 Team Falcons",
+      "betting": {
+        "rows": [
+          {
+            "market": "系列胜者",
+            "pick": "Team Falcons",
+            "modelP": 0.538,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "第一局",
+            "pick": "Team Falcons",
+            "modelP": 0.521,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -5766,431 +6190,7 @@
           {
             "market": "先到 10 杀（无盘，仅模型）",
             "pick": "Team Falcons",
-            "modelP": 0.518,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          }
-        ],
-        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
-      }
-    },
-    {
-      "teamA": "Team Yandex",
-      "teamB": "Nigma Galaxy",
-      "format": "Bo3",
-      "pMapA": 0.429,
-      "pMapB": 0.571,
-      "pF10A": 0.542,
-      "pF10B": 0.458,
-      "series": {
-        "pSeriesA": 0.395,
-        "pSeriesB": 0.605,
-        "pOver": 0.49,
-        "pUnder": 0.51,
-        "pCoverMinus15A": 0.184,
-        "pCoverPlus15B": 0.816
-      },
-      "maps": [
-        {
-          "game": 1,
-          "pWinA": 0.451,
-          "pWinB": 0.549,
-          "pF10A": 0.542,
-          "pF10B": 0.458,
-          "sims": [
-            {
-              "sim": 1,
-              "pWinA": 0.474,
-              "pWinB": 0.526,
-              "pF10A": 0.556,
-              "pF10B": 0.444,
-              "h2hGames": 0,
-              "sampleA": 24.649999999999988,
-              "sampleB": 15.399999999999991,
-              "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 67%；先到10杀 51% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
-              "picksA": [
-                "Treant Protector",
-                "Bounty Hunter",
-                "Lone Druid",
-                "Earth Spirit",
-                "Terrorblade"
-              ],
-              "picksB": [
-                "Windranger",
-                "Viper",
-                "Undying",
-                "Void Spirit",
-                "Clockwerk"
-              ],
-              "firstPick": "Team Yandex"
-            }
-          ]
-        }
-      ],
-      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 67%；先到10杀 51% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
-      "id": "lbr1b__Team Yandex__Nigma Galaxy",
-      "slot": "lbr1b",
-      "round": "败者组首轮",
-      "when": "2026-08-21 13:00",
-      "status": "scenario",
-      "if": "若 Team Yandex 对上 Nigma Galaxy",
-      "betting": {
-        "rows": [
-          {
-            "market": "系列胜者",
-            "pick": "Nigma Galaxy",
-            "modelP": 0.605,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "第一局",
-            "pick": "Nigma Galaxy",
-            "modelP": 0.549,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "总局数 O/U 2.5",
-            "pick": "Over 2.5",
-            "modelP": 0.49,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "先到 10 杀（无盘，仅模型）",
-            "pick": "Team Yandex",
-            "modelP": 0.542,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          }
-        ],
-        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
-      }
-    },
-    {
-      "teamA": "Team Yandex",
-      "teamB": "Team Falcons",
-      "format": "Bo3",
-      "pMapA": 0.496,
-      "pMapB": 0.504,
-      "pF10A": 0.419,
-      "pF10B": 0.581,
-      "series": {
-        "pSeriesA": 0.494,
-        "pSeriesB": 0.506,
-        "pOver": 0.5,
-        "pUnder": 0.5,
-        "pCoverMinus15A": 0.246,
-        "pCoverPlus15B": 0.754
-      },
-      "maps": [
-        {
-          "game": 1,
-          "pWinA": 0.491,
-          "pWinB": 0.509,
-          "pF10A": 0.423,
-          "pF10B": 0.577,
-          "sims": [
-            {
-              "sim": 1,
-              "pWinA": 0.512,
-              "pWinB": 0.488,
-              "pF10A": 0.433,
-              "pF10B": 0.567,
-              "h2hGames": 0,
-              "sampleA": 24.649999999999988,
-              "sampleB": 22.39999999999999,
-              "why": "本届胜率 Team Yandex 59% / Team Falcons 59%；先到10杀 51% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
-              "picksA": [
-                "Earth Spirit",
-                "Dark Seer",
-                "Clinkz",
-                "Jakiro",
-                "Shadow Demon"
-              ],
-              "picksB": [
-                "Clockwerk",
-                "Phoenix",
-                "Centaur Warrunner",
-                "Enchantress",
-                "Alchemist"
-              ],
-              "firstPick": "Team Yandex"
-            }
-          ]
-        }
-      ],
-      "why": "本届胜率 Team Yandex 59% / Team Falcons 59%；先到10杀 51% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
-      "id": "lbr1b__Team Yandex__Team Falcons",
-      "slot": "lbr1b",
-      "round": "败者组首轮",
-      "when": "2026-08-21 13:00",
-      "status": "scenario",
-      "if": "若 Team Yandex 对上 Team Falcons",
-      "betting": {
-        "rows": [
-          {
-            "market": "系列胜者",
-            "pick": "Team Falcons",
-            "modelP": 0.506,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "第一局",
-            "pick": "Team Falcons",
-            "modelP": 0.509,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "总局数 O/U 2.5",
-            "pick": "Over 2.5",
-            "modelP": 0.5,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "先到 10 杀（无盘，仅模型）",
-            "pick": "Team Falcons",
-            "modelP": 0.581,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          }
-        ],
-        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
-      }
-    },
-    {
-      "teamA": "Team Liquid",
-      "teamB": "Nigma Galaxy",
-      "format": "Bo3",
-      "pMapA": 0.372,
-      "pMapB": 0.628,
-      "pF10A": 0.603,
-      "pF10B": 0.397,
-      "series": {
-        "pSeriesA": 0.312,
-        "pSeriesB": 0.688,
-        "pOver": 0.467,
-        "pUnder": 0.533,
-        "pCoverMinus15A": 0.138,
-        "pCoverPlus15B": 0.862
-      },
-      "maps": [
-        {
-          "game": 1,
-          "pWinA": 0.385,
-          "pWinB": 0.615,
-          "pF10A": 0.606,
-          "pF10B": 0.394,
-          "sims": [
-            {
-              "sim": 1,
-              "pWinA": 0.406,
-              "pWinB": 0.594,
-              "pF10A": 0.598,
-              "pF10B": 0.402,
-              "h2hGames": 0.9,
-              "sampleA": 21.19999999999999,
-              "sampleB": 15.399999999999991,
-              "why": "本届胜率 Team Liquid 58% / Nigma Galaxy 67%；先到10杀 57% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
-              "picksA": [
-                "Dark Seer",
-                "Clockwerk",
-                "Windranger",
-                "Spectre",
-                "Shadow Demon"
-              ],
-              "picksB": [
-                "Huskar",
-                "Tiny",
-                "Enigma",
-                "Ember Spirit",
-                "Timbersaw"
-              ],
-              "firstPick": "Team Liquid"
-            }
-          ]
-        }
-      ],
-      "why": "本届胜率 Team Liquid 58% / Nigma Galaxy 67%；先到10杀 57% / 46%；H2H 0.9 局；Team Liquid 常用中单 Earth Spirit",
-      "id": "ubsf2__Team Liquid__Nigma Galaxy",
-      "slot": "ubsf2",
-      "round": "胜者组半决赛",
-      "when": "2026-08-21 19:00",
-      "status": "scenario",
-      "if": "若 Team Liquid 对上 Nigma Galaxy",
-      "betting": {
-        "rows": [
-          {
-            "market": "系列胜者",
-            "pick": "Nigma Galaxy",
-            "modelP": 0.688,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "第一局",
-            "pick": "Nigma Galaxy",
-            "modelP": 0.615,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "总局数 O/U 2.5",
-            "pick": "Over 2.5",
-            "modelP": 0.467,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "先到 10 杀（无盘，仅模型）",
-            "pick": "Team Liquid",
-            "modelP": 0.603,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          }
-        ],
-        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
-      }
-    },
-    {
-      "teamA": "Team Liquid",
-      "teamB": "Team Falcons",
-      "format": "Bo3",
-      "pMapA": 0.487,
-      "pMapB": 0.513,
-      "pF10A": 0.483,
-      "pF10B": 0.517,
-      "series": {
-        "pSeriesA": 0.481,
-        "pSeriesB": 0.519,
-        "pOver": 0.5,
-        "pUnder": 0.5,
-        "pCoverMinus15A": 0.237,
-        "pCoverPlus15B": 0.763
-      },
-      "maps": [
-        {
-          "game": 1,
-          "pWinA": 0.496,
-          "pWinB": 0.504,
-          "pF10A": 0.481,
-          "pF10B": 0.519,
-          "sims": [
-            {
-              "sim": 1,
-              "pWinA": 0.521,
-              "pWinB": 0.479,
-              "pF10A": 0.455,
-              "pF10B": 0.545,
-              "h2hGames": 0,
-              "sampleA": 21.19999999999999,
-              "sampleB": 22.39999999999999,
-              "why": "本届胜率 Team Liquid 58% / Team Falcons 59%；先到10杀 57% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
-              "picksA": [
-                "Clockwerk",
-                "Sven",
-                "Drow Ranger",
-                "Luna",
-                "Invoker"
-              ],
-              "picksB": [
-                "Ringmaster",
-                "Sand King",
-                "Mars",
-                "Earth Spirit",
-                "Dark Willow"
-              ],
-              "firstPick": "Team Liquid"
-            }
-          ]
-        }
-      ],
-      "why": "本届胜率 Team Liquid 58% / Team Falcons 59%；先到10杀 57% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
-      "id": "ubsf2__Team Liquid__Team Falcons",
-      "slot": "ubsf2",
-      "round": "胜者组半决赛",
-      "when": "2026-08-21 19:00",
-      "status": "scenario",
-      "if": "若 Team Liquid 对上 Team Falcons",
-      "betting": {
-        "rows": [
-          {
-            "market": "系列胜者",
-            "pick": "Team Falcons",
-            "modelP": 0.519,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "第一局",
-            "pick": "Team Falcons",
-            "modelP": 0.504,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "总局数 O/U 2.5",
-            "pick": "Over 2.5",
-            "modelP": 0.5,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
-          },
-          {
-            "market": "先到 10 杀（无盘，仅模型）",
-            "pick": "Team Falcons",
-            "modelP": 0.517,
+            "modelP": 0.531,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -6207,54 +6207,54 @@
       "format": "Bo3",
       "pMapA": 0.426,
       "pMapB": 0.574,
-      "pF10A": 0.545,
-      "pF10B": 0.455,
+      "pF10A": 0.528,
+      "pF10B": 0.472,
       "series": {
         "pSeriesA": 0.39,
         "pSeriesB": 0.61,
         "pOver": 0.489,
         "pUnder": 0.511,
-        "pCoverMinus15A": 0.182,
-        "pCoverPlus15B": 0.818
+        "pCoverMinus15A": 0.181,
+        "pCoverPlus15B": 0.819
       },
       "maps": [
         {
           "game": 1,
-          "pWinA": 0.43,
-          "pWinB": 0.57,
-          "pF10A": 0.541,
-          "pF10B": 0.459,
+          "pWinA": 0.431,
+          "pWinB": 0.569,
+          "pF10A": 0.522,
+          "pF10B": 0.478,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.447,
-              "pWinB": 0.553,
-              "pF10A": 0.522,
-              "pF10B": 0.478,
+              "pWinA": 0.451,
+              "pWinB": 0.549,
+              "pF10A": 0.528,
+              "pF10B": 0.472,
               "h2hGames": 0,
-              "sampleA": 24.649999999999988,
+              "sampleA": 25.649999999999988,
               "sampleB": 15.399999999999991,
-              "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 67%；先到10杀 51% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
+              "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 67%；先到10杀 49% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
               "picksA": [
+                "Elder Titan",
                 "Nature's Prophet",
-                "Ember Spirit",
-                "Naga Siren",
+                "Jakiro",
                 "Kez",
-                "Puck"
+                "Timbersaw"
               ],
               "picksB": [
-                "Hoodwink",
-                "Tusk",
-                "Windranger",
-                "Axe",
-                "Dazzle"
+                "Puck",
+                "Lycan",
+                "Sven",
+                "Shadow Fiend",
+                "Ember Spirit"
               ],
               "firstPick": "Team Yandex"
             }
           ]
         }
       ],
-      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 67%；先到10杀 51% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
+      "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 67%；先到10杀 49% / 46%；H2H 0 局；Team Yandex 常用中单 Invoker",
       "id": "ubsf2__Team Yandex__Nigma Galaxy",
       "slot": "ubsf2",
       "round": "胜者组半决赛",
@@ -6276,7 +6276,7 @@
           {
             "market": "第一局",
             "pick": "Nigma Galaxy",
-            "modelP": 0.57,
+            "modelP": 0.569,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -6296,7 +6296,7 @@
           {
             "market": "先到 10 杀（无盘，仅模型）",
             "pick": "Team Yandex",
-            "modelP": 0.545,
+            "modelP": 0.528,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -6311,56 +6311,56 @@
       "teamA": "Team Yandex",
       "teamB": "Team Falcons",
       "format": "Bo3",
-      "pMapA": 0.488,
-      "pMapB": 0.512,
-      "pF10A": 0.419,
-      "pF10B": 0.581,
+      "pMapA": 0.498,
+      "pMapB": 0.502,
+      "pF10A": 0.414,
+      "pF10B": 0.586,
       "series": {
-        "pSeriesA": 0.482,
-        "pSeriesB": 0.518,
+        "pSeriesA": 0.497,
+        "pSeriesB": 0.503,
         "pOver": 0.5,
         "pUnder": 0.5,
-        "pCoverMinus15A": 0.238,
-        "pCoverPlus15B": 0.762
+        "pCoverMinus15A": 0.248,
+        "pCoverPlus15B": 0.752
       },
       "maps": [
         {
           "game": 1,
-          "pWinA": 0.491,
-          "pWinB": 0.509,
-          "pF10A": 0.42,
-          "pF10B": 0.58,
+          "pWinA": 0.5,
+          "pWinB": 0.5,
+          "pF10A": 0.419,
+          "pF10B": 0.581,
           "sims": [
             {
               "sim": 1,
-              "pWinA": 0.491,
-              "pWinB": 0.509,
-              "pF10A": 0.416,
-              "pF10B": 0.584,
+              "pWinA": 0.52,
+              "pWinB": 0.48,
+              "pF10A": 0.413,
+              "pF10B": 0.587,
               "h2hGames": 0,
-              "sampleA": 24.649999999999988,
+              "sampleA": 25.649999999999988,
               "sampleB": 22.39999999999999,
-              "why": "本届胜率 Team Yandex 59% / Team Falcons 59%；先到10杀 51% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
+              "why": "本届胜率 Team Yandex 60% / Team Falcons 59%；先到10杀 49% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
               "picksA": [
                 "Invoker",
                 "Bounty Hunter",
-                "Witch Doctor",
-                "Ember Spirit",
-                "Mirana"
+                "Clockwerk",
+                "Nature's Prophet",
+                "Jakiro"
               ],
               "picksB": [
                 "Undying",
                 "Snapfire",
-                "Lina",
-                "Lion",
-                "Clockwerk"
+                "Pangolier",
+                "Timbersaw",
+                "Centaur Warrunner"
               ],
               "firstPick": "Team Yandex"
             }
           ]
         }
       ],
-      "why": "本届胜率 Team Yandex 59% / Team Falcons 59%；先到10杀 51% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
+      "why": "本届胜率 Team Yandex 60% / Team Falcons 59%；先到10杀 49% / 59%；H2H 0 局；Team Yandex 常用中单 Invoker",
       "id": "ubsf2__Team Yandex__Team Falcons",
       "slot": "ubsf2",
       "round": "胜者组半决赛",
@@ -6372,7 +6372,7 @@
           {
             "market": "系列胜者",
             "pick": "Team Falcons",
-            "modelP": 0.518,
+            "modelP": 0.503,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -6381,8 +6381,8 @@
           },
           {
             "market": "第一局",
-            "pick": "Team Falcons",
-            "modelP": 0.509,
+            "pick": "Team Yandex",
+            "modelP": 0.5,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -6402,7 +6402,7 @@
           {
             "market": "先到 10 杀（无盘，仅模型）",
             "pick": "Team Falcons",
-            "modelP": 0.581,
+            "modelP": 0.586,
             "marketP": null,
             "roi": null,
             "ev": null,
@@ -6422,141 +6422,141 @@
       "ubqf2": "TEAM VISION"
     },
     "pMap": {
-      "BoomBoys vs Team Yandex": 0.467,
-      "Iron Wing vs BoomBoys": 0.464,
-      "Iron Wing vs Team Falcons": 0.515,
-      "Iron Wing vs Team Yandex": 0.487,
-      "Nigma Galaxy vs BoomBoys": 0.558,
+      "BoomBoys vs Team Yandex": 0.459,
+      "Iron Wing vs BoomBoys": 0.463,
+      "Iron Wing vs Team Falcons": 0.519,
+      "Iron Wing vs Team Yandex": 0.473,
+      "Nigma Galaxy vs BoomBoys": 0.557,
       "Nigma Galaxy vs Iron Wing": 0.517,
       "Nigma Galaxy vs Team Falcons": 0.574,
-      "Nigma Galaxy vs Team Spirit": 0.655,
-      "Nigma Galaxy vs Team Yandex": 0.578,
+      "Nigma Galaxy vs Team Spirit": 0.656,
+      "Nigma Galaxy vs Team Yandex": 0.561,
       "TEAM VISION vs BoomBoys": 0.697,
-      "TEAM VISION vs Iron Wing": 0.62,
+      "TEAM VISION vs Iron Wing": 0.618,
       "TEAM VISION vs Nigma Galaxy": 0.529,
       "TEAM VISION vs Team Falcons": 0.635,
-      "TEAM VISION vs Team Liquid": 0.622,
+      "TEAM VISION vs Team Liquid": 0.621,
       "TEAM VISION vs Team Spirit": 0.677,
-      "TEAM VISION vs Team Yandex": 0.626,
+      "TEAM VISION vs Team Yandex": 0.615,
       "Team Falcons vs BoomBoys": 0.577,
-      "Team Falcons vs Team Yandex": 0.501,
-      "Team Liquid vs BoomBoys": 0.516,
-      "Team Liquid vs Iron Wing": 0.551,
-      "Team Liquid vs Nigma Galaxy": 0.372,
-      "Team Liquid vs Team Falcons": 0.481,
-      "Team Liquid vs Team Spirit": 0.441,
-      "Team Liquid vs Team Yandex": 0.529,
+      "Team Falcons vs Team Yandex": 0.497,
+      "Team Liquid vs BoomBoys": 0.511,
+      "Team Liquid vs Iron Wing": 0.536,
+      "Team Liquid vs Nigma Galaxy": 0.35,
+      "Team Liquid vs Team Falcons": 0.469,
+      "Team Liquid vs Team Spirit": 0.43,
+      "Team Liquid vs Team Yandex": 0.489,
       "Team Spirit vs BoomBoys": 0.551,
       "Team Spirit vs Iron Wing": 0.638,
       "Team Spirit vs Team Falcons": 0.508,
-      "Team Spirit vs Team Yandex": 0.457
+      "Team Spirit vs Team Yandex": 0.436
     },
     "champion": [
       {
         "name": "TEAM VISION",
-        "n": 511,
-        "p": 0.511
+        "n": 472,
+        "p": 0.472
       },
       {
         "name": "Nigma Galaxy",
-        "n": 211,
-        "p": 0.211
+        "n": 241,
+        "p": 0.241
       },
       {
         "name": "Team Yandex",
-        "n": 74,
-        "p": 0.074
-      },
-      {
-        "name": "Team Spirit",
-        "n": 70,
-        "p": 0.07
+        "n": 90,
+        "p": 0.09
       },
       {
         "name": "Team Falcons",
-        "n": 64,
-        "p": 0.064
+        "n": 66,
+        "p": 0.066
+      },
+      {
+        "name": "Team Spirit",
+        "n": 63,
+        "p": 0.063
       },
       {
         "name": "Team Liquid",
-        "n": 52,
-        "p": 0.052
+        "n": 41,
+        "p": 0.041
       },
       {
         "name": "BoomBoys",
-        "n": 11,
-        "p": 0.011
+        "n": 18,
+        "p": 0.018
       },
       {
         "name": "Iron Wing",
-        "n": 7,
-        "p": 0.007
+        "n": 9,
+        "p": 0.009
       }
     ],
     "place": {
       "TEAM VISION": {
-        "1": 0.511,
-        "2": 0.248,
-        "3": 0.11,
-        "4": 0.043,
-        "5-6": 0.088,
+        "1": 0.472,
+        "2": 0.271,
+        "3": 0.118,
+        "4": 0.046,
+        "5-6": 0.093,
         "7-8": 0.0
       },
       "Team Liquid": {
-        "1": 0.052,
-        "2": 0.127,
-        "3": 0.164,
-        "4": 0.13,
-        "5-6": 0.262,
-        "7-8": 0.265
+        "1": 0.041,
+        "2": 0.112,
+        "3": 0.136,
+        "4": 0.149,
+        "5-6": 0.259,
+        "7-8": 0.303
       },
       "Nigma Galaxy": {
-        "1": 0.211,
-        "2": 0.198,
-        "3": 0.139,
-        "4": 0.119,
-        "5-6": 0.184,
-        "7-8": 0.149
+        "1": 0.241,
+        "2": 0.206,
+        "3": 0.136,
+        "4": 0.113,
+        "5-6": 0.17,
+        "7-8": 0.134
       },
       "Team Spirit": {
-        "1": 0.07,
-        "2": 0.149,
-        "3": 0.203,
-        "4": 0.158,
-        "5-6": 0.42,
+        "1": 0.063,
+        "2": 0.136,
+        "3": 0.219,
+        "4": 0.159,
+        "5-6": 0.423,
         "7-8": 0.0
       },
       "Iron Wing": {
-        "1": 0.007,
-        "2": 0.016,
-        "3": 0.055,
-        "4": 0.142,
-        "5-6": 0.22,
-        "7-8": 0.56
+        "1": 0.009,
+        "2": 0.018,
+        "3": 0.034,
+        "4": 0.115,
+        "5-6": 0.247,
+        "7-8": 0.577
       },
       "Team Falcons": {
-        "1": 0.064,
-        "2": 0.121,
-        "3": 0.136,
-        "4": 0.12,
-        "5-6": 0.256,
-        "7-8": 0.303
+        "1": 0.066,
+        "2": 0.112,
+        "3": 0.133,
+        "4": 0.128,
+        "5-6": 0.254,
+        "7-8": 0.307
       },
       "BoomBoys": {
-        "1": 0.011,
-        "2": 0.022,
-        "3": 0.058,
-        "4": 0.146,
-        "5-6": 0.323,
-        "7-8": 0.44
+        "1": 0.018,
+        "2": 0.026,
+        "3": 0.062,
+        "4": 0.147,
+        "5-6": 0.324,
+        "7-8": 0.423
       },
       "Team Yandex": {
-        "1": 0.074,
+        "1": 0.09,
         "2": 0.119,
-        "3": 0.135,
-        "4": 0.142,
-        "5-6": 0.247,
-        "7-8": 0.283
+        "3": 0.162,
+        "4": 0.143,
+        "5-6": 0.23,
+        "7-8": 0.256
       }
     },
     "slots": {
@@ -6595,14 +6595,14 @@
       "ubqf3": {
         "winners": [
           {
-            "name": "Team Liquid",
-            "n": 553,
-            "p": 0.553
+            "name": "Team Yandex",
+            "n": 506,
+            "p": 0.506
           },
           {
-            "name": "Team Yandex",
-            "n": 447,
-            "p": 0.447
+            "name": "Team Liquid",
+            "n": 494,
+            "p": 0.494
           }
         ],
         "pairings": [
@@ -6617,13 +6617,13 @@
         "winners": [
           {
             "name": "Nigma Galaxy",
-            "n": 592,
-            "p": 0.592
+            "n": 622,
+            "p": 0.622
           },
           {
             "name": "Team Falcons",
-            "n": 408,
-            "p": 0.408
+            "n": 378,
+            "p": 0.378
           }
         ],
         "pairings": [
@@ -6638,13 +6638,13 @@
         "winners": [
           {
             "name": "BoomBoys",
-            "n": 560,
-            "p": 0.56
+            "n": 577,
+            "p": 0.577
           },
           {
             "name": "Iron Wing",
-            "n": 440,
-            "p": 0.44
+            "n": 423,
+            "p": 0.423
           }
         ],
         "pairings": [
@@ -6659,45 +6659,45 @@
         "winners": [
           {
             "name": "Team Falcons",
-            "n": 289,
-            "p": 0.289
-          },
-          {
-            "name": "Team Yandex",
-            "n": 270,
-            "p": 0.27
+            "n": 315,
+            "p": 0.315
           },
           {
             "name": "Nigma Galaxy",
-            "n": 259,
-            "p": 0.259
+            "n": 244,
+            "p": 0.244
+          },
+          {
+            "name": "Team Yandex",
+            "n": 238,
+            "p": 0.238
           },
           {
             "name": "Team Liquid",
-            "n": 182,
-            "p": 0.182
+            "n": 203,
+            "p": 0.203
           }
         ],
         "pairings": [
           {
             "pair": "Team Yandex vs Team Falcons",
-            "n": 328,
-            "p": 0.328
+            "n": 317,
+            "p": 0.317
           },
           {
             "pair": "Team Liquid vs Team Falcons",
-            "n": 264,
-            "p": 0.264
-          },
-          {
-            "pair": "Team Yandex vs Nigma Galaxy",
-            "n": 225,
-            "p": 0.225
+            "n": 305,
+            "p": 0.305
           },
           {
             "pair": "Team Liquid vs Nigma Galaxy",
-            "n": 183,
-            "p": 0.183
+            "n": 201,
+            "p": 0.201
+          },
+          {
+            "pair": "Team Yandex vs Nigma Galaxy",
+            "n": 177,
+            "p": 0.177
           }
         ]
       },
@@ -6705,13 +6705,13 @@
         "winners": [
           {
             "name": "TEAM VISION",
-            "n": 771,
-            "p": 0.771
+            "n": 758,
+            "p": 0.758
           },
           {
             "name": "Team Spirit",
-            "n": 229,
-            "p": 0.229
+            "n": 242,
+            "p": 0.242
           }
         ],
         "pairings": [
@@ -6726,45 +6726,45 @@
         "winners": [
           {
             "name": "Nigma Galaxy",
-            "n": 372,
-            "p": 0.372
-          },
-          {
-            "name": "Team Liquid",
-            "n": 226,
-            "p": 0.226
-          },
-          {
-            "name": "Team Falcons",
-            "n": 203,
-            "p": 0.203
+            "n": 408,
+            "p": 0.408
           },
           {
             "name": "Team Yandex",
-            "n": 199,
-            "p": 0.199
+            "n": 228,
+            "p": 0.228
+          },
+          {
+            "name": "Team Falcons",
+            "n": 191,
+            "p": 0.191
+          },
+          {
+            "name": "Team Liquid",
+            "n": 173,
+            "p": 0.173
           }
         ],
         "pairings": [
           {
             "pair": "Team Liquid vs Nigma Galaxy",
-            "n": 328,
-            "p": 0.328
+            "n": 317,
+            "p": 0.317
           },
           {
             "pair": "Team Yandex vs Nigma Galaxy",
-            "n": 264,
-            "p": 0.264
-          },
-          {
-            "pair": "Team Liquid vs Team Falcons",
-            "n": 225,
-            "p": 0.225
+            "n": 305,
+            "p": 0.305
           },
           {
             "pair": "Team Yandex vs Team Falcons",
-            "n": 183,
-            "p": 0.183
+            "n": 201,
+            "p": 0.201
+          },
+          {
+            "pair": "Team Liquid vs Team Falcons",
+            "n": 177,
+            "p": 0.177
           }
         ]
       },
@@ -6772,65 +6772,65 @@
         "winners": [
           {
             "name": "Team Spirit",
-            "n": 351,
-            "p": 0.351
+            "n": 335,
+            "p": 0.335
           },
           {
             "name": "Nigma Galaxy",
-            "n": 174,
-            "p": 0.174
+            "n": 163,
+            "p": 0.163
           },
           {
             "name": "TEAM VISION",
-            "n": 141,
-            "p": 0.141
-          },
-          {
-            "name": "Team Yandex",
-            "n": 137,
-            "p": 0.137
+            "n": 149,
+            "p": 0.149
           },
           {
             "name": "Team Falcons",
-            "n": 125,
-            "p": 0.125
+            "n": 135,
+            "p": 0.135
+          },
+          {
+            "name": "Team Yandex",
+            "n": 130,
+            "p": 0.13
           },
           {
             "name": "Team Liquid",
-            "n": 72,
-            "p": 0.072
+            "n": 88,
+            "p": 0.088
           }
         ],
         "pairings": [
           {
             "pair": "Team Falcons vs Team Spirit",
-            "n": 219,
-            "p": 0.219
-          },
-          {
-            "pair": "Team Yandex vs Team Spirit",
-            "n": 210,
-            "p": 0.21
+            "n": 239,
+            "p": 0.239
           },
           {
             "pair": "Nigma Galaxy vs Team Spirit",
-            "n": 202,
-            "p": 0.202
+            "n": 178,
+            "p": 0.178
+          },
+          {
+            "pair": "Team Yandex vs Team Spirit",
+            "n": 176,
+            "p": 0.176
           },
           {
             "pair": "Team Liquid vs Team Spirit",
-            "n": 140,
-            "p": 0.14
+            "n": 165,
+            "p": 0.165
           },
           {
             "pair": "Team Falcons vs TEAM VISION",
-            "n": 70,
-            "p": 0.07
+            "n": 76,
+            "p": 0.076
           },
           {
-            "pair": "Team Yandex vs TEAM VISION",
-            "n": 60,
-            "p": 0.06
+            "pair": "Nigma Galaxy vs TEAM VISION",
+            "n": 66,
+            "p": 0.066
           }
         ]
       },
@@ -6838,28 +6838,28 @@
         "winners": [
           {
             "name": "BoomBoys",
-            "n": 237,
-            "p": 0.237
-          },
-          {
-            "name": "Iron Wing",
-            "n": 220,
-            "p": 0.22
+            "n": 253,
+            "p": 0.253
           },
           {
             "name": "Team Liquid",
-            "n": 175,
-            "p": 0.175
+            "n": 177,
+            "p": 0.177
+          },
+          {
+            "name": "Iron Wing",
+            "n": 176,
+            "p": 0.176
           },
           {
             "name": "Team Yandex",
-            "n": 134,
-            "p": 0.134
+            "n": 156,
+            "p": 0.156
           },
           {
             "name": "Nigma Galaxy",
-            "n": 121,
-            "p": 0.121
+            "n": 125,
+            "p": 0.125
           },
           {
             "name": "Team Falcons",
@@ -6870,33 +6870,33 @@
         "pairings": [
           {
             "pair": "BoomBoys vs Team Liquid",
-            "n": 173,
-            "p": 0.173
-          },
-          {
-            "pair": "Iron Wing vs Team Liquid",
-            "n": 154,
-            "p": 0.154
-          },
-          {
-            "pair": "BoomBoys vs Nigma Galaxy",
-            "n": 134,
-            "p": 0.134
+            "n": 186,
+            "p": 0.186
           },
           {
             "pair": "BoomBoys vs Team Yandex",
-            "n": 132,
-            "p": 0.132
+            "n": 157,
+            "p": 0.157
           },
           {
-            "pair": "BoomBoys vs Team Falcons",
+            "pair": "Iron Wing vs Team Liquid",
+            "n": 135,
+            "p": 0.135
+          },
+          {
+            "pair": "BoomBoys vs Nigma Galaxy",
+            "n": 129,
+            "p": 0.129
+          },
+          {
+            "pair": "Iron Wing vs Team Yandex",
             "n": 121,
             "p": 0.121
           },
           {
-            "pair": "Iron Wing vs Team Yandex",
-            "n": 116,
-            "p": 0.116
+            "pair": "BoomBoys vs Team Falcons",
+            "n": 105,
+            "p": 0.105
           }
         ]
       },
@@ -6904,65 +6904,65 @@
         "winners": [
           {
             "name": "TEAM VISION",
-            "n": 505,
-            "p": 0.505
+            "n": 476,
+            "p": 0.476
           },
           {
             "name": "Nigma Galaxy",
-            "n": 192,
-            "p": 0.192
+            "n": 210,
+            "p": 0.21
           },
           {
             "name": "Team Spirit",
-            "n": 82,
-            "p": 0.082
+            "n": 97,
+            "p": 0.097
           },
           {
             "name": "Team Yandex",
-            "n": 80,
-            "p": 0.08
-          },
-          {
-            "name": "Team Liquid",
-            "n": 75,
-            "p": 0.075
+            "n": 76,
+            "p": 0.076
           },
           {
             "name": "Team Falcons",
-            "n": 66,
-            "p": 0.066
+            "n": 76,
+            "p": 0.076
+          },
+          {
+            "name": "Team Liquid",
+            "n": 65,
+            "p": 0.065
           }
         ],
         "pairings": [
           {
             "pair": "TEAM VISION vs Nigma Galaxy",
-            "n": 284,
-            "p": 0.284
-          },
-          {
-            "pair": "TEAM VISION vs Team Liquid",
-            "n": 177,
-            "p": 0.177
-          },
-          {
-            "pair": "TEAM VISION vs Team Falcons",
-            "n": 164,
-            "p": 0.164
+            "n": 311,
+            "p": 0.311
           },
           {
             "pair": "TEAM VISION vs Team Yandex",
-            "n": 146,
-            "p": 0.146
+            "n": 170,
+            "p": 0.17
+          },
+          {
+            "pair": "TEAM VISION vs Team Falcons",
+            "n": 149,
+            "p": 0.149
+          },
+          {
+            "pair": "TEAM VISION vs Team Liquid",
+            "n": 128,
+            "p": 0.128
           },
           {
             "pair": "Team Spirit vs Nigma Galaxy",
-            "n": 88,
-            "p": 0.088
+            "n": 97,
+            "p": 0.097
           },
           {
             "pair": "Team Spirit vs Team Yandex",
-            "n": 53,
-            "p": 0.053
+            "n": 58,
+            "p": 0.058
           }
         ]
       },
@@ -6970,75 +6970,75 @@
         "winners": [
           {
             "name": "Team Spirit",
-            "n": 193,
-            "p": 0.193
-          },
-          {
-            "name": "Nigma Galaxy",
             "n": 176,
             "p": 0.176
           },
           {
+            "name": "Nigma Galaxy",
+            "n": 175,
+            "p": 0.175
+          },
+          {
             "name": "Team Yandex",
-            "n": 129,
-            "p": 0.129
+            "n": 143,
+            "p": 0.143
           },
           {
             "name": "Team Falcons",
-            "n": 118,
-            "p": 0.118
+            "n": 120,
+            "p": 0.12
           },
           {
             "name": "Team Liquid",
-            "n": 117,
-            "p": 0.117
-          },
-          {
-            "name": "TEAM VISION",
-            "n": 98,
-            "p": 0.098
+            "n": 116,
+            "p": 0.116
           },
           {
             "name": "BoomBoys",
-            "n": 91,
-            "p": 0.091
+            "n": 106,
+            "p": 0.106
+          },
+          {
+            "name": "TEAM VISION",
+            "n": 103,
+            "p": 0.103
           },
           {
             "name": "Iron Wing",
-            "n": 78,
-            "p": 0.078
+            "n": 61,
+            "p": 0.061
           }
         ],
         "pairings": [
           {
-            "pair": "Iron Wing vs Team Spirit",
-            "n": 85,
-            "p": 0.085
-          },
-          {
             "pair": "BoomBoys vs Team Spirit",
-            "n": 82,
-            "p": 0.082
+            "n": 91,
+            "p": 0.091
           },
           {
-            "pair": "Team Liquid vs Team Spirit",
-            "n": 57,
-            "p": 0.057
+            "pair": "Iron Wing vs Team Spirit",
+            "n": 61,
+            "p": 0.061
+          },
+          {
+            "pair": "Team Yandex vs Team Spirit",
+            "n": 60,
+            "p": 0.06
           },
           {
             "pair": "Nigma Galaxy vs Team Spirit",
-            "n": 54,
-            "p": 0.054
+            "n": 50,
+            "p": 0.05
           },
           {
-            "pair": "BoomBoys vs Nigma Galaxy",
-            "n": 52,
-            "p": 0.052
-          },
-          {
-            "pair": "Team Liquid vs Team Yandex",
+            "pair": "Team Falcons vs Nigma Galaxy",
             "n": 49,
             "p": 0.049
+          },
+          {
+            "pair": "Team Liquid vs Team Spirit",
+            "n": 47,
+            "p": 0.047
           }
         ]
       },
@@ -7046,75 +7046,75 @@
         "winners": [
           {
             "name": "TEAM VISION",
-            "n": 254,
-            "p": 0.254
+            "n": 267,
+            "p": 0.267
           },
           {
             "name": "Nigma Galaxy",
-            "n": 217,
-            "p": 0.217
-          },
-          {
-            "name": "Team Spirit",
-            "n": 137,
-            "p": 0.137
-          },
-          {
-            "name": "Team Falcons",
-            "n": 119,
-            "p": 0.119
+            "n": 237,
+            "p": 0.237
           },
           {
             "name": "Team Yandex",
-            "n": 113,
-            "p": 0.113
+            "n": 133,
+            "p": 0.133
+          },
+          {
+            "name": "Team Spirit",
+            "n": 102,
+            "p": 0.102
+          },
+          {
+            "name": "Team Falcons",
+            "n": 102,
+            "p": 0.102
           },
           {
             "name": "Team Liquid",
-            "n": 104,
-            "p": 0.104
+            "n": 88,
+            "p": 0.088
           },
           {
             "name": "BoomBoys",
-            "n": 33,
-            "p": 0.033
+            "n": 44,
+            "p": 0.044
           },
           {
             "name": "Iron Wing",
-            "n": 23,
-            "p": 0.023
+            "n": 27,
+            "p": 0.027
           }
         ],
         "pairings": [
           {
             "pair": "Team Spirit vs TEAM VISION",
-            "n": 77,
-            "p": 0.077
+            "n": 70,
+            "p": 0.07
           },
           {
             "pair": "TEAM VISION vs Team Spirit",
-            "n": 62,
-            "p": 0.062
+            "n": 68,
+            "p": 0.068
+          },
+          {
+            "pair": "Team Yandex vs Nigma Galaxy",
+            "n": 55,
+            "p": 0.055
+          },
+          {
+            "pair": "Nigma Galaxy vs Team Yandex",
+            "n": 51,
+            "p": 0.051
           },
           {
             "pair": "Nigma Galaxy vs TEAM VISION",
-            "n": 45,
-            "p": 0.045
-          },
-          {
-            "pair": "Team Spirit vs Nigma Galaxy",
-            "n": 42,
-            "p": 0.042
-          },
-          {
-            "pair": "Nigma Galaxy vs Team Falcons",
-            "n": 41,
-            "p": 0.041
+            "n": 43,
+            "p": 0.043
           },
           {
             "pair": "Team Yandex vs TEAM VISION",
-            "n": 39,
-            "p": 0.039
+            "n": 43,
+            "p": 0.043
           }
         ]
       },
@@ -7122,75 +7122,75 @@
         "winners": [
           {
             "name": "TEAM VISION",
-            "n": 511,
-            "p": 0.511
+            "n": 472,
+            "p": 0.472
           },
           {
             "name": "Nigma Galaxy",
-            "n": 211,
-            "p": 0.211
+            "n": 241,
+            "p": 0.241
           },
           {
             "name": "Team Yandex",
-            "n": 74,
-            "p": 0.074
-          },
-          {
-            "name": "Team Spirit",
-            "n": 70,
-            "p": 0.07
+            "n": 90,
+            "p": 0.09
           },
           {
             "name": "Team Falcons",
-            "n": 64,
-            "p": 0.064
+            "n": 66,
+            "p": 0.066
+          },
+          {
+            "name": "Team Spirit",
+            "n": 63,
+            "p": 0.063
           },
           {
             "name": "Team Liquid",
-            "n": 52,
-            "p": 0.052
+            "n": 41,
+            "p": 0.041
           },
           {
             "name": "BoomBoys",
-            "n": 11,
-            "p": 0.011
+            "n": 18,
+            "p": 0.018
           },
           {
             "name": "Iron Wing",
-            "n": 7,
-            "p": 0.007
+            "n": 9,
+            "p": 0.009
           }
         ],
         "pairings": [
           {
             "pair": "TEAM VISION vs Nigma Galaxy",
-            "n": 167,
-            "p": 0.167
+            "n": 177,
+            "p": 0.177
           },
           {
             "pair": "Nigma Galaxy vs TEAM VISION",
-            "n": 114,
-            "p": 0.114
-          },
-          {
-            "pair": "TEAM VISION vs Team Falcons",
-            "n": 86,
-            "p": 0.086
+            "n": 129,
+            "p": 0.129
           },
           {
             "pair": "TEAM VISION vs Team Yandex",
-            "n": 79,
-            "p": 0.079
+            "n": 97,
+            "p": 0.097
+          },
+          {
+            "pair": "TEAM VISION vs Team Falcons",
+            "n": 66,
+            "p": 0.066
           },
           {
             "pair": "TEAM VISION vs Team Liquid",
-            "n": 75,
-            "p": 0.075
+            "n": 60,
+            "p": 0.06
           },
           {
-            "pair": "TEAM VISION vs Team Spirit",
-            "n": 62,
-            "p": 0.062
+            "pair": "Team Falcons vs TEAM VISION",
+            "n": 41,
+            "p": 0.041
           }
         ]
       }
@@ -7222,32 +7222,32 @@
         "id": "ubqf3",
         "round": "胜者组首轮",
         "when": "2026-08-20 18:30",
-        "winner": "Team Liquid",
-        "p": 0.553,
-        "n": 553,
+        "winner": "Team Yandex",
+        "p": 0.506,
+        "n": 506,
         "of": 1000,
         "topPair": "Team Liquid vs Team Yandex",
-        "scoreMode": "Team Liquid 2-0"
+        "scoreMode": "Team Yandex 2-0"
       },
       {
         "id": "ubqf4",
         "round": "胜者组首轮",
         "when": "2026-08-20 20:30",
         "winner": "Nigma Galaxy",
-        "p": 0.593,
-        "n": 328,
-        "of": 553,
+        "p": 0.603,
+        "n": 305,
+        "of": 506,
         "topPair": "Nigma Galaxy vs Team Falcons",
-        "scoreMode": "Nigma Galaxy 2-0"
+        "scoreMode": "Nigma Galaxy 2-1"
       },
       {
         "id": "lbr1a",
         "round": "败者组首轮",
         "when": "2026-08-21 10:00",
         "winner": "BoomBoys",
-        "p": 0.54,
-        "n": 177,
-        "of": 328,
+        "p": 0.61,
+        "n": 186,
+        "of": 305,
         "topPair": "Iron Wing vs BoomBoys",
         "scoreMode": "BoomBoys 2-0"
       },
@@ -7255,21 +7255,21 @@
         "id": "lbr1b",
         "round": "败者组首轮",
         "when": "2026-08-21 13:00",
-        "winner": "Team Yandex",
-        "p": 0.542,
-        "n": 96,
-        "of": 177,
-        "topPair": "Team Yandex vs Team Falcons",
-        "scoreMode": "Team Yandex 2-0"
+        "winner": "Team Falcons",
+        "p": 0.527,
+        "n": 98,
+        "of": 186,
+        "topPair": "Team Liquid vs Team Falcons",
+        "scoreMode": "Team Falcons 2-0"
       },
       {
         "id": "ubsf1",
         "round": "胜者组半决赛",
         "when": "2026-08-21 16:00",
         "winner": "TEAM VISION",
-        "p": 0.708,
-        "n": 68,
-        "of": 96,
+        "p": 0.745,
+        "n": 73,
+        "of": 98,
         "topPair": "Team Spirit vs TEAM VISION",
         "scoreMode": "TEAM VISION 2-0"
       },
@@ -7278,42 +7278,42 @@
         "round": "胜者组半决赛",
         "when": "2026-08-21 19:00",
         "winner": "Nigma Galaxy",
-        "p": 0.632,
-        "n": 43,
-        "of": 68,
-        "topPair": "Team Liquid vs Nigma Galaxy",
-        "scoreMode": "Nigma Galaxy 2-0"
+        "p": 0.521,
+        "n": 38,
+        "of": 73,
+        "topPair": "Team Yandex vs Nigma Galaxy",
+        "scoreMode": "Nigma Galaxy 2-1"
       },
       {
         "id": "lbqf2",
         "round": "败者组四分之一决赛",
         "when": "2026-08-22 10:00",
-        "winner": "Team Yandex",
-        "p": 0.558,
-        "n": 24,
-        "of": 43,
-        "topPair": "Team Yandex vs Team Spirit",
-        "scoreMode": "Team Yandex 2-0"
+        "winner": "Team Spirit",
+        "p": 0.5,
+        "n": 19,
+        "of": 38,
+        "topPair": "Team Falcons vs Team Spirit",
+        "scoreMode": "Team Spirit 2-0"
       },
       {
         "id": "lbqf1",
         "round": "败者组四分之一决赛",
         "when": "2026-08-22 13:00",
-        "winner": "Team Liquid",
-        "p": 0.667,
-        "n": 16,
-        "of": 24,
-        "topPair": "BoomBoys vs Team Liquid",
-        "scoreMode": "Team Liquid 2-0"
+        "winner": "Team Yandex",
+        "p": 0.526,
+        "n": 10,
+        "of": 19,
+        "topPair": "BoomBoys vs Team Yandex",
+        "scoreMode": "Team Yandex 2-0"
       },
       {
         "id": "ubf",
         "round": "胜者组决赛",
         "when": "2026-08-22 16:00",
         "winner": "TEAM VISION",
-        "p": 0.625,
-        "n": 10,
-        "of": 16,
+        "p": 0.6,
+        "n": 6,
+        "of": 10,
         "topPair": "TEAM VISION vs Nigma Galaxy",
         "scoreMode": "TEAM VISION 2-0"
       },
@@ -7321,37 +7321,57 @@
         "id": "lbsf",
         "round": "败者组半决赛",
         "when": "2026-08-22 19:00",
-        "winner": "Team Liquid",
-        "p": 0.6,
-        "n": 6,
-        "of": 10,
-        "topPair": "Team Liquid vs Team Yandex",
-        "scoreMode": "Team Liquid 2-0"
+        "winner": "Team Yandex",
+        "p": 0.667,
+        "n": 4,
+        "of": 6,
+        "topPair": "Team Yandex vs Team Spirit",
+        "scoreMode": "Team Yandex 2-0"
       },
       {
         "id": "lbf",
         "round": "败者组决赛",
         "when": "2026-08-23 10:00",
         "winner": "Nigma Galaxy",
-        "p": 0.667,
-        "n": 4,
-        "of": 6,
-        "topPair": "Team Liquid vs Nigma Galaxy",
-        "scoreMode": "Nigma Galaxy 2-0"
+        "p": 0.75,
+        "n": 3,
+        "of": 4,
+        "topPair": "Team Yandex vs Nigma Galaxy",
+        "scoreMode": "Nigma Galaxy 2-1"
       },
       {
         "id": "gf",
         "round": "总决赛",
         "when": "2026-08-23 13:00",
         "winner": "Nigma Galaxy",
-        "p": 0.5,
+        "p": 0.667,
         "n": 2,
-        "of": 4,
+        "of": 3,
         "topPair": "TEAM VISION vs Nigma Galaxy",
-        "scoreMode": "Nigma Galaxy 3-0"
+        "scoreMode": "Nigma Galaxy 3-2"
       }
     ],
     "topTrees": [
+      {
+        "n": 6,
+        "p": 0.006,
+        "winners": {
+          "ubqf1": "Team Spirit",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Liquid",
+          "ubqf4": "Nigma Galaxy",
+          "lbr1a": "BoomBoys",
+          "lbr1b": "Team Falcons",
+          "ubsf1": "TEAM VISION",
+          "ubsf2": "Nigma Galaxy",
+          "lbqf2": "Team Spirit",
+          "lbqf1": "Team Liquid",
+          "ubf": "Nigma Galaxy",
+          "lbsf": "Team Spirit",
+          "lbf": "TEAM VISION",
+          "gf": "Nigma Galaxy"
+        }
+      },
       {
         "n": 4,
         "p": 0.004,
@@ -7378,63 +7398,43 @@
         "winners": {
           "ubqf1": "Team Spirit",
           "ubqf2": "TEAM VISION",
-          "ubqf3": "Team Liquid",
-          "ubqf4": "Nigma Galaxy",
-          "lbr1a": "Iron Wing",
-          "lbr1b": "Team Yandex",
-          "ubsf1": "TEAM VISION",
-          "ubsf2": "Nigma Galaxy",
-          "lbqf2": "Team Spirit",
-          "lbqf1": "Team Liquid",
-          "ubf": "TEAM VISION",
-          "lbsf": "Team Spirit",
-          "lbf": "Team Spirit",
-          "gf": "TEAM VISION"
-        }
-      },
-      {
-        "n": 4,
-        "p": 0.004,
-        "winners": {
-          "ubqf1": "Team Spirit",
-          "ubqf2": "TEAM VISION",
-          "ubqf3": "Team Liquid",
+          "ubqf3": "Team Yandex",
           "ubqf4": "Nigma Galaxy",
           "lbr1a": "Iron Wing",
           "lbr1b": "Team Falcons",
           "ubsf1": "TEAM VISION",
           "ubsf2": "Nigma Galaxy",
-          "lbqf2": "Team Spirit",
+          "lbqf2": "Team Falcons",
           "lbqf1": "Iron Wing",
-          "ubf": "Nigma Galaxy",
-          "lbsf": "Team Spirit",
-          "lbf": "TEAM VISION",
-          "gf": "Nigma Galaxy"
-        }
-      },
-      {
-        "n": 4,
-        "p": 0.004,
-        "winners": {
-          "ubqf1": "Team Spirit",
-          "ubqf2": "TEAM VISION",
-          "ubqf3": "Team Liquid",
-          "ubqf4": "Nigma Galaxy",
-          "lbr1a": "BoomBoys",
-          "lbr1b": "Team Yandex",
-          "ubsf1": "TEAM VISION",
-          "ubsf2": "Nigma Galaxy",
-          "lbqf2": "Team Spirit",
-          "lbqf1": "BoomBoys",
           "ubf": "TEAM VISION",
-          "lbsf": "BoomBoys",
+          "lbsf": "Team Falcons",
           "lbf": "Nigma Galaxy",
           "gf": "TEAM VISION"
         }
       },
       {
-        "n": 3,
-        "p": 0.003,
+        "n": 4,
+        "p": 0.004,
+        "winners": {
+          "ubqf1": "Team Spirit",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Yandex",
+          "ubqf4": "Nigma Galaxy",
+          "lbr1a": "BoomBoys",
+          "lbr1b": "Team Falcons",
+          "ubsf1": "TEAM VISION",
+          "ubsf2": "Team Yandex",
+          "lbqf2": "Team Spirit",
+          "lbqf1": "BoomBoys",
+          "ubf": "TEAM VISION",
+          "lbsf": "Team Spirit",
+          "lbf": "Team Yandex",
+          "gf": "TEAM VISION"
+        }
+      },
+      {
+        "n": 4,
+        "p": 0.004,
         "winners": {
           "ubqf1": "Team Spirit",
           "ubqf2": "TEAM VISION",
@@ -7442,14 +7442,14 @@
           "ubqf4": "Nigma Galaxy",
           "lbr1a": "BoomBoys",
           "lbr1b": "Team Falcons",
-          "ubsf1": "TEAM VISION",
+          "ubsf1": "Team Spirit",
           "ubsf2": "Nigma Galaxy",
-          "lbqf2": "Team Spirit",
-          "lbqf1": "BoomBoys",
+          "lbqf2": "TEAM VISION",
+          "lbqf1": "Team Liquid",
           "ubf": "Nigma Galaxy",
-          "lbsf": "BoomBoys",
+          "lbsf": "TEAM VISION",
           "lbf": "TEAM VISION",
-          "gf": "Nigma Galaxy"
+          "gf": "TEAM VISION"
         }
       }
     ],
@@ -8074,30 +8074,30 @@
         "team": "Team Liquid",
         "opp": "Team Yandex",
         "pick": "Team Liquid 先到 10 杀",
-        "modelP": 0.567,
-        "sample": "模型样本 TI 14 + EWC 16（有效 21.2）· 先到10杀 60%",
+        "modelP": 0.554,
+        "sample": "模型样本 TI 15 + EWC 16（有效 22.2）· 先到10杀 57%",
         "note": "四场里最站得住的10杀低保。本届先到10杀率八强最高。",
         "teamA": "Team Liquid",
         "teamB": "Team Yandex",
-        "pF10A": 0.567,
-        "pF10B": 0.433,
+        "pF10A": 0.554,
+        "pF10B": 0.446,
         "sides": [
           {
             "side": "A",
             "team": "Team Liquid",
             "label": "Team Liquid 先到 10 杀",
-            "modelP": 0.567,
-            "breakEvenOdds": 1.76
+            "modelP": 0.554,
+            "breakEvenOdds": 1.81
           },
           {
             "side": "B",
             "team": "Team Yandex",
             "label": "Team Yandex 先到 10 杀",
-            "modelP": 0.433,
-            "breakEvenOdds": 2.31
+            "modelP": 0.446,
+            "breakEvenOdds": 2.24
           }
         ],
-        "breakEvenOdds": 1.76,
+        "breakEvenOdds": 1.81,
         "grid": [
           {
             "odds": 1.55,
@@ -8105,7 +8105,7 @@
             "quarterKelly": 0.0,
             "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": -0.1212,
+            "evPerYuan": -0.1413,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8119,7 +8119,7 @@
             "quarterKelly": 0.0,
             "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": -0.0928,
+            "evPerYuan": -0.1136,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8133,7 +8133,7 @@
             "quarterKelly": 0.0,
             "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": -0.0645,
+            "evPerYuan": -0.0859,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8147,7 +8147,7 @@
             "quarterKelly": 0.0,
             "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": -0.0361,
+            "evPerYuan": -0.0582,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8161,7 +8161,7 @@
             "quarterKelly": 0.0,
             "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": -0.0078,
+            "evPerYuan": -0.0305,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8171,11 +8171,25 @@
           },
           {
             "odds": 1.8,
-            "fullKelly": 0.0257,
-            "quarterKelly": 0.0064,
-            "kellyUsed": 0.0064,
+            "fullKelly": 0.0,
+            "quarterKelly": 0.0,
+            "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": 0.0206,
+            "evPerYuan": -0.0028,
+            "stake": 0,
+            "pctOfBank": 0.0,
+            "ifWin": 1000,
+            "ifLose": 1000,
+            "evYuan": -0.0,
+            "action": "空仓"
+          },
+          {
+            "odds": 1.85,
+            "fullKelly": 0.0293,
+            "quarterKelly": 0.0073,
+            "kellyUsed": 0.0073,
+            "fraction": 0.25,
+            "evPerYuan": 0.0249,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8184,45 +8198,31 @@
             "action": "优势太薄，空仓"
           },
           {
-            "odds": 1.85,
-            "fullKelly": 0.0576,
-            "quarterKelly": 0.0144,
-            "kellyUsed": 0.0144,
-            "fraction": 0.25,
-            "evPerYuan": 0.049,
-            "stake": 14,
-            "pctOfBank": 1.4,
-            "ifWin": 1011.9,
-            "ifLose": 986,
-            "evYuan": 0.7,
-            "action": "下"
-          },
-          {
             "odds": 1.9,
-            "fullKelly": 0.0859,
-            "quarterKelly": 0.0215,
-            "kellyUsed": 0.0215,
+            "fullKelly": 0.0584,
+            "quarterKelly": 0.0146,
+            "kellyUsed": 0.0146,
             "fraction": 0.25,
-            "evPerYuan": 0.0773,
-            "stake": 21,
-            "pctOfBank": 2.1,
-            "ifWin": 1018.9,
-            "ifLose": 979,
-            "evYuan": 1.6,
+            "evPerYuan": 0.0526,
+            "stake": 15,
+            "pctOfBank": 1.5,
+            "ifWin": 1013.5,
+            "ifLose": 985,
+            "evYuan": 0.8,
             "action": "下"
           },
           {
             "odds": 2.0,
-            "fullKelly": 0.134,
-            "quarterKelly": 0.0335,
-            "kellyUsed": 0.0335,
+            "fullKelly": 0.108,
+            "quarterKelly": 0.027,
+            "kellyUsed": 0.027,
             "fraction": 0.25,
-            "evPerYuan": 0.134,
-            "stake": 33,
-            "pctOfBank": 3.3,
-            "ifWin": 1033.0,
-            "ifLose": 967,
-            "evYuan": 4.4,
+            "evPerYuan": 0.108,
+            "stake": 27,
+            "pctOfBank": 2.7,
+            "ifWin": 1027.0,
+            "ifLose": 973,
+            "evYuan": 2.9,
             "action": "下"
           }
         ],
@@ -8232,7 +8232,7 @@
           "quarterKelly": 0.0,
           "kellyUsed": 0.0,
           "fraction": 0.25,
-          "evPerYuan": -0.0361,
+          "evPerYuan": -0.0582,
           "stake": 0,
           "pctOfBank": 0.0,
           "ifWin": 1000,
@@ -8246,7 +8246,7 @@
           "quarterKelly": 0.0,
           "kellyUsed": 0.0,
           "fraction": 0.5,
-          "evPerYuan": -0.0361,
+          "evPerYuan": -0.0582,
           "stake": 0,
           "pctOfBank": 0.0,
           "ifWin": 1000,
@@ -8260,7 +8260,7 @@
           "quarterKelly": 0.0,
           "kellyUsed": 0.0,
           "fraction": 1.0,
-          "evPerYuan": -0.0361,
+          "evPerYuan": -0.0582,
           "stake": 0,
           "pctOfBank": 0.0,
           "ifWin": 1000,
@@ -8269,28 +8269,28 @@
           "action": "空仓"
         },
         "uncertainty": {
-          "teamN": 21,
-          "oppN": 24,
-          "nEff": 21,
-          "se": 0.108,
-          "pMinusSe": 0.459,
-          "pPlusSe": 0.675,
+          "teamN": 22,
+          "oppN": 25,
+          "nEff": 22,
+          "se": 0.106,
+          "pMinusSe": 0.448,
+          "pPlusSe": 0.66,
           "wilson95": [
-            0.362,
-            0.752
+            0.354,
+            0.738
           ],
-          "rawRate": 0.571,
-          "raw": "12/21",
+          "rawRate": 0.545,
+          "raw": "12/22",
           "rawWilson95": [
-            0.365,
-            0.755
+            0.347,
+            0.731
           ],
-          "edgeAtPoint": -0.0361,
-          "edgeIfLow": -0.2197,
+          "edgeAtPoint": -0.0582,
+          "edgeIfLow": -0.2384,
           "plusEvIfLow": false,
-          "needNFor5pp": 378,
+          "needNFor5pp": 380,
           "needNFor10pp": 95,
-          "haveVsNeed5": "21/378",
+          "haveVsNeed5": "22/380",
           "verdict": "点估计已是负期望。再大胆也不能下。"
         },
         "bothAt170": [
@@ -8298,16 +8298,16 @@
             "side": "A",
             "team": "Team Liquid",
             "label": "Team Liquid 先到 10 杀",
-            "modelP": 0.567,
-            "breakEvenOdds": 1.76,
-            "evPerYuan": -0.0361,
+            "modelP": 0.554,
+            "breakEvenOdds": 1.81,
+            "evPerYuan": -0.0582,
             "atDefault": {
               "odds": 1.7,
               "fullKelly": 0.0,
               "quarterKelly": 0.0,
               "kellyUsed": 0.0,
               "fraction": 0.25,
-              "evPerYuan": -0.0361,
+              "evPerYuan": -0.0582,
               "stake": 0,
               "pctOfBank": 0.0,
               "ifWin": 1000,
@@ -8320,16 +8320,16 @@
             "side": "B",
             "team": "Team Yandex",
             "label": "Team Yandex 先到 10 杀",
-            "modelP": 0.433,
-            "breakEvenOdds": 2.31,
-            "evPerYuan": -0.2639,
+            "modelP": 0.446,
+            "breakEvenOdds": 2.24,
+            "evPerYuan": -0.2418,
             "atDefault": {
               "odds": 1.7,
               "fullKelly": 0.0,
               "quarterKelly": 0.0,
               "kellyUsed": 0.0,
               "fraction": 0.25,
-              "evPerYuan": -0.2639,
+              "evPerYuan": -0.2418,
               "stake": 0,
               "pctOfBank": 0.0,
               "ifWin": 1000,
@@ -8348,26 +8348,26 @@
         "team": "Team Falcons",
         "opp": "Nigma Galaxy",
         "pick": "Team Falcons 先到 10 杀",
-        "modelP": 0.614,
+        "modelP": 0.615,
         "sample": "模型样本 TI 17 + EWC 12（有效 22.4）· 先到10杀 63%",
         "note": "NGX 赢图不靠堆前10人头。先到10杀跟 Falcons，不要跟 NGX 系列混为一谈。NGX 只有 10 局，这条的误差最大。",
         "teamA": "Nigma Galaxy",
         "teamB": "Team Falcons",
-        "pF10A": 0.386,
-        "pF10B": 0.614,
+        "pF10A": 0.385,
+        "pF10B": 0.615,
         "sides": [
           {
             "side": "A",
             "team": "Nigma Galaxy",
             "label": "Nigma Galaxy 先到 10 杀",
-            "modelP": 0.386,
-            "breakEvenOdds": 2.59
+            "modelP": 0.385,
+            "breakEvenOdds": 2.6
           },
           {
             "side": "B",
             "team": "Team Falcons",
             "label": "Team Falcons 先到 10 杀",
-            "modelP": 0.614,
+            "modelP": 0.615,
             "breakEvenOdds": 1.63
           }
         ],
@@ -8379,7 +8379,7 @@
             "quarterKelly": 0.0,
             "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": -0.0483,
+            "evPerYuan": -0.0467,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8393,7 +8393,7 @@
             "quarterKelly": 0.0,
             "kellyUsed": 0.0,
             "fraction": 0.25,
-            "evPerYuan": -0.0176,
+            "evPerYuan": -0.016,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8403,11 +8403,11 @@
           },
           {
             "odds": 1.65,
-            "fullKelly": 0.0202,
-            "quarterKelly": 0.005,
-            "kellyUsed": 0.005,
+            "fullKelly": 0.0227,
+            "quarterKelly": 0.0057,
+            "kellyUsed": 0.0057,
             "fraction": 0.25,
-            "evPerYuan": 0.0131,
+            "evPerYuan": 0.0148,
             "stake": 0,
             "pctOfBank": 0.0,
             "ifWin": 1000,
@@ -8417,11 +8417,11 @@
           },
           {
             "odds": 1.7,
-            "fullKelly": 0.0626,
-            "quarterKelly": 0.0156,
-            "kellyUsed": 0.0156,
+            "fullKelly": 0.065,
+            "quarterKelly": 0.0162,
+            "kellyUsed": 0.0162,
             "fraction": 0.25,
-            "evPerYuan": 0.0438,
+            "evPerYuan": 0.0455,
             "stake": 16,
             "pctOfBank": 1.6,
             "ifWin": 1011.2,
@@ -8431,11 +8431,11 @@
           },
           {
             "odds": 1.75,
-            "fullKelly": 0.0993,
-            "quarterKelly": 0.0248,
-            "kellyUsed": 0.0248,
+            "fullKelly": 0.1017,
+            "quarterKelly": 0.0254,
+            "kellyUsed": 0.0254,
             "fraction": 0.25,
-            "evPerYuan": 0.0745,
+            "evPerYuan": 0.0762,
             "stake": 25,
             "pctOfBank": 2.5,
             "ifWin": 1018.8,
@@ -8445,11 +8445,11 @@
           },
           {
             "odds": 1.8,
-            "fullKelly": 0.1315,
-            "quarterKelly": 0.0329,
-            "kellyUsed": 0.0329,
+            "fullKelly": 0.1337,
+            "quarterKelly": 0.0334,
+            "kellyUsed": 0.0334,
             "fraction": 0.25,
-            "evPerYuan": 0.1052,
+            "evPerYuan": 0.107,
             "stake": 33,
             "pctOfBank": 3.3,
             "ifWin": 1026.4,
@@ -8459,54 +8459,54 @@
           },
           {
             "odds": 1.85,
-            "fullKelly": 0.1599,
-            "quarterKelly": 0.04,
-            "kellyUsed": 0.04,
+            "fullKelly": 0.1621,
+            "quarterKelly": 0.0405,
+            "kellyUsed": 0.0405,
             "fraction": 0.25,
-            "evPerYuan": 0.1359,
-            "stake": 40,
-            "pctOfBank": 4.0,
-            "ifWin": 1034.0,
-            "ifLose": 960,
-            "evYuan": 5.4,
+            "evPerYuan": 0.1378,
+            "stake": 41,
+            "pctOfBank": 4.1,
+            "ifWin": 1034.8,
+            "ifLose": 959,
+            "evYuan": 5.6,
             "action": "下"
           },
           {
             "odds": 1.9,
-            "fullKelly": 0.1851,
-            "quarterKelly": 0.0463,
-            "kellyUsed": 0.0463,
+            "fullKelly": 0.1872,
+            "quarterKelly": 0.0468,
+            "kellyUsed": 0.0468,
             "fraction": 0.25,
-            "evPerYuan": 0.1666,
-            "stake": 46,
-            "pctOfBank": 4.6,
-            "ifWin": 1041.4,
-            "ifLose": 954,
-            "evYuan": 7.7,
+            "evPerYuan": 0.1685,
+            "stake": 47,
+            "pctOfBank": 4.7,
+            "ifWin": 1042.3,
+            "ifLose": 953,
+            "evYuan": 7.9,
             "action": "下"
           },
           {
             "odds": 2.0,
-            "fullKelly": 0.228,
+            "fullKelly": 0.23,
             "quarterKelly": 0.05,
             "kellyUsed": 0.05,
             "fraction": 0.25,
-            "evPerYuan": 0.228,
+            "evPerYuan": 0.23,
             "stake": 50,
             "pctOfBank": 5.0,
             "ifWin": 1050.0,
             "ifLose": 950,
-            "evYuan": 11.4,
+            "evYuan": 11.5,
             "action": "下"
           }
         ],
         "atDefault": {
           "odds": 1.7,
-          "fullKelly": 0.0626,
-          "quarterKelly": 0.0156,
-          "kellyUsed": 0.0156,
+          "fullKelly": 0.065,
+          "quarterKelly": 0.0162,
+          "kellyUsed": 0.0162,
           "fraction": 0.25,
-          "evPerYuan": 0.0438,
+          "evPerYuan": 0.0455,
           "stake": 16,
           "pctOfBank": 1.6,
           "ifWin": 1011.2,
@@ -8516,30 +8516,30 @@
         },
         "atBold": {
           "odds": 1.7,
-          "fullKelly": 0.0626,
-          "quarterKelly": 0.0313,
-          "kellyUsed": 0.0313,
+          "fullKelly": 0.065,
+          "quarterKelly": 0.0325,
+          "kellyUsed": 0.0325,
           "fraction": 0.5,
-          "evPerYuan": 0.0438,
-          "stake": 31,
-          "pctOfBank": 3.1,
-          "ifWin": 1021.7,
-          "ifLose": 969,
-          "evYuan": 1.4,
+          "evPerYuan": 0.0455,
+          "stake": 32,
+          "pctOfBank": 3.2,
+          "ifWin": 1022.4,
+          "ifLose": 968,
+          "evYuan": 1.5,
           "action": "下"
         },
         "atFull": {
           "odds": 1.7,
-          "fullKelly": 0.0626,
-          "quarterKelly": 0.0626,
-          "kellyUsed": 0.0626,
+          "fullKelly": 0.065,
+          "quarterKelly": 0.065,
+          "kellyUsed": 0.065,
           "fraction": 1.0,
-          "evPerYuan": 0.0438,
-          "stake": 63,
-          "pctOfBank": 6.3,
-          "ifWin": 1044.1,
-          "ifLose": 937,
-          "evYuan": 2.8,
+          "evPerYuan": 0.0455,
+          "stake": 65,
+          "pctOfBank": 6.5,
+          "ifWin": 1045.5,
+          "ifLose": 935,
+          "evYuan": 3.0,
           "action": "下"
         },
         "uncertainty": {
@@ -8547,11 +8547,11 @@
           "oppN": 15,
           "nEff": 15,
           "se": 0.126,
-          "pMinusSe": 0.488,
-          "pPlusSe": 0.74,
+          "pMinusSe": 0.489,
+          "pPlusSe": 0.741,
           "wilson95": [
-            0.37,
-            0.812
+            0.371,
+            0.813
           ],
           "rawRate": 0.636,
           "raw": "14/22",
@@ -8559,12 +8559,12 @@
             0.43,
             0.803
           ],
-          "edgeAtPoint": 0.0438,
-          "edgeIfLow": -0.1704,
+          "edgeAtPoint": 0.0455,
+          "edgeIfLow": -0.1687,
           "plusEvIfLow": false,
-          "needNFor5pp": 365,
-          "needNFor10pp": 92,
-          "haveVsNeed5": "15/365",
+          "needNFor5pp": 364,
+          "needNFor10pp": 91,
+          "haveVsNeed5": "15/364",
           "verdict": "点估计有优势，但真 p 只要低 1 个标准误就变负期望。样本撑不住把这张票当稳的。"
         },
         "bothAt170": [
@@ -8572,16 +8572,16 @@
             "side": "A",
             "team": "Nigma Galaxy",
             "label": "Nigma Galaxy 先到 10 杀",
-            "modelP": 0.386,
-            "breakEvenOdds": 2.59,
-            "evPerYuan": -0.3438,
+            "modelP": 0.385,
+            "breakEvenOdds": 2.6,
+            "evPerYuan": -0.3455,
             "atDefault": {
               "odds": 1.7,
               "fullKelly": 0.0,
               "quarterKelly": 0.0,
               "kellyUsed": 0.0,
               "fraction": 0.25,
-              "evPerYuan": -0.3438,
+              "evPerYuan": -0.3455,
               "stake": 0,
               "pctOfBank": 0.0,
               "ifWin": 1000,
@@ -8594,16 +8594,16 @@
             "side": "B",
             "team": "Team Falcons",
             "label": "Team Falcons 先到 10 杀",
-            "modelP": 0.614,
+            "modelP": 0.615,
             "breakEvenOdds": 1.63,
-            "evPerYuan": 0.0438,
+            "evPerYuan": 0.0455,
             "atDefault": {
               "odds": 1.7,
-              "fullKelly": 0.0626,
-              "quarterKelly": 0.0156,
-              "kellyUsed": 0.0156,
+              "fullKelly": 0.065,
+              "quarterKelly": 0.0162,
+              "kellyUsed": 0.0162,
               "fraction": 0.25,
-              "evPerYuan": 0.0438,
+              "evPerYuan": 0.0455,
               "stake": 16,
               "pctOfBank": 1.6,
               "ifWin": 1011.2,
@@ -8648,7 +8648,7 @@
           {
             "pick": "Team Liquid 先到 10 杀",
             "when": "8/20 16:00 G1",
-            "modelP": 0.567,
+            "modelP": 0.554,
             "stake": 0,
             "pctOfBank": 0.0,
             "action": "空仓",
@@ -8658,7 +8658,7 @@
           {
             "pick": "Team Falcons 先到 10 杀",
             "when": "8/20 19:00 G1",
-            "modelP": 0.614,
+            "modelP": 0.615,
             "stake": 16,
             "pctOfBank": 1.6,
             "action": "下",
@@ -8696,8 +8696,8 @@
           "ifLose": {
             "bank": 987,
             "next": "Team Falcons 先到 10 杀",
-            "stake": 15,
-            "pctOfBank": 1.52,
+            "stake": 16,
+            "pctOfBank": 1.62,
             "naiveFixed100": 100,
             "naive10pct": 99
           },
@@ -8752,14 +8752,14 @@
               "id": "ubqf3",
               "when": "8/20 16:00 G1",
               "pick": "Team Liquid 先到 10 杀",
-              "modelP": 0.567,
+              "modelP": 0.554,
               "bankBefore": 1000,
               "odds": 1.7,
               "fullKelly": 0.0,
               "quarterKelly": 0.0,
               "kellyUsed": 0.0,
               "fraction": 0.25,
-              "evPerYuan": -0.0361,
+              "evPerYuan": -0.0582,
               "stake": 0,
               "pctOfBank": 0.0,
               "ifWin": 1000,
@@ -8771,14 +8771,14 @@
               "id": "ubqf4",
               "when": "8/20 19:00 G1",
               "pick": "Team Falcons 先到 10 杀",
-              "modelP": 0.614,
+              "modelP": 0.615,
               "bankBefore": 1000,
               "odds": 1.7,
-              "fullKelly": 0.0626,
-              "quarterKelly": 0.0156,
-              "kellyUsed": 0.0156,
+              "fullKelly": 0.065,
+              "quarterKelly": 0.0162,
+              "kellyUsed": 0.0162,
               "fraction": 0.25,
-              "evPerYuan": 0.0438,
+              "evPerYuan": 0.0455,
               "stake": 16,
               "pctOfBank": 1.6,
               "ifWin": 1011.2,
@@ -8819,7 +8819,7 @@
                 "stake": 16,
                 "pctOfBank": 1.59,
                 "action": "下",
-                "quarterKelly": 0.0156,
+                "quarterKelly": 0.0162,
                 "naiveFixed100": 100,
                 "naive10pct": 101
               },
@@ -8827,10 +8827,10 @@
                 "next": "Team Falcons 先到 10 杀",
                 "when": "8/20 19:00 G1",
                 "bank": 987,
-                "stake": 15,
-                "pctOfBank": 1.52,
+                "stake": 16,
+                "pctOfBank": 1.62,
                 "action": "下",
-                "quarterKelly": 0.0156,
+                "quarterKelly": 0.0162,
                 "naiveFixed100": 100,
                 "naive10pct": 99
               }
@@ -8862,7 +8862,7 @@
             {
               "pick": "Team Liquid 先到 10 杀",
               "when": "8/20 16:00 G1",
-              "modelP": 0.567,
+              "modelP": 0.554,
               "rawStake": 0,
               "stake": 0,
               "action": "空仓"
@@ -8870,7 +8870,7 @@
             {
               "pick": "Team Falcons 先到 10 杀",
               "when": "8/20 19:00 G1",
-              "modelP": 0.614,
+              "modelP": 0.615,
               "rawStake": 16,
               "stake": 16,
               "action": "下"
@@ -8909,7 +8909,7 @@
           {
             "pick": "Team Liquid 先到 10 杀",
             "when": "8/20 16:00 G1",
-            "modelP": 0.567,
+            "modelP": 0.554,
             "stake": 0,
             "pctOfBank": 0.0,
             "action": "空仓",
@@ -8919,16 +8919,16 @@
           {
             "pick": "Team Falcons 先到 10 杀",
             "when": "8/20 19:00 G1",
-            "modelP": 0.614,
-            "stake": 31,
-            "pctOfBank": 3.1,
+            "modelP": 0.615,
+            "stake": 32,
+            "pctOfBank": 3.2,
             "action": "下",
-            "ifWin": 1021.7,
-            "ifLose": 969
+            "ifWin": 1022.4,
+            "ifLose": 968
           }
         ],
-        "total": 57,
-        "ifAllLose": 943.8,
+        "total": 58,
+        "ifAllLose": 942.8,
         "resize": {
           "question": "赚了下一把还是下 100，还是下 10%？",
           "answer": "都不是。下一把 = 结算后的本金 × 下一把自己的Kelly分数。赢了只是本金变大，分数不因为刚赢了就加大。",
@@ -8949,16 +8949,16 @@
           "ifWin": {
             "bank": 1018.2,
             "next": "Team Falcons 先到 10 杀",
-            "stake": 32,
-            "pctOfBank": 3.14,
+            "stake": 33,
+            "pctOfBank": 3.24,
             "naiveFixed100": 100,
             "naive10pct": 102
           },
           "ifLose": {
             "bank": 974,
             "next": "Team Falcons 先到 10 杀",
-            "stake": 30,
-            "pctOfBank": 3.08,
+            "stake": 32,
+            "pctOfBank": 3.29,
             "naiveFixed100": 100,
             "naive10pct": 97
           },
@@ -9013,14 +9013,14 @@
               "id": "ubqf3",
               "when": "8/20 16:00 G1",
               "pick": "Team Liquid 先到 10 杀",
-              "modelP": 0.567,
+              "modelP": 0.554,
               "bankBefore": 1000,
               "odds": 1.7,
               "fullKelly": 0.0,
               "quarterKelly": 0.0,
               "kellyUsed": 0.0,
               "fraction": 0.5,
-              "evPerYuan": -0.0361,
+              "evPerYuan": -0.0582,
               "stake": 0,
               "pctOfBank": 0.0,
               "ifWin": 1000,
@@ -9032,19 +9032,19 @@
               "id": "ubqf4",
               "when": "8/20 19:00 G1",
               "pick": "Team Falcons 先到 10 杀",
-              "modelP": 0.614,
+              "modelP": 0.615,
               "bankBefore": 1000,
               "odds": 1.7,
-              "fullKelly": 0.0626,
-              "quarterKelly": 0.0313,
-              "kellyUsed": 0.0313,
+              "fullKelly": 0.065,
+              "quarterKelly": 0.0325,
+              "kellyUsed": 0.0325,
               "fraction": 0.5,
-              "evPerYuan": 0.0438,
-              "stake": 31,
-              "pctOfBank": 3.1,
-              "ifWin": 1021.7,
-              "ifLose": 969,
-              "evYuan": 1.4,
+              "evPerYuan": 0.0455,
+              "stake": 32,
+              "pctOfBank": 3.2,
+              "ifWin": 1022.4,
+              "ifLose": 968,
+              "evYuan": 1.5,
               "action": "下"
             }
           ],
@@ -9077,10 +9077,10 @@
                 "next": "Team Falcons 先到 10 杀",
                 "when": "8/20 19:00 G1",
                 "bank": 1018.2,
-                "stake": 32,
-                "pctOfBank": 3.14,
+                "stake": 33,
+                "pctOfBank": 3.24,
                 "action": "下",
-                "quarterKelly": 0.0313,
+                "quarterKelly": 0.0325,
                 "naiveFixed100": 100,
                 "naive10pct": 102
               },
@@ -9088,10 +9088,10 @@
                 "next": "Team Falcons 先到 10 杀",
                 "when": "8/20 19:00 G1",
                 "bank": 974,
-                "stake": 30,
-                "pctOfBank": 3.08,
+                "stake": 32,
+                "pctOfBank": 3.29,
                 "action": "下",
-                "quarterKelly": 0.0313,
+                "quarterKelly": 0.0325,
                 "naiveFixed100": 100,
                 "naive10pct": 97
               }
@@ -9101,7 +9101,7 @@
         "simultaneous": {
           "odds": 1.7,
           "scale": 1.0,
-          "total": 57,
+          "total": 58,
           "cap": 160,
           "tickets": [
             {
@@ -9123,7 +9123,7 @@
             {
               "pick": "Team Liquid 先到 10 杀",
               "when": "8/20 16:00 G1",
-              "modelP": 0.567,
+              "modelP": 0.554,
               "rawStake": 0,
               "stake": 0,
               "action": "空仓"
@@ -9131,9 +9131,9 @@
             {
               "pick": "Team Falcons 先到 10 杀",
               "when": "8/20 19:00 G1",
-              "modelP": 0.614,
-              "rawStake": 31,
-              "stake": 31,
+              "modelP": 0.615,
+              "rawStake": 32,
+              "stake": 32,
               "action": "下"
             }
           ]
@@ -9170,7 +9170,7 @@
           {
             "pick": "Team Liquid 先到 10 杀",
             "when": "8/20 16:00 G1",
-            "modelP": 0.567,
+            "modelP": 0.554,
             "stake": 0,
             "pctOfBank": 0.0,
             "action": "空仓",
@@ -9180,16 +9180,16 @@
           {
             "pick": "Team Falcons 先到 10 杀",
             "when": "8/20 19:00 G1",
-            "modelP": 0.614,
-            "stake": 63,
-            "pctOfBank": 6.3,
+            "modelP": 0.615,
+            "stake": 65,
+            "pctOfBank": 6.5,
             "action": "下",
-            "ifWin": 1044.1,
-            "ifLose": 937
+            "ifWin": 1045.5,
+            "ifLose": 935
           }
         ],
-        "total": 116,
-        "ifAllLose": 887.3,
+        "total": 118,
+        "ifAllLose": 885.4,
         "resize": {
           "question": "赚了下一把还是下 100，还是下 10%？",
           "answer": "都不是。下一把 = 结算后的本金 × 下一把自己的Kelly分数。赢了只是本金变大，分数不因为刚赢了就加大。",
@@ -9210,16 +9210,16 @@
           "ifWin": {
             "bank": 1037.1,
             "next": "Team Falcons 先到 10 杀",
-            "stake": 65,
-            "pctOfBank": 6.27,
+            "stake": 67,
+            "pctOfBank": 6.46,
             "naiveFixed100": 100,
             "naive10pct": 104
           },
           "ifLose": {
             "bank": 947,
             "next": "Team Falcons 先到 10 杀",
-            "stake": 59,
-            "pctOfBank": 6.23,
+            "stake": 62,
+            "pctOfBank": 6.55,
             "naiveFixed100": 100,
             "naive10pct": 95
           },
@@ -9274,14 +9274,14 @@
               "id": "ubqf3",
               "when": "8/20 16:00 G1",
               "pick": "Team Liquid 先到 10 杀",
-              "modelP": 0.567,
+              "modelP": 0.554,
               "bankBefore": 1000,
               "odds": 1.7,
               "fullKelly": 0.0,
               "quarterKelly": 0.0,
               "kellyUsed": 0.0,
               "fraction": 1.0,
-              "evPerYuan": -0.0361,
+              "evPerYuan": -0.0582,
               "stake": 0,
               "pctOfBank": 0.0,
               "ifWin": 1000,
@@ -9293,19 +9293,19 @@
               "id": "ubqf4",
               "when": "8/20 19:00 G1",
               "pick": "Team Falcons 先到 10 杀",
-              "modelP": 0.614,
+              "modelP": 0.615,
               "bankBefore": 1000,
               "odds": 1.7,
-              "fullKelly": 0.0626,
-              "quarterKelly": 0.0626,
-              "kellyUsed": 0.0626,
+              "fullKelly": 0.065,
+              "quarterKelly": 0.065,
+              "kellyUsed": 0.065,
               "fraction": 1.0,
-              "evPerYuan": 0.0438,
-              "stake": 63,
-              "pctOfBank": 6.3,
-              "ifWin": 1044.1,
-              "ifLose": 937,
-              "evYuan": 2.8,
+              "evPerYuan": 0.0455,
+              "stake": 65,
+              "pctOfBank": 6.5,
+              "ifWin": 1045.5,
+              "ifLose": 935,
+              "evYuan": 3.0,
               "action": "下"
             }
           ],
@@ -9338,10 +9338,10 @@
                 "next": "Team Falcons 先到 10 杀",
                 "when": "8/20 19:00 G1",
                 "bank": 1037.1,
-                "stake": 65,
-                "pctOfBank": 6.27,
+                "stake": 67,
+                "pctOfBank": 6.46,
                 "action": "下",
-                "quarterKelly": 0.0626,
+                "quarterKelly": 0.065,
                 "naiveFixed100": 100,
                 "naive10pct": 104
               },
@@ -9349,10 +9349,10 @@
                 "next": "Team Falcons 先到 10 杀",
                 "when": "8/20 19:00 G1",
                 "bank": 947,
-                "stake": 59,
-                "pctOfBank": 6.23,
+                "stake": 62,
+                "pctOfBank": 6.55,
                 "action": "下",
-                "quarterKelly": 0.0626,
+                "quarterKelly": 0.065,
                 "naiveFixed100": 100,
                 "naive10pct": 95
               }
@@ -9362,7 +9362,7 @@
         "simultaneous": {
           "odds": 1.7,
           "scale": 1.0,
-          "total": 116,
+          "total": 118,
           "cap": 300,
           "tickets": [
             {
@@ -9384,7 +9384,7 @@
             {
               "pick": "Team Liquid 先到 10 杀",
               "when": "8/20 16:00 G1",
-              "modelP": 0.567,
+              "modelP": 0.554,
               "rawStake": 0,
               "stake": 0,
               "action": "空仓"
@@ -9392,9 +9392,9 @@
             {
               "pick": "Team Falcons 先到 10 杀",
               "when": "8/20 19:00 G1",
-              "modelP": 0.614,
-              "rawStake": 63,
-              "stake": 63,
+              "modelP": 0.615,
+              "rawStake": 65,
+              "stake": 65,
               "action": "下"
             }
           ]
@@ -9447,13 +9447,13 @@
       {
         "pick": "Team Liquid 先到 10 杀",
         "when": "8/20 16:00 G1",
-        "modelP": 0.567,
-        "breakEvenOdds": 1.76,
-        "edgePerYuan": -0.0361,
+        "modelP": 0.554,
+        "breakEvenOdds": 1.81,
+        "edgePerYuan": -0.0582,
         "fixed100": 100,
-        "fixed100Ev": -3.6,
+        "fixed100Ev": -5.8,
         "pct10": 100,
-        "pct10Ev": -3.6,
+        "pct10Ev": -5.8,
         "qKelly": 0,
         "qKellyEv": -0.0,
         "qKellyPct": 0.0,
@@ -9468,21 +9468,21 @@
       {
         "pick": "Team Falcons 先到 10 杀",
         "when": "8/20 19:00 G1",
-        "modelP": 0.614,
+        "modelP": 0.615,
         "breakEvenOdds": 1.63,
-        "edgePerYuan": 0.0438,
+        "edgePerYuan": 0.0455,
         "fixed100": 100,
-        "fixed100Ev": 4.4,
+        "fixed100Ev": 4.5,
         "pct10": 100,
-        "pct10Ev": 4.4,
+        "pct10Ev": 4.5,
         "qKelly": 16,
         "qKellyEv": 0.7,
         "qKellyPct": 1.6,
-        "halfKelly": 31,
-        "halfKellyPct": 3.1,
-        "fullKellyStake": 63,
-        "fullKellyPct": 6.3,
-        "fullKellyTruePct": 6.26,
+        "halfKelly": 32,
+        "halfKellyPct": 3.2,
+        "fullKellyStake": 65,
+        "fullKellyPct": 6.5,
+        "fullKellyTruePct": 6.5,
         "action": "下",
         "actionBold": "下"
       }
@@ -9515,8 +9515,8 @@
       "ifLose": {
         "bank": 987,
         "next": "Team Falcons 先到 10 杀",
-        "stake": 15,
-        "pctOfBank": 1.52,
+        "stake": 16,
+        "pctOfBank": 1.62,
         "naiveFixed100": 100,
         "naive10pct": 99
       },
@@ -9543,16 +9543,16 @@
       "ifWin": {
         "bank": 1018.2,
         "next": "Team Falcons 先到 10 杀",
-        "stake": 32,
-        "pctOfBank": 3.14,
+        "stake": 33,
+        "pctOfBank": 3.24,
         "naiveFixed100": 100,
         "naive10pct": 102
       },
       "ifLose": {
         "bank": 974,
         "next": "Team Falcons 先到 10 杀",
-        "stake": 30,
-        "pctOfBank": 3.08,
+        "stake": 32,
+        "pctOfBank": 3.29,
         "naiveFixed100": 100,
         "naive10pct": 97
       },
@@ -9607,14 +9607,14 @@
           "id": "ubqf3",
           "when": "8/20 16:00 G1",
           "pick": "Team Liquid 先到 10 杀",
-          "modelP": 0.567,
+          "modelP": 0.554,
           "bankBefore": 1000,
           "odds": 1.7,
           "fullKelly": 0.0,
           "quarterKelly": 0.0,
           "kellyUsed": 0.0,
           "fraction": 0.25,
-          "evPerYuan": -0.0361,
+          "evPerYuan": -0.0582,
           "stake": 0,
           "pctOfBank": 0.0,
           "ifWin": 1000,
@@ -9626,14 +9626,14 @@
           "id": "ubqf4",
           "when": "8/20 19:00 G1",
           "pick": "Team Falcons 先到 10 杀",
-          "modelP": 0.614,
+          "modelP": 0.615,
           "bankBefore": 1000,
           "odds": 1.7,
-          "fullKelly": 0.0626,
-          "quarterKelly": 0.0156,
-          "kellyUsed": 0.0156,
+          "fullKelly": 0.065,
+          "quarterKelly": 0.0162,
+          "kellyUsed": 0.0162,
           "fraction": 0.25,
-          "evPerYuan": 0.0438,
+          "evPerYuan": 0.0455,
           "stake": 16,
           "pctOfBank": 1.6,
           "ifWin": 1011.2,
@@ -9674,7 +9674,7 @@
             "stake": 16,
             "pctOfBank": 1.59,
             "action": "下",
-            "quarterKelly": 0.0156,
+            "quarterKelly": 0.0162,
             "naiveFixed100": 100,
             "naive10pct": 101
           },
@@ -9682,10 +9682,10 @@
             "next": "Team Falcons 先到 10 杀",
             "when": "8/20 19:00 G1",
             "bank": 987,
-            "stake": 15,
-            "pctOfBank": 1.52,
+            "stake": 16,
+            "pctOfBank": 1.62,
             "action": "下",
-            "quarterKelly": 0.0156,
+            "quarterKelly": 0.0162,
             "naiveFixed100": 100,
             "naive10pct": 99
           }
@@ -9740,38 +9740,38 @@
           "id": "ubqf3",
           "when": "8/20 16:00 G1",
           "pick": "Team Liquid 先到 10 杀",
-          "modelP": 0.567,
+          "modelP": 0.554,
           "bankBefore": 1000,
           "odds": 1.85,
-          "fullKelly": 0.0576,
-          "quarterKelly": 0.0144,
-          "kellyUsed": 0.0144,
+          "fullKelly": 0.0293,
+          "quarterKelly": 0.0073,
+          "kellyUsed": 0.0073,
           "fraction": 0.25,
-          "evPerYuan": 0.049,
-          "stake": 14,
-          "pctOfBank": 1.4,
-          "ifWin": 1011.9,
-          "ifLose": 986,
-          "evYuan": 0.7,
-          "action": "下"
+          "evPerYuan": 0.0249,
+          "stake": 0,
+          "pctOfBank": 0.0,
+          "ifWin": 1000,
+          "ifLose": 1000,
+          "evYuan": 0.0,
+          "action": "优势太薄，空仓"
         },
         {
           "id": "ubqf4",
           "when": "8/20 19:00 G1",
           "pick": "Team Falcons 先到 10 杀",
-          "modelP": 0.614,
+          "modelP": 0.615,
           "bankBefore": 1000,
           "odds": 1.85,
-          "fullKelly": 0.1599,
-          "quarterKelly": 0.04,
-          "kellyUsed": 0.04,
+          "fullKelly": 0.1621,
+          "quarterKelly": 0.0405,
+          "kellyUsed": 0.0405,
           "fraction": 0.25,
-          "evPerYuan": 0.1359,
-          "stake": 40,
-          "pctOfBank": 4.0,
-          "ifWin": 1034.0,
-          "ifLose": 960,
-          "evYuan": 5.4,
+          "evPerYuan": 0.1378,
+          "stake": 41,
+          "pctOfBank": 4.1,
+          "ifWin": 1034.8,
+          "ifLose": 959,
+          "evYuan": 5.6,
           "action": "下"
         }
       ],
@@ -9804,21 +9804,21 @@
             "next": "Team Liquid 先到 10 杀",
             "when": "8/20 16:00 G1",
             "bank": 1032.3,
-            "stake": 15,
-            "pctOfBank": 1.45,
+            "stake": 8,
+            "pctOfBank": 0.77,
             "action": "下",
-            "quarterKelly": 0.0144,
+            "quarterKelly": 0.0073,
             "naiveFixed100": 100,
             "naive10pct": 103
           },
           "ifLoseNext": {
-            "next": "Team Liquid 先到 10 杀",
-            "when": "8/20 16:00 G1",
+            "next": "Team Falcons 先到 10 杀",
+            "when": "8/20 19:00 G1",
             "bank": 962,
-            "stake": 14,
-            "pctOfBank": 1.46,
+            "stake": 39,
+            "pctOfBank": 4.05,
             "action": "下",
-            "quarterKelly": 0.0144,
+            "quarterKelly": 0.0405,
             "naiveFixed100": 100,
             "naive10pct": 96
           }
@@ -9850,7 +9850,7 @@
         {
           "pick": "Team Liquid 先到 10 杀",
           "when": "8/20 16:00 G1",
-          "modelP": 0.567,
+          "modelP": 0.554,
           "rawStake": 0,
           "stake": 0,
           "action": "空仓"
@@ -9858,7 +9858,7 @@
         {
           "pick": "Team Falcons 先到 10 杀",
           "when": "8/20 19:00 G1",
-          "modelP": 0.614,
+          "modelP": 0.615,
           "rawStake": 16,
           "stake": 16,
           "action": "下"
@@ -9868,7 +9868,7 @@
     "simultaneousAt185": {
       "odds": 1.85,
       "scale": 1.0,
-      "total": 92,
+      "total": 79,
       "cap": 100,
       "tickets": [
         {
@@ -9890,17 +9890,17 @@
         {
           "pick": "Team Liquid 先到 10 杀",
           "when": "8/20 16:00 G1",
-          "modelP": 0.567,
-          "rawStake": 14,
-          "stake": 14,
-          "action": "下"
+          "modelP": 0.554,
+          "rawStake": 0,
+          "stake": 0,
+          "action": "空仓"
         },
         {
           "pick": "Team Falcons 先到 10 杀",
           "when": "8/20 19:00 G1",
-          "modelP": 0.614,
-          "rawStake": 40,
-          "stake": 40,
+          "modelP": 0.615,
+          "rawStake": 41,
+          "stake": 41,
           "action": "下"
         }
       ]

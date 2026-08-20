@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-20 18:15 CST",
+  "asOf": "2026-08-20 19:43 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -258,11 +258,16 @@
       "format": "Bo3",
       "teamA": "Team Liquid",
       "teamB": "Team Yandex",
-      "status": "scheduled",
+      "status": "live",
       "polyTitle": "Team Liquid vs Team Yandex",
       "polySlug": "dota2-liquid-ty-2026-08-20",
       "winnerTo": "ubsf2",
-      "loserTo": "lbr1b"
+      "loserTo": "lbr1b",
+      "mapsPlayed": 1,
+      "score": "0-1",
+      "matchIds": [
+        8955549026
+      ]
     },
     {
       "id": "ubqf4",
@@ -443,6 +448,7 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-20 19:13 CST",
-  "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
+  "scheduleAsOf": "2026-08-20 19:43 CST",
+  "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
+  "scheduleError": "HTTP Error 429: Too Many Requests"
 }
