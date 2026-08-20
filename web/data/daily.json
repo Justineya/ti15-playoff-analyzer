@@ -1,63 +1,133 @@
 {
-  "asOf": "2026-08-20 19:13 CST",
+  "asOf": "2026-08-20 19:46 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 Liquid vs TY，看好 Liquid（系列 53%）。第1局看好 Liquid（54%）。",
-  "narrative": "下一把 Liquid vs TY，看好 Liquid（系列 53%）。第1局看好 Liquid（54%）。本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 TY 赢了，54.5分钟慢节奏。Liquid 先到10杀却没赢图。第2局重算后看好 TY（55%），系列 0-1 后模型 79%。",
+  "narrative": "第1局 Team Yandex 赢了（OpenDota 8955549026），54分28秒慢节奏发育对线，人头 TY 34–Liquid 37（Liquid 人头更多，TY 推掉基地）。液体百科 ubqf3 局分 0-1、maps[0].winner=2、时长 54m28s，和解析一致。Liquid 先到 10 杀（18分19秒，当时 9-10），中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中辅驱动，收刀 m1CKe/Tiny；但没能把先到10杀变成图。TY 天辉一阶禁 Treant Protector、Lina，再禁掉 Liquid 中单常客 Earth Spirit，前两手 Io、Largo，中单 CHIRA_JUNIOR 第一手 Io；Liquid 夜魇一阶禁 Undying、Invoker，前两手 Nature's Prophet、Mirana，再拿 Tusk、Dawnbreaker、Tiny。另有一个大厅号 8955534650 仍 404，不当成第1局。因为第1局被 TY 拿下，开赛前那版「第1局看好 Liquid 54%、系列 53%」不能贴到第2局。这局进了样本：H2H 从瑞士轮 3.0 变成 4.0，本届胜率 Liquid 56% / TY 60%（开赛前 58% / 59%），先到10杀 Liquid 58% / TY 49%。Bo3 变成 0-1，Liquid 必须连下两局，模型系列胜率从约 53% 翻到 TY 79%（门槛 1.27）。上一局先到10杀不等于赢图，第2局先到10杀仍看好 Liquid 58%（门槛 1.72，没有公开盘），但图胜率翻到 TY。第2局整棵模型重算后看好 TY 55%（门槛 1.82），Liquid 45%。Polymarket 第2局价 Liquid 0.555 / TY 0.445，盘口还在买 Liquid 翻盘，模型已经站 TY。系列盘 Liquid 0.58 / TY 0.42。系列还没结束。这不是投注建议。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8955549026,
+    "winner": "Team Yandex",
+    "score": [
+      34,
+      37
+    ],
+    "f10": "Team Liquid",
+    "f10Time": 1099,
+    "durationMin": 54.5,
+    "pace": "慢",
+    "stance": "发育对线",
+    "picks": {
+      "Team Yandex": [
+        "Io",
+        "Largo",
+        "Hoodwink",
+        "Enchantress",
+        "Windranger"
+      ],
+      "Team Liquid": [
+        "Nature's Prophet",
+        "Mirana",
+        "Tusk",
+        "Dawnbreaker",
+        "Tiny"
+      ]
+    },
+    "mid": {
+      "Team Yandex": "Io",
+      "Team Liquid": "Nature's Prophet"
+    },
+    "blurb": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8955549026,
+      "winner": "Team Yandex",
+      "score": [
+        34,
+        37
+      ],
+      "f10": "Team Liquid",
+      "f10Time": 1099,
+      "durationMin": 54.5,
+      "pace": "慢",
+      "stance": "发育对线",
+      "picks": {
+        "Team Yandex": [
+          "Io",
+          "Largo",
+          "Hoodwink",
+          "Enchantress",
+          "Windranger"
+        ],
+        "Team Liquid": [
+          "Nature's Prophet",
+          "Mirana",
+          "Tusk",
+          "Dawnbreaker",
+          "Tiny"
+        ]
+      },
+      "mid": {
+        "Team Yandex": "Io",
+        "Team Liquid": "Nature's Prophet"
+      },
+      "blurb": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "Team Liquid",
     "teamB": "Team Yandex",
     "lean": {
-      "team": "Team Liquid",
-      "tag": "Liquid",
-      "p": 0.537,
-      "pA": 0.537,
-      "pB": 0.463,
-      "breakEven": 1.86,
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.549,
+      "pA": 0.451,
+      "pB": 0.549,
+      "breakEven": 1.82,
       "market": {
         "outcomes": [
           "Team Liquid",
           "Team Yandex"
         ],
         "prices": [
-          0.645,
-          0.355
+          0.555,
+          0.445
         ]
       },
-      "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "Team Liquid",
       "tag": "Liquid",
-      "p": 0.567,
-      "pA": 0.567,
-      "pB": 0.433,
-      "breakEven": 1.76,
+      "p": 0.583,
+      "pA": 0.583,
+      "pB": 0.417,
+      "breakEven": 1.72,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Team Liquid",
-    "tag": "Liquid",
-    "p": 0.53,
-    "pA": 0.53,
-    "pB": 0.47,
-    "breakEven": 1.89,
+    "team": "Team Yandex",
+    "tag": "TY",
+    "p": 0.786,
+    "pA": 0.214,
+    "pB": 0.786,
+    "breakEven": 1.27,
     "market": {
       "outcomes": [
         "Team Liquid",
         "Team Yandex"
       ],
       "prices": [
-        0.625,
-        0.375
+        0.58,
+        0.42
       ]
     },
-    "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Team Yandex",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-liquid-ty-2026-08-20",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
-      "team": "Team Liquid",
-      "tag": "Liquid",
-      "p": 0.53,
-      "pA": 0.53,
-      "pB": 0.47,
-      "breakEven": 1.89,
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.786,
+      "pA": 0.214,
+      "pB": 0.786,
+      "breakEven": 1.27,
       "market": {
         "outcomes": [
           "Team Liquid",
           "Team Yandex"
         ],
         "prices": [
-          0.625,
-          0.375
+          0.58,
+          0.42
         ]
       },
-      "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
@@ -105,11 +175,11 @@
     "teamB": "Team Yandex",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-liquid-ty-2026-08-20",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -145,5 +215,7 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8955549026
+  ]
 }

@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-20 19:13 CST",
-  "n": 85,
+  "asOf": "2026-08-20 19:45 CST",
+  "n": 86,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -26102,6 +26102,313 @@
         "mid_support": "天辉中单 gpk~/Lina 参与 4 次（击杀1+助攻3），辅Kataomi`/Bane 参与 3 次，中辅合计11 · 中辅驱动；夜魇中单 No[o]ne-/Ember Spirit 参与 4 次（击杀2+助攻2），辅Dukalis/Winter Wyvern 参与 6 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8955456108",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8955549026,
+      "series_id": 1132178,
+      "start_time": 1787221768,
+      "duration": 3268,
+      "parsed": true,
+      "radiant": "Team Yandex",
+      "dire": "Team Liquid",
+      "radiant_team_id": 9823272,
+      "dire_team_id": 2163,
+      "winner": "Team Yandex",
+      "radiant_win": true,
+      "score": [
+        34,
+        37
+      ],
+      "pace": "慢",
+      "length": "超长",
+      "stance": "发育对线",
+      "f10k": {
+        "side": "dire",
+        "time": 1099,
+        "score": {
+          "radiant": 9,
+          "dire": 10
+        },
+        "completing_killer": "m1CKe",
+        "completing_hero": "Tiny"
+      },
+      "f10k_mid_share": 9,
+      "first_tower": {
+        "time": 680,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_bot"
+      },
+      "gold": {
+        "m5": -366,
+        "m10": 614,
+        "m15": -1568,
+        "m20": -3939
+      },
+      "kills_8min": 7,
+      "kills_15min": 8,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 5,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 6,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 11,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 19,
+              "hero": "Puck",
+              "hero_id": 13
+            },
+            {
+              "order": 21,
+              "hero": "Storm Spirit",
+              "hero_id": 17
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 12,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 15,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 16,
+              "hero": "Enchantress",
+              "hero_id": 58
+            },
+            {
+              "order": 23,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Lina",
+              "hero_id": 25
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 12,
+              "hero": "Largo",
+              "hero_id": 155
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 1,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 4,
+              "hero": "Kez",
+              "hero_id": 145
+            },
+            {
+              "order": 9,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 10,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 18,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 20,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 13,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 14,
+              "hero": "Tusk",
+              "hero_id": 100
+            },
+            {
+              "order": 17,
+              "hero": "Dawnbreaker",
+              "hero_id": 135
+            },
+            {
+              "order": 22,
+              "hero": "Tiny",
+              "hero_id": 19
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 1,
+              "hero": "Invoker",
+              "hero_id": 74
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 13,
+              "hero": "Mirana",
+              "hero_id": 9
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Io",
+            "hero_id": 91,
+            "gold_t10": 4089,
+            "xp_t10": 5386,
+            "kills": 3,
+            "kills_before_10": 0,
+            "assists_before_10": 9,
+            "participate_before_10": 9
+          },
+          "pos4": {
+            "player": "Saksa",
+            "hero": "Enchantress",
+            "kills": 6,
+            "kills_before_10": 1,
+            "assists_before_10": 6,
+            "participate_before_10": 7
+          },
+          "pos5": {
+            "player": "Maladych",
+            "hero": "Hoodwink",
+            "kills_before_10": 3,
+            "assists_before_10": 5,
+            "participate_before_10": 8
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 9,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 24,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Nisha",
+            "hero": "Nature's Prophet",
+            "hero_id": 53,
+            "gold_t10": 4704,
+            "xp_t10": 5134,
+            "kills": 11,
+            "kills_before_10": 4,
+            "assists_before_10": 5,
+            "participate_before_10": 9
+          },
+          "pos4": {
+            "player": "Boxi",
+            "hero": "Tusk",
+            "kills": 3,
+            "kills_before_10": 2,
+            "assists_before_10": 5,
+            "participate_before_10": 7
+          },
+          "pos5": {
+            "player": "tOfu",
+            "hero": "Mirana",
+            "kills_before_10": 0,
+            "assists_before_10": 5,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 21,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Lina；前两手Io、Largo；中单Io第1手拿",
+          "dire": "一阶段禁Undying、Invoker；前两手Nature's Prophet、Mirana；中单Nature's Prophet第1手拿"
+        },
+        "pace": "慢节奏 / 超长局（54分28秒）；先到10杀出现在 18分19秒",
+        "stance": "发育对线",
+        "f10k": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。",
+        "mid_support": "天辉中单 CHIRA_JUNIOR/Io 参与 9 次（击杀0+助攻9），辅Saksa/Enchantress 参与 7 次，中辅合计24 · 中辅驱动；夜魇中单 Nisha/Nature's Prophet 参与 9 次（击杀4+助攻5），辅Boxi/Tusk 参与 7 次，中辅合计21 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8955549026",
       "source": "ti15",
       "patch": "7.41e"
     }
