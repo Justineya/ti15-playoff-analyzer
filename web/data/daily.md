@@ -1,5 +1,5 @@
-# TI15 局间战报 · 2026-08-20 11:32 CST
+# TI15 局间战报 · 2026-08-20 13:20 CST
 
-下一把 IW vs Spirit，看好 IW（系列 51%）。第1局看好 IW（51%）。
+下一把 VSN vs BB，看好 VSN（系列 79%）。第1局看好 VSN（70%）。
 
-下一把 IW vs Spirit，看好 IW（系列 51%）。第1局看好 IW（51%）。本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit。
+下一把 VSN vs BB，看好 VSN（系列 79%）。第1局看好 VSN（70%）。本届胜率 TEAM VISION 71% / BoomBoys 57%；先到10杀 62% / 54%；H2H 3.8000000000000007 局；TEAM VISION 中单爱拿 Earth Spirit。

@@ -1,115 +1,135 @@
 {
-  "asOf": "2026-08-20 11:32 CST",
+  "asOf": "2026-08-20 13:20 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
-  "headline": "下一把 IW vs Spirit，看好 IW（系列 51%）。第1局看好 IW（51%）。",
-  "narrative": "下一把 IW vs Spirit，看好 IW（系列 51%）。第1局看好 IW（51%）。本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit。",
+  "headline": "下一把 VSN vs BB，看好 VSN（系列 79%）。第1局看好 VSN（70%）。",
+  "narrative": "下一把 VSN vs BB，看好 VSN（系列 79%）。第1局看好 VSN（70%）。本届胜率 TEAM VISION 71% / BoomBoys 57%；先到10杀 62% / 54%；H2H 3.8000000000000007 局；TEAM VISION 中单爱拿 Earth Spirit。",
   "previousMap": null,
   "nextMap": {
     "game": 1,
-    "teamA": "Iron Wing",
-    "teamB": "Team Spirit",
+    "teamA": "TEAM VISION",
+    "teamB": "BoomBoys",
     "lean": {
-      "team": "Iron Wing",
-      "tag": "IW",
-      "p": 0.513,
-      "pA": 0.513,
-      "pB": 0.487,
-      "breakEven": 1.95,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.702,
+      "pA": 0.702,
+      "pB": 0.298,
+      "breakEven": 1.42,
       "market": {
         "outcomes": [
-          "Iron Wing",
-          "Team Spirit"
+          "TEAM VISION",
+          "BoomBoys"
         ],
         "prices": [
-          0.315,
-          0.685
+          0.675,
+          0.325
         ]
       },
-      "why": "本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit"
+      "why": "本届胜率 TEAM VISION 71% / BoomBoys 57%；先到10杀 62% / 54%；H2H 3.8000000000000007 局；TEAM VISION 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "Iron Wing",
-      "tag": "IW",
-      "p": 0.503,
-      "pA": 0.503,
-      "pB": 0.497,
-      "breakEven": 1.99,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.579,
+      "pA": 0.579,
+      "pB": 0.421,
+      "breakEven": 1.73,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Iron Wing",
-    "tag": "IW",
-    "p": 0.513,
-    "pA": 0.513,
-    "pB": 0.487,
-    "breakEven": 1.95,
+    "team": "TEAM VISION",
+    "tag": "VSN",
+    "p": 0.788,
+    "pA": 0.788,
+    "pB": 0.212,
+    "breakEven": 1.27,
     "market": {
       "outcomes": [
-        "Iron Wing",
-        "Team Spirit"
+        "TEAM VISION",
+        "BoomBoys"
       ],
       "prices": [
-        0.415,
-        0.585
+        0.725,
+        0.275
       ]
     },
-    "why": "本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit"
+    "why": "本届胜率 TEAM VISION 71% / BoomBoys 57%；先到10杀 62% / 54%；H2H 3.8000000000000007 局；TEAM VISION 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
-    "id": "ubqf1",
+    "id": "ubqf2",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 10:30",
+    "when": "2026-08-20 13:30",
     "format": "Bo3",
-    "teamA": "Iron Wing",
-    "teamB": "Team Spirit",
-    "teamALabel": "Iron Wing",
-    "teamBLabel": "Team Spirit",
+    "teamA": "TEAM VISION",
+    "teamB": "BoomBoys",
+    "teamALabel": "TEAM VISION",
+    "teamBLabel": "BoomBoys",
     "status": "scheduled",
     "score": null,
     "winner": null,
-    "polySlug": "dota2-ironwi-ts8-2026-08-19",
+    "polySlug": "dota2-vsn2-boombo-2026-08-20",
     "mapsPlayed": 0,
     "lean": {
-      "team": "Iron Wing",
-      "tag": "IW",
-      "p": 0.513,
-      "pA": 0.513,
-      "pB": 0.487,
-      "breakEven": 1.95,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.788,
+      "pA": 0.788,
+      "pB": 0.212,
+      "breakEven": 1.27,
       "market": {
         "outcomes": [
-          "Iron Wing",
-          "Team Spirit"
+          "TEAM VISION",
+          "BoomBoys"
         ],
         "prices": [
-          0.415,
-          0.585
+          0.725,
+          0.275
         ]
       },
-      "why": "本届胜率 Iron Wing 58% / Team Spirit 57%；先到10杀 54% / 54%；本届没交过手；Iron Wing 中单爱拿 Earth Spirit"
+      "why": "本届胜率 TEAM VISION 71% / BoomBoys 57%；先到10杀 62% / 54%；H2H 3.8000000000000007 局；TEAM VISION 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
-    "id": "ubqf1",
+    "id": "ubqf2",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 10:30",
+    "when": "2026-08-20 13:30",
     "format": "Bo3",
-    "teamA": "Iron Wing",
-    "teamB": "Team Spirit",
-    "teamALabel": "Iron Wing",
-    "teamBLabel": "Team Spirit",
+    "teamA": "TEAM VISION",
+    "teamB": "BoomBoys",
+    "teamALabel": "TEAM VISION",
+    "teamBLabel": "BoomBoys",
     "status": "scheduled",
     "score": null,
     "winner": null,
-    "polySlug": "dota2-ironwi-ts8-2026-08-19",
+    "polySlug": "dota2-vsn2-boombo-2026-08-20",
     "mapsPlayed": 0
   },
-  "todayResults": [],
-  "newMapIds": []
+  "todayResults": [
+    {
+      "id": "ubqf1",
+      "round": "胜者组首轮",
+      "day": "2026-08-20",
+      "when": "2026-08-20 10:30",
+      "format": "Bo3",
+      "teamA": "Iron Wing",
+      "teamB": "Team Spirit",
+      "teamALabel": "Iron Wing",
+      "teamBLabel": "Team Spirit",
+      "status": "completed",
+      "score": "0-2",
+      "winner": "Team Spirit",
+      "polySlug": "dota2-ironwi-ts8-2026-08-19",
+      "mapsPlayed": 2
+    }
+  ],
+  "newMapIds": [
+    8955197224,
+    8955247801
+  ]
 }
