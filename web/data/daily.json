@@ -1,22 +1,68 @@
 {
-  "asOf": "2026-08-20 18:50 CST",
+  "asOf": "2026-08-20 18:56 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 Liquid vs TY，看好 Liquid（系列 53%）。第1局看好 Liquid（54%）。",
-  "narrative": "下一把 Liquid vs TY，看好 Liquid（系列 53%）。第1局看好 Liquid（54%）。本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局已打完，液体百科和 OpenDota 都还没写谁赢。第2局重算后看好 Liquid（50%）。系列模型仍 53%。",
+  "narrative": "第1局（OpenDota 8955534650）已经打完：第2局大厅 8955549026 已经在打，观战源是 TY 天辉、Liquid 夜魇。液体百科 ubqf3 的 score 仍空、maps[0].winner 仍空；OpenDota 对 8955534650 返回 404，所以这一局谁赢、先到 10 杀、时长和人头都不写。液体百科第1局模板目前写着 Liquid Nature's Prophet、Mirana、Tusk、Dawnbreaker、Tiny（夜魇）对 TY Io、Largo、Hoodwink、Enchantress、Windranger（天辉），TY 禁人里有 Earth Spirit；但第2局直播里双方英雄完全一样，百科可能还没把第2局拆出去，这套阵容不能当成已核实的第1局 picks。因为第1局打完了，不能再贴开赛前那版「第1局看好 Liquid 54%」。G1 没进 games.json，H2H 还是瑞士轮那 3.0 局（TY 先赢一局 52.5 分钟 34-32，Liquid 连扳两局 39.6 分钟 42-21、38.2 分钟 29-10），胜率和英雄池几乎没动。整棵模型按第2局 BP 模拟重算后，这一局图胜率 Liquid 50% / TY 50%（门槛 2.00），先到 10 杀 Liquid 55%（门槛 1.81，没有公开盘）。Polymarket 第2局价 Liquid 0.525 / TY 0.475。系列还没结束。没有官方局分，不能按 1-0 后的约 77% 或 0-1 后的约 27% 改 seriesLean，模型系列仍看好 Liquid 53%（门槛 1.89）。盘口系列 Liquid 0.515 / TY 0.485，让分 Liquid -1.5 掉到 0.145，像是在定价 TY 已经拿到一局，但液体百科/OpenDota 没写局分，这里不写成 0-1。这不是投注建议。",
+  "previousMap": {
     "game": 1,
+    "matchId": "8955534650",
+    "winner": null,
+    "score": null,
+    "f10": null,
+    "durationMin": null,
+    "length": null,
+    "heroesA": [
+      "np",
+      "mir",
+      "tusk",
+      "dawn",
+      "tiny"
+    ],
+    "heroesB": [
+      "io",
+      "largo",
+      "hw",
+      "ench",
+      "wr"
+    ]
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": "8955534650",
+      "winner": null,
+      "score": null,
+      "f10": null,
+      "durationMin": null,
+      "length": null,
+      "heroesA": [
+        "np",
+        "mir",
+        "tusk",
+        "dawn",
+        "tiny"
+      ],
+      "heroesB": [
+        "io",
+        "largo",
+        "hw",
+        "ench",
+        "wr"
+      ]
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "Team Liquid",
     "teamB": "Team Yandex",
     "lean": {
       "team": "Team Liquid",
       "tag": "Liquid",
-      "p": 0.537,
-      "pA": 0.537,
-      "pB": 0.463,
-      "breakEven": 1.86,
+      "p": 0.501,
+      "pA": 0.501,
+      "pB": 0.499,
+      "breakEven": 2.0,
       "market": {
         "outcomes": [
           "Team Liquid",
@@ -27,15 +73,15 @@
           0.475
         ]
       },
-      "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit。第1局 OpenDota 未解析，英雄池未更新。"
     },
     "f10": {
       "team": "Team Liquid",
       "tag": "Liquid",
-      "p": 0.567,
-      "pA": 0.567,
-      "pB": 0.433,
-      "breakEven": 1.76,
+      "p": 0.554,
+      "pA": 0.554,
+      "pB": 0.446,
+      "breakEven": 1.81,
       "market": null,
       "why": ""
     }
@@ -53,11 +99,11 @@
         "Team Yandex"
       ],
       "prices": [
-        0.545,
-        0.455
+        0.515,
+        0.485
       ]
     },
-    "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
+    "why": "没有官方局分，系列概率仍按 0-0 重算。本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -70,11 +116,11 @@
     "teamB": "Team Yandex",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
+    "status": "live",
     "score": null,
     "winner": null,
     "polySlug": "dota2-liquid-ty-2026-08-20",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "Team Liquid",
       "tag": "Liquid",
@@ -88,8 +134,8 @@
           "Team Yandex"
         ],
         "prices": [
-          0.545,
-          0.455
+          0.515,
+          0.485
         ]
       },
       "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 中单爱拿 Earth Spirit"
@@ -105,11 +151,11 @@
     "teamB": "Team Yandex",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
+    "status": "live",
     "score": null,
     "winner": null,
     "polySlug": "dota2-liquid-ty-2026-08-20",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -145,5 +191,7 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8955534650
+  ]
 }
