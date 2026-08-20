@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-20T16:15Z",
+  "asOf": "2026-08-20T16:52Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
       "slug": "dota2-ironwi-ts8-2026-08-19",
       "title": "Dota 2: Iron Wing vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 4848608.6079049995,
+      "volume": 4848608.607904999,
       "markets": [
         {
           "question": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 8328754.559455,
+      "volume": 8328754.559454999,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 6638125.062231005,
+      "volume": 7519474.990453003,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1223,8 +1223,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -1245,8 +1245,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.395",
-            "0.605"
+            "0.415",
+            "0.585"
           ]
         },
         {
@@ -1278,8 +1278,8 @@
             "No"
           ],
           "prices": [
-            "0.905",
-            "0.095"
+            "1",
+            "0"
           ]
         },
         {
@@ -1289,8 +1289,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -1300,8 +1300,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -1311,8 +1311,8 @@
             "No"
           ],
           "prices": [
-            "0.25",
-            "0.75"
+            "0",
+            "1"
           ]
         },
         {
@@ -1322,8 +1322,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -1333,8 +1333,8 @@
             "No"
           ],
           "prices": [
-            "0.9",
-            "0.1"
+            "0.905",
+            "0.095"
           ]
         },
         {
@@ -1432,8 +1432,8 @@
             "No"
           ],
           "prices": [
-            "0.16",
-            "0.84"
+            "0.165",
+            "0.835"
           ]
         },
         {
@@ -1443,8 +1443,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.9955",
-            "0.0045"
+            "1",
+            "0"
           ]
         },
         {
@@ -1476,8 +1476,8 @@
             "Under"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -1564,8 +1564,8 @@
             "Under"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -1575,8 +1575,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.0005",
+            "0.9995"
           ]
         }
       ]
