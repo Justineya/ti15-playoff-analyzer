@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from fetch_live import compact_game, pick_game, ti_games  # noqa: E402
+from fetch_live import compact_game, parse_lp_match, pick_game, ti_games  # noqa: E402
 
 
 def sample_live(**over):
@@ -25,6 +25,7 @@ def sample_live(**over):
         "team_id_dire": 10150413,
         "team_name_radiant": "Team Spirit",
         "team_name_dire": "Iron Wing",
+        "deactivate_time": 0,
         "players": [
             {"account_id": 1, "hero_id": 0, "team": 0, "team_slot": 1, "name": "Yatoro"},
             {"account_id": 2, "hero_id": 0, "team": 1, "team_slot": 1, "name": "Pure"},
@@ -65,8 +66,35 @@ def test_ti_games_keeps_league_and_eight() -> None:
     assert compact_game(sample_live())["players"][0]["name"] == "Yatoro"
 
 
+def test_skips_deactivated_lobby() -> None:
+    games = [sample_live(deactivate_time=99, match_id="old"), sample_live(match_id="new")]
+    hit = pick_game(games, "Iron Wing", "Team Spirit")
+    assert str(hit["match_id"]) == "new"
+
+
+def test_lp_match_reads_kickoff_and_matchid() -> None:
+    body = """
+|opponent1={{TeamOpponent|Iron Wing}}
+|date=August 20, 2026 - 10:30 {{Abbr/CST}}
+|matchid1=8955197224
+|map1={{Map
+|t1h1=Hoodwink|t1h2=|t1h3=|t1h4=|t1h5=
+|t2h1=Drow Ranger|t2h2=|t2h3=|t2h4=|t2h5=
+|length=|winner=
+}}
+"""
+    parsed = parse_lp_match(body)
+    assert parsed["datetime"] == "2026-08-20 10:30"
+    assert parsed["matchIds"] == ["8955197224"]
+    assert parsed["maps"][0]["heroes1"] == ["Hoodwink"]
+    assert parsed["maps"][0]["heroes2"] == ["Drow Ranger"]
+    assert parsed["score"] is None
+
+
 if __name__ == "__main__":
     test_picks_iw_spirit_by_team_id()
     test_ignores_pubs_and_other_series()
     test_ti_games_keeps_league_and_eight()
+    test_skips_deactivated_lobby()
+    test_lp_match_reads_kickoff_and_matchid()
     print("test_fetch_live ok")

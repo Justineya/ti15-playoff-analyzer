@@ -908,10 +908,12 @@ footer a { color: var(--gold); }
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.bc-hero.empty {
-  display: grid;
-  place-items: center;
-  color: var(--mute);
+.bc-stamp {
+  margin: 10px 0 0;
+  text-align: center;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.06em;
 }
 .call {
   font-size: 13px;

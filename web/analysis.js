@@ -1578,6 +1578,32 @@ function heroesStudyHtml(data, m) {
   </section>`;
 }
 
+function slugForHero(name, heroes) {
+  if (!name) return "";
+  for (const row of Object.values(heroes || {})) {
+    if (row?.name === name) return row.slug || "";
+  }
+  return String(name).toLowerCase().replace(/['.]/g, "").replace(/\s+/g, "_");
+}
+
+function lpHeroSlots(names, players, heroes) {
+  if (!names?.length) return null;
+  return names.map((hero, i) => ({
+    name: players?.[i]?.name || "",
+    hero,
+    heroId: 1,
+    slug: slugForHero(hero, heroes),
+  }));
+}
+
+function liveStamp(feed) {
+  const t = feed?.polledAt ? beijingStamp(new Date(feed.polledAt)) : beijingStamp();
+  const g = feed?.game;
+  const age = g?.lastUpdate ? Math.round(Date.now() / 1000 - g.lastUpdate) : null;
+  const stale = age != null && age > 90 ? ` · 观战源 ${Math.max(1, Math.round(age / 60))} 分钟没新包` : "";
+  return `已刷新 ${t}${stale}`;
+}
+
 function goldLead(n) {
   const v = Math.round(Number(n) || 0);
   const mag = Math.abs(v);
@@ -1610,18 +1636,27 @@ function heroSlot(p) {
   return `<div class="bc-hero empty"><span>${esc(p.name || "未选")}</span></div>`;
 }
 
+function currentLpMap(series) {
+  const maps = series?.maps || [];
+  const live = maps.find((m) => !m.winner && (m.heroes1?.length || m.heroes2?.length)) || maps.find((m) => !m.winner);
+  return live || maps[maps.length - 1] || null;
+}
+
 function broadcastHtml(data, m) {
   if (!namedSides(m)) return "";
   const started = Boolean(
     m.status === "live" || clockParts(m.datetime).live || clockParts(m.datetime).done
   );
   const feed = data.liveFeed;
-  const series = m.score ? `系列 ${m.score}` : m.format || "Bo3";
+  const lpScore = feed?.series?.score;
+  const series = lpScore || m.score ? `系列 ${lpScore || m.score}` : m.format || "Bo3";
+  const stamp = `<p class="bc-stamp" id="bc-stamp">${esc(liveStamp(feed))}</p>`;
   if (!feed) {
     if (!started) return "";
     return `<div class="broadcast" id="broadcast">
       <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>没有画面</span></div>
       <p class="bc-wait">正在拉这场的人头、用时和阵容…</p>
+      ${stamp}
     </div>`;
   }
   if (!feed.ok) {
@@ -1629,6 +1664,7 @@ function broadcastHtml(data, m) {
     return `<div class="broadcast" id="broadcast">
       <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>记分暂时连不上</span></div>
       <p class="bc-wait">OpenDota 观战源没响应。局间或还没进房时也会空。</p>
+      ${stamp}
     </div>`;
   }
   if (feed.empty || !feed.game) {
@@ -1636,12 +1672,22 @@ function broadcastHtml(data, m) {
     return `<div class="broadcast" id="broadcast">
       <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>没有画面</span></div>
       <p class="bc-wait">现在不在进房里。可能在局间，或观战延迟还没刷出来。</p>
+      ${stamp}
     </div>`;
   }
   const g = feed.game;
   const delay = g.delay ? `延迟约 ${g.delay} 秒` : "观战延迟";
   const leadWho = g.leadA > 80 ? TAG[m.teamA] || m.teamA : g.leadA < -80 ? TAG[m.teamB] || m.teamB : "";
   const pct = Math.max(8, Math.min(92, 50 + (g.leadA / 8000) * 50));
+  const lpMap = currentLpMap(feed.series);
+  const hasLiveHeroes = (g.playersA || []).some((p) => p.heroId) || (g.playersB || []).some((p) => p.heroId);
+  const rowA = hasLiveHeroes ? g.playersA : lpHeroSlots(lpMap?.heroes1, g.playersA, data.heroes) || g.playersA;
+  const rowB = hasLiveHeroes ? g.playersB : lpHeroSlots(lpMap?.heroes2, g.playersB, data.heroes) || g.playersB;
+  const picked = (rowA || []).filter((p) => p.heroId).length + (rowB || []).filter((p) => p.heroId).length;
+  const draftNote =
+    g.phase === "选人中" && picked < 10
+      ? "选人阶段观战源常常不推英雄，秒表会动，出兵后才会跳人头和阵容。"
+      : "";
   return `<div class="broadcast on" id="broadcast" data-match="${esc(g.matchId)}">
     <div class="arena-kicker">
       <span>转播信息 · ${esc(g.phase)}</span>
@@ -1667,9 +1713,11 @@ function broadcastHtml(data, m) {
     <div class="bc-gold"><i style="width:${pct}%"></i></div>
     <p class="bc-gold-lab">${leadWho ? esc(leadWho) + " " : ""}${goldLead(g.leadA)}</p>
     <div class="bc-rows">
-      <div class="bc-line">${(g.playersA || []).map(heroSlot).join("")}</div>
-      <div class="bc-line">${(g.playersB || []).map(heroSlot).join("")}</div>
+      <div class="bc-line">${(rowA || []).map(heroSlot).join("")}</div>
+      <div class="bc-line">${(rowB || []).map(heroSlot).join("")}</div>
     </div>
+    ${stamp}
+    ${draftNote ? `<p class="bc-wait">${draftNote}</p>` : ""}
   </div>`;
 }
 
@@ -2093,9 +2141,17 @@ function setup(data) {
     const m = focusMatch(data.playoffs?.matches || [], matchId);
     if (!namedSides(m)) return;
     try {
-      data.liveFeed = await window.TI15_LIVE.fetchFeed(data, m.teamA, m.teamB);
+      data.liveFeed = await window.TI15_LIVE.fetchFeed(data, m.teamA, m.teamB, m.id);
     } catch (err) {
-      data.liveFeed = { ok: false, error: String(err?.message || err) };
+      data.liveFeed = { ok: false, error: String(err?.message || err), polledAt: Date.now() };
+    }
+    if (data.liveFeed?.datetime && data.liveFeed.datetime !== m.datetime) {
+      m.datetime = data.liveFeed.datetime;
+      const clock = document.getElementById("clock");
+      if (clock) clock.dataset.start = m.datetime;
+    }
+    if (data.liveFeed?.series?.score && !m.score) {
+      m.score = data.liveFeed.series.score;
     }
     if (mode !== "now") return;
     const html = broadcastHtml(data, m);
@@ -2105,7 +2161,7 @@ function setup(data) {
     armBcClock(data.liveFeed?.game);
   };
   pullLive();
-  setInterval(pullLive, 12000);
+  setInterval(pullLive, 4000);
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) {
       pullOdds();

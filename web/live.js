@@ -26,18 +26,23 @@
     return out;
   }
 
+  function isActive(g) {
+    return Number(g.deactivate_time ?? g.deactivateTime ?? 0) <= 0;
+  }
+
   function pickGame(games, teamA, teamB, idMap) {
     const idsA = new Set(idMap?.[teamA] || EXTRA_IDS[teamA] || []);
     const idsB = new Set(idMap?.[teamB] || EXTRA_IDS[teamB] || []);
-    const list = games || [];
-    const byId = list.find((g) => {
+    const list = (games || []).filter(isActive);
+    const pool = list.length ? list : games || [];
+    const byId = pool.find((g) => {
       const r = Number(g.team_id_radiant ?? g.radiant?.id ?? 0);
       const d = Number(g.team_id_dire ?? g.dire?.id ?? 0);
       return (idsA.has(r) && idsB.has(d)) || (idsA.has(d) && idsB.has(r));
     });
     if (byId) return byId;
     return (
-      list.find((g) => {
+      pool.find((g) => {
         if (Number(g.league_id ?? g.leagueId) !== TI_LEAGUE) return false;
         const names = [g.team_name_radiant || g.radiant?.name, g.team_name_dire || g.dire?.name];
         return names.includes(teamA) && names.includes(teamB);
@@ -129,29 +134,42 @@
     }
   }
 
-  async function fetchFeed(data, teamA, teamB) {
+  async function fetchFeed(data, teamA, teamB, matchId) {
     const idMap = teamIdMap(data?.playoffs);
     const heroes = data?.heroes || {};
-    let raw = null;
+    const polledAt = Date.now();
+    const settled = await Promise.allSettled([fetchJson(LIVE), fetchJson(FALLBACK + `?t=${polledAt}`)]);
+    const liveRes = settled[0];
+    const snapRes = settled[1];
+    const snap = snapRes.status === "fulfilled" ? snapRes.value : null;
+    let games = [];
     let source = LIVE;
-    try {
-      raw = await fetchJson(LIVE);
-    } catch (err) {
-      try {
-        const snap = await fetchJson(FALLBACK + `?t=${Date.now()}`);
-        raw = snap.games || [];
-        source = FALLBACK;
-      } catch {
-        return { ok: false, error: String(err?.message || err), source: LIVE };
-      }
+    if (liveRes.status === "fulfilled") {
+      const raw = liveRes.value;
+      games = Array.isArray(raw) ? raw : raw?.games || [];
+    } else if (snap?.games) {
+      games = snap.games;
+      source = FALLBACK;
+    } else {
+      const err = liveRes.status === "rejected" ? liveRes.reason : "no live";
+      return { ok: false, error: String(err?.message || err), source: LIVE, polledAt };
     }
-    const games = Array.isArray(raw) ? raw : raw?.games || [];
+    const lp = (snap && snap.matches && matchId && snap.matches[matchId]) || null;
     const game = pickGame(games, teamA, teamB, idMap);
     if (!game) {
-      return { ok: true, empty: true, source, n: games.length };
+      return {
+        ok: true,
+        empty: true,
+        source,
+        n: games.length,
+        polledAt,
+        datetime: lp?.datetime || null,
+        series: lp,
+      };
     }
-    return { ok: true, source, game: summarize(game, teamA, teamB, heroes, idMap) };
+    const summary = summarize(game, teamA, teamB, heroes, idMap);
+    return { ok: true, source, game: summary, polledAt, datetime: lp?.datetime || null, series: lp };
   }
 
-  window.TI15_LIVE = { fetchFeed, pickGame, summarize, teamIdMap, phaseOf };
+  window.TI15_LIVE = { fetchFeed, pickGame, summarize, teamIdMap, phaseOf, isActive };
 })();

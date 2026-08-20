@@ -1,0 +1,62 @@
+name: Live scoreboard
+
+on:
+  schedule:
+    - cron: "* * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: live-score
+  cancel-in-progress: true
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Snapshot live scoreboard
+        run: python3 scripts/fetch_live.py
+      - name: Commit if the lobby moved
+        id: commit
+        run: |
+          git config user.name "ti15-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/data/live.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "no live changes"
+            exit 0
+          fi
+          git commit -m "Auto-refresh live scoreboard."
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Configure Pages
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload Pages artifact
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+  deploy:
+    needs: live
+    if: needs.live.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
