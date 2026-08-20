@@ -254,7 +254,7 @@
       "id": "ubqf3",
       "round": "胜者组首轮",
       "day": "2026-08-20",
-      "datetime": "2026-08-20 18:15",
+      "datetime": "2026-08-20 18:30",
       "format": "Bo3",
       "teamA": "Team Liquid",
       "teamB": "Team Yandex",
@@ -443,6 +443,6 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-20 18:15 CST",
+  "scheduleAsOf": "2026-08-20 18:49 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
 }
