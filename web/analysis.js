@@ -1484,6 +1484,100 @@ function f10kStudyHtml(data, m, sim, nextGame) {
   </section>`;
 }
 
+function esc(s) {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/"/g, "&quot;");
+}
+
+function heroChip(row, maps) {
+  const wr = row.wr != null ? pct(row.wr) : "—";
+  const first = row.first >= 2 ? ` · 第一手 ${row.first}` : "";
+  const hot = row.n >= 5 || (row.first || 0) >= 3;
+  return `<span class="hero-chip${hot ? " hot" : ""}"><b>${esc(row.hero)}</b> ${row.n}/${maps} ${wr}${first}</span>`;
+}
+
+function roleLine(label, role) {
+  const heroes = (role?.heroes || []).map((h) => h.hero).slice(0, 3).join(" / ");
+  const who = (role?.players || []).map((p) => p.player).filter(Boolean)[0];
+  if (!heroes) return "";
+  return `${who ? esc(who) + " · " : ""}${label}常拿 ${heroes}`;
+}
+
+function pairHeroNote(a, b, nameA, nameB) {
+  const idxA = a.pickIndex || {};
+  const idxB = b.pickIndex || {};
+  const contest = [];
+  for (const hero of Object.keys(idxA)) {
+    const na = idxA[hero]?.n || 0;
+    const nb = idxB[hero]?.n || 0;
+    if (na >= 2 && nb >= 2) contest.push({ hero, na, nb, tot: na + nb });
+  }
+  contest.sort((x, y) => y.tot - x.tot);
+  const openFor = (them, myBans) =>
+    (them.picks || [])
+      .filter((r) => r.n >= 3 && (myBans[r.hero] || 0) <= 1)
+      .map((r) => r.hero)
+      .slice(0, 3);
+  const openB = openFor(b, a.banIndex || {});
+  const openA = openFor(a, b.banIndex || {});
+  const tagA = TAG[nameA] || nameA;
+  const tagB = TAG[nameB] || nameB;
+  const bits = [];
+  if (contest.length) {
+    bits.push(
+      "两边都常拿 " +
+        contest
+          .slice(0, 3)
+          .map((c) => `${c.hero}（${tagA} ${c.na} · ${tagB} ${c.nb}）`)
+          .join("、") +
+        "。BP 会抢。"
+    );
+  }
+  if (openB.length) bits.push(`${tagA} 很少禁对方的 ${openB.join(" / ")}。`);
+  if (openA.length) bits.push(`${tagB} 很少禁对方的 ${openA.join(" / ")}。`);
+  return bits.join(" ");
+}
+
+function heroTeamCard(pool) {
+  if (!pool) return "";
+  const chips = (pool.picks || []).map((row) => heroChip(row, pool.maps)).join("");
+  const roles = [
+    roleLine("中单", pool.roles?.mid),
+    roleLine("四号", pool.roles?.pos4),
+    roleLine("五号", pool.roles?.pos5),
+  ].filter(Boolean);
+  const bans = (pool.bans || []).map((r) => r.hero).slice(0, 4).join(" / ");
+  return `<article>
+    ${crest(pool.name, "sm")}
+    <h3>${TAG[pool.name] || pool.name}</h3>
+    <p class="hero-maps">TI ${pool.wins}/${pool.maps}</p>
+    <div class="hero-chips">${chips}</div>
+    ${roles.length ? `<p>${roles.join("。")}。</p>` : ""}
+    ${bans ? `<p>爱禁 ${bans}。</p>` : ""}
+  </article>`;
+}
+
+function heroesStudyHtml(data, m) {
+  if (!namedSides(m)) return "";
+  const report = data.heroPools || {};
+  const a = report.teams?.[m.teamA];
+  const b = report.teams?.[m.teamB];
+  if (!a || !b) return "";
+  const note = pairHeroNote(a, b, m.teamA, m.teamB);
+  return `<section class="f10k-study hero-study">
+    <div class="arena-kicker"><span>英雄</span><span>TI15 常用</span><span>${report.sample || "本届八强"}</span></div>
+    <h2>他们在 TI 上最常拿谁</h2>
+    <p class="lede">${note || "下面是两边在本届八强局里拿得最多的英雄。"}</p>
+    <div class="f10k-pair hero-pair">
+      ${heroTeamCard(a)}
+      ${heroTeamCard(b)}
+    </div>
+    <p class="foot-note">${report.note || ""} 不改胜率模型，只给 BP 盯人用。</p>
+  </section>`;
+}
+
 function renderBracketPage(data, matchId) {
   const app = document.getElementById("app");
   const demoBar = data.demo
@@ -1626,6 +1720,7 @@ function renderNow(data, matchId) {
       ${markets}
     </div>
     ${f10kStudyHtml(data, m, sim, seriesDone ? 1 : nextGame)}
+    ${heroesStudyHtml(data, m)}
     ${treeTeaser(data)}
     ${dailyHtml(data.daily)}
     ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}

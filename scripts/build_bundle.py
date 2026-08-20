@@ -9,6 +9,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from f10k_g1 import build_report
+from hero_pools import build_report as build_hero_pools
 
 ROOT = Path(__file__).resolve().parents[1]
 EIGHT = [
@@ -187,6 +188,7 @@ def main() -> None:
         "ewc": json.loads((ROOT / "data" / "ewc.json").read_text()),
         "f10kG1": build_report(),
         "iwSpiritH2h": load_iw_spirit_h2h(),
+        "heroPools": build_hero_pools(),
         "series": series,
         "games": games,
     }

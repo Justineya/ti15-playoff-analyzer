@@ -780,6 +780,39 @@ footer a { color: var(--gold); }
 .f10k-pair h3 { margin: 8px 0 6px; font-size: 18px; }
 .f10k-pair p { margin: 0; color: #d8d1c0; font-size: 14px; line-height: 1.55; }
 .f10k-pair p b { color: var(--gold); font-weight: 600; }
+.hero-study .lede { margin-bottom: 4px; }
+.hero-maps {
+  color: var(--mute);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  margin: 0 0 10px !important;
+}
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+.hero-chip {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  background: #1c1914;
+  color: #d8d1c0;
+  font-size: 12px;
+  line-height: 1.35;
+}
+.hero-chip b {
+  color: var(--ink);
+  font-weight: 600;
+  margin-right: 4px;
+}
+.hero-chip.hot {
+  border-color: rgba(201, 162, 39, 0.45);
+  color: #e8dfc8;
+}
+.hero-chip.hot b { color: var(--gold); }
+.hero-pair p { margin: 0 0 8px; }
 .call {
   font-size: 13px;
   line-height: 1.45;
@@ -1054,7 +1087,7 @@ footer a { color: var(--gold); }
 }
 
 @media (max-width: 860px) {
-  .grid-2, .ia, .matches, .phases, .hero-meta, .stat-row, .compare, .lenses, .draft, .stake-stats, .calc-form, .markets, .slate-row, .live-calc .calc-form, .sched-days, .f10k-pair { grid-template-columns: 1fr; }
+  .grid-2, .ia, .matches, .phases, .hero-meta, .stat-row, .compare, .lenses, .draft, .stake-stats, .calc-form, .markets, .slate-row, .live-calc .calc-form, .sched-days, .f10k-pair, .hero-pair { grid-template-columns: 1fr; }
   nav { display: none; }
   .topbar { padding: 12px 16px; gap: 12px; }
   .status, .clock-now { font-size: 11px; }
