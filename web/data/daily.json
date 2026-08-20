@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-20 19:43 CST",
+  "asOf": "2026-08-20 20:03 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 TY 赢了，54.5分钟。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。",
-  "narrative": "第1局 TY 赢了，54.5分钟。上一局阵容 TY Io、Largo、Hoodwink / Liquid Nature's Prophet、Mirana、Tusk。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。系列现在看好 TY（79%）。先到10杀看好 Liquid。本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit。",
+  "headline": "第1局 TY 赢了，先到10杀 Liquid，54.5分钟。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。",
+  "narrative": "第1局 TY 赢了，先到10杀 Liquid，54.5分钟。上一局阵容 TY Io、Largo、Hoodwink / Liquid Nature's Prophet、Mirana、Tusk。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。系列现在看好 TY（79%）。先到10杀看好 Liquid。本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit。",
   "previousMap": {
     "game": 1,
     "matchId": 8955549026,
@@ -12,11 +12,11 @@
       34,
       37
     ],
-    "f10": null,
-    "f10Time": null,
+    "f10": "Team Liquid",
+    "f10Time": 1099,
     "durationMin": 54.5,
-    "pace": "未知",
-    "stance": "来回拉锯",
+    "pace": "慢",
+    "stance": "发育对线",
     "picks": {
       "Team Yandex": [
         "Io",
@@ -37,7 +37,7 @@
       "Team Yandex": "Io",
       "Team Liquid": "Nature's Prophet"
     },
-    "blurb": "没有队伍先堆到 10 杀"
+    "blurb": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。"
   },
   "previousMaps": [
     {
@@ -48,11 +48,11 @@
         34,
         37
       ],
-      "f10": null,
-      "f10Time": null,
+      "f10": "Team Liquid",
+      "f10Time": 1099,
       "durationMin": 54.5,
-      "pace": "未知",
-      "stance": "来回拉锯",
+      "pace": "慢",
+      "stance": "发育对线",
       "picks": {
         "Team Yandex": [
           "Io",
@@ -73,7 +73,7 @@
         "Team Yandex": "Io",
         "Team Liquid": "Nature's Prophet"
       },
-      "blurb": "没有队伍先堆到 10 杀"
+      "blurb": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。"
     }
   ],
   "nextMap": {
@@ -93,19 +93,19 @@
           "Team Yandex"
         ],
         "prices": [
-          0.555,
-          0.445
+          0.565,
+          0.435
         ]
       },
-      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "Team Liquid",
       "tag": "Liquid",
-      "p": 0.552,
-      "pA": 0.552,
-      "pB": 0.448,
-      "breakEven": 1.81,
+      "p": 0.583,
+      "pA": 0.583,
+      "pB": 0.417,
+      "breakEven": 1.72,
       "market": null,
       "why": ""
     }
@@ -123,11 +123,11 @@
         "Team Yandex"
       ],
       "prices": [
-        0.58,
-        0.42
+        0.335,
+        0.665
       ]
     },
-    "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -158,11 +158,11 @@
           "Team Yandex"
         ],
         "prices": [
-          0.58,
-          0.42
+          0.335,
+          0.665
         ]
       },
-      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 55% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
@@ -215,7 +215,5 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": [
-    8955549026
-  ]
+  "newMapIds": []
 }

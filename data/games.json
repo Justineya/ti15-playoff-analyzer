@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 19:43 CST",
+  "asOf": "2026-08-20 20:03 CST",
   "n": 86,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
@@ -26110,7 +26110,7 @@
       "series_id": 1132178,
       "start_time": 1787221768,
       "duration": 3268,
-      "parsed": false,
+      "parsed": true,
       "radiant": "Team Yandex",
       "dire": "Team Liquid",
       "radiant_team_id": 9823272,
@@ -26121,20 +26121,33 @@
         34,
         37
       ],
-      "pace": "未知",
+      "pace": "慢",
       "length": "超长",
-      "stance": "来回拉锯",
-      "f10k": null,
-      "f10k_mid_share": 0,
-      "first_tower": null,
-      "gold": {
-        "m5": null,
-        "m10": null,
-        "m15": null,
-        "m20": null
+      "stance": "发育对线",
+      "f10k": {
+        "side": "dire",
+        "time": 1099,
+        "score": {
+          "radiant": 9,
+          "dire": 10
+        },
+        "completing_killer": "m1CKe",
+        "completing_hero": "Tiny"
       },
-      "kills_8min": 0,
-      "kills_15min": 0,
+      "f10k_mid_share": 9,
+      "first_tower": {
+        "time": 680,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_bot"
+      },
+      "gold": {
+        "m5": -366,
+        "m10": 614,
+        "m15": -1568,
+        "m20": -3939
+      },
+      "kills_8min": 7,
+      "kills_15min": 8,
       "draft": {
         "radiant": {
           "bans": [
@@ -26323,66 +26336,66 @@
             "player": "CHIRA_JUNIOR",
             "hero": "Io",
             "hero_id": 91,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 4089,
+            "xp_t10": 5386,
             "kills": 3,
             "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "assists_before_10": 9,
+            "participate_before_10": 9
           },
           "pos4": {
             "player": "Saksa",
             "hero": "Enchantress",
             "kills": 6,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 1,
+            "assists_before_10": 6,
+            "participate_before_10": 7
           },
           "pos5": {
             "player": "Maladych",
             "hero": "Hoodwink",
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 3,
+            "assists_before_10": 5,
+            "participate_before_10": 8
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
-          "mid_sup_driven": false
+          "kills_at_f10k": 9,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 24,
+          "mid_sup_driven": true
         },
         "dire": {
           "mid": {
             "player": "Nisha",
             "hero": "Nature's Prophet",
             "hero_id": 53,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 4704,
+            "xp_t10": 5134,
             "kills": 11,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 4,
+            "assists_before_10": 5,
+            "participate_before_10": 9
           },
           "pos4": {
-            "player": "tOfu",
-            "hero": "Mirana",
-            "kills": 7,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
-          },
-          "pos5": {
             "player": "Boxi",
             "hero": "Tusk",
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills": 3,
+            "kills_before_10": 2,
+            "assists_before_10": 5,
+            "participate_before_10": 7
           },
-          "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
-          "mid_sup_driven": false
+          "pos5": {
+            "player": "tOfu",
+            "hero": "Mirana",
+            "kills_before_10": 0,
+            "assists_before_10": 5,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 21,
+          "mid_sup_driven": true
         }
       },
       "blurb": {
@@ -26390,10 +26403,10 @@
           "radiant": "一阶段禁Treant Protector、Lina；前两手Io、Largo；中单Io第1手拿",
           "dire": "一阶段禁Undying、Invoker；前两手Nature's Prophet、Mirana；中单Nature's Prophet第1手拿"
         },
-        "pace": "未知节奏 / 超长局（54分28秒）；先到10杀出现在 ?分",
-        "stance": "来回拉锯",
-        "f10k": "没有队伍先堆到 10 杀",
-        "mid_support": "天辉中单 CHIRA_JUNIOR/Io 参与 0 次（击杀0+助攻0），辅Saksa/Enchantress 参与 0 次，中辅合计0；夜魇中单 Nisha/Nature's Prophet 参与 0 次（击杀0+助攻0），辅tOfu/Mirana 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+        "pace": "慢节奏 / 超长局（54分28秒）；先到10杀出现在 18分19秒",
+        "stance": "发育对线",
+        "f10k": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。",
+        "mid_support": "天辉中单 CHIRA_JUNIOR/Io 参与 9 次（击杀0+助攻9），辅Saksa/Enchantress 参与 7 次，中辅合计24 · 中辅驱动；夜魇中单 Nisha/Nature's Prophet 参与 9 次（击杀4+助攻5），辅Boxi/Tusk 参与 7 次，中辅合计21 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8955549026",
       "source": "ti15",
