@@ -276,7 +276,7 @@
       "id": "ubqf4",
       "round": "胜者组首轮",
       "day": "2026-08-20",
-      "datetime": "2026-08-20 21:15",
+      "datetime": "2026-08-20 21:20",
       "format": "Bo3",
       "teamA": "Nigma Galaxy",
       "teamB": "Team Falcons",
@@ -445,6 +445,6 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-20 21:05 CST",
+  "scheduleAsOf": "2026-08-20 21:56 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
 }

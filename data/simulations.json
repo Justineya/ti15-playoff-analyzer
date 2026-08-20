@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 21:05 CST",
+  "asOf": "2026-08-20 21:56 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -2749,8 +2749,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.0005,
-            0.9995
+            0.0,
+            1.0
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner"
         },
@@ -2793,8 +2793,8 @@
             "Team Liquid"
           ],
           "prices": [
-            0.9995,
-            0.0005
+            1.0,
+            0.0
           ],
           "question": "Game Handicap: TY (-1.5) vs Team Liquid (+1.5)"
         }
@@ -2836,14 +2836,14 @@
           },
           {
             "market": "让分",
-            "pick": "Team Liquid -1.5",
-            "modelP": 0.174,
-            "marketP": 0.001,
-            "odds": 2000.0,
-            "roi": 347.0,
-            "ev": 0.173,
-            "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.001，模型 0.174，期望回报率 34700.0%"
+            "pick": "Team Yandex +1.5",
+            "modelP": 0.826,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.174,
+            "ev": -0.174,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.826，期望回报率 -17.4%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -3687,7 +3687,7 @@
       "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；H2H 0 局；Nigma Galaxy 常用中单 Ember Spirit",
       "id": "ubqf4",
       "round": "胜者组首轮",
-      "when": "2026-08-20 21:15",
+      "when": "2026-08-20 21:20",
       "status": "scheduled",
       "polySlug": "dota2-ngx-flc-2026-08-20",
       "poly": {
@@ -3697,8 +3697,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.385,
-            0.615
+            0.345,
+            0.655
           ],
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner"
         },
@@ -3708,8 +3708,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.395,
-            0.605
+            0.375,
+            0.625
           ],
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 2 Winner"
         },
@@ -3719,8 +3719,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.365,
-            0.635
+            0.315,
+            0.685
           ],
           "question": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs"
         },
@@ -3741,8 +3741,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            0.385,
-            0.615
+            0.41,
+            0.59
           ],
           "question": "Game Handicap: FLC (-1.5) vs Nigma Galaxy (+1.5)"
         }
@@ -3753,23 +3753,23 @@
             "market": "系列胜者",
             "pick": "Nigma Galaxy",
             "modelP": 0.606,
-            "marketP": 0.365,
-            "odds": 2.74,
-            "roi": 0.66,
-            "ev": 0.241,
+            "marketP": 0.315,
+            "odds": 3.17,
+            "roi": 0.924,
+            "ev": 0.291,
             "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.365，模型 0.606，期望回报率 66.0%"
+            "note": "买 YES 成本 0.315，模型 0.606，期望回报率 92.4%"
           },
           {
             "market": "第一局",
             "pick": "Nigma Galaxy",
             "modelP": 0.577,
-            "marketP": 0.385,
-            "odds": 2.6,
-            "roi": 0.499,
-            "ev": 0.192,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.385，模型 0.577，期望回报率 49.9%"
+            "marketP": 0.345,
+            "odds": 2.9,
+            "roi": 0.672,
+            "ev": 0.232,
+            "action": "和市场差太大，只观察",
+            "note": "买 YES 成本 0.345，模型 0.577，期望回报率 67.2%"
           },
           {
             "market": "总局数 O/U 2.5",
@@ -3786,12 +3786,12 @@
             "market": "让分",
             "pick": "Nigma Galaxy +1.5",
             "modelP": 0.816,
-            "marketP": 0.615,
-            "odds": 1.63,
-            "roi": 0.327,
-            "ev": 0.201,
+            "marketP": 0.59,
+            "odds": 1.69,
+            "roi": 0.383,
+            "ev": 0.226,
             "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.615，模型 0.816，期望回报率 32.7%"
+            "note": "买 YES 成本 0.59，模型 0.816，期望回报率 38.3%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -6759,7 +6759,7 @@
       {
         "id": "ubqf4",
         "round": "胜者组首轮",
-        "when": "2026-08-20 21:15",
+        "when": "2026-08-20 21:20",
         "winner": "Nigma Galaxy",
         "p": 0.614,
         "n": 614,

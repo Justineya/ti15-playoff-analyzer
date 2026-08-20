@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 21:05 CST",
+  "asOf": "2026-08-20 21:56 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
   "headline": "下一把 NGX vs FLCN，看好 NGX（系列 61%）。第1局看好 NGX（58%）。",
@@ -23,8 +23,8 @@
           "Team Falcons"
         ],
         "prices": [
-          0.385,
-          0.615
+          0.345,
+          0.655
         ]
       },
       "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
@@ -53,8 +53,8 @@
         "Team Falcons"
       ],
       "prices": [
-        0.365,
-        0.635
+        0.315,
+        0.685
       ]
     },
     "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
@@ -64,7 +64,7 @@
     "id": "ubqf4",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 21:15",
+    "when": "2026-08-20 21:20",
     "format": "Bo3",
     "teamA": "Nigma Galaxy",
     "teamB": "Team Falcons",
@@ -88,8 +88,8 @@
           "Team Falcons"
         ],
         "prices": [
-          0.365,
-          0.635
+          0.315,
+          0.685
         ]
       },
       "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
@@ -99,7 +99,7 @@
     "id": "ubqf4",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 21:15",
+    "when": "2026-08-20 21:20",
     "format": "Bo3",
     "teamA": "Nigma Galaxy",
     "teamB": "Team Falcons",
@@ -161,7 +161,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8955653541
-  ]
+  "newMapIds": []
 }
