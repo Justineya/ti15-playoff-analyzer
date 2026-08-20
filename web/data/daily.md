@@ -1,5 +1,5 @@
-# TI15 局间战报 · 2026-08-20 20:03 CST
+# TI15 局间战报 · 2026-08-20 21:05 CST
 
-第1局 TY 赢了，先到10杀 Liquid，54.5分钟。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。
+下一把 NGX vs FLCN，看好 NGX（系列 61%）。第1局看好 NGX（58%）。
 
-第1局 TY 赢了，先到10杀 Liquid，54.5分钟。上一局阵容 TY Io、Largo、Hoodwink / Liquid Nature's Prophet、Mirana、Tusk。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。系列现在看好 TY（79%）。先到10杀看好 Liquid。本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit。
+下一把 NGX vs FLCN，看好 NGX（系列 61%）。第1局看好 NGX（58%）。本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit。

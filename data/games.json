@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-20 20:03 CST",
-  "n": 86,
+  "asOf": "2026-08-20 21:05 CST",
+  "n": 87,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -26409,6 +26409,313 @@
         "mid_support": "天辉中单 CHIRA_JUNIOR/Io 参与 9 次（击杀0+助攻9），辅Saksa/Enchantress 参与 7 次，中辅合计24 · 中辅驱动；夜魇中单 Nisha/Nature's Prophet 参与 9 次（击杀4+助攻5），辅Boxi/Tusk 参与 7 次，中辅合计21 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8955549026",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8955653541,
+      "series_id": 1132178,
+      "start_time": 1787226963,
+      "duration": 2308,
+      "parsed": true,
+      "radiant": "Team Liquid",
+      "dire": "Team Yandex",
+      "radiant_team_id": 2163,
+      "dire_team_id": 9823272,
+      "winner": "Team Yandex",
+      "radiant_win": false,
+      "score": [
+        13,
+        38
+      ],
+      "pace": "慢",
+      "length": "偏长",
+      "stance": "滚雪球",
+      "f10k": {
+        "side": "dire",
+        "time": 1152,
+        "score": {
+          "radiant": 4,
+          "dire": 10
+        },
+        "completing_killer": "医者watson`",
+        "completing_hero": "Io"
+      },
+      "f10k_mid_share": 4,
+      "first_tower": {
+        "time": 813,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_bot"
+      },
+      "gold": {
+        "m5": -636,
+        "m10": -2503,
+        "m15": -4157,
+        "m20": -13296
+      },
+      "kills_8min": 1,
+      "kills_15min": 6,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 5,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 6,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 11,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 19,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 21,
+              "hero": "Doom",
+              "hero_id": 69
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 12,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 15,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 16,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 23,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Undying",
+              "hero_id": 85
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 12,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 1,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 4,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 9,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 10,
+              "hero": "Dawnbreaker",
+              "hero_id": 135
+            },
+            {
+              "order": 18,
+              "hero": "Tiny",
+              "hero_id": 19
+            },
+            {
+              "order": 20,
+              "hero": "Monkey King",
+              "hero_id": 114
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 13,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 14,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 17,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 22,
+              "hero": "Tidehunter",
+              "hero_id": 29
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 1,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 13,
+              "hero": "Io",
+              "hero_id": 91
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "Nisha",
+            "hero": "Windranger",
+            "hero_id": 21,
+            "gold_t10": 3630,
+            "xp_t10": 4254,
+            "kills": 4,
+            "kills_before_10": 2,
+            "assists_before_10": 1,
+            "participate_before_10": 3
+          },
+          "pos4": {
+            "player": "Boxi",
+            "hero": "Clockwerk",
+            "kills": 2,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "tOfu",
+            "hero": "Winter Wyvern",
+            "kills_before_10": 1,
+            "assists_before_10": 0,
+            "participate_before_10": 1
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 4,
+          "first10_mid_sup_kills": 3,
+          "first10_mid_sup_ka": 4,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Slark",
+            "hero_id": 93,
+            "gold_t10": 3035,
+            "xp_t10": 3837,
+            "kills": 9,
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Saksa",
+            "hero": "Bounty Hunter",
+            "kills": 3,
+            "kills_before_10": 3,
+            "assists_before_10": 4,
+            "participate_before_10": 7
+          },
+          "pos5": {
+            "player": "Maladych",
+            "hero": "Hoodwink",
+            "kills_before_10": 3,
+            "assists_before_10": 3,
+            "participate_before_10": 6
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 7,
+          "first10_mid_sup_ka": 17,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Undying；前两手Winter Wyvern、Clockwerk；中单Windranger第5手拿",
+          "dire": "一阶段禁Keeper of the Light、Shadow Fiend；前两手Bounty Hunter、Io；中单Slark第4手拿"
+        },
+        "pace": "慢节奏 / 偏长局（38分28秒）；先到10杀出现在 19分12秒",
+        "stance": "滚雪球",
+        "f10k": "Team Yandex先到 10 杀（当时 4-10，19分12秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Slark 参与 4 次（击杀 1 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。",
+        "mid_support": "天辉中单 Nisha/Windranger 参与 3 次（击杀2+助攻1），辅Boxi/Clockwerk 参与 0 次，中辅合计4；夜魇中单 CHIRA_JUNIOR/Slark 参与 4 次（击杀1+助攻3），辅Saksa/Bounty Hunter 参与 7 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8955653541",
       "source": "ti15",
       "patch": "7.41e"
     }
