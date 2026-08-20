@@ -33,6 +33,16 @@ if (!after || after.id !== "ubqf3") {
   console.error("expected ubqf3 after VSN series done, got", after && after.id);
   process.exit(2);
 }
+const gf = [
+  { id: "lbf", datetime: "2026-08-23 10:00", status: "completed", teamA: "A", teamB: "B", score: "1-2", format: "Bo3" },
+  { id: "gf", datetime: "2026-08-23 13:00", status: "live", teamA: "C", teamB: "D", score: "2-2", mapsPlayed: 4, format: "Bo5" },
+];
+const late = Date.UTC(2026, 7, 23, 12, 10); // 20:10 CST, 7h after GF kickoff
+const gfHit = F.focusMatch(gf, "", late);
+if (!gfHit || gfHit.id !== "gf") {
+  console.error("expected gf still on screen 7h in, got", gfHit && gfHit.id);
+  process.exit(3);
+}
 """
 
 

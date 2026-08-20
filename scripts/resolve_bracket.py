@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fill playoff feeder slots from completed TI15 maps in games.json."""
+"""Fill playoff feeder slots from completed TI15 maps and Liquipedia scores."""
 from __future__ import annotations
 
 import json
@@ -9,6 +9,31 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CST = timezone(timedelta(hours=8))
 PLAYOFF_START = datetime(2026, 8, 20, 0, 0, tzinfo=CST)
+LIVE_PATH = ROOT / "web" / "data" / "live.json"
+
+
+def parse_score(score) -> tuple[int, int]:
+    raw = str(score or "")
+    hit = raw.replace(":", "-").split("-", 1)
+    if len(hit) != 2:
+        return 0, 0
+    try:
+        return int(hit[0].strip()), int(hit[1].strip())
+    except ValueError:
+        return 0, 0
+
+
+def merge_ids(*groups) -> list:
+    out = []
+    seen: set[str] = set()
+    for group in groups:
+        for value in group or []:
+            key = str(value).strip()
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            out.append(int(key) if key.isdigit() else key)
+    return out
 
 
 def need_wins(fmt: str) -> int:
@@ -87,6 +112,46 @@ def fill_feeders(matches: list[dict]) -> bool:
     return changed
 
 
+def apply_live_results(matches: list[dict], live: dict) -> bool:
+    """Liquipedia 2-1 can fill tomorrow's feeders before OpenDota parses Game 3."""
+    rows = live.get("matches") or {}
+    changed = False
+    for m in matches:
+        a, b = m.get("teamA"), m.get("teamB")
+        if not (isinstance(a, str) and isinstance(b, str)):
+            continue
+        row = rows.get(m.get("id")) or {}
+        score = row.get("score")
+        wins_a, wins_b = parse_score(score)
+        played = wins_a + wins_b
+        if not played:
+            continue
+        need = need_wins(m.get("format") or "Bo3")
+        have = int(m.get("mapsPlayed") or 0)
+        if played < have:
+            continue
+        if m.get("status") in {"completed", "complete"} and max(wins_a, wins_b) < need:
+            continue
+        before = (m.get("winner"), m.get("score"), m.get("status"), m.get("mapsPlayed"))
+        m["score"] = f"{wins_a}-{wins_b}"
+        m["mapsPlayed"] = played
+        ids = merge_ids(m.get("matchIds"), row.get("matchIds"))
+        if ids:
+            m["matchIds"] = ids
+        if max(wins_a, wins_b) >= need:
+            m["winner"] = a if wins_a >= need else b
+            m["loser"] = b if m["winner"] == a else a
+            m["status"] = "completed"
+        else:
+            m["status"] = "live"
+            m.pop("winner", None)
+            m.pop("loser", None)
+        after = (m.get("winner"), m.get("score"), m.get("status"), m.get("mapsPlayed"))
+        if before != after:
+            changed = True
+    return changed
+
+
 def apply_results(matches: list[dict], games: list[dict]) -> bool:
     indexed: dict[frozenset, list[dict]] = {}
     for g in playoff_games(games):
@@ -121,22 +186,26 @@ def apply_results(matches: list[dict], games: list[dict]) -> bool:
 
 def main() -> None:
     po_path = ROOT / "data" / "playoffs.json"
-    games = json.loads((ROOT / "data" / "games.json").read_text()).get("games") or []
+    games_path = ROOT / "data" / "games.json"
+    games = json.loads(games_path.read_text()).get("games") or [] if games_path.exists() else []
+    live = json.loads(LIVE_PATH.read_text()) if LIVE_PATH.exists() else {}
     playoffs = json.loads(po_path.read_text())
     matches = playoffs.get("matches") or []
     changed = False
     for _ in range(8):
         step = apply_results(matches, games)
+        step = apply_live_results(matches, live) or step
         step = fill_feeders(matches) or step
         changed = changed or step
         if not step:
             break
-    playoffs["asOf"] = datetime.now(CST).strftime("%Y-%m-%d %H:%M") + " CST"
-    po_path.write_text(json.dumps(playoffs, ensure_ascii=False, indent=2) + "\n")
+    if changed:
+        playoffs["asOf"] = datetime.now(CST).strftime("%Y-%m-%d %H:%M") + " CST"
+        po_path.write_text(json.dumps(playoffs, ensure_ascii=False, indent=2) + "\n")
     done = [m["id"] for m in matches if m.get("status") == "completed"]
-    live = [m["id"] for m in matches if m.get("status") == "live"]
+    live_ids = [m["id"] for m in matches if m.get("status") == "live"]
     known = [m["id"] for m in matches if isinstance(m.get("teamA"), str) and isinstance(m.get("teamB"), str)]
-    print("bracket completed", done, "live", live, "named", known, "changed", changed)
+    print("bracket completed", done, "live", live_ids, "named", known, "changed", changed)
 
 
 if __name__ == "__main__":

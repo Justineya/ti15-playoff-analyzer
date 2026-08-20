@@ -55,7 +55,19 @@ jobs:
             exit 0
           fi
           git commit -m "Auto-refresh TI15 playoff data."
-          git push
+          ok=0
+          for wait in 4 8 16 32; do
+            if git pull --rebase origin main && git push; then
+              ok=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep "$wait"
+          done
+          if [ "$ok" != 1 ]; then
+            echo "refresh push failed after retries"
+            exit 1
+          fi
           echo "changed=true" >> "$GITHUB_OUTPUT"
       # GITHUB_TOKEN commits do not trigger pages.yml, so deploy from here.
       - name: Configure Pages

@@ -58,6 +58,8 @@ jobs:
           python3 scripts/daily_briefing.py
           python3 scripts/build_bundle.py || true
           python3 scripts/launch_eod_cursor.py
+      - name: Fill tomorrow's bracket from Liquipedia scores
+        run: python3 scripts/resolve_bracket.py || true
       - name: Retry Cursor API if the map is still pending
         if: steps.map.outputs.launch == 'yes' && steps.map.outputs.fresh != 'yes'
         env:
@@ -75,7 +77,19 @@ jobs:
             exit 0
           fi
           git commit -m "Auto-refresh live scoreboard."
-          git push
+          ok=0
+          for wait in 4 8 16 32; do
+            if git pull --rebase origin main && git push; then
+              ok=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep "$wait"
+          done
+          if [ "$ok" != 1 ]; then
+            echo "live push failed after retries"
+            exit 1
+          fi
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Configure Pages
         if: steps.commit.outputs.changed == 'true'

@@ -911,12 +911,15 @@ function pad2(n) {
   return String(n).padStart(2, "0");
 }
 
-function clockParts(dt) {
+function clockParts(dt, extra = {}) {
   const t = parsePlayoffTime(dt);
   if (!t) return { missing: true };
   const diff = t.getTime() - Date.now();
   if (diff <= 0) {
-    if (Date.now() < t.getTime() + windowMsSafe()) return { live: true };
+    const fake = { score: extra.score, format: extra.format, status: extra.live ? "live" : "" };
+    const cap = seriesCapMs(fake);
+    const unfinished = extra.live || (extra.score && seriesOpen(fake));
+    if (unfinished || Date.now() < t.getTime() + cap) return { live: true };
     return { done: true };
   }
   const sec = Math.floor(diff / 1000);
@@ -929,7 +932,7 @@ function clockParts(dt) {
 }
 
 function clockHtml(dt, info = {}) {
-  return `<div class="clock" id="clock" data-start="${dt || ""}" data-score="${info.score || ""}" data-next="${info.nextGame || ""}" data-live="${info.live ? "1" : ""}" data-gap="${info.gap ? "1" : ""}">
+  return `<div class="clock" id="clock" data-start="${dt || ""}" data-score="${info.score || ""}" data-next="${info.nextGame || ""}" data-live="${info.live ? "1" : ""}" data-gap="${info.gap ? "1" : ""}" data-format="${info.format || ""}">
     <div class="clock-label" id="clock-label">开战倒计时 · 北京时间</div>
     <div class="clock-digits" id="clock-digits"></div>
     <div class="clock-kickoff">${whenNice(dt)} 开赛</div>
@@ -941,7 +944,11 @@ function paintClock() {
   const digits = document.getElementById("clock-digits");
   const label = document.getElementById("clock-label");
   if (!root || !digits) return;
-  const p = clockParts(root.dataset.start);
+  const p = clockParts(root.dataset.start, {
+    live: root.dataset.live === "1",
+    score: root.dataset.score,
+    format: root.dataset.format,
+  });
   if (p.live || root.dataset.live === "1") {
     const score = root.dataset.score || "";
     const next = root.dataset.next || "";
@@ -2103,7 +2110,7 @@ function renderNow(data, matchId) {
       <span>${m.round || ""}</span>
       <span>${m.format || "Bo3"}${wins.played ? " · " + (m.score || wins.a + "-" + wins.b) : ""}</span>
     </div>
-    ${clockHtml(m.datetime, { live: inSeries || m.status === "live" || Boolean(data.liveFeed?.game), score: m.score || "", nextGame: seriesDone ? "" : nextGame, gap: intermission })}
+    ${clockHtml(m.datetime, { live: inSeries || m.status === "live" || Boolean(data.liveFeed?.game), score: m.score || "", nextGame: seriesDone ? "" : nextGame, gap: intermission, format: m.format || "" })}
     <div class="live-poster">
       <div class="live-teams">
         <div class="live-team">${namedSides(m) ? crest(m.teamA) : ""}<div class="tagline">${aTag || ""}</div><h2>${aName || "待定"}</h2></div>
