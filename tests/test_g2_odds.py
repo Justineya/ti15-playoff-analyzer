@@ -74,7 +74,25 @@ if (w !== "B") {
 }
 if (window.TI15_LIVE.scoreFromWinners(["B"]) !== "0-1") process.exit(2);
 if (window.TI15_LIVE.scoreFromWinners(["A", "B"]) !== "1-1") process.exit(3);
-if (window.TI15_LIVE.winnerOfMatch({ radiant_win: true }, "Iron Wing", "Team Spirit", idMap) !== null) process.exit(4);
+const pick = window.TI15_LIVE.pickGame(
+  [
+    { match_id: "8955197224", deactivate_time: 9, team_id_radiant: 7119388, team_id_dire: 10150413, league_id: 19719 },
+    { match_id: "8955247801", deactivate_time: 0, team_id_radiant: 10150413, team_id_dire: 7119388, league_id: 19719 },
+  ],
+  "Iron Wing",
+  "Team Spirit",
+  idMap
+);
+if (!pick || String(pick.match_id) !== "8955247801") {
+  console.error("expected live G2, got", pick && pick.match_id);
+  process.exit(5);
+}
+if (window.TI15_LIVE.pickGame(
+  [{ match_id: "8955197224", deactivate_time: 9, team_id_radiant: 7119388, team_id_dire: 10150413 }],
+  "Iron Wing",
+  "Team Spirit",
+  idMap
+)) process.exit(6);
 """
     proc = subprocess.run(["node", "-e", script], cwd=ROOT, check=False, capture_output=True, text=True)
     if proc.returncode != 0:

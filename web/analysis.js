@@ -1065,7 +1065,7 @@ function scoreFromSettledPoly(sim, teamA) {
 
 function applyLiveSeries(m, feed, sim) {
   if (!m) return false;
-  const before = `${m.score || ""}|${(m.matchIds || []).join(",")}`;
+  const before = `${m.score || ""}|${m.mapsPlayed || 0}|${(m.matchIds || []).join(",")}`;
   if (feed?.series?.matchIds?.length) {
     const have = new Set((m.matchIds || []).map(String));
     for (const id of feed.series.matchIds) {
@@ -1074,6 +1074,10 @@ function applyLiveSeries(m, feed, sim) {
         have.add(String(id));
       }
     }
+  }
+  if (feed?.game?.matchId) {
+    const id = String(feed.game.matchId);
+    if (!(m.matchIds || []).map(String).includes(id)) m.matchIds = [...(m.matchIds || []), id];
   }
   let best = m.score || "";
   for (const cand of [
@@ -1085,7 +1089,9 @@ function applyLiveSeries(m, feed, sim) {
     best = preferScore(best, cand);
   }
   if (best) m.score = best;
-  return before !== `${m.score || ""}|${(m.matchIds || []).join(",")}`;
+  const mapNo = Number(feed?.mapNumber || 0);
+  if (mapNo >= 2) m.mapsPlayed = Math.max(Number(m.mapsPlayed) || 0, mapNo - 1);
+  return before !== `${m.score || ""}|${m.mapsPlayed || 0}|${(m.matchIds || []).join(",")}`;
 }
 
 function mergePlayoffScores(prev, next) {
@@ -2257,7 +2263,7 @@ function setup(data) {
     const m = focusMatch(data.playoffs?.matches || [], matchId);
     if (!namedSides(m)) return;
     const sim = findSim(indexSims(data), m);
-    const before = `${m.score || ""}|${seriesState(m).nextGame}`;
+    const before = `${m.score || ""}|${m.mapsPlayed || 0}|${seriesState(m).nextGame}`;
     try {
       data.liveFeed = await window.TI15_LIVE.fetchFeed(data, m.teamA, m.teamB, m.id);
     } catch (err) {
@@ -2267,7 +2273,7 @@ function setup(data) {
       m.datetime = data.liveFeed.datetime;
     }
     const progressed = applyLiveSeries(m, data.liveFeed, sim);
-    const after = `${m.score || ""}|${seriesState(m).nextGame}`;
+    const after = `${m.score || ""}|${m.mapsPlayed || 0}|${seriesState(m).nextGame}`;
     const clock = document.getElementById("clock");
     if (clock) {
       if (data.liveFeed?.datetime) clock.dataset.start = m.datetime;

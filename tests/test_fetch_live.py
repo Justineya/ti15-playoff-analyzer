@@ -121,6 +121,45 @@ def test_lp_map1_iron_wing_win_is_1_0() -> None:
     assert parse_lp_match(body)["score"] == "1-0"
 
 
+def test_pick_game_skips_finished_g1_when_g2_is_live() -> None:
+    g1 = sample_live(deactivate_time=99, match_id="8955197224")
+    g2 = sample_live(
+        match_id="8955247801",
+        team_id_radiant=10150413,
+        team_id_dire=7119388,
+        team_name_radiant="Iron Wing",
+        team_name_dire="Team Spirit",
+        game_time=50,
+    )
+    hit = pick_game([g1, g2], "Iron Wing", "Team Spirit")
+    assert str(hit["match_id"]) == "8955247801"
+    assert pick_game([g1], "Iron Wing", "Team Spirit") is None
+
+
+def test_overlay_series_sets_spirit_g1_win() -> None:
+    import fetch_live as fl
+
+    orig = fl.get_json
+
+    def fake_get(url: str):
+        if str(url).endswith("8955197224"):
+            return {"radiant_win": True, "radiant_team_id": 7119388, "dire_team_id": 10150413}
+        raise AssertionError(url)
+
+    fl.get_json = fake_get
+    try:
+        games = [
+            {"matchId": "8955197224", "deactivateTime": 9, "radiant": {"id": 7119388}, "dire": {"id": 10150413}},
+            {"matchId": "8955247801", "deactivateTime": 0, "radiant": {"id": 10150413}, "dire": {"id": 7119388}},
+        ]
+        playoffs = {"matches": [{"id": "ubqf1", "teamA": "Iron Wing", "teamB": "Team Spirit"}]}
+        out = fl.overlay_series(games, {}, playoffs)
+        assert out["ubqf1"]["score"] == "0-1"
+        assert out["ubqf1"]["matchIds"] == ["8955197224", "8955247801"]
+    finally:
+        fl.get_json = orig
+
+
 if __name__ == "__main__":
     test_picks_iw_spirit_by_team_id()
     test_ignores_pubs_and_other_series()
@@ -129,4 +168,6 @@ if __name__ == "__main__":
     test_lp_match_reads_kickoff_and_matchid()
     test_lp_map1_winner_sets_score()
     test_lp_map1_iron_wing_win_is_1_0()
+    test_pick_game_skips_finished_g1_when_g2_is_live()
+    test_overlay_series_sets_spirit_g1_win()
     print("test_fetch_live ok")

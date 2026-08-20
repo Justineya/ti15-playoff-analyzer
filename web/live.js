@@ -74,8 +74,9 @@
     return null;
   }
 
-  async function finishedScore(teamA, teamB, lp, idMap) {
-    const ids = knownIds(teamA, teamB, lp);
+  async function finishedScore(teamA, teamB, lp, idMap, skipId) {
+    const skip = String(skipId || "");
+    const ids = knownIds(teamA, teamB, lp).filter((id) => id && id !== skip);
     if (!ids.length) return null;
     const rows = await Promise.all(ids.map(lookupFinished));
     const winners = [];
@@ -105,24 +106,34 @@
     return Number(g.deactivate_time ?? g.deactivateTime ?? 0) <= 0;
   }
 
-  function pickGame(games, teamA, teamB, idMap) {
+  function pairGames(games, teamA, teamB, idMap) {
     const idsA = new Set(idMap?.[teamA] || EXTRA_IDS[teamA] || []);
     const idsB = new Set(idMap?.[teamB] || EXTRA_IDS[teamB] || []);
-    const list = (games || []).filter(isActive);
-    const pool = list.length ? list : games || [];
-    const byId = pool.find((g) => {
+    return (games || []).filter((g) => {
       const r = Number(g.team_id_radiant ?? g.radiant?.id ?? 0);
       const d = Number(g.team_id_dire ?? g.dire?.id ?? 0);
-      return (idsA.has(r) && idsB.has(d)) || (idsA.has(d) && idsB.has(r));
+      if ((idsA.has(r) && idsB.has(d)) || (idsA.has(d) && idsB.has(r))) return true;
+      const names = [g.team_name_radiant || g.radiant?.name, g.team_name_dire || g.dire?.name];
+      return names.includes(teamA) && names.includes(teamB);
     });
-    if (byId) return byId;
-    return (
-      pool.find((g) => {
-        if (Number(g.league_id ?? g.leagueId) !== TI_LEAGUE) return false;
-        const names = [g.team_name_radiant || g.radiant?.name, g.team_name_dire || g.dire?.name];
-        return names.includes(teamA) && names.includes(teamB);
-      }) || null
-    );
+  }
+
+  function pickGame(games, teamA, teamB, idMap) {
+    const active = pairGames(games, teamA, teamB, idMap).filter(isActive);
+    return active[0] || null;
+  }
+
+  function mergeGames(primary, extra) {
+    const out = [];
+    const seen = new Set();
+    for (const g of [...(primary || []), ...(extra || [])]) {
+      const id = String(g.match_id ?? g.matchId ?? "");
+      const key = id || JSON.stringify(g);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(g);
+    }
+    return out;
   }
 
   function rawPlayers(game) {
@@ -222,6 +233,7 @@
     if (liveRes.status === "fulfilled") {
       const raw = liveRes.value;
       games = Array.isArray(raw) ? raw : raw?.games || [];
+      if (snap?.games) games = mergeGames(games, snap.games);
     } else if (snap?.games) {
       games = snap.games;
       source = FALLBACK;
@@ -233,24 +245,55 @@
     if (lp?.matchIds) {
       for (const id of lp.matchIds) rememberId(teamA, teamB, id);
     }
+    for (const g of pairGames(games, teamA, teamB, idMap)) {
+      rememberId(teamA, teamB, g.match_id ?? g.matchId);
+    }
     const game = pickGame(games, teamA, teamB, idMap);
+    const liveId = game ? String(game.match_id ?? game.matchId ?? "") : "";
+    const finished = await finishedScore(teamA, teamB, lp, idMap, liveId);
+    const ids = knownIds(teamA, teamB, lp);
+    let mapNumber = ids.length || 1;
+    if (liveId && ids.includes(liveId)) mapNumber = ids.indexOf(liveId) + 1;
+    else if (finished?.maps) mapNumber = finished.maps + (liveId ? 1 : 0);
+    const series = { ...(lp || {}) };
+    if (finished?.score && !series.score) series.score = finished.score;
+    if (ids.length) series.matchIds = ids;
     if (!game) {
-      const finished = await finishedScore(teamA, teamB, lp, idMap);
       return {
         ok: true,
         empty: true,
         source,
         n: games.length,
         polledAt,
-        datetime: lp?.datetime || null,
-        series: lp,
+        datetime: series.datetime || null,
+        series,
         finished,
+        mapNumber,
       };
     }
     const summary = summarize(game, teamA, teamB, heroes, idMap);
     rememberId(teamA, teamB, summary.matchId);
-    return { ok: true, source, game: summary, polledAt, datetime: lp?.datetime || null, series: lp };
+    return {
+      ok: true,
+      source,
+      game: summary,
+      polledAt,
+      datetime: series.datetime || null,
+      series,
+      finished,
+      mapNumber,
+    };
   }
 
-  window.TI15_LIVE = { fetchFeed, pickGame, summarize, teamIdMap, phaseOf, isActive, winnerOfMatch, scoreFromWinners };
+  window.TI15_LIVE = {
+    fetchFeed,
+    pickGame,
+    pairGames,
+    summarize,
+    teamIdMap,
+    phaseOf,
+    isActive,
+    winnerOfMatch,
+    scoreFromWinners,
+  };
 })();

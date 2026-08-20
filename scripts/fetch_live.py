@@ -44,14 +44,14 @@ def ids_for(name: str) -> set[int]:
 
 
 def is_active(game: dict) -> bool:
-    return int(game.get("deactivate_time") or 0) <= 0
+    return int(game.get("deactivate_time") or game.get("deactivateTime") or 0) <= 0
 
 
 def pick_game(games: list[dict], team_a: str, team_b: str) -> dict | None:
     want_a = ids_for(team_a)
     want_b = ids_for(team_b)
     active = [g for g in games or [] if is_active(g)]
-    pool = active or list(games or [])
+    pool = active
     for game in pool:
         rad = int(game.get("team_id_radiant") or 0)
         dire = int(game.get("team_id_dire") or 0)
@@ -174,6 +174,103 @@ def ti_games(raw: list[dict]) -> list[dict]:
     return out
 
 
+MATCH_URL = "https://api.opendota.com/api/matches/"
+
+
+def load_playoffs() -> dict:
+    path = ROOT / "data" / "playoffs.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text())
+
+
+def compact_ids(game: dict) -> tuple[int, int]:
+    rad = int(game.get("team_id_radiant") or (game.get("radiant") or {}).get("id") or 0)
+    dire = int(game.get("team_id_dire") or (game.get("dire") or {}).get("id") or 0)
+    return rad, dire
+
+
+def game_match_id(game: dict) -> str:
+    return str(game.get("match_id") or game.get("matchId") or "")
+
+
+def is_pair_game(game: dict, team_a: str, team_b: str) -> bool:
+    rad, dire = compact_ids(game)
+    want_a = ids_for(team_a)
+    want_b = ids_for(team_b)
+    return (rad in want_a and dire in want_b) or (rad in want_b and dire in want_a)
+
+
+def winner_from_detail(detail: dict, team_a: str, team_b: str) -> str | None:
+    if not isinstance(detail, dict) or not isinstance(detail.get("radiant_win"), bool):
+        return None
+    rad = int(detail.get("radiant_team_id") or (detail.get("radiant_team") or {}).get("team_id") or 0)
+    dire = int(detail.get("dire_team_id") or (detail.get("dire_team") or {}).get("team_id") or 0)
+    want_a = ids_for(team_a)
+    want_b = ids_for(team_b)
+    if rad in want_a and dire in want_b:
+        a_is_radiant = True
+    elif rad in want_b and dire in want_a:
+        a_is_radiant = False
+    else:
+        return None
+    a_won = detail["radiant_win"] if a_is_radiant else not detail["radiant_win"]
+    return team_a if a_won else team_b
+
+
+def score_from_finished_ids(match_ids: list[str], team_a: str, team_b: str, skip_id: str | None = None) -> str | None:
+    wins_a = 0
+    wins_b = 0
+    skip = str(skip_id or "")
+    for mid in match_ids:
+        if not mid or str(mid) == skip:
+            continue
+        try:
+            detail = get_json(MATCH_URL + str(mid))
+        except Exception as e:  # noqa: BLE001
+            print("match lookup skipped", mid, e)
+            continue
+        winner = winner_from_detail(detail if isinstance(detail, dict) else {}, team_a, team_b)
+        if winner == team_a:
+            wins_a += 1
+        elif winner == team_b:
+            wins_b += 1
+        else:
+            continue
+    if wins_a or wins_b:
+        return f"{wins_a}-{wins_b}"
+    return None
+
+
+def overlay_series(games: list[dict], lp: dict[str, dict], playoffs: dict | None = None) -> dict[str, dict]:
+    """Fill series score/matchIds from OpenDota when Liquipedia lags or fails."""
+    out = {k: dict(v) for k, v in (lp or {}).items()}
+    blob = playoffs if playoffs is not None else load_playoffs()
+    live_ids = {game_match_id(g) for g in games or [] if is_active(g) and game_match_id(g)}
+    for match in blob.get("matches") or []:
+        mid = match.get("id")
+        team_a, team_b = match.get("teamA"), match.get("teamB")
+        if not mid or not isinstance(team_a, str) or not isinstance(team_b, str):
+            continue
+        pair = [g for g in games or [] if is_pair_game(g, team_a, team_b)]
+        ids = []
+        for game in pair:
+            gid = game_match_id(game)
+            if gid and gid not in ids:
+                ids.append(gid)
+        row = dict(out.get(mid) or {})
+        merged = list(dict.fromkeys([*(row.get("matchIds") or []), *ids]))
+        if merged:
+            row["matchIds"] = merged
+        skip = next((i for i in merged if i in live_ids), None)
+        score = score_from_finished_ids(merged, team_a, team_b, skip_id=skip)
+        if score and not row.get("score"):
+            row["score"] = score
+        if row:
+            out[mid] = row
+    return out
+
+
 def build_snapshot(raw: list[dict] | None = None, wikitext: str | None = None, skip_lp: bool = False) -> dict:
     raw = raw if raw is not None else get_json(LIVE_URL)
     games = ti_games(raw if isinstance(raw, list) else [])
@@ -183,6 +280,7 @@ def build_snapshot(raw: list[dict] | None = None, wikitext: str | None = None, s
             matches = lp_matches(wikitext)
         except Exception as e:  # noqa: BLE001
             print("lp parse skipped", e)
+    matches = overlay_series(games, matches)
     return {
         "asOf": datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S") + " CST",
         "source": LIVE_URL,
