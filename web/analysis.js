@@ -283,13 +283,17 @@ function renderBracket(data, opts = {}) {
     ? `开赛时间 ${String(data.playoffs.scheduleAsOf).replace(" CST", "")} 已跟液体百科核对`
     : "双败 · 总决赛 Bo5 · 其余 Bo3";
   const compact = Boolean(opts.compact);
-  return `<section class="${compact ? "bracket-home" : "series-block"}">
-    <div class="series-head"><h2>${compact ? "对阵图" : "淘汰赛对阵图"}</h2><div class="poly">${sched}</div></div>
+  const page = Boolean(opts.page);
+  const head = page
+    ? `<p class="section-lead">上面胜者组，下面败者组。点一场回到战局，倒计时换成那场。</p>`
+    : `<div class="series-head"><h2>${compact ? "对阵图" : "淘汰赛对阵图"}</h2><div class="poly">${sched}</div></div>
     ${
       compact
         ? '<p class="section-lead">上面胜者组，下面败者组。点一场，倒计时换成那场。</p>'
         : '<p class="section-lead">和液体百科同一张阶梯：上面胜者组往右晋级，下面败者组接住掉下来的队。金标是已排好的队，灰标是「谁赢谁进」。开赛时间以百科为准，主办方改点这里跟着改。</p>'
-    }
+    }`;
+  return `<section class="${compact || page ? "bracket-home" : "series-block"}">
+    ${head}
     <div class="ladder-legend">
       <span><i class="lg gold"></i>已排对阵</span>
       <span><i class="lg mute"></i>待填</span>
@@ -305,6 +309,7 @@ function renderBracket(data, opts = {}) {
         <div class="ladder lower">${lower}</div>
       </div>
     </div>
+    ${page ? `<p class="sched-foot">${sched} · 点一场回战局</p>` : ""}
   </section>`;
 }
 
@@ -1066,7 +1071,7 @@ function leanCall(teamA, teamB, pA, mktA) {
   };
 }
 
-function marketCard(title, teamA, teamB, pA, mktA, live) {
+function marketCard(title, teamA, teamB, pA, mktA, live, featured) {
   const p = pA ?? 0.5;
   const call = leanCall(teamA, teamB, p, mktA);
   const mktB = mktA == null ? null : 1 - mktA;
@@ -1074,7 +1079,7 @@ function marketCard(title, teamA, teamB, pA, mktA, live) {
     mktA != null
       ? `<div class="odds-stamp ${live ? "hot" : ""}">${live ? "实时 Polymarket" : "仓库快照"}</div>`
       : "";
-  return `<article class="market">
+  return `<article class="market${featured ? " feature" : ""}">
     <div class="m-label">${title}</div>
     <div class="m-pick">看好 ${call.lean}</div>
     <div class="side-row on"><span>${teamA}</span><span>${pct(p)} · ${decOdds(p)}</span></div>
@@ -1120,10 +1125,13 @@ function liveCalc(m, sim, br, nextGame, pSeriesA) {
   ].filter((s) => s.p != null);
   const seriesRow = marketRow(sim, "系列");
   const defaultOdds = seriesRow?.odds || br?.defaultOdds || 1.7;
-  const opts = sides.map((s, i) => `<option value="${i}">${s.label} · 门槛 ${decOdds(s.p)}</option>`).join("");
+  const defaultI = f10kDefaultIndex(sides, n);
+  const opts = sides
+    .map((s, i) => `<option value="${i}"${i === defaultI ? " selected" : ""}>${s.label} · 门槛 ${decOdds(s.p)}</option>`)
+    .join("");
   return `<section class="live-calc" id="live-calc" data-next="${n}" data-pseries="${pS ?? ""}">
     <h3>现场赔率对得上再下</h3>
-    <p class="hint">门槛是我们的概率换算出来的。你拿到的价高于门槛，才会出金额。</p>
+    <p class="hint">${n === 1 ? "第一局默认先填「先到 10 杀」。" : ""}门槛是我们的概率换算出来的。你拿到的价高于门槛，才会出金额。</p>
     <form class="calc-form" id="live-form">
       <label>本金（元）<input type="number" id="live-bank" min="1" step="1" value="${br?.start || 1000}"></label>
       <label>买哪边<select id="live-side">${opts}</select></label>
@@ -1271,7 +1279,7 @@ function renderSchedulePage(data, matchId) {
     <div class="arena-kicker">
       <span>上海 · 东方体育中心</span>
       <span>四天赛程</span>
-      <span>点一场回现场</span>
+      <span>点一场回战局</span>
     </div>
     <h1>赛程</h1>
     ${scheduleBoard(data, current, byId, known)}
@@ -1376,6 +1384,68 @@ function treeTeaser(data) {
   </button>`;
 }
 
+function f10kDefaultIndex(sides, nextGame) {
+  if (nextGame !== 1) return 0;
+  const hits = sides
+    .map((s, i) => ({ i, p: s.p || 0, ok: String(s.label || "").includes("先到 10 杀") }))
+    .filter((x) => x.ok);
+  if (!hits.length) return 0;
+  hits.sort((a, b) => b.p - a.p);
+  return hits[0].i;
+}
+
+function f10kTeamBits(row) {
+  const g1 = row?.g1 || {};
+  const all = row?.all || {};
+  if (!g1.n) return "系列第一局样本不够。";
+  const vs = all.rate != null ? `，自己全部局是 ${pct(all.rate)}` : "";
+  const conv = g1.convert != null ? `拿到之后赢图 ${pct(g1.convert)}。` : "";
+  const t = g1.avgTimeMin != null ? `先到时大约 ${g1.avgTimeMin} 分。` : "";
+  const mid = g1.mid ? `第一局中单常拿 ${g1.mid}。` : "";
+  return `系列第一局先到 10 杀 <b>${g1.got}/${g1.n}</b>（${pct(g1.rate)}）${vs}。${conv}${t}${mid}`;
+}
+
+function f10kStudyHtml(data, m, sim, nextGame) {
+  if (!namedSides(m) || !sim) return "";
+  const pA = (sim.maps && sim.maps[0] ? sim.maps[0].pF10A : null) ?? sim.pF10A;
+  if (pA == null) return "";
+  const leanA = pA >= 0.5;
+  const lean = leanA ? m.teamA : m.teamB;
+  const pLean = leanA ? pA : 1 - pA;
+  const report = data.f10kG1 || {};
+  const conv = report.overall?.g1?.rate;
+  const g1n = report.overall?.g1?.n;
+  const later = report.overall?.later?.rate;
+  const heading = nextGame === 1 ? "第一局谁先堆到 10 杀" : "他们系列第一局怎么先到 10 杀";
+  return `<section class="f10k-study">
+    <div class="arena-kicker"><span>研究</span><span>第一局 · 先到 10 杀</span><span>没有公开盘</span></div>
+    <h2>${heading}</h2>
+    <p class="lede">这一局模型看好 <b>${TAG[lean] || lean}</b> ${pct(pLean)} 先到 10 杀。TI+EWC 里第一局先到之后大约 <b>${pct(conv)}</b> 赢图${g1n ? `（${g1n} 局）` : ""}，后面的局大约 ${pct(later)}。大约三成先到了仍会输图，不要当低保。</p>
+    <div class="f10k-pair">
+      <article>${crest(m.teamA, "sm")}<h3>${TAG[m.teamA] || m.teamA}</h3><p>${f10kTeamBits(report.teams?.[m.teamA])}</p></article>
+      <article>${crest(m.teamB, "sm")}<h3>${TAG[m.teamB] || m.teamB}</h3><p>${f10kTeamBits(report.teams?.[m.teamB])}</p></article>
+    </div>
+    <p class="foot-note">${report.note || ""} ${report.sample || ""} Polymarket 这场没有先到 10 杀盘，现场价用手填。</p>
+  </section>`;
+}
+
+function renderBracketPage(data, matchId) {
+  const app = document.getElementById("app");
+  const demoBar = data.demo
+    ? `<div class="demo-banner"><b>${data.demo.title}</b> ${data.demo.note} <a href="./">回正式站</a></div>`
+    : "";
+  app.innerHTML = `<section class="sched-page">
+    ${demoBar}
+    <div class="arena-kicker">
+      <span>上海 · 东方体育中心</span>
+      <span>双败淘汰</span>
+      <span>点一场回战局</span>
+    </div>
+    <h1>对阵图</h1>
+    ${renderBracket(data, { page: true, focusId: matchId })}
+  </section>`;
+}
+
 function lastBoutHtml(prev) {
   if (!prev?.winner) return "";
   const other = prev.winner === prev.teamA ? prev.teamB : prev.teamA;
@@ -1459,15 +1529,20 @@ function renderNow(data, matchId) {
     sim && pMap != null && !seriesDone ? pSeriesAfter(pMap, wins.a, wins.b, need) : sim?.series?.pSeriesA;
   const nextMap = sim?.maps?.[nextGame - 1] || sim?.maps?.[0];
   const gMkt = seriesDone ? null : priceFromMarket(gameMarket(sim, nextGame), m.teamA);
+  const pF10 = nextMap?.pF10A ?? sim?.pF10A;
+  const f10Title = nextGame === 1 ? "第一局 · 先到 10 杀" : "先到 10 杀";
+  const f10Card = marketCard(f10Title, m.teamA, m.teamB, pF10, null, false, nextGame === 1 && !seriesDone);
+  const seriesCard = marketCard("系列", m.teamA, m.teamB, pSeriesNow, polyPrice(sim, m.teamA), live);
+  const mapCard = marketCard(`第${nextGame}局`, m.teamA, m.teamB, nextMap?.pWinA, gMkt, live);
   const markets =
     namedSides(m) && sim
       ? `<div class="markets">
-        ${marketCard("系列", m.teamA, m.teamB, pSeriesNow, polyPrice(sim, m.teamA), live)}
         ${
           seriesDone
-            ? marketCard("先到 10 杀", m.teamA, m.teamB, sim.pF10A, null, false)
-            : `${marketCard(`第${nextGame}局`, m.teamA, m.teamB, nextMap?.pWinA, gMkt, live)}
-               ${marketCard("先到 10 杀", m.teamA, m.teamB, nextMap?.pF10A ?? sim.pF10A, null, false)}`
+            ? seriesCard + marketCard("先到 10 杀", m.teamA, m.teamB, sim.pF10A, null, false)
+            : nextGame === 1
+              ? f10Card + mapCard + seriesCard
+              : seriesCard + mapCard + f10Card
         }
       </div>`
       : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
@@ -1495,7 +1570,7 @@ function renderNow(data, matchId) {
       ${oddsLinks(m)}
       ${markets}
     </div>
-    ${renderBracket(data, { compact: true, focusId: m.id })}
+    ${f10kStudyHtml(data, m, sim, seriesDone ? 1 : nextGame)}
     ${treeTeaser(data)}
     ${dailyHtml(data.daily)}
     ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}
@@ -1506,8 +1581,7 @@ function renderNow(data, matchId) {
 
 function historyItems(data) {
   return [
-    ["now", "回到现场"],
-    ["bracket", "对阵图"],
+    ["now", "回到战局"],
     ["predict", "预测明细"],
     ["series", "交手复盘"],
     ["stake", "注码说明"],
@@ -1586,7 +1660,7 @@ function setup(data) {
 
   const paint = () => {
     const keep = mode === "now" ? grabCalc() : null;
-    document.body.classList.toggle("is-archive", mode !== "now" && mode !== "sched" && mode !== "tree");
+    document.body.classList.toggle("is-archive", mode !== "now" && mode !== "bracket" && mode !== "sched" && mode !== "tree");
     if (menu) {
       for (const btn of menu.querySelectorAll("button[data-mode]")) {
         btn.classList.toggle("on", btn.dataset.mode === mode);
@@ -1601,6 +1675,11 @@ function setup(data) {
     if (mode === "now") {
       renderNow(data, matchId);
       restoreCalc(keep);
+      return;
+    }
+    if (mode === "bracket") {
+      clearInterval(clockTimer);
+      renderBracketPage(data, matchId);
       return;
     }
     if (mode === "sched") {
@@ -1619,7 +1698,7 @@ function setup(data) {
     render(data, mode === "all" ? "all" : mode, liveNote);
     app.insertAdjacentHTML(
       "afterbegin",
-      `<div class="archive-banner"><span>历史数据 · ${label}</span><button type="button" class="history-btn" data-back>回到现场</button></div>`
+      `<div class="archive-banner"><span>历史数据 · ${label}</span><button type="button" class="history-btn" data-back>回到战局</button></div>`
     );
     app.querySelector("[data-back]")?.addEventListener("click", () => {
       mode = "now";
@@ -1658,7 +1737,7 @@ function setup(data) {
       }
     }
     updateOddsStatus();
-    if (mode === "now" || mode === "sched" || mode === "tree") paint();
+    if (mode === "now" || mode === "bracket" || mode === "sched" || mode === "tree") paint();
   };
 
   const brand = document.querySelector(".topbar .brand");
@@ -1667,9 +1746,10 @@ function setup(data) {
     nav.className = "live-tabs";
     nav.id = "live-tabs";
     nav.setAttribute("role", "tablist");
-    nav.setAttribute("aria-label", "现场导航");
+    nav.setAttribute("aria-label", "观赛导航");
     nav.innerHTML =
-      '<button type="button" class="live-tab on" data-tab="now">现场</button>' +
+      '<button type="button" class="live-tab on" data-tab="now">战局</button>' +
+      '<button type="button" class="live-tab" data-tab="bracket">对阵图</button>' +
       '<button type="button" class="live-tab" data-tab="sched">赛程</button>' +
       '<button type="button" class="live-tab" data-tab="tree">走向</button>';
     brand.after(nav);
@@ -1684,8 +1764,8 @@ function setup(data) {
 
   if (menu) {
     const items = historyItems(data);
-    const top = items.slice(0, 6);
-    const teams = items.slice(6);
+    const top = items.slice(0, 5);
+    const teams = items.slice(5);
     menu.innerHTML =
       `<div class="hist-label">模型</div>` +
       top.map(([id, label]) => `<button type="button" data-mode="${id}">${label}</button>`).join("") +

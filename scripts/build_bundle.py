@@ -8,6 +8,8 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from f10k_g1 import build_report
+
 ROOT = Path(__file__).resolve().parents[1]
 EIGHT = [
     "TEAM VISION",
@@ -174,6 +176,7 @@ def main() -> None:
         "daily": daily,
         "simulations": sims,
         "ewc": json.loads((ROOT / "data" / "ewc.json").read_text()),
+        "f10kG1": build_report(),
         "series": series,
         "games": games,
     }
