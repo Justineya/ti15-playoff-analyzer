@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20T09:49Z",
+  "asOf": "2026-08-20T10:15Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -386,7 +386,7 @@
     {
       "slug": "dota2-vsn2-boombo-2026-08-20",
       "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 7190478.410152004,
+      "volume": 8805507.736143004,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
@@ -417,8 +417,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.943",
-            "0.057"
+            "0.9995",
+            "0.0005"
           ]
         },
         {
@@ -516,8 +516,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0.095",
+            "0.905"
           ]
         },
         {
@@ -527,8 +527,8 @@
             "No"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0.004",
+            "0.996"
           ]
         },
         {
@@ -560,8 +560,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.905",
+            "0.095"
           ]
         },
         {
@@ -571,8 +571,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.1",
+            "0.9"
           ]
         },
         {
@@ -582,8 +582,8 @@
             "No"
           ],
           "prices": [
-            "0.65",
-            "0.35"
+            "0.1",
+            "0.9"
           ]
         },
         {
@@ -593,8 +593,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.095",
+            "0.905"
           ]
         },
         {
@@ -604,8 +604,8 @@
             "No"
           ],
           "prices": [
-            "0.115",
-            "0.885"
+            "0.095",
+            "0.905"
           ]
         },
         {
@@ -615,8 +615,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.95",
-            "0.05"
+            "0.955",
+            "0.045"
           ]
         },
         {
@@ -714,8 +714,8 @@
             "TEAM VISION"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 325405.89884199994,
+      "volume": 434605.4044899999,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -798,8 +798,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.545",
+            "0.455"
           ]
         },
         {
@@ -820,8 +820,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.555",
-            "0.445"
+            "0.575",
+            "0.425"
           ]
         },
         {
@@ -842,8 +842,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.305",
-            "0.695"
+            "0.315",
+            "0.685"
           ]
         },
         {
@@ -853,8 +853,8 @@
             "No"
           ],
           "prices": [
-            "0.525",
-            "0.475"
+            "0.32",
+            "0.68"
           ]
         },
         {
@@ -864,8 +864,8 @@
             "No"
           ],
           "prices": [
-            "0.385",
-            "0.615"
+            "0.23",
+            "0.77"
           ]
         },
         {
@@ -886,8 +886,8 @@
             "No"
           ],
           "prices": [
-            "0.225",
-            "0.775"
+            "0.185",
+            "0.815"
           ]
         },
         {
@@ -897,8 +897,8 @@
             "No"
           ],
           "prices": [
-            "0.095",
-            "0.905"
+            "0.09",
+            "0.91"
           ]
         },
         {
@@ -919,8 +919,8 @@
             "No"
           ],
           "prices": [
-            "0.365",
-            "0.635"
+            "0.28",
+            "0.72"
           ]
         },
         {
@@ -941,8 +941,8 @@
             "No"
           ],
           "prices": [
-            "0.24",
-            "0.76"
+            "0.19",
+            "0.81"
           ]
         },
         {
@@ -952,8 +952,8 @@
             "No"
           ],
           "prices": [
-            "0.14",
-            "0.86"
+            "0.105",
+            "0.895"
           ]
         },
         {
@@ -996,8 +996,8 @@
             "No"
           ],
           "prices": [
-            "0.27",
-            "0.73"
+            "0.195",
+            "0.805"
           ]
         },
         {
@@ -1007,8 +1007,8 @@
             "No"
           ],
           "prices": [
-            "0.175",
-            "0.825"
+            "0.17",
+            "0.83"
           ]
         },
         {
@@ -1018,8 +1018,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.51",
-            "0.49"
+            "0.315",
+            "0.685"
           ]
         },
         {
@@ -1040,8 +1040,8 @@
             "Under"
           ],
           "prices": [
-            "0.32",
-            "0.68"
+            "0.305",
+            "0.695"
           ]
         },
         {
@@ -1051,8 +1051,8 @@
             "Under"
           ],
           "prices": [
-            "0.73",
-            "0.27"
+            "0.585",
+            "0.415"
           ]
         }
       ]
@@ -1060,7 +1060,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 269630.13579699997,
+      "volume": 271992.36938600003,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1080,8 +1080,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.375",
-            "0.625"
+            "0.385",
+            "0.615"
           ]
         },
         {
@@ -1157,8 +1157,8 @@
             "No"
           ],
           "prices": [
-            "0.21",
-            "0.79"
+            "0.225",
+            "0.775"
           ]
         },
         {
@@ -1212,8 +1212,8 @@
             "No"
           ],
           "prices": [
-            "0.2",
-            "0.8"
+            "0.215",
+            "0.785"
           ]
         },
         {
@@ -1267,8 +1267,8 @@
             "No"
           ],
           "prices": [
-            "0.23",
-            "0.77"
+            "0.22",
+            "0.78"
           ]
         },
         {
@@ -1289,8 +1289,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.435",
-            "0.565"
+            "0.485",
+            "0.515"
           ]
         },
         {
@@ -1324,6 +1324,735 @@
           "prices": [
             "0.55",
             "0.45"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dota2-boombo-ironwi-2026-08-13",
+      "title": "Dota 2: BoomBoys vs Iron Wing (BO3) - The International Group Stage",
+      "volume": 1620106.7364329996,
+      "markets": [
+        {
+          "question": "Dota 2: BoomBoys vs Iron Wing - Game 1 Winner",
+          "outcomes": [
+            "BoomBoys",
+            "Iron Wing"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Dota 2: BoomBoys vs Iron Wing - Game 2 Winner",
+          "outcomes": [
+            "BoomBoys",
+            "Iron Wing"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Dota 2: BoomBoys vs Iron Wing (BO3) - The International Group Stage",
+          "outcomes": [
+            "BoomBoys",
+            "Iron Wing"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Games Total: O/U 2.5",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game Handicap: BoomBoys (-1.5) vs Iron Wing (+1.5)",
+          "outcomes": [
+            "BoomBoys",
+            "Iron Wing"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "First Blood in Game 1?",
+          "outcomes": [
+            "BoomBoys",
+            "Iron Wing"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "First Blood in Game 2?",
+          "outcomes": [
+            "BoomBoys",
+            "Iron Wing"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 65.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 70.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game Handicap: Iron Wing (-1.5) vs BoomBoys (+1.5)",
+          "outcomes": [
+            "Iron Wing",
+            "BoomBoys"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 70.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 65.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dota2-vsn2-ts8-2026-08-15",
+      "title": "Dota 2: TEAM VISION vs Team Spirit (BO3) - The International Group Stage",
+      "volume": 3203607.3912160005,
+      "markets": [
+        {
+          "question": "Dota 2: TEAM VISION vs Team Spirit - Game 1 Winner",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Dota 2: TEAM VISION vs Team Spirit - Game 2 Winner",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Dota 2: TEAM VISION vs Team Spirit (BO3) - The International Group Stage",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Games Total: O/U 2.5",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game Handicap: VSN (-1.5) vs Team Spirit (+1.5)",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "First Blood in Game 1?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "First Blood in Game 2?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "First Blood in Game 3?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 3?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 1: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 45.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 45.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
           ]
         }
       ]
