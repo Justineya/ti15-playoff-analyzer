@@ -1,212 +1,91 @@
 {
-  "asOf": "2026-08-21 01:17 CST",
+  "asOf": "2026-08-21 01:49 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "next-map",
-  "headline": "第2局 NGX 赢了，先到10杀 NGX，40.1分钟。下一局第3局按上一局重算后看好 NGX（57%）。现场赔率至少 1.76。",
-  "narrative": "第2局 NGX 赢了，先到10杀 NGX，40.1分钟。上一局阵容 NGX Nature's Prophet、Mirana、Bounty Hunter / FLCN Centaur Warrunner、Clockwerk、Necrophos。下一局第3局按上一局重算后看好 NGX（57%）。现场赔率至少 1.76。系列现在看好 NGX（57%）。先到10杀看好 FLCN。本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit。",
-  "previousMap": {
-    "game": 2,
-    "matchId": 8955934230,
-    "winner": "Nigma Galaxy",
-    "score": [
-      40,
-      8
-    ],
-    "f10": "Nigma Galaxy",
-    "f10Time": 643,
-    "durationMin": 40.1,
-    "pace": "快",
-    "stance": "进攻转线",
-    "picks": {
-      "Nigma Galaxy": [
-        "Nature's Prophet",
-        "Mirana",
-        "Bounty Hunter",
-        "Dark Seer",
-        "Windranger"
-      ],
-      "Team Falcons": [
-        "Centaur Warrunner",
-        "Clockwerk",
-        "Necrophos",
-        "Jakiro",
-        "Alchemist"
-      ]
-    },
-    "mid": {
-      "Nigma Galaxy": "Nature's Prophet",
-      "Team Falcons": "Centaur Warrunner"
-    },
-    "blurb": "Nigma Galaxy先到 10 杀（当时 10-2，10分43秒）。这 10 次击杀里，中单 lorenof/Nature's Prophet 参与 4 次（击杀 4 + 助攻 0），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 2 杀。"
-  },
-  "previousMaps": [
-    {
-      "game": 1,
-      "matchId": 8955796155,
-      "winner": "Team Falcons",
-      "score": [
-        25,
-        8
-      ],
-      "f10": "Team Falcons",
-      "f10Time": 1534,
-      "durationMin": 41.7,
-      "pace": "慢",
-      "stance": "滚雪球",
-      "picks": {
-        "Team Falcons": [
-          "Centaur Warrunner",
-          "Shadow Demon",
-          "Mirana",
-          "Huskar",
-          "Sven"
-        ],
-        "Nigma Galaxy": [
-          "Nature's Prophet",
-          "Clockwerk",
-          "Dark Seer",
-          "Elder Titan",
-          "Lifestealer"
-        ]
-      },
-      "mid": {
-        "Team Falcons": "Centaur Warrunner",
-        "Nigma Galaxy": "Lifestealer"
-      },
-      "blurb": "Team Falcons先到 10 杀（当时 10-7，25分34秒）。这 10 次击杀里，中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。"
-    },
-    {
-      "game": 2,
-      "matchId": 8955934230,
-      "winner": "Nigma Galaxy",
-      "score": [
-        40,
-        8
-      ],
-      "f10": "Nigma Galaxy",
-      "f10Time": 643,
-      "durationMin": 40.1,
-      "pace": "快",
-      "stance": "进攻转线",
-      "picks": {
-        "Nigma Galaxy": [
-          "Nature's Prophet",
-          "Mirana",
-          "Bounty Hunter",
-          "Dark Seer",
-          "Windranger"
-        ],
-        "Team Falcons": [
-          "Centaur Warrunner",
-          "Clockwerk",
-          "Necrophos",
-          "Jakiro",
-          "Alchemist"
-        ]
-      },
-      "mid": {
-        "Nigma Galaxy": "Nature's Prophet",
-        "Team Falcons": "Centaur Warrunner"
-      },
-      "blurb": "Nigma Galaxy先到 10 杀（当时 10-2，10分43秒）。这 10 次击杀里，中单 lorenof/Nature's Prophet 参与 4 次（击杀 4 + 助攻 0），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 2 杀。"
-    }
-  ],
+  "kind": "preview",
+  "headline": "下一把 IW vs BB，看好 BB（系列 55%）。第1局看好 BB（51%）。",
+  "narrative": "下一把 IW vs BB，看好 BB（系列 55%）。第1局看好 BB（51%）。本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit。",
+  "previousMap": null,
+  "previousMaps": [],
   "nextMap": {
-    "game": 3,
-    "teamA": "Nigma Galaxy",
-    "teamB": "Team Falcons",
+    "game": 1,
+    "teamA": "Iron Wing",
+    "teamB": "BoomBoys",
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.569,
-      "pA": 0.569,
-      "pB": 0.431,
-      "breakEven": 1.76,
+      "team": "BoomBoys",
+      "tag": "BB",
+      "p": 0.51,
+      "pA": 0.49,
+      "pB": 0.51,
+      "breakEven": 1.96,
       "market": null,
-      "why": "本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "Team Falcons",
-      "tag": "FLCN",
-      "p": 0.612,
-      "pA": 0.388,
-      "pB": 0.612,
-      "breakEven": 1.63,
+      "team": "BoomBoys",
+      "tag": "BB",
+      "p": 0.51,
+      "pA": 0.49,
+      "pB": 0.51,
+      "breakEven": 1.96,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Nigma Galaxy",
-    "tag": "NGX",
-    "p": 0.567,
-    "pA": 0.567,
-    "pB": 0.433,
-    "breakEven": 1.76,
-    "market": {
-      "outcomes": [
-        "Nigma Galaxy",
-        "Team Falcons"
-      ],
-      "prices": [
-        0.395,
-        0.605
-      ]
-    },
-    "why": "本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+    "team": "BoomBoys",
+    "tag": "BB",
+    "p": 0.545,
+    "pA": 0.455,
+    "pB": 0.545,
+    "breakEven": 1.84,
+    "market": null,
+    "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
-    "id": "ubqf4",
-    "round": "胜者组首轮",
-    "day": "2026-08-20",
-    "when": "2026-08-20 21:20",
+    "id": "lbr1a",
+    "round": "败者组首轮",
+    "day": "2026-08-21",
+    "when": "2026-08-21 10:00",
     "format": "Bo3",
-    "teamA": "Nigma Galaxy",
-    "teamB": "Team Falcons",
-    "teamALabel": "Nigma Galaxy",
-    "teamBLabel": "Team Falcons",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Iron Wing",
+    "teamB": "BoomBoys",
+    "teamALabel": "Iron Wing",
+    "teamBLabel": "BoomBoys",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-ngx-flc-2026-08-20",
-    "mapsPlayed": 2,
+    "polySlug": "dota2-boombo-ironwi-2026-08-13",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.567,
-      "pA": 0.567,
-      "pB": 0.433,
-      "breakEven": 1.76,
-      "market": {
-        "outcomes": [
-          "Nigma Galaxy",
-          "Team Falcons"
-        ],
-        "prices": [
-          0.395,
-          0.605
-        ]
-      },
-      "why": "本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "team": "BoomBoys",
+      "tag": "BB",
+      "p": 0.545,
+      "pA": 0.455,
+      "pB": 0.545,
+      "breakEven": 1.84,
+      "market": null,
+      "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
-    "id": "ubqf4",
-    "round": "胜者组首轮",
-    "day": "2026-08-20",
-    "when": "2026-08-20 21:20",
+    "id": "lbr1a",
+    "round": "败者组首轮",
+    "day": "2026-08-21",
+    "when": "2026-08-21 10:00",
     "format": "Bo3",
-    "teamA": "Nigma Galaxy",
-    "teamB": "Team Falcons",
-    "teamALabel": "Nigma Galaxy",
-    "teamBLabel": "Team Falcons",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Iron Wing",
+    "teamB": "BoomBoys",
+    "teamALabel": "Iron Wing",
+    "teamBLabel": "BoomBoys",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-ngx-flc-2026-08-20",
-    "mapsPlayed": 2
+    "polySlug": "dota2-boombo-ironwi-2026-08-13",
+    "mapsPlayed": 0
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    8956096810
+  ]
 }

@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-21 00:15 CST",
+  "asOf": "2026-08-21 01:49 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -280,17 +280,20 @@
       "format": "Bo3",
       "teamA": "Nigma Galaxy",
       "teamB": "Team Falcons",
-      "status": "live",
+      "status": "completed",
       "polyTitle": "Nigma Galaxy vs Team Falcons",
       "polySlug": "dota2-ngx-flc-2026-08-20",
       "winnerTo": "ubsf2",
       "loserTo": "lbr1b",
-      "mapsPlayed": 2,
-      "score": "1-1",
+      "mapsPlayed": 3,
+      "score": "2-1",
       "matchIds": [
         8955796155,
-        8955934230
-      ]
+        8955934230,
+        8956096810
+      ],
+      "winner": "Nigma Galaxy",
+      "loser": "Team Falcons"
     },
     {
       "id": "lbr1a",
@@ -312,12 +315,11 @@
       "datetime": "2026-08-21 13:00",
       "format": "Bo3",
       "teamA": "Team Liquid",
-      "teamB": {
-        "from": "ubqf4",
-        "as": "loser"
-      },
-      "status": "awaiting",
-      "winnerTo": "lbqf2"
+      "teamB": "Team Falcons",
+      "status": "scheduled",
+      "winnerTo": "lbqf2",
+      "polyTitle": "Team Liquid vs Team Falcons",
+      "polySlug": "dota2-liquid-flc-2026-08-21"
     },
     {
       "id": "ubsf1",
@@ -340,13 +342,12 @@
       "datetime": "2026-08-21 19:00",
       "format": "Bo3",
       "teamA": "Team Yandex",
-      "teamB": {
-        "from": "ubqf4",
-        "as": "winner"
-      },
-      "status": "awaiting",
+      "teamB": "Nigma Galaxy",
+      "status": "scheduled",
       "winnerTo": "ubf",
-      "loserTo": "lbqf1"
+      "loserTo": "lbqf1",
+      "polyTitle": "Team Yandex vs Nigma Galaxy",
+      "polySlug": "dota2-ty-ngx-2026-08-21"
     },
     {
       "id": "lbqf1",
@@ -451,6 +452,6 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-21 01:17 CST",
+  "scheduleAsOf": "2026-08-21 01:49 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
 }
