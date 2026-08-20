@@ -1,63 +1,133 @@
 {
-  "asOf": "2026-08-20 21:56 CST",
+  "asOf": "2026-08-20 22:27 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 NGX vs FLCN，看好 NGX（系列 61%）。第1局看好 NGX（58%）。",
-  "narrative": "下一把 NGX vs FLCN，看好 NGX（系列 61%）。第1局看好 NGX（58%）。本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 FLCN 赢了，41.7分钟。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。",
+  "narrative": "第1局 FLCN 赢了，41.7分钟。上一局阵容 FLCN Centaur Warrunner、Shadow Demon、Mirana / NGX Nature's Prophet、Clockwerk、Dark Seer。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。系列现在看好 FLCN（77%）。先到10杀看好 FLCN。本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8955796155,
+    "winner": "Team Falcons",
+    "score": [
+      25,
+      8
+    ],
+    "f10": null,
+    "f10Time": null,
+    "durationMin": 41.7,
+    "pace": "未知",
+    "stance": "来回拉锯",
+    "picks": {
+      "Team Falcons": [
+        "Centaur Warrunner",
+        "Shadow Demon",
+        "Mirana",
+        "Huskar",
+        "Sven"
+      ],
+      "Nigma Galaxy": [
+        "Nature's Prophet",
+        "Clockwerk",
+        "Dark Seer",
+        "Elder Titan",
+        "Lifestealer"
+      ]
+    },
+    "mid": {
+      "Team Falcons": "Centaur Warrunner",
+      "Nigma Galaxy": "Nature's Prophet"
+    },
+    "blurb": "没有队伍先堆到 10 杀"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8955796155,
+      "winner": "Team Falcons",
+      "score": [
+        25,
+        8
+      ],
+      "f10": null,
+      "f10Time": null,
+      "durationMin": 41.7,
+      "pace": "未知",
+      "stance": "来回拉锯",
+      "picks": {
+        "Team Falcons": [
+          "Centaur Warrunner",
+          "Shadow Demon",
+          "Mirana",
+          "Huskar",
+          "Sven"
+        ],
+        "Nigma Galaxy": [
+          "Nature's Prophet",
+          "Clockwerk",
+          "Dark Seer",
+          "Elder Titan",
+          "Lifestealer"
+        ]
+      },
+      "mid": {
+        "Team Falcons": "Centaur Warrunner",
+        "Nigma Galaxy": "Nature's Prophet"
+      },
+      "blurb": "没有队伍先堆到 10 杀"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "Nigma Galaxy",
     "teamB": "Team Falcons",
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.577,
-      "pA": 0.577,
-      "pB": 0.423,
-      "breakEven": 1.73,
+      "team": "Team Falcons",
+      "tag": "FLCN",
+      "p": 0.535,
+      "pA": 0.465,
+      "pB": 0.535,
+      "breakEven": 1.87,
       "market": {
         "outcomes": [
           "Nigma Galaxy",
           "Team Falcons"
         ],
         "prices": [
-          0.345,
-          0.655
+          0.375,
+          0.625
         ]
       },
-      "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
     },
     "f10": {
       "team": "Team Falcons",
       "tag": "FLCN",
-      "p": 0.616,
-      "pA": 0.384,
-      "pB": 0.616,
-      "breakEven": 1.62,
+      "p": 0.615,
+      "pA": 0.385,
+      "pB": 0.615,
+      "breakEven": 1.63,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Nigma Galaxy",
-    "tag": "NGX",
-    "p": 0.606,
-    "pA": 0.606,
-    "pB": 0.394,
-    "breakEven": 1.65,
+    "team": "Team Falcons",
+    "tag": "FLCN",
+    "p": 0.77,
+    "pA": 0.23,
+    "pB": 0.77,
+    "breakEven": 1.3,
     "market": {
       "outcomes": [
         "Nigma Galaxy",
         "Team Falcons"
       ],
       "prices": [
-        0.315,
-        0.685
+        0.165,
+        0.835
       ]
     },
-    "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
+    "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Team Falcons",
     "teamALabel": "Nigma Galaxy",
     "teamBLabel": "Team Falcons",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ngx-flc-2026-08-20",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.606,
-      "pA": 0.606,
-      "pB": 0.394,
-      "breakEven": 1.65,
+      "team": "Team Falcons",
+      "tag": "FLCN",
+      "p": 0.77,
+      "pA": 0.23,
+      "pB": 0.77,
+      "breakEven": 1.3,
       "market": {
         "outcomes": [
           "Nigma Galaxy",
           "Team Falcons"
         ],
         "prices": [
-          0.315,
-          0.685
+          0.165,
+          0.835
         ]
       },
-      "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
+      "why": "本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
@@ -105,11 +175,11 @@
     "teamB": "Team Falcons",
     "teamALabel": "Nigma Galaxy",
     "teamBLabel": "Team Falcons",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ngx-flc-2026-08-20",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -161,5 +231,7 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8955796155
+  ]
 }

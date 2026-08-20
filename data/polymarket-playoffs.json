@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-20T13:56Z",
+  "asOf": "2026-08-20T14:27Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
       "slug": "dota2-ironwi-ts8-2026-08-19",
       "title": "Dota 2: Iron Wing vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 4848608.607904999,
+      "volume": 4848608.607905001,
       "markets": [
         {
           "question": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
@@ -386,7 +386,7 @@
     {
       "slug": "dota2-vsn2-boombo-2026-08-20",
       "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 9385804.276143,
+      "volume": 9385804.27614301,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 8264381.429454999,
+      "volume": 8291770.289454996,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -1040,8 +1040,8 @@
             "Under"
           ],
           "prices": [
-            "0.991",
-            "0.009"
+            "0.995",
+            "0.005"
           ]
         },
         {
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 3219099.7365639997,
+      "volume": 4109408.993173001,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1223,8 +1223,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.345",
-            "0.655"
+            "0.0105",
+            "0.9895"
           ]
         },
         {
@@ -1245,8 +1245,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.315",
-            "0.685"
+            "0.165",
+            "0.835"
           ]
         },
         {
@@ -1256,8 +1256,8 @@
             "Under"
           ],
           "prices": [
-            "0.465",
-            "0.535"
+            "0.395",
+            "0.605"
           ]
         },
         {
@@ -1267,8 +1267,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.41",
-            "0.59"
+            "0.61",
+            "0.39"
           ]
         },
         {
@@ -1289,8 +1289,8 @@
             "No"
           ],
           "prices": [
-            "0.335",
-            "0.665"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -1300,8 +1300,8 @@
             "No"
           ],
           "prices": [
-            "0.31",
-            "0.69"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -1311,8 +1311,8 @@
             "No"
           ],
           "prices": [
-            "0.29",
-            "0.71"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -1322,8 +1322,8 @@
             "No"
           ],
           "prices": [
-            "0.225",
-            "0.775"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -1465,8 +1465,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.255",
+            "0.745"
           ]
         },
         {
@@ -1504,6 +1504,17 @@
         },
         {
           "question": "Total Kills Over/Under 45.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 40.5 in Game 1?",
           "outcomes": [
             "Over",
             "Under"

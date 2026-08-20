@@ -1,5 +1,5 @@
-# TI15 局间战报 · 2026-08-20 21:56 CST
+# TI15 局间战报 · 2026-08-20 22:27 CST
 
-下一把 NGX vs FLCN，看好 NGX（系列 61%）。第1局看好 NGX（58%）。
+第1局 FLCN 赢了，41.7分钟。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。
 
-下一把 NGX vs FLCN，看好 NGX（系列 61%）。第1局看好 NGX（58%）。本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit。
+第1局 FLCN 赢了，41.7分钟。上一局阵容 FLCN Centaur Warrunner、Shadow Demon、Mirana / NGX Nature's Prophet、Clockwerk、Dark Seer。下一局第2局按上一局重算后看好 FLCN（54%）。现场赔率至少 1.87。系列现在看好 FLCN（77%）。先到10杀看好 FLCN。本届胜率 Nigma Galaxy 65% / Team Falcons 60%；先到10杀 44% / 57%；H2H 1.0 局；Nigma Galaxy 中单爱拿 Ember Spirit。
