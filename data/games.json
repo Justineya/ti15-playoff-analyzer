@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-20 21:56 CST",
-  "n": 87,
+  "asOf": "2026-08-20 22:29 CST",
+  "n": 88,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -26716,6 +26716,300 @@
         "mid_support": "天辉中单 Nisha/Windranger 参与 3 次（击杀2+助攻1），辅Boxi/Clockwerk 参与 0 次，中辅合计4；夜魇中单 CHIRA_JUNIOR/Slark 参与 4 次（击杀1+助攻3），辅Saksa/Bounty Hunter 参与 7 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8955653541",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8955796155,
+      "series_id": 1132197,
+      "start_time": 1787232121,
+      "duration": 2501,
+      "parsed": false,
+      "radiant": "Team Falcons",
+      "dire": "Nigma Galaxy",
+      "radiant_team_id": 9247354,
+      "dire_team_id": 10136357,
+      "winner": "Team Falcons",
+      "radiant_win": true,
+      "score": [
+        25,
+        8
+      ],
+      "pace": "未知",
+      "length": "偏长",
+      "stance": "来回拉锯",
+      "f10k": null,
+      "f10k_mid_share": 0,
+      "first_tower": null,
+      "gold": {
+        "m5": null,
+        "m10": null,
+        "m15": null,
+        "m20": null
+      },
+      "kills_8min": 0,
+      "kills_15min": 0,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 1,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 4,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 9,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 10,
+              "hero": "Dazzle",
+              "hero_id": 50
+            },
+            {
+              "order": 18,
+              "hero": "Viper",
+              "hero_id": 47
+            },
+            {
+              "order": 20,
+              "hero": "Clinkz",
+              "hero_id": 56
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 13,
+              "hero": "Shadow Demon",
+              "hero_id": 79
+            },
+            {
+              "order": 14,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 17,
+              "hero": "Huskar",
+              "hero_id": 59
+            },
+            {
+              "order": 22,
+              "hero": "Sven",
+              "hero_id": 18
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 1,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 13,
+              "hero": "Shadow Demon",
+              "hero_id": 79
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 5,
+              "hero": "Enchantress",
+              "hero_id": 58
+            },
+            {
+              "order": 6,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 11,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 19,
+              "hero": "Tiny",
+              "hero_id": 19
+            },
+            {
+              "order": 21,
+              "hero": "Alchemist",
+              "hero_id": 73
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 12,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 15,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 16,
+              "hero": "Elder Titan",
+              "hero_id": 103
+            },
+            {
+              "order": 23,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 12,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "Malr1ne",
+            "hero": "Centaur Warrunner",
+            "hero_id": 96,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 2,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "Sneyking",
+            "hero": "Mirana",
+            "kills": 1,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "Cr1t-",
+            "hero": "Shadow Demon",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "lorenof",
+            "hero": "Nature's Prophet",
+            "hero_id": 53,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 4,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "GH",
+            "hero": "Elder Titan",
+            "kills": 0,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "OmaR",
+            "hero": "Clockwerk",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Io、Keeper of the Light；前两手Centaur Warrunner、Shadow Demon；中单Centaur Warrunner第1手拿",
+          "dire": "一阶段禁Treant Protector、Earth Spirit；前两手Nature's Prophet、Clockwerk；中单Nature's Prophet第1手拿"
+        },
+        "pace": "未知节奏 / 偏长局（41分41秒）；先到10杀出现在 ?分",
+        "stance": "来回拉锯",
+        "f10k": "没有队伍先堆到 10 杀",
+        "mid_support": "天辉中单 Malr1ne/Centaur Warrunner 参与 0 次（击杀0+助攻0），辅Sneyking/Mirana 参与 0 次，中辅合计0；夜魇中单 lorenof/Nature's Prophet 参与 0 次（击杀0+助攻0），辅GH/Elder Titan 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8955796155",
       "source": "ti15",
       "patch": "7.41e"
     }
