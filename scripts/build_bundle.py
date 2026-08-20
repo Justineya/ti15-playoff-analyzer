@@ -11,6 +11,17 @@ from pathlib import Path
 from f10k_g1 import build_report
 from hero_pools import build_report as build_hero_pools
 
+
+def hero_index() -> dict:
+    rows = json.loads((ROOT / "data" / "heroes.json").read_text())
+    out = {}
+    for row in rows:
+        hid = row.get("id")
+        npc = str(row.get("name") or "")
+        slug = npc.replace("npc_dota_hero_", "") if npc else ""
+        out[str(hid)] = {"name": row.get("localized_name") or slug, "slug": slug}
+    return out
+
 ROOT = Path(__file__).resolve().parents[1]
 EIGHT = [
     "TEAM VISION",
@@ -189,6 +200,7 @@ def main() -> None:
         "f10kG1": build_report(),
         "iwSpiritH2h": load_iw_spirit_h2h(),
         "heroPools": build_hero_pools(),
+        "heroes": hero_index(),
         "series": series,
         "games": games,
     }
@@ -200,6 +212,7 @@ def main() -> None:
     js_path.write_text("window.TI15_DATA = " + payload + ";\n")
     css = (ROOT / "web" / "styles.css").read_text()
     odds_js = (ROOT / "web" / "odds.js").read_text()
+    live_js = (ROOT / "web" / "live.js").read_text()
     app_js = (ROOT / "web" / "analysis.js").read_text()
     poly_asof = poly.get("asOf", "2026-08-17")[:16].replace("T", " ")
     standalone = f"""<!DOCTYPE html>
@@ -229,6 +242,7 @@ def main() -> None:
   <footer><p>数据：OpenDota league 19719 · 市场：Polymarket {poly_asof} · 点「刷新赔率」拉最新 · 非投注建议</p></footer>
   <script>window.TI15_DATA = {payload};</script>
   <script>{odds_js}</script>
+  <script>{live_js}</script>
   <script>{app_js}</script>
 </body>
 </html>

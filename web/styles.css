@@ -813,6 +813,106 @@ footer a { color: var(--gold); }
 }
 .hero-chip.hot b { color: var(--gold); }
 .hero-pair p { margin: 0 0 8px; }
+.broadcast {
+  margin: 18px 0 4px;
+  padding: 14px 14px 12px;
+  background: #120f0c;
+  border: 1px solid rgba(201, 162, 39, 0.35);
+}
+.broadcast .arena-kicker { margin-bottom: 10px; }
+.bc-wait {
+  margin: 0;
+  color: #d8d1c0;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 4px 4px;
+}
+.bc-board {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+  align-items: center;
+}
+.bc-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.bc-side.right { justify-content: flex-end; }
+.bc-side b {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+.bc-kills {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
+}
+.bc-mid { text-align: center; }
+.bc-clock {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+.bc-f10k {
+  margin-top: 4px;
+  color: var(--mute);
+  font-size: 12px;
+}
+.bc-gold {
+  height: 6px;
+  background: #2a2722;
+  margin: 12px 0 6px;
+  overflow: hidden;
+}
+.bc-gold i {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+}
+.bc-gold-lab {
+  margin: 0 0 10px;
+  text-align: center;
+  color: #d8d1c0;
+  font-size: 13px;
+}
+.bc-rows { display: grid; gap: 8px; }
+.bc-line {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+.bc-hero {
+  background: #1c1914;
+  border: 1px solid var(--line);
+  min-height: 52px;
+  text-align: center;
+  overflow: hidden;
+}
+.bc-hero img {
+  display: block;
+  width: 100%;
+  height: 28px;
+  object-fit: cover;
+  object-position: center top;
+}
+.bc-hero span, .bc-hero.empty span {
+  display: block;
+  padding: 4px 2px 5px;
+  font-size: 11px;
+  color: #d8d1c0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bc-hero.empty {
+  display: grid;
+  place-items: center;
+  color: var(--mute);
+}
 .call {
   font-size: 13px;
   line-height: 1.45;

@@ -1578,6 +1578,117 @@ function heroesStudyHtml(data, m) {
   </section>`;
 }
 
+function goldLead(n) {
+  const v = Math.round(Number(n) || 0);
+  const mag = Math.abs(v);
+  const lab = mag >= 1000 ? `${(mag / 1000).toFixed(1)}k` : String(mag);
+  if (v === 0) return "经济持平";
+  return v > 0 ? `领先 ${lab}` : `落后 ${lab}`;
+}
+
+function liveClock(t) {
+  if (t == null || Number.isNaN(Number(t))) return "—";
+  const n = Math.round(Number(t));
+  if (n < 0) return `未出兵 ${mmss(Math.abs(n))}`;
+  return mmss(n);
+}
+
+function f10kLiveLine(scoreA, scoreB, teamA, teamB) {
+  if (scoreA >= 10 && scoreB < 10) return `${TAG[teamA] || teamA} 已经先到 10 杀`;
+  if (scoreB >= 10 && scoreA < 10) return `${TAG[teamB] || teamB} 已经先到 10 杀`;
+  if (scoreA >= 10 && scoreB >= 10) return "两边都过了 10 杀";
+  return `离 10 杀还差 ${Math.max(0, 10 - scoreA)} / ${Math.max(0, 10 - scoreB)}`;
+}
+
+function heroSlot(p) {
+  if (p.heroId && p.slug) {
+    return `<div class="bc-hero" title="${esc(p.name)} · ${esc(p.hero)}">
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${esc(p.slug)}.png" alt="${esc(p.hero)}" />
+      <span>${esc(p.name || p.hero)}</span>
+    </div>`;
+  }
+  return `<div class="bc-hero empty"><span>${esc(p.name || "未选")}</span></div>`;
+}
+
+function broadcastHtml(data, m) {
+  if (!namedSides(m)) return "";
+  const started = Boolean(
+    m.status === "live" || clockParts(m.datetime).live || clockParts(m.datetime).done
+  );
+  const feed = data.liveFeed;
+  const series = m.score ? `系列 ${m.score}` : m.format || "Bo3";
+  if (!feed) {
+    if (!started) return "";
+    return `<div class="broadcast" id="broadcast">
+      <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>没有画面</span></div>
+      <p class="bc-wait">正在拉这场的人头、用时和阵容…</p>
+    </div>`;
+  }
+  if (!feed.ok) {
+    if (!started) return "";
+    return `<div class="broadcast" id="broadcast">
+      <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>记分暂时连不上</span></div>
+      <p class="bc-wait">OpenDota 观战源没响应。局间或还没进房时也会空。</p>
+    </div>`;
+  }
+  if (feed.empty || !feed.game) {
+    if (!started) return "";
+    return `<div class="broadcast" id="broadcast">
+      <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>没有画面</span></div>
+      <p class="bc-wait">现在不在进房里。可能在局间，或观战延迟还没刷出来。</p>
+    </div>`;
+  }
+  const g = feed.game;
+  const delay = g.delay ? `延迟约 ${g.delay} 秒` : "观战延迟";
+  const leadWho = g.leadA > 80 ? TAG[m.teamA] || m.teamA : g.leadA < -80 ? TAG[m.teamB] || m.teamB : "";
+  const pct = Math.max(8, Math.min(92, 50 + (g.leadA / 8000) * 50));
+  return `<div class="broadcast on" id="broadcast" data-match="${esc(g.matchId)}">
+    <div class="arena-kicker">
+      <span>转播信息 · ${esc(g.phase)}</span>
+      <span>${esc(series)}</span>
+      <span>${esc(delay)} · 没有画面</span>
+    </div>
+    <div class="bc-board">
+      <div class="bc-side">
+        ${crest(m.teamA, "sm")}
+        <b>${TAG[m.teamA] || m.teamA}</b>
+        <span class="bc-kills">${g.scoreA}</span>
+      </div>
+      <div class="bc-mid">
+        <div class="bc-clock" id="bc-clock">${liveClock(g.gameTime)}</div>
+        <div class="bc-f10k">${f10kLiveLine(g.scoreA, g.scoreB, m.teamA, m.teamB)}</div>
+      </div>
+      <div class="bc-side right">
+        <span class="bc-kills">${g.scoreB}</span>
+        <b>${TAG[m.teamB] || m.teamB}</b>
+        ${crest(m.teamB, "sm")}
+      </div>
+    </div>
+    <div class="bc-gold"><i style="width:${pct}%"></i></div>
+    <p class="bc-gold-lab">${leadWho ? esc(leadWho) + " " : ""}${goldLead(g.leadA)}</p>
+    <div class="bc-rows">
+      <div class="bc-line">${(g.playersA || []).map(heroSlot).join("")}</div>
+      <div class="bc-line">${(g.playersB || []).map(heroSlot).join("")}</div>
+    </div>
+  </div>`;
+}
+
+let bcTimer = null;
+function armBcClock(game) {
+  clearInterval(bcTimer);
+  if (!game || game.phase !== "进行中") return;
+  let t = Number(game.gameTime || 0);
+  bcTimer = setInterval(() => {
+    const el = document.getElementById("bc-clock");
+    if (!el) {
+      clearInterval(bcTimer);
+      return;
+    }
+    t += 1;
+    el.textContent = liveClock(t);
+  }, 1000);
+}
+
 function renderBracketPage(data, matchId) {
   const app = document.getElementById("app");
   const demoBar = data.demo
@@ -1715,6 +1826,7 @@ function renderNow(data, matchId) {
         <div class="live-vs">VS</div>
         <div class="live-team">${namedSides(m) ? crest(m.teamB) : ""}<div class="tagline">${bTag || ""}</div><h2>${bName || "待定"}</h2></div>
       </div>
+      ${broadcastHtml(data, m)}
       ${why ? `<p class="live-why">${why}</p>` : ""}
       ${oddsLinks(m)}
       ${markets}
@@ -1727,6 +1839,7 @@ function renderNow(data, matchId) {
   </section>`;
   wireLiveCalc(sim);
   armClock();
+  armBcClock(data.liveFeed?.game);
 }
 
 function historyItems(data) {
@@ -1872,6 +1985,7 @@ function setup(data) {
       if (bundle.publishedAt) data.publishedAt = bundle.publishedAt;
       if (bundle.asOf) data.asOf = bundle.asOf;
       if (bundle.polySlugs) data.polySlugs = bundle.polySlugs;
+      if (bundle.heroes) data.heroes = bundle.heroes;
     } catch {}
   };
 
@@ -1972,8 +2086,31 @@ function setup(data) {
   paint();
   pullOdds();
   setInterval(pullOdds, 30000);
+
+  const pullLive = async () => {
+    if (document.hidden) return;
+    if (typeof window.TI15_LIVE?.fetchFeed !== "function") return;
+    const m = focusMatch(data.playoffs?.matches || [], matchId);
+    if (!namedSides(m)) return;
+    try {
+      data.liveFeed = await window.TI15_LIVE.fetchFeed(data, m.teamA, m.teamB);
+    } catch (err) {
+      data.liveFeed = { ok: false, error: String(err?.message || err) };
+    }
+    if (mode !== "now") return;
+    const html = broadcastHtml(data, m);
+    const el = document.getElementById("broadcast");
+    if (el && html) el.outerHTML = html;
+    else if (!el && html) document.querySelector(".live-teams")?.insertAdjacentHTML("afterend", html);
+    armBcClock(data.liveFeed?.game);
+  };
+  pullLive();
+  setInterval(pullLive, 12000);
   document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) pullOdds();
+    if (!document.hidden) {
+      pullOdds();
+      pullLive();
+    }
   });
 }
 
