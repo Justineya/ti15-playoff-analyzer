@@ -4,10 +4,10 @@
   "reason": "no new playoff map",
   "newMapIds": [],
   "series": {
-    "ubqf4": "2-1",
     "ubqf1": "0-2",
     "ubqf2": "2-1",
-    "ubqf3": "0-2"
+    "ubqf3": "0-2",
+    "ubqf4": "2-1"
   },
-  "asOf": "2026-08-21 02:17 CST"
+  "asOf": "2026-08-21 03:04 CST"
 }
