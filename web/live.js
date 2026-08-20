@@ -13,6 +13,81 @@
     BoomBoys: [8255888],
     "Team Yandex": [9823272],
   };
+  const MATCH = "https://api.opendota.com/api/matches/";
+  const seenIds = {};
+  const finishedCache = {};
+  const missAt = {};
+
+  function rememberId(teamA, teamB, id) {
+    id = String(id || "");
+    if (!id) return;
+    const k = `${teamA}|${teamB}`;
+    const arr = seenIds[k] || (seenIds[k] = []);
+    if (!arr.includes(id)) arr.push(id);
+  }
+
+  function knownIds(teamA, teamB, lp) {
+    const k = `${teamA}|${teamB}`;
+    return [...new Set([...(seenIds[k] || []), ...((lp && lp.matchIds) || [])].map(String).filter(Boolean))];
+  }
+
+  function winnerOfMatch(detail, teamA, teamB, idMap) {
+    if (!detail || typeof detail.radiant_win !== "boolean") return null;
+    const rad = Number(detail.radiant_team_id || detail.radiant_team?.team_id || 0);
+    const dire = Number(detail.dire_team_id || detail.dire_team?.team_id || 0);
+    const idsA = new Set(idMap?.[teamA] || EXTRA_IDS[teamA] || []);
+    const idsB = new Set(idMap?.[teamB] || EXTRA_IDS[teamB] || []);
+    let aIsRadiant = null;
+    if (idsA.has(rad) && idsB.has(dire)) aIsRadiant = true;
+    else if (idsA.has(dire) && idsB.has(rad)) aIsRadiant = false;
+    if (aIsRadiant == null) return null;
+    return (aIsRadiant ? detail.radiant_win : !detail.radiant_win) ? "A" : "B";
+  }
+
+  function scoreFromWinners(results) {
+    let a = 0;
+    let b = 0;
+    for (const w of results) {
+      if (w === "A") a += 1;
+      else if (w === "B") b += 1;
+    }
+    if (!a && !b) return null;
+    return `${a}-${b}`;
+  }
+
+  async function lookupFinished(id) {
+    id = String(id || "");
+    if (!id) return null;
+    if (finishedCache[id]) return finishedCache[id];
+    const now = Date.now();
+    if (missAt[id] && now - missAt[id] < 20000) return null;
+    try {
+      const m = await fetchJson(MATCH + id);
+      if (m && typeof m.radiant_win === "boolean") {
+        finishedCache[id] = m;
+        return m;
+      }
+    } catch {
+      /* match may still be unparsed */
+    }
+    missAt[id] = now;
+    return null;
+  }
+
+  async function finishedScore(teamA, teamB, lp, idMap) {
+    const ids = knownIds(teamA, teamB, lp);
+    if (!ids.length) return null;
+    const rows = await Promise.all(ids.map(lookupFinished));
+    const winners = [];
+    for (let i = 0; i < ids.length; i += 1) {
+      const w = winnerOfMatch(rows[i], teamA, teamB, idMap);
+      if (!w) break;
+      winners.push(w);
+    }
+    const score = scoreFromWinners(winners);
+    if (!score) return null;
+    return { score, maps: winners.length };
+  }
 
   function teamIdMap(playoffs) {
     const out = {};
@@ -155,8 +230,12 @@
       return { ok: false, error: String(err?.message || err), source: LIVE, polledAt };
     }
     const lp = (snap && snap.matches && matchId && snap.matches[matchId]) || null;
+    if (lp?.matchIds) {
+      for (const id of lp.matchIds) rememberId(teamA, teamB, id);
+    }
     const game = pickGame(games, teamA, teamB, idMap);
     if (!game) {
+      const finished = await finishedScore(teamA, teamB, lp, idMap);
       return {
         ok: true,
         empty: true,
@@ -165,11 +244,13 @@
         polledAt,
         datetime: lp?.datetime || null,
         series: lp,
+        finished,
       };
     }
     const summary = summarize(game, teamA, teamB, heroes, idMap);
+    rememberId(teamA, teamB, summary.matchId);
     return { ok: true, source, game: summary, polledAt, datetime: lp?.datetime || null, series: lp };
   }
 
-  window.TI15_LIVE = { fetchFeed, pickGame, summarize, teamIdMap, phaseOf, isActive };
+  window.TI15_LIVE = { fetchFeed, pickGame, summarize, teamIdMap, phaseOf, isActive, winnerOfMatch, scoreFromWinners };
 })();

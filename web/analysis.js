@@ -888,7 +888,7 @@ function clockParts(dt) {
 }
 
 function clockHtml(dt, info = {}) {
-  return `<div class="clock" id="clock" data-start="${dt || ""}" data-score="${info.score || ""}" data-next="${info.nextGame || ""}" data-live="${info.live ? "1" : ""}">
+  return `<div class="clock" id="clock" data-start="${dt || ""}" data-score="${info.score || ""}" data-next="${info.nextGame || ""}" data-live="${info.live ? "1" : ""}" data-gap="${info.gap ? "1" : ""}">
     <div class="clock-label" id="clock-label">开战倒计时 · 北京时间</div>
     <div class="clock-digits" id="clock-digits"></div>
     <div class="clock-kickoff">${whenNice(dt)} 开赛</div>
@@ -904,10 +904,14 @@ function paintClock() {
   if (p.live || root.dataset.live === "1") {
     const score = root.dataset.score || "";
     const next = root.dataset.next || "";
-    if (label) label.textContent = score ? `正在打 · ${score}` : "正在打";
+    const gap = root.dataset.gap === "1";
+    if (label) {
+      if (gap) label.textContent = score ? `局间 · ${score}` : "局间";
+      else label.textContent = score ? `正在打 · ${score}` : "正在打";
+    }
     digits.innerHTML = next
-      ? `<span class="live-pulse">LIVE</span><span class="clock-next">第${next}局</span>`
-      : '<span class="live-pulse">LIVE</span>';
+      ? `<span class="live-pulse">${gap ? "NEXT" : "LIVE"}</span><span class="clock-next">第${next}局</span>`
+      : `<span class="live-pulse">${gap ? "NEXT" : "LIVE"}</span>`;
     return;
   }
   if (p.done || p.missing) {
@@ -1021,6 +1025,90 @@ function needWins(fmt) {
   return String(fmt || "").toLowerCase() === "bo5" ? 3 : 2;
 }
 
+function scorePlayed(score) {
+  return seriesWins({ score }).played;
+}
+
+function preferScore(cur, next) {
+  if (!next) return cur || "";
+  if (!cur) return next;
+  return scorePlayed(next) >= scorePlayed(cur) ? next : cur;
+}
+
+function scoreFromLpMaps(series) {
+  const maps = series?.maps || [];
+  let a = 0;
+  let b = 0;
+  for (const row of maps) {
+    if (row.winner === 1) a += 1;
+    else if (row.winner === 2) b += 1;
+  }
+  if (!a && !b) return null;
+  return `${a}-${b}`;
+}
+
+function scoreFromSettledPoly(sim, teamA) {
+  if (!sim || !teamA) return null;
+  let a = 0;
+  let b = 0;
+  for (let n = 1; n <= 5; n += 1) {
+    const mkt = gameMarket(sim, n);
+    if (!mkt?.closed) break;
+    const pA = priceFromMarket(mkt, teamA);
+    if (pA == null) break;
+    if (pA >= 0.5) a += 1;
+    else b += 1;
+  }
+  if (!a && !b) return null;
+  return `${a}-${b}`;
+}
+
+function applyLiveSeries(m, feed, sim) {
+  if (!m) return false;
+  const before = `${m.score || ""}|${(m.matchIds || []).join(",")}`;
+  if (feed?.series?.matchIds?.length) {
+    const have = new Set((m.matchIds || []).map(String));
+    for (const id of feed.series.matchIds) {
+      if (id && !have.has(String(id))) {
+        m.matchIds = [...(m.matchIds || []), String(id)];
+        have.add(String(id));
+      }
+    }
+  }
+  let best = m.score || "";
+  for (const cand of [
+    scoreFromSettledPoly(sim, m.teamA),
+    feed?.finished?.score,
+    scoreFromLpMaps(feed?.series),
+    feed?.series?.score,
+  ]) {
+    best = preferScore(best, cand);
+  }
+  if (best) m.score = best;
+  return before !== `${m.score || ""}|${(m.matchIds || []).join(",")}`;
+}
+
+function mergePlayoffScores(prev, next) {
+  if (!next?.matches) return next;
+  const oldById = Object.fromEntries((prev?.matches || []).map((row) => [row.id, row]));
+  for (const m of next.matches) {
+    const old = oldById[m.id];
+    if (!old) continue;
+    const keep = preferScore(m.score, old.score);
+    if (keep) m.score = keep;
+    if ((old.matchIds || []).length && !(m.matchIds || []).length) m.matchIds = old.matchIds.slice();
+  }
+  return next;
+}
+
+function seriesState(m) {
+  const wins = seriesWins(m);
+  const need = needWins(m.format);
+  const seriesDone = m.status === "completed" || m.status === "complete" || wins.a >= need || wins.b >= need;
+  const nextGame = seriesDone ? 1 : wins.played + 1;
+  return { wins, need, seriesDone, nextGame };
+}
+
 function pSeriesAfter(pMap, winsA, winsB, need) {
   const memo = new Map();
   const walk = (a, b) => {
@@ -1131,7 +1219,11 @@ function liveCalc(m, sim, br, nextGame, pSeriesA) {
     .join("");
   return `<section class="live-calc" id="live-calc" data-next="${n}" data-pseries="${pS ?? ""}">
     <h3>现场赔率对得上再下</h3>
-    <p class="hint">${n === 1 ? "第一局默认先填「先到 10 杀」。" : ""}门槛是我们的概率换算出来的。你拿到的价高于门槛，才会出金额。</p>
+    <p class="hint">${
+      n === 1
+        ? "第一局默认先填「先到 10 杀」。门槛是我们的概率换算出来的。你拿到的价高于门槛，才会出金额。"
+        : `第一局已经打完。现在看第${n}局盘口；系列概率已按当前比分重算。门槛是我们的概率换算出来的。你拿到的价高于门槛，才会出金额。`
+    }</p>
     <form class="calc-form" id="live-form">
       <label>本金（元）<input type="number" id="live-bank" min="1" step="1" value="${br?.start || 1000}"></label>
       <label>买哪边<select id="live-side">${opts}</select></label>
@@ -1385,9 +1477,9 @@ function treeTeaser(data) {
 }
 
 function f10kDefaultIndex(sides, nextGame) {
-  if (nextGame !== 1) return 0;
+  const key = nextGame === 1 ? "先到 10 杀" : `赢第${nextGame}局`;
   const hits = sides
-    .map((s, i) => ({ i, p: s.p || 0, ok: String(s.label || "").includes("先到 10 杀") }))
+    .map((s, i) => ({ i, p: s.p || 0, ok: String(s.label || "").includes(key) }))
     .filter((x) => x.ok);
   if (!hits.length) return 0;
   hits.sort((a, b) => b.p - a.p);
@@ -1675,9 +1767,15 @@ function broadcastHtml(data, m) {
   }
   if (feed.empty || !feed.game) {
     if (!started) return "";
+    const wins = seriesWins(m);
+    const { seriesDone, nextGame } = seriesState(m);
+    const wait =
+      wins.played && !seriesDone
+        ? `第${wins.played}局已经打完（${lpScore || m.score}）。下面换成第${nextGame}局盘口，系列概率按比分重算。局间观战源会空。`
+        : "现在不在进房里。可能在局间，或观战延迟还没刷出来。";
     return `<div class="broadcast" id="broadcast">
-      <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>没有画面</span></div>
-      <p class="bc-wait">现在不在进房里。可能在局间，或观战延迟还没刷出来。</p>
+      <div class="arena-kicker"><span>转播信息</span><span>${series}</span><span>${wins.played && !seriesDone ? "局间" : "没有画面"}</span></div>
+      <p class="bc-wait">${wait}</p>
       ${stamp}
     </div>`;
   }
@@ -1775,6 +1873,15 @@ function lastBoutHtml(prev) {
 }
 
 function lastMapHtml(data, m, prevSeries) {
+  const lpDone = (data.liveFeed?.series?.maps || []).filter((row) => row.winner === 1 || row.winner === 2);
+  const lpLast = lpDone[lpDone.length - 1];
+  if (lpLast && namedSides(m)) {
+    const winner = lpLast.winner === 1 ? m.teamA : m.teamB;
+    return `<div class="last-bout">
+      <span class="k">上一局 · 第${lpLast.n || lpDone.length}局</span>
+      <span>${TAG[winner] || winner} 赢了</span>
+    </div>`;
+  }
   const ids = m?.matchIds || [];
   const byId = Object.fromEntries((data.games || []).map((g) => [g.match_id, g]));
   const maps = ids.map((id) => byId[id]).filter(Boolean);
@@ -1838,10 +1945,8 @@ function renderNow(data, matchId) {
   const aTag = namedSides(m) ? TAG[m.teamA] || m.teamA : resolveSide(m.teamA, byId).tag;
   const bTag = namedSides(m) ? TAG[m.teamB] || m.teamB : resolveSide(m.teamB, byId).tag;
   const live = Boolean(data.oddsLiveOk);
-  const wins = seriesWins(m);
-  const need = needWins(m.format);
-  const seriesDone = m.status === "completed" || m.status === "complete" || wins.a >= need || wins.b >= need;
-  const nextGame = seriesDone ? 1 : wins.played + 1;
+  applyLiveSeries(m, data.liveFeed, sim);
+  const { wins, need, seriesDone, nextGame } = seriesState(m);
   const pMap = sim?.pMapA;
   const pSeriesNow =
     sim && pMap != null && !seriesDone ? pSeriesAfter(pMap, wins.a, wins.b, need) : sim?.series?.pSeriesA;
@@ -1866,6 +1971,7 @@ function renderNow(data, matchId) {
       : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
   const why = shortWhy(sim);
   const inSeries = !seriesDone && wins.played > 0;
+  const intermission = inSeries && !data.liveFeed?.game;
   const demoBar = data.demo
     ? `<div class="demo-banner"><b>${data.demo.title}</b> ${data.demo.note} <a href="./">回正式站</a></div>`
     : "";
@@ -1877,7 +1983,7 @@ function renderNow(data, matchId) {
       <span>${m.round || ""}</span>
       <span>${m.format || "Bo3"}${wins.played ? " · " + (m.score || wins.a + "-" + wins.b) : ""}</span>
     </div>
-    ${clockHtml(m.datetime, { live: inSeries || m.status === "live", score: m.score || "", nextGame: seriesDone ? "" : nextGame })}
+    ${clockHtml(m.datetime, { live: inSeries || m.status === "live" || Boolean(data.liveFeed?.game), score: m.score || "", nextGame: seriesDone ? "" : nextGame, gap: intermission })}
     <div class="live-poster">
       <div class="live-teams">
         <div class="live-team">${namedSides(m) ? crest(m.teamA) : ""}<div class="tagline">${aTag || ""}</div><h2>${aName || "待定"}</h2></div>
@@ -2037,7 +2143,7 @@ function setup(data) {
       const r = await fetch("./data/bundle.json" + bust, { cache: "no-store" });
       if (!r.ok) return;
       const bundle = await r.json();
-      if (bundle.playoffs) data.playoffs = bundle.playoffs;
+      if (bundle.playoffs) data.playoffs = mergePlayoffScores(data.playoffs, bundle.playoffs);
       if (bundle.simulations) data.simulations = bundle.simulations;
       if (bundle.games) data.games = bundle.games;
       if (bundle.publishedAt) data.publishedAt = bundle.publishedAt;
@@ -2150,6 +2256,8 @@ function setup(data) {
     if (typeof window.TI15_LIVE?.fetchFeed !== "function") return;
     const m = focusMatch(data.playoffs?.matches || [], matchId);
     if (!namedSides(m)) return;
+    const sim = findSim(indexSims(data), m);
+    const before = `${m.score || ""}|${seriesState(m).nextGame}`;
     try {
       data.liveFeed = await window.TI15_LIVE.fetchFeed(data, m.teamA, m.teamB, m.id);
     } catch (err) {
@@ -2157,13 +2265,24 @@ function setup(data) {
     }
     if (data.liveFeed?.datetime && data.liveFeed.datetime !== m.datetime) {
       m.datetime = data.liveFeed.datetime;
-      const clock = document.getElementById("clock");
-      if (clock) clock.dataset.start = m.datetime;
     }
-    if (data.liveFeed?.series?.score && !m.score) {
-      m.score = data.liveFeed.series.score;
+    const progressed = applyLiveSeries(m, data.liveFeed, sim);
+    const after = `${m.score || ""}|${seriesState(m).nextGame}`;
+    const clock = document.getElementById("clock");
+    if (clock) {
+      if (data.liveFeed?.datetime) clock.dataset.start = m.datetime;
+      const st = seriesState(m);
+      const inSeries = !st.seriesDone && st.wins.played > 0;
+      clock.dataset.score = m.score || "";
+      clock.dataset.next = st.seriesDone ? "" : String(st.nextGame);
+      clock.dataset.live = inSeries || m.status === "live" || data.liveFeed?.game ? "1" : "";
+      clock.dataset.gap = inSeries && !data.liveFeed?.game ? "1" : "";
     }
     if (mode !== "now") return;
+    if (progressed || before !== after) {
+      paint();
+      return;
+    }
     const html = broadcastHtml(data, m);
     const el = document.getElementById("broadcast");
     if (el && html) el.outerHTML = html;

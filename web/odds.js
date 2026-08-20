@@ -28,7 +28,12 @@
   function normalizeMarket(m) {
     const outcomes = parseField(m.outcomes);
     const prices = parseField(m.outcomePrices || m.prices).map(Number);
-    return { question: m.question || "", outcomes, prices };
+    return {
+      question: m.question || "",
+      outcomes,
+      prices,
+      closed: m.closed === true,
+    };
   }
 
   function polyMarkets(event) {
@@ -139,18 +144,39 @@
     return { pick: `${plusTeam} +1.5`, modelP: pPlus, marketP: pricePlus };
   }
 
-  function bettingCard(sim, poly, sampleN) {
+  function matchForSim(data, sim) {
+    return (data.playoffs?.matches || []).find(
+      (m) => m.id === sim.id || (m.teamA === sim.teamA && m.teamB === sim.teamB)
+    );
+  }
+
+  function nextGameForSim(data, sim) {
+    const m = matchForSim(data, sim);
+    if (!m) return 1;
+    const raw = String(m.score || "");
+    const hit = raw.match(/^(\d+)\s*[-:]\s*(\d+)$/);
+    if (!hit) return 1;
+    const a = Number(hit[1]);
+    const b = Number(hit[2]);
+    const need = String(m.format || "").toLowerCase() === "bo5" ? 3 : 2;
+    if (a >= need || b >= need) return 1;
+    return a + b + 1;
+  }
+
+  function bettingCard(sim, poly, sampleN, nextGame) {
     const a = sim.teamA;
     const b = sim.teamB;
     const series = sim.series;
+    const n = nextGame || 1;
+    const map = sim.maps[n - 1] || sim.maps[0];
     const g1 = sim.maps[0];
     const h2hN = g1?.sims?.[0]?.h2hGames || 0;
     const m = poly || {};
     const rows = [];
     let side = bestSide(series.pSeriesA, series.pSeriesB, m.series, a, b);
     rows.push(roiRow("系列胜者", side.pick, side.modelP, side.marketP, sampleN, h2hN));
-    side = bestSide(g1.pWinA, g1.pWinB, m.g1, a, b);
-    rows.push(roiRow("第一局", side.pick, side.modelP, side.marketP, sampleN, h2hN));
+    side = bestSide(map.pWinA, map.pWinB, m["g" + n] || (n === 1 ? m.g1 : null), a, b);
+    rows.push(roiRow(n === 1 ? "第一局" : `第${n}局`, side.pick, side.modelP, side.marketP, sampleN, h2hN));
     if (m.ou25) {
       const overP = m.ou25.outcomes[0].toLowerCase().startsWith("over") ? m.ou25.prices[0] : m.ou25.prices[1];
       const underP = 1 - overP;
@@ -237,7 +263,7 @@
       const markets = polyMarkets(event);
       sim.poly = markets;
       sim.polyLive = seriesPolyFromMarkets(event);
-      sim.betting = bettingCard(sim, markets, sampleN(data, sim.teamA, sim.teamB));
+      sim.betting = bettingCard(sim, markets, sampleN(data, sim.teamA, sim.teamB), nextGameForSim(data, sim));
     }
 
     for (const s of data.series || []) {
@@ -268,5 +294,5 @@
     return `${pad(d.getUTCMonth() + 1)}/${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
   }
 
-  window.TI15_ODDS = { refreshOdds, formatAsOf, polyMarkets, bettingCard };
+  window.TI15_ODDS = { refreshOdds, formatAsOf, polyMarkets, bettingCard, nextGameForSim };
 })();

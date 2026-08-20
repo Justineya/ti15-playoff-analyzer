@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+"""Game 2 card: series p after G1, and OpenDota winner → score."""
+from __future__ import annotations
+
+import subprocess
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def p_series_after(p_map: float, wins_a: int, wins_b: int, need: int = 2) -> float:
+    memo: dict[tuple[int, int], float] = {}
+
+    def walk(a: int, b: int) -> float:
+        key = (a, b)
+        if key in memo:
+            return memo[key]
+        if a >= need:
+            v = 1.0
+        elif b >= need:
+            v = 0.0
+        else:
+            v = p_map * walk(a + 1, b) + (1 - p_map) * walk(a, b + 1)
+        memo[key] = v
+        return v
+
+    return walk(wins_a, wins_b)
+
+
+def next_game(score: str, fmt: str = "Bo3") -> int:
+    if not score or "-" not in score:
+        return 1
+    a_s, b_s = score.replace(":", "-").split("-", 1)
+    a, b = int(a_s), int(b_s)
+    need = 3 if fmt.lower() == "bo5" else 2
+    if a >= need or b >= need:
+        return 1
+    return a + b + 1
+
+
+def test_bo3_switches_to_game_2() -> None:
+    assert next_game("") == 1
+    assert next_game("0-1") == 2
+    assert next_game("1-0") == 2
+    assert next_game("1-1") == 3
+    assert next_game("2-0") == 1
+    assert next_game("0-2") == 1
+
+
+def test_series_p_after_g1_loss_is_map_squared() -> None:
+    # Bo3, trail 0-1: must win both remaining maps.
+    assert abs(p_series_after(0.5, 0, 1) - 0.25) < 1e-9
+    assert abs(p_series_after(0.4, 0, 1) - 0.16) < 1e-9
+    assert abs(p_series_after(0.5, 1, 0) - 0.75) < 1e-9
+
+
+def test_opendota_spirit_radiant_win_is_0_1() -> None:
+    script = r"""
+global.window = global;
+const fs = require("fs");
+const path = require("path");
+eval(fs.readFileSync(path.join("web", "live.js"), "utf8"));
+const idMap = { "Iron Wing": [10150413], "Team Spirit": [7119388] };
+const w = window.TI15_LIVE.winnerOfMatch(
+  { radiant_win: true, radiant_team_id: 7119388, dire_team_id: 10150413 },
+  "Iron Wing",
+  "Team Spirit",
+  idMap
+);
+if (w !== "B") {
+  console.error("expected B (Spirit), got", w);
+  process.exit(1);
+}
+if (window.TI15_LIVE.scoreFromWinners(["B"]) !== "0-1") process.exit(2);
+if (window.TI15_LIVE.scoreFromWinners(["A", "B"]) !== "1-1") process.exit(3);
+if (window.TI15_LIVE.winnerOfMatch({ radiant_win: true }, "Iron Wing", "Team Spirit", idMap) !== null) process.exit(4);
+"""
+    proc = subprocess.run(["node", "-e", script], cwd=ROOT, check=False, capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise AssertionError(proc.stderr or proc.stdout or f"exit {proc.returncode}")
+
+
+if __name__ == "__main__":
+    test_bo3_switches_to_game_2()
+    test_series_p_after_g1_loss_is_map_squared()
+    test_opendota_spirit_radiant_win_is_0_1()
+    print("test_g2_odds ok")

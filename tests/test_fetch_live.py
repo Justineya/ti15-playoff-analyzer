@@ -91,10 +91,42 @@ def test_lp_match_reads_kickoff_and_matchid() -> None:
     assert parsed["score"] is None
 
 
+def test_lp_map1_winner_sets_score() -> None:
+    body = """
+|opponent1={{TeamOpponent|Iron Wing}}
+|date=August 20, 2026 - 10:30 {{Abbr/CST}}
+|matchid1=8955197224
+|map1={{Map
+|t1h1=Hoodwink|t1h2=|t1h3=|t1h4=|t1h5=
+|t2h1=Drow Ranger|t2h2=|t2h3=|t2h4=|t2h5=
+|length=48:12|winner=2
+}}
+|map2={{Map
+|winner=
+}}
+"""
+    parsed = parse_lp_match(body)
+    assert parsed["score"] == "0-1"
+    assert parsed["maps"][0]["winner"] == 2
+    assert parsed["maps"][1]["winner"] is None
+
+
+def test_lp_map1_iron_wing_win_is_1_0() -> None:
+    body = """
+|matchid1=1
+|map1={{Map
+|length=30:00|winner=1
+}}
+"""
+    assert parse_lp_match(body)["score"] == "1-0"
+
+
 if __name__ == "__main__":
     test_picks_iw_spirit_by_team_id()
     test_ignores_pubs_and_other_series()
     test_ti_games_keeps_league_and_eight()
     test_skips_deactivated_lobby()
     test_lp_match_reads_kickoff_and_matchid()
+    test_lp_map1_winner_sets_score()
+    test_lp_map1_iron_wing_win_is_1_0()
     print("test_fetch_live ok")
