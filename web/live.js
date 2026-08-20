@@ -118,9 +118,18 @@
     });
   }
 
+  function gameClock(g) {
+    return Number(g.game_time ?? g.gameTime ?? 0);
+  }
+
   function pickGame(games, teamA, teamB, idMap) {
     const active = pairGames(games, teamA, teamB, idMap).filter(isActive);
-    return active[0] || null;
+    if (!active.length) return null;
+    return active.slice().sort((a, b) => {
+      const clock = gameClock(a) - gameClock(b);
+      if (clock) return clock;
+      return String(a.match_id ?? a.matchId ?? "").localeCompare(String(b.match_id ?? b.matchId ?? ""));
+    })[0];
   }
 
   function mergeGames(primary, extra) {

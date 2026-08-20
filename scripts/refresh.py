@@ -26,10 +26,12 @@ def main() -> None:
     run("resolve_bracket.py")
     run("fetch_polymarket.py")
     run("simulate_playoffs.py")
-    run("daily_briefing.py")
-    # OpenDota 429 must not throw away the G1→G2 briefing already written.
+    # Fresh live.json first so the briefing can switch to Game N+1 from LP score.
     run("fetch_live.py", required=False)
+    run("daily_briefing.py")
+    run("map_trigger.py")
     run("build_bundle.py")
+    run("launch_eod_cursor.py", required=False)
     print("refresh ok")
 
 

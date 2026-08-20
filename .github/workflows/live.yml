@@ -28,12 +28,37 @@ jobs:
           python-version: "3.12"
       - name: Snapshot live scoreboard
         run: python3 scripts/fetch_live.py
+      - name: Detect a finished map
+        id: map
+        run: |
+          python3 scripts/map_trigger.py
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          p = Path("data/cursor-launch.json")
+          blob = json.loads(p.read_text()) if p.exists() else {}
+          launch = "yes" if blob.get("launch") else "no"
+          fresh = "yes" if blob.get("fresh") else "no"
+          print("launch", launch, "fresh", fresh, blob.get("reason") or "")
+          with Path(os.environ["GITHUB_OUTPUT"]).open("a") as f:
+              f.write(f"launch={launch}\n")
+              f.write(f"fresh={fresh}\n")
+          PY
+      - name: Rewrite Game N+1 briefing
+        if: steps.map.outputs.fresh == 'yes'
+        run: python3 scripts/daily_briefing.py
+      - name: Launch Cursor agent for the next map
+        if: steps.map.outputs.launch == 'yes'
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: python3 scripts/launch_eod_cursor.py
       - name: Commit if the lobby moved
         id: commit
         run: |
           git config user.name "ti15-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/data/live.json
+          git add web/data/live.json web/data/daily.json web/data/daily.md data/briefing-state.json data/cursor-launch.json
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "no live changes"

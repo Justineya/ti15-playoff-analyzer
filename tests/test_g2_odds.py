@@ -93,6 +93,19 @@ if (window.TI15_LIVE.pickGame(
   "Team Spirit",
   idMap
 )) process.exit(6);
+const g2pick = window.TI15_LIVE.pickGame(
+  [
+    { match_id: "8955304019", deactivate_time: 0, game_time: 4524, team_id_radiant: 8255888, team_id_dire: 9572001 },
+    { match_id: "8955383956", deactivate_time: 0, game_time: -10, team_id_radiant: 9572001, team_id_dire: 8255888 },
+  ],
+  "TEAM VISION",
+  "BoomBoys",
+  { "TEAM VISION": [9572001], BoomBoys: [8255888] }
+);
+if (!g2pick || String(g2pick.match_id) !== "8955383956") {
+  console.error("expected G2 picking lobby, got", g2pick && g2pick.match_id);
+  process.exit(7);
+}
 """
     proc = subprocess.run(["node", "-e", script], cwd=ROOT, check=False, capture_output=True, text=True)
     if proc.returncode != 0:

@@ -136,6 +136,29 @@ def test_pick_game_skips_finished_g1_when_g2_is_live() -> None:
     assert pick_game([g1], "Iron Wing", "Team Spirit") is None
 
 
+def test_pick_game_prefers_g2_picking_while_g1_still_active() -> None:
+    g1 = sample_live(
+        match_id="8955304019",
+        game_time=4524,
+        deactivate_time=0,
+        team_id_radiant=8255888,
+        team_id_dire=9572001,
+        team_name_radiant="BoomBoys",
+        team_name_dire="TEAM VISION",
+    )
+    g2 = sample_live(
+        match_id="8955383956",
+        game_time=-10,
+        deactivate_time=0,
+        team_id_radiant=9572001,
+        team_id_dire=8255888,
+        team_name_radiant="TEAM VISION",
+        team_name_dire="BoomBoys",
+    )
+    hit = pick_game([g1, g2], "TEAM VISION", "BoomBoys")
+    assert str(hit["match_id"]) == "8955383956"
+
+
 def test_overlay_series_sets_spirit_g1_win() -> None:
     games = [
         {"matchId": "8955197224", "deactivateTime": 9, "radiant": {"id": 7119388}, "dire": {"id": 10150413}},
@@ -178,6 +201,7 @@ if __name__ == "__main__":
     test_lp_map1_winner_sets_score()
     test_lp_map1_iron_wing_win_is_1_0()
     test_pick_game_skips_finished_g1_when_g2_is_live()
+    test_pick_game_prefers_g2_picking_while_g1_still_active()
     test_overlay_series_sets_spirit_g1_win()
     test_overlay_keeps_lp_score_without_http()
     print("test_fetch_live ok")

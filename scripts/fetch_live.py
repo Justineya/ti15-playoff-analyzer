@@ -65,23 +65,35 @@ def is_active(game: dict) -> bool:
     return int(game.get("deactivate_time") or game.get("deactivateTime") or 0) <= 0
 
 
+def game_clock(game: dict) -> int:
+    return int(game.get("game_time") or game.get("gameTime") or 0)
+
+
 def pick_game(games: list[dict], team_a: str, team_b: str) -> dict | None:
+    """Prefer the newest map. OpenDota often keeps G1 'active' after G2 picking starts."""
     want_a = ids_for(team_a)
     want_b = ids_for(team_b)
     active = [g for g in games or [] if is_active(g)]
-    pool = active
-    for game in pool:
-        rad = int(game.get("team_id_radiant") or 0)
-        dire = int(game.get("team_id_dire") or 0)
+    hits: list[dict] = []
+    for game in active:
+        rad = int(game.get("team_id_radiant") or (game.get("radiant") or {}).get("id") or 0)
+        dire = int(game.get("team_id_dire") or (game.get("dire") or {}).get("id") or 0)
         if (rad in want_a and dire in want_b) or (rad in want_b and dire in want_a):
-            return game
-    for game in pool:
-        if int(game.get("league_id") or 0) != TI_LEAGUE:
-            continue
-        names = {ID_TO_TEAM.get(int(game.get("team_id_radiant") or 0)), ID_TO_TEAM.get(int(game.get("team_id_dire") or 0))}
-        if {team_a, team_b} <= names:
-            return game
-    return None
+            hits.append(game)
+    if not hits:
+        for game in active:
+            if int(game.get("league_id") or 0) != TI_LEAGUE:
+                continue
+            names = {
+                ID_TO_TEAM.get(int(game.get("team_id_radiant") or 0)),
+                ID_TO_TEAM.get(int(game.get("team_id_dire") or 0)),
+            }
+            if {team_a, team_b} <= names:
+                hits.append(game)
+    if not hits:
+        return None
+    hits.sort(key=lambda g: (game_clock(g), str(g.get("match_id") or g.get("matchId") or "")))
+    return hits[0]
 
 
 HERO_RE = re.compile(r"\|t([12])h(\d+)=([^\|\n}]+)")
@@ -169,6 +181,7 @@ def compact_game(game: dict) -> dict:
         "lastUpdate": game.get("last_update_time"),
         "deactivateTime": int(game.get("deactivate_time") or 0),
         "gameMode": game.get("game_mode"),
+        "radiantWin": game.get("radiant_win") if isinstance(game.get("radiant_win"), bool) else None,
         "radiant": {
             "id": rad,
             "name": ID_TO_TEAM.get(rad) or game.get("team_name_radiant") or "Radiant",

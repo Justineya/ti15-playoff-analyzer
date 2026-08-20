@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """After each finished map: last result + next map/series lean.
 
-Writes web/data/daily.json and data/cursor-launch.json (launch Cursor only
-when a new playoff map appears).
+Writes web/data/daily.json. Cursor launch flags live in map_trigger.py
+(live.json score / G2 lobby, not only parsed games.json).
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CST = timezone(timedelta(hours=8))
 PLAYOFF_START = datetime(2026, 8, 20, 0, 0, tzinfo=CST)
 STATE_PATH = ROOT / "data" / "briefing-state.json"
-LAUNCH_PATH = ROOT / "data" / "cursor-launch.json"
+LIVE_PATH = ROOT / "web" / "data" / "live.json"
 TAG = {
     "TEAM VISION": "VSN",
     "Team Liquid": "Liquid",
@@ -71,12 +71,61 @@ def find_sim(known: dict[str, dict], match: dict) -> dict | None:
 def parse_score(match: dict) -> tuple[int, int]:
     raw = str(match.get("score") or "")
     if "-" in raw:
-        left, right = raw.split("-", 1)
+        left, right = raw.replace(":", "-").split("-", 1)
         try:
             return int(left.strip()), int(right.strip())
         except ValueError:
             pass
     return 0, 0
+
+
+def load_live() -> dict:
+    if not LIVE_PATH.exists():
+        return {}
+    try:
+        return json.loads(LIVE_PATH.read_text())
+    except json.JSONDecodeError:
+        return {}
+
+
+def apply_live_overlay(match: dict, live: dict) -> dict:
+    """Use live.json series score so Game 2 briefing does not wait for ingest."""
+    m = dict(match)
+    row = (live.get("matches") or {}).get(m.get("id")) or {}
+    live_score = row.get("score")
+    if maps_played_score(live_score) >= maps_played_score(m.get("score")) and live_score:
+        m["score"] = live_score
+    ids = []
+    for mid in [*(m.get("matchIds") or []), *(row.get("matchIds") or [])]:
+        s = str(mid) if mid else ""
+        if s and s not in ids:
+            ids.append(s)
+    if ids:
+        m["matchIds"] = ids
+    if row.get("maps"):
+        m["liveMaps"] = row["maps"]
+    wins_a, wins_b = parse_score(m)
+    if wins_a + wins_b:
+        m["mapsPlayed"] = wins_a + wins_b
+        if m.get("status") == "scheduled":
+            m["status"] = "live"
+    return m
+
+
+def maps_played_score(score) -> int:
+    a, b = parse_score({"score": score})
+    return a + b
+
+
+def winner_of_played_map(match: dict, n: int) -> str | None:
+    a, b = match.get("teamA"), match.get("teamB")
+    for row in match.get("liveMaps") or []:
+        if int(row.get("n") or 0) == n and row.get("winner") in (1, 2):
+            return a if row["winner"] == 1 else b
+    wins_a, wins_b = parse_score(match)
+    if n == 1 and wins_a + wins_b == 1:
+        return a if wins_a == 1 else b
+    return None
 
 
 def short_why(sim: dict | None) -> str:
@@ -205,8 +254,9 @@ def main() -> None:
     playoffs = load("playoffs.json")
     sims = load("simulations.json")
     games = load("games.json").get("games") or []
+    live = load_live()
     known = {item["id"]: item for item in sims.get("known") or [] if item.get("id")}
-    matches = list(playoffs.get("matches") or [])
+    matches = [apply_live_overlay(m, live) for m in playoffs.get("matches") or []]
     packed = [pack_match(m) for m in matches]
     now = datetime.now(CST)
 
@@ -221,7 +271,9 @@ def main() -> None:
     live_or_open = [
         m
         for m in matches
-        if named(m.get("teamA")) and named(m.get("teamB")) and m.get("status") in {"live", "scheduled"}
+        if named(m.get("teamA"))
+        and named(m.get("teamB"))
+        and m.get("status") in {"live", "scheduled"}
     ]
     live_or_open.sort(key=lambda m: m.get("datetime") or "")
     completed = [m for m in matches if m.get("status") in {"completed", "complete"} and m.get("winner")]
@@ -229,7 +281,7 @@ def main() -> None:
 
     focus_match = None
     for m in live_or_open:
-        if maps_for_match(m, games) or m.get("status") == "live":
+        if maps_for_match(m, games) or m.get("status") == "live" or parse_score(m) != (0, 0):
             focus_match = m
             break
     if focus_match is None and live_or_open:
@@ -248,6 +300,17 @@ def main() -> None:
         rows = maps_for_match(focus_match, games)
         if rows:
             prev_map = pack_map(rows[-1], len(rows))
+        elif played:
+            inferred = winner_of_played_map(focus_match, played)
+            ids = [str(x) for x in (focus_match.get("matchIds") or []) if x]
+            prev_map = {
+                "game": played,
+                "matchId": ids[played - 1] if len(ids) >= played else (ids[0] if ids else None),
+                "winner": inferred,
+                "score": None,
+                "f10": None,
+                "durationMin": None,
+            }
         p_map = float((sim or {}).get("pMapA") or 0.5)
         p_series = p_series_from_score(p_map, wins_a, wins_b, need) if not done else None
         series_lean = lean_from_p(a, b, p_series if p_series is not None else (sim or {}).get("series", {}).get("pSeriesA"), market_prices((sim or {}).get("poly"), "series"), short_why(sim))
@@ -306,7 +369,6 @@ def main() -> None:
         prev_state = json.loads(STATE_PATH.read_text())
     seen = [x for x in (prev_state.get("mapIds") or [])]
     new_ids = [i for i in map_ids if i not in seen]
-    launch = bool(new_ids)
 
     headline, narrative = compose(kind, prev_map, next_map, series_lean, prev_series, nxt_series)
     payload = {
@@ -332,21 +394,12 @@ def main() -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
     (ROOT / "web" / "data" / "daily.md").write_text(f"# TI15 局间战报 · {payload['asOf']}\n\n{headline}\n\n{narrative}\n")
-    STATE_PATH.write_text(json.dumps({"mapIds": map_ids, "lastReason": headline, "asOf": payload["asOf"]}, ensure_ascii=False, indent=2) + "\n")
-    LAUNCH_PATH.write_text(
-        json.dumps(
-            {
-                "launch": launch,
-                "reason": headline if launch else "no new playoff map",
-                "newMapIds": new_ids,
-                "asOf": payload["asOf"],
-            },
-            ensure_ascii=False,
-            indent=2,
-        )
-        + "\n"
-    )
-    print("wrote", out, "kind", kind, "launch", launch, "headline", headline)
+    prev_state = dict(prev_state)
+    prev_state["mapIds"] = map_ids
+    prev_state["lastReason"] = headline
+    prev_state["asOf"] = payload["asOf"]
+    STATE_PATH.write_text(json.dumps(prev_state, ensure_ascii=False, indent=2) + "\n")
+    print("wrote", out, "kind", kind, "newMaps", new_ids, "headline", headline)
 
 
 def compose(kind, prev_map, next_map, series_lean, prev_series, nxt_series) -> tuple[str, str]:
