@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 08:03 CST",
+  "asOf": "2026-08-20 09:46 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -875,8 +875,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.515,
-            0.485
+            0.525,
+            0.475
           ],
           "question": "Dota 2: Iron Wing vs Team Spirit (BO3) - The International Playoffs"
         },
@@ -897,8 +897,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.27,
-            0.73
+            0.265,
+            0.735
           ],
           "question": "Game Handicap: IW (-1.5) vs Team Spirit (+1.5)"
         }
@@ -909,12 +909,12 @@
             "market": "系列胜者",
             "pick": "Iron Wing",
             "modelP": 0.514,
-            "marketP": 0.515,
-            "odds": 1.94,
-            "roi": -0.002,
-            "ev": -0.001,
+            "marketP": 0.525,
+            "odds": 1.9,
+            "roi": -0.021,
+            "ev": -0.011,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.515，模型 0.514，期望回报率 -0.2%"
+            "note": "买 YES 成本 0.525，模型 0.514，期望回报率 -2.1%"
           },
           {
             "market": "第一局",
@@ -942,12 +942,12 @@
             "market": "让分",
             "pick": "Team Spirit +1.5",
             "modelP": 0.741,
-            "marketP": 0.73,
-            "odds": 1.37,
-            "roi": 0.015,
-            "ev": 0.011,
+            "marketP": 0.735,
+            "odds": 1.36,
+            "roi": 0.008,
+            "ev": 0.006,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.73，模型 0.741，期望回报率 1.5%"
+            "note": "买 YES 成本 0.735，模型 0.741，期望回报率 0.8%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -1812,8 +1812,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.655,
-            0.345
+            0.665,
+            0.335
           ],
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 2 Winner"
         },
@@ -1823,8 +1823,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.735,
-            0.265
+            0.725,
+            0.275
           ],
           "question": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs"
         },
@@ -1834,8 +1834,8 @@
             "Under"
           ],
           "prices": [
-            0.445,
-            0.555
+            0.435,
+            0.565
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -1857,12 +1857,12 @@
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.785,
-            "marketP": 0.735,
-            "odds": 1.36,
-            "roi": 0.068,
-            "ev": 0.05,
-            "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.735，模型 0.785，期望回报率 6.8%"
+            "marketP": 0.725,
+            "odds": 1.38,
+            "roi": 0.083,
+            "ev": 0.06,
+            "action": "观察 / 极小注",
+            "note": "买 YES 成本 0.725，模型 0.785，期望回报率 8.3%"
           },
           {
             "market": "第一局",
@@ -1879,12 +1879,12 @@
             "market": "总局数 O/U 2.5",
             "pick": "Under 2.5",
             "modelP": 0.581,
-            "marketP": 0.555,
-            "odds": 1.8,
-            "roi": 0.047,
-            "ev": 0.026,
+            "marketP": 0.565,
+            "odds": 1.77,
+            "roi": 0.028,
+            "ev": 0.016,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.555，模型 0.581，期望回报率 4.7%"
+            "note": "买 YES 成本 0.565，模型 0.581，期望回报率 2.8%"
           },
           {
             "market": "让分",
@@ -2760,8 +2760,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.535,
-            0.465
+            0.545,
+            0.455
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 2 Winner"
         },
@@ -2771,8 +2771,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.545,
-            0.455
+            0.555,
+            0.445
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs"
         },
@@ -2793,8 +2793,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.285,
-            0.715
+            0.305,
+            0.695
           ],
           "question": "Game Handicap: Liquid (-1.5) vs Team Yandex (+1.5)"
         }
@@ -2805,12 +2805,12 @@
             "market": "系列胜者",
             "pick": "Team Liquid",
             "modelP": 0.533,
-            "marketP": 0.545,
-            "odds": 1.83,
-            "roi": -0.022,
-            "ev": -0.012,
+            "marketP": 0.555,
+            "odds": 1.8,
+            "roi": -0.04,
+            "ev": -0.022,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.545，模型 0.533，期望回报率 -2.2%"
+            "note": "买 YES 成本 0.555，模型 0.533，期望回报率 -4.0%"
           },
           {
             "market": "第一局",
@@ -2838,12 +2838,12 @@
             "market": "让分",
             "pick": "Team Yandex +1.5",
             "modelP": 0.728,
-            "marketP": 0.715,
-            "odds": 1.4,
-            "roi": 0.018,
-            "ev": 0.013,
+            "marketP": 0.695,
+            "odds": 1.44,
+            "roi": 0.047,
+            "ev": 0.033,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.715，模型 0.728，期望回报率 1.8%"
+            "note": "买 YES 成本 0.695，模型 0.728，期望回报率 4.7%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -3697,8 +3697,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.38,
-            0.62
+            0.375,
+            0.625
           ],
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner"
         },
@@ -3741,8 +3741,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            0.395,
-            0.605
+            0.415,
+            0.585
           ],
           "question": "Game Handicap: FLC (-1.5) vs Nigma Galaxy (+1.5)"
         }
@@ -3764,12 +3764,12 @@
             "market": "第一局",
             "pick": "Nigma Galaxy",
             "modelP": 0.577,
-            "marketP": 0.38,
-            "odds": 2.63,
-            "roi": 0.518,
-            "ev": 0.197,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.38，模型 0.577，期望回报率 51.8%"
+            "marketP": 0.375,
+            "odds": 2.67,
+            "roi": 0.539,
+            "ev": 0.202,
+            "action": "和市场差太大，只观察",
+            "note": "买 YES 成本 0.375，模型 0.577，期望回报率 53.9%"
           },
           {
             "market": "总局数 O/U 2.5",
@@ -3786,12 +3786,12 @@
             "market": "让分",
             "pick": "Nigma Galaxy +1.5",
             "modelP": 0.816,
-            "marketP": 0.605,
-            "odds": 1.65,
-            "roi": 0.349,
-            "ev": 0.211,
+            "marketP": 0.585,
+            "odds": 1.71,
+            "roi": 0.395,
+            "ev": 0.231,
             "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.605，模型 0.816，期望回报率 34.9%"
+            "note": "买 YES 成本 0.585，模型 0.816，期望回报率 39.5%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
