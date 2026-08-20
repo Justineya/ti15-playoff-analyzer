@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 05:58 CST",
+  "asOf": "2026-08-21 06:27 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -5522,8 +5522,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.515,
-            0.485
+            0.525,
+            0.475
           ],
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner"
         },
@@ -5589,12 +5589,12 @@
             "market": "第一局",
             "pick": "Team Falcons",
             "modelP": 0.526,
-            "marketP": 0.485,
-            "odds": 2.06,
-            "roi": 0.085,
-            "ev": 0.041,
+            "marketP": 0.475,
+            "odds": 2.11,
+            "roi": 0.107,
+            "ev": 0.051,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.485，模型 0.526，期望回报率 8.5%"
+            "note": "买 YES 成本 0.475，模型 0.526，期望回报率 10.7%"
           },
           {
             "market": "总局数 O/U 2.5",
