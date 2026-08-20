@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-08-20T22:55Z",
+  "asOf": "2026-08-20T23:18Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
       "slug": "dota2-ironwi-ts8-2026-08-19",
       "title": "Dota 2: Iron Wing vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 4848608.607905002,
+      "volume": 4848608.607905,
       "markets": [
         {
           "question": "Dota 2: Iron Wing vs Team Spirit - Game 1 Winner",
@@ -386,7 +386,7 @@
     {
       "slug": "dota2-vsn2-boombo-2026-08-20",
       "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 9385804.27614301,
+      "volume": 9385804.276142998,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 8328754.559454994,
+      "volume": 8328754.559455002,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.440774003,
+      "volume": 11205935.440774,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 16798.732104000002,
+      "volume": 17759.620464000003,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2018,8 +2018,8 @@
             "No"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.52",
+            "0.48"
           ]
         },
         {
@@ -2051,8 +2051,8 @@
             "No"
           ],
           "prices": [
-            "0.245",
-            "0.755"
+            "0.235",
+            "0.765"
           ]
         },
         {
@@ -2084,8 +2084,8 @@
             "No"
           ],
           "prices": [
-            "0.345",
-            "0.655"
+            "0.35",
+            "0.65"
           ]
         },
         {
@@ -2106,8 +2106,8 @@
             "No"
           ],
           "prices": [
-            "0.24",
-            "0.76"
+            "0.22",
+            "0.78"
           ]
         },
         {
@@ -2128,8 +2128,8 @@
             "No"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.53",
+            "0.47"
           ]
         },
         {
@@ -2172,8 +2172,8 @@
             "No"
           ],
           "prices": [
-            "0.275",
-            "0.725"
+            "0.28",
+            "0.72"
           ]
         }
       ]
@@ -2540,7 +2540,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 62924.47309699999,
+      "volume": 62951.63726799999,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2604,8 +2604,8 @@
             "No"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.53",
+            "0.47"
           ]
         },
         {
@@ -2626,12 +2626,56 @@
             "No"
           ],
           "prices": [
-            "0.285",
-            "0.715"
+            "0.265",
+            "0.735"
           ]
         },
         {
           "question": "Game 1: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.235",
+            "0.765"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.06",
+            "0.94"
+          ]
+        },
+        {
+          "question": "Game 2: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.53",
+            "0.47"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.36",
+            "0.64"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Destroy Barracks?",
           "outcomes": [
             "Yes",
             "No"
@@ -2642,58 +2686,14 @@
           ]
         },
         {
-          "question": "Game 1: Any Player Rampage?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.08",
-            "0.92"
-          ]
-        },
-        {
-          "question": "Game 2: Ends in Daytime?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.52",
-            "0.48"
-          ]
-        },
-        {
-          "question": "Game 2: Both Teams Beat Roshan?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.365",
-            "0.635"
-          ]
-        },
-        {
-          "question": "Game 2: Both Teams Destroy Barracks?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.285",
-            "0.715"
-          ]
-        },
-        {
           "question": "Game 2: Any Player Ultra Kill?",
           "outcomes": [
             "Yes",
             "No"
           ],
           "prices": [
-            "0.28",
-            "0.72"
+            "0.245",
+            "0.755"
           ]
         },
         {
@@ -2714,8 +2714,8 @@
             "No"
           ],
           "prices": [
-            "0.51",
-            "0.49"
+            "0.515",
+            "0.485"
           ]
         },
         {
@@ -2736,8 +2736,8 @@
             "No"
           ],
           "prices": [
-            "0.53",
-            "0.47"
+            "0.35",
+            "0.65"
           ]
         },
         {
@@ -2747,8 +2747,8 @@
             "No"
           ],
           "prices": [
-            "0.57",
-            "0.43"
+            "0.38",
+            "0.62"
           ]
         },
         {
@@ -2758,8 +2758,8 @@
             "No"
           ],
           "prices": [
-            "0.62",
-            "0.38"
+            "0.305",
+            "0.695"
           ]
         }
       ]
