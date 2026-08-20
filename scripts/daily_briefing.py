@@ -326,10 +326,24 @@ def main() -> None:
     completed.sort(key=lambda m: m.get("datetime") or "")
 
     focus_match = None
-    for m in live_or_open:
-        if maps_for_match(m, games) or m.get("status") == "live" or parse_score(m) != (0, 0):
-            focus_match = m
-            break
+    latest_maps = playoff_maps(games)
+    if latest_maps:
+        last = latest_maps[-1]
+        last_id = str(last.get("match_id") or "")
+        last_pair = {last.get("radiant"), last.get("dire")}
+        for m in matches:
+            if not (named(m.get("teamA")) and named(m.get("teamB"))):
+                continue
+            ids = {str(x) for x in (m.get("matchIds") or [])}
+            pair = {m.get("teamA"), m.get("teamB")}
+            if (last_id and last_id in ids) or pair == last_pair:
+                focus_match = m
+                break
+    if focus_match is None:
+        for m in live_or_open:
+            if maps_for_match(m, games) or m.get("status") == "live" or parse_score(m) != (0, 0):
+                focus_match = m
+                break
     if focus_match is None and live_or_open:
         focus_match = live_or_open[0]
     if focus_match is None and completed:

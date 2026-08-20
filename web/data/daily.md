@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-21 01:17 CST
+# TI15 局间战报 · 2026-08-21 01:52 CST
 
-第2局 NGX 赢了，先到10杀 NGX，40.1分钟。下一局第3局按上一局重算后看好 NGX（57%）。现场赔率至少 1.76。
+第3局 NGX 赢了：先到10杀是 FLCN，打了60分钟拉锯。系列 2-1 结束。下一把 IW vs BB 第1局看好 BB（51%），系列 55%。
 
-第2局 NGX 赢了，先到10杀 NGX，40.1分钟。上一局阵容 NGX Nature's Prophet、Mirana、Bounty Hunter / FLCN Centaur Warrunner、Clockwerk、Necrophos。下一局第3局按上一局重算后看好 NGX（57%）。现场赔率至少 1.76。系列现在看好 NGX（57%）。先到10杀看好 FLCN。本届胜率 Nigma Galaxy 66% / Team Falcons 58%；先到10杀 46% / 58%；H2H 2.0 局；Nigma Galaxy 中单爱拿 Ember Spirit。
+第1局 FLCN 赢，先到10杀 FLCN（25分34秒，10-7），41.7分钟慢节奏滚雪球，中单 Centaur 对 Lifestealer。第2局 NGX 扳平，先到10杀 NGX（10分43秒，10-2），40.1分钟快攻转线，lorenof 改 Nature's Prophet。第3局 NGX 再赢：FLCN 先到10杀（14分30秒，10-5）但60分钟拉锯后 NGX 32-29 拿下，中单 Lina 对 Sniper。系列 2-1 结束。
+
+因为第3局 FLCN 先拿到人头却关不掉超长局，系列从 1-1 变成 NGX 2-1，H2H 变成 3.0 局。FLCN 掉败者组打 Liquid，NGX 进胜者组半决赛打 Yandex。下一把是 10:00 败者组 IW vs BB 第1局：重算后看好 BB（第1局 51%，系列 55%，先到10杀 51%）。Polymarket 这局没有淘汰赛价；第1局门槛 1.96，系列门槛 1.83。先到10杀没有公开盘。
