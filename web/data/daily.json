@@ -1,11 +1,151 @@
 {
-  "asOf": "2026-08-21 01:49 CST",
+  "asOf": "2026-08-21 01:52 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 IW vs BB，看好 BB（系列 55%）。第1局看好 BB（51%）。",
-  "narrative": "下一把 IW vs BB，看好 BB（系列 55%）。第1局看好 BB（51%）。本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
+  "kind": "next-map",
+  "headline": "第3局 NGX 赢了，先到10杀 FLCN，60.0分钟。系列 NGX 2-1 结束。下一把 IW vs BB，看好 BB（系列 55%）。第1局看好 BB（51%）。",
+  "narrative": "第1局 FLCN 赢了，先到10杀 FLCN（25分34秒 10-7），41.7分钟，慢节奏滚雪球。FLCN 中单 Centaur Warrunner，关键 picks Centaur、Shadow Demon、Huskar、Sven；NGX 中单 Lifestealer，Nature's Prophet、Clockwerk、Dark Seer。第2局 NGX 赢了，先到10杀 NGX（10分43秒 10-2），40.1分钟，快节奏进攻转线。NGX 中单 Nature's Prophet，阵容 NP、Mirana、Bounty Hunter、Dark Seer、Windranger；FLCN 再拿 Centaur 中单，配 Clockwerk、Necrophos、Alchemist。第3局因为第2局被 NP 中单和 BH/Mirana 打崩，FLCN 禁掉 Nature's Prophet、Dark Seer，NGX 禁掉 Centaur（Malr1ne 前两局中单）和 Huskar。这一局变成近 60 分钟来回拉锯：FLCN 中单 Lina，阵容 Lina、Crystal Maiden、Windranger、Tiny、Doom；NGX 中单 Sniper，阵容 Bounty Hunter、Mirana、Sniper、Underlord、Necrophos。FLCN 14分30秒先到10杀（10-5），但没能结束，最终 NGX 32-29 拿下，系列 2-1。NGX 进胜者组半决赛对 Yandex（19:00，模型系列 57%）；FLCN 掉败者组对 Liquid（13:00，模型 FLCN 系列 53%）。下一场是今天 10:00 败者组首轮 IW vs BB。整棵模型按刚打完的三局重算后：系列看好 BB（55%，门槛 1.84），第1局看好 BB（51%，门槛 1.96），先到10杀看好 BB（51%，没有公开盘）。Polymarket 这系列没有可用的淘汰赛局胜/系列价（现有 slug 是小组赛已结算盘，不当作现场价）。本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit。这不是投注建议。",
+  "previousMap": {
+    "game": 3,
+    "matchId": 8956096810,
+    "winner": "Nigma Galaxy",
+    "score": [
+      29,
+      32
+    ],
+    "f10": "Team Falcons",
+    "f10Time": 870,
+    "durationMin": 60.0,
+    "pace": "正常",
+    "stance": "来回拉锯",
+    "picks": {
+      "Team Falcons": [
+        "Lina",
+        "Crystal Maiden",
+        "Windranger",
+        "Tiny",
+        "Doom"
+      ],
+      "Nigma Galaxy": [
+        "Bounty Hunter",
+        "Mirana",
+        "Sniper",
+        "Underlord",
+        "Necrophos"
+      ]
+    },
+    "mid": {
+      "Team Falcons": "Lina",
+      "Nigma Galaxy": "Sniper"
+    },
+    "blurb": "Team Falcons先到 10 杀（当时 10-5，14分30秒）。这 10 次击杀里，中单 Malr1ne/Lina 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 5 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8955796155,
+      "winner": "Team Falcons",
+      "score": [
+        25,
+        8
+      ],
+      "f10": "Team Falcons",
+      "f10Time": 1534,
+      "durationMin": 41.7,
+      "pace": "慢",
+      "stance": "滚雪球",
+      "picks": {
+        "Team Falcons": [
+          "Centaur Warrunner",
+          "Shadow Demon",
+          "Mirana",
+          "Huskar",
+          "Sven"
+        ],
+        "Nigma Galaxy": [
+          "Nature's Prophet",
+          "Clockwerk",
+          "Dark Seer",
+          "Elder Titan",
+          "Lifestealer"
+        ]
+      },
+      "mid": {
+        "Team Falcons": "Centaur Warrunner",
+        "Nigma Galaxy": "Lifestealer"
+      },
+      "blurb": "Team Falcons先到 10 杀（当时 10-7，25分34秒）。这 10 次击杀里，中单 Malr1ne/Centaur Warrunner 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 7 杀。"
+    },
+    {
+      "game": 2,
+      "matchId": 8955934230,
+      "winner": "Nigma Galaxy",
+      "score": [
+        40,
+        8
+      ],
+      "f10": "Nigma Galaxy",
+      "f10Time": 643,
+      "durationMin": 40.1,
+      "pace": "快",
+      "stance": "进攻转线",
+      "picks": {
+        "Nigma Galaxy": [
+          "Nature's Prophet",
+          "Mirana",
+          "Bounty Hunter",
+          "Dark Seer",
+          "Windranger"
+        ],
+        "Team Falcons": [
+          "Centaur Warrunner",
+          "Clockwerk",
+          "Necrophos",
+          "Jakiro",
+          "Alchemist"
+        ]
+      },
+      "mid": {
+        "Nigma Galaxy": "Nature's Prophet",
+        "Team Falcons": "Centaur Warrunner"
+      },
+      "blurb": "Nigma Galaxy先到 10 杀（当时 10-2，10分43秒）。这 10 次击杀里，中单 lorenof/Nature's Prophet 参与 4 次（击杀 4 + 助攻 0），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 2 杀。"
+    },
+    {
+      "game": 3,
+      "matchId": 8956096810,
+      "winner": "Nigma Galaxy",
+      "score": [
+        29,
+        32
+      ],
+      "f10": "Team Falcons",
+      "f10Time": 870,
+      "durationMin": 60.0,
+      "pace": "正常",
+      "stance": "来回拉锯",
+      "picks": {
+        "Team Falcons": [
+          "Lina",
+          "Crystal Maiden",
+          "Windranger",
+          "Tiny",
+          "Doom"
+        ],
+        "Nigma Galaxy": [
+          "Bounty Hunter",
+          "Mirana",
+          "Sniper",
+          "Underlord",
+          "Necrophos"
+        ]
+      },
+      "mid": {
+        "Team Falcons": "Lina",
+        "Nigma Galaxy": "Sniper"
+      },
+      "blurb": "Team Falcons先到 10 杀（当时 10-5，14分30秒）。这 10 次击杀里，中单 Malr1ne/Lina 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 5 杀。"
+    }
+  ],
   "nextMap": {
     "game": 1,
     "teamA": "Iron Wing",
@@ -41,7 +181,22 @@
     "market": null,
     "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit"
   },
-  "previous": null,
+  "previous": {
+    "id": "ubqf4",
+    "round": "胜者组首轮",
+    "day": "2026-08-20",
+    "when": "2026-08-20 21:20",
+    "format": "Bo3",
+    "teamA": "Nigma Galaxy",
+    "teamB": "Team Falcons",
+    "teamALabel": "Nigma Galaxy",
+    "teamBLabel": "Team Falcons",
+    "status": "completed",
+    "score": "2-1",
+    "winner": "Nigma Galaxy",
+    "polySlug": "dota2-ngx-flc-2026-08-20",
+    "mapsPlayed": 3
+  },
   "next": {
     "id": "lbr1a",
     "round": "败者组首轮",
@@ -69,22 +224,39 @@
     }
   },
   "focus": {
-    "id": "lbr1a",
-    "round": "败者组首轮",
-    "day": "2026-08-21",
-    "when": "2026-08-21 10:00",
+    "id": "ubqf4",
+    "round": "胜者组首轮",
+    "day": "2026-08-20",
+    "when": "2026-08-20 21:20",
     "format": "Bo3",
-    "teamA": "Iron Wing",
-    "teamB": "BoomBoys",
-    "teamALabel": "Iron Wing",
-    "teamBLabel": "BoomBoys",
-    "status": "scheduled",
-    "score": null,
-    "winner": null,
-    "polySlug": "dota2-boombo-ironwi-2026-08-13",
-    "mapsPlayed": 0
+    "teamA": "Nigma Galaxy",
+    "teamB": "Team Falcons",
+    "teamALabel": "Nigma Galaxy",
+    "teamBLabel": "Team Falcons",
+    "status": "completed",
+    "score": "2-1",
+    "winner": "Nigma Galaxy",
+    "polySlug": "dota2-ngx-flc-2026-08-20",
+    "mapsPlayed": 3
   },
-  "todayResults": [],
+  "todayResults": [
+    {
+      "id": "ubqf4",
+      "round": "胜者组首轮",
+      "day": "2026-08-20",
+      "when": "2026-08-20 21:20",
+      "format": "Bo3",
+      "teamA": "Nigma Galaxy",
+      "teamB": "Team Falcons",
+      "teamALabel": "Nigma Galaxy",
+      "teamBLabel": "Team Falcons",
+      "status": "completed",
+      "score": "2-1",
+      "winner": "Nigma Galaxy",
+      "polySlug": "dota2-ngx-flc-2026-08-20",
+      "mapsPlayed": 3
+    }
+  ],
   "newMapIds": [
     8956096810
   ]
