@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-20 17:02 CST",
+  "asOf": "2026-08-20 17:09 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。下一局第2局按上一局重算后看好 VSN（66%）。现场赔率至少 1.51。",
-  "narrative": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。上一局阵容 VSN Nature's Prophet、Winter Wyvern、Pudge / BB Largo、Undying、Mirana。下一局第2局按上一局重算后看好 VSN（66%）。现场赔率至少 1.51。系列现在看好 VSN（89%）。先到10杀看好 VSN。本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit。",
+  "headline": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。下一局第3局按上一局重算后看好 VSN（67%）。现场赔率至少 1.49。",
+  "narrative": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。上一局阵容 VSN Nature's Prophet、Winter Wyvern、Pudge / BB Largo、Undying、Mirana。下一局第3局按上一局重算后看好 VSN（67%）。现场赔率至少 1.49。系列现在看好 VSN（67%）。先到10杀看好 VSN。本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit。",
   "previousMap": {
     "game": 2,
     "matchId": 8955383956,
@@ -112,35 +112,26 @@
     }
   ],
   "nextMap": {
-    "game": 2,
+    "game": 3,
     "teamA": "TEAM VISION",
     "teamB": "BoomBoys",
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.663,
-      "pA": 0.663,
-      "pB": 0.337,
-      "breakEven": 1.51,
-      "market": {
-        "outcomes": [
-          "TEAM VISION",
-          "BoomBoys"
-        ],
-        "prices": [
-          0.001,
-          1.0
-        ]
-      },
+      "p": 0.672,
+      "pA": 0.672,
+      "pB": 0.328,
+      "breakEven": 1.49,
+      "market": null,
       "why": "本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.569,
-      "pA": 0.569,
-      "pB": 0.431,
-      "breakEven": 1.76,
+      "p": 0.578,
+      "pA": 0.578,
+      "pB": 0.422,
+      "breakEven": 1.73,
       "market": null,
       "why": ""
     }
@@ -148,18 +139,18 @@
   "seriesLean": {
     "team": "TEAM VISION",
     "tag": "VSN",
-    "p": 0.892,
-    "pA": 0.892,
-    "pB": 0.108,
-    "breakEven": 1.12,
+    "p": 0.672,
+    "pA": 0.672,
+    "pB": 0.328,
+    "breakEven": 1.49,
     "market": {
       "outcomes": [
         "TEAM VISION",
         "BoomBoys"
       ],
       "prices": [
-        0.661,
-        0.339
+        0.66,
+        0.34
       ]
     },
     "why": "本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit"
@@ -176,25 +167,25 @@
     "teamALabel": "TEAM VISION",
     "teamBLabel": "BoomBoys",
     "status": "live",
-    "score": "1-0",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-vsn2-boombo-2026-08-20",
-    "mapsPlayed": 1,
+    "mapsPlayed": 2,
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.892,
-      "pA": 0.892,
-      "pB": 0.108,
-      "breakEven": 1.12,
+      "p": 0.672,
+      "pA": 0.672,
+      "pB": 0.328,
+      "breakEven": 1.49,
       "market": {
         "outcomes": [
           "TEAM VISION",
           "BoomBoys"
         ],
         "prices": [
-          0.661,
-          0.339
+          0.66,
+          0.34
         ]
       },
       "why": "本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit"
@@ -211,10 +202,10 @@
     "teamALabel": "TEAM VISION",
     "teamBLabel": "BoomBoys",
     "status": "live",
-    "score": "1-0",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-vsn2-boombo-2026-08-20",
-    "mapsPlayed": 1
+    "mapsPlayed": 2
   },
   "todayResults": [
     {
@@ -234,8 +225,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8955304019,
-    8955383956
-  ]
+  "newMapIds": []
 }

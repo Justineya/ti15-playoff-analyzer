@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20 17:02 CST",
+  "asOf": "2026-08-20 17:09 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -1823,8 +1823,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.6615,
-            0.3385
+            0.6605,
+            0.3395
           ],
           "question": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs"
         },
@@ -1857,12 +1857,12 @@
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.748,
-            "marketP": 0.661,
+            "marketP": 0.66,
             "odds": 1.51,
-            "roi": 0.131,
-            "ev": 0.087,
+            "roi": 0.132,
+            "ev": 0.088,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.661，模型 0.748，期望回报率 13.1%"
+            "note": "买 YES 成本 0.66，模型 0.748，期望回报率 13.2%"
           },
           {
             "market": "第一局",
@@ -2739,7 +2739,7 @@
       "why": "本届胜率 Team Liquid 58% / Team Yandex 59%；先到10杀 57% / 51%；H2H 3.0 局；Team Liquid 常用中单 Earth Spirit",
       "id": "ubqf3",
       "round": "胜者组首轮",
-      "when": "2026-08-20 16:00",
+      "when": "2026-08-20 18:00",
       "status": "scheduled",
       "polySlug": "dota2-liquid-ty-2026-08-20",
       "poly": {
@@ -2760,8 +2760,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.535,
-            0.465
+            0.545,
+            0.455
           ],
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 2 Winner"
         },
@@ -3687,7 +3687,7 @@
       "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；H2H 0 局；Nigma Galaxy 常用中单 Ember Spirit",
       "id": "ubqf4",
       "round": "胜者组首轮",
-      "when": "2026-08-20 19:00",
+      "when": "2026-08-20 20:30",
       "status": "scheduled",
       "polySlug": "dota2-ngx-flc-2026-08-20",
       "poly": {
@@ -5928,7 +5928,7 @@
       {
         "id": "ubqf3",
         "round": "胜者组首轮",
-        "when": "2026-08-20 16:00",
+        "when": "2026-08-20 18:00",
         "winner": "Team Liquid",
         "p": 0.536,
         "n": 402,
@@ -5939,7 +5939,7 @@
       {
         "id": "ubqf4",
         "round": "胜者组首轮",
-        "when": "2026-08-20 19:00",
+        "when": "2026-08-20 20:30",
         "winner": "Nigma Galaxy",
         "p": 0.582,
         "n": 234,
