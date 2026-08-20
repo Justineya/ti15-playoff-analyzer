@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-20 13:52 CST",
-  "n": 82,
+  "asOf": "2026-08-20 17:02 CST",
+  "n": 84,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -25181,6 +25181,620 @@
         "mid_support": "天辉中单 bzm/Ember Spirit 参与 2 次（击杀1+助攻1），辅Whitemon/Undying 参与 4 次，中辅合计9 · 中辅驱动；夜魇中单 Larl/Lina 参与 4 次（击杀1+助攻3），辅not_me/Dark Willow 参与 4 次，中辅合计11 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8955247801",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8955304019,
+      "series_id": 1132161,
+      "start_time": 1787204896,
+      "duration": 4647,
+      "parsed": true,
+      "radiant": "BoomBoys",
+      "dire": "TEAM VISION",
+      "radiant_team_id": 8255888,
+      "dire_team_id": 9572001,
+      "winner": "TEAM VISION",
+      "radiant_win": false,
+      "score": [
+        31,
+        25
+      ],
+      "pace": "慢",
+      "length": "超长",
+      "stance": "发育对线",
+      "f10k": {
+        "side": "radiant",
+        "time": 1447,
+        "score": {
+          "radiant": 10,
+          "dire": 7
+        },
+        "completing_killer": "gpk~",
+        "completing_hero": "Lina"
+      },
+      "f10k_mid_share": 8,
+      "first_tower": {
+        "time": 359,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_bot"
+      },
+      "gold": {
+        "m5": -571,
+        "m10": -1680,
+        "m15": -1206,
+        "m20": -1215
+      },
+      "kills_8min": 5,
+      "kills_15min": 10,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 3,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 5,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 6,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 11,
+              "hero": "Puck",
+              "hero_id": 13
+            },
+            {
+              "order": 19,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 21,
+              "hero": "Elder Titan",
+              "hero_id": 103
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 12,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 15,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 16,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 23,
+              "hero": "Kez",
+              "hero_id": 145
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 3,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 12,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 1,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 4,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 9,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 10,
+              "hero": "Enigma",
+              "hero_id": 33
+            },
+            {
+              "order": 18,
+              "hero": "Sven",
+              "hero_id": 18
+            },
+            {
+              "order": 20,
+              "hero": "Tiny",
+              "hero_id": 19
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 13,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 14,
+              "hero": "Snapfire",
+              "hero_id": 128
+            },
+            {
+              "order": 17,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 22,
+              "hero": "Techies",
+              "hero_id": 105
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 1,
+              "hero": "Io",
+              "hero_id": 91
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 13,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "gpk~",
+            "hero": "Lina",
+            "hero_id": 25,
+            "gold_t10": 4537,
+            "xp_t10": 4686,
+            "kills": 12,
+            "kills_before_10": 4,
+            "assists_before_10": 4,
+            "participate_before_10": 8
+          },
+          "pos4": {
+            "player": "Kataomi`",
+            "hero": "Winter Wyvern",
+            "kills": 3,
+            "kills_before_10": 2,
+            "assists_before_10": 4,
+            "participate_before_10": 6
+          },
+          "pos5": {
+            "player": "Save-",
+            "hero": "Dark Willow",
+            "kills_before_10": 2,
+            "assists_before_10": 3,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 8,
+          "first10_mid_sup_ka": 19,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Snapfire",
+            "hero_id": 128,
+            "gold_t10": 3986,
+            "xp_t10": 4507,
+            "kills": 12,
+            "kills_before_10": 2,
+            "assists_before_10": 3,
+            "participate_before_10": 5
+          },
+          "pos4": {
+            "player": "9Class",
+            "hero": "Bounty Hunter",
+            "kills": 2,
+            "kills_before_10": 2,
+            "assists_before_10": 3,
+            "participate_before_10": 5
+          },
+          "pos5": {
+            "player": "Dukalis",
+            "hero": "Techies",
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 7,
+          "first10_mid_sup_kills": 5,
+          "first10_mid_sup_ka": 15,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Shadow Fiend、Treant Protector；前两手Lina、Dark Willow；中单Lina第1手拿",
+          "dire": "一阶段禁Necrophos、Io；前两手Lone Druid、Bounty Hunter；中单Snapfire第3手拿"
+        },
+        "pace": "慢节奏 / 超长局（77分27秒）；先到10杀出现在 24分07秒",
+        "stance": "发育对线",
+        "f10k": "BoomBoys先到 10 杀（当时 10-7，24分07秒）。这 10 次击杀里，中单 gpk~/Lina 参与 8 次（击杀 4 + 助攻 4），中单+双辅合计参与 19 次 · 中辅驱动。对手当时 7 杀。",
+        "mid_support": "天辉中单 gpk~/Lina 参与 8 次（击杀4+助攻4），辅Kataomi`/Winter Wyvern 参与 6 次，中辅合计19 · 中辅驱动；夜魇中单 No[o]ne-/Snapfire 参与 5 次（击杀2+助攻3），辅9Class/Bounty Hunter 参与 5 次，中辅合计15 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8955304019",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8955383956,
+      "series_id": 1132161,
+      "start_time": 1787211862,
+      "duration": 3060,
+      "parsed": true,
+      "radiant": "TEAM VISION",
+      "dire": "BoomBoys",
+      "radiant_team_id": 9572001,
+      "dire_team_id": 8255888,
+      "winner": "BoomBoys",
+      "radiant_win": false,
+      "score": [
+        19,
+        27
+      ],
+      "pace": "正常",
+      "length": "超长",
+      "stance": "滚雪球",
+      "f10k": {
+        "side": "radiant",
+        "time": 811,
+        "score": {
+          "radiant": 10,
+          "dire": 4
+        },
+        "completing_killer": "No[o]ne-",
+        "completing_hero": "Puck"
+      },
+      "f10k_mid_share": 9,
+      "first_tower": {
+        "time": 699,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_top"
+      },
+      "gold": {
+        "m5": 655,
+        "m10": 2057,
+        "m15": 5486,
+        "m20": 5427
+      },
+      "kills_8min": 4,
+      "kills_15min": 17,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 5,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 6,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 11,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 19,
+              "hero": "Kez",
+              "hero_id": 145
+            },
+            {
+              "order": 21,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 12,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 15,
+              "hero": "Pudge",
+              "hero_id": 14
+            },
+            {
+              "order": 16,
+              "hero": "Puck",
+              "hero_id": 13
+            },
+            {
+              "order": 23,
+              "hero": "Slardar",
+              "hero_id": 28
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Bane",
+              "hero_id": 3
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 12,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 1,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 4,
+              "hero": "Enchantress",
+              "hero_id": 58
+            },
+            {
+              "order": 9,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 10,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 18,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 20,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 13,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 14,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 17,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 22,
+              "hero": "Tiny",
+              "hero_id": 19
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 1,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 13,
+              "hero": "Undying",
+              "hero_id": 85
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Puck",
+            "hero_id": 13,
+            "gold_t10": 4266,
+            "xp_t10": 4975,
+            "kills": 6,
+            "kills_before_10": 5,
+            "assists_before_10": 4,
+            "participate_before_10": 9
+          },
+          "pos4": {
+            "player": "9Class",
+            "hero": "Pudge",
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 6,
+            "participate_before_10": 7
+          },
+          "pos5": {
+            "player": "Dukalis",
+            "hero": "Winter Wyvern",
+            "kills_before_10": 0,
+            "assists_before_10": 7,
+            "participate_before_10": 7
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 23,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "gpk~",
+            "hero": "Ember Spirit",
+            "hero_id": 106,
+            "gold_t10": 3950,
+            "xp_t10": 4742,
+            "kills": 10,
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Kataomi`",
+            "hero": "Undying",
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
+          },
+          "pos5": {
+            "player": "Save-",
+            "hero": "Mirana",
+            "kills_before_10": 0,
+            "assists_before_10": 3,
+            "participate_before_10": 3
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 4,
+          "first10_mid_sup_kills": 2,
+          "first10_mid_sup_ka": 10,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Bane；前两手Nature's Prophet、Winter Wyvern；中单Puck第4手拿",
+          "dire": "一阶段禁Shadow Fiend、Earth Spirit；前两手Largo、Undying；中单Ember Spirit第4手拿"
+        },
+        "pace": "正常节奏 / 超长局（51分00秒）；先到10杀出现在 13分31秒",
+        "stance": "滚雪球",
+        "f10k": "TEAM VISION先到 10 杀（当时 10-4，13分31秒）。这 10 次击杀里，中单 No[o]ne-/Puck 参与 9 次（击杀 5 + 助攻 4），中单+双辅合计参与 23 次 · 中辅驱动。对手当时 4 杀。",
+        "mid_support": "天辉中单 No[o]ne-/Puck 参与 9 次（击杀5+助攻4），辅9Class/Pudge 参与 7 次，中辅合计23 · 中辅驱动；夜魇中单 gpk~/Ember Spirit 参与 4 次（击杀1+助攻3），辅Kataomi`/Undying 参与 3 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8955383956",
       "source": "ti15",
       "patch": "7.41e"
     }
