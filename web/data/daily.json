@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-20 17:02 CST",
+  "asOf": "2026-08-20 17:04 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。下一局第2局按上一局重算后看好 VSN（66%）。现场赔率至少 1.51。",
-  "narrative": "第2局 BB 赢了，先到10杀 VSN，51.0分钟。上一局阵容 VSN Nature's Prophet、Winter Wyvern、Pudge / BB Largo、Undying、Mirana。下一局第2局按上一局重算后看好 VSN（66%）。现场赔率至少 1.51。系列现在看好 VSN（89%）。先到10杀看好 VSN。本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit。",
+  "headline": "第1局 VSN、第2局 BB，系列 1-1。决胜第3局按上一局重算后看好 VSN（67%）。系列盘 0.66。",
+  "narrative": "第1局 TEAM VISION 赢了，77.5分钟慢节奏发育对线，人头 31-25（BB 人头更多，VSN 推掉基地）。BoomBoys 先到 10 杀（24分07秒，当时 10-7），中单 gpk~/Lina 参与 8 次。BB 中单第一手 Lina，对位 VSN 第三手 Snapfire；VSN 前两手 Lone Druid、Bounty Hunter。第2局 BoomBoys 赢了，51.0分钟正常节奏滚雪球，19-27。TEAM VISION 先到 10 杀（13分31秒，当时 10-4），中单 No[o]ne-/Puck 参与 9 次、中辅驱动，但没能把优势变成图。VSN 一阶禁掉自己第1局的 Lone Druid，前两手 Nature's Prophet、Winter Wyvern，中单第4手 Puck；BB 一阶禁 Shadow Fiend、Earth Spirit（VSN 中单常客），前两手拿了第1局被 VSN 禁掉的 Largo 再加 Undying，中单 Ember Spirit。因为第2局被扳平，液体百科局分已是 1-1，决胜局就是系列：模型系列胜率从 1-0 时的 89% 掉到现在的 67%，和第3局图胜率绑在一起。上一局 VSN 先到 10 杀却输掉，这系列 F10 不等于赢图。第3局模型看好 VSN 67%（门槛 1.49），先到 10 杀 VSN 58%（门槛 1.73，没有公开盘）。Polymarket 没有第3局单独胜负盘；系列价 VSN 0.661 / BB 0.339。本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 约 5.8 局。这不是投注建议。",
   "previousMap": {
     "game": 2,
     "matchId": 8955383956,
@@ -112,35 +112,26 @@
     }
   ],
   "nextMap": {
-    "game": 2,
+    "game": 3,
     "teamA": "TEAM VISION",
     "teamB": "BoomBoys",
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.663,
-      "pA": 0.663,
-      "pB": 0.337,
-      "breakEven": 1.51,
-      "market": {
-        "outcomes": [
-          "TEAM VISION",
-          "BoomBoys"
-        ],
-        "prices": [
-          0.001,
-          1.0
-        ]
-      },
+      "p": 0.672,
+      "pA": 0.672,
+      "pB": 0.328,
+      "breakEven": 1.49,
+      "market": null,
       "why": "本届胜率 TEAM VISION 69% / BoomBoys 56%；先到10杀 61% / 54%；H2H 5.800000000000001 局；TEAM VISION 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.569,
-      "pA": 0.569,
-      "pB": 0.431,
-      "breakEven": 1.76,
+      "p": 0.578,
+      "pA": 0.578,
+      "pB": 0.422,
+      "breakEven": 1.73,
       "market": null,
       "why": ""
     }
@@ -148,10 +139,10 @@
   "seriesLean": {
     "team": "TEAM VISION",
     "tag": "VSN",
-    "p": 0.892,
-    "pA": 0.892,
-    "pB": 0.108,
-    "breakEven": 1.12,
+    "p": 0.672,
+    "pA": 0.672,
+    "pB": 0.328,
+    "breakEven": 1.49,
     "market": {
       "outcomes": [
         "TEAM VISION",
@@ -176,17 +167,17 @@
     "teamALabel": "TEAM VISION",
     "teamBLabel": "BoomBoys",
     "status": "live",
-    "score": "1-0",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-vsn2-boombo-2026-08-20",
-    "mapsPlayed": 1,
+    "mapsPlayed": 2,
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.892,
-      "pA": 0.892,
-      "pB": 0.108,
-      "breakEven": 1.12,
+      "p": 0.672,
+      "pA": 0.672,
+      "pB": 0.328,
+      "breakEven": 1.49,
       "market": {
         "outcomes": [
           "TEAM VISION",
@@ -211,10 +202,10 @@
     "teamALabel": "TEAM VISION",
     "teamBLabel": "BoomBoys",
     "status": "live",
-    "score": "1-0",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-vsn2-boombo-2026-08-20",
-    "mapsPlayed": 1
+    "mapsPlayed": 2
   },
   "todayResults": [
     {
@@ -234,8 +225,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8955304019,
-    8955383956
-  ]
+  "newMapIds": []
 }
