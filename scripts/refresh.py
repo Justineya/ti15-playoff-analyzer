@@ -21,15 +21,15 @@ def run(name: str, required: bool = True) -> None:
 
 
 def main() -> None:
-    run("ingest_games.py")
-    run("fetch_schedule.py")
+    run("ingest_games.py", required=False)
+    run("fetch_schedule.py", required=False)
     run("resolve_bracket.py")
     run("fetch_live.py", required=False)
     run("ingest_finished.py", required=False)
-    run("fetch_polymarket.py")
+    run("fetch_polymarket.py", required=False)
     run("simulate_playoffs.py")
-    run("daily_briefing.py")
     run("map_trigger.py")
+    run("daily_briefing.py")
     run("build_bundle.py")
     run("launch_eod_cursor.py", required=False)
     print("refresh ok")

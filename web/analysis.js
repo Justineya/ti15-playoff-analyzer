@@ -830,11 +830,33 @@ function namedSides(m) {
   return typeof m?.teamA === "string" && typeof m?.teamB === "string";
 }
 
-function windowMsSafe() {
-  return 3 * 3600 * 1000;
+function seriesOpen(m) {
+  if (!m) return false;
+  if (m.status === "completed" || m.status === "complete") return false;
+  const raw = String(m.score || "");
+  const hit = raw.match(/^(\d+)\s*[-:]\s*(\d+)$/);
+  const need = String(m.format || "").toLowerCase() === "bo5" ? 3 : 2;
+  if (hit && (Number(hit[1]) >= need || Number(hit[2]) >= need)) return false;
+  return true;
 }
 
-function focusMatch(matches, preferId) {
+function seriesCapMs(m) {
+  return (String(m?.format || "").toLowerCase() === "bo5" ? 10 : 6) * 3600 * 1000;
+}
+
+function windowMsSafe() {
+  return 6 * 3600 * 1000;
+}
+
+function mapsPlayedOf(m) {
+  const raw = String(m?.score || "");
+  const hit = raw.match(/^(\d+)\s*[-:]\s*(\d+)$/);
+  if (hit) return Number(hit[1]) + Number(hit[2]);
+  return Number(m?.mapsPlayed) || 0;
+}
+
+function focusMatch(matches, preferId, nowMs) {
+  const now = nowMs == null ? Date.now() : nowMs;
   const list = [...(matches || [])]
     .filter((m) => m.datetime)
     .sort((a, b) => String(a.datetime).localeCompare(b.datetime));
@@ -842,9 +864,28 @@ function focusMatch(matches, preferId) {
     const hit = list.find((m) => m.id === preferId);
     if (hit) return hit;
   }
-  const now = Date.now();
+  const going = [];
   for (const m of list) {
-    if (m.status === "completed" || m.status === "complete") continue;
+    if (!seriesOpen(m)) continue;
+    const t = parsePlayoffTime(m.datetime);
+    if (!t) continue;
+    const elapsed = now - t.getTime();
+    const started = elapsed >= 0;
+    const inCap = elapsed < seriesCapMs(m);
+    const liveish = m.status === "live" || mapsPlayedOf(m) > 0;
+    if ((started && inCap) || (liveish && elapsed < 12 * 3600 * 1000)) going.push(m);
+  }
+  going.sort((a, b) => {
+    const liveA = a.status === "live" || mapsPlayedOf(a) > 0 ? 1 : 0;
+    const liveB = b.status === "live" || mapsPlayedOf(b) > 0 ? 1 : 0;
+    if (liveA !== liveB) return liveB - liveA;
+    const play = mapsPlayedOf(b) - mapsPlayedOf(a);
+    if (play) return play;
+    return String(b.datetime).localeCompare(String(a.datetime));
+  });
+  if (going[0]) return going[0];
+  for (const m of list) {
+    if (!seriesOpen(m)) continue;
     const t = parsePlayoffTime(m.datetime);
     if (!t) continue;
     if (now < t.getTime() + windowMsSafe()) return m;
@@ -2377,6 +2418,8 @@ function setup(data) {
     }
   });
 }
+
+window.TI15_MATCH = { focusMatch, seriesOpen, namedSides, windowMsSafe };
 
 try {
   if (window.TI15_DATA) setup(window.TI15_DATA);

@@ -51,6 +51,8 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: |
           python3 scripts/ingest_finished.py || true
+          python3 scripts/fetch_schedule.py || true
+          python3 scripts/resolve_bracket.py || true
           python3 scripts/fetch_polymarket.py || true
           python3 scripts/simulate_playoffs.py || true
           python3 scripts/daily_briefing.py
