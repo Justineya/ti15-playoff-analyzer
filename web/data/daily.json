@@ -1,43 +1,43 @@
 {
-  "asOf": "2026-08-20 20:03 CST",
+  "asOf": "2026-08-20 21:08 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 TY 赢了，先到10杀 Liquid，54.5分钟。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。",
-  "narrative": "第1局 TY 赢了，先到10杀 Liquid，54.5分钟。上一局阵容 TY Io、Largo、Hoodwink / Liquid Nature's Prophet、Mirana、Tusk。下一局第2局按上一局重算后看好 TY（55%）。现场赔率至少 1.82。系列现在看好 TY（79%）。先到10杀看好 Liquid。本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit。",
+  "headline": "第2局 TY 赢了，先到10杀 TY，38.5分钟滚雪球。系列按 OpenDota 0-2 结束。下一把 NGX vs FLCN 第1局重算看好 NGX（58%），系列 61%。",
+  "narrative": "第1局 Team Yandex 赢了（OpenDota 8955549026），54分28秒慢节奏发育对线，人头 TY 34–Liquid 37（Liquid 人头更多，TY 推掉基地）。Liquid 先到 10 杀（18分19秒，当时 9-10），中单 Nisha/Nature's Prophet 参与 9 次，中辅驱动，收刀 m1CKe/Tiny，但没把先到10杀变成图。TY 天辉前两手 Io、Largo，中单 CHIRA_JUNIOR 第一手 Io。第2局刚打完（OpenDota 8955653541）：Liquid 天辉 13–TY 夜魇 38，38分28秒慢节奏滚雪球，20分钟经济差已经 -13296。TY 先到 10 杀（19分12秒，当时 4-10），收刀 watson/Io；中单 CHIRA_JUNIOR 第4手 Slark，中单+双辅合计参与 17 次 · 中辅驱动。Liquid 一阶禁 Treant Protector、Undying，前两手 Winter Wyvern、Clockwerk，中单 Nisha 第5手 Windranger；TY 一阶禁 Keeper of the Light、Shadow Fiend，再禁掉 Liquid 中单常客 Earth Spirit，前两手 Bounty Hunter、Io，后手 Tidehunter。液体百科 ubqf3 此刻仍写 score 0-1、maps 空、只挂 8955653541，没有 maps[].winner，百科局分不编成 0-2；OpenDota 两局都已解析且都是 TY 赢，模型按系列 0-2 收束，不打第3局。因为第2局被 TY 滚雪球拿下，开赛前那版「第1局看好 Liquid」和第1局后那版「第2局看好 TY 55%、系列 0-1 后 79%」都不能贴到 NGX vs FLCN 第1局。这局进了样本：H2H 从 4.0 变成 5.0，本届胜率 Liquid 54% / TY 61%（第1局后是 56% / 60%），先到10杀 Liquid 56% / TY 50%。TY 进胜者组半决赛等 ubqf4 胜者，Liquid 掉败者组。下一把 21:15 胜者组首轮 NGX vs FLCN 还没开打，整棵模型因上一局重算后第1局看好 NGX 58%（门槛 1.73），FLCN 42%。先到10杀看好 FLCN 62%（门槛 1.62，没有公开盘）。系列看好 NGX 61%（门槛 1.65）。Polymarket 第1局价 NGX 0.385 / FLCN 0.615，系列 NGX 0.365 / FLCN 0.635，盘口买 FLCN，模型站 NGX。这组本届没交过手；NGX 中单爱拿 Ember Spirit。NGX/FLCN 自己的胜率和 H2H 没因 Liquid-TY 这局改变，数字接近开赛预览，但战报必须从刚打完的两局写起。这不是投注建议。",
   "previousMap": {
-    "game": 1,
-    "matchId": 8955549026,
+    "game": 2,
+    "matchId": 8955653541,
     "winner": "Team Yandex",
     "score": [
-      34,
-      37
+      13,
+      38
     ],
-    "f10": "Team Liquid",
-    "f10Time": 1099,
-    "durationMin": 54.5,
+    "f10": "Team Yandex",
+    "f10Time": 1152,
+    "durationMin": 38.5,
     "pace": "慢",
-    "stance": "发育对线",
+    "stance": "滚雪球",
     "picks": {
-      "Team Yandex": [
-        "Io",
-        "Largo",
-        "Hoodwink",
-        "Enchantress",
+      "Team Liquid": [
+        "Winter Wyvern",
+        "Clockwerk",
+        "Ember Spirit",
+        "Dark Seer",
         "Windranger"
       ],
-      "Team Liquid": [
-        "Nature's Prophet",
-        "Mirana",
-        "Tusk",
-        "Dawnbreaker",
-        "Tiny"
+      "Team Yandex": [
+        "Bounty Hunter",
+        "Io",
+        "Hoodwink",
+        "Slark",
+        "Tidehunter"
       ]
     },
     "mid": {
-      "Team Yandex": "Io",
-      "Team Liquid": "Nature's Prophet"
+      "Team Liquid": "Windranger",
+      "Team Yandex": "Slark"
     },
-    "blurb": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。"
+    "blurb": "Team Yandex先到 10 杀（当时 4-10，19分12秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Slark 参与 4 次（击杀 1 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。"
   },
   "previousMaps": [
     {
@@ -74,63 +74,97 @@
         "Team Liquid": "Nature's Prophet"
       },
       "blurb": "Team Liquid先到 10 杀（当时 9-10，18分19秒）。这 10 次击杀里，中单 Nisha/Nature's Prophet 参与 9 次（击杀 4 + 助攻 5），中单+双辅合计参与 21 次 · 中辅驱动。对手当时 9 杀。"
+    },
+    {
+      "game": 2,
+      "matchId": 8955653541,
+      "winner": "Team Yandex",
+      "score": [
+        13,
+        38
+      ],
+      "f10": "Team Yandex",
+      "f10Time": 1152,
+      "durationMin": 38.5,
+      "pace": "慢",
+      "stance": "滚雪球",
+      "picks": {
+        "Team Liquid": [
+          "Winter Wyvern",
+          "Clockwerk",
+          "Ember Spirit",
+          "Dark Seer",
+          "Windranger"
+        ],
+        "Team Yandex": [
+          "Bounty Hunter",
+          "Io",
+          "Hoodwink",
+          "Slark",
+          "Tidehunter"
+        ]
+      },
+      "mid": {
+        "Team Liquid": "Windranger",
+        "Team Yandex": "Slark"
+      },
+      "blurb": "Team Yandex先到 10 杀（当时 4-10，19分12秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Slark 参与 4 次（击杀 1 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。"
     }
   ],
   "nextMap": {
-    "game": 2,
-    "teamA": "Team Liquid",
-    "teamB": "Team Yandex",
+    "game": 1,
+    "teamA": "Nigma Galaxy",
+    "teamB": "Team Falcons",
     "lean": {
-      "team": "Team Yandex",
-      "tag": "TY",
-      "p": 0.549,
-      "pA": 0.451,
-      "pB": 0.549,
-      "breakEven": 1.82,
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.577,
+      "pA": 0.577,
+      "pB": 0.423,
+      "breakEven": 1.73,
       "market": {
         "outcomes": [
-          "Team Liquid",
-          "Team Yandex"
+          "Nigma Galaxy",
+          "Team Falcons"
         ],
         "prices": [
-          0.565,
-          0.435
+          0.385,
+          0.615
         ]
       },
-      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
     },
     "f10": {
-      "team": "Team Liquid",
-      "tag": "Liquid",
-      "p": 0.583,
-      "pA": 0.583,
-      "pB": 0.417,
-      "breakEven": 1.72,
+      "team": "Team Falcons",
+      "tag": "FLCN",
+      "p": 0.616,
+      "pA": 0.384,
+      "pB": 0.616,
+      "breakEven": 1.62,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Team Yandex",
-    "tag": "TY",
-    "p": 0.786,
-    "pA": 0.214,
-    "pB": 0.786,
-    "breakEven": 1.27,
+    "team": "Nigma Galaxy",
+    "tag": "NGX",
+    "p": 0.606,
+    "pA": 0.606,
+    "pB": 0.394,
+    "breakEven": 1.65,
     "market": {
       "outcomes": [
-        "Team Liquid",
-        "Team Yandex"
+        "Nigma Galaxy",
+        "Team Falcons"
       ],
       "prices": [
-        0.335,
-        0.665
+        0.365,
+        0.635
       ]
     },
-    "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
   },
-  "previous": null,
-  "next": {
+  "previous": {
     "id": "ubqf3",
     "round": "胜者组首轮",
     "day": "2026-08-20",
@@ -140,46 +174,81 @@
     "teamB": "Team Yandex",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Yandex",
-    "status": "live",
-    "score": "0-1",
-    "winner": null,
+    "status": "completed",
+    "score": "0-2",
+    "winner": "Team Yandex",
     "polySlug": "dota2-liquid-ty-2026-08-20",
-    "mapsPlayed": 1,
+    "mapsPlayed": 2,
     "lean": {
       "team": "Team Yandex",
       "tag": "TY",
-      "p": 0.786,
-      "pA": 0.214,
-      "pB": 0.786,
-      "breakEven": 1.27,
+      "p": 0.623,
+      "pA": 0.377,
+      "pB": 0.623,
+      "breakEven": 1.61,
       "market": {
         "outcomes": [
           "Team Liquid",
           "Team Yandex"
         ],
         "prices": [
-          0.335,
-          0.665
+          0.0005,
+          0.9995
         ]
       },
-      "why": "本届胜率 Team Liquid 56% / Team Yandex 60%；先到10杀 58% / 49%；H2H 4.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 54% / Team Yandex 61%；先到10杀 56% / 50%；H2H 5.0 局；Team Liquid 中单爱拿 Earth Spirit"
+    }
+  },
+  "next": {
+    "id": "ubqf4",
+    "round": "胜者组首轮",
+    "day": "2026-08-20",
+    "when": "2026-08-20 21:15",
+    "format": "Bo3",
+    "teamA": "Nigma Galaxy",
+    "teamB": "Team Falcons",
+    "teamALabel": "Nigma Galaxy",
+    "teamBLabel": "Team Falcons",
+    "status": "scheduled",
+    "score": null,
+    "winner": null,
+    "polySlug": "dota2-ngx-flc-2026-08-20",
+    "mapsPlayed": 0,
+    "lean": {
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.606,
+      "pA": 0.606,
+      "pB": 0.394,
+      "breakEven": 1.65,
+      "market": {
+        "outcomes": [
+          "Nigma Galaxy",
+          "Team Falcons"
+        ],
+        "prices": [
+          0.365,
+          0.635
+        ]
+      },
+      "why": "本届胜率 Nigma Galaxy 67% / Team Falcons 59%；先到10杀 46% / 59%；本届没交过手；Nigma Galaxy 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
-    "id": "ubqf3",
+    "id": "ubqf4",
     "round": "胜者组首轮",
     "day": "2026-08-20",
-    "when": "2026-08-20 18:30",
+    "when": "2026-08-20 21:15",
     "format": "Bo3",
-    "teamA": "Team Liquid",
-    "teamB": "Team Yandex",
-    "teamALabel": "Team Liquid",
-    "teamBLabel": "Team Yandex",
-    "status": "live",
-    "score": "0-1",
+    "teamA": "Nigma Galaxy",
+    "teamB": "Team Falcons",
+    "teamALabel": "Nigma Galaxy",
+    "teamBLabel": "Team Falcons",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-liquid-ty-2026-08-20",
-    "mapsPlayed": 1
+    "polySlug": "dota2-ngx-flc-2026-08-20",
+    "mapsPlayed": 0
   },
   "todayResults": [
     {
@@ -213,7 +282,25 @@
       "winner": "TEAM VISION",
       "polySlug": "dota2-vsn2-boombo-2026-08-20",
       "mapsPlayed": 3
+    },
+    {
+      "id": "ubqf3",
+      "round": "胜者组首轮",
+      "day": "2026-08-20",
+      "when": "2026-08-20 18:30",
+      "format": "Bo3",
+      "teamA": "Team Liquid",
+      "teamB": "Team Yandex",
+      "teamALabel": "Team Liquid",
+      "teamBLabel": "Team Yandex",
+      "status": "completed",
+      "score": "0-2",
+      "winner": "Team Yandex",
+      "polySlug": "dota2-liquid-ty-2026-08-20",
+      "mapsPlayed": 2
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8955653541
+  ]
 }

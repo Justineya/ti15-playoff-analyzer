@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-20 19:43 CST",
+  "asOf": "2026-08-20 21:07 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -258,16 +258,19 @@
       "format": "Bo3",
       "teamA": "Team Liquid",
       "teamB": "Team Yandex",
-      "status": "live",
+      "status": "completed",
       "polyTitle": "Team Liquid vs Team Yandex",
       "polySlug": "dota2-liquid-ty-2026-08-20",
       "winnerTo": "ubsf2",
       "loserTo": "lbr1b",
-      "mapsPlayed": 1,
-      "score": "0-1",
+      "mapsPlayed": 2,
+      "score": "0-2",
       "matchIds": [
-        8955549026
-      ]
+        8955549026,
+        8955653541
+      ],
+      "winner": "Team Yandex",
+      "loser": "Team Liquid"
     },
     {
       "id": "ubqf4",
@@ -302,10 +305,7 @@
       "day": "2026-08-21",
       "datetime": "2026-08-21 13:00",
       "format": "Bo3",
-      "teamA": {
-        "from": "ubqf3",
-        "as": "loser"
-      },
+      "teamA": "Team Liquid",
       "teamB": {
         "from": "ubqf4",
         "as": "loser"
@@ -333,10 +333,7 @@
       "day": "2026-08-21",
       "datetime": "2026-08-21 19:00",
       "format": "Bo3",
-      "teamA": {
-        "from": "ubqf3",
-        "as": "winner"
-      },
+      "teamA": "Team Yandex",
       "teamB": {
         "from": "ubqf4",
         "as": "winner"
