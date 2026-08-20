@@ -1604,12 +1604,18 @@ function liveStamp(feed) {
   return `已刷新 ${t}${stale}`;
 }
 
-function goldLead(n) {
-  const v = Math.round(Number(n) || 0);
+function goldLeadLabel(leadA, teamA, teamB) {
+  const v = Math.round(Number(leadA) || 0);
   const mag = Math.abs(v);
+  if (mag < 50) return "经济持平";
   const lab = mag >= 1000 ? `${(mag / 1000).toFixed(1)}k` : String(mag);
-  if (v === 0) return "经济持平";
-  return v > 0 ? `领先 ${lab}` : `落后 ${lab}`;
+  const who = v > 0 ? TAG[teamA] || teamA : TAG[teamB] || teamB;
+  return `${who} +${lab}`;
+}
+
+function goldBarPct(leadA) {
+  const tilt = Math.max(-0.42, Math.min(0.42, Number(leadA || 0) / 6000));
+  return 50 + tilt * 50;
 }
 
 function liveClock(t) {
@@ -1677,8 +1683,8 @@ function broadcastHtml(data, m) {
   }
   const g = feed.game;
   const delay = g.delay ? `延迟约 ${g.delay} 秒` : "观战延迟";
-  const leadWho = g.leadA > 80 ? TAG[m.teamA] || m.teamA : g.leadA < -80 ? TAG[m.teamB] || m.teamB : "";
-  const pct = Math.max(8, Math.min(92, 50 + (g.leadA / 8000) * 50));
+  const nw = goldLeadLabel(g.leadA, m.teamA, m.teamB);
+  const pct = goldBarPct(g.leadA);
   const lpMap = currentLpMap(feed.series);
   const hasLiveHeroes = (g.playersA || []).some((p) => p.heroId) || (g.playersB || []).some((p) => p.heroId);
   const rowA = hasLiveHeroes ? g.playersA : lpHeroSlots(lpMap?.heroes1, g.playersA, data.heroes) || g.playersA;
@@ -1702,6 +1708,7 @@ function broadcastHtml(data, m) {
       </div>
       <div class="bc-mid">
         <div class="bc-clock" id="bc-clock">${liveClock(g.gameTime)}</div>
+        <div class="bc-nw">${esc(nw)}</div>
         <div class="bc-f10k">${f10kLiveLine(g.scoreA, g.scoreB, m.teamA, m.teamB)}</div>
       </div>
       <div class="bc-side right">
@@ -1710,8 +1717,11 @@ function broadcastHtml(data, m) {
         ${crest(m.teamB, "sm")}
       </div>
     </div>
-    <div class="bc-gold"><i style="width:${pct}%"></i></div>
-    <p class="bc-gold-lab">${leadWho ? esc(leadWho) + " " : ""}${goldLead(g.leadA)}</p>
+    <div class="bc-gold" title="${esc(nw)}">
+      <i class="a" style="width:${pct}%"></i>
+      <b></b>
+    </div>
+    <p class="bc-gold-lab">${esc(nw)}</p>
     <div class="bc-rows">
       <div class="bc-line">${(rowA || []).map(heroSlot).join("")}</div>
       <div class="bc-line">${(rowB || []).map(heroSlot).join("")}</div>

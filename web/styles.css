@@ -863,21 +863,41 @@ footer a { color: var(--gold); }
   font-size: 12px;
 }
 .bc-gold {
-  height: 6px;
-  background: #2a2722;
+  position: relative;
+  display: flex;
+  height: 10px;
+  background: #6a3b34;
   margin: 12px 0 6px;
   overflow: hidden;
 }
-.bc-gold i {
+.bc-gold i.a {
   display: block;
   height: 100%;
   background: var(--gold);
+  transition: width 0.35s ease;
+}
+.bc-gold b {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #f2ebe0;
+  transform: translateX(-50%);
 }
 .bc-gold-lab {
   margin: 0 0 10px;
   text-align: center;
   color: #d8d1c0;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.bc-nw {
+  margin-top: 4px;
+  color: var(--gold);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 .bc-rows { display: grid; gap: 8px; }
 .bc-line {
