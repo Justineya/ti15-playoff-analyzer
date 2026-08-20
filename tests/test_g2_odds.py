@@ -106,6 +106,40 @@ if (!g2pick || String(g2pick.match_id) !== "8955383956") {
   console.error("expected G2 picking lobby, got", g2pick && g2pick.match_id);
   process.exit(7);
 }
+const g2long = window.TI15_LIVE.pickGame(
+  [
+    { match_id: "8955304019", deactivate_time: 0, game_time: 100, team_id_radiant: 8255888, team_id_dire: 9572001 },
+    { match_id: "8955383956", deactivate_time: 0, game_time: 5000, team_id_radiant: 9572001, team_id_dire: 8255888 },
+  ],
+  "TEAM VISION",
+  "BoomBoys",
+  { "TEAM VISION": [9572001], BoomBoys: [8255888] }
+);
+if (!g2long || String(g2long.match_id) !== "8955383956") {
+  console.error("expected newer match id even if G2 clock is longer, got", g2long && g2long.match_id);
+  process.exit(8);
+}
+const lp = {
+  score: "1-0",
+  matchIds: ["8955304019", "8955383956"],
+  maps: [{ n: 1, winner: 1 }],
+};
+const skipG1 = window.TI15_LIVE.pickGame(
+  [
+    { match_id: "8955304019", deactivate_time: 0, game_time: 4524, team_id_radiant: 8255888, team_id_dire: 9572001 },
+    { match_id: "8955383956", deactivate_time: 0, game_time: -10, team_id_radiant: 9572001, team_id_dire: 8255888 },
+  ],
+  "TEAM VISION",
+  "BoomBoys",
+  { "TEAM VISION": [9572001], BoomBoys: [8255888] },
+  lp
+);
+if (!skipG1 || String(skipG1.match_id) !== "8955383956") {
+  console.error("expected LP to drop finished G1, got", skipG1 && skipG1.match_id);
+  process.exit(9);
+}
+const done = window.TI15_LIVE.finishedMatchIds(lp);
+if (!done.has("8955304019") || done.has("8955383956")) process.exit(10);
 """
     proc = subprocess.run(["node", "-e", script], cwd=ROOT, check=False, capture_output=True, text=True)
     if proc.returncode != 0:

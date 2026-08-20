@@ -157,6 +157,17 @@ def test_pick_game_prefers_g2_picking_while_g1_still_active() -> None:
     )
     hit = pick_game([g1, g2], "TEAM VISION", "BoomBoys")
     assert str(hit["match_id"]) == "8955383956"
+    g2_long = sample_live(
+        match_id="8955383956",
+        game_time=5000,
+        deactivate_time=0,
+        team_id_radiant=9572001,
+        team_id_dire=8255888,
+        team_name_radiant="TEAM VISION",
+        team_name_dire="BoomBoys",
+    )
+    hit = pick_game([g1, g2_long], "TEAM VISION", "BoomBoys")
+    assert str(hit["match_id"]) == "8955383956"
 
 
 def test_overlay_series_sets_spirit_g1_win() -> None:

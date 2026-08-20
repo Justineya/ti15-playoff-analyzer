@@ -92,8 +92,16 @@ def pick_game(games: list[dict], team_a: str, team_b: str) -> dict | None:
                 hits.append(game)
     if not hits:
         return None
-    hits.sort(key=lambda g: (game_clock(g), str(g.get("match_id") or g.get("matchId") or "")))
+    hits.sort(key=lambda g: (-_match_id_num(g), game_clock(g)))
     return hits[0]
+
+
+def _match_id_num(game: dict) -> int:
+    raw = str(game.get("match_id") or game.get("matchId") or "0")
+    try:
+        return int(raw)
+    except ValueError:
+        return 0
 
 
 HERO_RE = re.compile(r"\|t([12])h(\d+)=([^\|\n}]+)")

@@ -122,21 +122,49 @@
     return Number(g.game_time ?? g.gameTime ?? 0);
   }
 
-  function pickGame(games, teamA, teamB, idMap) {
-    const active = pairGames(games, teamA, teamB, idMap).filter(isActive);
-    if (!active.length) return null;
-    return active.slice().sort((a, b) => {
-      const clock = gameClock(a) - gameClock(b);
-      if (clock) return clock;
-      return String(a.match_id ?? a.matchId ?? "").localeCompare(String(b.match_id ?? b.matchId ?? ""));
-    })[0];
+  function scorePlayed(score) {
+    const hit = String(score || "").match(/^(\d+)\s*[-:]\s*(\d+)$/);
+    return hit ? Number(hit[1]) + Number(hit[2]) : 0;
   }
 
-  function mergeGames(primary, extra) {
+  function matchIdOf(g) {
+    return String(g?.match_id ?? g?.matchId ?? "");
+  }
+
+  function finishedMatchIds(lp) {
+    const ids = [...new Set((lp?.matchIds || []).map(String).filter(Boolean))];
+    const done = new Set();
+    for (const row of lp?.maps || []) {
+      if (row.winner !== 1 && row.winner !== 2) continue;
+      const n = Number(row.n || 0);
+      if (n && ids[n - 1]) done.add(ids[n - 1]);
+    }
+    const hit = String(lp?.score || "").match(/^(\d+)\s*[-:]\s*(\d+)$/);
+    const played = hit ? Number(hit[1]) + Number(hit[2]) : 0;
+    for (let i = 0; i < played && i < ids.length; i += 1) done.add(ids[i]);
+    return done;
+  }
+
+  function pickGame(games, teamA, teamB, idMap, lp) {
+    const done = finishedMatchIds(lp);
+    const pair = pairGames(games, teamA, teamB, idMap);
+    let active = pair.filter(isActive).filter((g) => !done.has(matchIdOf(g)));
+    if (!active.length) return null;
+    active.sort((a, b) => {
+      const idDiff = Number(matchIdOf(b)) - Number(matchIdOf(a));
+      if (idDiff) return idDiff;
+      return gameClock(a) - gameClock(b);
+    });
+    return active[0];
+  }
+
+  function mergeGames(primary, extra, skipIds) {
+    const skip = skipIds || new Set();
     const out = [];
     const seen = new Set();
     for (const g of [...(primary || []), ...(extra || [])]) {
-      const id = String(g.match_id ?? g.matchId ?? "");
+      const id = matchIdOf(g);
+      if (id && skip.has(id)) continue;
       const key = id || JSON.stringify(g);
       if (seen.has(key)) continue;
       seen.add(key);
@@ -237,36 +265,41 @@
     const liveRes = settled[0];
     const snapRes = settled[1];
     const snap = snapRes.status === "fulfilled" ? snapRes.value : null;
+    const lp = (snap && snap.matches && matchId && snap.matches[matchId]) || null;
+    const doneIds = finishedMatchIds(lp);
     let games = [];
     let source = LIVE;
     if (liveRes.status === "fulfilled") {
       const raw = liveRes.value;
       games = Array.isArray(raw) ? raw : raw?.games || [];
-      if (snap?.games) games = mergeGames(games, snap.games);
+      if (snap?.games) games = mergeGames(games, snap.games, doneIds);
     } else if (snap?.games) {
-      games = snap.games;
+      games = mergeGames([], snap.games, doneIds);
       source = FALLBACK;
     } else {
       const err = liveRes.status === "rejected" ? liveRes.reason : "no live";
       return { ok: false, error: String(err?.message || err), source: LIVE, polledAt };
     }
-    const lp = (snap && snap.matches && matchId && snap.matches[matchId]) || null;
     if (lp?.matchIds) {
       for (const id of lp.matchIds) rememberId(teamA, teamB, id);
     }
     for (const g of pairGames(games, teamA, teamB, idMap)) {
       rememberId(teamA, teamB, g.match_id ?? g.matchId);
     }
-    const game = pickGame(games, teamA, teamB, idMap);
-    const liveId = game ? String(game.match_id ?? game.matchId ?? "") : "";
+    const game = pickGame(games, teamA, teamB, idMap, lp);
+    const liveId = game ? matchIdOf(game) : "";
     const finished = await finishedScore(teamA, teamB, lp, idMap, liveId);
     const ids = knownIds(teamA, teamB, lp);
-    let mapNumber = ids.length || 1;
-    if (liveId && ids.includes(liveId)) mapNumber = ids.indexOf(liveId) + 1;
-    else if (finished?.maps) mapNumber = finished.maps + (liveId ? 1 : 0);
     const series = { ...(lp || {}) };
-    if (finished?.score && !series.score) series.score = finished.score;
+    if (finished?.score && scorePlayed(finished.score) >= scorePlayed(series.score)) series.score = finished.score;
     if (ids.length) series.matchIds = ids;
+    const played = Math.max(
+      scorePlayed(series.score),
+      (series.maps || []).filter((x) => x.winner === 1 || x.winner === 2).length
+    );
+    let mapNumber = played + 1;
+    if (liveId && ids.includes(liveId)) mapNumber = ids.indexOf(liveId) + 1;
+    else if (!liveId && !played) mapNumber = ids.length || 1;
     if (!game) {
       return {
         ok: true,
@@ -304,5 +337,7 @@
     isActive,
     winnerOfMatch,
     scoreFromWinners,
+    finishedMatchIds,
+    matchIdOf,
   };
 })();

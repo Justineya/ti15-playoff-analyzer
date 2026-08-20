@@ -1089,6 +1089,8 @@ function applyLiveSeries(m, feed, sim) {
     best = preferScore(best, cand);
   }
   if (best) m.score = best;
+  const played = seriesWins(m).played;
+  if (played) m.mapsPlayed = Math.max(Number(m.mapsPlayed) || 0, played);
   const mapNo = Number(feed?.mapNumber || 0);
   if (mapNo >= 2) m.mapsPlayed = Math.max(Number(m.mapsPlayed) || 0, mapNo - 1);
   return before !== `${m.score || ""}|${m.mapsPlayed || 0}|${(m.matchIds || []).join(",")}`;
@@ -1796,10 +1798,23 @@ function heroSlot(p) {
   return `<div class="bc-hero empty"><span>${esc(p.name || "未选")}</span></div>`;
 }
 
-function currentLpMap(series) {
+function currentLpMap(series, mapNumber) {
   const maps = series?.maps || [];
+  const n = Number(mapNumber || 0);
+  if (n) {
+    const hit = maps.find((m) => Number(m.n) === n);
+    if (hit) return hit;
+  }
   const live = maps.find((m) => !m.winner && (m.heroes1?.length || m.heroes2?.length)) || maps.find((m) => !m.winner);
   return live || maps[maps.length - 1] || null;
+}
+
+function tickerGame(feed) {
+  const g = feed?.game;
+  if (!g) return null;
+  const done = window.TI15_LIVE?.finishedMatchIds?.(feed.series);
+  if (done && done.has(String(g.matchId))) return null;
+  return g;
 }
 
 function broadcastHtml(data, m) {
@@ -1827,7 +1842,8 @@ function broadcastHtml(data, m) {
       ${stamp}
     </div>`;
   }
-  if (feed.empty || !feed.game) {
+  const g = tickerGame(feed);
+  if (!g) {
     if (!started) return "";
     const wins = seriesWins(m);
     const { seriesDone, nextGame } = seriesState(m);
@@ -1841,11 +1857,11 @@ function broadcastHtml(data, m) {
       ${stamp}
     </div>`;
   }
-  const g = feed.game;
   const delay = g.delay ? `延迟约 ${g.delay} 秒` : "观战延迟";
   const nw = goldLeadLabel(g.leadA, m.teamA, m.teamB);
   const pct = goldBarPct(g.leadA);
-  const lpMap = currentLpMap(feed.series);
+  const mapNo = Number(feed.mapNumber || seriesState(m).nextGame || 1);
+  const lpMap = currentLpMap(feed.series, mapNo);
   const hasLiveHeroes = (g.playersA || []).some((p) => p.heroId) || (g.playersB || []).some((p) => p.heroId);
   const rowA = hasLiveHeroes ? g.playersA : lpHeroSlots(lpMap?.heroes1, g.playersA, data.heroes) || g.playersA;
   const rowB = hasLiveHeroes ? g.playersB : lpHeroSlots(lpMap?.heroes2, g.playersB, data.heroes) || g.playersB;
@@ -1856,7 +1872,7 @@ function broadcastHtml(data, m) {
       : "";
   return `<div class="broadcast on" id="broadcast" data-match="${esc(g.matchId)}">
     <div class="arena-kicker">
-      <span>转播信息 · ${esc(g.phase)}</span>
+      <span>转播信息 · 第${mapNo}局 · ${esc(g.phase)}</span>
       <span>${esc(series)}</span>
       <span>${esc(delay)} · 没有画面</span>
     </div>
@@ -2320,7 +2336,7 @@ function setup(data) {
     const m = focusMatch(data.playoffs?.matches || [], matchId);
     if (!namedSides(m)) return;
     const sim = findSim(indexSims(data), m);
-    const before = `${m.score || ""}|${m.mapsPlayed || 0}|${seriesState(m).nextGame}`;
+    const before = `${m.score || ""}|${m.mapsPlayed || 0}|${seriesState(m).nextGame}|${data.liveFeed?.game?.matchId || ""}|${data.liveFeed?.mapNumber || ""}`;
     try {
       data.liveFeed = await window.TI15_LIVE.fetchFeed(data, m.teamA, m.teamB, m.id);
     } catch (err) {
@@ -2330,7 +2346,7 @@ function setup(data) {
       m.datetime = data.liveFeed.datetime;
     }
     const progressed = applyLiveSeries(m, data.liveFeed, sim);
-    const after = `${m.score || ""}|${m.mapsPlayed || 0}|${seriesState(m).nextGame}`;
+    const after = `${m.score || ""}|${m.mapsPlayed || 0}|${seriesState(m).nextGame}|${data.liveFeed?.game?.matchId || ""}|${data.liveFeed?.mapNumber || ""}`;
     const clock = document.getElementById("clock");
     if (clock) {
       if (data.liveFeed?.datetime) clock.dataset.start = m.datetime;
