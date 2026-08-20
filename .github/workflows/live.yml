@@ -2,7 +2,9 @@ name: Live scoreboard
 
 on:
   schedule:
-    - cron: "* * * * *"
+    # GitHub often skips "* * * * *". Two minutes is still late; the page
+    # itself polls OpenDota every 4s. This job is the fallback snapshot.
+    - cron: "*/2 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,7 +14,7 @@ permissions:
 
 concurrency:
   group: live-score
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   live:

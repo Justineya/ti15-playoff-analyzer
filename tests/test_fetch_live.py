@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from fetch_live import compact_game, parse_lp_match, pick_game, ti_games  # noqa: E402
+from fetch_live import compact_game, overlay_series, parse_lp_match, pick_game, ti_games  # noqa: E402
 
 
 def sample_live(**over):
@@ -137,25 +137,34 @@ def test_pick_game_skips_finished_g1_when_g2_is_live() -> None:
 
 
 def test_overlay_series_sets_spirit_g1_win() -> None:
+    games = [
+        {"matchId": "8955197224", "deactivateTime": 9, "radiant": {"id": 7119388}, "dire": {"id": 10150413}},
+        {"matchId": "8955247801", "deactivateTime": 0, "radiant": {"id": 10150413}, "dire": {"id": 7119388}},
+    ]
+    playoffs = {"matches": [{"id": "ubqf1", "teamA": "Iron Wing", "teamB": "Team Spirit"}]}
+    out = overlay_series(games, {}, playoffs, local_winners={"8955197224": "Team Spirit"})
+    assert out["ubqf1"]["score"] == "0-1"
+    assert out["ubqf1"]["matchIds"] == ["8955197224", "8955247801"]
+
+
+def test_overlay_keeps_lp_score_without_http() -> None:
     import fetch_live as fl
 
     orig = fl.get_json
 
-    def fake_get(url: str):
-        if str(url).endswith("8955197224"):
-            return {"radiant_win": True, "radiant_team_id": 7119388, "dire_team_id": 10150413}
+    def boom(url: str):
         raise AssertionError(url)
 
-    fl.get_json = fake_get
+    fl.get_json = boom
     try:
         games = [
             {"matchId": "8955197224", "deactivateTime": 9, "radiant": {"id": 7119388}, "dire": {"id": 10150413}},
             {"matchId": "8955247801", "deactivateTime": 0, "radiant": {"id": 10150413}, "dire": {"id": 7119388}},
         ]
         playoffs = {"matches": [{"id": "ubqf1", "teamA": "Iron Wing", "teamB": "Team Spirit"}]}
-        out = fl.overlay_series(games, {}, playoffs)
+        lp = {"ubqf1": {"score": "0-1", "matchIds": ["8955197224"]}}
+        out = overlay_series(games, lp, playoffs, local_winners={})
         assert out["ubqf1"]["score"] == "0-1"
-        assert out["ubqf1"]["matchIds"] == ["8955197224", "8955247801"]
     finally:
         fl.get_json = orig
 
@@ -170,4 +179,5 @@ if __name__ == "__main__":
     test_lp_map1_iron_wing_win_is_1_0()
     test_pick_game_skips_finished_g1_when_g2_is_live()
     test_overlay_series_sets_spirit_g1_win()
+    test_overlay_keeps_lp_score_without_http()
     print("test_fetch_live ok")

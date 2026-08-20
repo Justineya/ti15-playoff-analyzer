@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 import re
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -33,10 +35,26 @@ TEAM_IDS: dict[str, list[int]] = {
 ID_TO_TEAM = {i: name for name, ids in TEAM_IDS.items() for i in ids}
 
 
-def get_json(url: str) -> list | dict:
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+def get_json(url: str, retries: int = 4) -> list | dict:
+    last: Exception | None = None
+    for i in range(retries):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code == 429 and i < retries - 1:
+                time.sleep(2**i)
+                continue
+            raise
+        except (TimeoutError, urllib.error.URLError) as e:
+            last = e
+            if i < retries - 1:
+                time.sleep(1)
+                continue
+            raise
+    raise last or RuntimeError(url)
 
 
 def ids_for(name: str) -> set[int]:
@@ -218,34 +236,64 @@ def winner_from_detail(detail: dict, team_a: str, team_b: str) -> str | None:
     return team_a if a_won else team_b
 
 
-def score_from_finished_ids(match_ids: list[str], team_a: str, team_b: str, skip_id: str | None = None) -> str | None:
+def load_local_winners() -> dict[str, str]:
+    path = ROOT / "data" / "games.json"
+    if not path.exists():
+        return {}
+    out: dict[str, str] = {}
+    try:
+        blob = json.loads(path.read_text())
+    except Exception:  # noqa: BLE001
+        return {}
+    for game in blob.get("games") or []:
+        mid = str(game.get("match_id") or "")
+        winner = game.get("winner")
+        if mid and winner:
+            out[mid] = winner
+    return out
+
+
+def score_from_finished_ids(
+    match_ids: list[str],
+    team_a: str,
+    team_b: str,
+    skip_id: str | None = None,
+    local_winners: dict[str, str] | None = None,
+) -> str | None:
     wins_a = 0
     wins_b = 0
     skip = str(skip_id or "")
+    local = local_winners if local_winners is not None else load_local_winners()
     for mid in match_ids:
         if not mid or str(mid) == skip:
             continue
-        try:
-            detail = get_json(MATCH_URL + str(mid))
-        except Exception as e:  # noqa: BLE001
-            print("match lookup skipped", mid, e)
-            continue
-        winner = winner_from_detail(detail if isinstance(detail, dict) else {}, team_a, team_b)
+        winner = local.get(str(mid))
+        if winner not in (team_a, team_b):
+            try:
+                detail = get_json(MATCH_URL + str(mid))
+            except Exception as e:  # noqa: BLE001
+                print("match lookup skipped", mid, e)
+                continue
+            winner = winner_from_detail(detail if isinstance(detail, dict) else {}, team_a, team_b)
         if winner == team_a:
             wins_a += 1
         elif winner == team_b:
             wins_b += 1
-        else:
-            continue
     if wins_a or wins_b:
         return f"{wins_a}-{wins_b}"
     return None
 
 
-def overlay_series(games: list[dict], lp: dict[str, dict], playoffs: dict | None = None) -> dict[str, dict]:
+def overlay_series(
+    games: list[dict],
+    lp: dict[str, dict],
+    playoffs: dict | None = None,
+    local_winners: dict[str, str] | None = None,
+) -> dict[str, dict]:
     """Fill series score/matchIds from OpenDota when Liquipedia lags or fails."""
     out = {k: dict(v) for k, v in (lp or {}).items()}
     blob = playoffs if playoffs is not None else load_playoffs()
+    winners = local_winners if local_winners is not None else load_local_winners()
     live_ids = {game_match_id(g) for g in games or [] if is_active(g) and game_match_id(g)}
     for match in blob.get("matches") or []:
         mid = match.get("id")
@@ -262,19 +310,29 @@ def overlay_series(games: list[dict], lp: dict[str, dict], playoffs: dict | None
         merged = list(dict.fromkeys([*(row.get("matchIds") or []), *ids]))
         if merged:
             row["matchIds"] = merged
-        skip = next((i for i in merged if i in live_ids), None)
-        score = score_from_finished_ids(merged, team_a, team_b, skip_id=skip)
-        if score and not row.get("score"):
-            row["score"] = score
+        if not row.get("score"):
+            skip = next((i for i in merged if i in live_ids), None)
+            score = score_from_finished_ids(merged, team_a, team_b, skip_id=skip, local_winners=winners)
+            if score:
+                row["score"] = score
         if row:
             out[mid] = row
     return out
 
 
 def build_snapshot(raw: list[dict] | None = None, wikitext: str | None = None, skip_lp: bool = False) -> dict:
-    raw = raw if raw is not None else get_json(LIVE_URL)
-    games = ti_games(raw if isinstance(raw, list) else [])
-    matches: dict[str, dict] = {}
+    prev_path = ROOT / "web" / "data" / "live.json"
+    prev = json.loads(prev_path.read_text()) if prev_path.exists() else {}
+    if raw is not None:
+        games = ti_games(raw if isinstance(raw, list) else [])
+    else:
+        try:
+            fetched = get_json(LIVE_URL)
+            games = ti_games(fetched if isinstance(fetched, list) else [])
+        except Exception as e:  # noqa: BLE001
+            print("opendota live failed", e)
+            games = prev.get("games") or []
+    matches: dict[str, dict] = dict(prev.get("matches") or {}) if prev else {}
     if not skip_lp:
         try:
             matches = lp_matches(wikitext)
@@ -295,7 +353,11 @@ def core_payload(blob: dict) -> str:
 
 
 def main() -> None:
-    snap = build_snapshot()
+    try:
+        snap = build_snapshot()
+    except Exception as e:  # noqa: BLE001
+        print("snapshot failed", e)
+        return
     path = ROOT / "web" / "data" / "live.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists() and core_payload(json.loads(path.read_text())) == core_payload(snap):

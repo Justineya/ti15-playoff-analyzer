@@ -1102,6 +1102,7 @@ function mergePlayoffScores(prev, next) {
     if (!old) continue;
     const keep = preferScore(m.score, old.score);
     if (keep) m.score = keep;
+    if (Number(old.mapsPlayed) > Number(m.mapsPlayed || 0)) m.mapsPlayed = old.mapsPlayed;
     if ((old.matchIds || []).length && !(m.matchIds || []).length) m.matchIds = old.matchIds.slice();
   }
   return next;
@@ -1113,6 +1114,62 @@ function seriesState(m) {
   const seriesDone = m.status === "completed" || m.status === "complete" || wins.a >= need || wins.b >= need;
   const nextGame = seriesDone ? 1 : wins.played + 1;
   return { wins, need, seriesDone, nextGame };
+}
+
+function mapWinnerAt(m, feed, n, wins) {
+  const row = (feed?.series?.maps || []).find((x) => Number(x.n) === n);
+  if (row?.winner === 1) return m.teamA;
+  if (row?.winner === 2) return m.teamB;
+  if (n <= wins.played && wins.played === 1) return wins.a ? m.teamA : m.teamB;
+  return null;
+}
+
+function nextKickoffLine(data, current) {
+  const list = [...(data.playoffs?.matches || [])]
+    .filter((x) => x.datetime && x.id !== current?.id && x.status !== "completed" && x.status !== "complete")
+    .sort((a, b) => String(a.datetime).localeCompare(b.datetime));
+  const next = list.find(namedSides) || list[0];
+  if (!next) return "";
+  const t = String(next.datetime).slice(11, 16);
+  const pair = namedSides(next)
+    ? `${TAG[next.teamA] || next.teamA} vs ${TAG[next.teamB] || next.teamB}`
+    : next.round || "下一场";
+  return `<p class="map-next">下场系列 ${pair} · 北京时间 ${t} 开（液体百科点；这系列打满会晚）</p>`;
+}
+
+function progressBoardHtml(data, m, nextGame, seriesDone) {
+  if (!namedSides(m)) return "";
+  const need = needWins(m.format);
+  const maxMaps = need * 2 - 1;
+  const wins = seriesWins(m);
+  const feed = data.liveFeed;
+  const cells = [];
+  for (let n = 1; n <= maxMaps; n += 1) {
+    const winner = mapWinnerAt(m, feed, n, wins);
+    let klass = "wait";
+    let lab = "若需要";
+    if (winner) {
+      klass = "done";
+      lab = `${TAG[winner] || winner} 赢了`;
+    } else if (n <= wins.played) {
+      klass = "done";
+      lab = "已结束";
+    } else if (!seriesDone && n === nextGame) {
+      klass = feed?.game ? "on" : "next";
+      lab = feed?.game ? feed.game.phase || "正在打" : "接下来打";
+    } else if (!seriesDone && n === nextGame + 1) {
+      lab = "本局结束后开";
+    } else if (seriesDone) {
+      lab = "不用打";
+    }
+    cells.push(`<div class="map-cell ${klass}"><b>第${n}局</b><span>${lab}</span></div>`);
+  }
+  const score = m.score || (wins.played ? `${wins.a}-${wins.b}` : "");
+  return `<div class="map-board">
+    <div class="map-kicker">${m.format || "Bo3"}${score ? " · " + score : ""} · 打完一局就换下一局盘口</div>
+    <div class="map-cells">${cells.join("")}</div>
+    ${nextKickoffLine(data, m)}
+  </div>`;
 }
 
 function pSeriesAfter(pMap, winsA, winsB, need) {
@@ -1524,7 +1581,7 @@ function iwSpiritStudyHtml(h2h, sim, nextGame) {
   const leanA = (pA ?? 0.5) >= 0.5;
   const lean = leanA ? "Iron Wing" : "Team Spirit";
   const pLean = leanA ? pA : 1 - pA;
-  const heading = nextGame === 1 ? "Tundra / IW 对 Spirit · 第一局先到 10 杀" : "Tundra / IW 对 Spirit · 先到 10 杀";
+  const heading = nextGame === 1 ? "Tundra / IW 对 Spirit · 第一局先到 10 杀" : `Tundra / IW 对 Spirit · 第${nextGame}局先到 10 杀`;
   const rows = (cur.series || []).map(h2hSeriesRow).join("");
   const dropped = h2h.droppedTi25;
   const dropNote = dropped?.maps
@@ -1533,8 +1590,7 @@ function iwSpiritStudyHtml(h2h, sim, nextGame) {
   return `<section class="f10k-study">
     <div class="arena-kicker"><span>交手</span><span>Tundra → IW vs Spirit</span><span>没有公开盘</span></div>
     <h2>${heading}</h2>
-    <p class="lede">本届五人（Pure / bzm / 33 / Ari / Whitemon）从 Slam IV 起对 Spirit：<b>${cur.seriesN} 个系列 ${cur.maps} 局</b>。地图 <b>Spirit ${cur.spiritMaps}-${cur.iwMaps}</b>。先到 10 杀 <b>Spirit ${cur.spiritF10}-${cur.iwF10}</b>。先到之后赢图 ${cur.iwF10ThenWin + cur.spiritF10ThenWin}/${cur.maps}——只有 DL28 第一局 Spirit 先到、IW 仍赢。</p>
-    <p class="lede">系列第一局：Spirit 赢 ${cur.g1Spirit}、IW 赢 ${cur.g1Iw}。第一局先到 Spirit ${cur.g1SpiritF10}、IW ${cur.g1IwF10}。这一局模型看好 <b>${TAG[lean] || lean}</b> ${pct(pLean)} 先到，但交手里 Spirit 更常先堆到 10。</p>
+    <p class="lede">本届五人（Pure / bzm / 33 / Ari / Whitemon）从 Slam IV 起对 Spirit：<b>${cur.seriesN} 个系列 ${cur.maps} 局</b>。地图 <b>Spirit ${cur.spiritMaps}-${cur.iwMaps}</b>。先到 10 杀 <b>Spirit ${cur.spiritF10}-${cur.iwF10}</b>。${nextGame === 1 ? `系列第一局：Spirit 赢 ${cur.g1Spirit}、IW 赢 ${cur.g1Iw}。第一局先到 Spirit ${cur.g1SpiritF10}、IW ${cur.g1IwF10}。` : "第一局已经打完，下面交手只作这一局先到 10 杀的参考。"}这一局模型看好 <b>${TAG[lean] || lean}</b> ${pct(pLean)} 先到，但交手里 Spirit 更常先堆到 10。</p>
     <div class="table-wrap"><table class="src-table compact">
       <thead><tr><th>赛事</th><th>系列</th><th>10 杀 / 胜负</th></tr></thead>
       <tbody>${rows}</tbody>
@@ -1569,9 +1625,9 @@ function f10kStudyHtml(data, m, sim, nextGame) {
   const conv = report.overall?.g1?.rate;
   const g1n = report.overall?.g1?.n;
   const later = report.overall?.later?.rate;
-  const heading = nextGame === 1 ? "第一局谁先堆到 10 杀" : "他们系列第一局怎么先到 10 杀";
+  const heading = nextGame === 1 ? "第一局谁先堆到 10 杀" : `第${nextGame}局谁先堆到 10 杀`;
   return `<section class="f10k-study">
-    <div class="arena-kicker"><span>研究</span><span>第一局 · 先到 10 杀</span><span>没有公开盘</span></div>
+    <div class="arena-kicker"><span>研究</span><span>${nextGame === 1 ? "第一局" : "第" + nextGame + "局"} · 先到 10 杀</span><span>没有公开盘</span></div>
     <h2>${heading}</h2>
     <p class="lede">这一局模型看好 <b>${TAG[lean] || lean}</b> ${pct(pLean)} 先到 10 杀。TI+EWC 里第一局先到之后大约 <b>${pct(conv)}</b> 赢图${g1n ? `（${g1n} 局）` : ""}，后面的局大约 ${pct(later)}。大约三成先到了仍会输图，不要当低保。</p>
     <div class="f10k-pair">
@@ -1962,7 +2018,7 @@ function renderNow(data, matchId) {
   const f10Title = nextGame === 1 ? "第一局 · 先到 10 杀" : "先到 10 杀";
   const f10Card = marketCard(f10Title, m.teamA, m.teamB, pF10, null, false, nextGame === 1 && !seriesDone);
   const seriesCard = marketCard("系列", m.teamA, m.teamB, pSeriesNow, polyPrice(sim, m.teamA), live);
-  const mapCard = marketCard(`第${nextGame}局`, m.teamA, m.teamB, nextMap?.pWinA, gMkt, live);
+  const mapCard = marketCard(`第${nextGame}局`, m.teamA, m.teamB, nextMap?.pWinA, gMkt, live, !seriesDone && nextGame > 1);
   const markets =
     namedSides(m) && sim
       ? `<div class="markets">
@@ -1984,6 +2040,7 @@ function renderNow(data, matchId) {
   app.innerHTML = `<section class="live-stage">
     ${demoBar}
     ${lastMapHtml(data, m, previousMatch(matches, m))}
+    ${progressBoardHtml(data, m, nextGame, seriesDone)}
     <div class="arena-kicker">
       <span>上海 · 东方体育中心</span>
       <span>${m.round || ""}</span>

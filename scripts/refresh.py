@@ -10,9 +10,14 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 
 
-def run(name: str) -> None:
+def run(name: str, required: bool = True) -> None:
     print("==>", name)
-    subprocess.check_call([sys.executable, str(SCRIPTS / name)], cwd=str(ROOT))
+    try:
+        subprocess.check_call([sys.executable, str(SCRIPTS / name)], cwd=str(ROOT))
+    except subprocess.CalledProcessError as err:
+        if required:
+            raise
+        print(name, "failed, continuing", err.returncode)
 
 
 def main() -> None:
@@ -22,7 +27,8 @@ def main() -> None:
     run("fetch_polymarket.py")
     run("simulate_playoffs.py")
     run("daily_briefing.py")
-    run("fetch_live.py")
+    # OpenDota 429 must not throw away the G1→G2 briefing already written.
+    run("fetch_live.py", required=False)
     run("build_bundle.py")
     print("refresh ok")
 

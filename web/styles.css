@@ -1209,6 +1209,34 @@ footer a { color: var(--gold); }
   padding: 12px 14px;
 }
 .tree-slot .t { color: var(--gold); font-size: 12px; }
+.map-board {
+  margin: 0 0 16px;
+  padding: 14px 16px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+.map-kicker { color: var(--gold); font-size: 12px; margin-bottom: 10px; }
+.map-cells {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+}
+.map-cell {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.map-cell b { font-size: 13px; }
+.map-cell span { color: var(--mute); font-size: 12px; }
+.map-cell.done { border-color: rgba(63, 107, 74, 0.55); }
+.map-cell.on {
+  border-color: var(--gold);
+  background: rgba(201, 162, 39, 0.08);
+}
+.map-cell.next { border-color: rgba(201, 162, 39, 0.45); }
+.map-next { margin: 10px 0 0; color: var(--mute); font-size: 13px; }
 .tree-slot .p { color: var(--mute); font-size: 12px; margin: 4px 0 6px; }
 
 @media (max-width: 1100px) {
