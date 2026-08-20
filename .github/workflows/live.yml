@@ -45,11 +45,19 @@ jobs:
               f.write(f"launch={launch}\n")
               f.write(f"fresh={fresh}\n")
           PY
-      - name: Rewrite Game N+1 briefing
+      - name: Recalc from the finished map, then launch Cursor
         if: steps.map.outputs.fresh == 'yes'
-        run: python3 scripts/daily_briefing.py
-      - name: Launch Cursor agent for the next map
-        if: steps.map.outputs.launch == 'yes'
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          python3 scripts/ingest_finished.py || true
+          python3 scripts/fetch_polymarket.py || true
+          python3 scripts/simulate_playoffs.py || true
+          python3 scripts/daily_briefing.py
+          python3 scripts/build_bundle.py || true
+          python3 scripts/launch_eod_cursor.py
+      - name: Retry Cursor API if the map is still pending
+        if: steps.map.outputs.launch == 'yes' && steps.map.outputs.fresh != 'yes'
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: python3 scripts/launch_eod_cursor.py
@@ -58,7 +66,7 @@ jobs:
         run: |
           git config user.name "ti15-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/data/live.json web/data/daily.json web/data/daily.md data/briefing-state.json data/cursor-launch.json
+          git add web/data/live.json web/data/daily.json web/data/daily.md web/data.js web/data/bundle.json data
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "no live changes"

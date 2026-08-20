@@ -14,6 +14,7 @@ PROMPT = ROOT / ".github" / "eod-cursor-prompt.md"
 LAUNCH = ROOT / "data" / "cursor-launch.json"
 DAILY = ROOT / "web" / "data" / "daily.json"
 LIVE = ROOT / "web" / "data" / "live.json"
+GAMES = ROOT / "data" / "games.json"
 STATE = ROOT / "data" / "briefing-state.json"
 API = "https://api.cursor.com/v0/agents"
 REPO = os.environ.get("EOD_REPO_URL") or "https://github.com/Justineya/ti15-playoff-analyzer"
@@ -24,6 +25,47 @@ import map_trigger  # noqa: E402
 
 def truthy(name: str) -> bool:
     return os.environ.get(name, "").strip().lower() in {"1", "true", "yes"}
+
+
+def previous_context() -> dict:
+    daily = json.loads(DAILY.read_text()) if DAILY.exists() else {}
+    prev = daily.get("previousMaps") or []
+    if not prev and daily.get("previousMap"):
+        prev = [daily["previousMap"]]
+    ids = {str(row.get("matchId")) for row in prev if row.get("matchId")}
+    parsed = []
+    if GAMES.exists() and ids:
+        for game in json.loads(GAMES.read_text()).get("games") or []:
+            if str(game.get("match_id")) not in ids:
+                continue
+            parsed.append(
+                {
+                    "match_id": game.get("match_id"),
+                    "winner": game.get("winner"),
+                    "radiant": game.get("radiant"),
+                    "dire": game.get("dire"),
+                    "duration": game.get("duration"),
+                    "score": game.get("score"),
+                    "f10k": game.get("f10k"),
+                    "draft": game.get("draft"),
+                    "blurb": game.get("blurb"),
+                    "pace": game.get("pace"),
+                    "stance": game.get("stance"),
+                    "sides": {
+                        "radiant": {"mid": ((game.get("sides") or {}).get("radiant") or {}).get("mid")},
+                        "dire": {"mid": ((game.get("sides") or {}).get("dire") or {}).get("mid")},
+                    },
+                }
+            )
+    return {
+        "kind": daily.get("kind"),
+        "headline": daily.get("headline"),
+        "previousMaps": prev,
+        "nextMap": daily.get("nextMap"),
+        "seriesLean": daily.get("seriesLean"),
+        "focus": daily.get("focus"),
+        "parsedGames": parsed,
+    }
 
 
 def snippet(path: Path, limit: int = 8000) -> str:
@@ -57,6 +99,11 @@ def main() -> int:
         return 0
     prompt = PROMPT.read_text()
     prompt += "\n\n本次触发：\n```json\n" + json.dumps(trigger, ensure_ascii=False, indent=2)[:4000] + "\n```\n"
+    prompt += (
+        "\n\n已经打完的局（判断下一局必须用这些，不要套开赛预览）：\n```json\n"
+        + json.dumps(previous_context(), ensure_ascii=False)[:12000]
+        + "\n```\n"
+    )
     if DAILY.exists():
         prompt += "\n\n当前 web/data/daily.json：\n```json\n" + snippet(DAILY) + "\n```\n"
     if LIVE.exists():

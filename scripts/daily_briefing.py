@@ -179,8 +179,8 @@ def maps_for_match(match: dict, games: list[dict]) -> list[dict]:
         return []
     ids = match.get("matchIds") or []
     if ids:
-        by_id = {g.get("match_id"): g for g in games}
-        return [by_id[i] for i in ids if i in by_id]
+        by_id = {str(g.get("match_id")): g for g in games if g.get("match_id") is not None}
+        return [by_id[str(i)] for i in ids if str(i) in by_id]
     pair = {a, b}
     return [g for g in playoff_maps(games) if {g.get("radiant"), g.get("dire")} == pair]
 
@@ -195,14 +195,59 @@ def f10_name(game: dict) -> str | None:
     return None
 
 
+def pick_names(draft_side) -> list[str]:
+    return [x.get("hero") for x in (draft_side or {}).get("picks") or [] if x.get("hero")]
+
+
 def pack_map(game: dict, n: int) -> dict:
+    draft = game.get("draft") or {}
+    sides = game.get("sides") or {}
+    rad, dire = game.get("radiant"), game.get("dire")
+    f10 = game.get("f10k") or {}
     return {
         "game": n,
         "matchId": game.get("match_id"),
         "winner": game.get("winner"),
         "score": game.get("score"),
         "f10": f10_name(game),
-        "durationMin": round((game.get("duration") or 0) / 60, 1),
+        "f10Time": f10.get("time"),
+        "durationMin": round((game.get("duration") or 0) / 60, 1) if game.get("duration") else None,
+        "pace": game.get("pace"),
+        "stance": game.get("stance"),
+        "picks": {
+            rad: pick_names(draft.get("radiant")),
+            dire: pick_names(draft.get("dire")),
+        }
+        if rad and dire
+        else {},
+        "mid": {
+            rad: ((sides.get("radiant") or {}).get("mid") or {}).get("hero"),
+            dire: ((sides.get("dire") or {}).get("mid") or {}).get("hero"),
+        }
+        if rad and dire
+        else {},
+        "blurb": (game.get("blurb") or {}).get("f10k"),
+    }
+
+
+def pack_live_map(match: dict, live_row: dict, n: int) -> dict:
+    ids = [str(x) for x in (live_row.get("matchIds") or match.get("matchIds") or []) if x]
+    mp = next((row for row in live_row.get("maps") or [] if int(row.get("n") or 0) == n), None) or {}
+    winner = None
+    if mp.get("winner") in (1, 2):
+        winner = match.get("teamA") if mp["winner"] == 1 else match.get("teamB")
+    elif n == 1:
+        winner = winner_of_played_map(match, 1)
+    return {
+        "game": n,
+        "matchId": ids[n - 1] if len(ids) >= n else (ids[0] if ids else None),
+        "winner": winner,
+        "score": None,
+        "f10": None,
+        "durationMin": None,
+        "length": mp.get("length"),
+        "heroesA": mp.get("heroes1") or [],
+        "heroesB": mp.get("heroes2") or [],
     }
 
 
@@ -261,6 +306,7 @@ def main() -> None:
     now = datetime.now(CST)
 
     prev_map = None
+    previous_maps: list[dict] = []
     next_map = None
     series_lean = None
     prev_series = None
@@ -298,19 +344,13 @@ def main() -> None:
         need = need_wins(focus_match.get("format") or "Bo3")
         done = focus_match.get("status") in {"completed", "complete"} or max(wins_a, wins_b) >= need
         rows = maps_for_match(focus_match, games)
+        live_row = (live.get("matches") or {}).get(focus_match.get("id")) or {}
         if rows:
-            prev_map = pack_map(rows[-1], len(rows))
+            previous_maps = [pack_map(g, i + 1) for i, g in enumerate(rows)]
+            prev_map = previous_maps[-1]
         elif played:
-            inferred = winner_of_played_map(focus_match, played)
-            ids = [str(x) for x in (focus_match.get("matchIds") or []) if x]
-            prev_map = {
-                "game": played,
-                "matchId": ids[played - 1] if len(ids) >= played else (ids[0] if ids else None),
-                "winner": inferred,
-                "score": None,
-                "f10": None,
-                "durationMin": None,
-            }
+            previous_maps = [pack_live_map(focus_match, live_row, n) for n in range(1, played + 1)]
+            prev_map = previous_maps[-1]
         p_map = float((sim or {}).get("pMapA") or 0.5)
         p_series = p_series_from_score(p_map, wins_a, wins_b, need) if not done else None
         series_lean = lean_from_p(a, b, p_series if p_series is not None else (sim or {}).get("series", {}).get("pSeriesA"), market_prices((sim or {}).get("poly"), "series"), short_why(sim))
@@ -378,6 +418,7 @@ def main() -> None:
         "headline": headline,
         "narrative": narrative,
         "previousMap": prev_map,
+        "previousMaps": previous_maps,
         "nextMap": next_map,
         "seriesLean": series_lean,
         "previous": prev_series,
@@ -406,11 +447,20 @@ def compose(kind, prev_map, next_map, series_lean, prev_series, nxt_series) -> t
     bits = []
     if prev_map and prev_map.get("winner"):
         f10 = f"，先到10杀 {tag(prev_map['f10'])}" if prev_map.get("f10") else ""
-        bits.append(f"第{prev_map['game']}局 {tag(prev_map['winner'])} 赢了{f10}。")
+        dur = f"，{prev_map['durationMin']}分钟" if prev_map.get("durationMin") else ""
+        bits.append(f"第{prev_map['game']}局 {tag(prev_map['winner'])} 赢了{f10}{dur}。")
+        picks = prev_map.get("picks") or {}
+        if picks:
+            parts = []
+            for team, heroes in picks.items():
+                if heroes:
+                    parts.append(f"{tag(team)} {'、'.join(heroes[:3])}")
+            if parts:
+                bits.append("上一局阵容 " + " / ".join(parts) + "。")
     if kind == "next-map" and next_map and next_map.get("lean"):
         lean = next_map["lean"]
         be = f"现场赔率至少 {lean['breakEven']}。" if lean.get("breakEven") else ""
-        bits.append(f"下一局第{next_map['game']}局看好 {lean['tag']}（{round(lean['p'] * 100)}%）。{be}")
+        bits.append(f"下一局第{next_map['game']}局按上一局重算后看好 {lean['tag']}（{round(lean['p'] * 100)}%）。{be}")
         if series_lean:
             bits.append(f"系列现在看好 {series_lean['tag']}（{round(series_lean['p'] * 100)}%）。")
         if next_map.get("f10"):
@@ -438,7 +488,8 @@ def compose(kind, prev_map, next_map, series_lean, prev_series, nxt_series) -> t
         why = next_map["lean"]["why"]
         if why and not why.endswith("。"):
             why += "。"
-    headline = "".join(bits[:2]) if bits else "等待下一局。"
+    headline_bits = [b for b in bits if not b.startswith("上一局阵容")]
+    headline = "".join(headline_bits[:2]) if headline_bits else "等待下一局。"
     narrative = "".join(bits) + why
     return headline, narrative
 
