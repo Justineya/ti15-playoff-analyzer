@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 01:14 CST",
+  "asOf": "2026-08-22 01:47 CST",
   "n": 101,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
@@ -30715,7 +30715,7 @@
       "series_id": 1132426,
       "start_time": 1787328610,
       "duration": 2688,
-      "parsed": false,
+      "parsed": true,
       "radiant": "Nigma Galaxy",
       "dire": "Team Yandex",
       "radiant_team_id": 10136357,
@@ -30726,20 +30726,33 @@
         14,
         52
       ],
-      "pace": "未知",
+      "pace": "快",
       "length": "偏长",
-      "stance": "来回拉锯",
-      "f10k": null,
-      "f10k_mid_share": 0,
-      "first_tower": null,
-      "gold": {
-        "m5": null,
-        "m10": null,
-        "m15": null,
-        "m20": null
+      "stance": "进攻转线",
+      "f10k": {
+        "side": "dire",
+        "time": 550,
+        "score": {
+          "radiant": 4,
+          "dire": 10
+        },
+        "completing_killer": "Saksa",
+        "completing_hero": "Rubick"
       },
-      "kills_8min": 0,
-      "kills_15min": 0,
+      "f10k_mid_share": 5,
+      "first_tower": {
+        "time": 487,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_top"
+      },
+      "gold": {
+        "m5": -461,
+        "m10": -2292,
+        "m15": -4761,
+        "m20": -8279
+      },
+      "kills_8min": 10,
+      "kills_15min": 20,
       "draft": {
         "radiant": {
           "bans": [
@@ -30928,32 +30941,32 @@
             "player": "lorenof",
             "hero": "Void Spirit",
             "hero_id": 126,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 3790,
+            "xp_t10": 4128,
             "kills": 5,
-            "kills_before_10": 0,
+            "kills_before_10": 1,
             "assists_before_10": 0,
-            "participate_before_10": 0
+            "participate_before_10": 1
           },
           "pos4": {
             "player": "GH",
             "hero": "Mirana",
             "kills": 1,
-            "kills_before_10": 0,
+            "kills_before_10": 1,
             "assists_before_10": 0,
-            "participate_before_10": 0
+            "participate_before_10": 1
           },
           "pos5": {
             "player": "OmaR",
             "hero": "Hoodwink",
             "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "assists_before_10": 3,
+            "participate_before_10": 3
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
+          "kills_at_f10k": 4,
+          "first10_mid_sup_kills": 2,
+          "first10_mid_sup_ka": 5,
           "mid_sup_driven": false
         },
         "dire": {
@@ -30961,33 +30974,33 @@
             "player": "CHIRA_JUNIOR",
             "hero": "Earth Spirit",
             "hero_id": 107,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 4176,
+            "xp_t10": 4050,
             "kills": 8,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
           },
           "pos4": {
             "player": "Saksa",
             "hero": "Rubick",
             "kills": 13,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 6,
+            "assists_before_10": 1,
+            "participate_before_10": 7
           },
           "pos5": {
             "player": "Maladych",
             "hero": "Winter Wyvern",
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
-          "mid_sup_driven": false
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 8,
+          "first10_mid_sup_ka": 16,
+          "mid_sup_driven": true
         }
       },
       "blurb": {
@@ -30995,10 +31008,10 @@
           "radiant": "一阶段禁Treant Protector、Bounty Hunter；前两手Mirana、Largo；中单Void Spirit第5手拿",
           "dire": "一阶段禁Ember Spirit、Keeper of the Light；前两手Winter Wyvern、Kez；中单Earth Spirit第4手拿"
         },
-        "pace": "未知节奏 / 偏长局（44分48秒）；先到10杀出现在 ?分",
-        "stance": "来回拉锯",
-        "f10k": "没有队伍先堆到 10 杀",
-        "mid_support": "天辉中单 lorenof/Void Spirit 参与 0 次（击杀0+助攻0），辅GH/Mirana 参与 0 次，中辅合计0；夜魇中单 CHIRA_JUNIOR/Earth Spirit 参与 0 次（击杀0+助攻0），辅Saksa/Rubick 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+        "pace": "快节奏 / 偏长局（44分48秒）；先到10杀出现在 9分10秒",
+        "stance": "进攻转线",
+        "f10k": "Team Yandex先到 10 杀（当时 4-10，9分10秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 5 次（击杀 1 + 助攻 4），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 4 杀。",
+        "mid_support": "天辉中单 lorenof/Void Spirit 参与 1 次（击杀1+助攻0），辅GH/Mirana 参与 1 次，中辅合计5；夜魇中单 CHIRA_JUNIOR/Earth Spirit 参与 5 次（击杀1+助攻4），辅Saksa/Rubick 参与 7 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8957749452",
       "source": "ti15",

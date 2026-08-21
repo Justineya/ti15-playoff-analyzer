@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T17:14Z",
+  "asOf": "2026-08-21T17:47Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.44077401,
+      "volume": 11205935.440774001,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.484536992,
+      "volume": 11209047.484537022,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 6869959.6001109965,
+      "volume": 7210565.500008997,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2725,8 +2725,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.9985",
-            "0.0015"
+            "1",
+            "0"
           ]
         },
         {
@@ -2736,8 +2736,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.595",
-            "0.405"
+            "0.635",
+            "0.365"
           ]
         },
         {
@@ -2824,8 +2824,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "1",
+            "0"
           ]
         },
         {
@@ -2835,8 +2835,8 @@
             "No"
           ],
           "prices": [
-            "0.335",
-            "0.665"
+            "0",
+            "1"
           ]
         },
         {
@@ -2846,8 +2846,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -2857,8 +2857,8 @@
             "No"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "1",
+            "0"
           ]
         },
         {
@@ -2868,8 +2868,8 @@
             "No"
           ],
           "prices": [
-            "0.225",
-            "0.775"
+            "0",
+            "1"
           ]
         },
         {
@@ -2912,8 +2912,8 @@
             "No"
           ],
           "prices": [
-            "0.29",
-            "0.71"
+            "0.435",
+            "0.565"
           ]
         },
         {
@@ -2934,8 +2934,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.0055",
-            "0.9945"
+            "0",
+            "1"
           ]
         },
         {
@@ -2956,8 +2956,8 @@
             "Under"
           ],
           "prices": [
-            "0.75",
-            "0.25"
+            "1",
+            "0"
           ]
         },
         {
@@ -3066,8 +3066,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.0055",
-            "0.9945"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
@@ -3088,8 +3088,8 @@
             "Under"
           ],
           "prices": [
-            "0.9945",
-            "0.0055"
+            "1",
+            "0"
           ]
         },
         {
@@ -3099,8 +3099,8 @@
             "Under"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "1",
+            "0"
           ]
         },
         {
@@ -3110,8 +3110,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -3121,8 +3121,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "1",
+            "0"
           ]
         }
       ]
