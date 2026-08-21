@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-21 21:05 CST",
+  "asOf": "2026-08-21 21:57 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -347,17 +347,20 @@
       "format": "Bo3",
       "teamA": "Team Spirit",
       "teamB": "TEAM VISION",
-      "status": "live",
+      "status": "completed",
       "winnerTo": "ubf",
       "loserTo": "lbqf2",
       "polyTitle": "Team Spirit vs TEAM VISION",
       "polySlug": "dota2-vsn2-ts8-2026-08-15",
-      "mapsPlayed": 2,
-      "score": "1-1",
+      "mapsPlayed": 3,
+      "score": "1-2",
       "matchIds": [
         8957180942,
-        8957272720
-      ]
+        8957272720,
+        8957364447
+      ],
+      "winner": "TEAM VISION",
+      "loser": "Team Spirit"
     },
     {
       "id": "ubsf2",
@@ -394,12 +397,11 @@
       "datetime": "2026-08-22 10:00",
       "format": "Bo3",
       "teamA": "Team Liquid",
-      "teamB": {
-        "from": "ubsf1",
-        "as": "loser"
-      },
-      "status": "awaiting",
-      "winnerTo": "lbsf"
+      "teamB": "Team Spirit",
+      "status": "scheduled",
+      "winnerTo": "lbsf",
+      "polyTitle": "Team Liquid vs Team Spirit",
+      "polySlug": "dota2-liquid-ts8-2026-08-14"
     },
     {
       "id": "ubf",
@@ -407,10 +409,7 @@
       "day": "2026-08-22",
       "datetime": "2026-08-22 16:00",
       "format": "Bo3",
-      "teamA": {
-        "from": "ubsf1",
-        "as": "winner"
-      },
+      "teamA": "TEAM VISION",
       "teamB": {
         "from": "ubsf2",
         "as": "winner"

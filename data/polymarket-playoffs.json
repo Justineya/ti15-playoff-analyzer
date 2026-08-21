@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T13:05Z",
+  "asOf": "2026-08-21T13:57Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 8328754.559454993,
+      "volume": 8328754.559455,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.440774,
+      "volume": 11205935.440774003,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.48453702,
+      "volume": 11209047.484537018,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 188047.67911499995,
+      "volume": 212216.17278399997,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2725,8 +2725,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.615",
-            "0.385"
+            "0.605",
+            "0.395"
           ]
         },
         {
@@ -2736,8 +2736,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.645",
-            "0.355"
+            "0.635",
+            "0.365"
           ]
         },
         {
@@ -2758,12 +2758,34 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.38",
-            "0.62"
+            "0.365",
+            "0.635"
           ]
         },
         {
           "question": "Game 1: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.495",
+            "0.505"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.495",
+            "0.505"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Destroy Barracks?",
           "outcomes": [
             "Yes",
             "No"
@@ -2774,36 +2796,14 @@
           ]
         },
         {
-          "question": "Game 1: Both Teams Beat Roshan?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.435",
-            "0.565"
-          ]
-        },
-        {
-          "question": "Game 1: Both Teams Destroy Barracks?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.315",
-            "0.685"
-          ]
-        },
-        {
           "question": "Game 1: Any Player Ultra Kill?",
           "outcomes": [
             "Yes",
             "No"
           ],
           "prices": [
-            "0.18",
-            "0.82"
+            "0.13",
+            "0.87"
           ]
         },
         {
@@ -2813,8 +2813,8 @@
             "No"
           ],
           "prices": [
-            "0.075",
-            "0.925"
+            "0.07",
+            "0.93"
           ]
         },
         {
@@ -2835,8 +2835,8 @@
             "No"
           ],
           "prices": [
-            "0.435",
-            "0.565"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2846,8 +2846,8 @@
             "No"
           ],
           "prices": [
-            "0.315",
-            "0.685"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2857,8 +2857,8 @@
             "No"
           ],
           "prices": [
-            "0.27",
-            "0.73"
+            "0.23",
+            "0.77"
           ]
         },
         {
@@ -2868,8 +2868,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0.095",
+            "0.905"
           ]
         },
         {
@@ -2890,8 +2890,8 @@
             "No"
           ],
           "prices": [
-            "0.34",
-            "0.66"
+            "0.51",
+            "0.49"
           ]
         },
         {
@@ -2901,8 +2901,8 @@
             "No"
           ],
           "prices": [
-            "0.315",
-            "0.685"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2912,8 +2912,8 @@
             "No"
           ],
           "prices": [
-            "0.325",
-            "0.675"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2923,8 +2923,8 @@
             "No"
           ],
           "prices": [
-            "0.205",
-            "0.795"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2934,8 +2934,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.735",
-            "0.265"
+            "0.75",
+            "0.25"
           ]
         },
         {
@@ -2945,8 +2945,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.53",
-            "0.47"
+            "0.725",
+            "0.275"
           ]
         },
         {
@@ -2956,8 +2956,8 @@
             "Under"
           ],
           "prices": [
-            "0.53",
-            "0.47"
+            "0.745",
+            "0.255"
           ]
         },
         {
@@ -2967,8 +2967,389 @@
             "Under"
           ],
           "prices": [
-            "0.54",
-            "0.46"
+            "0.715",
+            "0.285"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dota2-liquid-ts8-2026-08-14",
+      "title": "Dota 2: Team Liquid vs Team Spirit (BO3) - The International Group Stage",
+      "volume": 3001908.7732209996,
+      "markets": [
+        {
+          "question": "Dota 2: Team Liquid vs Team Spirit - Game 1 Winner",
+          "outcomes": [
+            "Team Liquid",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Dota 2: Team Liquid vs Team Spirit - Game 2 Winner",
+          "outcomes": [
+            "Team Liquid",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Dota 2: Team Liquid vs Team Spirit (BO3) - The International Group Stage",
+          "outcomes": [
+            "Team Liquid",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Games Total: O/U 2.5",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 1: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 2: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game Handicap: Liquid (-1.5) vs Team Spirit (+1.5)",
+          "outcomes": [
+            "Team Liquid",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "First Blood in Game 1?",
+          "outcomes": [
+            "Team Liquid",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "First Blood in Game 2?",
+          "outcomes": [
+            "Team Liquid",
+            "Team Spirit"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game Handicap: TS (-1.5) vs Team Liquid (+1.5)",
+          "outcomes": [
+            "Team Spirit",
+            "Team Liquid"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 65.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 70.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 75.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 80.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 65.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
           ]
         }
       ]
