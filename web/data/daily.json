@@ -1,41 +1,111 @@
 {
-  "asOf": "2026-08-21 23:41 CST",
+  "asOf": "2026-08-22 00:04 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 TY vs NGX，看好 NGX（系列 57%）。第1局看好 NGX（55%）。",
-  "narrative": "下一把 TY vs NGX，看好 NGX（系列 57%）。第1局看好 NGX（55%）。本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 NGX 赢了，先到10杀 TY，74.9分钟。下一局第2局按上一局重算后看好 NGX（63%）。现场赔率至少 1.59。",
+  "narrative": "第1局 NGX 赢了，先到10杀 TY，74.9分钟。上一局阵容 TY Earth Spirit、Hoodwink、Underlord / NGX Io、Necrophos、Clockwerk。下一局第2局按上一局重算后看好 NGX（63%）。现场赔率至少 1.59。系列现在看好 NGX（86%）。先到10杀看好 TY。本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8957527957,
+    "winner": "Nigma Galaxy",
+    "score": [
+      45,
+      42
+    ],
+    "f10": "Team Yandex",
+    "f10Time": 969,
+    "durationMin": 74.9,
+    "pace": "慢",
+    "stance": "来回拉锯",
+    "picks": {
+      "Team Yandex": [
+        "Earth Spirit",
+        "Hoodwink",
+        "Underlord",
+        "Mirana",
+        "Terrorblade"
+      ],
+      "Nigma Galaxy": [
+        "Io",
+        "Necrophos",
+        "Clockwerk",
+        "Storm Spirit",
+        "Enigma"
+      ]
+    },
+    "mid": {
+      "Team Yandex": "Earth Spirit",
+      "Nigma Galaxy": "Storm Spirit"
+    },
+    "blurb": "Team Yandex先到 10 杀（当时 10-2，16分09秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 8 次（击杀 4 + 助攻 4），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 2 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8957527957,
+      "winner": "Nigma Galaxy",
+      "score": [
+        45,
+        42
+      ],
+      "f10": "Team Yandex",
+      "f10Time": 969,
+      "durationMin": 74.9,
+      "pace": "慢",
+      "stance": "来回拉锯",
+      "picks": {
+        "Team Yandex": [
+          "Earth Spirit",
+          "Hoodwink",
+          "Underlord",
+          "Mirana",
+          "Terrorblade"
+        ],
+        "Nigma Galaxy": [
+          "Io",
+          "Necrophos",
+          "Clockwerk",
+          "Storm Spirit",
+          "Enigma"
+        ]
+      },
+      "mid": {
+        "Team Yandex": "Earth Spirit",
+        "Nigma Galaxy": "Storm Spirit"
+      },
+      "blurb": "Team Yandex先到 10 杀（当时 10-2，16分09秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 8 次（击杀 4 + 助攻 4），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 2 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "Team Yandex",
     "teamB": "Nigma Galaxy",
     "lean": {
       "team": "Nigma Galaxy",
       "tag": "NGX",
-      "p": 0.548,
-      "pA": 0.452,
-      "pB": 0.548,
-      "breakEven": 1.82,
+      "p": 0.628,
+      "pA": 0.372,
+      "pB": 0.628,
+      "breakEven": 1.59,
       "market": {
         "outcomes": [
           "Team Yandex",
           "Nigma Galaxy"
         ],
         "prices": [
-          0.49,
-          0.51
+          0.575,
+          0.425
         ]
       },
-      "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
+      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "Team Yandex",
       "tag": "TY",
-      "p": 0.558,
-      "pA": 0.558,
-      "pB": 0.442,
-      "breakEven": 1.79,
+      "p": 0.591,
+      "pA": 0.591,
+      "pB": 0.409,
+      "breakEven": 1.69,
       "market": null,
       "why": ""
     }
@@ -43,21 +113,21 @@
   "seriesLean": {
     "team": "Nigma Galaxy",
     "tag": "NGX",
-    "p": 0.573,
-    "pA": 0.427,
-    "pB": 0.573,
-    "breakEven": 1.74,
+    "p": 0.864,
+    "pA": 0.136,
+    "pB": 0.864,
+    "breakEven": 1.16,
     "market": {
       "outcomes": [
         "Team Yandex",
         "Nigma Galaxy"
       ],
       "prices": [
-        0.595,
-        0.405
+        0.345,
+        0.655
       ]
     },
-    "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
+    "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "Team Yandex",
     "teamBLabel": "Nigma Galaxy",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "Nigma Galaxy",
       "tag": "NGX",
-      "p": 0.573,
-      "pA": 0.427,
-      "pB": 0.573,
-      "breakEven": 1.74,
+      "p": 0.864,
+      "pA": 0.136,
+      "pB": 0.864,
+      "breakEven": 1.16,
       "market": {
         "outcomes": [
           "Team Yandex",
           "Nigma Galaxy"
         ],
         "prices": [
-          0.595,
-          0.405
+          0.345,
+          0.655
         ]
       },
-      "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
+      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
@@ -105,61 +175,14 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "Team Yandex",
     "teamBLabel": "Nigma Galaxy",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
-  "todayResults": [
-    {
-      "id": "lbr1a",
-      "round": "败者组首轮",
-      "day": "2026-08-21",
-      "when": "2026-08-21 10:00",
-      "format": "Bo3",
-      "teamA": "Iron Wing",
-      "teamB": "BoomBoys",
-      "teamALabel": "Iron Wing",
-      "teamBLabel": "BoomBoys",
-      "status": "completed",
-      "score": "1-2",
-      "winner": "BoomBoys",
-      "polySlug": "dota2-boombo-ironwi-2026-08-13",
-      "mapsPlayed": 3
-    },
-    {
-      "id": "lbr1b",
-      "round": "败者组首轮",
-      "day": "2026-08-21",
-      "when": "2026-08-21 14:15",
-      "format": "Bo3",
-      "teamA": "Team Liquid",
-      "teamB": "Team Falcons",
-      "teamALabel": "Team Liquid",
-      "teamBLabel": "Team Falcons",
-      "status": "completed",
-      "score": "2-1",
-      "winner": "Team Liquid",
-      "polySlug": "dota2-liquid-flc-2026-08-21",
-      "mapsPlayed": 3
-    },
-    {
-      "id": "ubsf1",
-      "round": "胜者组半决赛",
-      "day": "2026-08-21",
-      "when": "2026-08-21 18:20",
-      "format": "Bo3",
-      "teamA": "Team Spirit",
-      "teamB": "TEAM VISION",
-      "teamALabel": "Team Spirit",
-      "teamBLabel": "TEAM VISION",
-      "status": "completed",
-      "score": "1-2",
-      "winner": "TEAM VISION",
-      "polySlug": "dota2-vsn2-ts8-2026-08-15",
-      "mapsPlayed": 3
-    }
-  ],
-  "newMapIds": []
+  "todayResults": [],
+  "newMapIds": [
+    8957527957
+  ]
 }

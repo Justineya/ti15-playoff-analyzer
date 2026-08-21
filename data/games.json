@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-21 23:41 CST",
-  "n": 99,
+  "asOf": "2026-08-22 00:04 CST",
+  "n": 100,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -30400,6 +30400,313 @@
         "mid_support": "天辉中单 Larl/Invoker 参与 3 次（击杀2+助攻1），辅rue/Winter Wyvern 参与 0 次，中辅合计3；夜魇中单 No[o]ne-/Ember Spirit 参与 0 次（击杀0+助攻0），辅9Class/Dark Willow 参与 2 次，中辅合计4。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8957364447",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8957527957,
+      "series_id": 1132426,
+      "start_time": 1787321521,
+      "duration": 4493,
+      "parsed": true,
+      "radiant": "Team Yandex",
+      "dire": "Nigma Galaxy",
+      "radiant_team_id": 9823272,
+      "dire_team_id": 10136357,
+      "winner": "Nigma Galaxy",
+      "radiant_win": false,
+      "score": [
+        45,
+        42
+      ],
+      "pace": "慢",
+      "length": "超长",
+      "stance": "来回拉锯",
+      "f10k": {
+        "side": "radiant",
+        "time": 969,
+        "score": {
+          "radiant": 10,
+          "dire": 2
+        },
+        "completing_killer": "医者watson`",
+        "completing_hero": "Terrorblade"
+      },
+      "f10k_mid_share": 8,
+      "first_tower": {
+        "time": 583,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": 347,
+        "m10": 2772,
+        "m15": 3072,
+        "m20": 5402
+      },
+      "kills_8min": 4,
+      "kills_15min": 10,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 3,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 5,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 6,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 11,
+              "hero": "Huskar",
+              "hero_id": 59
+            },
+            {
+              "order": 19,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 21,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 12,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 15,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 16,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 23,
+              "hero": "Terrorblade",
+              "hero_id": 109
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 3,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 12,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 1,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 4,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 9,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 10,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 18,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 20,
+              "hero": "Kez",
+              "hero_id": 145
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 13,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 14,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 17,
+              "hero": "Storm Spirit",
+              "hero_id": 17
+            },
+            {
+              "order": 22,
+              "hero": "Enigma",
+              "hero_id": 33
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 1,
+              "hero": "Invoker",
+              "hero_id": 74
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 13,
+              "hero": "Necrophos",
+              "hero_id": 36
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Earth Spirit",
+            "hero_id": 107,
+            "gold_t10": 4750,
+            "xp_t10": 4894,
+            "kills": 13,
+            "kills_before_10": 4,
+            "assists_before_10": 4,
+            "participate_before_10": 8
+          },
+          "pos4": {
+            "player": "Saksa",
+            "hero": "Hoodwink",
+            "kills": 7,
+            "kills_before_10": 3,
+            "assists_before_10": 4,
+            "participate_before_10": 7
+          },
+          "pos5": {
+            "player": "Maladych",
+            "hero": "Mirana",
+            "kills_before_10": 0,
+            "assists_before_10": 5,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 7,
+          "first10_mid_sup_ka": 20,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "lorenof",
+            "hero": "Storm Spirit",
+            "hero_id": 17,
+            "gold_t10": 3348,
+            "xp_t10": 3759,
+            "kills": 14,
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "pos4": {
+            "player": "OmaR",
+            "hero": "Clockwerk",
+            "kills": 4,
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "pos5": {
+            "player": "GH",
+            "hero": "Io",
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 2,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 6,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Ember Spirit、Keeper of the Light；前两手Earth Spirit、Hoodwink；中单Earth Spirit第1手拿",
+          "dire": "一阶段禁Treant Protector、Invoker；前两手Io、Necrophos；中单Storm Spirit第4手拿"
+        },
+        "pace": "慢节奏 / 超长局（74分53秒）；先到10杀出现在 16分09秒",
+        "stance": "来回拉锯",
+        "f10k": "Team Yandex先到 10 杀（当时 10-2，16分09秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 8 次（击杀 4 + 助攻 4），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 2 杀。",
+        "mid_support": "天辉中单 CHIRA_JUNIOR/Earth Spirit 参与 8 次（击杀4+助攻4），辅Saksa/Hoodwink 参与 7 次，中辅合计20 · 中辅驱动；夜魇中单 lorenof/Storm Spirit 参与 2 次（击杀0+助攻2），辅OmaR/Clockwerk 参与 2 次，中辅合计6。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8957527957",
       "source": "ti15",
       "patch": "7.41e"
     }
