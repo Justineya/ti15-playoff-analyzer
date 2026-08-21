@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T23:37Z",
+  "asOf": "2026-08-21T23:56Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.48453702,
+      "volume": 11209047.484537015,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723976007,
+      "volume": 9505559.723976003,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 20113.19895700001,
+      "volume": 20453.571915,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -3183,8 +3183,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.33",
-            "0.67"
+            "0.335",
+            "0.665"
           ]
         },
         {
@@ -3205,8 +3205,8 @@
             "Under"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.53",
+            "0.47"
           ]
         },
         {
@@ -3304,8 +3304,8 @@
             "No"
           ],
           "prices": [
-            "0.05",
-            "0.95"
+            "0.055",
+            "0.945"
           ]
         },
         {
@@ -3804,7 +3804,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 75558.188723,
+      "volume": 76183.156752,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -3967,8 +3967,8 @@
             "No"
           ],
           "prices": [
-            "0.23",
-            "0.77"
+            "0.225",
+            "0.775"
           ]
         },
         {
@@ -3978,8 +3978,8 @@
             "No"
           ],
           "prices": [
-            "0.08",
-            "0.92"
+            "0.065",
+            "0.935"
           ]
         },
         {
@@ -4033,8 +4033,8 @@
             "No"
           ],
           "prices": [
-            "0.06",
-            "0.94"
+            "0.085",
+            "0.915"
           ]
         },
         {
@@ -4077,8 +4077,8 @@
             "No"
           ],
           "prices": [
-            "0.275",
-            "0.725"
+            "0.27",
+            "0.73"
           ]
         },
         {
@@ -4088,8 +4088,8 @@
             "No"
           ],
           "prices": [
-            "0.31",
-            "0.69"
+            "0.3",
+            "0.7"
           ]
         }
       ]
