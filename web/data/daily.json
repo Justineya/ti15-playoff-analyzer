@@ -1,43 +1,43 @@
 {
-  "asOf": "2026-08-22 00:47 CST",
+  "asOf": "2026-08-22 01:14 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 NGX 赢了，先到10杀 TY，74.9分钟。下一局第2局按上一局重算后看好 NGX（63%）。现场赔率至少 1.59。",
-  "narrative": "第1局 NGX 赢了，先到10杀 TY，74.9分钟。上一局阵容 TY Earth Spirit、Hoodwink、Underlord / NGX Io、Necrophos、Clockwerk。下一局第2局按上一局重算后看好 NGX（63%）。现场赔率至少 1.59。系列现在看好 NGX（86%）。先到10杀看好 TY。本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit。",
+  "headline": "第2局 TY 赢了，44.8分钟。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。",
+  "narrative": "第2局 TY 赢了，44.8分钟。上一局阵容 NGX Mirana、Largo、Hoodwink / TY Winter Wyvern、Kez、Rubick。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。系列现在看好 NGX（54%）。先到10杀看好 TY。本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 50% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit。",
   "previousMap": {
-    "game": 1,
-    "matchId": 8957527957,
-    "winner": "Nigma Galaxy",
+    "game": 2,
+    "matchId": 8957749452,
+    "winner": "Team Yandex",
     "score": [
-      45,
-      42
+      14,
+      52
     ],
-    "f10": "Team Yandex",
-    "f10Time": 969,
-    "durationMin": 74.9,
-    "pace": "慢",
+    "f10": null,
+    "f10Time": null,
+    "durationMin": 44.8,
+    "pace": "未知",
     "stance": "来回拉锯",
     "picks": {
-      "Team Yandex": [
-        "Earth Spirit",
-        "Hoodwink",
-        "Underlord",
-        "Mirana",
-        "Terrorblade"
-      ],
       "Nigma Galaxy": [
-        "Io",
-        "Necrophos",
-        "Clockwerk",
-        "Storm Spirit",
-        "Enigma"
+        "Mirana",
+        "Largo",
+        "Hoodwink",
+        "Clinkz",
+        "Void Spirit"
+      ],
+      "Team Yandex": [
+        "Winter Wyvern",
+        "Kez",
+        "Rubick",
+        "Earth Spirit",
+        "Doom"
       ]
     },
     "mid": {
-      "Team Yandex": "Earth Spirit",
-      "Nigma Galaxy": "Storm Spirit"
+      "Nigma Galaxy": "Void Spirit",
+      "Team Yandex": "Earth Spirit"
     },
-    "blurb": "Team Yandex先到 10 杀（当时 10-2，16分09秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 8 次（击杀 4 + 助攻 4），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 2 杀。"
+    "blurb": "没有队伍先堆到 10 杀"
   },
   "previousMaps": [
     {
@@ -74,38 +74,64 @@
         "Nigma Galaxy": "Storm Spirit"
       },
       "blurb": "Team Yandex先到 10 杀（当时 10-2，16分09秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 8 次（击杀 4 + 助攻 4），中单+双辅合计参与 20 次 · 中辅驱动。对手当时 2 杀。"
+    },
+    {
+      "game": 2,
+      "matchId": 8957749452,
+      "winner": "Team Yandex",
+      "score": [
+        14,
+        52
+      ],
+      "f10": null,
+      "f10Time": null,
+      "durationMin": 44.8,
+      "pace": "未知",
+      "stance": "来回拉锯",
+      "picks": {
+        "Nigma Galaxy": [
+          "Mirana",
+          "Largo",
+          "Hoodwink",
+          "Clinkz",
+          "Void Spirit"
+        ],
+        "Team Yandex": [
+          "Winter Wyvern",
+          "Kez",
+          "Rubick",
+          "Earth Spirit",
+          "Doom"
+        ]
+      },
+      "mid": {
+        "Nigma Galaxy": "Void Spirit",
+        "Team Yandex": "Earth Spirit"
+      },
+      "blurb": "没有队伍先堆到 10 杀"
     }
   ],
   "nextMap": {
-    "game": 2,
+    "game": 3,
     "teamA": "Team Yandex",
     "teamB": "Nigma Galaxy",
     "lean": {
       "team": "Nigma Galaxy",
       "tag": "NGX",
-      "p": 0.628,
-      "pA": 0.372,
-      "pB": 0.628,
-      "breakEven": 1.59,
-      "market": {
-        "outcomes": [
-          "Team Yandex",
-          "Nigma Galaxy"
-        ],
-        "prices": [
-          0.855,
-          0.145
-        ]
-      },
-      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
+      "p": 0.523,
+      "pA": 0.477,
+      "pB": 0.523,
+      "breakEven": 1.91,
+      "market": null,
+      "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 50% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "Team Yandex",
       "tag": "TY",
-      "p": 0.591,
-      "pA": 0.591,
-      "pB": 0.409,
-      "breakEven": 1.69,
+      "p": 0.589,
+      "pA": 0.589,
+      "pB": 0.411,
+      "breakEven": 1.7,
       "market": null,
       "why": ""
     }
@@ -113,21 +139,21 @@
   "seriesLean": {
     "team": "Nigma Galaxy",
     "tag": "NGX",
-    "p": 0.864,
-    "pA": 0.136,
-    "pB": 0.864,
-    "breakEven": 1.16,
+    "p": 0.535,
+    "pA": 0.465,
+    "pB": 0.535,
+    "breakEven": 1.87,
     "market": {
       "outcomes": [
         "Team Yandex",
         "Nigma Galaxy"
       ],
       "prices": [
-        0.545,
-        0.455
+        0.595,
+        0.405
       ]
     },
-    "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 50% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -141,28 +167,28 @@
     "teamALabel": "Team Yandex",
     "teamBLabel": "Nigma Galaxy",
     "status": "live",
-    "score": "0-1",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 1,
+    "mapsPlayed": 2,
     "lean": {
       "team": "Nigma Galaxy",
       "tag": "NGX",
-      "p": 0.864,
-      "pA": 0.136,
-      "pB": 0.864,
-      "breakEven": 1.16,
+      "p": 0.535,
+      "pA": 0.465,
+      "pB": 0.535,
+      "breakEven": 1.87,
       "market": {
         "outcomes": [
           "Team Yandex",
           "Nigma Galaxy"
         ],
         "prices": [
-          0.545,
-          0.455
+          0.595,
+          0.405
         ]
       },
-      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 50% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
@@ -176,11 +202,13 @@
     "teamALabel": "Team Yandex",
     "teamBLabel": "Nigma Galaxy",
     "status": "live",
-    "score": "0-1",
+    "score": "1-1",
     "winner": null,
     "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 1
+    "mapsPlayed": 2
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    8957749452
+  ]
 }
