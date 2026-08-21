@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 09:45 CST",
+  "asOf": "2026-08-21 10:50 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -7392,8 +7392,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            0.375,
-            0.625
+            0.385,
+            0.615
           ],
           "question": "Game Handicap: TY (-1.5) vs Nigma Galaxy (+1.5)"
         }
@@ -7437,12 +7437,12 @@
             "market": "让分",
             "pick": "Nigma Galaxy +1.5",
             "modelP": 0.795,
-            "marketP": 0.625,
-            "odds": 1.6,
-            "roi": 0.272,
-            "ev": 0.17,
+            "marketP": 0.615,
+            "odds": 1.63,
+            "roi": 0.293,
+            "ev": 0.18,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.625，模型 0.795，期望回报率 27.2%"
+            "note": "买 YES 成本 0.615，模型 0.795，期望回报率 29.3%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
