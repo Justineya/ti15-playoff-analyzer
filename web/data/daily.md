@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-21 19:43 CST
+# TI15 局间战报 · 2026-08-21 19:45 CST
 
-第1局 VSN 赢了，先到10杀 Spirit，42.8分钟。下一局第2局按上一局重算后看好 VSN（71%）。现场赔率至少 1.41。
+第1局 VSN 赢了，先到10杀 Spirit，42.8分钟。系列现在 0-1。下一局第2局重算后看好 VSN（71%），系列 91%。
 
-第1局 VSN 赢了，先到10杀 Spirit，42.8分钟。上一局阵容 VSN Doom、Nature's Prophet、Rubick / Spirit Ember Spirit、Undying、Hoodwink。下一局第2局按上一局重算后看好 VSN（71%）。现场赔率至少 1.41。系列现在看好 VSN（91%）。先到10杀看好 VSN。本届胜率 Team Spirit 58% / TEAM VISION 71%；先到10杀 58% / 61%；H2H 3.9000000000000004 局；Team Spirit 中单爱拿 Earth Spirit。
+胜者组半决赛 Spirit vs VSN 第1局打完，不要把开赛前那条「第1局看好 VSN 66%、系列 74%」预览贴到第2局。液体百科这栏局分 0-1（Spirit 0、VSN 1），图1 winner=2、时长 42m50s。OpenDota 解析：VSN 天辉 28-20 赢，慢节奏来回拉锯 42.8 分钟。Spirit 先到 10 杀（17分48秒，当时 7-10），Larl 中单 Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中辅合计 10 · 中辅驱动；收第 10 刀是 Yatoro/Terrorblade。先 10 杀没换成局：VSN 6分39秒拆掉夜魇中一塔，No[o]ne- 中单 Slark 10 分钟经济 4798 对 Larl 3274。BP：VSN 一阶段 Ban Treant Protector、Earth Spirit，前两手 Doom、Nature's Prophet，第 4 手中单 Slark，辅 Rubick / Ogre Magi。Spirit 一阶段 Ban Bounty Hunter、Lina，第一手 Ember Spirit、第二手 Undying，再拿 Hoodwink、Terrorblade、Night Stalker。
+
+因为上一局 VSN 把 Spirit 爱拿的 Earth Spirit Ban 掉、Larl 改 Ember 抢到先 10 杀却输掉长局，H2H 从开赛预览的 2.9 局变成 3.9 局，本届胜率 Spirit 60%→58%、VSN 70%→71%；先到 10 杀样本 Spirit 56%→58%、VSN 63%→61%。系列已经 0-1，整棵树重算后第 2 局看好 VSN 71%（Spirit 29%），现场门槛 1.41；先到 10 杀仍略看好 VSN 53%（Spirit 47%），门槛 1.89，没有公开盘——上一局 Spirit 拿到了先 10 杀，所以这一格比局胜更接近。Bo3 从 0-1 起，系列看好 VSN 91%（Spirit 9%），门槛 1.09。Polymarket slug 仍是小组赛 dota2-vsn2-ts8-2026-08-15，价格已结算 1/0，淘汰赛这局没有可用盘口。观战源第 2 局大厅 8957272720 已出现，20 秒、英雄还空着，可能在选人。这不是投注建议。
