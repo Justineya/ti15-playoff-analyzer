@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T16:47Z",
+  "asOf": "2026-08-21T17:15Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.440774009,
+      "volume": 11205935.44077401,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.48453702,
+      "volume": 11209047.484536992,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 6338433.432889001,
+      "volume": 6869959.6001109965,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2725,8 +2725,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.855",
-            "0.145"
+            "0.9985",
+            "0.0015"
           ]
         },
         {
@@ -2736,8 +2736,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.545",
-            "0.455"
+            "0.595",
+            "0.405"
           ]
         },
         {
@@ -2747,8 +2747,8 @@
             "Under"
           ],
           "prices": [
-            "0.85",
-            "0.15"
+            "0.9995",
+            "0.0005"
           ]
         },
         {
@@ -2824,8 +2824,8 @@
             "No"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2857,8 +2857,8 @@
             "No"
           ],
           "prices": [
-            "0.29",
-            "0.71"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -2956,8 +2956,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.75",
+            "0.25"
           ]
         },
         {
@@ -3066,8 +3066,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.145",
-            "0.855"
+            "0.0055",
+            "0.9945"
           ]
         },
         {
@@ -3088,12 +3088,23 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.9945",
+            "0.0055"
           ]
         },
         {
           "question": "Total Kills Over/Under 60.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.505",
+            "0.495"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 70.5 in Game 2?",
           "outcomes": [
             "Over",
             "Under"
@@ -3104,7 +3115,7 @@
           ]
         },
         {
-          "question": "Total Kills Over/Under 70.5 in Game 2?",
+          "question": "Total Kills Over/Under 65.5 in Game 2?",
           "outcomes": [
             "Over",
             "Under"
