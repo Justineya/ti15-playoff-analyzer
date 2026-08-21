@@ -1,193 +1,115 @@
 {
-  "asOf": "2026-08-21 21:05 CST",
+  "asOf": "2026-08-21 21:55 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "next-map",
-  "headline": "第2局 Spirit 赢了，先到10杀 Spirit，28.6分钟。下一局第3局按上一局重算后看好 VSN（64%）。现场赔率至少 1.57。",
-  "narrative": "第2局 Spirit 赢了，先到10杀 Spirit，28.6分钟。上一局阵容 Spirit Winter Wyvern、Doom、Phantom Lancer / VSN Dark Willow、Drow Ranger、Undying。下一局第3局按上一局重算后看好 VSN（64%）。现场赔率至少 1.57。系列现在看好 VSN（64%）。先到10杀看好 VSN。本届胜率 Team Spirit 59% / TEAM VISION 69%；先到10杀 59% / 59%；H2H 4.9 局；Team Spirit 中单爱拿 Earth Spirit。",
-  "previousMap": {
-    "game": 2,
-    "matchId": 8957272720,
-    "winner": "Team Spirit",
-    "score": [
-      29,
-      8
-    ],
-    "f10": "Team Spirit",
-    "f10Time": 969,
-    "durationMin": 28.6,
-    "pace": "慢",
-    "stance": "来回拉锯",
-    "picks": {
-      "Team Spirit": [
-        "Winter Wyvern",
-        "Doom",
-        "Phantom Lancer",
-        "Clockwerk",
-        "Night Stalker"
-      ],
-      "TEAM VISION": [
-        "Dark Willow",
-        "Drow Ranger",
-        "Undying",
-        "Timbersaw",
-        "Puck"
-      ]
-    },
-    "mid": {
-      "Team Spirit": "Night Stalker",
-      "TEAM VISION": "Puck"
-    },
-    "blurb": "Team Spirit先到 10 杀（当时 10-5，16分09秒）。这 10 次击杀里，中单 Larl/Night Stalker 参与 4 次（击杀 3 + 助攻 1），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 5 杀。"
-  },
-  "previousMaps": [
-    {
-      "game": 1,
-      "matchId": 8957180942,
-      "winner": "TEAM VISION",
-      "score": [
-        28,
-        20
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 1068,
-      "durationMin": 42.8,
-      "pace": "慢",
-      "stance": "来回拉锯",
-      "picks": {
-        "TEAM VISION": [
-          "Doom",
-          "Nature's Prophet",
-          "Rubick",
-          "Slark",
-          "Ogre Magi"
-        ],
-        "Team Spirit": [
-          "Ember Spirit",
-          "Undying",
-          "Hoodwink",
-          "Terrorblade",
-          "Night Stalker"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Slark",
-        "Team Spirit": "Ember Spirit"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 7-10，17分48秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 7 杀。"
-    },
-    {
-      "game": 2,
-      "matchId": 8957272720,
-      "winner": "Team Spirit",
-      "score": [
-        29,
-        8
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 969,
-      "durationMin": 28.6,
-      "pace": "慢",
-      "stance": "来回拉锯",
-      "picks": {
-        "Team Spirit": [
-          "Winter Wyvern",
-          "Doom",
-          "Phantom Lancer",
-          "Clockwerk",
-          "Night Stalker"
-        ],
-        "TEAM VISION": [
-          "Dark Willow",
-          "Drow Ranger",
-          "Undying",
-          "Timbersaw",
-          "Puck"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Night Stalker",
-        "TEAM VISION": "Puck"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 10-5，16分09秒）。这 10 次击杀里，中单 Larl/Night Stalker 参与 4 次（击杀 3 + 助攻 1），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 5 杀。"
-    }
-  ],
+  "kind": "preview",
+  "headline": "下一把 TY vs NGX，看好 NGX（系列 57%）。第1局看好 NGX（55%）。",
+  "narrative": "下一把 TY vs NGX，看好 NGX（系列 57%）。第1局看好 NGX（55%）。本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker。",
+  "previousMap": null,
+  "previousMaps": [],
   "nextMap": {
-    "game": 3,
-    "teamA": "Team Spirit",
-    "teamB": "TEAM VISION",
+    "game": 1,
+    "teamA": "Team Yandex",
+    "teamB": "Nigma Galaxy",
     "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.638,
-      "pA": 0.362,
-      "pB": 0.638,
-      "breakEven": 1.57,
-      "market": null,
-      "why": "本届胜率 Team Spirit 59% / TEAM VISION 69%；先到10杀 59% / 59%；H2H 4.9 局；Team Spirit 中单爱拿 Earth Spirit"
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.548,
+      "pA": 0.452,
+      "pB": 0.548,
+      "breakEven": 1.82,
+      "market": {
+        "outcomes": [
+          "Team Yandex",
+          "Nigma Galaxy"
+        ],
+        "prices": [
+          0.605,
+          0.395
+        ]
+      },
+      "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
     },
     "f10": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.503,
-      "pA": 0.497,
-      "pB": 0.503,
-      "breakEven": 1.99,
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.558,
+      "pA": 0.558,
+      "pB": 0.442,
+      "breakEven": 1.79,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "TEAM VISION",
-    "tag": "VSN",
-    "p": 0.637,
-    "pA": 0.363,
-    "pB": 0.637,
-    "breakEven": 1.57,
-    "market": null,
-    "why": "本届胜率 Team Spirit 59% / TEAM VISION 69%；先到10杀 59% / 59%；H2H 4.9 局；Team Spirit 中单爱拿 Earth Spirit"
+    "team": "Nigma Galaxy",
+    "tag": "NGX",
+    "p": 0.573,
+    "pA": 0.427,
+    "pB": 0.573,
+    "breakEven": 1.74,
+    "market": {
+      "outcomes": [
+        "Team Yandex",
+        "Nigma Galaxy"
+      ],
+      "prices": [
+        0.645,
+        0.355
+      ]
+    },
+    "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
   },
   "previous": null,
   "next": {
-    "id": "ubsf1",
+    "id": "ubsf2",
     "round": "胜者组半决赛",
     "day": "2026-08-21",
-    "when": "2026-08-21 18:20",
+    "when": "2026-08-21 21:30",
     "format": "Bo3",
-    "teamA": "Team Spirit",
-    "teamB": "TEAM VISION",
-    "teamALabel": "Team Spirit",
-    "teamBLabel": "TEAM VISION",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Yandex",
+    "teamB": "Nigma Galaxy",
+    "teamALabel": "Team Yandex",
+    "teamBLabel": "Nigma Galaxy",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-vsn2-ts8-2026-08-15",
-    "mapsPlayed": 2,
+    "polySlug": "dota2-ty-ngx-2026-08-21",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.637,
-      "pA": 0.363,
-      "pB": 0.637,
-      "breakEven": 1.57,
-      "market": null,
-      "why": "本届胜率 Team Spirit 59% / TEAM VISION 69%；先到10杀 59% / 59%；H2H 4.9 局；Team Spirit 中单爱拿 Earth Spirit"
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.573,
+      "pA": 0.427,
+      "pB": 0.573,
+      "breakEven": 1.74,
+      "market": {
+        "outcomes": [
+          "Team Yandex",
+          "Nigma Galaxy"
+        ],
+        "prices": [
+          0.645,
+          0.355
+        ]
+      },
+      "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
     }
   },
   "focus": {
-    "id": "ubsf1",
+    "id": "ubsf2",
     "round": "胜者组半决赛",
     "day": "2026-08-21",
-    "when": "2026-08-21 18:20",
+    "when": "2026-08-21 21:30",
     "format": "Bo3",
-    "teamA": "Team Spirit",
-    "teamB": "TEAM VISION",
-    "teamALabel": "Team Spirit",
-    "teamBLabel": "TEAM VISION",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Yandex",
+    "teamB": "Nigma Galaxy",
+    "teamALabel": "Team Yandex",
+    "teamBLabel": "Nigma Galaxy",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-vsn2-ts8-2026-08-15",
-    "mapsPlayed": 2
+    "polySlug": "dota2-ty-ngx-2026-08-21",
+    "mapsPlayed": 0
   },
   "todayResults": [
     {
@@ -221,9 +143,25 @@
       "winner": "Team Liquid",
       "polySlug": "dota2-liquid-flc-2026-08-21",
       "mapsPlayed": 3
+    },
+    {
+      "id": "ubsf1",
+      "round": "胜者组半决赛",
+      "day": "2026-08-21",
+      "when": "2026-08-21 18:20",
+      "format": "Bo3",
+      "teamA": "Team Spirit",
+      "teamB": "TEAM VISION",
+      "teamALabel": "Team Spirit",
+      "teamBLabel": "TEAM VISION",
+      "status": "completed",
+      "score": "1-2",
+      "winner": "TEAM VISION",
+      "polySlug": "dota2-vsn2-ts8-2026-08-15",
+      "mapsPlayed": 3
     }
   ],
   "newMapIds": [
-    8957272720
+    8957364447
   ]
 }
