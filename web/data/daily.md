@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-22 02:15 CST
+# TI15 局间战报 · 2026-08-22 02:54 CST
 
-第2局 TY 赢了，先到10杀 TY，44.8分钟。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。
+第3局 TY 赢了，61.2分钟 38-23。系列 TY 2-1。下一把败者组四分之一决赛第1局看好 Spirit（55%），系列 58%。
 
-第2局 TY 赢了，先到10杀 TY，44.8分钟。上一局阵容 NGX Mirana、Largo、Hoodwink / TY Winter Wyvern、Kez、Rubick。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。系列现在看好 NGX（54%）。先到10杀看好 TY。本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 53% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit。
+胜者组半决赛 TY vs NGX 三局都打完了。液体百科 ubsf2 局分 2-1：第1图 winner=2、时长 74m53s；第2图 winner=1、时长 44m48s；第3图 winner=1、时长 61m12s。第1局 OpenDota 8957527957：天辉 TY 45、夜魇 NGX 42，NGX 赢。慢节奏超长拉锯 74.9 分钟。TY 先到 10 杀（16分09秒 10-2），中单 CHIRA_JUNIOR/Earth Spirit 中辅驱动。TY 拿 Earth Spirit、Hoodwink、Underlord、Mirana、Terrorblade（中单 ES 第1手）；NGX 拿 Io、Necrophos、Clockwerk、Storm Spirit、Enigma（中单 Storm 第4手）。第2局 8957749452：天辉 NGX 14、夜魇 TY 52，TY 赢，快节奏进攻转线 44.8 分钟。TY 先到 10 杀（9分10秒 4-10）。NGX 拿 Mirana、Largo、Hoodwink、Clinkz、Void Spirit（中单 Void 第5手）；TY 拿 Winter Wyvern、Kez、Rubick、Earth Spirit、Doom（中单 ES 第4手）。第3局刚结束 8957890399：天辉 NGX 23、夜魇 TY 38，TY 赢，超长拉锯 61.2 分钟。OpenDota 回放还没解析完，先到 10 杀没有公开数字。NGX 前两手 Earth Spirit、Clockwerk，再补 Underlord、Dazzle、Alchemist（中单 lorenof/ES 第1手）；TY 前两手 Winter Wyvern、Shadow Fiend，中单改 Invoker 第4手，再拿 Mirana、Axe。
+
+因为第2局 TY 用 Winter Wyvern + Earth Spirit 中单把 NGX 打成 52-14，第3局 NGX 把刚输给自己的 Earth Spirit 抢成第1手、中单不再留到最后，TY 则丢掉连拿两局的 ES 中单、改 Invoker，又拖进 61 分钟拉锯后 38-23 拿下。液体百科 maps[3].winner=1，系列 2-1 结束，没有第4局。TY 进胜者组决赛对 VSN（16:00），NGX 掉进败者组四分之一决赛对 BoomBoys（13:00）。模型写入第3局后 H2H 从 2.0 变成 3.0 局，本届胜率 TY 61% / NGX 64%，先到10杀 52% / 40%，整棵树重算（TY 夺冠约 26%）。所以下一局改写成败者组四分之一决赛 Liquid vs Spirit 第1局（10:00，可能已在选人），不要沿用脚本刚写出的那条开赛预览原文「看好 Spirit 系列 58%、第1局 55%」。重算后第1局看好 Spirit 55%（Liquid 45%），现场门槛 1.81；先到10杀几乎均势，模型略偏 Spirit 50.1%（Liquid 49.9%），没有公开盘。系列看好 Spirit 58%（门槛 1.71）。本届胜率 Liquid 55% / Spirit 57%；先到10杀 57% / 57%；H2H 4.35 局；Liquid 中单爱拿 Earth Spirit——上一场 TY/NGX 刚证明这英雄赢了就会被对面抢或改阵。Polymarket 这一局没有淘汰赛盘口（现有 slug dota2-liquid-ts8-2026-08-14 是小组赛已结算 1/0，不可用）。这不是投注建议。

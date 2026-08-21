@@ -1,43 +1,43 @@
 {
-  "asOf": "2026-08-22 02:15 CST",
+  "asOf": "2026-08-22 02:54 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第2局 TY 赢了，先到10杀 TY，44.8分钟。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。",
-  "narrative": "第2局 TY 赢了，先到10杀 TY，44.8分钟。上一局阵容 NGX Mirana、Largo、Hoodwink / TY Winter Wyvern、Kez、Rubick。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。系列现在看好 NGX（54%）。先到10杀看好 TY。本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 53% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit。",
+  "headline": "第3局 TY 赢了，61.2分钟 38-23。系列 TY 2-1。下一把败者组四分之一决赛第1局看好 Spirit（55%），系列 58%。",
+  "narrative": "胜者组半决赛 TY vs NGX 三局都打完了。液体百科 ubsf2 局分 2-1：第1图 winner=2、时长 74m53s；第2图 winner=1、时长 44m48s；第3图 winner=1、时长 61m12s。第1局 OpenDota 8957527957：天辉 TY 45、夜魇 NGX 42，NGX 赢。慢节奏超长拉锯 74.9 分钟。TY 先到 10 杀（16分09秒 10-2），中单 CHIRA_JUNIOR/Earth Spirit 中辅驱动。TY 拿 Earth Spirit、Hoodwink、Underlord、Mirana、Terrorblade（中单 ES 第1手）；NGX 拿 Io、Necrophos、Clockwerk、Storm Spirit、Enigma（中单 Storm 第4手）。第2局 8957749452：天辉 NGX 14、夜魇 TY 52，TY 赢，快节奏进攻转线 44.8 分钟。TY 先到 10 杀（9分10秒 4-10）。NGX 拿 Mirana、Largo、Hoodwink、Clinkz、Void Spirit（中单 Void 第5手）；TY 拿 Winter Wyvern、Kez、Rubick、Earth Spirit、Doom（中单 ES 第4手）。第3局刚结束 8957890399：天辉 NGX 23、夜魇 TY 38，TY 赢，超长拉锯 61.2 分钟。OpenDota 回放还没解析完，先到 10 杀没有公开数字。NGX 前两手 Earth Spirit、Clockwerk，再补 Underlord、Dazzle、Alchemist（中单 lorenof/ES 第1手）；TY 前两手 Winter Wyvern、Shadow Fiend，中单改 Invoker 第4手，再拿 Mirana、Axe。因为第2局 TY 用 Winter Wyvern + Earth Spirit 中单把 NGX 打成 52-14，第3局 NGX 把刚输给自己的 Earth Spirit 抢成第1手、中单不再留到最后，TY 则丢掉连拿两局的 ES 中单、改 Invoker，又拖进 61 分钟拉锯后 38-23 拿下。液体百科 maps[3].winner=1，系列 2-1 结束，没有第4局。TY 进胜者组决赛对 VSN（16:00），NGX 掉进败者组四分之一决赛对 BoomBoys（13:00）。模型写入第3局后 H2H 从 2.0 变成 3.0 局，本届胜率 TY 61% / NGX 64%，先到10杀 52% / 40%，整棵树重算（TY 夺冠约 26%）。所以下一局改写成败者组四分之一决赛 Liquid vs Spirit 第1局（10:00，可能已在选人），不要沿用脚本刚写出的那条开赛预览原文「看好 Spirit 系列 58%、第1局 55%」。重算后第1局看好 Spirit 55%（Liquid 45%），现场门槛 1.81；先到10杀几乎均势，模型略偏 Spirit 50.1%（Liquid 49.9%），没有公开盘。系列看好 Spirit 58%（门槛 1.71）。本届胜率 Liquid 55% / Spirit 57%；先到10杀 57% / 57%；H2H 4.35 局；Liquid 中单爱拿 Earth Spirit——上一场 TY/NGX 刚证明这英雄赢了就会被对面抢或改阵。Polymarket 这一局没有淘汰赛盘口（现有 slug dota2-liquid-ts8-2026-08-14 是小组赛已结算 1/0，不可用）。这不是投注建议。",
   "previousMap": {
-    "game": 2,
-    "matchId": 8957749452,
+    "game": 3,
+    "matchId": 8957890399,
     "winner": "Team Yandex",
     "score": [
-      14,
-      52
+      23,
+      38
     ],
-    "f10": "Team Yandex",
-    "f10Time": 550,
-    "durationMin": 44.8,
-    "pace": "快",
-    "stance": "进攻转线",
+    "f10": null,
+    "f10Time": null,
+    "durationMin": 61.2,
+    "pace": "未知",
+    "stance": "来回拉锯",
     "picks": {
       "Nigma Galaxy": [
-        "Mirana",
-        "Largo",
-        "Hoodwink",
-        "Clinkz",
-        "Void Spirit"
+        "Earth Spirit",
+        "Clockwerk",
+        "Underlord",
+        "Dazzle",
+        "Alchemist"
       ],
       "Team Yandex": [
         "Winter Wyvern",
-        "Kez",
-        "Rubick",
-        "Earth Spirit",
-        "Doom"
+        "Shadow Fiend",
+        "Mirana",
+        "Invoker",
+        "Axe"
       ]
     },
     "mid": {
-      "Nigma Galaxy": "Void Spirit",
-      "Team Yandex": "Earth Spirit"
+      "Nigma Galaxy": "Earth Spirit",
+      "Team Yandex": "Invoker"
     },
-    "blurb": "Team Yandex先到 10 杀（当时 4-10，9分10秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 5 次（击杀 1 + 助攻 4），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 4 杀。"
+    "blurb": "OpenDota 回放尚未解析，先到10杀没有公开数字。"
   },
   "previousMaps": [
     {
@@ -109,54 +109,97 @@
         "Team Yandex": "Earth Spirit"
       },
       "blurb": "Team Yandex先到 10 杀（当时 4-10，9分10秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Earth Spirit 参与 5 次（击杀 1 + 助攻 4），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 4 杀。"
+    },
+    {
+      "game": 3,
+      "matchId": 8957890399,
+      "winner": "Team Yandex",
+      "score": [
+        23,
+        38
+      ],
+      "f10": null,
+      "f10Time": null,
+      "durationMin": 61.2,
+      "pace": "未知",
+      "stance": "来回拉锯",
+      "picks": {
+        "Nigma Galaxy": [
+          "Earth Spirit",
+          "Clockwerk",
+          "Underlord",
+          "Dazzle",
+          "Alchemist"
+        ],
+        "Team Yandex": [
+          "Winter Wyvern",
+          "Shadow Fiend",
+          "Mirana",
+          "Invoker",
+          "Axe"
+        ]
+      },
+      "mid": {
+        "Nigma Galaxy": "Earth Spirit",
+        "Team Yandex": "Invoker"
+      },
+      "blurb": "OpenDota 回放尚未解析，先到10杀没有公开数字。"
     }
   ],
   "nextMap": {
-    "game": 3,
-    "teamA": "Team Yandex",
-    "teamB": "Nigma Galaxy",
+    "game": 1,
+    "teamA": "Team Liquid",
+    "teamB": "Team Spirit",
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.523,
-      "pA": 0.477,
-      "pB": 0.523,
-      "breakEven": 1.91,
-      "market": null,
-      "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 53% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit"
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.553,
+      "pA": 0.447,
+      "pB": 0.553,
+      "breakEven": 1.81,
+      "market": {
+        "outcomes": [
+          "Team Liquid",
+          "Team Spirit"
+        ],
+        "prices": [
+          0.0,
+          1.0
+        ]
+      },
+      "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.35 局；Team Liquid 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "Team Yandex",
-      "tag": "TY",
-      "p": 0.614,
-      "pA": 0.614,
-      "pB": 0.386,
-      "breakEven": 1.63,
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.501,
+      "pA": 0.499,
+      "pB": 0.501,
+      "breakEven": 2.0,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Nigma Galaxy",
-    "tag": "NGX",
-    "p": 0.535,
-    "pA": 0.465,
-    "pB": 0.535,
-    "breakEven": 1.87,
+    "team": "Team Spirit",
+    "tag": "Spirit",
+    "p": 0.584,
+    "pA": 0.416,
+    "pB": 0.584,
+    "breakEven": 1.71,
     "market": {
       "outcomes": [
-        "Team Yandex",
-        "Nigma Galaxy"
+        "Team Liquid",
+        "Team Spirit"
       ],
       "prices": [
-        0.595,
-        0.405
+        0.0,
+        1.0
       ]
     },
-    "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 53% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.35 局；Team Liquid 中单爱拿 Earth Spirit"
   },
-  "previous": null,
-  "next": {
+  "previous": {
     "id": "ubsf2",
     "round": "胜者组半决赛",
     "day": "2026-08-21",
@@ -166,47 +209,65 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "Team Yandex",
     "teamBLabel": "Nigma Galaxy",
-    "status": "live",
-    "score": "1-1",
-    "winner": null,
+    "status": "completed",
+    "score": "2-1",
+    "winner": "Team Yandex",
     "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 2,
+    "mapsPlayed": 3
+  },
+  "next": {
+    "id": "lbqf2",
+    "round": "败者组四分之一决赛",
+    "day": "2026-08-22",
+    "when": "2026-08-22 10:00",
+    "format": "Bo3",
+    "teamA": "Team Liquid",
+    "teamB": "Team Spirit",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Spirit",
+    "status": "scheduled",
+    "score": null,
+    "winner": null,
+    "polySlug": "dota2-liquid-ts8-2026-08-14",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.535,
-      "pA": 0.465,
-      "pB": 0.535,
-      "breakEven": 1.87,
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.584,
+      "pA": 0.416,
+      "pB": 0.584,
+      "breakEven": 1.71,
       "market": {
         "outcomes": [
-          "Team Yandex",
-          "Nigma Galaxy"
+          "Team Liquid",
+          "Team Spirit"
         ],
         "prices": [
-          0.595,
-          0.405
+          0.0,
+          1.0
         ]
       },
-      "why": "本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 53% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.35 局；Team Liquid 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
-    "id": "ubsf2",
-    "round": "胜者组半决赛",
-    "day": "2026-08-21",
-    "when": "2026-08-21 21:30",
+    "id": "lbqf2",
+    "round": "败者组四分之一决赛",
+    "day": "2026-08-22",
+    "when": "2026-08-22 10:00",
     "format": "Bo3",
-    "teamA": "Team Yandex",
-    "teamB": "Nigma Galaxy",
-    "teamALabel": "Team Yandex",
-    "teamBLabel": "Nigma Galaxy",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Liquid",
+    "teamB": "Team Spirit",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Spirit",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 2
+    "polySlug": "dota2-liquid-ts8-2026-08-14",
+    "mapsPlayed": 0
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    8957890399
+  ]
 }
