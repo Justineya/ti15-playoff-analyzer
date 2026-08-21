@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-21 14:03 CST",
+  "asOf": "2026-08-21 15:51 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -325,10 +325,15 @@
       "format": "Bo3",
       "teamA": "Team Liquid",
       "teamB": "Team Falcons",
-      "status": "scheduled",
+      "status": "live",
       "winnerTo": "lbqf2",
       "polyTitle": "Team Liquid vs Team Falcons",
-      "polySlug": "dota2-liquid-flc-2026-08-21"
+      "polySlug": "dota2-liquid-flc-2026-08-21",
+      "mapsPlayed": 1,
+      "score": "0-1",
+      "matchIds": [
+        8956943534
+      ]
     },
     {
       "id": "ubsf1",
@@ -458,7 +463,7 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-21 15:01 CST",
+  "scheduleAsOf": "2026-08-21 15:51 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
   "scheduleError": "HTTP Error 429: Too Many Requests"
 }
