@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T11:43Z",
+  "asOf": "2026-08-21T12:03Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -386,7 +386,7 @@
     {
       "slug": "dota2-vsn2-boombo-2026-08-20",
       "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 9385804.276143014,
+      "volume": 9385804.276143005,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 8328754.559454996,
+      "volume": 8328754.559455001,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.440774001,
+      "volume": 11205935.440773996,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 179917.4535749999,
+      "volume": 181288.705404,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2769,8 +2769,8 @@
             "No"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -2780,8 +2780,8 @@
             "No"
           ],
           "prices": [
-            "0.345",
-            "0.655"
+            "0.33",
+            "0.67"
           ]
         },
         {
@@ -2791,8 +2791,8 @@
             "No"
           ],
           "prices": [
-            "0.265",
-            "0.735"
+            "0.25",
+            "0.75"
           ]
         },
         {
@@ -2802,8 +2802,8 @@
             "No"
           ],
           "prices": [
-            "0.195",
-            "0.805"
+            "0.145",
+            "0.855"
           ]
         },
         {
@@ -2824,8 +2824,8 @@
             "No"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -2835,8 +2835,8 @@
             "No"
           ],
           "prices": [
-            "0.345",
-            "0.655"
+            "0.335",
+            "0.665"
           ]
         },
         {
@@ -2846,8 +2846,8 @@
             "No"
           ],
           "prices": [
-            "0.265",
-            "0.735"
+            "0.25",
+            "0.75"
           ]
         },
         {
@@ -2879,8 +2879,8 @@
             "No"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.51",
+            "0.49"
           ]
         },
         {
@@ -2890,8 +2890,8 @@
             "No"
           ],
           "prices": [
-            "0.43",
-            "0.57"
+            "0.39",
+            "0.61"
           ]
         },
         {
@@ -2901,8 +2901,8 @@
             "No"
           ],
           "prices": [
-            "0.33",
-            "0.67"
+            "0.315",
+            "0.685"
           ]
         },
         {
@@ -2912,8 +2912,8 @@
             "No"
           ],
           "prices": [
-            "0.245",
-            "0.755"
+            "0.215",
+            "0.785"
           ]
         },
         {
@@ -2934,8 +2934,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.54",
-            "0.46"
+            "0.74",
+            "0.26"
           ]
         },
         {
@@ -2945,8 +2945,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.735",
+            "0.265"
           ]
         },
         {
@@ -2956,8 +2956,8 @@
             "Under"
           ],
           "prices": [
-            "0.54",
-            "0.46"
+            "0.545",
+            "0.455"
           ]
         },
         {
@@ -2967,8 +2967,8 @@
             "Under"
           ],
           "prices": [
-            "0.54",
-            "0.46"
+            "0.52",
+            "0.48"
           ]
         }
       ]
