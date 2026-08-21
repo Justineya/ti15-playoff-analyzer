@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 17:04 CST",
+  "asOf": "2026-08-21 17:49 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
   "headline": "第2局 Liquid 赢了，先到10杀 Liquid，34.3分钟。下一局第3局按上一局重算后看好 FLCN（51%）。现场赔率至少 1.97。",
@@ -149,8 +149,8 @@
         "Team Falcons"
       ],
       "prices": [
-        0.525,
-        0.475
+        0.945,
+        0.055
       ]
     },
     "why": "本届胜率 Team Liquid 54% / Team Falcons 56%；先到10杀 59% / 56%；H2H 2.0 局；Team Liquid 中单爱拿 Earth Spirit"
@@ -184,8 +184,8 @@
           "Team Falcons"
         ],
         "prices": [
-          0.525,
-          0.475
+          0.945,
+          0.055
         ]
       },
       "why": "本届胜率 Team Liquid 54% / Team Falcons 56%；先到10杀 59% / 56%；H2H 2.0 局；Team Liquid 中单爱拿 Earth Spirit"
@@ -225,7 +225,5 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": [
-    8957013760
-  ]
+  "newMapIds": []
 }

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 17:04 CST",
+  "asOf": "2026-08-21 17:49 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -5544,8 +5544,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.525,
-            0.475
+            0.945,
+            0.055
           ],
           "question": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs"
         },
@@ -5578,12 +5578,12 @@
             "market": "系列胜者",
             "pick": "Team Falcons",
             "modelP": 0.531,
-            "marketP": 0.475,
-            "odds": 2.11,
-            "roi": 0.118,
-            "ev": 0.056,
+            "marketP": 0.055,
+            "odds": 18.18,
+            "roi": 8.655,
+            "ev": 0.476,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.475，模型 0.531，期望回报率 11.8%"
+            "note": "买 YES 成本 0.055，模型 0.531，期望回报率 865.5%"
           },
           {
             "market": "第一局",
@@ -6460,7 +6460,7 @@
       "why": "本届胜率 Team Spirit 60% / TEAM VISION 70%；先到10杀 56% / 63%；H2H 2.9000000000000004 局；Team Spirit 常用中单 Earth Spirit",
       "id": "ubsf1",
       "round": "胜者组半决赛",
-      "when": "2026-08-21 18:00",
+      "when": "2026-08-21 18:15",
       "status": "scheduled",
       "polySlug": "dota2-vsn2-ts8-2026-08-15",
       "poly": {},
@@ -8154,7 +8154,7 @@
       {
         "id": "ubsf1",
         "round": "胜者组半决赛",
-        "when": "2026-08-21 18:00",
+        "when": "2026-08-21 18:15",
         "winner": "TEAM VISION",
         "p": 0.753,
         "n": 379,

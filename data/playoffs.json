@@ -340,7 +340,7 @@
       "id": "ubsf1",
       "round": "胜者组半决赛",
       "day": "2026-08-21",
-      "datetime": "2026-08-21 18:00",
+      "datetime": "2026-08-21 18:15",
       "format": "Bo3",
       "teamA": "Team Spirit",
       "teamB": "TEAM VISION",
@@ -464,6 +464,6 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-21 17:04 CST",
+  "scheduleAsOf": "2026-08-21 17:49 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
 }
