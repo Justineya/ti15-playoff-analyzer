@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-21 13:36 CST
+# TI15 局间战报 · 2026-08-21 14:06 CST
 
-第2局 BB 赢了，先到10杀 BB，47.6分钟。下一局第3局按上一局重算后看好 BB（53%）。现场赔率至少 1.88。
+第3局 BB 36-12 拿下系列，先到10杀 BB（12分30秒 10-2）。系列 1-2 结束。下一把 Liquid vs FLCN 第1局按刚打完三局重算后看好 FLCN（53%），门槛 1.90。
 
-第2局 BB 赢了，先到10杀 BB，47.6分钟。上一局阵容 BB Io、Winter Wyvern、Puck / IW Lina、Dark Seer、Bounty Hunter。下一局第3局按上一局重算后看好 BB（53%）。现场赔率至少 1.88。系列现在看好 BB（53%）。先到10杀看好 BB。本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 5.0 局；Iron Wing 中单爱拿 Earth Spirit。
+第1局 IW 18-7、38.8分钟慢节奏滚雪球，先到10杀 IW（35分40秒 7-10），中单 Ari/KotL 几乎没参与；第2局 BB 用 Io、WW、Puck 27-11 扳平，47.6分钟，gpk~/Puck 先到10杀参与 8 次。第3局因为被 Puck 针对，IW 禁了 Ember/Puck 并抢 Io，中单改 Lion；BB 继续掐 Earth Spirit 和 KotL，后手 Viper。节奏拧快：12分30秒 BB 先到10杀（10-2），41.7分钟 36-12 结束，系列 1-2，BB 晋级、IW 淘汰。
+
+因为系列已经打完，下一局不是第4局。整棵模型按刚写入的第3局重算后，今天 14:00 Liquid vs FLCN 第1局看好 FLCN 53%（门槛 1.90），Polymarket 这局价 Liquid 0.515 / FLCN 0.485；先到10杀看好 FLCN 52%，没有公开盘。系列 0-0 看好 FLCN 53%（门槛 1.88），盘口 Liquid 0.535 / FLCN 0.465。两队本届没交过手。这不是投注建议。

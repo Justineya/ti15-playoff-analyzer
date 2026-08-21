@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-21 13:36 CST",
-  "n": 92,
+  "asOf": "2026-08-21 14:05 CST",
+  "n": 93,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -28251,6 +28251,313 @@
         "mid_support": "天辉中单 gpk~/Puck 参与 8 次（击杀5+助攻3），辅Save-/Hoodwink 参与 4 次，中辅合计18 · 中辅驱动；夜魇中单 bzm/Lina 参与 6 次（击杀1+助攻5），辅Whitemon/Lion 参与 7 次，中辅合计18 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8956821666",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8956877335,
+      "series_id": 1132343,
+      "start_time": 1787287281,
+      "duration": 2503,
+      "parsed": true,
+      "radiant": "BoomBoys",
+      "dire": "Iron Wing",
+      "radiant_team_id": 8255888,
+      "dire_team_id": 10150413,
+      "winner": "BoomBoys",
+      "radiant_win": true,
+      "score": [
+        36,
+        12
+      ],
+      "pace": "正常",
+      "length": "偏长",
+      "stance": "滚雪球",
+      "f10k": {
+        "side": "radiant",
+        "time": 750,
+        "score": {
+          "radiant": 10,
+          "dire": 2
+        },
+        "completing_killer": "gpk~",
+        "completing_hero": "Viper"
+      },
+      "f10k_mid_share": 6,
+      "first_tower": {
+        "time": 697,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_top"
+      },
+      "gold": {
+        "m5": 734,
+        "m10": 1659,
+        "m15": 4872,
+        "m20": 5305
+      },
+      "kills_8min": 8,
+      "kills_15min": 14,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 5,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 6,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 11,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 19,
+              "hero": "Sand King",
+              "hero_id": 16
+            },
+            {
+              "order": 21,
+              "hero": "Templar Assassin",
+              "hero_id": 46
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 12,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 15,
+              "hero": "Rubick",
+              "hero_id": 86
+            },
+            {
+              "order": 16,
+              "hero": "Kez",
+              "hero_id": 145
+            },
+            {
+              "order": 23,
+              "hero": "Viper",
+              "hero_id": 47
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 12,
+              "hero": "Largo",
+              "hero_id": 155
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 1,
+              "hero": "Puck",
+              "hero_id": 13
+            },
+            {
+              "order": 4,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 9,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 10,
+              "hero": "Storm Spirit",
+              "hero_id": 17
+            },
+            {
+              "order": 18,
+              "hero": "Snapfire",
+              "hero_id": 128
+            },
+            {
+              "order": 20,
+              "hero": "Pangolier",
+              "hero_id": 120
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 13,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 14,
+              "hero": "Lion",
+              "hero_id": 26
+            },
+            {
+              "order": 17,
+              "hero": "Tidehunter",
+              "hero_id": 29
+            },
+            {
+              "order": 22,
+              "hero": "Dragon Knight",
+              "hero_id": 49
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 1,
+              "hero": "Puck",
+              "hero_id": 13
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 13,
+              "hero": "Undying",
+              "hero_id": 85
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "gpk~",
+            "hero": "Viper",
+            "hero_id": 47,
+            "gold_t10": 4683,
+            "xp_t10": 4920,
+            "kills": 13,
+            "kills_before_10": 4,
+            "assists_before_10": 2,
+            "participate_before_10": 6
+          },
+          "pos4": {
+            "player": "Save-",
+            "hero": "Rubick",
+            "kills": 3,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos5": {
+            "player": "Kataomi`",
+            "hero": "Winter Wyvern",
+            "kills_before_10": 1,
+            "assists_before_10": 0,
+            "participate_before_10": 1
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 9,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Ari",
+            "hero": "Lion",
+            "hero_id": 26,
+            "gold_t10": 1932,
+            "xp_t10": 2171,
+            "kills": 3,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "Whitemon",
+            "hero": "Undying",
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos5": {
+            "player": "33",
+            "hero": "Tidehunter",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 2,
+          "first10_mid_sup_kills": 1,
+          "first10_mid_sup_ka": 2,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Earth Spirit；前两手Winter Wyvern、Largo；中单Viper第5手拿",
+          "dire": "一阶段禁Ember Spirit、Puck；前两手Io、Undying；中单Lion第3手拿"
+        },
+        "pace": "正常节奏 / 偏长局（41分43秒）；先到10杀出现在 12分30秒",
+        "stance": "滚雪球",
+        "f10k": "BoomBoys先到 10 杀（当时 10-2，12分30秒）。这 10 次击杀里，中单 gpk~/Viper 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 2 杀。",
+        "mid_support": "天辉中单 gpk~/Viper 参与 6 次（击杀4+助攻2），辅Save-/Rubick 参与 2 次，中辅合计9 · 中辅驱动；夜魇中单 Ari/Lion 参与 0 次（击杀0+助攻0），辅Whitemon/Undying 参与 2 次，中辅合计2。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8956877335",
       "source": "ti15",
       "patch": "7.41e"
     }
