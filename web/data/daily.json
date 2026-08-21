@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 14:03 CST",
+  "asOf": "2026-08-21 15:01 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
   "headline": "下一把 Liquid vs FLCN，看好 FLCN（系列 53%）。第1局看好 FLCN（53%）。",
@@ -23,8 +23,8 @@
           "Team Falcons"
         ],
         "prices": [
-          0.515,
-          0.485
+          0.235,
+          0.765
         ]
       },
       "why": "本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；本届没交过手；Team Liquid 中单爱拿 Earth Spirit"
@@ -53,8 +53,8 @@
         "Team Falcons"
       ],
       "prices": [
-        0.535,
-        0.465
+        0.395,
+        0.605
       ]
     },
     "why": "本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；本届没交过手；Team Liquid 中单爱拿 Earth Spirit"
@@ -88,8 +88,8 @@
           "Team Falcons"
         ],
         "prices": [
-          0.535,
-          0.465
+          0.395,
+          0.605
         ]
       },
       "why": "本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；本届没交过手；Team Liquid 中单爱拿 Earth Spirit"
@@ -129,7 +129,5 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": [
-    8956877335
-  ]
+  "newMapIds": []
 }
