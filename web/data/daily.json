@@ -1,45 +1,115 @@
 {
-  "asOf": "2026-08-21 10:50 CST",
+  "asOf": "2026-08-21 11:38 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 IW vs BB，看好 BB（系列 55%）。第1局看好 BB（51%）。",
-  "narrative": "下一把 IW vs BB，看好 BB（系列 55%）。第1局看好 BB（51%）。本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 IW 赢了，先到10杀 IW，38.8分钟。下一局第2局按上一局重算后看好 IW（51%）。现场赔率至少 1.95。",
+  "narrative": "第1局 IW 赢了，先到10杀 IW，38.8分钟。上一局阵容 BB Largo、Bane、Mirana / IW Lina、Keeper of the Light、Centaur Warrunner。下一局第2局按上一局重算后看好 IW（51%）。现场赔率至少 1.95。系列现在看好 IW（77%）。先到10杀看好 IW。本届胜率 Iron Wing 56% / BoomBoys 53%；先到10杀 52% / 51%；H2H 4.0 局；Iron Wing 中单爱拿 Earth Spirit。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8956780728,
+    "winner": "Iron Wing",
+    "score": [
+      7,
+      18
+    ],
+    "f10": "Iron Wing",
+    "f10Time": 2140,
+    "durationMin": 38.8,
+    "pace": "慢",
+    "stance": "滚雪球",
+    "picks": {
+      "BoomBoys": [
+        "Largo",
+        "Bane",
+        "Mirana",
+        "Dragon Knight",
+        "Templar Assassin"
+      ],
+      "Iron Wing": [
+        "Lina",
+        "Keeper of the Light",
+        "Centaur Warrunner",
+        "Ringmaster",
+        "Chaos Knight"
+      ]
+    },
+    "mid": {
+      "BoomBoys": "Dragon Knight",
+      "Iron Wing": "Keeper of the Light"
+    },
+    "blurb": "Iron Wing先到 10 杀（当时 7-10，35分40秒）。这 10 次击杀里，中单 Ari/Keeper of the Light 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 7 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8956780728,
+      "winner": "Iron Wing",
+      "score": [
+        7,
+        18
+      ],
+      "f10": "Iron Wing",
+      "f10Time": 2140,
+      "durationMin": 38.8,
+      "pace": "慢",
+      "stance": "滚雪球",
+      "picks": {
+        "BoomBoys": [
+          "Largo",
+          "Bane",
+          "Mirana",
+          "Dragon Knight",
+          "Templar Assassin"
+        ],
+        "Iron Wing": [
+          "Lina",
+          "Keeper of the Light",
+          "Centaur Warrunner",
+          "Ringmaster",
+          "Chaos Knight"
+        ]
+      },
+      "mid": {
+        "BoomBoys": "Dragon Knight",
+        "Iron Wing": "Keeper of the Light"
+      },
+      "blurb": "Iron Wing先到 10 杀（当时 7-10，35分40秒）。这 10 次击杀里，中单 Ari/Keeper of the Light 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 7 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "Iron Wing",
     "teamB": "BoomBoys",
     "lean": {
-      "team": "BoomBoys",
-      "tag": "BB",
-      "p": 0.51,
-      "pA": 0.49,
-      "pB": 0.51,
-      "breakEven": 1.96,
+      "team": "Iron Wing",
+      "tag": "IW",
+      "p": 0.512,
+      "pA": 0.512,
+      "pB": 0.488,
+      "breakEven": 1.95,
       "market": null,
-      "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Iron Wing 56% / BoomBoys 53%；先到10杀 52% / 51%；H2H 4.0 局；Iron Wing 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "BoomBoys",
-      "tag": "BB",
-      "p": 0.51,
-      "pA": 0.49,
-      "pB": 0.51,
+      "team": "Iron Wing",
+      "tag": "IW",
+      "p": 0.511,
+      "pA": 0.511,
+      "pB": 0.489,
       "breakEven": 1.96,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "BoomBoys",
-    "tag": "BB",
-    "p": 0.545,
-    "pA": 0.455,
-    "pB": 0.545,
-    "breakEven": 1.84,
+    "team": "Iron Wing",
+    "tag": "IW",
+    "p": 0.77,
+    "pA": 0.77,
+    "pB": 0.23,
+    "breakEven": 1.3,
     "market": null,
-    "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Iron Wing 56% / BoomBoys 53%；先到10杀 52% / 51%；H2H 4.0 局；Iron Wing 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -52,20 +122,20 @@
     "teamB": "BoomBoys",
     "teamALabel": "Iron Wing",
     "teamBLabel": "BoomBoys",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "1-0",
     "winner": null,
     "polySlug": "dota2-boombo-ironwi-2026-08-13",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
-      "team": "BoomBoys",
-      "tag": "BB",
-      "p": 0.545,
-      "pA": 0.455,
-      "pB": 0.545,
-      "breakEven": 1.84,
+      "team": "Iron Wing",
+      "tag": "IW",
+      "p": 0.77,
+      "pA": 0.77,
+      "pB": 0.23,
+      "breakEven": 1.3,
       "market": null,
-      "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 3.0 局；Iron Wing 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Iron Wing 56% / BoomBoys 53%；先到10杀 52% / 51%；H2H 4.0 局；Iron Wing 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
@@ -78,12 +148,14 @@
     "teamB": "BoomBoys",
     "teamALabel": "Iron Wing",
     "teamBLabel": "BoomBoys",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "1-0",
     "winner": null,
     "polySlug": "dota2-boombo-ironwi-2026-08-13",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    8956780728
+  ]
 }
