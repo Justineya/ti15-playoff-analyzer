@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 00:04 CST",
+  "asOf": "2026-08-22 00:47 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
   "headline": "第1局 NGX 赢了，先到10杀 TY，74.9分钟。下一局第2局按上一局重算后看好 NGX（63%）。现场赔率至少 1.59。",
@@ -93,8 +93,8 @@
           "Nigma Galaxy"
         ],
         "prices": [
-          0.575,
-          0.425
+          0.855,
+          0.145
         ]
       },
       "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
@@ -123,8 +123,8 @@
         "Nigma Galaxy"
       ],
       "prices": [
-        0.345,
-        0.655
+        0.545,
+        0.455
       ]
     },
     "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
@@ -158,8 +158,8 @@
           "Nigma Galaxy"
         ],
         "prices": [
-          0.345,
-          0.655
+          0.545,
+          0.455
         ]
       },
       "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 52% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
@@ -182,7 +182,5 @@
     "mapsPlayed": 1
   },
   "todayResults": [],
-  "newMapIds": [
-    8957527957
-  ]
+  "newMapIds": []
 }
