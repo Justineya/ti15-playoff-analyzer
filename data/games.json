@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-21 19:13 CST",
-  "n": 96,
+  "asOf": "2026-08-21 19:43 CST",
+  "n": 97,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -29479,6 +29479,313 @@
         "mid_support": "天辉中单 Malr1ne/Sand King 参与 8 次（击杀3+助攻5），辅Cr1t-/Clockwerk 参与 7 次，中辅合计20 · 中辅驱动；夜魇中单 Nisha/Lina 参与 5 次（击杀2+助攻3），辅Boxi/Centaur Warrunner 参与 5 次，中辅合计13 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8957086928",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8957180942,
+      "series_id": 1132388,
+      "start_time": 1787307607,
+      "duration": 2570,
+      "parsed": true,
+      "radiant": "TEAM VISION",
+      "dire": "Team Spirit",
+      "radiant_team_id": 9572001,
+      "dire_team_id": 7119388,
+      "winner": "TEAM VISION",
+      "radiant_win": true,
+      "score": [
+        28,
+        20
+      ],
+      "pace": "慢",
+      "length": "偏长",
+      "stance": "来回拉锯",
+      "f10k": {
+        "side": "dire",
+        "time": 1068,
+        "score": {
+          "radiant": 7,
+          "dire": 10
+        },
+        "completing_killer": "Yatoro",
+        "completing_hero": "Terrorblade"
+      },
+      "f10k_mid_share": 5,
+      "first_tower": {
+        "time": 399,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": 1488,
+        "m10": 1832,
+        "m15": 2783,
+        "m20": 1911
+      },
+      "kills_8min": 4,
+      "kills_15min": 13,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 5,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 6,
+              "hero": "Axe",
+              "hero_id": 2
+            },
+            {
+              "order": 11,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 19,
+              "hero": "Primal Beast",
+              "hero_id": 137
+            },
+            {
+              "order": 21,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 12,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 15,
+              "hero": "Rubick",
+              "hero_id": 86
+            },
+            {
+              "order": 16,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 23,
+              "hero": "Ogre Magi",
+              "hero_id": 84
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 12,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 4,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 9,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 10,
+              "hero": "Enchantress",
+              "hero_id": 58
+            },
+            {
+              "order": 18,
+              "hero": "Elder Titan",
+              "hero_id": 103
+            },
+            {
+              "order": 20,
+              "hero": "Grimstroke",
+              "hero_id": 121
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 13,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 14,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 17,
+              "hero": "Terrorblade",
+              "hero_id": 109
+            },
+            {
+              "order": 22,
+              "hero": "Night Stalker",
+              "hero_id": 60
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Lina",
+              "hero_id": 25
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 13,
+              "hero": "Undying",
+              "hero_id": 85
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Slark",
+            "hero_id": 93,
+            "gold_t10": 4798,
+            "xp_t10": 4297,
+            "kills": 6,
+            "kills_before_10": 2,
+            "assists_before_10": 2,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Dukalis",
+            "hero": "Ogre Magi",
+            "kills": 2,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "9Class",
+            "hero": "Rubick",
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 7,
+          "first10_mid_sup_kills": 2,
+          "first10_mid_sup_ka": 6,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "Larl",
+            "hero": "Ember Spirit",
+            "hero_id": 106,
+            "gold_t10": 3274,
+            "xp_t10": 4425,
+            "kills": 4,
+            "kills_before_10": 3,
+            "assists_before_10": 2,
+            "participate_before_10": 5
+          },
+          "pos4": {
+            "player": "rue",
+            "hero": "Undying",
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
+          },
+          "pos5": {
+            "player": "not_me",
+            "hero": "Hoodwink",
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 10,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Earth Spirit；前两手Doom、Nature's Prophet；中单Slark第4手拿",
+          "dire": "一阶段禁Bounty Hunter、Lina；前两手Ember Spirit、Undying；中单Ember Spirit第1手拿"
+        },
+        "pace": "慢节奏 / 偏长局（42分50秒）；先到10杀出现在 17分48秒",
+        "stance": "来回拉锯",
+        "f10k": "Team Spirit先到 10 杀（当时 7-10，17分48秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 7 杀。",
+        "mid_support": "天辉中单 No[o]ne-/Slark 参与 4 次（击杀2+助攻2），辅Dukalis/Ogre Magi 参与 0 次，中辅合计6；夜魇中单 Larl/Ember Spirit 参与 5 次（击杀3+助攻2），辅rue/Undying 参与 3 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8957180942",
       "source": "ti15",
       "patch": "7.41e"
     }
