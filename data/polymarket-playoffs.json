@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T14:25Z",
+  "asOf": "2026-08-21T15:02Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.484537013,
+      "volume": 11209047.48453702,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 923386.2125930001,
+      "volume": 3581788.8628799985,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2714,8 +2714,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.605",
-            "0.395"
+            "0.825",
+            "0.175"
           ]
         },
         {
@@ -2725,8 +2725,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.605",
-            "0.395"
+            "0.585",
+            "0.415"
           ]
         },
         {
@@ -2736,8 +2736,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.635",
-            "0.365"
+            "0.765",
+            "0.235"
           ]
         },
         {
@@ -2747,8 +2747,8 @@
             "Under"
           ],
           "prices": [
-            "0.485",
-            "0.515"
+            "0.43",
+            "0.57"
           ]
         },
         {
@@ -2758,8 +2758,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.38",
-            "0.62"
+            "0.51",
+            "0.49"
           ]
         },
         {
@@ -2791,8 +2791,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2802,8 +2802,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2813,8 +2813,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -2824,8 +2824,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -2879,8 +2879,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.505"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -2945,12 +2945,23 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.96",
+            "0.04"
           ]
         },
         {
           "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.495",
+            "0.505"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 1?",
           "outcomes": [
             "Over",
             "Under"
@@ -2961,7 +2972,40 @@
           ]
         },
         {
-          "question": "Total Kills Over/Under 50.5 in Game 1?",
+          "question": "Total Kills Over/Under 55.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 45.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 40.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 1?",
           "outcomes": [
             "Over",
             "Under"
