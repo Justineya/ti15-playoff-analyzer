@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 21:55 CST",
+  "asOf": "2026-08-21 22:25 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
   "headline": "下一把 TY vs NGX，看好 NGX（系列 57%）。第1局看好 NGX（55%）。",
@@ -53,8 +53,8 @@
         "Nigma Galaxy"
       ],
       "prices": [
-        0.645,
-        0.355
+        0.635,
+        0.365
       ]
     },
     "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
@@ -88,8 +88,8 @@
           "Nigma Galaxy"
         ],
         "prices": [
-          0.645,
-          0.355
+          0.635,
+          0.365
         ]
       },
       "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
@@ -161,7 +161,5 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": [
-    8957364447
-  ]
+  "newMapIds": []
 }
