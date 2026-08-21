@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20T23:45Z",
+  "asOf": "2026-08-21T00:01Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.440774001,
+      "volume": 11205935.440774003,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 22576.137214,
+      "volume": 23004.154368,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2029,8 +2029,8 @@
             "No"
           ],
           "prices": [
-            "0.345",
-            "0.655"
+            "0.36",
+            "0.64"
           ]
         },
         {
@@ -2040,8 +2040,8 @@
             "No"
           ],
           "prices": [
-            "0.245",
-            "0.755"
+            "0.26",
+            "0.74"
           ]
         },
         {
@@ -2051,8 +2051,8 @@
             "No"
           ],
           "prices": [
-            "0.215",
-            "0.785"
+            "0.205",
+            "0.795"
           ]
         },
         {
@@ -2084,8 +2084,8 @@
             "No"
           ],
           "prices": [
-            "0.35",
-            "0.65"
+            "0.36",
+            "0.64"
           ]
         },
         {
@@ -2095,8 +2095,8 @@
             "No"
           ],
           "prices": [
-            "0.245",
-            "0.755"
+            "0.26",
+            "0.74"
           ]
         },
         {
@@ -2128,8 +2128,8 @@
             "No"
           ],
           "prices": [
-            "0.53",
-            "0.47"
+            "0.525",
+            "0.475"
           ]
         },
         {
@@ -2540,7 +2540,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 70247.606024,
+      "volume": 70448.94282199998,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2681,8 +2681,8 @@
             "No"
           ],
           "prices": [
-            "0.265",
-            "0.735"
+            "0.26",
+            "0.74"
           ]
         },
         {
@@ -2692,8 +2692,8 @@
             "No"
           ],
           "prices": [
-            "0.25",
-            "0.75"
+            "0.255",
+            "0.745"
           ]
         },
         {
@@ -2760,6 +2760,50 @@
           "prices": [
             "0.285",
             "0.715"
+          ]
+        },
+        {
+          "question": "First Blood in Game 2?",
+          "outcomes": [
+            "Team Yandex",
+            "Nigma Galaxy"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "First Blood in Game 1?",
+          "outcomes": [
+            "Team Yandex",
+            "Nigma Galaxy"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.53",
+            "0.47"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.52",
+            "0.48"
           ]
         }
       ]
