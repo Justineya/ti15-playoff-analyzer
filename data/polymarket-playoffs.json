@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T20:55Z",
+  "asOf": "2026-08-21T21:15Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723976009,
+      "volume": 9505559.723976007,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 16125.420017,
+      "volume": 16133.112323000003,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -3150,8 +3150,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.44",
-            "0.56"
+            "0.435",
+            "0.565"
           ]
         },
         {
@@ -3183,8 +3183,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.325",
-            "0.675"
+            "0.315",
+            "0.685"
           ]
         },
         {
@@ -3205,8 +3205,8 @@
             "Under"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.53",
+            "0.47"
           ]
         },
         {
@@ -3216,8 +3216,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.34",
-            "0.66"
+            "0.325",
+            "0.675"
           ]
         },
         {
@@ -3227,8 +3227,8 @@
             "Under"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.525",
+            "0.475"
           ]
         },
         {
@@ -3403,8 +3403,8 @@
             "No"
           ],
           "prices": [
-            "0.25",
-            "0.75"
+            "0.255",
+            "0.745"
           ]
         },
         {
@@ -3804,7 +3804,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 3626.8982869999995,
+      "volume": 5147.43416,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -3857,8 +3857,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.47",
-            "0.53"
+            "0.465",
+            "0.535"
           ]
         },
         {
@@ -3879,8 +3879,8 @@
             "Under"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.53",
+            "0.47"
           ]
         },
         {
@@ -3901,8 +3901,8 @@
             "Under"
           ],
           "prices": [
-            "0.545",
-            "0.455"
+            "0.53",
+            "0.47"
           ]
         },
         {
@@ -3923,8 +3923,8 @@
             "Under"
           ],
           "prices": [
-            "0.51",
-            "0.49"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -3978,8 +3978,8 @@
             "No"
           ],
           "prices": [
-            "0.08",
-            "0.92"
+            "0.095",
+            "0.905"
           ]
         },
         {
@@ -4077,8 +4077,8 @@
             "No"
           ],
           "prices": [
-            "0.26",
-            "0.74"
+            "0.265",
+            "0.735"
           ]
         },
         {

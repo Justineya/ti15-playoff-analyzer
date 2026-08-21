@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 04:55 CST",
+  "asOf": "2026-08-22 05:15 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -10164,8 +10164,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.47,
-            0.53
+            0.465,
+            0.535
           ],
           "question": "Game Handicap: VSN (-1.5) vs Team Yandex (+1.5)"
         }
@@ -10209,12 +10209,12 @@
             "market": "让分",
             "pick": "Team Yandex +1.5",
             "modelP": 0.66,
-            "marketP": 0.53,
-            "odds": 1.89,
-            "roi": 0.245,
-            "ev": 0.13,
+            "marketP": 0.535,
+            "odds": 1.87,
+            "roi": 0.234,
+            "ev": 0.125,
             "action": "小注买",
-            "note": "买 YES 成本 0.53，模型 0.66，期望回报率 24.5%"
+            "note": "买 YES 成本 0.535，模型 0.66，期望回报率 23.4%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -10227,7 +10227,7 @@
             "note": "Polymarket 没有这格"
           }
         ],
-        "plan": "若只按模型 vs Polymarket 差价：总局数 O/U 2.5买Over 2.5（期望回报率 20.0%）；让分买Team Yandex +1.5（期望回报率 24.5%）。单场合计不超过银行资金 3%。"
+        "plan": "若只按模型 vs Polymarket 差价：总局数 O/U 2.5买Over 2.5（期望回报率 20.0%）；让分买Team Yandex +1.5（期望回报率 23.4%）。单场合计不超过银行资金 3%。"
       }
     }
   ],
