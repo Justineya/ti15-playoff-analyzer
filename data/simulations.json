@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 13:00 CST",
+  "asOf": "2026-08-21 13:36 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -5512,7 +5512,7 @@
       "why": "本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；H2H 0 局；Team Liquid 常用中单 Earth Spirit",
       "id": "lbr1b",
       "round": "败者组首轮",
-      "when": "2026-08-21 13:45",
+      "when": "2026-08-21 14:00",
       "status": "scheduled",
       "polySlug": "dota2-liquid-flc-2026-08-21",
       "poly": {
@@ -5566,8 +5566,8 @@
             "Team Falcons"
           ],
           "prices": [
-            0.265,
-            0.735
+            0.275,
+            0.725
           ],
           "question": "Game Handicap: Liquid (-1.5) vs Team Falcons (+1.5)"
         }
@@ -5611,12 +5611,12 @@
             "market": "让分",
             "pick": "Team Falcons +1.5",
             "modelP": 0.772,
-            "marketP": 0.735,
-            "odds": 1.36,
-            "roi": 0.05,
-            "ev": 0.037,
+            "marketP": 0.725,
+            "odds": 1.38,
+            "roi": 0.065,
+            "ev": 0.047,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.735，模型 0.772，期望回报率 5.0%"
+            "note": "买 YES 成本 0.725，模型 0.772，期望回报率 6.5%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -7370,8 +7370,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            0.655,
-            0.345
+            0.665,
+            0.335
           ],
           "question": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs"
         },
@@ -7404,12 +7404,12 @@
             "market": "系列胜者",
             "pick": "Nigma Galaxy",
             "modelP": 0.568,
-            "marketP": 0.345,
-            "odds": 2.9,
-            "roi": 0.646,
-            "ev": 0.223,
+            "marketP": 0.335,
+            "odds": 2.99,
+            "roi": 0.696,
+            "ev": 0.233,
             "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.345，模型 0.568，期望回报率 64.6%"
+            "note": "买 YES 成本 0.335，模型 0.568，期望回报率 69.6%"
           },
           {
             "market": "第一局",
@@ -8182,7 +8182,7 @@
       {
         "id": "lbr1b",
         "round": "败者组首轮",
-        "when": "2026-08-21 13:45",
+        "when": "2026-08-21 14:00",
         "winner": "Team Falcons",
         "p": 0.513,
         "n": 265,

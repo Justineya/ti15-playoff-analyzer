@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T05:00Z",
+  "asOf": "2026-08-21T05:36Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -386,7 +386,7 @@
     {
       "slug": "dota2-vsn2-boombo-2026-08-20",
       "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 9385804.276143013,
+      "volume": 9385804.276142996,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 90061.66486299997,
+      "volume": 141053.69162799997,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2007,8 +2007,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.265",
-            "0.735"
+            "0.275",
+            "0.725"
           ]
         },
         {
@@ -2051,8 +2051,8 @@
             "No"
           ],
           "prices": [
-            "0.315",
-            "0.685"
+            "0.545",
+            "0.455"
           ]
         },
         {
@@ -2106,8 +2106,8 @@
             "No"
           ],
           "prices": [
-            "0.255",
-            "0.745"
+            "0.25",
+            "0.75"
           ]
         },
         {
@@ -2161,8 +2161,8 @@
             "No"
           ],
           "prices": [
-            "0.3",
-            "0.7"
+            "0.265",
+            "0.735"
           ]
         },
         {
@@ -2172,8 +2172,8 @@
             "No"
           ],
           "prices": [
-            "0.17",
-            "0.83"
+            "0.165",
+            "0.835"
           ]
         },
         {
@@ -2194,8 +2194,8 @@
             "Team Falcons"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "0.515",
+            "0.485"
           ]
         },
         {
@@ -2227,8 +2227,8 @@
             "Under"
           ],
           "prices": [
-            "0.435",
-            "0.565"
+            "0.69",
+            "0.31"
           ]
         },
         {
@@ -2239,7 +2239,7 @@
           ],
           "prices": [
             "0.415",
-            "0.585"
+            "0.575"
           ]
         }
       ]
@@ -2606,7 +2606,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 82114.07268100005,
+      "volume": 90342.31497200002,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2637,8 +2637,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.655",
-            "0.345"
+            "0.665",
+            "0.335"
           ]
         },
         {
@@ -2670,7 +2670,7 @@
             "No"
           ],
           "prices": [
-            "0.525",
+            "0.52",
             "0.48"
           ]
         },
@@ -2758,8 +2758,8 @@
             "No"
           ],
           "prices": [
-            "0.245",
-            "0.755"
+            "0.24",
+            "0.76"
           ]
         },
         {
@@ -2835,8 +2835,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.51",
-            "0.49"
+            "0.525",
+            "0.475"
           ]
         },
         {
@@ -2846,8 +2846,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.515",
+            "0.485"
           ]
         },
         {
@@ -2857,8 +2857,8 @@
             "Under"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.555",
+            "0.445"
           ]
         },
         {
@@ -2868,8 +2868,8 @@
             "Under"
           ],
           "prices": [
-            "0.525",
-            "0.475"
+            "0.52",
+            "0.48"
           ]
         }
       ]
