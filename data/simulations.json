@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 23:02 CST",
+  "asOf": "2026-08-21 23:41 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -7347,8 +7347,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            0.825,
-            0.175
+            0.49,
+            0.51
           ],
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner"
         },
@@ -7369,8 +7369,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            0.765,
-            0.235
+            0.595,
+            0.405
           ],
           "question": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs"
         },
@@ -7380,8 +7380,8 @@
             "Under"
           ],
           "prices": [
-            0.43,
-            0.57
+            0.465,
+            0.535
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -7391,8 +7391,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            0.51,
-            0.49
+            0.325,
+            0.675
           ],
           "question": "Game Handicap: TY (-1.5) vs Nigma Galaxy (+1.5)"
         }
@@ -7403,45 +7403,45 @@
             "market": "系列胜者",
             "pick": "Nigma Galaxy",
             "modelP": 0.573,
-            "marketP": 0.235,
-            "odds": 4.26,
-            "roi": 1.438,
-            "ev": 0.338,
-            "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.235，模型 0.573，期望回报率 143.8%"
+            "marketP": 0.405,
+            "odds": 2.47,
+            "roi": 0.415,
+            "ev": 0.168,
+            "action": "观察 / 极小注",
+            "note": "买 YES 成本 0.405，模型 0.573，期望回报率 41.5%"
           },
           {
             "market": "第一局",
             "pick": "Nigma Galaxy",
             "modelP": 0.548,
-            "marketP": 0.175,
-            "odds": 5.71,
-            "roi": 2.131,
-            "ev": 0.373,
-            "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.175，模型 0.548，期望回报率 213.1%"
+            "marketP": 0.51,
+            "odds": 1.96,
+            "roi": 0.075,
+            "ev": 0.038,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.51，模型 0.548，期望回报率 7.5%"
           },
           {
             "market": "总局数 O/U 2.5",
             "pick": "Over 2.5",
             "modelP": 0.495,
-            "marketP": 0.43,
-            "odds": 2.33,
-            "roi": 0.151,
-            "ev": 0.065,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.43，模型 0.495，期望回报率 15.1%"
+            "marketP": 0.465,
+            "odds": 2.15,
+            "roi": 0.065,
+            "ev": 0.03,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.465，模型 0.495，期望回报率 6.5%"
           },
           {
             "market": "让分",
             "pick": "Nigma Galaxy +1.5",
             "modelP": 0.796,
-            "marketP": 0.49,
-            "odds": 2.04,
-            "roi": 0.624,
-            "ev": 0.306,
-            "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.49，模型 0.796，期望回报率 62.4%"
+            "marketP": 0.675,
+            "odds": 1.48,
+            "roi": 0.179,
+            "ev": 0.121,
+            "action": "观察 / 极小注",
+            "note": "买 YES 成本 0.675，模型 0.796，期望回报率 17.9%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
