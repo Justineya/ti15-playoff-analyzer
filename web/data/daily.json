@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21 15:51 CST",
+  "asOf": "2026-08-21 16:22 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
   "headline": "第1局 FLCN 赢了，先到10杀 Liquid，55.9分钟。下一局第2局按上一局重算后看好 FLCN（60%）。现场赔率至少 1.66。",
@@ -93,8 +93,8 @@
           "Team Falcons"
         ],
         "prices": [
-          0.495,
-          0.505
+          0.66,
+          0.34
         ]
       },
       "why": "本届胜率 Team Liquid 53% / Team Falcons 58%；先到10杀 58% / 58%；H2H 1.0 局；Team Liquid 中单爱拿 Earth Spirit"
@@ -123,8 +123,8 @@
         "Team Falcons"
       ],
       "prices": [
-        0.275,
-        0.725
+        0.315,
+        0.685
       ]
     },
     "why": "本届胜率 Team Liquid 53% / Team Falcons 58%；先到10杀 58% / 58%；H2H 1.0 局；Team Liquid 中单爱拿 Earth Spirit"
@@ -134,7 +134,7 @@
     "id": "lbr1b",
     "round": "败者组首轮",
     "day": "2026-08-21",
-    "when": "2026-08-21 14:00",
+    "when": "2026-08-21 14:15",
     "format": "Bo3",
     "teamA": "Team Liquid",
     "teamB": "Team Falcons",
@@ -158,8 +158,8 @@
           "Team Falcons"
         ],
         "prices": [
-          0.275,
-          0.725
+          0.315,
+          0.685
         ]
       },
       "why": "本届胜率 Team Liquid 53% / Team Falcons 58%；先到10杀 58% / 58%；H2H 1.0 局；Team Liquid 中单爱拿 Earth Spirit"
@@ -169,7 +169,7 @@
     "id": "lbr1b",
     "round": "败者组首轮",
     "day": "2026-08-21",
-    "when": "2026-08-21 14:00",
+    "when": "2026-08-21 14:15",
     "format": "Bo3",
     "teamA": "Team Liquid",
     "teamB": "Team Falcons",
@@ -199,7 +199,5 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": [
-    8956943534
-  ]
+  "newMapIds": []
 }

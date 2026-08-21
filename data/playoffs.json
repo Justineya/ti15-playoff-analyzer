@@ -321,7 +321,7 @@
       "id": "lbr1b",
       "round": "败者组首轮",
       "day": "2026-08-21",
-      "datetime": "2026-08-21 14:00",
+      "datetime": "2026-08-21 14:15",
       "format": "Bo3",
       "teamA": "Team Liquid",
       "teamB": "Team Falcons",
@@ -339,7 +339,7 @@
       "id": "ubsf1",
       "round": "胜者组半决赛",
       "day": "2026-08-21",
-      "datetime": "2026-08-21 16:00",
+      "datetime": "2026-08-21 17:00",
       "format": "Bo3",
       "teamA": "Team Spirit",
       "teamB": "TEAM VISION",
@@ -463,7 +463,6 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-21 15:51 CST",
-  "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
-  "scheduleError": "HTTP Error 429: Too Many Requests"
+  "scheduleAsOf": "2026-08-21 16:22 CST",
+  "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event"
 }
