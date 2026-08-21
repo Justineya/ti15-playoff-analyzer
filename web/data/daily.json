@@ -1,194 +1,135 @@
 {
-  "asOf": "2026-08-21 13:36 CST",
+  "asOf": "2026-08-21 14:03 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "next-map",
-  "headline": "第2局 BB 赢了，先到10杀 BB，47.6分钟。下一局第3局按上一局重算后看好 BB（53%）。现场赔率至少 1.88。",
-  "narrative": "第2局 BB 赢了，先到10杀 BB，47.6分钟。上一局阵容 BB Io、Winter Wyvern、Puck / IW Lina、Dark Seer、Bounty Hunter。下一局第3局按上一局重算后看好 BB（53%）。现场赔率至少 1.88。系列现在看好 BB（53%）。先到10杀看好 BB。本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 5.0 局；Iron Wing 中单爱拿 Earth Spirit。",
-  "previousMap": {
-    "game": 2,
-    "matchId": 8956821666,
-    "winner": "BoomBoys",
-    "score": [
-      27,
-      11
-    ],
-    "f10": "BoomBoys",
-    "f10Time": 1399,
-    "durationMin": 47.6,
-    "pace": "慢",
-    "stance": "滚雪球",
-    "picks": {
-      "BoomBoys": [
-        "Io",
-        "Winter Wyvern",
-        "Puck",
-        "Hoodwink",
-        "Centaur Warrunner"
-      ],
-      "Iron Wing": [
-        "Lina",
-        "Dark Seer",
-        "Bounty Hunter",
-        "Lion",
-        "Doom"
-      ]
-    },
-    "mid": {
-      "BoomBoys": "Puck",
-      "Iron Wing": "Lina"
-    },
-    "blurb": "BoomBoys先到 10 杀（当时 10-9，23分19秒）。这 10 次击杀里，中单 gpk~/Puck 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 9 杀。"
-  },
-  "previousMaps": [
-    {
-      "game": 1,
-      "matchId": 8956780728,
-      "winner": "Iron Wing",
-      "score": [
-        7,
-        18
-      ],
-      "f10": "Iron Wing",
-      "f10Time": 2140,
-      "durationMin": 38.8,
-      "pace": "慢",
-      "stance": "滚雪球",
-      "picks": {
-        "BoomBoys": [
-          "Largo",
-          "Bane",
-          "Mirana",
-          "Dragon Knight",
-          "Templar Assassin"
-        ],
-        "Iron Wing": [
-          "Lina",
-          "Keeper of the Light",
-          "Centaur Warrunner",
-          "Ringmaster",
-          "Chaos Knight"
-        ]
-      },
-      "mid": {
-        "BoomBoys": "Dragon Knight",
-        "Iron Wing": "Keeper of the Light"
-      },
-      "blurb": "Iron Wing先到 10 杀（当时 7-10，35分40秒）。这 10 次击杀里，中单 Ari/Keeper of the Light 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 7 杀。"
-    },
-    {
-      "game": 2,
-      "matchId": 8956821666,
-      "winner": "BoomBoys",
-      "score": [
-        27,
-        11
-      ],
-      "f10": "BoomBoys",
-      "f10Time": 1399,
-      "durationMin": 47.6,
-      "pace": "慢",
-      "stance": "滚雪球",
-      "picks": {
-        "BoomBoys": [
-          "Io",
-          "Winter Wyvern",
-          "Puck",
-          "Hoodwink",
-          "Centaur Warrunner"
-        ],
-        "Iron Wing": [
-          "Lina",
-          "Dark Seer",
-          "Bounty Hunter",
-          "Lion",
-          "Doom"
-        ]
-      },
-      "mid": {
-        "BoomBoys": "Puck",
-        "Iron Wing": "Lina"
-      },
-      "blurb": "BoomBoys先到 10 杀（当时 10-9，23分19秒）。这 10 次击杀里，中单 gpk~/Puck 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 9 杀。"
-    }
-  ],
+  "kind": "preview",
+  "headline": "下一把 Liquid vs FLCN，看好 FLCN（系列 53%）。第1局看好 FLCN（53%）。",
+  "narrative": "下一把 Liquid vs FLCN，看好 FLCN（系列 53%）。第1局看好 FLCN（53%）。本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；本届没交过手；Team Liquid 中单爱拿 Earth Spirit。",
+  "previousMap": null,
+  "previousMaps": [],
   "nextMap": {
-    "game": 3,
-    "teamA": "Iron Wing",
-    "teamB": "BoomBoys",
+    "game": 1,
+    "teamA": "Team Liquid",
+    "teamB": "Team Falcons",
     "lean": {
-      "team": "BoomBoys",
-      "tag": "BB",
-      "p": 0.532,
-      "pA": 0.468,
-      "pB": 0.532,
-      "breakEven": 1.88,
-      "market": null,
-      "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 5.0 局；Iron Wing 中单爱拿 Earth Spirit"
+      "team": "Team Falcons",
+      "tag": "FLCN",
+      "p": 0.526,
+      "pA": 0.474,
+      "pB": 0.526,
+      "breakEven": 1.9,
+      "market": {
+        "outcomes": [
+          "Team Liquid",
+          "Team Falcons"
+        ],
+        "prices": [
+          0.515,
+          0.485
+        ]
+      },
+      "why": "本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；本届没交过手；Team Liquid 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "BoomBoys",
-      "tag": "BB",
-      "p": 0.505,
-      "pA": 0.495,
-      "pB": 0.505,
-      "breakEven": 1.98,
+      "team": "Team Falcons",
+      "tag": "FLCN",
+      "p": 0.521,
+      "pA": 0.479,
+      "pB": 0.521,
+      "breakEven": 1.92,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "BoomBoys",
-    "tag": "BB",
-    "p": 0.529,
-    "pA": 0.471,
-    "pB": 0.529,
-    "breakEven": 1.89,
-    "market": null,
-    "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 5.0 局；Iron Wing 中单爱拿 Earth Spirit"
+    "team": "Team Falcons",
+    "tag": "FLCN",
+    "p": 0.531,
+    "pA": 0.469,
+    "pB": 0.531,
+    "breakEven": 1.88,
+    "market": {
+      "outcomes": [
+        "Team Liquid",
+        "Team Falcons"
+      ],
+      "prices": [
+        0.535,
+        0.465
+      ]
+    },
+    "why": "本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；本届没交过手；Team Liquid 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
-    "id": "lbr1a",
+    "id": "lbr1b",
     "round": "败者组首轮",
     "day": "2026-08-21",
-    "when": "2026-08-21 10:00",
+    "when": "2026-08-21 14:00",
     "format": "Bo3",
-    "teamA": "Iron Wing",
-    "teamB": "BoomBoys",
-    "teamALabel": "Iron Wing",
-    "teamBLabel": "BoomBoys",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Liquid",
+    "teamB": "Team Falcons",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Falcons",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-boombo-ironwi-2026-08-13",
-    "mapsPlayed": 2,
+    "polySlug": "dota2-liquid-flc-2026-08-21",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "BoomBoys",
-      "tag": "BB",
-      "p": 0.529,
-      "pA": 0.471,
-      "pB": 0.529,
-      "breakEven": 1.89,
-      "market": null,
-      "why": "本届胜率 Iron Wing 55% / BoomBoys 55%；先到10杀 51% / 52%；H2H 5.0 局；Iron Wing 中单爱拿 Earth Spirit"
+      "team": "Team Falcons",
+      "tag": "FLCN",
+      "p": 0.531,
+      "pA": 0.469,
+      "pB": 0.531,
+      "breakEven": 1.88,
+      "market": {
+        "outcomes": [
+          "Team Liquid",
+          "Team Falcons"
+        ],
+        "prices": [
+          0.535,
+          0.465
+        ]
+      },
+      "why": "本届胜率 Team Liquid 54% / Team Falcons 57%；先到10杀 56% / 59%；本届没交过手；Team Liquid 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
-    "id": "lbr1a",
+    "id": "lbr1b",
     "round": "败者组首轮",
     "day": "2026-08-21",
-    "when": "2026-08-21 10:00",
+    "when": "2026-08-21 14:00",
     "format": "Bo3",
-    "teamA": "Iron Wing",
-    "teamB": "BoomBoys",
-    "teamALabel": "Iron Wing",
-    "teamBLabel": "BoomBoys",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Liquid",
+    "teamB": "Team Falcons",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Falcons",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-boombo-ironwi-2026-08-13",
-    "mapsPlayed": 2
+    "polySlug": "dota2-liquid-flc-2026-08-21",
+    "mapsPlayed": 0
   },
-  "todayResults": [],
-  "newMapIds": []
+  "todayResults": [
+    {
+      "id": "lbr1a",
+      "round": "败者组首轮",
+      "day": "2026-08-21",
+      "when": "2026-08-21 10:00",
+      "format": "Bo3",
+      "teamA": "Iron Wing",
+      "teamB": "BoomBoys",
+      "teamALabel": "Iron Wing",
+      "teamBLabel": "BoomBoys",
+      "status": "completed",
+      "score": "1-2",
+      "winner": "BoomBoys",
+      "polySlug": "dota2-boombo-ironwi-2026-08-13",
+      "mapsPlayed": 3
+    }
+  ],
+  "newMapIds": [
+    8956877335
+  ]
 }
