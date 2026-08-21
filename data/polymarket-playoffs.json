@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T19:26Z",
+  "asOf": "2026-08-21T19:47Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.484537002,
+      "volume": 11209047.48453702,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723975996,
+      "volume": 9505559.723976007,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
