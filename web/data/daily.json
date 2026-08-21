@@ -1,41 +1,111 @@
 {
-  "asOf": "2026-08-21 23:41 CST",
+  "asOf": "2026-08-21 23:56 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 TY vs NGX，看好 NGX（系列 57%）。第1局看好 NGX（55%）。",
-  "narrative": "下一把 TY vs NGX，看好 NGX（系列 57%）。第1局看好 NGX（55%）。本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 NGX 赢了，74.9分钟拉锯 45-42。系列 0-1 后第2局重算看好 NGX（63%），门槛 1.59。",
+  "narrative": "第1局已打完：胜者组半决赛 Team Yandex vs Nigma Galaxy，液体百科局分 0-1，夜魇 NGX 赢。时长 74分53秒（74.9分钟），终场人头 45-42，姿态来回拉锯。OpenDota 回放还没解析完，先到10杀没有公开数字。TY 天辉拿 Earth Spirit、Hoodwink、Underlord、Mirana、Terrorblade，中单 CHIRA_JUNIOR 第一手锁 Earth Spirit；NGX 夜魇拿 Io、Necrophos、Clockwerk、Storm Spirit、Enigma，中单 lorenof 第四手 Storm。一阶段 TY 禁 Ember Spirit、Keeper of the Light，NGX 禁 Treant Protector、Invoker。因为 NGX 刚用 Io+Necrophos 开局、Storm+Enigma 拖进超长局拿下 1-0，整棵模型重算：H2H 从开赛「本届没交过手」变成 1.0 局，本届胜率变成 TY 59% / NGX 68%，中单样本改成 Earth Spirit——开赛那套 Invoker、系列 57%、第1局 55% 已经作废。Bo3 现在 NGX 再赢一局就晋级，系列胜率从约 57% 拉到 86%。第2局 TY 已经把 Earth Spirit 亮成第一手，Invoker 也被提前禁掉，中单被针对；NGX 的 Necro/Enigma 刚吃下超长局，TY 若再走 Terrorblade 后期要准备被点名。第2局模型看好 NGX 赢图 63%（TY 37%），门槛约 1.59。Polymarket 这局价反过来给 TY 0.585 / NGX 0.415，系列价 TY 0.38 / NGX 0.62。先到10杀模型看好 TY 57%，没有公开盘。这不是投注建议。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8957527957,
+    "winner": "Nigma Galaxy",
+    "score": [
+      45,
+      42
+    ],
+    "f10": null,
+    "f10Time": null,
+    "durationMin": 74.9,
+    "pace": "未知",
+    "stance": "来回拉锯",
+    "picks": {
+      "Team Yandex": [
+        "Earth Spirit",
+        "Hoodwink",
+        "Underlord",
+        "Mirana",
+        "Terrorblade"
+      ],
+      "Nigma Galaxy": [
+        "Io",
+        "Necrophos",
+        "Clockwerk",
+        "Storm Spirit",
+        "Enigma"
+      ]
+    },
+    "mid": {
+      "Team Yandex": "Earth Spirit",
+      "Nigma Galaxy": "Storm Spirit"
+    },
+    "blurb": "没有队伍先堆到 10 杀"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8957527957,
+      "winner": "Nigma Galaxy",
+      "score": [
+        45,
+        42
+      ],
+      "f10": null,
+      "f10Time": null,
+      "durationMin": 74.9,
+      "pace": "未知",
+      "stance": "来回拉锯",
+      "picks": {
+        "Team Yandex": [
+          "Earth Spirit",
+          "Hoodwink",
+          "Underlord",
+          "Mirana",
+          "Terrorblade"
+        ],
+        "Nigma Galaxy": [
+          "Io",
+          "Necrophos",
+          "Clockwerk",
+          "Storm Spirit",
+          "Enigma"
+        ]
+      },
+      "mid": {
+        "Team Yandex": "Earth Spirit",
+        "Nigma Galaxy": "Storm Spirit"
+      },
+      "blurb": "没有队伍先堆到 10 杀"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "Team Yandex",
     "teamB": "Nigma Galaxy",
     "lean": {
       "team": "Nigma Galaxy",
       "tag": "NGX",
-      "p": 0.548,
-      "pA": 0.452,
-      "pB": 0.548,
-      "breakEven": 1.82,
+      "p": 0.628,
+      "pA": 0.372,
+      "pB": 0.628,
+      "breakEven": 1.59,
       "market": {
         "outcomes": [
           "Team Yandex",
           "Nigma Galaxy"
         ],
         "prices": [
-          0.49,
-          0.51
+          0.585,
+          0.415
         ]
       },
-      "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
+      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 49% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "Team Yandex",
       "tag": "TY",
-      "p": 0.558,
-      "pA": 0.558,
-      "pB": 0.442,
-      "breakEven": 1.79,
+      "p": 0.569,
+      "pA": 0.569,
+      "pB": 0.431,
+      "breakEven": 1.76,
       "market": null,
       "why": ""
     }
@@ -43,21 +113,21 @@
   "seriesLean": {
     "team": "Nigma Galaxy",
     "tag": "NGX",
-    "p": 0.573,
-    "pA": 0.427,
-    "pB": 0.573,
-    "breakEven": 1.74,
+    "p": 0.864,
+    "pA": 0.136,
+    "pB": 0.864,
+    "breakEven": 1.16,
     "market": {
       "outcomes": [
         "Team Yandex",
         "Nigma Galaxy"
       ],
       "prices": [
-        0.595,
-        0.405
+        0.38,
+        0.62
       ]
     },
-    "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
+    "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 49% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "Team Yandex",
     "teamBLabel": "Nigma Galaxy",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "Nigma Galaxy",
       "tag": "NGX",
-      "p": 0.573,
-      "pA": 0.427,
-      "pB": 0.573,
-      "breakEven": 1.74,
+      "p": 0.864,
+      "pA": 0.136,
+      "pB": 0.864,
+      "breakEven": 1.16,
       "market": {
         "outcomes": [
           "Team Yandex",
           "Nigma Galaxy"
         ],
         "prices": [
-          0.595,
-          0.405
+          0.38,
+          0.62
         ]
       },
-      "why": "本届胜率 Team Yandex 61% / Nigma Galaxy 67%；先到10杀 50% / 44%；本届没交过手；Team Yandex 中单爱拿 Invoker"
+      "why": "本届胜率 Team Yandex 59% / Nigma Galaxy 68%；先到10杀 49% / 43%；H2H 1.0 局；Team Yandex 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
@@ -105,11 +175,11 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "Team Yandex",
     "teamBLabel": "Nigma Galaxy",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ty-ngx-2026-08-21",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -161,5 +231,7 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8957527957
+  ]
 }
