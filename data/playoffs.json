@@ -395,7 +395,8 @@
       "teamB": "Nigma Galaxy",
       "status": "scheduled",
       "winnerTo": "lbsf",
-      "polyTitle": "BoomBoys vs Nigma Galaxy"
+      "polyTitle": "BoomBoys vs Nigma Galaxy",
+      "polySlug": "dota2-ngx-boombo-2026-08-22"
     },
     {
       "id": "lbqf2",
@@ -421,7 +422,8 @@
       "status": "scheduled",
       "winnerTo": "gf",
       "loserTo": "lbf",
-      "polyTitle": "TEAM VISION vs Team Yandex"
+      "polyTitle": "TEAM VISION vs Team Yandex",
+      "polySlug": "dota2-vsn2-ty-2026-08-22"
     },
     {
       "id": "lbsf",
@@ -474,7 +476,7 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-22 03:47 CST",
+  "scheduleAsOf": "2026-08-22 04:02 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
   "scheduleError": "parsed 6 slots"
 }
