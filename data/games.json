@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 02:59 CST",
+  "asOf": "2026-08-22 03:26 CST",
   "n": 102,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
@@ -31022,7 +31022,7 @@
       "series_id": 1132426,
       "start_time": 1787333216,
       "duration": 3672,
-      "parsed": false,
+      "parsed": true,
       "radiant": "Nigma Galaxy",
       "dire": "Team Yandex",
       "radiant_team_id": 10136357,
@@ -31033,20 +31033,33 @@
         23,
         38
       ],
-      "pace": "未知",
+      "pace": "慢",
       "length": "超长",
-      "stance": "来回拉锯",
-      "f10k": null,
-      "f10k_mid_share": 0,
-      "first_tower": null,
-      "gold": {
-        "m5": null,
-        "m10": null,
-        "m15": null,
-        "m20": null
+      "stance": "发育对线",
+      "f10k": {
+        "side": "radiant",
+        "time": 1089,
+        "score": {
+          "radiant": 10,
+          "dire": 9
+        },
+        "completing_killer": "lorenof",
+        "completing_hero": "Earth Spirit"
       },
-      "kills_8min": 0,
-      "kills_15min": 0,
+      "f10k_mid_share": 9,
+      "first_tower": {
+        "time": 548,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -35,
+        "m10": 608,
+        "m15": -1000,
+        "m20": -2744
+      },
+      "kills_8min": 5,
+      "kills_15min": 15,
       "draft": {
         "radiant": {
           "bans": [
@@ -31235,66 +31248,66 @@
             "player": "lorenof",
             "hero": "Earth Spirit",
             "hero_id": 107,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 4051,
+            "xp_t10": 4373,
             "kills": 11,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 6,
+            "assists_before_10": 3,
+            "participate_before_10": 9
           },
           "pos4": {
             "player": "GH",
             "hero": "Dazzle",
             "kills": 1,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
           },
           "pos5": {
             "player": "OmaR",
             "hero": "Clockwerk",
             "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "assists_before_10": 3,
+            "participate_before_10": 3
           },
-          "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
-          "mid_sup_driven": false
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 7,
+          "first10_mid_sup_ka": 17,
+          "mid_sup_driven": true
         },
         "dire": {
           "mid": {
             "player": "CHIRA_JUNIOR",
             "hero": "Invoker",
             "hero_id": 74,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 3563,
+            "xp_t10": 4172,
             "kills": 11,
-            "kills_before_10": 0,
+            "kills_before_10": 4,
             "assists_before_10": 0,
-            "participate_before_10": 0
+            "participate_before_10": 4
           },
           "pos4": {
             "player": "Saksa",
             "hero": "Mirana",
             "kills": 6,
-            "kills_before_10": 0,
+            "kills_before_10": 3,
             "assists_before_10": 0,
-            "participate_before_10": 0
+            "participate_before_10": 3
           },
           "pos5": {
             "player": "Maladych",
             "hero": "Winter Wyvern",
             "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "assists_before_10": 2,
+            "participate_before_10": 2
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
-          "mid_sup_driven": false
+          "kills_at_f10k": 9,
+          "first10_mid_sup_kills": 7,
+          "first10_mid_sup_ka": 9,
+          "mid_sup_driven": true
         }
       },
       "blurb": {
@@ -31302,10 +31315,10 @@
           "radiant": "一阶段禁Treant Protector、Bounty Hunter；前两手Earth Spirit、Clockwerk；中单Earth Spirit第1手拿",
           "dire": "一阶段禁Ember Spirit、Necrophos；前两手Winter Wyvern、Shadow Fiend；中单Invoker第4手拿"
         },
-        "pace": "未知节奏 / 超长局（61分12秒）；先到10杀出现在 ?分",
-        "stance": "来回拉锯",
-        "f10k": "没有队伍先堆到 10 杀",
-        "mid_support": "天辉中单 lorenof/Earth Spirit 参与 0 次（击杀0+助攻0），辅GH/Dazzle 参与 0 次，中辅合计0；夜魇中单 CHIRA_JUNIOR/Invoker 参与 0 次（击杀0+助攻0），辅Saksa/Mirana 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+        "pace": "慢节奏 / 超长局（61分12秒）；先到10杀出现在 18分09秒",
+        "stance": "发育对线",
+        "f10k": "Nigma Galaxy先到 10 杀（当时 10-9，18分09秒）。这 10 次击杀里，中单 lorenof/Earth Spirit 参与 9 次（击杀 6 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 9 杀。",
+        "mid_support": "天辉中单 lorenof/Earth Spirit 参与 9 次（击杀6+助攻3），辅GH/Dazzle 参与 5 次，中辅合计17 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Invoker 参与 4 次（击杀4+助攻0），辅Saksa/Mirana 参与 3 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8957890399",
       "source": "ti15",

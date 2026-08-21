@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T18:59Z",
+  "asOf": "2026-08-21T19:26Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.440774009,
+      "volume": 11205935.440774007,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.484537018,
+      "volume": 11209047.484537002,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9257261.421940003,
+      "volume": 9505559.723975996,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2736,8 +2736,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -2747,8 +2747,8 @@
             "Under"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -2758,8 +2758,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -2879,8 +2879,8 @@
             "No"
           ],
           "prices": [
-            "0.9",
-            "0.1"
+            "1",
+            "0"
           ]
         },
         {
@@ -2890,8 +2890,8 @@
             "No"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -2901,8 +2901,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -2912,8 +2912,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -2923,8 +2923,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -3066,8 +3066,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
