@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-21 10:50 CST",
-  "n": 90,
+  "asOf": "2026-08-21 11:40 CST",
+  "n": 91,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -27637,6 +27637,313 @@
         "mid_support": "天辉中单 Malr1ne/Lina 参与 5 次（击杀3+助攻2），辅Cr1t-/Windranger 参与 2 次，中辅合计10 · 中辅驱动；夜魇中单 lorenof/Sniper 参与 1 次（击杀1+助攻0），辅GH/Mirana 参与 3 次，中辅合计5。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8956096810",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8956780728,
+      "series_id": 1132343,
+      "start_time": 1787278164,
+      "duration": 2327,
+      "parsed": true,
+      "radiant": "BoomBoys",
+      "dire": "Iron Wing",
+      "radiant_team_id": 8255888,
+      "dire_team_id": 10150413,
+      "winner": "Iron Wing",
+      "radiant_win": false,
+      "score": [
+        7,
+        18
+      ],
+      "pace": "慢",
+      "length": "偏长",
+      "stance": "滚雪球",
+      "f10k": {
+        "side": "dire",
+        "time": 2140,
+        "score": {
+          "radiant": 7,
+          "dire": 10
+        },
+        "completing_killer": "Pure",
+        "completing_hero": "Chaos Knight"
+      },
+      "f10k_mid_share": 1,
+      "first_tower": {
+        "time": 629,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -2796,
+        "m10": -3209,
+        "m15": -5428,
+        "m20": -4947
+      },
+      "kills_8min": 4,
+      "kills_15min": 6,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 1,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 4,
+              "hero": "Kez",
+              "hero_id": 145
+            },
+            {
+              "order": 9,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 10,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            },
+            {
+              "order": 18,
+              "hero": "Sven",
+              "hero_id": 18
+            },
+            {
+              "order": 20,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 13,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 14,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 17,
+              "hero": "Dragon Knight",
+              "hero_id": 49
+            },
+            {
+              "order": 22,
+              "hero": "Templar Assassin",
+              "hero_id": 46
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 1,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 13,
+              "hero": "Bane",
+              "hero_id": 3
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 5,
+              "hero": "Puck",
+              "hero_id": 13
+            },
+            {
+              "order": 6,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 11,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 19,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 21,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 12,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 15,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 16,
+              "hero": "Ringmaster",
+              "hero_id": 131
+            },
+            {
+              "order": 23,
+              "hero": "Chaos Knight",
+              "hero_id": 81
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 12,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "gpk~",
+            "hero": "Dragon Knight",
+            "hero_id": 49,
+            "gold_t10": 3364,
+            "xp_t10": 4026,
+            "kills": 3,
+            "kills_before_10": 3,
+            "assists_before_10": 1,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Save-",
+            "hero": "Mirana",
+            "kills": 3,
+            "kills_before_10": 3,
+            "assists_before_10": 2,
+            "participate_before_10": 5
+          },
+          "pos5": {
+            "player": "Kataomi`",
+            "hero": "Bane",
+            "kills_before_10": 0,
+            "assists_before_10": 3,
+            "participate_before_10": 3
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 7,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 12,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Ari",
+            "hero": "Keeper of the Light",
+            "hero_id": 90,
+            "gold_t10": 2333,
+            "xp_t10": 2767,
+            "kills": 1,
+            "kills_before_10": 0,
+            "assists_before_10": 1,
+            "participate_before_10": 1
+          },
+          "pos4": {
+            "player": "Whitemon",
+            "hero": "Ringmaster",
+            "kills": 3,
+            "kills_before_10": 3,
+            "assists_before_10": 4,
+            "participate_before_10": 7
+          },
+          "pos5": {
+            "player": "bzm",
+            "hero": "Lina",
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 12,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Invoker、Earth Spirit；前两手Largo、Bane；中单Dragon Knight第4手拿",
+          "dire": "一阶段禁Treant Protector、Ember Spirit；前两手Lina、Keeper of the Light；中单Keeper of the Light第2手拿"
+        },
+        "pace": "慢节奏 / 偏长局（38分47秒）；先到10杀出现在 35分40秒",
+        "stance": "滚雪球",
+        "f10k": "Iron Wing先到 10 杀（当时 7-10，35分40秒）。这 10 次击杀里，中单 Ari/Keeper of the Light 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 7 杀。",
+        "mid_support": "天辉中单 gpk~/Dragon Knight 参与 4 次（击杀3+助攻1），辅Save-/Mirana 参与 5 次，中辅合计12 · 中辅驱动；夜魇中单 Ari/Keeper of the Light 参与 1 次（击杀0+助攻1），辅Whitemon/Ringmaster 参与 7 次，中辅合计12 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8956780728",
       "source": "ti15",
       "patch": "7.41e"
     }
