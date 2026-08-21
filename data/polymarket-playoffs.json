@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T10:50Z",
+  "asOf": "2026-08-21T11:13Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -386,7 +386,7 @@
     {
       "slug": "dota2-vsn2-boombo-2026-08-20",
       "title": "Dota 2: TEAM VISION vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 9385804.276142998,
+      "volume": 9385804.276143014,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs BoomBoys - Game 1 Winner",
@@ -789,7 +789,7 @@
     {
       "slug": "dota2-liquid-ty-2026-08-20",
       "title": "Dota 2: Team Liquid vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 8328754.559455,
+      "volume": 8328754.559454996,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Yandex - Game 1 Winner",
@@ -1214,7 +1214,7 @@
     {
       "slug": "dota2-ngx-flc-2026-08-20",
       "title": "Dota 2: Nigma Galaxy vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11205935.440774003,
+      "volume": 11205935.440774009,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 163545.29954799995,
+      "volume": 177135.1213390001,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -2736,8 +2736,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.655",
-            "0.345"
+            "0.645",
+            "0.355"
           ]
         },
         {
@@ -2758,8 +2758,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.375",
-            "0.625"
+            "0.365",
+            "0.635"
           ]
         },
         {
@@ -2769,8 +2769,8 @@
             "No"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.515",
+            "0.485"
           ]
         },
         {
@@ -2780,8 +2780,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.345",
+            "0.655"
           ]
         },
         {
@@ -2791,8 +2791,8 @@
             "No"
           ],
           "prices": [
-            "0.415",
-            "0.585"
+            "0.265",
+            "0.735"
           ]
         },
         {
@@ -2802,8 +2802,8 @@
             "No"
           ],
           "prices": [
-            "0.19",
-            "0.81"
+            "0.23",
+            "0.77"
           ]
         },
         {
@@ -2813,8 +2813,8 @@
             "No"
           ],
           "prices": [
-            "0.05",
-            "0.95"
+            "0.075",
+            "0.925"
           ]
         },
         {
@@ -2824,8 +2824,8 @@
             "No"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.515",
+            "0.485"
           ]
         },
         {
@@ -2835,8 +2835,8 @@
             "No"
           ],
           "prices": [
-            "0.435",
-            "0.565"
+            "0.345",
+            "0.655"
           ]
         },
         {
@@ -2846,8 +2846,8 @@
             "No"
           ],
           "prices": [
-            "0.41",
-            "0.59"
+            "0.265",
+            "0.735"
           ]
         },
         {
@@ -2857,8 +2857,8 @@
             "No"
           ],
           "prices": [
-            "0.37",
-            "0.63"
+            "0.235",
+            "0.765"
           ]
         },
         {
@@ -2868,8 +2868,8 @@
             "No"
           ],
           "prices": [
-            "0.05",
-            "0.95"
+            "0.1",
+            "0.9"
           ]
         },
         {
@@ -2890,8 +2890,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.43",
+            "0.57"
           ]
         },
         {
@@ -2901,8 +2901,8 @@
             "No"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.33",
+            "0.67"
           ]
         },
         {
@@ -2912,8 +2912,8 @@
             "No"
           ],
           "prices": [
-            "0.6",
-            "0.4"
+            "0.245",
+            "0.755"
           ]
         },
         {
@@ -2923,8 +2923,8 @@
             "No"
           ],
           "prices": [
-            "0.31",
-            "0.69"
+            "0.19",
+            "0.81"
           ]
         },
         {
@@ -2934,8 +2934,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.74",
-            "0.26"
+            "0.54",
+            "0.46"
           ]
         },
         {
@@ -2945,8 +2945,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.735",
-            "0.265"
+            "0.55",
+            "0.45"
           ]
         },
         {
@@ -2956,8 +2956,8 @@
             "Under"
           ],
           "prices": [
-            "0.545",
-            "0.455"
+            "0.54",
+            "0.46"
           ]
         },
         {
@@ -2967,8 +2967,8 @@
             "Under"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.535",
+            "0.465"
           ]
         }
       ]
