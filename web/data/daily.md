@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-22 02:15 CST
+# TI15 局间战报 · 2026-08-22 03:02 CST
 
-第2局 TY 赢了，先到10杀 TY，44.8分钟。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。
+第3局 TY 赢了，先到10杀 NGX，61.2分钟。系列 TY 2-1。下一把败者组四分之一决赛第1局看好 Spirit（55%），系列 58%。
 
-第2局 TY 赢了，先到10杀 TY，44.8分钟。上一局阵容 NGX Mirana、Largo、Hoodwink / TY Winter Wyvern、Kez、Rubick。下一局第3局按上一局重算后看好 NGX（52%）。现场赔率至少 1.91。系列现在看好 NGX（54%）。先到10杀看好 TY。本届胜率 Team Yandex 60% / Nigma Galaxy 66%；先到10杀 53% / 41%；H2H 2.0 局；Team Yandex 中单爱拿 Earth Spirit。
+胜者组半决赛 TY vs NGX 三局都打完了。第1局 NGX 赢，超长拉锯 74.9 分钟，先到10杀却是 TY（16分09秒 10-2）；中单 TY Earth Spirit / NGX Storm Spirit。第2局 TY 赢，44.8 分钟快节奏，先到10杀 TY（9分10秒 4-10），Earth Spirit 中辅驱动。第3局刚结束：NGX 抢 Earth Spirit，TY 中单改 Invoker，先到10杀 NGX（18分09秒 10-9），61.2 分钟后 TY 38-23 拿下系列 2-1。液体百科 ubsf2 2-1，maps[3].winner=1。
+
+因为第2局 Earth Spirit 打穿，第3局就被对方抢走，NGX 抢到先10杀仍输掉系列。TY 进胜者组决赛，没有第4局。模型写入第3局后 H2H 变成 3.0 局，整棵树重算。所以下一局改写成败者组四分之一 Liquid vs Spirit 第1局（10:00），不要沿用开赛预览原文。重算后第1局看好 Spirit 55%（门槛 1.81），先到10杀几乎五五开（略偏 Spirit 50%，没有公开盘），系列看好 Spirit 58%（门槛 1.71）。Polymarket 现有 slug 是小组赛已结算盘，不可用。这不是投注建议。

@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-22 01:14 CST",
+  "asOf": "2026-08-22 03:01 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -370,17 +370,20 @@
       "format": "Bo3",
       "teamA": "Team Yandex",
       "teamB": "Nigma Galaxy",
-      "status": "live",
+      "status": "completed",
       "winnerTo": "ubf",
       "loserTo": "lbqf1",
       "polyTitle": "Team Yandex vs Nigma Galaxy",
       "polySlug": "dota2-ty-ngx-2026-08-21",
-      "mapsPlayed": 2,
-      "score": "1-1",
+      "mapsPlayed": 3,
+      "score": "2-1",
       "matchIds": [
         8957527957,
-        8957749452
-      ]
+        8957749452,
+        8957890399
+      ],
+      "winner": "Team Yandex",
+      "loser": "Nigma Galaxy"
     },
     {
       "id": "lbqf1",
@@ -389,12 +392,10 @@
       "datetime": "2026-08-22 13:00",
       "format": "Bo3",
       "teamA": "BoomBoys",
-      "teamB": {
-        "from": "ubsf2",
-        "as": "loser"
-      },
-      "status": "awaiting",
-      "winnerTo": "lbsf"
+      "teamB": "Nigma Galaxy",
+      "status": "scheduled",
+      "winnerTo": "lbsf",
+      "polyTitle": "BoomBoys vs Nigma Galaxy"
     },
     {
       "id": "lbqf2",
@@ -416,13 +417,11 @@
       "datetime": "2026-08-22 16:00",
       "format": "Bo3",
       "teamA": "TEAM VISION",
-      "teamB": {
-        "from": "ubsf2",
-        "as": "winner"
-      },
-      "status": "awaiting",
+      "teamB": "Team Yandex",
+      "status": "scheduled",
       "winnerTo": "gf",
-      "loserTo": "lbf"
+      "loserTo": "lbf",
+      "polyTitle": "TEAM VISION vs Team Yandex"
     },
     {
       "id": "lbsf",
