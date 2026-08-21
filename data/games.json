@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-22 02:15 CST",
-  "n": 101,
+  "asOf": "2026-08-22 02:59 CST",
+  "n": 102,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -31014,6 +31014,300 @@
         "mid_support": "天辉中单 lorenof/Void Spirit 参与 1 次（击杀1+助攻0），辅GH/Mirana 参与 1 次，中辅合计5；夜魇中单 CHIRA_JUNIOR/Earth Spirit 参与 5 次（击杀1+助攻4），辅Saksa/Rubick 参与 7 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8957749452",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8957890399,
+      "series_id": 1132426,
+      "start_time": 1787333216,
+      "duration": 3672,
+      "parsed": false,
+      "radiant": "Nigma Galaxy",
+      "dire": "Team Yandex",
+      "radiant_team_id": 10136357,
+      "dire_team_id": 9823272,
+      "winner": "Team Yandex",
+      "radiant_win": false,
+      "score": [
+        23,
+        38
+      ],
+      "pace": "未知",
+      "length": "超长",
+      "stance": "来回拉锯",
+      "f10k": null,
+      "f10k_mid_share": 0,
+      "first_tower": null,
+      "gold": {
+        "m5": null,
+        "m10": null,
+        "m15": null,
+        "m20": null
+      },
+      "kills_8min": 0,
+      "kills_15min": 0,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 5,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 6,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 11,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 19,
+              "hero": "Tidehunter",
+              "hero_id": 29
+            },
+            {
+              "order": 21,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 12,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 15,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 16,
+              "hero": "Dazzle",
+              "hero_id": 50
+            },
+            {
+              "order": 23,
+              "hero": "Alchemist",
+              "hero_id": 73
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 12,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 1,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 4,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 9,
+              "hero": "Enigma",
+              "hero_id": 33
+            },
+            {
+              "order": 10,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 18,
+              "hero": "Huskar",
+              "hero_id": 59
+            },
+            {
+              "order": 20,
+              "hero": "Clinkz",
+              "hero_id": 56
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 14,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 17,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 22,
+              "hero": "Axe",
+              "hero_id": 2
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 1,
+              "hero": "Necrophos",
+              "hero_id": 36
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "lorenof",
+            "hero": "Earth Spirit",
+            "hero_id": 107,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 11,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "GH",
+            "hero": "Dazzle",
+            "kills": 1,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "OmaR",
+            "hero": "Clockwerk",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Invoker",
+            "hero_id": 74,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 11,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "Saksa",
+            "hero": "Mirana",
+            "kills": 6,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "Maladych",
+            "hero": "Winter Wyvern",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Bounty Hunter；前两手Earth Spirit、Clockwerk；中单Earth Spirit第1手拿",
+          "dire": "一阶段禁Ember Spirit、Necrophos；前两手Winter Wyvern、Shadow Fiend；中单Invoker第4手拿"
+        },
+        "pace": "未知节奏 / 超长局（61分12秒）；先到10杀出现在 ?分",
+        "stance": "来回拉锯",
+        "f10k": "没有队伍先堆到 10 杀",
+        "mid_support": "天辉中单 lorenof/Earth Spirit 参与 0 次（击杀0+助攻0），辅GH/Dazzle 参与 0 次，中辅合计0；夜魇中单 CHIRA_JUNIOR/Invoker 参与 0 次（击杀0+助攻0），辅Saksa/Mirana 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8957890399",
       "source": "ti15",
       "patch": "7.41e"
     }
