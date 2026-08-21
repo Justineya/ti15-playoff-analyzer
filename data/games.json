@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-21 16:22 CST",
-  "n": 94,
+  "asOf": "2026-08-21 17:04 CST",
+  "n": 95,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -28865,6 +28865,313 @@
         "mid_support": "天辉中单 Nisha/Invoker 参与 5 次（击杀4+助攻1），辅tOfu/Rubick 参与 4 次，中辅合计10 · 中辅驱动；夜魇中单 Malr1ne/Earthshaker 参与 1 次（击杀0+助攻1），辅Sneyking/Mirana 参与 5 次，中辅合计8 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8956943534",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8957013760,
+      "series_id": 1132374,
+      "start_time": 1787298340,
+      "duration": 2057,
+      "parsed": true,
+      "radiant": "Team Falcons",
+      "dire": "Team Liquid",
+      "radiant_team_id": 9247354,
+      "dire_team_id": 2163,
+      "winner": "Team Liquid",
+      "radiant_win": false,
+      "score": [
+        11,
+        40
+      ],
+      "pace": "正常",
+      "length": "标准",
+      "stance": "来回拉锯",
+      "f10k": {
+        "side": "dire",
+        "time": 857,
+        "score": {
+          "radiant": 4,
+          "dire": 10
+        },
+        "completing_killer": "m1CKe",
+        "completing_hero": "Windranger"
+      },
+      "f10k_mid_share": 6,
+      "first_tower": {
+        "time": 606,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -460,
+        "m10": -133,
+        "m15": -8,
+        "m20": -606
+      },
+      "kills_8min": 3,
+      "kills_15min": 15,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 5,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 6,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 11,
+              "hero": "Dawnbreaker",
+              "hero_id": 135
+            },
+            {
+              "order": 19,
+              "hero": "Templar Assassin",
+              "hero_id": 46
+            },
+            {
+              "order": 21,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 12,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 15,
+              "hero": "Enchantress",
+              "hero_id": 58
+            },
+            {
+              "order": 16,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 23,
+              "hero": "Sven",
+              "hero_id": 18
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 12,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Huskar",
+              "hero_id": 59
+            },
+            {
+              "order": 1,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 4,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 9,
+              "hero": "Shadow Demon",
+              "hero_id": 79
+            },
+            {
+              "order": 10,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 18,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            },
+            {
+              "order": 20,
+              "hero": "Doom",
+              "hero_id": 69
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 13,
+              "hero": "Tusk",
+              "hero_id": 100
+            },
+            {
+              "order": 14,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 17,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 22,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Huskar",
+              "hero_id": 59
+            },
+            {
+              "order": 1,
+              "hero": "Necrophos",
+              "hero_id": 36
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 13,
+              "hero": "Tusk",
+              "hero_id": 100
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "Malr1ne",
+            "hero": "Lina",
+            "hero_id": 25,
+            "gold_t10": 4233,
+            "xp_t10": 5278,
+            "kills": 5,
+            "kills_before_10": 3,
+            "assists_before_10": 1,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Cr1t-",
+            "hero": "Enchantress",
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos5": {
+            "player": "Sneyking",
+            "hero": "Bane",
+            "kills_before_10": 0,
+            "assists_before_10": 3,
+            "participate_before_10": 3
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 4,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 9,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Nisha",
+            "hero": "Earth Spirit",
+            "hero_id": 107,
+            "gold_t10": 3901,
+            "xp_t10": 4184,
+            "kills": 9,
+            "kills_before_10": 4,
+            "assists_before_10": 2,
+            "participate_before_10": 6
+          },
+          "pos4": {
+            "player": "tOfu",
+            "hero": "Hoodwink",
+            "kills": 8,
+            "kills_before_10": 3,
+            "assists_before_10": 1,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "Boxi",
+            "hero": "Tusk",
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 7,
+          "first10_mid_sup_ka": 12,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Shadow Fiend；前两手Lina、Centaur Warrunner；中单Lina第1手拿",
+          "dire": "一阶段禁Huskar、Necrophos；前两手Earth Spirit、Tusk；中单Earth Spirit第1手拿"
+        },
+        "pace": "正常节奏 / 标准局（34分17秒）；先到10杀出现在 14分17秒",
+        "stance": "来回拉锯",
+        "f10k": "Team Liquid先到 10 杀（当时 4-10，14分17秒）。这 10 次击杀里，中单 Nisha/Earth Spirit 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 4 杀。",
+        "mid_support": "天辉中单 Malr1ne/Lina 参与 4 次（击杀3+助攻1），辅Cr1t-/Enchantress 参与 2 次，中辅合计9 · 中辅驱动；夜魇中单 Nisha/Earth Spirit 参与 6 次（击杀4+助攻2），辅tOfu/Hoodwink 参与 4 次，中辅合计12 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8957013760",
       "source": "ti15",
       "patch": "7.41e"
     }
