@@ -1,211 +1,88 @@
 {
-  "asOf": "2026-08-21 17:49 CST",
+  "asOf": "2026-08-21 18:15 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "next-map",
-  "headline": "第2局 Liquid 赢了，先到10杀 Liquid，34.3分钟。下一局第3局按上一局重算后看好 FLCN（51%）。现场赔率至少 1.97。",
-  "narrative": "第2局 Liquid 赢了，先到10杀 Liquid，34.3分钟。上一局阵容 FLCN Lina、Centaur Warrunner、Enchantress / Liquid Earth Spirit、Tusk、Hoodwink。下一局第3局按上一局重算后看好 FLCN（51%）。现场赔率至少 1.97。系列现在看好 FLCN（52%）。先到10杀看好 Liquid。本届胜率 Team Liquid 54% / Team Falcons 56%；先到10杀 59% / 56%；H2H 2.0 局；Team Liquid 中单爱拿 Earth Spirit。",
-  "previousMap": {
-    "game": 2,
-    "matchId": 8957013760,
-    "winner": "Team Liquid",
-    "score": [
-      11,
-      40
-    ],
-    "f10": "Team Liquid",
-    "f10Time": 857,
-    "durationMin": 34.3,
-    "pace": "正常",
-    "stance": "来回拉锯",
-    "picks": {
-      "Team Falcons": [
-        "Lina",
-        "Centaur Warrunner",
-        "Enchantress",
-        "Bane",
-        "Sven"
-      ],
-      "Team Liquid": [
-        "Earth Spirit",
-        "Tusk",
-        "Hoodwink",
-        "Underlord",
-        "Windranger"
-      ]
-    },
-    "mid": {
-      "Team Falcons": "Lina",
-      "Team Liquid": "Earth Spirit"
-    },
-    "blurb": "Team Liquid先到 10 杀（当时 4-10，14分17秒）。这 10 次击杀里，中单 Nisha/Earth Spirit 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 4 杀。"
-  },
-  "previousMaps": [
-    {
-      "game": 1,
-      "matchId": 8956943534,
-      "winner": "Team Falcons",
-      "score": [
-        18,
-        43
-      ],
-      "f10": "Team Liquid",
-      "f10Time": 1106,
-      "durationMin": 55.9,
-      "pace": "慢",
-      "stance": "滚雪球",
-      "picks": {
-        "Team Liquid": [
-          "Lina",
-          "Spirit Breaker",
-          "Underlord",
-          "Rubick",
-          "Invoker"
-        ],
-        "Team Falcons": [
-          "Bounty Hunter",
-          "Razor",
-          "Mirana",
-          "Sven",
-          "Earthshaker"
-        ]
-      },
-      "mid": {
-        "Team Liquid": "Invoker",
-        "Team Falcons": "Earthshaker"
-      },
-      "blurb": "Team Liquid先到 10 杀（当时 10-8，18分26秒）。这 10 次击杀里，中单 Nisha/Invoker 参与 5 次（击杀 4 + 助攻 1），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 8 杀。"
-    },
-    {
-      "game": 2,
-      "matchId": 8957013760,
-      "winner": "Team Liquid",
-      "score": [
-        11,
-        40
-      ],
-      "f10": "Team Liquid",
-      "f10Time": 857,
-      "durationMin": 34.3,
-      "pace": "正常",
-      "stance": "来回拉锯",
-      "picks": {
-        "Team Falcons": [
-          "Lina",
-          "Centaur Warrunner",
-          "Enchantress",
-          "Bane",
-          "Sven"
-        ],
-        "Team Liquid": [
-          "Earth Spirit",
-          "Tusk",
-          "Hoodwink",
-          "Underlord",
-          "Windranger"
-        ]
-      },
-      "mid": {
-        "Team Falcons": "Lina",
-        "Team Liquid": "Earth Spirit"
-      },
-      "blurb": "Team Liquid先到 10 杀（当时 4-10，14分17秒）。这 10 次击杀里，中单 Nisha/Earth Spirit 参与 6 次（击杀 4 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 4 杀。"
-    }
-  ],
+  "kind": "preview",
+  "headline": "下一把 Spirit vs VSN，看好 VSN（系列 74%）。第1局看好 VSN（66%）。",
+  "narrative": "下一把 Spirit vs VSN，看好 VSN（系列 74%）。第1局看好 VSN（66%）。本届胜率 Team Spirit 60% / TEAM VISION 70%；先到10杀 56% / 63%；H2H 2.9000000000000004 局；Team Spirit 中单爱拿 Earth Spirit。",
+  "previousMap": null,
+  "previousMaps": [],
   "nextMap": {
-    "game": 3,
-    "teamA": "Team Liquid",
-    "teamB": "Team Falcons",
+    "game": 1,
+    "teamA": "Team Spirit",
+    "teamB": "TEAM VISION",
     "lean": {
-      "team": "Team Falcons",
-      "tag": "FLCN",
-      "p": 0.508,
-      "pA": 0.492,
-      "pB": 0.508,
-      "breakEven": 1.97,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.66,
+      "pA": 0.34,
+      "pB": 0.66,
+      "breakEven": 1.52,
       "market": null,
-      "why": "本届胜率 Team Liquid 54% / Team Falcons 56%；先到10杀 59% / 56%；H2H 2.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Spirit 60% / TEAM VISION 70%；先到10杀 56% / 63%；H2H 2.9000000000000004 局；Team Spirit 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "Team Liquid",
-      "tag": "Liquid",
-      "p": 0.536,
-      "pA": 0.536,
-      "pB": 0.464,
-      "breakEven": 1.87,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.575,
+      "pA": 0.425,
+      "pB": 0.575,
+      "breakEven": 1.74,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Team Falcons",
-    "tag": "FLCN",
-    "p": 0.521,
-    "pA": 0.479,
-    "pB": 0.521,
-    "breakEven": 1.92,
-    "market": {
-      "outcomes": [
-        "Team Liquid",
-        "Team Falcons"
-      ],
-      "prices": [
-        0.945,
-        0.055
-      ]
-    },
-    "why": "本届胜率 Team Liquid 54% / Team Falcons 56%；先到10杀 59% / 56%；H2H 2.0 局；Team Liquid 中单爱拿 Earth Spirit"
+    "team": "TEAM VISION",
+    "tag": "VSN",
+    "p": 0.74,
+    "pA": 0.26,
+    "pB": 0.74,
+    "breakEven": 1.35,
+    "market": null,
+    "why": "本届胜率 Team Spirit 60% / TEAM VISION 70%；先到10杀 56% / 63%；H2H 2.9000000000000004 局；Team Spirit 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
-    "id": "lbr1b",
-    "round": "败者组首轮",
+    "id": "ubsf1",
+    "round": "胜者组半决赛",
     "day": "2026-08-21",
-    "when": "2026-08-21 14:15",
+    "when": "2026-08-21 18:15",
     "format": "Bo3",
-    "teamA": "Team Liquid",
-    "teamB": "Team Falcons",
-    "teamALabel": "Team Liquid",
-    "teamBLabel": "Team Falcons",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Spirit",
+    "teamB": "TEAM VISION",
+    "teamALabel": "Team Spirit",
+    "teamBLabel": "TEAM VISION",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-liquid-flc-2026-08-21",
-    "mapsPlayed": 2,
+    "polySlug": "dota2-vsn2-ts8-2026-08-15",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "Team Falcons",
-      "tag": "FLCN",
-      "p": 0.521,
-      "pA": 0.479,
-      "pB": 0.521,
-      "breakEven": 1.92,
-      "market": {
-        "outcomes": [
-          "Team Liquid",
-          "Team Falcons"
-        ],
-        "prices": [
-          0.945,
-          0.055
-        ]
-      },
-      "why": "本届胜率 Team Liquid 54% / Team Falcons 56%；先到10杀 59% / 56%；H2H 2.0 局；Team Liquid 中单爱拿 Earth Spirit"
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.74,
+      "pA": 0.26,
+      "pB": 0.74,
+      "breakEven": 1.35,
+      "market": null,
+      "why": "本届胜率 Team Spirit 60% / TEAM VISION 70%；先到10杀 56% / 63%；H2H 2.9000000000000004 局；Team Spirit 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
-    "id": "lbr1b",
-    "round": "败者组首轮",
+    "id": "ubsf1",
+    "round": "胜者组半决赛",
     "day": "2026-08-21",
-    "when": "2026-08-21 14:15",
+    "when": "2026-08-21 18:15",
     "format": "Bo3",
-    "teamA": "Team Liquid",
-    "teamB": "Team Falcons",
-    "teamALabel": "Team Liquid",
-    "teamBLabel": "Team Falcons",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "Team Spirit",
+    "teamB": "TEAM VISION",
+    "teamALabel": "Team Spirit",
+    "teamBLabel": "TEAM VISION",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-liquid-flc-2026-08-21",
-    "mapsPlayed": 2
+    "polySlug": "dota2-vsn2-ts8-2026-08-15",
+    "mapsPlayed": 0
   },
   "todayResults": [
     {
@@ -223,7 +100,25 @@
       "winner": "BoomBoys",
       "polySlug": "dota2-boombo-ironwi-2026-08-13",
       "mapsPlayed": 3
+    },
+    {
+      "id": "lbr1b",
+      "round": "败者组首轮",
+      "day": "2026-08-21",
+      "when": "2026-08-21 14:15",
+      "format": "Bo3",
+      "teamA": "Team Liquid",
+      "teamB": "Team Falcons",
+      "teamALabel": "Team Liquid",
+      "teamBLabel": "Team Falcons",
+      "status": "completed",
+      "score": "2-1",
+      "winner": "Team Liquid",
+      "polySlug": "dota2-liquid-flc-2026-08-21",
+      "mapsPlayed": 3
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8957086928
+  ]
 }
