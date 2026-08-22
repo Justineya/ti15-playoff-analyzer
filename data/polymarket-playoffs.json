@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T22:50Z",
+  "asOf": "2026-08-22T23:04Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 5742635.421240001,
+      "volume": 5742635.421240005,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -4709,7 +4709,7 @@
     {
       "slug": "dota2-ty-ts8-2026-08-22",
       "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 621411.021363,
+      "volume": 652871.4713619999,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
@@ -4740,8 +4740,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.325",
-            "0.675"
+            "0.315",
+            "0.685"
           ]
         },
         {
@@ -4751,8 +4751,8 @@
             "Under"
           ],
           "prices": [
-            "0.48",
-            "0.52"
+            "0.475",
+            "0.525"
           ]
         },
         {
@@ -4850,8 +4850,8 @@
             "No"
           ],
           "prices": [
-            "0.18",
-            "0.82"
+            "0.185",
+            "0.815"
           ]
         },
         {
@@ -4927,8 +4927,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.405",
-            "0.595"
+            "0.395",
+            "0.605"
           ]
         },
         {
@@ -4960,8 +4960,8 @@
             "Under"
           ],
           "prices": [
-            "0.455",
-            "0.545"
+            "0.45",
+            "0.55"
           ]
         },
         {
