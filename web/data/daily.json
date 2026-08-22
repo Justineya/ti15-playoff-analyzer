@@ -1,41 +1,111 @@
 {
-  "asOf": "2026-08-22 21:52 CST",
+  "asOf": "2026-08-22 22:10 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 BB vs Spirit，看好 Spirit（系列 52%）。第1局看好 Spirit（51%）。",
-  "narrative": "下一把 BB vs Spirit，看好 Spirit（系列 52%）。第1局看好 Spirit（51%）。本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "败者组半决赛第1局 Spirit 赢了（27-6，35.5分钟），先到10杀也是 Spirit。系列 0-1。第2局重算看好 Spirit 60%，门槛 1.68。",
+  "narrative": "第1局 Team Spirit 赢了，液体百科局分 0-1。天辉 BoomBoys 6 杀对夜魇 Spirit 27 杀，打了 35.5 分钟，慢节奏来回拉锯，20 分钟后一边倒。Spirit 在 20分37秒先到 10 杀（当时 5-10），中单 Larl/Ember Spirit 参与 5 次（击杀 2 + 助攻 3），中辅合计 13 次。BoomBoys 前两手 Lina、Keeper of the Light，中单 gpk~ 第1手 Lina，再拿 Centaur、Hoodwink，末手 Templar Assassin；Spirit 前两手 Winter Wyvern、Ember Spirit，辅 Rubick，四手 Slardar，末手 Tiny。\n\n因为上一局 BB 没拿开赛预览里的 Puck，改首发 Lina，中单 10 分钟经济还领先（3767 vs Larl 3067）却没兑现先到10杀，Spirit 用 Ember+Rubick+WW 中辅驱动翻盘后滚到 27-6。不能再套第1局预览：当时本届没交过手、系列 Spirit 只 52%、第1局 51%、中单还写着 Puck。整棵模型按这局重算后，H2H 变成 1.0 局，本届胜率 BB 55% / Spirit 61%，先到10杀 51% / 61%。Bo3 变成 0-1 后系列胜率从 52% 跳到 Spirit 83.1%（BB 16.9%，门槛 1.20）。\n\n第2局液体百科还没有 picks。重算看好 Spirit 59.5%（BB 40.5%，门槛 1.68），Polymarket 第2局价 0.405 / 0.595，和模型对齐。先到10杀看好 Spirit 58.4%，没有公开盘。系列盘 0.185 / 0.815，比模型 16.9% / 83.1% 稍偏 BB。这不是投注建议。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8959222564,
+    "winner": "Team Spirit",
+    "score": [
+      6,
+      27
+    ],
+    "f10": "Team Spirit",
+    "f10Time": 1237,
+    "durationMin": 35.5,
+    "pace": "慢",
+    "stance": "来回拉锯",
+    "picks": {
+      "BoomBoys": [
+        "Lina",
+        "Keeper of the Light",
+        "Centaur Warrunner",
+        "Hoodwink",
+        "Templar Assassin"
+      ],
+      "Team Spirit": [
+        "Winter Wyvern",
+        "Ember Spirit",
+        "Rubick",
+        "Slardar",
+        "Tiny"
+      ]
+    },
+    "mid": {
+      "BoomBoys": "Lina",
+      "Team Spirit": "Ember Spirit"
+    },
+    "blurb": "Team Spirit先到 10 杀（当时 5-10，20分37秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 5 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8959222564,
+      "winner": "Team Spirit",
+      "score": [
+        6,
+        27
+      ],
+      "f10": "Team Spirit",
+      "f10Time": 1237,
+      "durationMin": 35.5,
+      "pace": "慢",
+      "stance": "来回拉锯",
+      "picks": {
+        "BoomBoys": [
+          "Lina",
+          "Keeper of the Light",
+          "Centaur Warrunner",
+          "Hoodwink",
+          "Templar Assassin"
+        ],
+        "Team Spirit": [
+          "Winter Wyvern",
+          "Ember Spirit",
+          "Rubick",
+          "Slardar",
+          "Tiny"
+        ]
+      },
+      "mid": {
+        "BoomBoys": "Lina",
+        "Team Spirit": "Ember Spirit"
+      },
+      "blurb": "Team Spirit先到 10 杀（当时 5-10，20分37秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 5 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "BoomBoys",
     "teamB": "Team Spirit",
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.513,
-      "pA": 0.487,
-      "pB": 0.513,
-      "breakEven": 1.95,
+      "p": 0.595,
+      "pA": 0.405,
+      "pB": 0.595,
+      "breakEven": 1.68,
       "market": {
         "outcomes": [
           "BoomBoys",
           "Team Spirit"
         ],
         "prices": [
-          0.355,
-          0.645
+          0.405,
+          0.595
         ]
       },
-      "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
+      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
     },
     "f10": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.561,
-      "pA": 0.439,
-      "pB": 0.561,
-      "breakEven": 1.78,
+      "p": 0.584,
+      "pA": 0.416,
+      "pB": 0.584,
+      "breakEven": 1.71,
       "market": null,
       "why": ""
     }
@@ -43,21 +113,21 @@
   "seriesLean": {
     "team": "Team Spirit",
     "tag": "Spirit",
-    "p": 0.522,
-    "pA": 0.478,
-    "pB": 0.522,
-    "breakEven": 1.91,
+    "p": 0.831,
+    "pA": 0.169,
+    "pB": 0.831,
+    "breakEven": 1.2,
     "market": {
       "outcomes": [
         "BoomBoys",
         "Team Spirit"
       ],
       "prices": [
-        0.33,
-        0.67
+        0.185,
+        0.815
       ]
     },
-    "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
+    "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Team Spirit",
     "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.522,
-      "pA": 0.478,
-      "pB": 0.522,
-      "breakEven": 1.91,
+      "p": 0.831,
+      "pA": 0.169,
+      "pB": 0.831,
+      "breakEven": 1.2,
       "market": {
         "outcomes": [
           "BoomBoys",
           "Team Spirit"
         ],
         "prices": [
-          0.33,
-          0.67
+          0.185,
+          0.815
         ]
       },
-      "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
+      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
     }
   },
   "focus": {
@@ -105,11 +175,11 @@
     "teamB": "Team Spirit",
     "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -161,5 +231,7 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8959222564
+  ]
 }
