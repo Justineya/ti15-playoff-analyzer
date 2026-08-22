@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 23:36 CST",
+  "asOf": "2026-08-23 00:06 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
   "headline": "下一把 Spirit vs TY，看好 TY（系列 59%）。第1局看好 TY（56%）。",
@@ -84,71 +84,6 @@
     "polySlug": "dota2-ty-ts8-2026-08-22",
     "mapsPlayed": 0
   },
-  "todayResults": [
-    {
-      "id": "lbqf1",
-      "round": "败者组四分之一决赛",
-      "day": "2026-08-22",
-      "when": "2026-08-22 13:00",
-      "format": "Bo3",
-      "teamA": "BoomBoys",
-      "teamB": "Nigma Galaxy",
-      "teamALabel": "BoomBoys",
-      "teamBLabel": "Nigma Galaxy",
-      "status": "completed",
-      "score": "2-1",
-      "winner": "BoomBoys",
-      "polySlug": "dota2-ngx-boombo-2026-08-22",
-      "mapsPlayed": 3
-    },
-    {
-      "id": "lbqf2",
-      "round": "败者组四分之一决赛",
-      "day": "2026-08-22",
-      "when": "2026-08-22 10:00",
-      "format": "Bo3",
-      "teamA": "Team Liquid",
-      "teamB": "Team Spirit",
-      "teamALabel": "Team Liquid",
-      "teamBLabel": "Team Spirit",
-      "status": "completed",
-      "score": "0-2",
-      "winner": "Team Spirit",
-      "polySlug": "dota2-liquid-ts8-2026-08-14",
-      "mapsPlayed": 2
-    },
-    {
-      "id": "ubf",
-      "round": "胜者组决赛",
-      "day": "2026-08-22",
-      "when": "2026-08-22 16:00",
-      "format": "Bo3",
-      "teamA": "TEAM VISION",
-      "teamB": "Team Yandex",
-      "teamALabel": "TEAM VISION",
-      "teamBLabel": "Team Yandex",
-      "status": "completed",
-      "score": "2-1",
-      "winner": "TEAM VISION",
-      "polySlug": "dota2-vsn2-ty-2026-08-22",
-      "mapsPlayed": 3
-    },
-    {
-      "id": "lbsf",
-      "round": "败者组半决赛",
-      "day": "2026-08-22",
-      "when": "2026-08-22 19:00",
-      "format": "Bo3",
-      "teamA": "BoomBoys",
-      "teamB": "Team Spirit",
-      "teamALabel": "BoomBoys",
-      "teamBLabel": "Team Spirit",
-      "status": "completed",
-      "score": "0-2",
-      "winner": "Team Spirit",
-      "polySlug": "dota2-boombo-ts8-2026-08-22",
-      "mapsPlayed": 2
-    }
-  ],
+  "todayResults": [],
   "newMapIds": []
 }
