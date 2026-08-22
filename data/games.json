@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-22 19:33 CST",
-  "n": 109,
+  "asOf": "2026-08-22 20:57 CST",
+  "n": 110,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -33470,6 +33470,313 @@
         "mid_support": "天辉中单 No[o]ne-/Puck 参与 3 次（击杀2+助攻1），辅Dukalis/Ogre Magi 参与 2 次，中辅合计8 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Snapfire 参与 6 次（击杀2+助攻4），辅Saksa/Bounty Hunter 参与 3 次，中辅合计16 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8958950792",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8959067169,
+      "series_id": 1132678,
+      "start_time": 1787398152,
+      "duration": 2963,
+      "parsed": true,
+      "radiant": "TEAM VISION",
+      "dire": "Team Yandex",
+      "radiant_team_id": 9572001,
+      "dire_team_id": 9823272,
+      "winner": "TEAM VISION",
+      "radiant_win": true,
+      "score": [
+        38,
+        15
+      ],
+      "pace": "正常",
+      "length": "超长",
+      "stance": "滚雪球",
+      "f10k": {
+        "side": "radiant",
+        "time": 829,
+        "score": {
+          "radiant": 10,
+          "dire": 3
+        },
+        "completing_killer": "9Class",
+        "completing_hero": "Dark Willow"
+      },
+      "f10k_mid_share": 2,
+      "first_tower": {
+        "time": 677,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": 2076,
+        "m10": 2969,
+        "m15": 4722,
+        "m20": 5840
+      },
+      "kills_8min": 4,
+      "kills_15min": 15,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 5,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 6,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 11,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 19,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 21,
+              "hero": "Axe",
+              "hero_id": 2
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 12,
+              "hero": "Enchantress",
+              "hero_id": 58
+            },
+            {
+              "order": 15,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 16,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 23,
+              "hero": "Tiny",
+              "hero_id": 19
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Io",
+              "hero_id": 91
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 12,
+              "hero": "Enchantress",
+              "hero_id": 58
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 1,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 4,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 9,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 10,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 18,
+              "hero": "Phantom Lancer",
+              "hero_id": 12
+            },
+            {
+              "order": 20,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 13,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 14,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 17,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 22,
+              "hero": "Tidehunter",
+              "hero_id": 29
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 1,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 13,
+              "hero": "Mirana",
+              "hero_id": 9
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Earth Spirit",
+            "hero_id": 107,
+            "gold_t10": 4077,
+            "xp_t10": 4611,
+            "kills": 4,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos4": {
+            "player": "9Class",
+            "hero": "Dark Willow",
+            "kills": 8,
+            "kills_before_10": 3,
+            "assists_before_10": 0,
+            "participate_before_10": 3
+          },
+          "pos5": {
+            "player": "Dukalis",
+            "hero": "Enchantress",
+            "kills_before_10": 1,
+            "assists_before_10": 0,
+            "participate_before_10": 1
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 5,
+          "first10_mid_sup_ka": 6,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Invoker",
+            "hero_id": 74,
+            "gold_t10": 3373,
+            "xp_t10": 4300,
+            "kills": 7,
+            "kills_before_10": 2,
+            "assists_before_10": 0,
+            "participate_before_10": 2
+          },
+          "pos4": {
+            "player": "Maladych",
+            "hero": "Undying",
+            "kills": 0,
+            "kills_before_10": 0,
+            "assists_before_10": 1,
+            "participate_before_10": 1
+          },
+          "pos5": {
+            "player": "Saksa",
+            "hero": "Mirana",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 3,
+          "first10_mid_sup_kills": 2,
+          "first10_mid_sup_ka": 3,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Io；前两手Earth Spirit、Enchantress；中单Earth Spirit第1手拿",
+          "dire": "一阶段禁Lone Druid、Dark Seer；前两手Nature's Prophet、Mirana；中单Invoker第4手拿"
+        },
+        "pace": "正常节奏 / 超长局（49分23秒）；先到10杀出现在 13分49秒",
+        "stance": "滚雪球",
+        "f10k": "TEAM VISION先到 10 杀（当时 10-3，13分49秒）。这 10 次击杀里，中单 No[o]ne-/Earth Spirit 参与 2 次（击杀 1 + 助攻 1），中单+双辅合计参与 6 次。对手当时 3 杀。",
+        "mid_support": "天辉中单 No[o]ne-/Earth Spirit 参与 2 次（击杀1+助攻1），辅9Class/Dark Willow 参与 3 次，中辅合计6；夜魇中单 CHIRA_JUNIOR/Invoker 参与 2 次（击杀2+助攻0），辅Maladych/Undying 参与 1 次，中辅合计3。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8959067169",
       "source": "ti15",
       "patch": "7.41e"
     }

@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-22 19:52 CST
+# TI15 局间战报 · 2026-08-22 20:59 CST
 
-第2局 TY 赢了，先到10杀 TY，44.8分钟。下一局第3局按上一局重算后看好 VSN（57%）。现场赔率至少 1.76。
+胜者组决赛第3局 VSN 赢了，先到10杀 VSN，49.4分钟。下一把败者组半决赛第1局看好 Spirit（51%）。
 
-第2局 TY 赢了，先到10杀 TY，44.8分钟。上一局阵容 VSN Nature's Prophet、Slardar、Dark Willow / TY Bounty Hunter、Tidehunter、Winter Wyvern。下一局第3局按上一局重算后看好 VSN（57%）。现场赔率至少 1.76。系列现在看好 VSN（57%）。先到10杀看好 VSN。本届胜率 TEAM VISION 69% / Team Yandex 61%；先到10杀 57% / 54%；H2H 3.3500000000000005 局；TEAM VISION 中单爱拿 Ember Spirit。
+胜者组决赛三局都已打完。第1局 VSN 赢，52.7分钟慢节奏发育对线，先到10杀却是 TY（中单 Lina 对位 Pangolier），比分 12-35。第2局 TY 扳平，44.8分钟仍慢、来回拉锯，先到10杀 TY（中单 Snapfire 对 VSN Puck），TY 拿出 Bounty Hunter、Tidehunter、Winter Wyvern。第3局 VSN 再拿下，49.4分钟正常节奏滚雪球，13分49秒 10-3 先到10杀，中单 Earth Spirit 对 Invoker，比分 38-15。系列 2-1，VSN 进总决赛，TY 掉败者组决赛。
+
+因为第2局 TY 靠 BH/Snapfire 拖慢节奏扳回，第3局 VSN 改抢 Earth Spirit、针对掉刚出现的节奏点，早早 10-3 滚起来把系列锁死。整棵模型按这局重算后，下一把是败者组半决赛 BB vs Spirit 第1局：本届没交过手，看好 Spirit 51%（门槛 1.95），先到10杀 Spirit 56%（无公开盘），系列 Spirit 52%（门槛 1.91）。Polymarket 第1局 Spirit 0.595、系列 0.645。这不是投注建议。
