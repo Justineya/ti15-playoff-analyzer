@@ -1,5 +1,5 @@
-# TI15 局间战报 · 2026-08-22 14:55 CST
+# TI15 局间战报 · 2026-08-22 15:24 CST
 
-第1局 BB 赢了，先到10杀 NGX，39.0分钟。下一局第2局按上一局重算后看好 BB（54%）。现场赔率至少 1.84。
+第2局 NGX 赢了，先到10杀 NGX，36.2分钟。下一局第3局按上一局重算后看好 NGX（53%）。现场赔率至少 1.88。
 
-第1局 BB 赢了，先到10杀 NGX，39.0分钟。上一局阵容 BB Winter Wyvern、Dark Willow、Axe / NGX Io、Mirana、Centaur Warrunner。下一局第2局按上一局重算后看好 BB（54%）。现场赔率至少 1.84。系列现在看好 NGX（70%）。先到10杀看好 BB。本届胜率 BoomBoys 57% / Nigma Galaxy 62%；先到10杀 52% / 45%；H2H 1.9 局；BoomBoys 中单爱拿 Lina。
+第2局 NGX 赢了，先到10杀 NGX，36.2分钟。上一局阵容 NGX Ember Spirit、Mirana、Shadow Fiend / BB Keeper of the Light、Puck、Undying。下一局第3局按上一局重算后看好 NGX（53%）。现场赔率至少 1.88。系列现在看好 NGX（54%）。先到10杀看好 BB。本届胜率 BoomBoys 55% / Nigma Galaxy 63%；先到10杀 51% / 47%；H2H 2.9000000000000004 局；BoomBoys 中单爱拿 Puck。

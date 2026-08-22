@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-22 14:55 CST",
+  "asOf": "2026-08-22 15:24 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -397,8 +397,8 @@
       "winnerTo": "lbsf",
       "polyTitle": "BoomBoys vs Nigma Galaxy",
       "polySlug": "dota2-ngx-boombo-2026-08-22",
-      "mapsPlayed": 1,
-      "score": "0-1",
+      "mapsPlayed": 2,
+      "score": "1-1",
       "matchIds": [
         8958607830,
         8958667855
@@ -487,7 +487,7 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-22 14:55 CST",
+  "scheduleAsOf": "2026-08-22 15:24 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
   "scheduleError": "HTTP Error 429: Too Many Requests"
 }
