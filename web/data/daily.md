@@ -1,5 +1,9 @@
-# TI15 局间战报 · 2026-08-22 12:20 CST
+# TI15 局间战报 · 2026-08-22 12:49 CST
 
-第1局 Spirit 赢了，先到10杀 Spirit，49.6分钟。下一局第2局按上一局重算后看好 Spirit（60%）。现场赔率至少 1.67。
+Spirit 刚 0-2 结束 Liquid。下一场改写成 BB vs NGX 第1局，重算后看好 NGX（51%），系列 52%。
 
-第1局 Spirit 赢了，先到10杀 Spirit，49.6分钟。上一局阵容 Liquid Shadow Fiend、Invoker、Mirana / Spirit Winter Wyvern、Centaur Warrunner、Pangolier。下一局第2局按上一局重算后看好 Spirit（60%）。现场赔率至少 1.67。系列现在看好 Liquid（65%）。先到10杀看好 Spirit。本届胜率 Team Liquid 54% / Team Spirit 59%；先到10杀 56% / 59%；H2H 5.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit。
+早上 Liquid vs Spirit 已经结束，液体百科 0-2，Spirit 晋级。第1局 Spirit 赢，20-33，49.6分钟慢节奏发育对线，先到10杀 Spirit（24分33秒，8-10），中单 Invoker 对 Pangolier。刚打完的第2局还是 Spirit 赢，31-18，43.4分钟来回拉锯，先到10杀 Spirit（14分50秒，10-3），中单改成 Lina 对 Puck。
+
+因为第2局 Lina 中单 14分50秒就10-3先到10杀，BoomBoys 中单又爱拿 Lina，这一局 NGX 要先处理这条线，不能套开赛预览。两局进样本后整棵树重算：Liquid 胜率 55%→52%，Spirit 57%→60%，H2H 4.35→6.35；BB vs NGX 没刚交手，H2H 仍是 0.9，单局/系列数字没被直接拉动。
+
+下一场 13:00 BB vs NGX 第1局。重算后看好 NGX 51%（门槛 1.95），系列 52%（门槛 1.92）。先到10杀看好 BB 60%（门槛 1.68），没有公开盘。Polymarket 第1局 NGX 0.425 / BB 0.575，系列 NGX 0.375 / BB 0.625。这不是投注建议。
