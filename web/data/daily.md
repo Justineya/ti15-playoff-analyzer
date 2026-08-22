@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-22 11:06 CST
+# TI15 局间战报 · 2026-08-22 11:55 CST
 
-下一把 Liquid vs Spirit，看好 Spirit（系列 58%）。第1局看好 Spirit（55%）。
+第1局 Spirit 赢了，先到10杀 Spirit（24分33秒），49.6分钟慢节奏。系列 Spirit 1-0。第2局重算后看好 Spirit（60%），门槛 1.67。
 
-下一把 Liquid vs Spirit，看好 Spirit（系列 58%）。第1局看好 Spirit（55%）。本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit。
+第1局 Spirit 赢，人头 20-33，时长 49分34秒，慢节奏发育对线。先到10杀是 Spirit（当时 8-10，24分33秒），Yatoro/先知收第10杀；中单 Larl/滚滚参与 5 次（3杀+2助），中辅合计 14 次。Liquid 中单 Nisha/祈求者，前两手影魔、祈求者；Spirit 中单第3手滚滚，前两手冰龙骑士、半人马。
+
+因为 Spirit 先拿下一局，Bo3 变成 Liquid 0-1。模型整棵重算后本届胜率 Liquid 54% / Spirit 59%（开赛预览 55% / 57%），H2H 从约 4.4 局变成 5.35 局，第2局单局 Spirit 从预览 55% 升到 60%。0-0 时系列 Spirit 约 64%，现在 1-0 后看好 Spirit 83%。液体百科第2局已在选人：Spirit 半人马 / 火女 / 发条 / 小精灵 / 恐怖利刃（中单 Larl/火女），Liquid 风行 / 小小 / 米拉娜 / 帕克 / 狼人（中单 Nisha/帕克），还没结束。第2局模型 Spirit 60%、先到10杀 52%（无公开盘），门槛 1.67；Polymarket 第2局价 Liquid 1.00 / Spirit 0.00，不是可用现场盘。这不是投注建议。
