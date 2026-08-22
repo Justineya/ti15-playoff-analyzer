@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-22 22:55 CST",
+  "asOf": "2026-08-22 23:12 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "next-map",
-  "headline": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。下一局第2局按上一局重算后看好 Spirit（60%）。现场赔率至少 1.68。",
-  "narrative": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。上一局阵容 BB Lina、Keeper of the Light、Centaur Warrunner / Spirit Winter Wyvern、Ember Spirit、Rubick。下一局第2局按上一局重算后看好 Spirit（60%）。现场赔率至少 1.68。系列现在看好 Spirit（83%）。先到10杀看好 Spirit。本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina。",
+  "kind": "next-series",
+  "headline": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。下一把 BB vs Spirit，看好 Spirit（系列 63%）。",
+  "narrative": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。上一局阵容 BB Lina、Keeper of the Light、Centaur Warrunner / Spirit Winter Wyvern、Ember Spirit、Rubick。下一把 BB vs Spirit，看好 Spirit（系列 63%）。第1局看好 Spirit（59%）。本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina。",
   "previousMap": {
     "game": 1,
     "matchId": 8959222564,
@@ -77,24 +77,24 @@
     }
   ],
   "nextMap": {
-    "game": 2,
+    "game": 1,
     "teamA": "BoomBoys",
     "teamB": "Team Spirit",
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.595,
-      "pA": 0.405,
-      "pB": 0.595,
-      "breakEven": 1.68,
+      "p": 0.59,
+      "pA": 0.41,
+      "pB": 0.59,
+      "breakEven": 1.69,
       "market": {
         "outcomes": [
           "BoomBoys",
           "Team Spirit"
         ],
         "prices": [
-          0.08,
-          0.92
+          0.0,
+          1.0
         ]
       },
       "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
@@ -102,10 +102,10 @@
     "f10": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.584,
-      "pA": 0.416,
-      "pB": 0.584,
-      "breakEven": 1.71,
+      "p": 0.588,
+      "pA": 0.412,
+      "pB": 0.588,
+      "breakEven": 1.7,
       "market": null,
       "why": ""
     }
@@ -113,23 +113,57 @@
   "seriesLean": {
     "team": "Team Spirit",
     "tag": "Spirit",
-    "p": 0.831,
-    "pA": 0.169,
-    "pB": 0.831,
-    "breakEven": 1.2,
+    "p": 0.633,
+    "pA": 0.367,
+    "pB": 0.633,
+    "breakEven": 1.58,
     "market": {
       "outcomes": [
         "BoomBoys",
         "Team Spirit"
       ],
       "prices": [
-        0.045,
-        0.955
+        0.001,
+        1.0
       ]
     },
     "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
   },
-  "previous": null,
+  "previous": {
+    "id": "lbsf",
+    "round": "败者组半决赛",
+    "day": "2026-08-22",
+    "when": "2026-08-22 19:00",
+    "format": "Bo3",
+    "teamA": "BoomBoys",
+    "teamB": "Team Spirit",
+    "teamALabel": "BoomBoys",
+    "teamBLabel": "Team Spirit",
+    "status": "live",
+    "score": "0-2",
+    "winner": null,
+    "polySlug": "dota2-boombo-ts8-2026-08-22",
+    "mapsPlayed": 2,
+    "lean": {
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.633,
+      "pA": 0.367,
+      "pB": 0.633,
+      "breakEven": 1.58,
+      "market": {
+        "outcomes": [
+          "BoomBoys",
+          "Team Spirit"
+        ],
+        "prices": [
+          0.001,
+          1.0
+        ]
+      },
+      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
+    }
+  },
   "next": {
     "id": "lbsf",
     "round": "败者组半决赛",
@@ -141,25 +175,25 @@
     "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
     "status": "live",
-    "score": "0-1",
+    "score": "0-2",
     "winner": null,
     "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 1,
+    "mapsPlayed": 2,
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.831,
-      "pA": 0.169,
-      "pB": 0.831,
-      "breakEven": 1.2,
+      "p": 0.633,
+      "pA": 0.367,
+      "pB": 0.633,
+      "breakEven": 1.58,
       "market": {
         "outcomes": [
           "BoomBoys",
           "Team Spirit"
         ],
         "prices": [
-          0.045,
-          0.955
+          0.001,
+          1.0
         ]
       },
       "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
@@ -176,10 +210,10 @@
     "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
     "status": "live",
-    "score": "0-1",
+    "score": "0-2",
     "winner": null,
     "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 1
+    "mapsPlayed": 2
   },
   "todayResults": [
     {

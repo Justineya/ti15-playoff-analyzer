@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T14:55Z",
+  "asOf": "2026-08-22T15:12Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 5742635.421240005,
+      "volume": 5742635.421240003,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 5237377.128607998,
+      "volume": 5620280.4191970015,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4337,8 +4337,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.08",
-            "0.92"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
@@ -4348,8 +4348,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.045",
-            "0.955"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
@@ -4359,8 +4359,8 @@
             "Under"
           ],
           "prices": [
-            "0.095",
-            "0.905"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
@@ -4370,8 +4370,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.955",
-            "0.045"
+            "0.9995",
+            "0.0005"
           ]
         },
         {
@@ -4403,8 +4403,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.0055",
-            "0.9945"
+            "0.005",
+            "0.995"
           ]
         },
         {
@@ -4414,8 +4414,8 @@
             "Under"
           ],
           "prices": [
-            "0.27",
-            "0.73"
+            "0.005",
+            "0.995"
           ]
         },
         {
@@ -4535,8 +4535,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -4645,8 +4645,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -4656,12 +4656,45 @@
             "Under"
           ],
           "prices": [
-            "0.255",
-            "0.745"
+            "0.005",
+            "0.995"
           ]
         },
         {
           "question": "Total Kills Over/Under 40.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.995",
+            "0.005"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 35.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.995",
+            "0.005"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 65.5 in Game 2?",
           "outcomes": [
             "Over",
             "Under"
