@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T10:30Z",
+  "asOf": "2026-08-22T10:52Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723976009,
+      "volume": 9505559.723976001,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 4871561.226852996,
+      "volume": 6578451.3900899915,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -3945,8 +3945,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.575",
-            "0.425"
+            "0.365",
+            "0.635"
           ]
         },
         {
@@ -3956,8 +3956,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.845",
-            "0.155"
+            "0.775",
+            "0.225"
           ]
         },
         {
@@ -3967,8 +3967,8 @@
             "Under"
           ],
           "prices": [
-            "0.42",
-            "0.58"
+            "0.62",
+            "0.38"
           ]
         },
         {
@@ -3978,8 +3978,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.58",
-            "0.42"
+            "0.37",
+            "0.63"
           ]
         },
         {
@@ -4011,8 +4011,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.73",
-            "0.27"
+            "0.0255",
+            "0.9745"
           ]
         },
         {
@@ -4022,8 +4022,8 @@
             "Under"
           ],
           "prices": [
-            "0.29",
-            "0.71"
+            "0.21",
+            "0.79"
           ]
         },
         {
@@ -4121,8 +4121,8 @@
             "No"
           ],
           "prices": [
-            "0.335",
-            "0.665"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4132,8 +4132,8 @@
             "No"
           ],
           "prices": [
-            "0.31",
-            "0.69"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4143,8 +4143,8 @@
             "No"
           ],
           "prices": [
-            "0.29",
-            "0.71"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4154,8 +4154,8 @@
             "No"
           ],
           "prices": [
-            "0.225",
-            "0.775"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4278,13 +4278,35 @@
             "0.5",
             "0.5"
           ]
+        },
+        {
+          "question": "Total Kills Over/Under 45.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 40.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
         }
       ]
     },
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 179314.45751300003,
+      "volume": 181736.64520299996,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4293,8 +4315,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.415",
-            "0.585"
+            "0.405",
+            "0.595"
           ]
         },
         {
@@ -4304,8 +4326,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.425",
-            "0.575"
+            "0.415",
+            "0.585"
           ]
         },
         {
@@ -4326,8 +4348,8 @@
             "Under"
           ],
           "prices": [
-            "0.48",
-            "0.52"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4337,8 +4359,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.36",
-            "0.64"
+            "0.365",
+            "0.635"
           ]
         },
         {
@@ -4348,8 +4370,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.73",
+            "0.27"
           ]
         },
         {
@@ -4359,8 +4381,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.515",
+            "0.485"
           ]
         },
         {
@@ -4370,8 +4392,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.47",
-            "0.53"
+            "0.72",
+            "0.28"
           ]
         },
         {
@@ -4381,8 +4403,8 @@
             "Under"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "0.52",
+            "0.48"
           ]
         },
         {
@@ -4425,8 +4447,8 @@
             "No"
           ],
           "prices": [
-            "0.28",
-            "0.72"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4436,8 +4458,8 @@
             "No"
           ],
           "prices": [
-            "0.24",
-            "0.76"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4447,8 +4469,8 @@
             "No"
           ],
           "prices": [
-            "0.19",
-            "0.81"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4458,8 +4480,8 @@
             "No"
           ],
           "prices": [
-            "0.08",
-            "0.92"
+            "0.075",
+            "0.925"
           ]
         },
         {
@@ -4480,45 +4502,12 @@
             "No"
           ],
           "prices": [
-            "0.28",
-            "0.72"
+            "0.5",
+            "0.5"
           ]
         },
         {
           "question": "Game 2: Both Teams Destroy Barracks?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.24",
-            "0.76"
-          ]
-        },
-        {
-          "question": "Game 2: Any Player Ultra Kill?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.19",
-            "0.81"
-          ]
-        },
-        {
-          "question": "Game 2: Any Player Rampage?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.14",
-            "0.86"
-          ]
-        },
-        {
-          "question": "Game 3: Ends in Daytime?",
           "outcomes": [
             "Yes",
             "No"
@@ -4529,14 +4518,47 @@
           ]
         },
         {
+          "question": "Game 2: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.15",
+            "0.85"
+          ]
+        },
+        {
+          "question": "Game 3: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.505",
+            "0.495"
+          ]
+        },
+        {
           "question": "Game 3: Both Teams Beat Roshan?",
           "outcomes": [
             "Yes",
             "No"
           ],
           "prices": [
-            "0.345",
-            "0.655"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4546,8 +4568,8 @@
             "No"
           ],
           "prices": [
-            "0.315",
-            "0.685"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4557,8 +4579,8 @@
             "No"
           ],
           "prices": [
-            "0.195",
-            "0.805"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4568,8 +4590,8 @@
             "No"
           ],
           "prices": [
-            "0.17",
-            "0.83"
+            "0.5",
+            "0.5"
           ]
         }
       ]
