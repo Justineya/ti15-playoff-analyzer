@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 21:27 CST",
+  "asOf": "2026-08-22 21:52 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
   "headline": "下一把 BB vs Spirit，看好 Spirit（系列 52%）。第1局看好 Spirit（51%）。",
@@ -23,8 +23,8 @@
           "Team Spirit"
         ],
         "prices": [
-          0.5,
-          0.5
+          0.355,
+          0.645
         ]
       },
       "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
@@ -53,8 +53,8 @@
         "Team Spirit"
       ],
       "prices": [
-        0.5,
-        0.5
+        0.33,
+        0.67
       ]
     },
     "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
@@ -88,8 +88,8 @@
           "Team Spirit"
         ],
         "prices": [
-          0.5,
-          0.5
+          0.33,
+          0.67
         ]
       },
       "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
