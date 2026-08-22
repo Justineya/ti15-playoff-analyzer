@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T20:18Z",
+  "asOf": "2026-08-22T20:45Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 5742635.421240001,
+      "volume": 5742635.421240005,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11840828.804969994,
+      "volume": 11840828.804969992,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 6676495.914294997,
+      "volume": 6679465.374294998,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4709,7 +4709,7 @@
     {
       "slug": "dota2-ty-ts8-2026-08-22",
       "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 247199.54944999993,
+      "volume": 267992.89403399994,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
@@ -4740,8 +4740,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.315",
-            "0.685"
+            "0.345",
+            "0.655"
           ]
         },
         {
@@ -4773,8 +4773,8 @@
             "No"
           ],
           "prices": [
-            "0.395",
-            "0.605"
+            "0.285",
+            "0.715"
           ]
         },
         {
@@ -4784,8 +4784,8 @@
             "No"
           ],
           "prices": [
-            "0.25",
-            "0.75"
+            "0.245",
+            "0.755"
           ]
         },
         {
@@ -4850,8 +4850,8 @@
             "No"
           ],
           "prices": [
-            "0.245",
-            "0.755"
+            "0.195",
+            "0.805"
           ]
         },
         {
@@ -4872,8 +4872,8 @@
             "No"
           ],
           "prices": [
-            "0.35",
-            "0.65"
+            "0.305",
+            "0.695"
           ]
         },
         {
@@ -4883,8 +4883,8 @@
             "No"
           ],
           "prices": [
-            "0.45",
-            "0.55"
+            "0.445",
+            "0.555"
           ]
         },
         {
@@ -4894,8 +4894,8 @@
             "No"
           ],
           "prices": [
-            "0.335",
-            "0.665"
+            "0.315",
+            "0.685"
           ]
         },
         {
@@ -4905,8 +4905,8 @@
             "No"
           ],
           "prices": [
-            "0.26",
-            "0.74"
+            "0.2",
+            "0.8"
           ]
         },
         {
@@ -4916,8 +4916,8 @@
             "No"
           ],
           "prices": [
-            "0.155",
-            "0.845"
+            "0.15",
+            "0.85"
           ]
         },
         {
@@ -4927,8 +4927,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.405",
-            "0.595"
+            "0.395",
+            "0.605"
           ]
         },
         {
@@ -4938,8 +4938,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.46",
-            "0.54"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4949,8 +4949,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.535",
-            "0.465"
+            "0.495",
+            "0.505"
           ]
         },
         {
