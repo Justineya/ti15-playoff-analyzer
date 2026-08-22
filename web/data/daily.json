@@ -1,32 +1,102 @@
 {
-  "asOf": "2026-08-22 13:19 CST",
+  "asOf": "2026-08-22 14:06 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 BB vs NGX，看好 NGX（系列 52%）。第1局看好 NGX（51%）。",
-  "narrative": "下一把 BB vs NGX，看好 NGX（系列 52%）。第1局看好 NGX（51%）。本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 BB 赢了（14-13，39分钟慢发育），先到10杀却是 NGX。第2局重算后看好 BB（54%）；Polymarket 这局 BB 0.615 / NGX 0.385。系列 BB 1-0。",
+  "narrative": "第1局已经打完，不要再用开赛预览。液体百科 lbqf1 局分 0-1、maps[1].winner=2、时长 38m58s，赢家是 BoomBoys。OpenDota 8958607830：天辉 BB 14-13 夜魇 NGX，39.0 分钟，慢节奏、发育对线。NGX 先到 10 杀（当时 6-10，27分41秒，收刀 Davai/Centaur Warrunner），但人头一直没拉开。中单 gpk~/Shadow Fiend 第5手拿，10分钟经济 4054；对线 OmaR/Mirana 第2手拿，只要 2613。BB 前两手 Winter Wyvern、Dark Willow，再拿 Axe、Lifestealer；NGX 前两手 Io、Mirana，再拿 Centaur、Huskar、Windranger。NGX 一阶段就禁了 Treant Protector 和 Lina（BB 本届中单常用）。\n\n因为上一局 NGX 拿到先到10杀却没能转成胜势，慢长局被 BB 翻盘，H2H 从开赛前 0.9 局变成 1.9 局，本届胜率变成 BB 57% / NGX 62%（开赛前 56/64），先到10杀 52%/45%。开赛预览还看 NGX 系列 52%、第1局 51%；吃进这一局后，第2局模型改看 BB 54%（门槛 1.84），先到10杀看好 BB 57%（门槛 1.74，没有公开盘）。液体百科 NGX 写在左边所以分数是 0-1，实际是 BB 领先 1-0，NGX 再输就淘汰。按局胜率 54%、BB 已 1-0，系列约 79% 看 BB（脚本若把 0-1 按 BB–NGX 读会写成 NGX 70%，那是左右队序反了）。Polymarket 第2局价 BB 0.615 / NGX 0.385，系列价 BB 0.845 / NGX 0.155。这不是投注建议。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8958607830,
+    "winner": "BoomBoys",
+    "score": [
+      14,
+      13
+    ],
+    "f10": "Nigma Galaxy",
+    "f10Time": 1661,
+    "durationMin": 39.0,
+    "pace": "慢",
+    "stance": "发育对线",
+    "picks": {
+      "BoomBoys": [
+        "Winter Wyvern",
+        "Dark Willow",
+        "Axe",
+        "Lifestealer",
+        "Shadow Fiend"
+      ],
+      "Nigma Galaxy": [
+        "Io",
+        "Mirana",
+        "Centaur Warrunner",
+        "Huskar",
+        "Windranger"
+      ]
+    },
+    "mid": {
+      "BoomBoys": "Shadow Fiend",
+      "Nigma Galaxy": "Mirana"
+    },
+    "blurb": "Nigma Galaxy先到 10 杀（当时 6-10，27分41秒）。这 10 次击杀里，中单 OmaR/Mirana 参与 2 次（击杀 2 + 助攻 0），中单+双辅合计参与 7 次。对手当时 6 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8958607830,
+      "winner": "BoomBoys",
+      "score": [
+        14,
+        13
+      ],
+      "f10": "Nigma Galaxy",
+      "f10Time": 1661,
+      "durationMin": 39.0,
+      "pace": "慢",
+      "stance": "发育对线",
+      "picks": {
+        "BoomBoys": [
+          "Winter Wyvern",
+          "Dark Willow",
+          "Axe",
+          "Lifestealer",
+          "Shadow Fiend"
+        ],
+        "Nigma Galaxy": [
+          "Io",
+          "Mirana",
+          "Centaur Warrunner",
+          "Huskar",
+          "Windranger"
+        ]
+      },
+      "mid": {
+        "BoomBoys": "Shadow Fiend",
+        "Nigma Galaxy": "Mirana"
+      },
+      "blurb": "Nigma Galaxy先到 10 杀（当时 6-10，27分41秒）。这 10 次击杀里，中单 OmaR/Mirana 参与 2 次（击杀 2 + 助攻 0），中单+双辅合计参与 7 次。对手当时 6 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "BoomBoys",
     "teamB": "Nigma Galaxy",
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.512,
-      "pA": 0.488,
-      "pB": 0.512,
-      "breakEven": 1.95,
+      "team": "BoomBoys",
+      "tag": "BB",
+      "p": 0.544,
+      "pA": 0.544,
+      "pB": 0.456,
+      "breakEven": 1.84,
       "market": null,
-      "why": "本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina"
+      "why": "本届胜率 BoomBoys 57% / Nigma Galaxy 62%；先到10杀 52% / 45%；H2H 1.9 局；BoomBoys 中单爱拿 Lina"
     },
     "f10": {
       "team": "BoomBoys",
       "tag": "BB",
-      "p": 0.595,
-      "pA": 0.595,
-      "pB": 0.405,
-      "breakEven": 1.68,
+      "p": 0.574,
+      "pA": 0.574,
+      "pB": 0.426,
+      "breakEven": 1.74,
       "market": null,
       "why": ""
     }
@@ -34,12 +104,12 @@
   "seriesLean": {
     "team": "Nigma Galaxy",
     "tag": "NGX",
-    "p": 0.521,
-    "pA": 0.479,
-    "pB": 0.521,
-    "breakEven": 1.92,
+    "p": 0.703,
+    "pA": 0.297,
+    "pB": 0.703,
+    "breakEven": 1.42,
     "market": null,
-    "why": "本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina"
+    "why": "本届胜率 BoomBoys 57% / Nigma Galaxy 62%；先到10杀 52% / 45%；H2H 1.9 局；BoomBoys 中单爱拿 Lina"
   },
   "previous": null,
   "next": {
@@ -52,20 +122,20 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "BoomBoys",
     "teamBLabel": "Nigma Galaxy",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ngx-boombo-2026-08-22",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "Nigma Galaxy",
       "tag": "NGX",
-      "p": 0.521,
-      "pA": 0.479,
-      "pB": 0.521,
-      "breakEven": 1.92,
+      "p": 0.703,
+      "pA": 0.297,
+      "pB": 0.703,
+      "breakEven": 1.42,
       "market": null,
-      "why": "本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina"
+      "why": "本届胜率 BoomBoys 57% / Nigma Galaxy 62%；先到10杀 52% / 45%；H2H 1.9 局；BoomBoys 中单爱拿 Lina"
     }
   },
   "focus": {
@@ -78,11 +148,11 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "BoomBoys",
     "teamBLabel": "Nigma Galaxy",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-ngx-boombo-2026-08-22",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -102,5 +172,7 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8958607830
+  ]
 }
