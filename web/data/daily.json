@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 16:49 CST",
+  "asOf": "2026-08-22 17:14 CST",
   "timezone": "Asia/Shanghai",
   "kind": "preview",
   "headline": "下一把 VSN vs TY，看好 VSN（系列 62%）。第1局看好 VSN（59%）。",
@@ -23,8 +23,8 @@
           "Team Yandex"
         ],
         "prices": [
-          0.645,
-          0.355
+          0.535,
+          0.465
         ]
       },
       "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
@@ -53,8 +53,8 @@
         "Team Yandex"
       ],
       "prices": [
-        0.715,
-        0.285
+        0.675,
+        0.325
       ]
     },
     "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
@@ -88,8 +88,8 @@
           "Team Yandex"
         ],
         "prices": [
-          0.715,
-          0.285
+          0.675,
+          0.325
         ]
       },
       "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
@@ -145,7 +145,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8958734008
-  ]
+  "newMapIds": []
 }
