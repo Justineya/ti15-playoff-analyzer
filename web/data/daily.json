@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 15:24 CST",
+  "asOf": "2026-08-22 15:53 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
   "headline": "第2局 NGX 赢了，先到10杀 NGX，36.2分钟。下一局第3局按上一局重算后看好 NGX（53%）。现场赔率至少 1.88。",
@@ -207,7 +207,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8958667855
-  ]
+  "newMapIds": []
 }
