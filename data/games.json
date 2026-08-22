@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-22 11:06 CST",
-  "n": 102,
+  "asOf": "2026-08-22 11:29 CST",
+  "n": 103,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -31321,6 +31321,313 @@
         "mid_support": "天辉中单 lorenof/Earth Spirit 参与 9 次（击杀6+助攻3），辅GH/Dazzle 参与 5 次，中辅合计17 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Invoker 参与 4 次（击杀4+助攻0），辅Saksa/Mirana 参与 3 次，中辅合计9 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8957890399",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8958478716,
+      "series_id": 1132622,
+      "start_time": 1787364744,
+      "duration": 2974,
+      "parsed": true,
+      "radiant": "Team Liquid",
+      "dire": "Team Spirit",
+      "radiant_team_id": 2163,
+      "dire_team_id": 7119388,
+      "winner": "Team Spirit",
+      "radiant_win": false,
+      "score": [
+        20,
+        33
+      ],
+      "pace": "慢",
+      "length": "超长",
+      "stance": "发育对线",
+      "f10k": {
+        "side": "dire",
+        "time": 1473,
+        "score": {
+          "radiant": 8,
+          "dire": 10
+        },
+        "completing_killer": "Yatoro",
+        "completing_hero": "Nature's Prophet"
+      },
+      "f10k_mid_share": 5,
+      "first_tower": {
+        "time": 588,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_top"
+      },
+      "gold": {
+        "m5": 138,
+        "m10": -865,
+        "m15": -1513,
+        "m20": -2721
+      },
+      "kills_8min": 6,
+      "kills_15min": 9,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 5,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 6,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 11,
+              "hero": "Puck",
+              "hero_id": 13
+            },
+            {
+              "order": 19,
+              "hero": "Windranger",
+              "hero_id": 21
+            },
+            {
+              "order": 21,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 12,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 15,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 16,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 23,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 12,
+              "hero": "Invoker",
+              "hero_id": 74
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 4,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 9,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 10,
+              "hero": "Tusk",
+              "hero_id": 100
+            },
+            {
+              "order": 18,
+              "hero": "Tidehunter",
+              "hero_id": 29
+            },
+            {
+              "order": 20,
+              "hero": "Underlord",
+              "hero_id": 108
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 14,
+              "hero": "Pangolier",
+              "hero_id": 120
+            },
+            {
+              "order": 17,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 22,
+              "hero": "Shadow Demon",
+              "hero_id": 79
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Lina",
+              "hero_id": 25
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "Nisha",
+            "hero": "Invoker",
+            "hero_id": 74,
+            "gold_t10": 3313,
+            "xp_t10": 3448,
+            "kills": 3,
+            "kills_before_10": 2,
+            "assists_before_10": 2,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Boxi",
+            "hero": "Dark Willow",
+            "kills": 5,
+            "kills_before_10": 2,
+            "assists_before_10": 2,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "tOfu",
+            "hero": "Mirana",
+            "kills_before_10": 2,
+            "assists_before_10": 1,
+            "participate_before_10": 3
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 8,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 11,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Larl",
+            "hero": "Pangolier",
+            "hero_id": 120,
+            "gold_t10": 4341,
+            "xp_t10": 5016,
+            "kills": 7,
+            "kills_before_10": 3,
+            "assists_before_10": 2,
+            "participate_before_10": 5
+          },
+          "pos4": {
+            "player": "not_me",
+            "hero": "Shadow Demon",
+            "kills": 4,
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "rue",
+            "hero": "Winter Wyvern",
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 5,
+          "first10_mid_sup_ka": 14,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Earth Spirit；前两手Shadow Fiend、Invoker；中单Invoker第2手拿",
+          "dire": "一阶段禁Bounty Hunter、Lina；前两手Winter Wyvern、Centaur Warrunner；中单Pangolier第3手拿"
+        },
+        "pace": "慢节奏 / 超长局（49分34秒）；先到10杀出现在 24分33秒",
+        "stance": "发育对线",
+        "f10k": "Team Spirit先到 10 杀（当时 8-10，24分33秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 8 杀。",
+        "mid_support": "天辉中单 Nisha/Invoker 参与 4 次（击杀2+助攻2），辅Boxi/Dark Willow 参与 4 次，中辅合计11 · 中辅驱动；夜魇中单 Larl/Pangolier 参与 5 次（击杀3+助攻2），辅not_me/Shadow Demon 参与 4 次，中辅合计14 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8958478716",
       "source": "ti15",
       "patch": "7.41e"
     }
