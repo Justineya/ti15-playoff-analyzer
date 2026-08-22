@@ -1,43 +1,43 @@
 {
-  "asOf": "2026-08-22 15:24 CST",
+  "asOf": "2026-08-22 16:43 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第2局 NGX 赢了，先到10杀 NGX，36.2分钟。下一局第3局按上一局重算后看好 NGX（53%）。现场赔率至少 1.88。",
-  "narrative": "第2局 NGX 赢了，先到10杀 NGX，36.2分钟。上一局阵容 NGX Ember Spirit、Mirana、Shadow Fiend / BB Keeper of the Light、Puck、Undying。下一局第3局按上一局重算后看好 NGX（53%）。现场赔率至少 1.88。系列现在看好 NGX（54%）。先到10杀看好 BB。本届胜率 BoomBoys 55% / Nigma Galaxy 63%；先到10杀 51% / 47%；H2H 2.9000000000000004 局；BoomBoys 中单爱拿 Puck。",
+  "headline": "第3局 BB 赢了，先到10杀 BB，43.5分钟。系列 2-1 结束。下一把胜者组决赛第1局看好 VSN（59%）。",
+  "narrative": "败者组四分之一决赛 BoomBoys vs Nigma Galaxy 三局打完：第1局 BB 赢（14-13，39.0分钟，慢/发育对线），先到10杀却是 NGX（中单 Mirana，27分41秒 6-10）；第2局 NGX 赢（26-6，36.2分钟，滚雪球），lorenof 一手法核 Ember Spirit，先到10杀 NGX（18分41秒 10-6）；第3局 BB 赢（21-5，43.5分钟，慢/发育对线），先到10杀 BB（23分58秒 10-2）。上一局 NGX 还是一手法核 Ember，BB 改成 KotL、Bane，中单 gpk~ 拿 Slark，Naga Siren 拆线。F10 时 Slark 参与 8 次、中辅驱动 18 次，Ember 线几乎没参与。局前模型第3局略看好 NGX（53%）、系列 54%，先到10杀看好 BB——先到10杀对了，系列被 BB 翻成 2-1，NGX 淘汰。因为这系列已经结束，下一局改写成胜者组决赛 TEAM VISION vs Team Yandex 第1局（液体百科 16:45）。整棵模型重算后看好 VSN：第1局 59%（门槛 1.69），先到10杀 58%（无公开盘），系列 62%（门槛 1.60）。Polymarket 这局价 VSN 0.655 / TY 0.345，系列 0.725 / 0.275。本届胜率 VSN 70% / TY 61%；先到10杀 60% / 52%；H2H 加权 1.35 局；VSN 中单爱拿 Ember Spirit。这不是投注建议。",
   "previousMap": {
-    "game": 2,
-    "matchId": 8958667855,
-    "winner": "Nigma Galaxy",
+    "game": 3,
+    "matchId": 8958734008,
+    "winner": "BoomBoys",
     "score": [
-      26,
-      6
+      21,
+      5
     ],
-    "f10": "Nigma Galaxy",
-    "f10Time": 1121,
-    "durationMin": 36.2,
+    "f10": "BoomBoys",
+    "f10Time": 1438,
+    "durationMin": 43.5,
     "pace": "慢",
-    "stance": "滚雪球",
+    "stance": "发育对线",
     "picks": {
+      "BoomBoys": [
+        "Keeper of the Light",
+        "Bane",
+        "Slark",
+        "Naga Siren",
+        "Centaur Warrunner"
+      ],
       "Nigma Galaxy": [
         "Ember Spirit",
         "Mirana",
-        "Shadow Fiend",
-        "Shadow Shaman",
-        "Slardar"
-      ],
-      "BoomBoys": [
-        "Keeper of the Light",
-        "Puck",
-        "Undying",
-        "Underlord",
-        "Tiny"
+        "Lycan",
+        "Ringmaster",
+        "Leshrac"
       ]
     },
     "mid": {
-      "Nigma Galaxy": "Ember Spirit",
-      "BoomBoys": "Puck"
+      "BoomBoys": "Slark",
+      "Nigma Galaxy": "Ember Spirit"
     },
-    "blurb": "Nigma Galaxy先到 10 杀（当时 10-6，18分41秒）。这 10 次击杀里，中单 lorenof/Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 6 杀。"
+    "blurb": "BoomBoys先到 10 杀（当时 10-2，23分58秒）。这 10 次击杀里，中单 gpk~/Slark 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 2 杀。"
   },
   "previousMaps": [
     {
@@ -109,45 +109,97 @@
         "BoomBoys": "Puck"
       },
       "blurb": "Nigma Galaxy先到 10 杀（当时 10-6，18分41秒）。这 10 次击杀里，中单 lorenof/Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 6 杀。"
+    },
+    {
+      "game": 3,
+      "matchId": 8958734008,
+      "winner": "BoomBoys",
+      "score": [
+        21,
+        5
+      ],
+      "f10": "BoomBoys",
+      "f10Time": 1438,
+      "durationMin": 43.5,
+      "pace": "慢",
+      "stance": "发育对线",
+      "picks": {
+        "BoomBoys": [
+          "Keeper of the Light",
+          "Bane",
+          "Slark",
+          "Naga Siren",
+          "Centaur Warrunner"
+        ],
+        "Nigma Galaxy": [
+          "Ember Spirit",
+          "Mirana",
+          "Lycan",
+          "Ringmaster",
+          "Leshrac"
+        ]
+      },
+      "mid": {
+        "BoomBoys": "Slark",
+        "Nigma Galaxy": "Ember Spirit"
+      },
+      "blurb": "BoomBoys先到 10 杀（当时 10-2，23分58秒）。这 10 次击杀里，中单 gpk~/Slark 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 2 杀。"
     }
   ],
   "nextMap": {
-    "game": 3,
-    "teamA": "BoomBoys",
-    "teamB": "Nigma Galaxy",
+    "game": 1,
+    "teamA": "TEAM VISION",
+    "teamB": "Team Yandex",
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.533,
-      "pA": 0.467,
-      "pB": 0.533,
-      "breakEven": 1.88,
-      "market": null,
-      "why": "本届胜率 BoomBoys 55% / Nigma Galaxy 63%；先到10杀 51% / 47%；H2H 2.9000000000000004 局；BoomBoys 中单爱拿 Puck"
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.591,
+      "pA": 0.591,
+      "pB": 0.409,
+      "breakEven": 1.69,
+      "market": {
+        "outcomes": [
+          "TEAM VISION",
+          "Team Yandex"
+        ],
+        "prices": [
+          0.655,
+          0.345
+        ]
+      },
+      "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
     },
     "f10": {
-      "team": "BoomBoys",
-      "tag": "BB",
-      "p": 0.54,
-      "pA": 0.54,
-      "pB": 0.46,
-      "breakEven": 1.85,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.578,
+      "pA": 0.578,
+      "pB": 0.422,
+      "breakEven": 1.73,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Nigma Galaxy",
-    "tag": "NGX",
-    "p": 0.537,
-    "pA": 0.463,
-    "pB": 0.537,
-    "breakEven": 1.86,
-    "market": null,
-    "why": "本届胜率 BoomBoys 55% / Nigma Galaxy 63%；先到10杀 51% / 47%；H2H 2.9000000000000004 局；BoomBoys 中单爱拿 Puck"
+    "team": "TEAM VISION",
+    "tag": "VSN",
+    "p": 0.625,
+    "pA": 0.625,
+    "pB": 0.375,
+    "breakEven": 1.6,
+    "market": {
+      "outcomes": [
+        "TEAM VISION",
+        "Team Yandex"
+      ],
+      "prices": [
+        0.725,
+        0.275
+      ]
+    },
+    "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
   },
-  "previous": null,
-  "next": {
+  "previous": {
     "id": "lbqf1",
     "round": "败者组四分之一决赛",
     "day": "2026-08-22",
@@ -157,39 +209,80 @@
     "teamB": "Nigma Galaxy",
     "teamALabel": "BoomBoys",
     "teamBLabel": "Nigma Galaxy",
-    "status": "live",
-    "score": "1-1",
-    "winner": null,
+    "status": "completed",
+    "score": "2-1",
+    "winner": "BoomBoys",
     "polySlug": "dota2-ngx-boombo-2026-08-22",
-    "mapsPlayed": 2,
+    "mapsPlayed": 3
+  },
+  "next": {
+    "id": "ubf",
+    "round": "胜者组决赛",
+    "day": "2026-08-22",
+    "when": "2026-08-22 16:00",
+    "format": "Bo3",
+    "teamA": "TEAM VISION",
+    "teamB": "Team Yandex",
+    "teamALabel": "TEAM VISION",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
+    "winner": null,
+    "polySlug": "dota2-vsn2-ty-2026-08-22",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "Nigma Galaxy",
-      "tag": "NGX",
-      "p": 0.537,
-      "pA": 0.463,
-      "pB": 0.537,
-      "breakEven": 1.86,
-      "market": null,
-      "why": "本届胜率 BoomBoys 55% / Nigma Galaxy 63%；先到10杀 51% / 47%；H2H 2.9000000000000004 局；BoomBoys 中单爱拿 Puck"
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.625,
+      "pA": 0.625,
+      "pB": 0.375,
+      "breakEven": 1.6,
+      "market": {
+        "outcomes": [
+          "TEAM VISION",
+          "Team Yandex"
+        ],
+        "prices": [
+          0.725,
+          0.275
+        ]
+      },
+      "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
-    "id": "lbqf1",
-    "round": "败者组四分之一决赛",
+    "id": "ubf",
+    "round": "胜者组决赛",
     "day": "2026-08-22",
-    "when": "2026-08-22 13:00",
+    "when": "2026-08-22 16:00",
     "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Nigma Galaxy",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Nigma Galaxy",
-    "status": "live",
-    "score": "1-1",
+    "teamA": "TEAM VISION",
+    "teamB": "Team Yandex",
+    "teamALabel": "TEAM VISION",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-ngx-boombo-2026-08-22",
-    "mapsPlayed": 2
+    "polySlug": "dota2-vsn2-ty-2026-08-22",
+    "mapsPlayed": 0
   },
   "todayResults": [
+    {
+      "id": "lbqf1",
+      "round": "败者组四分之一决赛",
+      "day": "2026-08-22",
+      "when": "2026-08-22 13:00",
+      "format": "Bo3",
+      "teamA": "BoomBoys",
+      "teamB": "Nigma Galaxy",
+      "teamALabel": "BoomBoys",
+      "teamBLabel": "Nigma Galaxy",
+      "status": "completed",
+      "score": "2-1",
+      "winner": "BoomBoys",
+      "polySlug": "dota2-ngx-boombo-2026-08-22",
+      "mapsPlayed": 3
+    },
     {
       "id": "lbqf2",
       "round": "败者组四分之一决赛",
@@ -208,6 +301,6 @@
     }
   ],
   "newMapIds": [
-    8958667855
+    8958734008
   ]
 }
