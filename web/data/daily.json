@@ -1,41 +1,111 @@
 {
-  "asOf": "2026-08-22 17:43 CST",
+  "asOf": "2026-08-22 18:01 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 VSN vs TY，看好 VSN（系列 62%）。第1局看好 VSN（59%）。",
-  "narrative": "下一把 VSN vs TY，看好 VSN（系列 62%）。第1局看好 VSN（59%）。本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 VSN 赢了，先到10杀 TY，52.7分钟。下一局第2局按上一局重算后看好 VSN（65%）。现场赔率至少 1.55。",
+  "narrative": "第1局 VSN 赢了，先到10杀 TY，52.7分钟。上一局阵容 TY Hoodwink、Centaur Warrunner、Undying / VSN Lone Druid、Techies、Keeper of the Light。下一局第2局按上一局重算后看好 VSN（65%）。现场赔率至少 1.55。系列现在看好 VSN（88%）。先到10杀看好 VSN。本届胜率 TEAM VISION 71% / Team Yandex 60%；先到10杀 58% / 53%；H2H 2.35 局；TEAM VISION 中单爱拿 Ember Spirit。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8958842370,
+    "winner": "TEAM VISION",
+    "score": [
+      12,
+      35
+    ],
+    "f10": "Team Yandex",
+    "f10Time": 1310,
+    "durationMin": 52.7,
+    "pace": "慢",
+    "stance": "发育对线",
+    "picks": {
+      "Team Yandex": [
+        "Hoodwink",
+        "Centaur Warrunner",
+        "Undying",
+        "Lina",
+        "Terrorblade"
+      ],
+      "TEAM VISION": [
+        "Lone Druid",
+        "Techies",
+        "Keeper of the Light",
+        "Slardar",
+        "Pangolier"
+      ]
+    },
+    "mid": {
+      "Team Yandex": "Lina",
+      "TEAM VISION": "Pangolier"
+    },
+    "blurb": "Team Yandex先到 10 杀（当时 10-8，21分50秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Lina 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 8 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8958842370,
+      "winner": "TEAM VISION",
+      "score": [
+        12,
+        35
+      ],
+      "f10": "Team Yandex",
+      "f10Time": 1310,
+      "durationMin": 52.7,
+      "pace": "慢",
+      "stance": "发育对线",
+      "picks": {
+        "Team Yandex": [
+          "Hoodwink",
+          "Centaur Warrunner",
+          "Undying",
+          "Lina",
+          "Terrorblade"
+        ],
+        "TEAM VISION": [
+          "Lone Druid",
+          "Techies",
+          "Keeper of the Light",
+          "Slardar",
+          "Pangolier"
+        ]
+      },
+      "mid": {
+        "Team Yandex": "Lina",
+        "TEAM VISION": "Pangolier"
+      },
+      "blurb": "Team Yandex先到 10 杀（当时 10-8，21分50秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Lina 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 12 次 · 中辅驱动。对手当时 8 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "TEAM VISION",
     "teamB": "Team Yandex",
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.591,
-      "pA": 0.591,
-      "pB": 0.409,
-      "breakEven": 1.69,
+      "p": 0.647,
+      "pA": 0.647,
+      "pB": 0.353,
+      "breakEven": 1.55,
       "market": {
         "outcomes": [
           "TEAM VISION",
           "Team Yandex"
         ],
         "prices": [
-          0.955,
-          0.045
+          0.675,
+          0.325
         ]
       },
-      "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
+      "why": "本届胜率 TEAM VISION 71% / Team Yandex 60%；先到10杀 58% / 53%；H2H 2.35 局；TEAM VISION 中单爱拿 Ember Spirit"
     },
     "f10": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.578,
-      "pA": 0.578,
-      "pB": 0.422,
-      "breakEven": 1.73,
+      "p": 0.543,
+      "pA": 0.543,
+      "pB": 0.457,
+      "breakEven": 1.84,
       "market": null,
       "why": ""
     }
@@ -43,21 +113,21 @@
   "seriesLean": {
     "team": "TEAM VISION",
     "tag": "VSN",
-    "p": 0.625,
-    "pA": 0.625,
-    "pB": 0.375,
-    "breakEven": 1.6,
+    "p": 0.88,
+    "pA": 0.88,
+    "pB": 0.12,
+    "breakEven": 1.14,
     "market": {
       "outcomes": [
         "TEAM VISION",
         "Team Yandex"
       ],
       "prices": [
-        0.855,
-        0.145
+        0.905,
+        0.095
       ]
     },
-    "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
+    "why": "本届胜率 TEAM VISION 71% / Team Yandex 60%；先到10杀 58% / 53%；H2H 2.35 局；TEAM VISION 中单爱拿 Ember Spirit"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Team Yandex",
     "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "1-0",
     "winner": null,
     "polySlug": "dota2-vsn2-ty-2026-08-22",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.625,
-      "pA": 0.625,
-      "pB": 0.375,
-      "breakEven": 1.6,
+      "p": 0.88,
+      "pA": 0.88,
+      "pB": 0.12,
+      "breakEven": 1.14,
       "market": {
         "outcomes": [
           "TEAM VISION",
           "Team Yandex"
         ],
         "prices": [
-          0.855,
-          0.145
+          0.905,
+          0.095
         ]
       },
-      "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
+      "why": "本届胜率 TEAM VISION 71% / Team Yandex 60%；先到10杀 58% / 53%；H2H 2.35 局；TEAM VISION 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
@@ -105,11 +175,11 @@
     "teamB": "Team Yandex",
     "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "1-0",
     "winner": null,
     "polySlug": "dota2-vsn2-ty-2026-08-22",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -145,5 +215,7 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8958842370
+  ]
 }
