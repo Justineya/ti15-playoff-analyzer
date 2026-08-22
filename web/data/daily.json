@@ -1,41 +1,111 @@
 {
-  "asOf": "2026-08-22 17:43 CST",
+  "asOf": "2026-08-22 18:00 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 VSN vs TY，看好 VSN（系列 62%）。第1局看好 VSN（59%）。",
-  "narrative": "下一把 VSN vs TY，看好 VSN（系列 62%）。第1局看好 VSN（59%）。本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 VSN 赢了，52.7分钟超长拉锯（35-12），没有解析出先到10杀。第2局重算后看好 VSN（65%，门槛 1.55）。",
+  "narrative": "胜者组决赛第1局 TEAM VISION 赢了 Team Yandex。液体百科局分 1-0，时长 52分43秒，比分夜魇 VSN 35 : 天辉 TY 12，定性超长来回拉锯。OpenDota 没有给出先到10杀。TY 前两手 Hoodwink、Centaur Warrunner，再拿 Undying，中单 CHIRA_JUNIOR 第4手 Lina，核心 Terrorblade，后期把 VSN 本届爱拿的 Ember Spirit 禁掉。VSN 一阶段禁 Io、Winter Wyvern，前两手 Lone Druid、Techies，再加 Keeper of the Light、Slardar，中单 No[o]ne- 第5手 Pangolier。终局 Pango 11 杀、Lina 3 杀。因为上一局打成 50 分钟以上的拉锯，TY 只 ban Ember 没挡住熊+炸弹+Pango 关门，第2局不能再套开赛第1局预览：H2H 样本从 1.35 变成 2.35 局，本届胜率变成 VSN 71% / TY 60%。Bo3 变成 1-0 后，系列胜率从开赛前约 62% 重算到 VSN 88%（门槛 1.14；Polymarket 系列价 0.905 / 0.095）。TY 下一局更可能针对 Lone Druid / Techies / KotL，而不是只锁 Ember。第2局模型看好 VSN 65%（TY 35%，门槛 1.55）。Polymarket 这局价 VSN 0.675 / TY 0.325，比模型更偏 VSN 一点。先到10杀看好 VSN 57%，没有公开盘。液体百科第2局还没有 picks。这不是投注建议。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8958842370,
+    "winner": "TEAM VISION",
+    "score": [
+      12,
+      35
+    ],
+    "f10": null,
+    "f10Time": null,
+    "durationMin": 52.7,
+    "pace": "未知",
+    "stance": "来回拉锯",
+    "picks": {
+      "Team Yandex": [
+        "Hoodwink",
+        "Centaur Warrunner",
+        "Undying",
+        "Lina",
+        "Terrorblade"
+      ],
+      "TEAM VISION": [
+        "Lone Druid",
+        "Techies",
+        "Keeper of the Light",
+        "Slardar",
+        "Pangolier"
+      ]
+    },
+    "mid": {
+      "Team Yandex": "Lina",
+      "TEAM VISION": "Pangolier"
+    },
+    "blurb": "没有队伍先堆到 10 杀"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8958842370,
+      "winner": "TEAM VISION",
+      "score": [
+        12,
+        35
+      ],
+      "f10": null,
+      "f10Time": null,
+      "durationMin": 52.7,
+      "pace": "未知",
+      "stance": "来回拉锯",
+      "picks": {
+        "Team Yandex": [
+          "Hoodwink",
+          "Centaur Warrunner",
+          "Undying",
+          "Lina",
+          "Terrorblade"
+        ],
+        "TEAM VISION": [
+          "Lone Druid",
+          "Techies",
+          "Keeper of the Light",
+          "Slardar",
+          "Pangolier"
+        ]
+      },
+      "mid": {
+        "Team Yandex": "Lina",
+        "TEAM VISION": "Pangolier"
+      },
+      "blurb": "没有队伍先堆到 10 杀"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "TEAM VISION",
     "teamB": "Team Yandex",
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.591,
-      "pA": 0.591,
-      "pB": 0.409,
-      "breakEven": 1.69,
+      "p": 0.647,
+      "pA": 0.647,
+      "pB": 0.353,
+      "breakEven": 1.55,
       "market": {
         "outcomes": [
           "TEAM VISION",
           "Team Yandex"
         ],
         "prices": [
-          0.955,
-          0.045
+          0.675,
+          0.325
         ]
       },
-      "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
+      "why": "本届胜率 TEAM VISION 71% / Team Yandex 60%；先到10杀 58% / 50%；H2H 2.35 局；TEAM VISION 中单爱拿 Ember Spirit"
     },
     "f10": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.578,
-      "pA": 0.578,
-      "pB": 0.422,
-      "breakEven": 1.73,
+      "p": 0.568,
+      "pA": 0.568,
+      "pB": 0.432,
+      "breakEven": 1.76,
       "market": null,
       "why": ""
     }
@@ -43,21 +113,21 @@
   "seriesLean": {
     "team": "TEAM VISION",
     "tag": "VSN",
-    "p": 0.625,
-    "pA": 0.625,
-    "pB": 0.375,
-    "breakEven": 1.6,
+    "p": 0.88,
+    "pA": 0.88,
+    "pB": 0.12,
+    "breakEven": 1.14,
     "market": {
       "outcomes": [
         "TEAM VISION",
         "Team Yandex"
       ],
       "prices": [
-        0.855,
-        0.145
+        0.905,
+        0.095
       ]
     },
-    "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
+    "why": "本届胜率 TEAM VISION 71% / Team Yandex 60%；先到10杀 58% / 50%；H2H 2.35 局；TEAM VISION 中单爱拿 Ember Spirit"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Team Yandex",
     "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "1-0",
     "winner": null,
     "polySlug": "dota2-vsn2-ty-2026-08-22",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.625,
-      "pA": 0.625,
-      "pB": 0.375,
-      "breakEven": 1.6,
+      "p": 0.88,
+      "pA": 0.88,
+      "pB": 0.12,
+      "breakEven": 1.14,
       "market": {
         "outcomes": [
           "TEAM VISION",
           "Team Yandex"
         ],
         "prices": [
-          0.855,
-          0.145
+          0.905,
+          0.095
         ]
       },
-      "why": "本届胜率 TEAM VISION 70% / Team Yandex 61%；先到10杀 60% / 52%；H2H 1.35 局；TEAM VISION 中单爱拿 Ember Spirit"
+      "why": "本届胜率 TEAM VISION 71% / Team Yandex 60%；先到10杀 58% / 50%；H2H 2.35 局；TEAM VISION 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
@@ -105,11 +175,11 @@
     "teamB": "Team Yandex",
     "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Yandex",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "1-0",
     "winner": null,
     "polySlug": "dota2-vsn2-ty-2026-08-22",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -145,5 +215,7 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8958842370
+  ]
 }

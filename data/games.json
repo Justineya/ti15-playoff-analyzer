@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-22 17:43 CST",
-  "n": 107,
+  "asOf": "2026-08-22 17:59 CST",
+  "n": 108,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -32856,6 +32856,300 @@
         "mid_support": "天辉中单 gpk~/Slark 参与 8 次（击杀5+助攻3），辅Save-/Keeper of the Light 参与 5 次，中辅合计18 · 中辅驱动；夜魇中单 lorenof/Ember Spirit 参与 0 次（击杀0+助攻0），辅OmaR/Ringmaster 参与 1 次，中辅合计1。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8958734008",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8958842370,
+      "series_id": 1132678,
+      "start_time": 1787388429,
+      "duration": 3163,
+      "parsed": false,
+      "radiant": "Team Yandex",
+      "dire": "TEAM VISION",
+      "radiant_team_id": 9823272,
+      "dire_team_id": 9572001,
+      "winner": "TEAM VISION",
+      "radiant_win": false,
+      "score": [
+        12,
+        35
+      ],
+      "pace": "未知",
+      "length": "超长",
+      "stance": "来回拉锯",
+      "f10k": null,
+      "f10k_mid_share": 0,
+      "first_tower": null,
+      "gold": {
+        "m5": null,
+        "m10": null,
+        "m15": null,
+        "m20": null
+      },
+      "kills_8min": 0,
+      "kills_15min": 0,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 5,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 6,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 11,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 19,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 21,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 12,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 15,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 16,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 23,
+              "hero": "Terrorblade",
+              "hero_id": 109
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 12,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 1,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 4,
+              "hero": "Enigma",
+              "hero_id": 33
+            },
+            {
+              "order": 9,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 10,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 18,
+              "hero": "Windranger",
+              "hero_id": 21
+            },
+            {
+              "order": 20,
+              "hero": "Slark",
+              "hero_id": 93
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 13,
+              "hero": "Techies",
+              "hero_id": 105
+            },
+            {
+              "order": 14,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 17,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 22,
+              "hero": "Pangolier",
+              "hero_id": 120
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 1,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 13,
+              "hero": "Techies",
+              "hero_id": 105
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Lina",
+            "hero_id": 25,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 3,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "Saksa",
+            "hero": "Hoodwink",
+            "kills": 4,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "Maladych",
+            "hero": "Undying",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Pangolier",
+            "hero_id": 120,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 11,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "9Class",
+            "hero": "Keeper of the Light",
+            "kills": 7,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "Dukalis",
+            "hero": "Techies",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Bounty Hunter、Treant Protector；前两手Hoodwink、Centaur Warrunner；中单Lina第4手拿",
+          "dire": "一阶段禁Io、Winter Wyvern；前两手Lone Druid、Techies；中单Pangolier第5手拿"
+        },
+        "pace": "未知节奏 / 超长局（52分43秒）；先到10杀出现在 ?分",
+        "stance": "来回拉锯",
+        "f10k": "没有队伍先堆到 10 杀",
+        "mid_support": "天辉中单 CHIRA_JUNIOR/Lina 参与 0 次（击杀0+助攻0），辅Saksa/Hoodwink 参与 0 次，中辅合计0；夜魇中单 No[o]ne-/Pangolier 参与 0 次（击杀0+助攻0），辅9Class/Keeper of the Light 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8958842370",
       "source": "ti15",
       "patch": "7.41e"
     }

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T09:43Z",
+  "asOf": "2026-08-22T09:59Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.484537005,
+      "volume": 11209047.484537,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723975994,
+      "volume": 9505559.72397601,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 5742635.421240002,
+      "volume": 5742635.421240005,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 3224030.9738529976,
+      "volume": 3704809.522218997,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -3934,12 +3934,45 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.955",
-            "0.045"
+            "0.9995",
+            "0.0005"
           ]
         },
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 2 Winner",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Yandex"
+          ],
+          "prices": [
+            "0.675",
+            "0.325"
+          ]
+        },
+        {
+          "question": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Yandex"
+          ],
+          "prices": [
+            "0.905",
+            "0.095"
+          ]
+        },
+        {
+          "question": "Games Total: O/U 2.5",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.345",
+            "0.655"
+          ]
+        },
+        {
+          "question": "Game Handicap: VSN (-1.5) vs Team Yandex (+1.5)",
           "outcomes": [
             "TEAM VISION",
             "Team Yandex"
@@ -3950,47 +3983,14 @@
           ]
         },
         {
-          "question": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-          "outcomes": [
-            "TEAM VISION",
-            "Team Yandex"
-          ],
-          "prices": [
-            "0.855",
-            "0.145"
-          ]
-        },
-        {
-          "question": "Games Total: O/U 2.5",
-          "outcomes": [
-            "Over",
-            "Under"
-          ],
-          "prices": [
-            "0.35",
-            "0.65"
-          ]
-        },
-        {
-          "question": "Game Handicap: VSN (-1.5) vs Team Yandex (+1.5)",
-          "outcomes": [
-            "TEAM VISION",
-            "Team Yandex"
-          ],
-          "prices": [
-            "0.805",
-            "0.195"
-          ]
-        },
-        {
           "question": "First Blood in Game 1?",
           "outcomes": [
             "TEAM VISION",
             "Team Yandex"
           ],
           "prices": [
-            "0.9495",
-            "0.0505"
+            "0.9945",
+            "0.0055"
           ]
         },
         {
@@ -4000,8 +4000,8 @@
             "Under"
           ],
           "prices": [
-            "0.255",
-            "0.745"
+            "0.25",
+            "0.75"
           ]
         },
         {
@@ -4088,8 +4088,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4099,8 +4099,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4220,8 +4220,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4231,8 +4231,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -4242,8 +4242,8 @@
             "TEAM VISION"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.005",
+            "0.995"
           ]
         },
         {
@@ -4253,16 +4253,24 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.9945",
+            "0.0055"
           ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": []
         }
       ]
     },
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 26891.459501,
+      "volume": 116820.73393099998,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4282,8 +4290,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.415",
-            "0.585"
+            "0.425",
+            "0.575"
           ]
         },
         {
@@ -4326,8 +4334,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.49",
+            "0.51"
           ]
         },
         {
@@ -4348,8 +4356,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.49",
+            "0.51"
           ]
         },
         {
@@ -4359,8 +4367,8 @@
             "Under"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.515",
+            "0.485"
           ]
         },
         {
@@ -4370,8 +4378,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4381,8 +4389,8 @@
             "Under"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.49",
+            "0.51"
           ]
         },
         {
