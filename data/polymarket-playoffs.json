@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T21:49Z",
+  "asOf": "2026-08-22T22:02Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11840828.804969998,
+      "volume": 11840828.80496999,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 6679608.864294998,
+      "volume": 6679696.584294998,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4709,7 +4709,7 @@
     {
       "slug": "dota2-ty-ts8-2026-08-22",
       "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 399471.7317319999,
+      "volume": 416601.9010979998,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
@@ -4806,8 +4806,8 @@
             "No"
           ],
           "prices": [
-            "0.135",
-            "0.865"
+            "0.075",
+            "0.925"
           ]
         },
         {
@@ -4861,8 +4861,8 @@
             "No"
           ],
           "prices": [
-            "0.135",
-            "0.865"
+            "0.075",
+            "0.925"
           ]
         },
         {
@@ -4872,8 +4872,8 @@
             "No"
           ],
           "prices": [
-            "0.3",
-            "0.7"
+            "0.305",
+            "0.695"
           ]
         },
         {
@@ -4949,8 +4949,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4971,8 +4971,8 @@
             "Under"
           ],
           "prices": [
-            "0.485",
-            "0.515"
+            "0.48",
+            "0.52"
           ]
         }
       ]
