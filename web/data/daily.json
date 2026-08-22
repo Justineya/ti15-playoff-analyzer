@@ -1,66 +1,170 @@
 {
-  "asOf": "2026-08-22 11:06 CST",
+  "asOf": "2026-08-22 12:58 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 Liquid vs Spirit，看好 Spirit（系列 58%）。第1局看好 Spirit（55%）。",
-  "narrative": "下一把 Liquid vs Spirit，看好 Spirit（系列 58%）。第1局看好 Spirit（55%）。本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
-    "game": 1,
-    "teamA": "Team Liquid",
-    "teamB": "Team Spirit",
-    "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.553,
-      "pA": 0.447,
-      "pB": 0.553,
-      "breakEven": 1.81,
-      "market": {
-        "outcomes": [
-          "Team Liquid",
-          "Team Spirit"
+  "kind": "next-map",
+  "headline": "第2局 Spirit 赢了，先到10杀 Spirit，43.4分钟。Liquid 0-2 出局，下一场第1局 BB vs NGX 重算后看好 NGX（51%）。",
+  "narrative": "第1局 Spirit 赢，先到10杀 Spirit（24分33秒，当时 8-10），慢节奏 49.6 分钟，发育对线。中单 Liquid Invoker / Spirit Pangolier。阵容 Liquid Shadow Fiend、Invoker、Mirana、Dark Willow、Timbersaw / Spirit Winter Wyvern、Centaur、Pangolier、Nature's Prophet、Shadow Demon。第2局 Spirit 再横扫，先到10杀 Spirit（14分50秒，当时 10-3），正常节奏 43.4 分钟，来回拉锯。Larl 改拿 Lina 第2手，Nisha 第4手才锁 Puck。阵容 Spirit Centaur、Lina、Clockwerk、Hoodwink、Terrorblade / Liquid Windranger、Tiny、Mirana、Puck、Lycan。因为系列已经 0-2 结束，不再算 Liquid 翻盘，整棵模型把 Spirit 锁进今晚败者组半决赛。所以下一场改写成 BB vs NGX 第1局：重算后局胜率 NGX 51% / BB 49%，门槛 1.95；系列看好 NGX（52%），门槛 1.92。先到10杀看好 BB（60%），没有公开盘。Polymarket 第1局 NGX 0.425 / BB 0.575，系列 NGX 0.375 / BB 0.625。本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina——上一把 Spirit 刚用 Lina 中单 10 杀打穿 Liquid，这英雄本届中路样本又加一局。这不是投注建议。",
+  "previousMap": {
+    "game": 2,
+    "matchId": 8958538533,
+    "winner": "Team Spirit",
+    "score": [
+      31,
+      18
+    ],
+    "f10": "Team Spirit",
+    "f10Time": 890,
+    "durationMin": 43.4,
+    "pace": "正常",
+    "stance": "来回拉锯",
+    "picks": {
+      "Team Spirit": [
+        "Centaur Warrunner",
+        "Lina",
+        "Clockwerk",
+        "Hoodwink",
+        "Terrorblade"
+      ],
+      "Team Liquid": [
+        "Windranger",
+        "Tiny",
+        "Mirana",
+        "Puck",
+        "Lycan"
+      ]
+    },
+    "mid": {
+      "Team Spirit": "Lina",
+      "Team Liquid": "Puck"
+    },
+    "blurb": "Team Spirit先到 10 杀（当时 10-3，14分50秒）。这 10 次击杀里，中单 Larl/Lina 参与 4 次（击杀 2 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 3 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8958478716,
+      "winner": "Team Spirit",
+      "score": [
+        20,
+        33
+      ],
+      "f10": "Team Spirit",
+      "f10Time": 1473,
+      "durationMin": 49.6,
+      "pace": "慢",
+      "stance": "发育对线",
+      "picks": {
+        "Team Liquid": [
+          "Shadow Fiend",
+          "Invoker",
+          "Mirana",
+          "Dark Willow",
+          "Timbersaw"
         ],
-        "prices": [
-          0.0,
-          1.0
+        "Team Spirit": [
+          "Winter Wyvern",
+          "Centaur Warrunner",
+          "Pangolier",
+          "Nature's Prophet",
+          "Shadow Demon"
         ]
       },
-      "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
+      "mid": {
+        "Team Liquid": "Invoker",
+        "Team Spirit": "Pangolier"
+      },
+      "blurb": "Team Spirit先到 10 杀（当时 8-10，24分33秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 8 杀。"
+    },
+    {
+      "game": 2,
+      "matchId": 8958538533,
+      "winner": "Team Spirit",
+      "score": [
+        31,
+        18
+      ],
+      "f10": "Team Spirit",
+      "f10Time": 890,
+      "durationMin": 43.4,
+      "pace": "正常",
+      "stance": "来回拉锯",
+      "picks": {
+        "Team Spirit": [
+          "Centaur Warrunner",
+          "Lina",
+          "Clockwerk",
+          "Hoodwink",
+          "Terrorblade"
+        ],
+        "Team Liquid": [
+          "Windranger",
+          "Tiny",
+          "Mirana",
+          "Puck",
+          "Lycan"
+        ]
+      },
+      "mid": {
+        "Team Spirit": "Lina",
+        "Team Liquid": "Puck"
+      },
+      "blurb": "Team Spirit先到 10 杀（当时 10-3，14分50秒）。这 10 次击杀里，中单 Larl/Lina 参与 4 次（击杀 2 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 3 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 1,
+    "teamA": "BoomBoys",
+    "teamB": "Nigma Galaxy",
+    "lean": {
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.512,
+      "pA": 0.488,
+      "pB": 0.512,
+      "breakEven": 1.95,
+      "market": {
+        "outcomes": [
+          "BoomBoys",
+          "Nigma Galaxy"
+        ],
+        "prices": [
+          0.575,
+          0.425
+        ]
+      },
+      "why": "本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina"
     },
     "f10": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.501,
-      "pA": 0.499,
-      "pB": 0.501,
-      "breakEven": 2.0,
+      "team": "BoomBoys",
+      "tag": "BB",
+      "p": 0.595,
+      "pA": 0.595,
+      "pB": 0.405,
+      "breakEven": 1.68,
       "market": null,
-      "why": ""
+      "why": "先到10杀没有公开盘。"
     }
   },
   "seriesLean": {
-    "team": "Team Spirit",
-    "tag": "Spirit",
-    "p": 0.584,
-    "pA": 0.416,
-    "pB": 0.584,
-    "breakEven": 1.71,
+    "team": "Nigma Galaxy",
+    "tag": "NGX",
+    "p": 0.521,
+    "pA": 0.479,
+    "pB": 0.521,
+    "breakEven": 1.92,
     "market": {
       "outcomes": [
-        "Team Liquid",
-        "Team Spirit"
+        "BoomBoys",
+        "Nigma Galaxy"
       ],
       "prices": [
-        0.0,
-        1.0
+        0.625,
+        0.375
       ]
     },
-    "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
+    "why": "本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina"
   },
-  "previous": null,
-  "next": {
+  "previous": {
     "id": "lbqf2",
     "round": "败者组四分之一决赛",
     "day": "2026-08-22",
@@ -70,47 +174,83 @@
     "teamB": "Team Spirit",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Spirit",
+    "status": "completed",
+    "score": "0-2",
+    "winner": "Team Spirit",
+    "polySlug": "dota2-liquid-ts8-2026-08-14",
+    "mapsPlayed": 2
+  },
+  "next": {
+    "id": "lbqf1",
+    "round": "败者组四分之一决赛",
+    "day": "2026-08-22",
+    "when": "2026-08-22 13:00",
+    "format": "Bo3",
+    "teamA": "BoomBoys",
+    "teamB": "Nigma Galaxy",
+    "teamALabel": "BoomBoys",
+    "teamBLabel": "Nigma Galaxy",
     "status": "scheduled",
     "score": null,
     "winner": null,
-    "polySlug": "dota2-liquid-ts8-2026-08-14",
+    "polySlug": "dota2-ngx-boombo-2026-08-22",
     "mapsPlayed": 0,
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.584,
-      "pA": 0.416,
-      "pB": 0.584,
-      "breakEven": 1.71,
+      "team": "Nigma Galaxy",
+      "tag": "NGX",
+      "p": 0.521,
+      "pA": 0.479,
+      "pB": 0.521,
+      "breakEven": 1.92,
       "market": {
         "outcomes": [
-          "Team Liquid",
-          "Team Spirit"
+          "BoomBoys",
+          "Nigma Galaxy"
         ],
         "prices": [
-          0.0,
-          1.0
+          0.625,
+          0.375
         ]
       },
-      "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 BoomBoys 56% / Nigma Galaxy 64%；先到10杀 53% / 43%；H2H 0.9 局；BoomBoys 中单爱拿 Lina"
     }
   },
   "focus": {
-    "id": "lbqf2",
+    "id": "lbqf1",
     "round": "败者组四分之一决赛",
     "day": "2026-08-22",
-    "when": "2026-08-22 10:00",
+    "when": "2026-08-22 13:00",
     "format": "Bo3",
-    "teamA": "Team Liquid",
-    "teamB": "Team Spirit",
-    "teamALabel": "Team Liquid",
-    "teamBLabel": "Team Spirit",
+    "teamA": "BoomBoys",
+    "teamB": "Nigma Galaxy",
+    "teamALabel": "BoomBoys",
+    "teamBLabel": "Nigma Galaxy",
     "status": "scheduled",
     "score": null,
     "winner": null,
-    "polySlug": "dota2-liquid-ts8-2026-08-14",
+    "polySlug": "dota2-ngx-boombo-2026-08-22",
     "mapsPlayed": 0
   },
-  "todayResults": [],
-  "newMapIds": []
+  "todayResults": [
+    {
+      "id": "lbqf2",
+      "round": "败者组四分之一决赛",
+      "day": "2026-08-22",
+      "when": "2026-08-22 10:00",
+      "format": "Bo3",
+      "teamA": "Team Liquid",
+      "teamB": "Team Spirit",
+      "teamALabel": "Team Liquid",
+      "teamBLabel": "Team Spirit",
+      "status": "completed",
+      "score": "0-2",
+      "winner": "Team Spirit",
+      "polySlug": "dota2-liquid-ts8-2026-08-14",
+      "mapsPlayed": 2
+    }
+  ],
+  "newMapIds": [
+    8958478716,
+    8958538533
+  ]
 }
