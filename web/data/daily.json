@@ -1,41 +1,111 @@
 {
-  "asOf": "2026-08-22 11:06 CST",
+  "asOf": "2026-08-22 11:30 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 Liquid vs Spirit，看好 Spirit（系列 58%）。第1局看好 Spirit（55%）。",
-  "narrative": "下一把 Liquid vs Spirit，看好 Spirit（系列 58%）。第1局看好 Spirit（55%）。本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 Spirit 赢了：先到10杀、49.6分钟慢节奏。第2局重算后看好 Spirit（60%，门槛 1.67）。系列 Spirit 1-0，系列胜率 83%。",
+  "narrative": "败者组四分之一决赛 Liquid vs Spirit。第1局（OpenDota 8958478716）Spirit 赢，人头 20-33，时长 49分34秒，发育对线、慢节奏。Spirit 先到 10 杀（24分33秒，当时 8-10），补上第10个的是 Yatoro/先知。中单是 Nisha/卡尔对 Larl/石鳞剑士：10分钟经验 3448 对 5016。Liquid 拿了影魔、卡尔、米拉娜、邪影芳灵、伐木机；Spirit 冰女、半人马、石鳞、先知、暗影恶魔。液体百科这局 maps winner=1、时长 49m34s，1号队英雄就是 Spirit 那套，局分记 1-0。因为上一局被拖进近50分钟发育局、卡尔对线没打过石鳞，而且 Liquid 一阶段自己禁了本届中单爱拿的大地之灵，第2局不能再套开赛第1局预览。H2H 计入这局后变成 5.35 局，本届胜率 Liquid 54% / Spirit 59%，先到10杀 56% / 59%，整棵模型已重算。第2局模型看好 Spirit 60%（Liquid 40%，门槛 1.67）；先到10杀 Spirit 52%（门槛 1.94，没有公开盘）。Polymarket 第2局价 Liquid 1.00 / Spirit 0.00，系列价 Liquid 0.00 / Spirit 1.00，两端都是 0/1，不当有效盘。系列还没结束：当前局分是 Spirit 领先 1-0（对 Liquid 为 0-1）。用重算后的单局胜率 40.7% / 59.3% 从 0-1 往后推，系列看好 Spirit 83%（门槛 1.20）。这不是投注建议。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8958478716,
+    "winner": "Team Spirit",
+    "score": [
+      20,
+      33
+    ],
+    "f10": "Team Spirit",
+    "f10Time": 1473,
+    "durationMin": 49.6,
+    "pace": "慢",
+    "stance": "发育对线",
+    "picks": {
+      "Team Liquid": [
+        "Shadow Fiend",
+        "Invoker",
+        "Mirana",
+        "Dark Willow",
+        "Timbersaw"
+      ],
+      "Team Spirit": [
+        "Winter Wyvern",
+        "Centaur Warrunner",
+        "Pangolier",
+        "Nature's Prophet",
+        "Shadow Demon"
+      ]
+    },
+    "mid": {
+      "Team Liquid": "Invoker",
+      "Team Spirit": "Pangolier"
+    },
+    "blurb": "Team Spirit先到 10 杀（当时 8-10，24分33秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 8 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8958478716,
+      "winner": "Team Spirit",
+      "score": [
+        20,
+        33
+      ],
+      "f10": "Team Spirit",
+      "f10Time": 1473,
+      "durationMin": 49.6,
+      "pace": "慢",
+      "stance": "发育对线",
+      "picks": {
+        "Team Liquid": [
+          "Shadow Fiend",
+          "Invoker",
+          "Mirana",
+          "Dark Willow",
+          "Timbersaw"
+        ],
+        "Team Spirit": [
+          "Winter Wyvern",
+          "Centaur Warrunner",
+          "Pangolier",
+          "Nature's Prophet",
+          "Shadow Demon"
+        ]
+      },
+      "mid": {
+        "Team Liquid": "Invoker",
+        "Team Spirit": "Pangolier"
+      },
+      "blurb": "Team Spirit先到 10 杀（当时 8-10，24分33秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 14 次 · 中辅驱动。对手当时 8 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "Team Liquid",
     "teamB": "Team Spirit",
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.553,
-      "pA": 0.447,
-      "pB": 0.553,
-      "breakEven": 1.81,
+      "p": 0.6,
+      "pA": 0.4,
+      "pB": 0.6,
+      "breakEven": 1.67,
       "market": {
         "outcomes": [
           "Team Liquid",
           "Team Spirit"
         ],
         "prices": [
-          0.0,
-          1.0
+          1.0,
+          0.0
         ]
       },
-      "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 54% / Team Spirit 59%；先到10杀 56% / 59%；H2H 5.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
     },
     "f10": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.501,
-      "pA": 0.499,
-      "pB": 0.501,
-      "breakEven": 2.0,
+      "p": 0.516,
+      "pA": 0.484,
+      "pB": 0.516,
+      "breakEven": 1.94,
       "market": null,
       "why": ""
     }
@@ -43,10 +113,10 @@
   "seriesLean": {
     "team": "Team Spirit",
     "tag": "Spirit",
-    "p": 0.584,
-    "pA": 0.416,
-    "pB": 0.584,
-    "breakEven": 1.71,
+    "p": 0.834,
+    "pA": 0.166,
+    "pB": 0.834,
+    "breakEven": 1.2,
     "market": {
       "outcomes": [
         "Team Liquid",
@@ -57,7 +127,7 @@
         1.0
       ]
     },
-    "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
+    "why": "本届胜率 Team Liquid 54% / Team Spirit 59%；先到10杀 56% / 59%；H2H 5.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
   },
   "previous": null,
   "next": {
@@ -70,18 +140,18 @@
     "teamB": "Team Spirit",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Spirit",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-liquid-ts8-2026-08-14",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.584,
-      "pA": 0.416,
-      "pB": 0.584,
-      "breakEven": 1.71,
+      "p": 0.834,
+      "pA": 0.166,
+      "pB": 0.834,
+      "breakEven": 1.2,
       "market": {
         "outcomes": [
           "Team Liquid",
@@ -92,7 +162,7 @@
           1.0
         ]
       },
-      "why": "本届胜率 Team Liquid 55% / Team Spirit 57%；先到10杀 57% / 57%；H2H 4.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 54% / Team Spirit 59%；先到10杀 56% / 59%；H2H 5.3500000000000005 局；Team Liquid 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
@@ -105,12 +175,14 @@
     "teamB": "Team Spirit",
     "teamALabel": "Team Liquid",
     "teamBLabel": "Team Spirit",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-liquid-ts8-2026-08-14",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    8958478716
+  ]
 }
