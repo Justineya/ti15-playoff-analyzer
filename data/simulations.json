@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 13:19 CST",
+  "asOf": "2026-08-22 13:48 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -10142,8 +10142,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.745,
-            0.255
+            0.755,
+            0.245
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs"
         },
@@ -10176,12 +10176,12 @@
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.624,
-            "marketP": 0.745,
-            "odds": 1.34,
-            "roi": -0.162,
-            "ev": -0.121,
+            "marketP": 0.755,
+            "odds": 1.32,
+            "roi": -0.174,
+            "ev": -0.131,
             "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.745，模型 0.624，期望回报率 -16.2%"
+            "note": "买 YES 成本 0.755，模型 0.624，期望回报率 -17.4%"
           },
           {
             "market": "第一局",
