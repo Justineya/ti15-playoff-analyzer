@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T06:05Z",
+  "asOf": "2026-08-22T07:26Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -1954,7 +1954,7 @@
     {
       "slug": "dota2-liquid-flc-2026-08-21",
       "title": "Dota 2: Team Liquid vs Team Falcons (BO3) - The International Playoffs",
-      "volume": 11209047.484536996,
+      "volume": 11209047.484537018,
       "markets": [
         {
           "question": "Dota 2: Team Liquid vs Team Falcons - Game 1 Winner",
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723976007,
+      "volume": 9505559.723976009,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 1558343.7227809995,
+      "volume": 3464982.007095999,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -3139,8 +3139,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3150,8 +3150,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.385",
-            "0.615"
+            "1",
+            "0"
           ]
         },
         {
@@ -3161,8 +3161,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.155",
-            "0.845"
+            "0.425",
+            "0.575"
           ]
         },
         {
@@ -3172,8 +3172,8 @@
             "Under"
           ],
           "prices": [
-            "0.38",
-            "0.62"
+            "0.9995",
+            "0.0005"
           ]
         },
         {
@@ -3183,8 +3183,8 @@
             "Nigma Galaxy"
           ],
           "prices": [
-            "0.625",
-            "0.375"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
@@ -3194,8 +3194,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.999",
-            "0.001"
+            "1",
+            "0"
           ]
         },
         {
@@ -3205,8 +3205,8 @@
             "Under"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3216,8 +3216,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.745",
-            "0.255"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
@@ -3227,8 +3227,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -3249,8 +3249,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.505",
+            "0.495"
           ]
         },
         {
@@ -3260,8 +3260,8 @@
             "No"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3271,8 +3271,8 @@
             "No"
           ],
           "prices": [
-            "0.995",
-            "0.005"
+            "1",
+            "0"
           ]
         },
         {
@@ -3282,8 +3282,8 @@
             "No"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3293,12 +3293,34 @@
             "No"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "1",
+            "0"
           ]
         },
         {
           "question": "Game 1: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Beat Roshan?",
           "outcomes": [
             "Yes",
             "No"
@@ -3309,36 +3331,14 @@
           ]
         },
         {
-          "question": "Game 2: Ends in Daytime?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.5",
-            "0.5"
-          ]
-        },
-        {
-          "question": "Game 2: Both Teams Beat Roshan?",
-          "outcomes": [
-            "Yes",
-            "No"
-          ],
-          "prices": [
-            "0.335",
-            "0.665"
-          ]
-        },
-        {
           "question": "Game 2: Both Teams Destroy Barracks?",
           "outcomes": [
             "Yes",
             "No"
           ],
           "prices": [
-            "0.31",
-            "0.69"
+            "0",
+            "1"
           ]
         },
         {
@@ -3348,8 +3348,8 @@
             "No"
           ],
           "prices": [
-            "0.29",
-            "0.71"
+            "0.005",
+            "0.995"
           ]
         },
         {
@@ -3359,8 +3359,8 @@
             "No"
           ],
           "prices": [
-            "0.225",
-            "0.775"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
@@ -3425,8 +3425,8 @@
             "Under"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3436,8 +3436,8 @@
             "Under"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3447,8 +3447,8 @@
             "Under"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3458,8 +3458,8 @@
             "Under"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -3469,8 +3469,63 @@
             "Under"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 45.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 65.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 40.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
           ]
         }
       ]
@@ -3859,7 +3914,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 315571.358706,
+      "volume": 497724.6013550002,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -3890,8 +3945,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.755",
-            "0.245"
+            "0.735",
+            "0.265"
           ]
         },
         {
@@ -3912,8 +3967,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.465",
-            "0.535"
+            "0.455",
+            "0.545"
           ]
         },
         {
@@ -3923,8 +3978,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.465",
-            "0.535"
+            "0.3",
+            "0.7"
           ]
         },
         {
@@ -3934,34 +3989,12 @@
             "Under"
           ],
           "prices": [
-            "0.52",
-            "0.48"
+            "0.54",
+            "0.46"
           ]
         },
         {
           "question": "First Blood in Game 2?",
-          "outcomes": [
-            "TEAM VISION",
-            "Team Yandex"
-          ],
-          "prices": [
-            "0.505",
-            "0.495"
-          ]
-        },
-        {
-          "question": "Total Kills Over/Under 50.5 in Game 2?",
-          "outcomes": [
-            "Over",
-            "Under"
-          ],
-          "prices": [
-            "0.52",
-            "0.48"
-          ]
-        },
-        {
-          "question": "First Blood in Game 3?",
           "outcomes": [
             "TEAM VISION",
             "Team Yandex"
@@ -3972,14 +4005,36 @@
           ]
         },
         {
+          "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.53",
+            "0.47"
+          ]
+        },
+        {
+          "question": "First Blood in Game 3?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Yandex"
+          ],
+          "prices": [
+            "0.515",
+            "0.485"
+          ]
+        },
+        {
           "question": "Total Kills Over/Under 50.5 in Game 3?",
           "outcomes": [
             "Over",
             "Under"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.52",
+            "0.48"
           ]
         },
         {
@@ -4000,8 +4055,8 @@
             "No"
           ],
           "prices": [
-            "0.275",
-            "0.725"
+            "0.285",
+            "0.715"
           ]
         },
         {
@@ -4022,8 +4077,8 @@
             "No"
           ],
           "prices": [
-            "0.18",
-            "0.82"
+            "0.19",
+            "0.81"
           ]
         },
         {
@@ -4033,8 +4088,8 @@
             "No"
           ],
           "prices": [
-            "0.095",
-            "0.905"
+            "0.075",
+            "0.925"
           ]
         },
         {
@@ -4044,8 +4099,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4055,7 +4110,7 @@
             "No"
           ],
           "prices": [
-            "0.275",
+            "0.28",
             "0.72"
           ]
         },
@@ -4077,8 +4132,8 @@
             "No"
           ],
           "prices": [
-            "0.185",
-            "0.815"
+            "0.19",
+            "0.81"
           ]
         },
         {
@@ -4088,8 +4143,8 @@
             "No"
           ],
           "prices": [
-            "0.055",
-            "0.945"
+            "0.125",
+            "0.875"
           ]
         },
         {
@@ -4099,8 +4154,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4110,8 +4165,8 @@
             "No"
           ],
           "prices": [
-            "0.275",
-            "0.725"
+            "0.28",
+            "0.72"
           ]
         },
         {
@@ -4132,8 +4187,8 @@
             "No"
           ],
           "prices": [
-            "0.21",
-            "0.79"
+            "0.215",
+            "0.785"
           ]
         },
         {
@@ -4143,8 +4198,8 @@
             "No"
           ],
           "prices": [
-            "0.23",
-            "0.77"
+            "0.16",
+            "0.84"
           ]
         }
       ]
