@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23 01:18 CST",
+  "asOf": "2026-08-23 01:42 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -11112,8 +11112,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.9995,
-            0.0005
+            1.0,
+            0.0
           ],
           "question": "Game Handicap: TS (-1.5) vs BoomBoys (+1.5)"
         }
@@ -11155,14 +11155,14 @@
           },
           {
             "market": "让分",
-            "pick": "BoomBoys -1.5",
-            "modelP": 0.169,
-            "marketP": 0.001,
-            "odds": 2000.0,
-            "roi": 337.0,
-            "ev": 0.169,
-            "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.001，模型 0.169，期望回报率 33700.0%"
+            "pick": "Team Spirit +1.5",
+            "modelP": 0.831,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.169,
+            "ev": -0.169,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.831，期望回报率 -16.9%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
