@@ -497,7 +497,7 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-22 22:08 CST",
+  "scheduleAsOf": "2026-08-22 22:36 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
-  "scheduleError": "parsed 3 slots"
+  "scheduleError": "HTTP Error 429: Too Many Requests"
 }

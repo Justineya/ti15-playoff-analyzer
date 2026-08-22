@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 22:08 CST",
+  "asOf": "2026-08-22 22:36 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -11068,8 +11068,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.0005,
-            0.9995
+            0.0,
+            1.0
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner"
         },
@@ -11079,8 +11079,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.405,
-            0.595
+            0.395,
+            0.605
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 2 Winner"
         },
@@ -11090,8 +11090,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.185,
-            0.815
+            0.195,
+            0.805
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs"
         },
@@ -11101,8 +11101,8 @@
             "Under"
           ],
           "prices": [
-            0.405,
-            0.595
+            0.395,
+            0.605
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -11112,8 +11112,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.59,
-            0.41
+            0.595,
+            0.405
           ],
           "question": "Game Handicap: TS (-1.5) vs BoomBoys (+1.5)"
         }
@@ -11124,12 +11124,12 @@
             "market": "系列胜者",
             "pick": "Team Spirit",
             "modelP": 0.633,
-            "marketP": 0.815,
-            "odds": 1.23,
-            "roi": -0.223,
-            "ev": -0.182,
+            "marketP": 0.805,
+            "odds": 1.24,
+            "roi": -0.214,
+            "ev": -0.172,
             "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.815，模型 0.633，期望回报率 -22.3%"
+            "note": "买 YES 成本 0.805，模型 0.633，期望回报率 -21.4%"
           },
           {
             "market": "第一局",
@@ -11146,23 +11146,23 @@
             "market": "总局数 O/U 2.5",
             "pick": "Over 2.5",
             "modelP": 0.484,
-            "marketP": 0.405,
-            "odds": 2.47,
-            "roi": 0.195,
-            "ev": 0.079,
+            "marketP": 0.395,
+            "odds": 2.53,
+            "roi": 0.225,
+            "ev": 0.089,
             "action": "小注买",
-            "note": "买 YES 成本 0.405，模型 0.484，期望回报率 19.5%"
+            "note": "买 YES 成本 0.395，模型 0.484，期望回报率 22.5%"
           },
           {
             "market": "让分",
             "pick": "Team Spirit +1.5",
             "modelP": 0.831,
-            "marketP": 0.59,
-            "odds": 1.69,
-            "roi": 0.408,
-            "ev": 0.241,
+            "marketP": 0.595,
+            "odds": 1.68,
+            "roi": 0.397,
+            "ev": 0.236,
             "action": "小注买",
-            "note": "买 YES 成本 0.59，模型 0.831，期望回报率 40.8%"
+            "note": "买 YES 成本 0.595，模型 0.831，期望回报率 39.7%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -11175,7 +11175,7 @@
             "note": "Polymarket 没有这格"
           }
         ],
-        "plan": "若只按模型 vs Polymarket 差价：总局数 O/U 2.5买Over 2.5（期望回报率 19.5%）；让分买Team Spirit +1.5（期望回报率 40.8%）。单场合计不超过银行资金 3%。"
+        "plan": "若只按模型 vs Polymarket 差价：总局数 O/U 2.5买Over 2.5（期望回报率 22.5%）；让分买Team Spirit +1.5（期望回报率 39.7%）。单场合计不超过银行资金 3%。"
       }
     }
   ],

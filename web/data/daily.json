@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 22:08 CST",
+  "asOf": "2026-08-22 22:36 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
   "headline": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。下一局第2局按上一局重算后看好 Spirit（60%）。现场赔率至少 1.68。",
@@ -93,8 +93,8 @@
           "Team Spirit"
         ],
         "prices": [
-          0.405,
-          0.595
+          0.395,
+          0.605
         ]
       },
       "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
@@ -123,8 +123,8 @@
         "Team Spirit"
       ],
       "prices": [
-        0.185,
-        0.815
+        0.195,
+        0.805
       ]
     },
     "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
@@ -158,8 +158,8 @@
           "Team Spirit"
         ],
         "prices": [
-          0.185,
-          0.815
+          0.195,
+          0.805
         ]
       },
       "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
@@ -231,7 +231,5 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": [
-    8959222564
-  ]
+  "newMapIds": []
 }
