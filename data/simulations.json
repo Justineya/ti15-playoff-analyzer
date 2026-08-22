@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23 06:29 CST",
+  "asOf": "2026-08-23 06:50 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -11079,8 +11079,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.0005,
-            0.9995
+            0.0,
+            1.0
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 2 Winner"
         },
