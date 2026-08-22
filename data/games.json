@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-22 14:05 CST",
-  "n": 105,
+  "asOf": "2026-08-22 15:03 CST",
+  "n": 106,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -32242,6 +32242,300 @@
         "mid_support": "天辉中单 gpk~/Shadow Fiend 参与 4 次（击杀1+助攻3），辅Kataomi`/Winter Wyvern 参与 3 次，中辅合计7；夜魇中单 OmaR/Mirana 参与 2 次（击杀2+助攻0），辅GH/Io 参与 2 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8958607830",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8958667855,
+      "series_id": 1132647,
+      "start_time": 1787379080,
+      "duration": 2171,
+      "parsed": false,
+      "radiant": "Nigma Galaxy",
+      "dire": "BoomBoys",
+      "radiant_team_id": 10136357,
+      "dire_team_id": 8255888,
+      "winner": "Nigma Galaxy",
+      "radiant_win": true,
+      "score": [
+        26,
+        6
+      ],
+      "pace": "未知",
+      "length": "偏长",
+      "stance": "来回拉锯",
+      "f10k": null,
+      "f10k_mid_share": 0,
+      "first_tower": null,
+      "gold": {
+        "m5": null,
+        "m10": null,
+        "m15": null,
+        "m20": null
+      },
+      "kills_8min": 0,
+      "kills_15min": 0,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 5,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 6,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 11,
+              "hero": "Beastmaster",
+              "hero_id": 38
+            },
+            {
+              "order": 19,
+              "hero": "Kez",
+              "hero_id": 145
+            },
+            {
+              "order": 21,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 12,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 15,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 16,
+              "hero": "Shadow Shaman",
+              "hero_id": 27
+            },
+            {
+              "order": 23,
+              "hero": "Slardar",
+              "hero_id": 28
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Largo",
+              "hero_id": 155
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 12,
+              "hero": "Mirana",
+              "hero_id": 9
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 1,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 4,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 9,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 10,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 18,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 20,
+              "hero": "Enigma",
+              "hero_id": 33
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 13,
+              "hero": "Puck",
+              "hero_id": 13
+            },
+            {
+              "order": 14,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 17,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 22,
+              "hero": "Tiny",
+              "hero_id": 19
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 1,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 13,
+              "hero": "Puck",
+              "hero_id": 13
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "lorenof",
+            "hero": "Ember Spirit",
+            "hero_id": 106,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 8,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "GH",
+            "hero": "Mirana",
+            "kills": 1,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "OmaR",
+            "hero": "Shadow Shaman",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "gpk~",
+            "hero": "Puck",
+            "hero_id": 13,
+            "gold_t10": null,
+            "xp_t10": null,
+            "kills": 3,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "Save-",
+            "hero": "Keeper of the Light",
+            "kills": 2,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos5": {
+            "player": "Kataomi`",
+            "hero": "Undying",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 0,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 0,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Largo；前两手Ember Spirit、Mirana；中单Ember Spirit第1手拿",
+          "dire": "一阶段禁Earth Spirit、Bounty Hunter；前两手Keeper of the Light、Puck；中单Puck第2手拿"
+        },
+        "pace": "未知节奏 / 偏长局（36分11秒）；先到10杀出现在 ?分",
+        "stance": "来回拉锯",
+        "f10k": "没有队伍先堆到 10 杀",
+        "mid_support": "天辉中单 lorenof/Ember Spirit 参与 0 次（击杀0+助攻0），辅GH/Mirana 参与 0 次，中辅合计0；夜魇中单 gpk~/Puck 参与 0 次（击杀0+助攻0），辅Save-/Keeper of the Light 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8958667855",
       "source": "ti15",
       "patch": "7.41e"
     }
