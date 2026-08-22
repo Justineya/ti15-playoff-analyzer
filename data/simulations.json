@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 18:01 CST",
+  "asOf": "2026-08-22 18:30 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -10120,8 +10120,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.9995,
-            0.0005
+            1.0,
+            0.0
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner"
         },
@@ -10131,8 +10131,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.675,
-            0.325
+            0.575,
+            0.425
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 2 Winner"
         },
@@ -10142,8 +10142,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.905,
-            0.095
+            0.845,
+            0.155
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs"
         },
@@ -10153,8 +10153,8 @@
             "Under"
           ],
           "prices": [
-            0.345,
-            0.655
+            0.42,
+            0.58
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -10164,8 +10164,8 @@
             "TEAM VISION"
           ],
           "prices": [
-            0.005,
-            0.995
+            0.0005,
+            0.9995
           ],
           "question": "Game Handicap: TY (-1.5) vs TEAM VISION (+1.5)"
         }
@@ -10176,12 +10176,12 @@
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.723,
-            "marketP": 0.905,
-            "odds": 1.1,
-            "roi": -0.201,
-            "ev": -0.182,
+            "marketP": 0.845,
+            "odds": 1.18,
+            "roi": -0.144,
+            "ev": -0.122,
             "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.905，模型 0.723，期望回报率 -20.1%"
+            "note": "买 YES 成本 0.845，模型 0.723，期望回报率 -14.4%"
           },
           {
             "market": "第一局",
@@ -10198,23 +10198,23 @@
             "market": "总局数 O/U 2.5",
             "pick": "Over 2.5",
             "modelP": 0.453,
-            "marketP": 0.345,
-            "odds": 2.9,
-            "roi": 0.313,
-            "ev": 0.108,
-            "action": "小注买",
-            "note": "买 YES 成本 0.345，模型 0.453，期望回报率 31.3%"
+            "marketP": 0.42,
+            "odds": 2.38,
+            "roi": 0.079,
+            "ev": 0.033,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.42，模型 0.453，期望回报率 7.9%"
           },
           {
             "market": "让分",
             "pick": "Team Yandex +1.5",
             "modelP": 0.573,
-            "marketP": 0.005,
-            "odds": 200.0,
-            "roi": 113.6,
-            "ev": 0.568,
+            "marketP": 0.001,
+            "odds": 2000.0,
+            "roi": 1145.0,
+            "ev": 0.573,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.005，模型 0.573，期望回报率 11360.0%"
+            "note": "买 YES 成本 0.001，模型 0.573，期望回报率 114500.0%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -10227,7 +10227,7 @@
             "note": "Polymarket 没有这格"
           }
         ],
-        "plan": "若只按模型 vs Polymarket 差价：总局数 O/U 2.5买Over 2.5（期望回报率 31.3%）。单场合计不超过银行资金 3%。"
+        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
       }
     },
     {
@@ -11112,8 +11112,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.34,
-            0.66
+            0.36,
+            0.64
           ],
           "question": "Game Handicap: TS (-1.5) vs BoomBoys (+1.5)"
         }
@@ -11157,12 +11157,12 @@
             "market": "让分",
             "pick": "Team Spirit +1.5",
             "modelP": 0.763,
-            "marketP": 0.34,
-            "odds": 2.94,
-            "roi": 1.244,
-            "ev": 0.423,
+            "marketP": 0.36,
+            "odds": 2.78,
+            "roi": 1.119,
+            "ev": 0.403,
             "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.34，模型 0.763，期望回报率 124.4%"
+            "note": "买 YES 成本 0.36，模型 0.763，期望回报率 111.9%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",

@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-22 16:49 CST",
+  "asOf": "2026-08-22 18:30 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -436,11 +436,16 @@
       "format": "Bo3",
       "teamA": "TEAM VISION",
       "teamB": "Team Yandex",
-      "status": "scheduled",
+      "status": "live",
       "winnerTo": "gf",
       "loserTo": "lbf",
       "polyTitle": "TEAM VISION vs Team Yandex",
-      "polySlug": "dota2-vsn2-ty-2026-08-22"
+      "polySlug": "dota2-vsn2-ty-2026-08-22",
+      "mapsPlayed": 1,
+      "score": "1-0",
+      "matchIds": [
+        8958842370
+      ]
     },
     {
       "id": "lbsf",
@@ -489,7 +494,7 @@
       "status": "awaiting"
     }
   ],
-  "scheduleAsOf": "2026-08-22 18:01 CST",
+  "scheduleAsOf": "2026-08-22 18:30 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
   "scheduleError": "parsed 4 slots"
 }
