@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T15:12Z",
+  "asOf": "2026-08-22T15:36Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723975996,
+      "volume": 9505559.723976009,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 5742635.421240003,
+      "volume": 5742635.421240005,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 5620280.4191970015,
+      "volume": 6332366.504294998,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4645,8 +4645,8 @@
             "Under"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "0.575",
+            "0.425"
           ]
         },
         {
@@ -4656,8 +4656,8 @@
             "Under"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0.0055",
+            "0.9945"
           ]
         },
         {
@@ -4667,8 +4667,8 @@
             "Under"
           ],
           "prices": [
-            "0.995",
-            "0.005"
+            "0.5995",
+            "0.4005"
           ]
         },
         {
@@ -4678,8 +4678,8 @@
             "Under"
           ],
           "prices": [
-            "0.995",
-            "0.005"
+            "0.9945",
+            "0.0055"
           ]
         },
         {
@@ -4702,6 +4702,233 @@
           "prices": [
             "0.5",
             "0.5"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dota2-ty-ts8-2026-08-22",
+      "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
+      "volume": 367.45655899999997,
+      "markets": [
+        {
+          "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
+          "outcomes": [
+            "Team Yandex",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.39",
+            "0.61"
+          ]
+        },
+        {
+          "question": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+          "outcomes": [
+            "Team Yandex",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.335",
+            "0.665"
+          ]
+        },
+        {
+          "question": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
+          "outcomes": [
+            "Team Yandex",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.275",
+            "0.725"
+          ]
+        },
+        {
+          "question": "Games Total: O/U 2.5",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.48",
+            "0.52"
+          ]
+        },
+        {
+          "question": "Game 1: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.515",
+            "0.485"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.33",
+            "0.67"
+          ]
+        },
+        {
+          "question": "Game 1: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.265",
+            "0.735"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.215",
+            "0.785"
+          ]
+        },
+        {
+          "question": "Game 1: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.14",
+            "0.86"
+          ]
+        },
+        {
+          "question": "Game 2: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.515",
+            "0.485"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.33",
+            "0.67"
+          ]
+        },
+        {
+          "question": "Game 2: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.27",
+            "0.73"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.225",
+            "0.775"
+          ]
+        },
+        {
+          "question": "Game 2: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.14",
+            "0.86"
+          ]
+        },
+        {
+          "question": "Game 3: Ends in Daytime?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.515",
+            "0.485"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Beat Roshan?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.415",
+            "0.585"
+          ]
+        },
+        {
+          "question": "Game 3: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.33",
+            "0.67"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.24",
+            "0.76"
+          ]
+        },
+        {
+          "question": "Game 3: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.19",
+            "0.81"
+          ]
+        },
+        {
+          "question": "Game Handicap: TS (-1.5) vs Team Yandex (+1.5)",
+          "outcomes": [
+            "Team Spirit",
+            "Team Yandex"
+          ],
+          "prices": [
+            "0.465",
+            "0.535"
           ]
         }
       ]

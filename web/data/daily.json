@@ -1,219 +1,88 @@
 {
-  "asOf": "2026-08-22 23:12 CST",
+  "asOf": "2026-08-22 23:36 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "next-series",
-  "headline": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。下一把 BB vs Spirit，看好 Spirit（系列 63%）。",
-  "narrative": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。上一局阵容 BB Lina、Keeper of the Light、Centaur Warrunner / Spirit Winter Wyvern、Ember Spirit、Rubick。下一把 BB vs Spirit，看好 Spirit（系列 63%）。第1局看好 Spirit（59%）。本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina。",
-  "previousMap": {
-    "game": 1,
-    "matchId": 8959222564,
-    "winner": "Team Spirit",
-    "score": [
-      6,
-      27
-    ],
-    "f10": "Team Spirit",
-    "f10Time": 1237,
-    "durationMin": 35.5,
-    "pace": "慢",
-    "stance": "来回拉锯",
-    "picks": {
-      "BoomBoys": [
-        "Lina",
-        "Keeper of the Light",
-        "Centaur Warrunner",
-        "Hoodwink",
-        "Templar Assassin"
-      ],
-      "Team Spirit": [
-        "Winter Wyvern",
-        "Ember Spirit",
-        "Rubick",
-        "Slardar",
-        "Tiny"
-      ]
-    },
-    "mid": {
-      "BoomBoys": "Lina",
-      "Team Spirit": "Ember Spirit"
-    },
-    "blurb": "Team Spirit先到 10 杀（当时 5-10，20分37秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 5 杀。"
-  },
-  "previousMaps": [
-    {
-      "game": 1,
-      "matchId": 8959222564,
-      "winner": "Team Spirit",
-      "score": [
-        6,
-        27
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 1237,
-      "durationMin": 35.5,
-      "pace": "慢",
-      "stance": "来回拉锯",
-      "picks": {
-        "BoomBoys": [
-          "Lina",
-          "Keeper of the Light",
-          "Centaur Warrunner",
-          "Hoodwink",
-          "Templar Assassin"
-        ],
-        "Team Spirit": [
-          "Winter Wyvern",
-          "Ember Spirit",
-          "Rubick",
-          "Slardar",
-          "Tiny"
-        ]
-      },
-      "mid": {
-        "BoomBoys": "Lina",
-        "Team Spirit": "Ember Spirit"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 5-10，20分37秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 5 杀。"
-    }
-  ],
+  "kind": "preview",
+  "headline": "下一把 Spirit vs TY，看好 TY（系列 59%）。第1局看好 TY（56%）。",
+  "narrative": "下一把 Spirit vs TY，看好 TY（系列 59%）。第1局看好 TY（56%）。本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 中单爱拿 Ember Spirit。",
+  "previousMap": null,
+  "previousMaps": [],
   "nextMap": {
     "game": 1,
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
+    "teamA": "Team Spirit",
+    "teamB": "Team Yandex",
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.59,
-      "pA": 0.41,
-      "pB": 0.59,
-      "breakEven": 1.69,
-      "market": {
-        "outcomes": [
-          "BoomBoys",
-          "Team Spirit"
-        ],
-        "prices": [
-          0.0,
-          1.0
-        ]
-      },
-      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.559,
+      "pA": 0.441,
+      "pB": 0.559,
+      "breakEven": 1.79,
+      "market": null,
+      "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 中单爱拿 Ember Spirit"
     },
     "f10": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.588,
-      "pA": 0.412,
-      "pB": 0.588,
-      "breakEven": 1.7,
+      "p": 0.57,
+      "pA": 0.57,
+      "pB": 0.43,
+      "breakEven": 1.75,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Team Spirit",
-    "tag": "Spirit",
-    "p": 0.633,
-    "pA": 0.367,
-    "pB": 0.633,
-    "breakEven": 1.58,
-    "market": {
-      "outcomes": [
-        "BoomBoys",
-        "Team Spirit"
-      ],
-      "prices": [
-        0.001,
-        1.0
-      ]
-    },
-    "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
+    "team": "Team Yandex",
+    "tag": "TY",
+    "p": 0.587,
+    "pA": 0.413,
+    "pB": 0.587,
+    "breakEven": 1.7,
+    "market": null,
+    "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 中单爱拿 Ember Spirit"
   },
-  "previous": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
-    "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Team Spirit",
-    "status": "live",
-    "score": "0-2",
-    "winner": null,
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 2,
-    "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.633,
-      "pA": 0.367,
-      "pB": 0.633,
-      "breakEven": 1.58,
-      "market": {
-        "outcomes": [
-          "BoomBoys",
-          "Team Spirit"
-        ],
-        "prices": [
-          0.001,
-          1.0
-        ]
-      },
-      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
-    }
-  },
+  "previous": null,
   "next": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
+    "id": "lbf",
+    "round": "败者组决赛",
+    "day": "2026-08-23",
+    "when": "2026-08-23 10:00",
     "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Team Spirit",
-    "status": "live",
-    "score": "0-2",
+    "teamA": "Team Spirit",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Spirit",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 2,
+    "polySlug": "dota2-ty-ts8-2026-08-22",
+    "mapsPlayed": 0,
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.633,
-      "pA": 0.367,
-      "pB": 0.633,
-      "breakEven": 1.58,
-      "market": {
-        "outcomes": [
-          "BoomBoys",
-          "Team Spirit"
-        ],
-        "prices": [
-          0.001,
-          1.0
-        ]
-      },
-      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.587,
+      "pA": 0.413,
+      "pB": 0.587,
+      "breakEven": 1.7,
+      "market": null,
+      "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
+    "id": "lbf",
+    "round": "败者组决赛",
+    "day": "2026-08-23",
+    "when": "2026-08-23 10:00",
     "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Team Spirit",
-    "status": "live",
-    "score": "0-2",
+    "teamA": "Team Spirit",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Spirit",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
     "winner": null,
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 2
+    "polySlug": "dota2-ty-ts8-2026-08-22",
+    "mapsPlayed": 0
   },
   "todayResults": [
     {
@@ -263,6 +132,22 @@
       "winner": "TEAM VISION",
       "polySlug": "dota2-vsn2-ty-2026-08-22",
       "mapsPlayed": 3
+    },
+    {
+      "id": "lbsf",
+      "round": "败者组半决赛",
+      "day": "2026-08-22",
+      "when": "2026-08-22 19:00",
+      "format": "Bo3",
+      "teamA": "BoomBoys",
+      "teamB": "Team Spirit",
+      "teamALabel": "BoomBoys",
+      "teamBLabel": "Team Spirit",
+      "status": "completed",
+      "score": "0-2",
+      "winner": "Team Spirit",
+      "polySlug": "dota2-boombo-ts8-2026-08-22",
+      "mapsPlayed": 2
     }
   ],
   "newMapIds": []

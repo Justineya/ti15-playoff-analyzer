@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 23:12 CST",
+  "asOf": "2026-08-22 23:36 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -11177,6 +11177,884 @@
         ],
         "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
       }
+    },
+    {
+      "teamA": "Team Spirit",
+      "teamB": "Team Yandex",
+      "format": "Bo3",
+      "pMapA": 0.442,
+      "pMapB": 0.558,
+      "pF10A": 0.576,
+      "pF10B": 0.424,
+      "series": {
+        "pSeriesA": 0.413,
+        "pSeriesB": 0.587,
+        "pOver": 0.493,
+        "pUnder": 0.507,
+        "pCoverMinus15A": 0.195,
+        "pCoverPlus15B": 0.805
+      },
+      "maps": [
+        {
+          "game": 1,
+          "pWinA": 0.441,
+          "pWinB": 0.559,
+          "pF10A": 0.57,
+          "pF10B": 0.43,
+          "sims": [
+            {
+              "sim": 1,
+              "pWinA": 0.451,
+              "pWinB": 0.549,
+              "pF10A": 0.585,
+              "pF10B": 0.415,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Lina",
+                    "Hoodwink",
+                    "Earth Spirit",
+                    "Clockwerk",
+                    "Invoker"
+                  ],
+                  "bans": [
+                    "Ember Spirit",
+                    "Mirana",
+                    "Lone Druid",
+                    "Drow Ranger",
+                    "Winter Wyvern",
+                    "Leshrac",
+                    "Elder Titan"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Centaur Warrunner",
+                    "Windranger",
+                    "Nature's Prophet",
+                    "Monkey King",
+                    "Kez"
+                  ],
+                  "bans": [
+                    "Bane",
+                    "Tidehunter",
+                    "Rubick",
+                    "Beastmaster",
+                    "Doom",
+                    "Lifestealer",
+                    "Axe"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 2,
+              "pWinA": 0.405,
+              "pWinB": 0.595,
+              "pF10A": 0.556,
+              "pF10B": 0.444,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Dark Willow",
+                    "Lina",
+                    "Hoodwink",
+                    "Lion",
+                    "Dark Seer"
+                  ],
+                  "bans": [
+                    "Earthshaker",
+                    "Winter Wyvern",
+                    "Keeper of the Light",
+                    "Lone Druid",
+                    "Tiny",
+                    "Grimstroke",
+                    "Necrophos"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Earth Spirit",
+                    "Monkey King",
+                    "Dragon Knight",
+                    "Undying",
+                    "Slardar"
+                  ],
+                  "bans": [
+                    "Terrorblade",
+                    "Storm Spirit",
+                    "Largo",
+                    "Ringmaster",
+                    "Windranger",
+                    "Mirana",
+                    "Doom"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 3,
+              "pWinA": 0.447,
+              "pWinB": 0.553,
+              "pF10A": 0.571,
+              "pF10B": 0.429,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Night Stalker",
+                    "Doom",
+                    "Dragon Knight",
+                    "Naga Siren",
+                    "Nature's Prophet"
+                  ],
+                  "bans": [
+                    "Drow Ranger",
+                    "Largo",
+                    "Ember Spirit",
+                    "Keeper of the Light",
+                    "Shadow Fiend",
+                    "Lina",
+                    "Dawnbreaker"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Bounty Hunter",
+                    "Hoodwink",
+                    "Winter Wyvern",
+                    "Mirana",
+                    "Jakiro"
+                  ],
+                  "bans": [
+                    "Enchantress",
+                    "Undying",
+                    "Bane",
+                    "Ringmaster",
+                    "Puck",
+                    "Clockwerk",
+                    "Phantom Lancer"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 4,
+              "pWinA": 0.426,
+              "pWinB": 0.574,
+              "pF10A": 0.576,
+              "pF10B": 0.424,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Clockwerk",
+                    "Tidehunter",
+                    "Lifestealer",
+                    "Ringmaster",
+                    "Lone Druid"
+                  ],
+                  "bans": [
+                    "Dark Willow",
+                    "Undying",
+                    "Slardar",
+                    "Mirana",
+                    "Winter Wyvern",
+                    "Keeper of the Light",
+                    "Dragon Knight"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Necrophos",
+                    "Hoodwink",
+                    "Doom",
+                    "Enchantress",
+                    "Clinkz"
+                  ],
+                  "bans": [
+                    "Night Stalker",
+                    "Invoker",
+                    "Underlord",
+                    "Tiny",
+                    "Drow Ranger",
+                    "Lina",
+                    "Io"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 5,
+              "pWinA": 0.477,
+              "pWinB": 0.523,
+              "pF10A": 0.564,
+              "pF10B": 0.436,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Underlord",
+                    "Slardar",
+                    "Night Stalker",
+                    "Axe",
+                    "Tusk"
+                  ],
+                  "bans": [
+                    "Mirana",
+                    "Invoker",
+                    "Centaur Warrunner",
+                    "Rubick",
+                    "Terrorblade",
+                    "Drow Ranger",
+                    "Monkey King"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Keeper of the Light",
+                    "Snapfire",
+                    "Phantom Lancer",
+                    "Hoodwink",
+                    "Earth Spirit"
+                  ],
+                  "bans": [
+                    "Dark Seer",
+                    "Lifestealer",
+                    "Lina",
+                    "Lone Druid",
+                    "Spectre",
+                    "Gyrocopter",
+                    "Kez"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "game": 2,
+          "pWinA": 0.439,
+          "pWinB": 0.561,
+          "pF10A": 0.574,
+          "pF10B": 0.426,
+          "sims": [
+            {
+              "sim": 1,
+              "pWinA": 0.437,
+              "pWinB": 0.563,
+              "pF10A": 0.58,
+              "pF10B": 0.42,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Night Stalker",
+                    "Clockwerk",
+                    "Nature's Prophet",
+                    "Puck",
+                    "Dark Willow"
+                  ],
+                  "bans": [
+                    "Mars",
+                    "Templar Assassin",
+                    "Keeper of the Light",
+                    "Centaur Warrunner",
+                    "Lone Druid",
+                    "Tiny",
+                    "Enchantress"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Axe",
+                    "Invoker",
+                    "Kez",
+                    "Undying",
+                    "Tusk"
+                  ],
+                  "bans": [
+                    "Windranger",
+                    "Ringmaster",
+                    "Enigma",
+                    "Terrorblade",
+                    "Hoodwink",
+                    "Winter Wyvern",
+                    "Lina"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 2,
+              "pWinA": 0.447,
+              "pWinB": 0.553,
+              "pF10A": 0.571,
+              "pF10B": 0.429,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Hoodwink",
+                    "Mirana",
+                    "Clockwerk",
+                    "Windranger",
+                    "Luna"
+                  ],
+                  "bans": [
+                    "Keeper of the Light",
+                    "Ember Spirit",
+                    "Tiny",
+                    "Io",
+                    "Rubick",
+                    "Snapfire",
+                    "Bounty Hunter"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Undying",
+                    "Lina",
+                    "Treant Protector",
+                    "Primal Beast",
+                    "Slardar"
+                  ],
+                  "bans": [
+                    "Centaur Warrunner",
+                    "Invoker",
+                    "Drow Ranger",
+                    "Axe",
+                    "Earth Spirit",
+                    "Tusk",
+                    "Winter Wyvern"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 3,
+              "pWinA": 0.434,
+              "pWinB": 0.566,
+              "pF10A": 0.594,
+              "pF10B": 0.406,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Terrorblade",
+                    "Largo",
+                    "Windranger",
+                    "Witch Doctor",
+                    "Pangolier"
+                  ],
+                  "bans": [
+                    "Hoodwink",
+                    "Undying",
+                    "Invoker",
+                    "Centaur Warrunner",
+                    "Underlord",
+                    "Clockwerk",
+                    "Lone Druid"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Luna",
+                    "Necrophos",
+                    "Tusk",
+                    "Winter Wyvern",
+                    "Mirana"
+                  ],
+                  "bans": [
+                    "Doom",
+                    "Drow Ranger",
+                    "Phantom Lancer",
+                    "Rubick",
+                    "Bane",
+                    "Nature's Prophet",
+                    "Lina"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 4,
+              "pWinA": 0.469,
+              "pWinB": 0.531,
+              "pF10A": 0.569,
+              "pF10B": 0.431,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Lich",
+                    "Dragon Knight",
+                    "Clockwerk",
+                    "Undying",
+                    "Ringmaster"
+                  ],
+                  "bans": [
+                    "Bounty Hunter",
+                    "Shadow Fiend",
+                    "Rubick",
+                    "Slark",
+                    "Largo",
+                    "Luna",
+                    "Earth Spirit"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Drow Ranger",
+                    "Enchantress",
+                    "Doom",
+                    "Centaur Warrunner",
+                    "Snapfire"
+                  ],
+                  "bans": [
+                    "Lina",
+                    "Dark Willow",
+                    "Keeper of the Light",
+                    "Mirana",
+                    "Ember Spirit",
+                    "Lifestealer",
+                    "Dark Seer"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 5,
+              "pWinA": 0.407,
+              "pWinB": 0.593,
+              "pF10A": 0.556,
+              "pF10B": 0.444,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Witch Doctor",
+                    "Clockwerk",
+                    "Hoodwink",
+                    "Drow Ranger",
+                    "Terrorblade"
+                  ],
+                  "bans": [
+                    "Largo",
+                    "Undying",
+                    "Kez",
+                    "Snapfire",
+                    "Enchantress",
+                    "Lone Druid",
+                    "Huskar"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Tusk",
+                    "Bounty Hunter",
+                    "Earth Spirit",
+                    "Tidehunter",
+                    "Naga Siren"
+                  ],
+                  "bans": [
+                    "Centaur Warrunner",
+                    "Treant Protector",
+                    "Puck",
+                    "Mirana",
+                    "Ringmaster",
+                    "Keeper of the Light",
+                    "Nature's Prophet"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "game": 3,
+          "pWinA": 0.445,
+          "pWinB": 0.555,
+          "pF10A": 0.584,
+          "pF10B": 0.416,
+          "sims": [
+            {
+              "sim": 1,
+              "pWinA": 0.457,
+              "pWinB": 0.543,
+              "pF10A": 0.582,
+              "pF10B": 0.418,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Tidehunter",
+                    "Nature's Prophet",
+                    "Hoodwink",
+                    "Bane",
+                    "Night Stalker"
+                  ],
+                  "bans": [
+                    "Kunkka",
+                    "Ember Spirit",
+                    "Spectre",
+                    "Tiny",
+                    "Invoker",
+                    "Treant Protector",
+                    "Snapfire"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Kez",
+                    "Mirana",
+                    "Monkey King",
+                    "Io",
+                    "Underlord"
+                  ],
+                  "bans": [
+                    "Lina",
+                    "Necrophos",
+                    "Clockwerk",
+                    "Drow Ranger",
+                    "Doom",
+                    "Largo",
+                    "Dark Willow"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 2,
+              "pWinA": 0.398,
+              "pWinB": 0.602,
+              "pF10A": 0.578,
+              "pF10B": 0.422,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Witch Doctor",
+                    "Dark Willow",
+                    "Tusk",
+                    "Windranger",
+                    "Luna"
+                  ],
+                  "bans": [
+                    "Kez",
+                    "Largo",
+                    "Treant Protector",
+                    "Beastmaster",
+                    "Dark Seer",
+                    "Lina",
+                    "Shadow Fiend"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Nature's Prophet",
+                    "Winter Wyvern",
+                    "Mirana",
+                    "Slark",
+                    "Hoodwink"
+                  ],
+                  "bans": [
+                    "Terrorblade",
+                    "Undying",
+                    "Necrophos",
+                    "Lone Druid",
+                    "Centaur Warrunner",
+                    "Keeper of the Light",
+                    "Clockwerk"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 3,
+              "pWinA": 0.432,
+              "pWinB": 0.568,
+              "pF10A": 0.554,
+              "pF10B": 0.446,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Drow Ranger",
+                    "Invoker",
+                    "Dark Willow",
+                    "Hoodwink",
+                    "Windranger"
+                  ],
+                  "bans": [
+                    "Phantom Lancer",
+                    "Bounty Hunter",
+                    "Treant Protector",
+                    "Ringmaster",
+                    "Mirana",
+                    "Mars",
+                    "Huskar"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Snapfire",
+                    "Doom",
+                    "Nature's Prophet",
+                    "Lina",
+                    "Tidehunter"
+                  ],
+                  "bans": [
+                    "Witch Doctor",
+                    "Winter Wyvern",
+                    "Puck",
+                    "Storm Spirit",
+                    "Lone Druid",
+                    "Shadow Fiend",
+                    "Centaur Warrunner"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 4,
+              "pWinA": 0.459,
+              "pWinB": 0.541,
+              "pF10A": 0.604,
+              "pF10B": 0.396,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Yandex",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Lich",
+                    "Bane",
+                    "Earth Spirit",
+                    "Ringmaster",
+                    "Morphling"
+                  ],
+                  "bans": [
+                    "Undying",
+                    "Tidehunter",
+                    "Centaur Warrunner",
+                    "Largo",
+                    "Lone Druid",
+                    "Enchantress",
+                    "Underlord"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Necrophos",
+                    "Mirana",
+                    "Clockwerk",
+                    "Naga Siren",
+                    "Bounty Hunter"
+                  ],
+                  "bans": [
+                    "Hoodwink",
+                    "Dragon Knight",
+                    "Puck",
+                    "Dark Willow",
+                    "Phoenix",
+                    "Shadow Fiend",
+                    "Keeper of the Light"
+                  ]
+                }
+              }
+            },
+            {
+              "sim": 5,
+              "pWinA": 0.48,
+              "pWinB": 0.52,
+              "pF10A": 0.6,
+              "pF10B": 0.4,
+              "h2hGames": 0.9,
+              "sampleA": 28.74999999999999,
+              "sampleB": 32.64999999999999,
+              "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+              "draft": {
+                "firstPick": "Team Spirit",
+                "teamA": {
+                  "name": "Team Spirit",
+                  "picks": [
+                    "Rubick",
+                    "Shadow Demon",
+                    "Lina",
+                    "Night Stalker",
+                    "Winter Wyvern"
+                  ],
+                  "bans": [
+                    "Centaur Warrunner",
+                    "Shadow Fiend",
+                    "Underlord",
+                    "Silencer",
+                    "Bounty Hunter",
+                    "Tiny",
+                    "Io"
+                  ]
+                },
+                "teamB": {
+                  "name": "Team Yandex",
+                  "picks": [
+                    "Necrophos",
+                    "Mirana",
+                    "Treant Protector",
+                    "Invoker",
+                    "Slardar"
+                  ],
+                  "bans": [
+                    "Earth Spirit",
+                    "Lone Druid",
+                    "Clinkz",
+                    "Axe",
+                    "Dark Seer",
+                    "Drow Ranger",
+                    "Hoodwink"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "why": "本届胜率 Team Spirit 61% / Team Yandex 59%；先到10杀 61% / 53%；H2H 0.9 局；Team Spirit 常用中单 Ember Spirit",
+      "id": "lbf",
+      "round": "败者组决赛",
+      "when": "2026-08-23 10:00",
+      "status": "scheduled",
+      "polySlug": "dota2-ty-ts8-2026-08-22",
+      "poly": {},
+      "betting": {
+        "rows": [
+          {
+            "market": "系列胜者",
+            "pick": "Team Yandex",
+            "modelP": 0.587,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "第一局",
+            "pick": "Team Yandex",
+            "modelP": 0.559,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "总局数 O/U 2.5",
+            "pick": "Over 2.5",
+            "modelP": 0.493,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          },
+          {
+            "market": "先到 10 杀（无盘，仅模型）",
+            "pick": "Team Spirit",
+            "modelP": 0.576,
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
+          }
+        ],
+        "plan": "这系列没有达到小注门槛的正期望格，建议空仓，只看模拟。"
+      }
     }
   ],
   "scenarios": [],
@@ -11194,7 +12072,8 @@
       "ubsf2": "Team Yandex",
       "lbqf1": "BoomBoys",
       "lbqf2": "Team Spirit",
-      "ubf": "TEAM VISION"
+      "ubf": "TEAM VISION",
+      "lbsf": "Team Spirit"
     },
     "pMap": {
       "BoomBoys vs Team Yandex": 0.464,
@@ -11229,29 +12108,24 @@
     "champion": [
       {
         "name": "TEAM VISION",
-        "n": 735,
-        "p": 0.735
+        "n": 742,
+        "p": 0.742
       },
       {
         "name": "Team Yandex",
-        "n": 161,
-        "p": 0.161
+        "n": 163,
+        "p": 0.163
       },
       {
         "name": "Team Spirit",
-        "n": 71,
-        "p": 0.071
-      },
-      {
-        "name": "BoomBoys",
-        "n": 33,
-        "p": 0.033
+        "n": 95,
+        "p": 0.095
       }
     ],
     "place": {
       "TEAM VISION": {
-        "1": 0.735,
-        "2": 0.265,
+        "1": 0.742,
+        "2": 0.258,
         "3": 0.0,
         "4": 0.0,
         "5-6": 0.0,
@@ -11274,10 +12148,10 @@
         "7-8": 0.0
       },
       "Team Spirit": {
-        "1": 0.071,
-        "2": 0.182,
-        "3": 0.38,
-        "4": 0.367,
+        "1": 0.095,
+        "2": 0.334,
+        "3": 0.571,
+        "4": 0.0,
         "5-6": 0.0,
         "7-8": 0.0
       },
@@ -11298,17 +12172,17 @@
         "7-8": 1.0
       },
       "BoomBoys": {
-        "1": 0.033,
-        "2": 0.13,
-        "3": 0.204,
-        "4": 0.633,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 1.0,
         "5-6": 0.0,
         "7-8": 0.0
       },
       "Team Yandex": {
-        "1": 0.161,
-        "2": 0.423,
-        "3": 0.416,
+        "1": 0.163,
+        "2": 0.408,
+        "3": 0.429,
         "4": 0.0,
         "5-6": 0.0,
         "7-8": 0.0
@@ -11495,13 +12369,8 @@
         "winners": [
           {
             "name": "Team Spirit",
-            "n": 633,
-            "p": 0.633
-          },
-          {
-            "name": "BoomBoys",
-            "n": 367,
-            "p": 0.367
+            "n": 1000,
+            "p": 1.0
           }
         ],
         "pairings": [
@@ -11516,30 +12385,20 @@
         "winners": [
           {
             "name": "Team Yandex",
-            "n": 584,
-            "p": 0.584
+            "n": 571,
+            "p": 0.571
           },
           {
             "name": "Team Spirit",
-            "n": 253,
-            "p": 0.253
-          },
-          {
-            "name": "BoomBoys",
-            "n": 163,
-            "p": 0.163
+            "n": 429,
+            "p": 0.429
           }
         ],
         "pairings": [
           {
             "pair": "Team Spirit vs Team Yandex",
-            "n": 633,
-            "p": 0.633
-          },
-          {
-            "pair": "BoomBoys vs Team Yandex",
-            "n": 367,
-            "p": 0.367
+            "n": 1000,
+            "p": 1.0
           }
         ]
       },
@@ -11547,40 +12406,30 @@
         "winners": [
           {
             "name": "TEAM VISION",
-            "n": 735,
-            "p": 0.735
+            "n": 742,
+            "p": 0.742
           },
           {
             "name": "Team Yandex",
-            "n": 161,
-            "p": 0.161
+            "n": 163,
+            "p": 0.163
           },
           {
             "name": "Team Spirit",
-            "n": 71,
-            "p": 0.071
-          },
-          {
-            "name": "BoomBoys",
-            "n": 33,
-            "p": 0.033
+            "n": 95,
+            "p": 0.095
           }
         ],
         "pairings": [
           {
             "pair": "TEAM VISION vs Team Yandex",
-            "n": 584,
-            "p": 0.584
+            "n": 571,
+            "p": 0.571
           },
           {
             "pair": "TEAM VISION vs Team Spirit",
-            "n": 253,
-            "p": 0.253
-          },
-          {
-            "pair": "TEAM VISION vs BoomBoys",
-            "n": 163,
-            "p": 0.163
+            "n": 429,
+            "p": 0.429
           }
         ]
       }
@@ -11712,20 +12561,20 @@
         "round": "败者组半决赛",
         "when": "2026-08-22 19:00",
         "winner": "Team Spirit",
-        "p": 0.633,
-        "n": 633,
+        "p": 1.0,
+        "n": 1000,
         "of": 1000,
         "topPair": "BoomBoys vs Team Spirit",
-        "scoreMode": "Team Spirit 2-0"
+        "scoreMode": "Team Spirit 0-2"
       },
       {
         "id": "lbf",
         "round": "败者组决赛",
         "when": "2026-08-23 10:00",
         "winner": "Team Yandex",
-        "p": 0.6,
-        "n": 380,
-        "of": 633,
+        "p": 0.571,
+        "n": 571,
+        "of": 1000,
         "topPair": "Team Spirit vs Team Yandex",
         "scoreMode": "Team Yandex 2-0"
       },
@@ -11734,17 +12583,17 @@
         "round": "总决赛",
         "when": "2026-08-23 13:00",
         "winner": "TEAM VISION",
-        "p": 0.697,
-        "n": 265,
-        "of": 380,
+        "p": 0.715,
+        "n": 408,
+        "of": 571,
         "topPair": "TEAM VISION vs Team Yandex",
         "scoreMode": "TEAM VISION 3-1"
       }
     ],
     "topTrees": [
       {
-        "n": 265,
-        "p": 0.265,
+        "n": 408,
+        "p": 0.408,
         "winners": {
           "ubqf1": "Team Spirit",
           "ubqf2": "TEAM VISION",
@@ -11763,8 +12612,8 @@
         }
       },
       {
-        "n": 182,
-        "p": 0.182,
+        "n": 334,
+        "p": 0.334,
         "winners": {
           "ubqf1": "Team Spirit",
           "ubqf2": "TEAM VISION",
@@ -11783,48 +12632,8 @@
         }
       },
       {
-        "n": 158,
-        "p": 0.158,
-        "winners": {
-          "ubqf1": "Team Spirit",
-          "ubqf2": "TEAM VISION",
-          "ubqf3": "Team Yandex",
-          "ubqf4": "Nigma Galaxy",
-          "lbr1a": "BoomBoys",
-          "lbr1b": "Team Liquid",
-          "ubsf1": "TEAM VISION",
-          "ubsf2": "Team Yandex",
-          "lbqf2": "Team Spirit",
-          "lbqf1": "BoomBoys",
-          "ubf": "TEAM VISION",
-          "lbsf": "BoomBoys",
-          "lbf": "Team Yandex",
-          "gf": "TEAM VISION"
-        }
-      },
-      {
-        "n": 130,
-        "p": 0.13,
-        "winners": {
-          "ubqf1": "Team Spirit",
-          "ubqf2": "TEAM VISION",
-          "ubqf3": "Team Yandex",
-          "ubqf4": "Nigma Galaxy",
-          "lbr1a": "BoomBoys",
-          "lbr1b": "Team Liquid",
-          "ubsf1": "TEAM VISION",
-          "ubsf2": "Team Yandex",
-          "lbqf2": "Team Spirit",
-          "lbqf1": "BoomBoys",
-          "ubf": "TEAM VISION",
-          "lbsf": "BoomBoys",
-          "lbf": "BoomBoys",
-          "gf": "TEAM VISION"
-        }
-      },
-      {
-        "n": 115,
-        "p": 0.115,
+        "n": 163,
+        "p": 0.163,
         "winners": {
           "ubqf1": "Team Spirit",
           "ubqf2": "TEAM VISION",
@@ -11840,6 +12649,26 @@
           "lbsf": "Team Spirit",
           "lbf": "Team Yandex",
           "gf": "Team Yandex"
+        }
+      },
+      {
+        "n": 95,
+        "p": 0.095,
+        "winners": {
+          "ubqf1": "Team Spirit",
+          "ubqf2": "TEAM VISION",
+          "ubqf3": "Team Yandex",
+          "ubqf4": "Nigma Galaxy",
+          "lbr1a": "BoomBoys",
+          "lbr1b": "Team Liquid",
+          "ubsf1": "TEAM VISION",
+          "ubsf2": "Team Yandex",
+          "lbqf2": "Team Spirit",
+          "lbqf1": "BoomBoys",
+          "ubf": "TEAM VISION",
+          "lbsf": "Team Spirit",
+          "lbf": "Team Spirit",
+          "gf": "Team Spirit"
         }
       }
     ],
