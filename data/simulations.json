@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23 01:42 CST",
+  "asOf": "2026-08-23 01:58 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -11090,8 +11090,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.0005,
-            0.9995
+            0.0,
+            1.0
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs"
         },
@@ -11101,8 +11101,8 @@
             "Under"
           ],
           "prices": [
-            0.0005,
-            0.9995
+            0.0,
+            1.0
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -11144,14 +11144,14 @@
           },
           {
             "market": "总局数 O/U 2.5",
-            "pick": "Over 2.5",
-            "modelP": 0.484,
-            "marketP": 0.001,
-            "odds": 2000.0,
-            "roi": 967.0,
-            "ev": 0.483,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.001，模型 0.484，期望回报率 96700.0%"
+            "pick": "Under 2.5",
+            "modelP": 0.516,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.484,
+            "ev": -0.484,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.516，期望回报率 -48.4%"
           },
           {
             "market": "让分",
