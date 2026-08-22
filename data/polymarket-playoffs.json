@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T21:02Z",
+  "asOf": "2026-08-22T21:29Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11840828.804969998,
+      "volume": 11840828.804969992,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 6679465.374294998,
+      "volume": 6679588.824294998,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4709,7 +4709,7 @@
     {
       "slug": "dota2-ty-ts8-2026-08-22",
       "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 354583.051682,
+      "volume": 396345.26439900004,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
@@ -4729,8 +4729,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.385",
-            "0.615"
+            "0.375",
+            "0.625"
           ]
         },
         {
@@ -4751,8 +4751,8 @@
             "Under"
           ],
           "prices": [
-            "0.465",
-            "0.535"
+            "0.47",
+            "0.53"
           ]
         },
         {
@@ -4773,8 +4773,8 @@
             "No"
           ],
           "prices": [
-            "0.285",
-            "0.715"
+            "0.28",
+            "0.72"
           ]
         },
         {
@@ -4795,8 +4795,8 @@
             "No"
           ],
           "prices": [
-            "0.23",
-            "0.77"
+            "0.24",
+            "0.76"
           ]
         },
         {
@@ -4850,8 +4850,8 @@
             "No"
           ],
           "prices": [
-            "0.185",
-            "0.815"
+            "0.18",
+            "0.82"
           ]
         },
         {
@@ -4872,8 +4872,8 @@
             "No"
           ],
           "prices": [
-            "0.305",
-            "0.695"
+            "0.3",
+            "0.7"
           ]
         },
         {
@@ -4938,8 +4938,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4949,8 +4949,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.505",
+            "0.495"
           ]
         },
         {
