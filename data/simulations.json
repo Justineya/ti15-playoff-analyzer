@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 20:56 CST",
+  "asOf": "2026-08-22 21:27 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -10142,8 +10142,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.9995,
-            0.0005
+            1.0,
+            0.0
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs"
         },
@@ -10153,8 +10153,8 @@
             "Under"
           ],
           "prices": [
-            0.9995,
-            0.0005
+            1.0,
+            0.0
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -10164,8 +10164,8 @@
             "TEAM VISION"
           ],
           "prices": [
-            0.0005,
-            0.9995
+            0.0,
+            1.0
           ],
           "question": "Game Handicap: TY (-1.5) vs TEAM VISION (+1.5)"
         }
@@ -10196,25 +10196,25 @@
           },
           {
             "market": "总局数 O/U 2.5",
-            "pick": "Under 2.5",
-            "modelP": 0.529,
-            "marketP": 0.0,
-            "odds": 2000.0,
-            "roi": 1057.0,
-            "ev": 0.529,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.0，模型 0.529，期望回报率 105700.0%"
+            "pick": "Over 2.5",
+            "modelP": 0.471,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.529,
+            "ev": -0.529,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.471，期望回报率 -52.9%"
           },
           {
             "market": "让分",
-            "pick": "Team Yandex +1.5",
-            "modelP": 0.614,
-            "marketP": 0.001,
-            "odds": 2000.0,
-            "roi": 1227.0,
-            "ev": 0.614,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.001，模型 0.614，期望回报率 122700.0%"
+            "pick": "TEAM VISION -1.5",
+            "modelP": 0.386,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.614,
+            "ev": -0.614,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.386，期望回报率 -61.4%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -11068,8 +11068,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.405,
-            0.595
+            0.5,
+            0.5
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner"
         },
@@ -11079,8 +11079,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.415,
-            0.585
+            0.5,
+            0.5
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 2 Winner"
         },
@@ -11090,8 +11090,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.355,
-            0.645
+            0.5,
+            0.5
           ],
           "question": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs"
         },
@@ -11101,8 +11101,8 @@
             "Under"
           ],
           "prices": [
-            0.48,
-            0.52
+            0.5,
+            0.5
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -11112,8 +11112,8 @@
             "BoomBoys"
           ],
           "prices": [
-            0.385,
-            0.615
+            0.5,
+            0.5
           ],
           "question": "Game Handicap: TS (-1.5) vs BoomBoys (+1.5)"
         }
@@ -11124,45 +11124,45 @@
             "market": "系列胜者",
             "pick": "Team Spirit",
             "modelP": 0.523,
-            "marketP": 0.645,
-            "odds": 1.55,
-            "roi": -0.189,
-            "ev": -0.122,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.645，模型 0.523，期望回报率 -18.9%"
+            "marketP": 0.5,
+            "odds": 2.0,
+            "roi": 0.046,
+            "ev": 0.023,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.5，模型 0.523，期望回报率 4.6%"
           },
           {
             "market": "第一局",
             "pick": "Team Spirit",
             "modelP": 0.513,
-            "marketP": 0.595,
-            "odds": 1.68,
-            "roi": -0.138,
-            "ev": -0.082,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.595，模型 0.513，期望回报率 -13.8%"
+            "marketP": 0.5,
+            "odds": 2.0,
+            "roi": 0.026,
+            "ev": 0.013,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.5，模型 0.513，期望回报率 2.6%"
           },
           {
             "market": "总局数 O/U 2.5",
             "pick": "Over 2.5",
             "modelP": 0.5,
-            "marketP": 0.48,
-            "odds": 2.08,
-            "roi": 0.042,
-            "ev": 0.02,
+            "marketP": 0.5,
+            "odds": 2.0,
+            "roi": 0.0,
+            "ev": 0.0,
             "action": "没有明显正期望，空仓",
-            "note": "买 YES 成本 0.48，模型 0.5，期望回报率 4.2%"
+            "note": "买 YES 成本 0.5，模型 0.5，期望回报率 0.0%"
           },
           {
             "market": "让分",
             "pick": "Team Spirit +1.5",
             "modelP": 0.765,
-            "marketP": 0.385,
-            "odds": 2.6,
-            "roi": 0.987,
-            "ev": 0.38,
+            "marketP": 0.5,
+            "odds": 2.0,
+            "roi": 0.53,
+            "ev": 0.265,
             "action": "和市场差太大，只观察",
-            "note": "买 YES 成本 0.385，模型 0.765，期望回报率 98.7%"
+            "note": "买 YES 成本 0.5，模型 0.765，期望回报率 53.0%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",

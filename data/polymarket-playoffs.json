@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T12:56Z",
+  "asOf": "2026-08-22T13:27Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -2705,7 +2705,7 @@
     {
       "slug": "dota2-ty-ngx-2026-08-21",
       "title": "Dota 2: Team Yandex vs Nigma Galaxy (BO3) - The International Playoffs",
-      "volume": 9505559.723976007,
+      "volume": 9505559.723976009,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Nigma Galaxy - Game 1 Winner",
@@ -3130,7 +3130,7 @@
     {
       "slug": "dota2-ngx-boombo-2026-08-22",
       "title": "Dota 2: Nigma Galaxy vs BoomBoys (BO3) - The International Playoffs",
-      "volume": 5742635.421240002,
+      "volume": 5742635.421240005,
       "markets": [
         {
           "question": "Dota 2: Nigma Galaxy vs BoomBoys - Game 1 Winner",
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11835788.06496999,
+      "volume": 11840828.804969998,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -3956,8 +3956,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -3967,8 +3967,8 @@
             "Under"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -3978,8 +3978,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4033,8 +4033,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.9975",
-            "0.0025"
+            "1",
+            "0"
           ]
         },
         {
@@ -4044,8 +4044,8 @@
             "Under"
           ],
           "prices": [
-            "0.9955",
-            "0.0045"
+            "1",
+            "0"
           ]
         },
         {
@@ -4165,8 +4165,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -4176,8 +4176,8 @@
             "No"
           ],
           "prices": [
-            "0.335",
-            "0.665"
+            "0",
+            "1"
           ]
         },
         {
@@ -4187,8 +4187,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0",
+            "1"
           ]
         },
         {
@@ -4198,8 +4198,8 @@
             "No"
           ],
           "prices": [
-            "0.29",
-            "0.71"
+            "0",
+            "1"
           ]
         },
         {
@@ -4209,8 +4209,8 @@
             "No"
           ],
           "prices": [
-            "0.225",
-            "0.775"
+            "0",
+            "1"
           ]
         },
         {
@@ -4242,8 +4242,8 @@
             "TEAM VISION"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 298474.46149300004,
+      "volume": 502546.5724170002,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4326,8 +4326,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.405",
-            "0.595"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4337,8 +4337,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.415",
-            "0.585"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4348,8 +4348,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.355",
-            "0.645"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4359,8 +4359,8 @@
             "Under"
           ],
           "prices": [
-            "0.48",
-            "0.52"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4370,8 +4370,8 @@
             "BoomBoys"
           ],
           "prices": [
-            "0.385",
-            "0.615"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4392,8 +4392,8 @@
             "Under"
           ],
           "prices": [
-            "0.715",
-            "0.285"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4414,8 +4414,8 @@
             "Under"
           ],
           "prices": [
-            "0.515",
-            "0.485"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4491,8 +4491,8 @@
             "No"
           ],
           "prices": [
-            "0.075",
-            "0.925"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4546,8 +4546,8 @@
             "No"
           ],
           "prices": [
-            "0.1",
-            "0.9"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4599,6 +4599,17 @@
           "outcomes": [
             "Yes",
             "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
           ],
           "prices": [
             "0.5",
