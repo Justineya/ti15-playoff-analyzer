@@ -1,41 +1,111 @@
 {
-  "asOf": "2026-08-22 21:52 CST",
+  "asOf": "2026-08-22 22:08 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "preview",
-  "headline": "下一把 BB vs Spirit，看好 Spirit（系列 52%）。第1局看好 Spirit（51%）。",
-  "narrative": "下一把 BB vs Spirit，看好 Spirit（系列 52%）。第1局看好 Spirit（51%）。本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck。",
-  "previousMap": null,
-  "previousMaps": [],
-  "nextMap": {
+  "kind": "next-map",
+  "headline": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。下一局第2局按上一局重算后看好 Spirit（60%）。现场赔率至少 1.68。",
+  "narrative": "第1局 Spirit 赢了，先到10杀 Spirit，35.5分钟。上一局阵容 BB Lina、Keeper of the Light、Centaur Warrunner / Spirit Winter Wyvern、Ember Spirit、Rubick。下一局第2局按上一局重算后看好 Spirit（60%）。现场赔率至少 1.68。系列现在看好 Spirit（83%）。先到10杀看好 Spirit。本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina。",
+  "previousMap": {
     "game": 1,
+    "matchId": 8959222564,
+    "winner": "Team Spirit",
+    "score": [
+      6,
+      27
+    ],
+    "f10": "Team Spirit",
+    "f10Time": 1237,
+    "durationMin": 35.5,
+    "pace": "慢",
+    "stance": "来回拉锯",
+    "picks": {
+      "BoomBoys": [
+        "Lina",
+        "Keeper of the Light",
+        "Centaur Warrunner",
+        "Hoodwink",
+        "Templar Assassin"
+      ],
+      "Team Spirit": [
+        "Winter Wyvern",
+        "Ember Spirit",
+        "Rubick",
+        "Slardar",
+        "Tiny"
+      ]
+    },
+    "mid": {
+      "BoomBoys": "Lina",
+      "Team Spirit": "Ember Spirit"
+    },
+    "blurb": "Team Spirit先到 10 杀（当时 5-10，20分37秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 5 杀。"
+  },
+  "previousMaps": [
+    {
+      "game": 1,
+      "matchId": 8959222564,
+      "winner": "Team Spirit",
+      "score": [
+        6,
+        27
+      ],
+      "f10": "Team Spirit",
+      "f10Time": 1237,
+      "durationMin": 35.5,
+      "pace": "慢",
+      "stance": "来回拉锯",
+      "picks": {
+        "BoomBoys": [
+          "Lina",
+          "Keeper of the Light",
+          "Centaur Warrunner",
+          "Hoodwink",
+          "Templar Assassin"
+        ],
+        "Team Spirit": [
+          "Winter Wyvern",
+          "Ember Spirit",
+          "Rubick",
+          "Slardar",
+          "Tiny"
+        ]
+      },
+      "mid": {
+        "BoomBoys": "Lina",
+        "Team Spirit": "Ember Spirit"
+      },
+      "blurb": "Team Spirit先到 10 杀（当时 5-10，20分37秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 13 次 · 中辅驱动。对手当时 5 杀。"
+    }
+  ],
+  "nextMap": {
+    "game": 2,
     "teamA": "BoomBoys",
     "teamB": "Team Spirit",
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.513,
-      "pA": 0.487,
-      "pB": 0.513,
-      "breakEven": 1.95,
+      "p": 0.595,
+      "pA": 0.405,
+      "pB": 0.595,
+      "breakEven": 1.68,
       "market": {
         "outcomes": [
           "BoomBoys",
           "Team Spirit"
         ],
         "prices": [
-          0.355,
-          0.645
+          0.405,
+          0.595
         ]
       },
-      "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
+      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
     },
     "f10": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.561,
-      "pA": 0.439,
-      "pB": 0.561,
-      "breakEven": 1.78,
+      "p": 0.584,
+      "pA": 0.416,
+      "pB": 0.584,
+      "breakEven": 1.71,
       "market": null,
       "why": ""
     }
@@ -43,21 +113,21 @@
   "seriesLean": {
     "team": "Team Spirit",
     "tag": "Spirit",
-    "p": 0.522,
-    "pA": 0.478,
-    "pB": 0.522,
-    "breakEven": 1.91,
+    "p": 0.831,
+    "pA": 0.169,
+    "pB": 0.831,
+    "breakEven": 1.2,
     "market": {
       "outcomes": [
         "BoomBoys",
         "Team Spirit"
       ],
       "prices": [
-        0.33,
-        0.67
+        0.185,
+        0.815
       ]
     },
-    "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
+    "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
   },
   "previous": null,
   "next": {
@@ -70,29 +140,29 @@
     "teamB": "Team Spirit",
     "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 0,
+    "mapsPlayed": 1,
     "lean": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.522,
-      "pA": 0.478,
-      "pB": 0.522,
-      "breakEven": 1.91,
+      "p": 0.831,
+      "pA": 0.169,
+      "pB": 0.831,
+      "breakEven": 1.2,
       "market": {
         "outcomes": [
           "BoomBoys",
           "Team Spirit"
         ],
         "prices": [
-          0.33,
-          0.67
+          0.185,
+          0.815
         ]
       },
-      "why": "本届胜率 BoomBoys 57% / Team Spirit 60%；先到10杀 52% / 60%；本届没交过手；BoomBoys 中单爱拿 Puck"
+      "why": "本届胜率 BoomBoys 55% / Team Spirit 61%；先到10杀 51% / 61%；H2H 1.0 局；BoomBoys 中单爱拿 Lina"
     }
   },
   "focus": {
@@ -105,11 +175,11 @@
     "teamB": "Team Spirit",
     "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
-    "status": "scheduled",
-    "score": null,
+    "status": "live",
+    "score": "0-1",
     "winner": null,
     "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 0
+    "mapsPlayed": 1
   },
   "todayResults": [
     {
@@ -161,5 +231,7 @@
       "mapsPlayed": 3
     }
   ],
-  "newMapIds": []
+  "newMapIds": [
+    8959222564
+  ]
 }
