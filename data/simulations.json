@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22 15:53 CST",
+  "asOf": "2026-08-22 16:14 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -10120,8 +10120,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.675,
-            0.325
+            0.655,
+            0.345
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner"
         },
@@ -10131,8 +10131,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.67,
-            0.33
+            0.665,
+            0.335
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 2 Winner"
         },
@@ -10142,8 +10142,8 @@
             "Team Yandex"
           ],
           "prices": [
-            0.735,
-            0.265
+            0.725,
+            0.275
           ],
           "question": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs"
         },
@@ -10153,8 +10153,8 @@
             "Under"
           ],
           "prices": [
-            0.44,
-            0.56
+            0.445,
+            0.555
           ],
           "question": "Games Total: O/U 2.5"
         },
@@ -10176,34 +10176,34 @@
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.624,
-            "marketP": 0.735,
-            "odds": 1.36,
-            "roi": -0.151,
-            "ev": -0.111,
+            "marketP": 0.725,
+            "odds": 1.38,
+            "roi": -0.139,
+            "ev": -0.101,
             "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.735，模型 0.624，期望回报率 -15.1%"
+            "note": "买 YES 成本 0.725，模型 0.624，期望回报率 -13.9%"
           },
           {
             "market": "第一局",
             "pick": "TEAM VISION",
             "modelP": 0.59,
-            "marketP": 0.675,
-            "odds": 1.48,
-            "roi": -0.126,
-            "ev": -0.085,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 0.675，模型 0.59，期望回报率 -12.6%"
+            "marketP": 0.655,
+            "odds": 1.53,
+            "roi": -0.099,
+            "ev": -0.065,
+            "action": "没有明显正期望，空仓",
+            "note": "买 YES 成本 0.655，模型 0.59，期望回报率 -9.9%"
           },
           {
             "market": "总局数 O/U 2.5",
             "pick": "Over 2.5",
             "modelP": 0.486,
-            "marketP": 0.44,
-            "odds": 2.27,
-            "roi": 0.105,
-            "ev": 0.046,
+            "marketP": 0.445,
+            "odds": 2.25,
+            "roi": 0.092,
+            "ev": 0.041,
             "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.44，模型 0.486，期望回报率 10.5%"
+            "note": "买 YES 成本 0.445，模型 0.486，期望回报率 9.2%"
           },
           {
             "market": "让分",
