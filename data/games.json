@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-22 16:14 CST",
-  "n": 106,
+  "asOf": "2026-08-22 16:49 CST",
+  "n": 107,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -32549,6 +32549,313 @@
         "mid_support": "天辉中单 lorenof/Ember Spirit 参与 5 次（击杀3+助攻2），辅OmaR/Shadow Shaman 参与 5 次，中辅合计12 · 中辅驱动；夜魇中单 gpk~/Puck 参与 6 次（击杀3+助攻3），辅Save-/Keeper of the Light 参与 2 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8958667855",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8958734008,
+      "series_id": 1132647,
+      "start_time": 1787383043,
+      "duration": 2610,
+      "parsed": true,
+      "radiant": "BoomBoys",
+      "dire": "Nigma Galaxy",
+      "radiant_team_id": 8255888,
+      "dire_team_id": 10136357,
+      "winner": "BoomBoys",
+      "radiant_win": true,
+      "score": [
+        21,
+        5
+      ],
+      "pace": "慢",
+      "length": "偏长",
+      "stance": "发育对线",
+      "f10k": {
+        "side": "radiant",
+        "time": 1438,
+        "score": {
+          "radiant": 10,
+          "dire": 2
+        },
+        "completing_killer": "gpk~",
+        "completing_hero": "Slark"
+      },
+      "f10k_mid_share": 8,
+      "first_tower": {
+        "time": 563,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_bot"
+      },
+      "gold": {
+        "m5": 540,
+        "m10": -1154,
+        "m15": 1721,
+        "m20": 5415
+      },
+      "kills_8min": 2,
+      "kills_15min": 5,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 4,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 9,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 10,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 18,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            },
+            {
+              "order": 20,
+              "hero": "Alchemist",
+              "hero_id": 73
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 13,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 14,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 17,
+              "hero": "Naga Siren",
+              "hero_id": 89
+            },
+            {
+              "order": 22,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 13,
+              "hero": "Bane",
+              "hero_id": 3
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 5,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 6,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 11,
+              "hero": "Beastmaster",
+              "hero_id": 38
+            },
+            {
+              "order": 19,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 21,
+              "hero": "Tidehunter",
+              "hero_id": 29
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 12,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 15,
+              "hero": "Lycan",
+              "hero_id": 77
+            },
+            {
+              "order": 16,
+              "hero": "Ringmaster",
+              "hero_id": 131
+            },
+            {
+              "order": 23,
+              "hero": "Leshrac",
+              "hero_id": 52
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Largo",
+              "hero_id": 155
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 12,
+              "hero": "Mirana",
+              "hero_id": 9
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "gpk~",
+            "hero": "Slark",
+            "hero_id": 93,
+            "gold_t10": 3794,
+            "xp_t10": 4686,
+            "kills": 9,
+            "kills_before_10": 5,
+            "assists_before_10": 3,
+            "participate_before_10": 8
+          },
+          "pos4": {
+            "player": "Save-",
+            "hero": "Keeper of the Light",
+            "kills": 2,
+            "kills_before_10": 2,
+            "assists_before_10": 3,
+            "participate_before_10": 5
+          },
+          "pos5": {
+            "player": "Kataomi`",
+            "hero": "Bane",
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 8,
+          "first10_mid_sup_ka": 18,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "lorenof",
+            "hero": "Ember Spirit",
+            "hero_id": 106,
+            "gold_t10": 2555,
+            "xp_t10": 3214,
+            "kills": 1,
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "pos4": {
+            "player": "OmaR",
+            "hero": "Ringmaster",
+            "kills": 0,
+            "kills_before_10": 0,
+            "assists_before_10": 1,
+            "participate_before_10": 1
+          },
+          "pos5": {
+            "player": "GH",
+            "hero": "Mirana",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 2,
+          "first10_mid_sup_kills": 0,
+          "first10_mid_sup_ka": 1,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Bounty Hunter、Nature's Prophet；前两手Keeper of the Light、Bane；中单Slark第3手拿",
+          "dire": "一阶段禁Treant Protector、Largo；前两手Ember Spirit、Mirana；中单Ember Spirit第1手拿"
+        },
+        "pace": "慢节奏 / 偏长局（43分30秒）；先到10杀出现在 23分58秒",
+        "stance": "发育对线",
+        "f10k": "BoomBoys先到 10 杀（当时 10-2，23分58秒）。这 10 次击杀里，中单 gpk~/Slark 参与 8 次（击杀 5 + 助攻 3），中单+双辅合计参与 18 次 · 中辅驱动。对手当时 2 杀。",
+        "mid_support": "天辉中单 gpk~/Slark 参与 8 次（击杀5+助攻3），辅Save-/Keeper of the Light 参与 5 次，中辅合计18 · 中辅驱动；夜魇中单 lorenof/Ember Spirit 参与 0 次（击杀0+助攻0），辅OmaR/Ringmaster 参与 1 次，中辅合计1。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8958734008",
       "source": "ti15",
       "patch": "7.41e"
     }
