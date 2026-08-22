@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-22 13:48 CST",
-  "n": 104,
+  "asOf": "2026-08-22 14:05 CST",
+  "n": 105,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -31935,6 +31935,313 @@
         "mid_support": "天辉中单 Larl/Lina 参与 4 次（击杀2+助攻2），辅rue/Hoodwink 参与 3 次，中辅合计10 · 中辅驱动；夜魇中单 Nisha/Puck 参与 1 次（击杀1+助攻0），辅Boxi/Windranger 参与 1 次，中辅合计4。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8958538533",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8958607830,
+      "series_id": 1132647,
+      "start_time": 1787374948,
+      "duration": 2338,
+      "parsed": true,
+      "radiant": "BoomBoys",
+      "dire": "Nigma Galaxy",
+      "radiant_team_id": 8255888,
+      "dire_team_id": 10136357,
+      "winner": "BoomBoys",
+      "radiant_win": true,
+      "score": [
+        14,
+        13
+      ],
+      "pace": "慢",
+      "length": "偏长",
+      "stance": "发育对线",
+      "f10k": {
+        "side": "dire",
+        "time": 1661,
+        "score": {
+          "radiant": 6,
+          "dire": 10
+        },
+        "completing_killer": "Davai",
+        "completing_hero": "Centaur Warrunner"
+      },
+      "f10k_mid_share": 2,
+      "first_tower": {
+        "time": 556,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_bot"
+      },
+      "gold": {
+        "m5": 731,
+        "m10": 161,
+        "m15": 162,
+        "m20": 267
+      },
+      "kills_8min": 8,
+      "kills_15min": 10,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 3,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 5,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 6,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 11,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 19,
+              "hero": "Alchemist",
+              "hero_id": 73
+            },
+            {
+              "order": 21,
+              "hero": "Sven",
+              "hero_id": 18
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 12,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 15,
+              "hero": "Axe",
+              "hero_id": 2
+            },
+            {
+              "order": 16,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            },
+            {
+              "order": 23,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 3,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 12,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 1,
+              "hero": "Lina",
+              "hero_id": 25
+            },
+            {
+              "order": 4,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 9,
+              "hero": "Kez",
+              "hero_id": 145
+            },
+            {
+              "order": 10,
+              "hero": "Underlord",
+              "hero_id": 108
+            },
+            {
+              "order": 18,
+              "hero": "Viper",
+              "hero_id": 47
+            },
+            {
+              "order": 20,
+              "hero": "Sniper",
+              "hero_id": 35
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 13,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 14,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 17,
+              "hero": "Huskar",
+              "hero_id": 59
+            },
+            {
+              "order": 22,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 1,
+              "hero": "Lina",
+              "hero_id": 25
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 13,
+              "hero": "Mirana",
+              "hero_id": 9
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "gpk~",
+            "hero": "Shadow Fiend",
+            "hero_id": 11,
+            "gold_t10": 4054,
+            "xp_t10": 4146,
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Kataomi`",
+            "hero": "Winter Wyvern",
+            "kills": 2,
+            "kills_before_10": 2,
+            "assists_before_10": 1,
+            "participate_before_10": 3
+          },
+          "pos5": {
+            "player": "Save-",
+            "hero": "Dark Willow",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 6,
+          "first10_mid_sup_kills": 3,
+          "first10_mid_sup_ka": 7,
+          "mid_sup_driven": false
+        },
+        "dire": {
+          "mid": {
+            "player": "OmaR",
+            "hero": "Mirana",
+            "hero_id": 9,
+            "gold_t10": 2613,
+            "xp_t10": 2717,
+            "kills": 2,
+            "kills_before_10": 2,
+            "assists_before_10": 0,
+            "participate_before_10": 2
+          },
+          "pos4": {
+            "player": "GH",
+            "hero": "Io",
+            "kills": 1,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos5": {
+            "player": "Davai",
+            "hero": "Centaur Warrunner",
+            "kills_before_10": 2,
+            "assists_before_10": 1,
+            "participate_before_10": 3
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 5,
+          "first10_mid_sup_ka": 7,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Keeper of the Light、Bounty Hunter；前两手Winter Wyvern、Dark Willow；中单Shadow Fiend第5手拿",
+          "dire": "一阶段禁Treant Protector、Lina；前两手Io、Mirana；中单Mirana第2手拿"
+        },
+        "pace": "慢节奏 / 偏长局（38分58秒）；先到10杀出现在 27分41秒",
+        "stance": "发育对线",
+        "f10k": "Nigma Galaxy先到 10 杀（当时 6-10，27分41秒）。这 10 次击杀里，中单 OmaR/Mirana 参与 2 次（击杀 2 + 助攻 0），中单+双辅合计参与 7 次。对手当时 6 杀。",
+        "mid_support": "天辉中单 gpk~/Shadow Fiend 参与 4 次（击杀1+助攻3），辅Kataomi`/Winter Wyvern 参与 3 次，中辅合计7；夜魇中单 OmaR/Mirana 参与 2 次（击杀2+助攻0），辅GH/Io 参与 2 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8958607830",
       "source": "ti15",
       "patch": "7.41e"
     }
