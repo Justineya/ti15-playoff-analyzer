@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-22 12:55 CST",
+  "asOf": "2026-08-22 14:14 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -393,10 +393,16 @@
       "format": "Bo3",
       "teamA": "BoomBoys",
       "teamB": "Nigma Galaxy",
-      "status": "scheduled",
+      "status": "live",
       "winnerTo": "lbsf",
       "polyTitle": "BoomBoys vs Nigma Galaxy",
-      "polySlug": "dota2-ngx-boombo-2026-08-22"
+      "polySlug": "dota2-ngx-boombo-2026-08-22",
+      "mapsPlayed": 1,
+      "score": "0-1",
+      "matchIds": [
+        8958607830,
+        8958667855
+      ]
     },
     {
       "id": "lbqf2",
