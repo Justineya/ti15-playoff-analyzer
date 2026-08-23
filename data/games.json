@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-23 10:52 CST",
-  "n": 111,
+  "asOf": "2026-08-23 11:41 CST",
+  "n": 112,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -34084,6 +34084,313 @@
         "mid_support": "天辉中单 gpk~/Lina 参与 5 次（击杀3+助攻2），辅Kataomi`/Hoodwink 参与 4 次，中辅合计9 · 中辅驱动；夜魇中单 Larl/Ember Spirit 参与 5 次（击杀2+助攻3），辅not_me/Rubick 参与 4 次，中辅合计13 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8959222564",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8960365292,
+      "series_id": 1132977,
+      "start_time": 1787451068,
+      "duration": 2245,
+      "parsed": true,
+      "radiant": "Team Yandex",
+      "dire": "Team Spirit",
+      "radiant_team_id": 9823272,
+      "dire_team_id": 7119388,
+      "winner": "Team Spirit",
+      "radiant_win": false,
+      "score": [
+        15,
+        26
+      ],
+      "pace": "慢",
+      "length": "偏长",
+      "stance": "滚雪球",
+      "f10k": {
+        "side": "dire",
+        "time": 1053,
+        "score": {
+          "radiant": 9,
+          "dire": 10
+        },
+        "completing_killer": "Larl",
+        "completing_hero": "Pangolier"
+      },
+      "f10k_mid_share": 3,
+      "first_tower": {
+        "time": 751,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": 435,
+        "m10": 1708,
+        "m15": 4021,
+        "m20": 771
+      },
+      "kills_8min": 10,
+      "kills_15min": 16,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 5,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 6,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 11,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 19,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 21,
+              "hero": "Axe",
+              "hero_id": 2
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 12,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 15,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 16,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 23,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 12,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 1,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 4,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 9,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 10,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 18,
+              "hero": "Tidehunter",
+              "hero_id": 29
+            },
+            {
+              "order": 20,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Pangolier",
+              "hero_id": 120
+            },
+            {
+              "order": 14,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 17,
+              "hero": "Terrorblade",
+              "hero_id": 109
+            },
+            {
+              "order": 22,
+              "hero": "Underlord",
+              "hero_id": 108
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 1,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Pangolier",
+              "hero_id": 120
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Ember Spirit",
+            "hero_id": 106,
+            "gold_t10": 4467,
+            "xp_t10": 4619,
+            "kills": 6,
+            "kills_before_10": 3,
+            "assists_before_10": 1,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Maladych",
+            "hero": "Mirana",
+            "kills": 4,
+            "kills_before_10": 4,
+            "assists_before_10": 1,
+            "participate_before_10": 5
+          },
+          "pos5": {
+            "player": "Saksa",
+            "hero": "Nature's Prophet",
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 2,
+          "kills_at_f10k": 9,
+          "first10_mid_sup_kills": 8,
+          "first10_mid_sup_ka": 11,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Larl",
+            "hero": "Pangolier",
+            "hero_id": 120,
+            "gold_t10": 3305,
+            "xp_t10": 4642,
+            "kills": 3,
+            "kills_before_10": 2,
+            "assists_before_10": 1,
+            "participate_before_10": 3
+          },
+          "pos4": {
+            "player": "rue",
+            "hero": "Winter Wyvern",
+            "kills": 1,
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "not_me",
+            "hero": "Dark Willow",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 3,
+          "first10_mid_sup_ka": 7,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Earth Spirit；前两手Nature's Prophet、Ember Spirit；中单Ember Spirit第2手拿",
+          "dire": "一阶段禁Io、Bounty Hunter；前两手Winter Wyvern、Pangolier；中单Pangolier第2手拿"
+        },
+        "pace": "慢节奏 / 偏长局（37分25秒）；先到10杀出现在 17分33秒",
+        "stance": "滚雪球",
+        "f10k": "Team Spirit先到 10 杀（当时 9-10，17分33秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 3 次（击杀 2 + 助攻 1），中单+双辅合计参与 7 次。对手当时 9 杀。",
+        "mid_support": "天辉中单 CHIRA_JUNIOR/Ember Spirit 参与 4 次（击杀3+助攻1），辅Maladych/Mirana 参与 5 次，中辅合计11 · 中辅驱动；夜魇中单 Larl/Pangolier 参与 3 次（击杀2+助攻1），辅rue/Winter Wyvern 参与 4 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8960365292",
       "source": "ti15",
       "patch": "7.41e"
     }
