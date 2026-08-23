@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23T16:37Z",
+  "asOf": "2026-08-23T16:58Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -5079,7 +5079,7 @@
     {
       "slug": "dota2-vsn2-ts8-2026-08-23",
       "title": "Dota 2: TEAM VISION vs Team Spirit (BO5) - The International Playoffs",
-      "volume": 25087503.105915993,
+      "volume": 25087503.10591601,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Spirit - Game 1 Winner",
