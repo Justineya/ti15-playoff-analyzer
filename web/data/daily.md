@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-23 11:40 CST
+# TI15 局间战报 · 2026-08-23 12:24 CST
 
-第1局 Spirit 赢了，先到10杀 Spirit，37.4分钟。下一局第2局按上一局重算后看好 Spirit（52%）。现场赔率至少 1.93。
+败者组决赛第2局 Spirit 赢了，先到10杀 Spirit，34.3分钟。总决赛第1局按刚打完的局重算后看好 VSN（63%）。现场赔率至少 1.59。
 
-第1局 Spirit 赢了，先到10杀 Spirit，37.4分钟。上一局阵容 TY Nature's Prophet、Ember Spirit、Shadow Fiend / Spirit Winter Wyvern、Pangolier、Dark Willow。下一局第2局按上一局重算后看好 Spirit（52%）。现场赔率至少 1.93。系列现在看好 TY（72%）。先到10杀看好 Spirit。本届胜率 Team Spirit 62% / Team Yandex 58%；先到10杀 62% / 52%；H2H 1.9 局；Team Spirit 中单爱拿 Ember Spirit。
+败者组决赛已经 2-0 结束，不要把胜者组半决赛那三局当成总决赛局分。第1局 Spirit 赢，15-26，先到10杀 Spirit（9-10，17分33秒），37.4分钟慢节奏滚雪球；TY 中单 Ember Spirit，Spirit 中单 Pangolier。第2局 Spirit 再赢，38-14，先到10杀 Spirit（10-6，15分39秒），34.3分钟来回拉锯后拉开；Spirit 中单还是 Pangolier，TY 改 Snapfire。Larl/Pangolier 参与先到10杀里的 6 次，中辅合计 9 次。
+
+因为刚横扫 TY、两局都是 Pangolier 中单且第2局中辅驱动先到10杀，Spirit 带着这套节奏进 13:00 总决赛。胜者组半决赛同对手是 VSN 2-1（长局 VSN 拿下，Spirit 只赢了 28.6 分钟那局）。整棵模型重算后，总决赛从 0-0 开始：第1局看好 VSN（63%，门槛 1.59），先到10杀看好 Spirit（55%，门槛 1.83），系列看好 VSN（73%，门槛 1.37）。Polymarket 没有总决赛这局盘。这不是投注建议。
