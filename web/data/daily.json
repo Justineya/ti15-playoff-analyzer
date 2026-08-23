@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23 23:48 CST",
+  "asOf": "2026-08-24 00:03 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-series",
   "headline": "第5局 VSN 赢了，先到10杀 Spirit，64.5分钟。淘汰赛还没开打。局一打完会写下局看好谁。",
@@ -288,39 +288,6 @@
     "polySlug": "dota2-vsn2-ts8-2026-08-23",
     "mapsPlayed": 5
   },
-  "todayResults": [
-    {
-      "id": "lbf",
-      "round": "败者组决赛",
-      "day": "2026-08-23",
-      "when": "2026-08-23 10:00",
-      "format": "Bo3",
-      "teamA": "Team Spirit",
-      "teamB": "Team Yandex",
-      "teamALabel": "Team Spirit",
-      "teamBLabel": "Team Yandex",
-      "status": "completed",
-      "score": "2-0",
-      "winner": "Team Spirit",
-      "polySlug": "dota2-ty-ts8-2026-08-22",
-      "mapsPlayed": 2
-    },
-    {
-      "id": "gf",
-      "round": "总决赛",
-      "day": "2026-08-23",
-      "when": "2026-08-23 13:00",
-      "format": "Bo5",
-      "teamA": "TEAM VISION",
-      "teamB": "Team Spirit",
-      "teamALabel": "TEAM VISION",
-      "teamBLabel": "Team Spirit",
-      "status": "completed",
-      "score": "3-2",
-      "winner": "TEAM VISION",
-      "polySlug": "dota2-vsn2-ts8-2026-08-23",
-      "mapsPlayed": 5
-    }
-  ],
+  "todayResults": [],
   "newMapIds": []
 }
