@@ -1,43 +1,43 @@
 {
-  "asOf": "2026-08-23 22:41 CST",
+  "asOf": "2026-08-23 23:01 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-series",
-  "headline": "第6局 Spirit 赢了，先到10杀 VSN，64.4分钟。淘汰赛还没开打。局一打完会写下局看好谁。",
-  "narrative": "第6局 Spirit 赢了，先到10杀 VSN，64.4分钟。上一局阵容 VSN Invoker、Rubick、Axe / Spirit Bane、Pangolier、Mirana。淘汰赛还没开打。局一打完会写下局看好谁。",
+  "headline": "第5局 VSN 赢了，先到10杀 Spirit，64.5分钟。淘汰赛还没开打。局一打完会写下局看好谁。",
+  "narrative": "第5局 VSN 赢了，先到10杀 Spirit，64.5分钟。上一局阵容 VSN Earth Spirit、Enchantress、Rubick / Spirit Shadow Fiend、Slardar、Hoodwink。淘汰赛还没开打。局一打完会写下局看好谁。",
   "previousMap": {
-    "game": 6,
-    "matchId": 8960991322,
-    "winner": "Team Spirit",
+    "game": 5,
+    "matchId": 8960655084,
+    "winner": "TEAM VISION",
     "score": [
-      31,
-      34
+      46,
+      48
     ],
-    "f10": "TEAM VISION",
-    "f10Time": 787,
-    "durationMin": 64.4,
-    "pace": "正常",
-    "stance": "来回拉锯",
+    "f10": "Team Spirit",
+    "f10Time": 610,
+    "durationMin": 64.5,
+    "pace": "快",
+    "stance": "进攻转线",
     "picks": {
       "TEAM VISION": [
-        "Invoker",
+        "Earth Spirit",
+        "Enchantress",
         "Rubick",
-        "Axe",
-        "Hoodwink",
-        "Juggernaut"
+        "Underlord",
+        "Lifestealer"
       ],
       "Team Spirit": [
-        "Bane",
-        "Pangolier",
-        "Mirana",
-        "Lifestealer",
-        "Dark Seer"
+        "Shadow Fiend",
+        "Slardar",
+        "Hoodwink",
+        "Undying",
+        "Axe"
       ]
     },
     "mid": {
-      "TEAM VISION": "Invoker",
-      "Team Spirit": "Pangolier"
+      "TEAM VISION": "Earth Spirit",
+      "Team Spirit": "Slardar"
     },
-    "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
+    "blurb": "Team Spirit先到 10 杀（当时 2-10，10分10秒）。这 10 次击杀里，中单 Larl/Slardar 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 2 杀。"
   },
   "previousMaps": [
     {
@@ -214,41 +214,6 @@
         "Team Spirit": "Slardar"
       },
       "blurb": "Team Spirit先到 10 杀（当时 2-10，10分10秒）。这 10 次击杀里，中单 Larl/Slardar 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 2 杀。"
-    },
-    {
-      "game": 6,
-      "matchId": 8960991322,
-      "winner": "Team Spirit",
-      "score": [
-        31,
-        34
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 787,
-      "durationMin": 64.4,
-      "pace": "正常",
-      "stance": "来回拉锯",
-      "picks": {
-        "TEAM VISION": [
-          "Invoker",
-          "Rubick",
-          "Axe",
-          "Hoodwink",
-          "Juggernaut"
-        ],
-        "Team Spirit": [
-          "Bane",
-          "Pangolier",
-          "Mirana",
-          "Lifestealer",
-          "Dark Seer"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Invoker",
-        "Team Spirit": "Pangolier"
-      },
-      "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
     }
   ],
   "nextMap": null,
