@@ -1,5 +1,9 @@
-# TI15 局间战报 · 2026-08-23 15:47 CST
+# TI15 局间战报 · 2026-08-23 15:49 CST
 
-第4局 Spirit 赢了，先到10杀 Spirit，46.2分钟。下一局第5局按上一局重算后看好 VSN（59%）。现场赔率至少 1.7。
+总决赛 2-2。第4局 Spirit 赢了，先到10杀 Spirit（13分46秒），46.2分钟滚雪球扳平。决胜局重算看好 VSN（59%），系列 58%。
 
-第4局 Spirit 赢了，先到10杀 Spirit，46.2分钟。上一局阵容 Spirit Slark、Dark Willow、Shadow Fiend / VSN Ember Spirit、Mirana、Io。下一局第5局按上一局重算后看好 VSN（59%）。现场赔率至少 1.7。系列现在看好 VSN（58%）。先到10杀看好 Spirit。本届胜率 TEAM VISION 68% / Team Spirit 63%；先到10杀 56% / 63%；H2H 6.9 局；TEAM VISION 中单爱拿 Ember Spirit。
+总决赛四局已经打完，不是开赛第1局预览。第1局 VSN 赢（28-20，42.8分钟慢节奏拉锯），中单 Slark 对 Ember；Spirit 先到10杀（17分48秒，7-10），Larl/Ember 参与5次，但没能带走。第2局 Spirit 赢（29-8，28.6分钟），中单 Night Stalker 对 Puck，先到10杀 Spirit（16分09秒，10-5），中辅驱动。第3局 VSN 赢（12-37，46.9分钟滚雪球），中单 Ember 对 Invoker，VSN 先到10杀（21分27秒，4-10）；No[o]ne- 的 Ember 这10次里参与0次，赢在后期雪球。第4局 Spirit 赢（42-17，46.2分钟正常节奏滚雪球），一优先手 Slark，Yatoro 出 Shadow Fiend；VSN 前两手 Ember、Mirana，中单改 Io。Spirit 13分46秒先到10杀（10-6），Larl/Slark 只参与1次，随后滚到42-17。
+
+因为第4局这样，所以第5局不能再套 2-1 时的稿。VSN 刚把 Ember 从中单挪到 Satanic、No[o]ne- 改 Io，早节奏没守住；Spirit 刚证明 Slark 一优先手能把先到10杀提前到14分钟内。系列从 2-1 变成 2-2 后，模型系列胜率从上一局战报的 86% 掉到 58%——决胜局约等于地图胜率。H2H 样本因这一局变成 6.9 局，VSN 本届胜率 70%→68%、先到10杀 58%→56%，Spirit 先到10杀仍是 63%。液体百科这页只把刚打完的第4局记成 0-1（46m15s，Spirit 胜），局分以 OpenDota 四局 2-2 为准。
+
+下一局第5局（观战源已有选人房 8960655084，英雄还没推上来）重算后看好 VSN 赢图 59%（门槛 1.70）。先到10杀看好 Spirit 56%（门槛 1.78），没有公开盘。Polymarket 没有第5局价；挂着的系列盘是旧 BO3/小组赛 slug，价已结算成 1.0/0.0，不当总决赛现场价。这不是投注建议。

@@ -1,7 +1,7 @@
 {
-  "launch": false,
-  "fresh": false,
-  "reason": "launched",
+  "launch": true,
+  "fresh": true,
+  "reason": "finished maps ['8960577698']",
   "newMapIds": [
     "8960577698"
   ],
