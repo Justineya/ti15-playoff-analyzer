@@ -1,7 +1,7 @@
 {
-  "launch": true,
-  "fresh": true,
-  "reason": "finished maps ['8960577698']",
+  "launch": false,
+  "fresh": false,
+  "reason": "launched",
   "newMapIds": [
     "8960577698"
   ],
@@ -21,5 +21,5 @@
     "ubf": "2-1",
     "lbf": "2-0"
   },
-  "asOf": "2026-08-23 15:47 CST"
+  "asOf": "2026-08-23 16:05 CST"
 }
