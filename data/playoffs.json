@@ -501,20 +501,17 @@
       "format": "Bo5",
       "teamA": "TEAM VISION",
       "teamB": "Team Spirit",
-      "status": "completed",
-      "polyTitle": "TEAM VISION vs Team Spirit",
-      "mapsPlayed": 5,
-      "score": "3-2",
+      "status": "live",
+      "polyTitle": "Dota 2: TEAM VISION vs Team Spirit (BO5) - The International Playoffs",
+      "mapsPlayed": 4,
+      "score": "2-2",
       "matchIds": [
-        8957180942,
-        8957272720,
-        8957364447,
         8960577698,
-        8960655084
+        8960655084,
+        8960762254,
+        8960882635
       ],
-      "polySlug": "dota2-ts8-vsn2-2026-08-21",
-      "winner": "TEAM VISION",
-      "loser": "Team Spirit"
+      "polySlug": "dota2-vsn2-ts8-2026-08-23"
     }
   ],
   "scheduleAsOf": "2026-08-23 19:03 CST",

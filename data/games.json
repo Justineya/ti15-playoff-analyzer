@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-23 19:04 CST",
-  "n": 116,
+  "asOf": "2026-08-23 20:04 CST",
+  "n": 117,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -35619,6 +35619,313 @@
         "mid_support": "天辉中单 Larl/Nature's Prophet 参与 3 次（击杀2+助攻1），辅not_me/Dark Willow 参与 3 次，中辅合计7；夜魇中单 No[o]ne-/Pangolier 参与 3 次（击杀3+助攻0），辅Dukalis/Enchantress 参与 2 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8960762254",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8960882635,
+      "series_id": 1133004,
+      "start_time": 1787482181,
+      "duration": 2658,
+      "parsed": true,
+      "radiant": "TEAM VISION",
+      "dire": "Team Spirit",
+      "radiant_team_id": 9572001,
+      "dire_team_id": 7119388,
+      "winner": "TEAM VISION",
+      "radiant_win": true,
+      "score": [
+        31,
+        13
+      ],
+      "pace": "慢",
+      "length": "偏长",
+      "stance": "来回拉锯",
+      "f10k": {
+        "side": "radiant",
+        "time": 1031,
+        "score": {
+          "radiant": 10,
+          "dire": 4
+        },
+        "completing_killer": "Satanic",
+        "completing_hero": "Lifestealer"
+      },
+      "f10k_mid_share": 6,
+      "first_tower": {
+        "time": 719,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -343,
+        "m10": 1099,
+        "m15": 2147,
+        "m20": 4136
+      },
+      "kills_8min": 3,
+      "kills_15min": 11,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 5,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 6,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 11,
+              "hero": "Terrorblade",
+              "hero_id": 109
+            },
+            {
+              "order": 19,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 21,
+              "hero": "Invoker",
+              "hero_id": 74
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 12,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 15,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            },
+            {
+              "order": 16,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 23,
+              "hero": "Sand King",
+              "hero_id": 16
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 12,
+              "hero": "Doom",
+              "hero_id": 69
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 4,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 9,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 10,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 18,
+              "hero": "Snapfire",
+              "hero_id": 128
+            },
+            {
+              "order": 20,
+              "hero": "Puck",
+              "hero_id": 13
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 14,
+              "hero": "Clockwerk",
+              "hero_id": 51
+            },
+            {
+              "order": 17,
+              "hero": "Templar Assassin",
+              "hero_id": 46
+            },
+            {
+              "order": 22,
+              "hero": "Storm Spirit",
+              "hero_id": 17
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 13,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Sand King",
+            "hero_id": 16,
+            "gold_t10": 4754,
+            "xp_t10": 5630,
+            "kills": 5,
+            "kills_before_10": 2,
+            "assists_before_10": 4,
+            "participate_before_10": 6
+          },
+          "pos4": {
+            "player": "Dukalis",
+            "hero": "Mirana",
+            "kills": 8,
+            "kills_before_10": 4,
+            "assists_before_10": 2,
+            "participate_before_10": 6
+          },
+          "pos5": {
+            "player": "9Class",
+            "hero": "Keeper of the Light",
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 7,
+          "first10_mid_sup_ka": 17,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Larl",
+            "hero": "Storm Spirit",
+            "hero_id": 17,
+            "gold_t10": 3646,
+            "xp_t10": 3922,
+            "kills": 6,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos4": {
+            "player": "not_me",
+            "hero": "Clockwerk",
+            "kills": 1,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos5": {
+            "player": "rue",
+            "hero": "Winter Wyvern",
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 4,
+          "first10_mid_sup_kills": 2,
+          "first10_mid_sup_ka": 6,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Dark Willow；前两手Keeper of the Light、Doom；中单Sand King第5手拿",
+          "dire": "一阶段禁Bounty Hunter、Nature's Prophet；前两手Winter Wyvern、Centaur Warrunner；中单Storm Spirit第5手拿"
+        },
+        "pace": "慢节奏 / 偏长局（44分18秒）；先到10杀出现在 17分11秒",
+        "stance": "来回拉锯",
+        "f10k": "TEAM VISION先到 10 杀（当时 10-4，17分11秒）。这 10 次击杀里，中单 No[o]ne-/Sand King 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。",
+        "mid_support": "天辉中单 No[o]ne-/Sand King 参与 6 次（击杀2+助攻4），辅Dukalis/Mirana 参与 6 次，中辅合计17 · 中辅驱动；夜魇中单 Larl/Storm Spirit 参与 2 次（击杀1+助攻1），辅not_me/Clockwerk 参与 2 次，中辅合计6。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8960882635",
       "source": "ti15",
       "patch": "7.41e"
     }
