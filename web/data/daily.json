@@ -1,161 +1,266 @@
 {
-  "asOf": "2026-08-23 11:40 CST",
+  "asOf": "2026-08-23 12:23 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 Spirit 赢了，先到10杀 Spirit，37.4分钟。下一局第2局按上一局重算后看好 Spirit（52%）。现场赔率至少 1.93。",
-  "narrative": "第1局 Spirit 赢了，先到10杀 Spirit，37.4分钟。上一局阵容 TY Nature's Prophet、Ember Spirit、Shadow Fiend / Spirit Winter Wyvern、Pangolier、Dark Willow。下一局第2局按上一局重算后看好 Spirit（52%）。现场赔率至少 1.93。系列现在看好 TY（72%）。先到10杀看好 Spirit。本届胜率 Team Spirit 62% / Team Yandex 58%；先到10杀 62% / 52%；H2H 1.9 局；Team Spirit 中单爱拿 Ember Spirit。",
+  "headline": "第3局 VSN 赢了，先到10杀 VSN，46.9分钟。下一局第4局按上一局重算后看好 VSN（64%）。现场赔率至少 1.57。",
+  "narrative": "第3局 VSN 赢了，先到10杀 VSN，46.9分钟。上一局阵容 Spirit Winter Wyvern、Invoker、Underlord / VSN Shadow Fiend、Ember Spirit、Dark Willow。下一局第4局按上一局重算后看好 VSN（64%）。现场赔率至少 1.57。系列现在看好 VSN（86%）。先到10杀看好 Spirit。本届胜率 TEAM VISION 70% / Team Spirit 63%；先到10杀 58% / 63%；H2H 5.9 局；TEAM VISION 中单爱拿 Ember Spirit。",
   "previousMap": {
-    "game": 1,
-    "matchId": 8960365292,
-    "winner": "Team Spirit",
+    "game": 3,
+    "matchId": 8957364447,
+    "winner": "TEAM VISION",
     "score": [
-      15,
-      26
+      12,
+      37
     ],
-    "f10": "Team Spirit",
-    "f10Time": 1053,
-    "durationMin": 37.4,
+    "f10": "TEAM VISION",
+    "f10Time": 1287,
+    "durationMin": 46.9,
     "pace": "慢",
     "stance": "滚雪球",
     "picks": {
-      "Team Yandex": [
-        "Nature's Prophet",
-        "Ember Spirit",
-        "Shadow Fiend",
-        "Mirana",
-        "Timbersaw"
-      ],
       "Team Spirit": [
         "Winter Wyvern",
-        "Pangolier",
+        "Invoker",
+        "Underlord",
+        "Lion",
+        "Sven"
+      ],
+      "TEAM VISION": [
+        "Shadow Fiend",
+        "Ember Spirit",
         "Dark Willow",
-        "Terrorblade",
-        "Underlord"
+        "Doom",
+        "Mirana"
       ]
     },
     "mid": {
-      "Team Yandex": "Ember Spirit",
-      "Team Spirit": "Pangolier"
+      "Team Spirit": "Invoker",
+      "TEAM VISION": "Ember Spirit"
     },
-    "blurb": "Team Spirit先到 10 杀（当时 9-10，17分33秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 3 次（击杀 2 + 助攻 1），中单+双辅合计参与 7 次。对手当时 9 杀。"
+    "blurb": "TEAM VISION先到 10 杀（当时 4-10，21分27秒）。这 10 次击杀里，中单 No[o]ne-/Ember Spirit 参与 0 次（击杀 0 + 助攻 0），中单+双辅合计参与 4 次。对手当时 4 杀。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 8960365292,
-      "winner": "Team Spirit",
+      "matchId": 8957180942,
+      "winner": "TEAM VISION",
       "score": [
-        15,
-        26
+        28,
+        20
       ],
       "f10": "Team Spirit",
-      "f10Time": 1053,
-      "durationMin": 37.4,
+      "f10Time": 1068,
+      "durationMin": 42.8,
       "pace": "慢",
-      "stance": "滚雪球",
+      "stance": "来回拉锯",
       "picks": {
-        "Team Yandex": [
+        "TEAM VISION": [
+          "Doom",
           "Nature's Prophet",
-          "Ember Spirit",
-          "Shadow Fiend",
-          "Mirana",
-          "Timbersaw"
+          "Rubick",
+          "Slark",
+          "Ogre Magi"
         ],
         "Team Spirit": [
-          "Winter Wyvern",
-          "Pangolier",
-          "Dark Willow",
+          "Ember Spirit",
+          "Undying",
+          "Hoodwink",
           "Terrorblade",
-          "Underlord"
+          "Night Stalker"
         ]
       },
       "mid": {
-        "Team Yandex": "Ember Spirit",
-        "Team Spirit": "Pangolier"
+        "TEAM VISION": "Slark",
+        "Team Spirit": "Ember Spirit"
       },
-      "blurb": "Team Spirit先到 10 杀（当时 9-10，17分33秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 3 次（击杀 2 + 助攻 1），中单+双辅合计参与 7 次。对手当时 9 杀。"
+      "blurb": "Team Spirit先到 10 杀（当时 7-10，17分48秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 7 杀。"
+    },
+    {
+      "game": 2,
+      "matchId": 8957272720,
+      "winner": "Team Spirit",
+      "score": [
+        29,
+        8
+      ],
+      "f10": "Team Spirit",
+      "f10Time": 969,
+      "durationMin": 28.6,
+      "pace": "慢",
+      "stance": "来回拉锯",
+      "picks": {
+        "Team Spirit": [
+          "Winter Wyvern",
+          "Doom",
+          "Phantom Lancer",
+          "Clockwerk",
+          "Night Stalker"
+        ],
+        "TEAM VISION": [
+          "Dark Willow",
+          "Drow Ranger",
+          "Undying",
+          "Timbersaw",
+          "Puck"
+        ]
+      },
+      "mid": {
+        "Team Spirit": "Night Stalker",
+        "TEAM VISION": "Puck"
+      },
+      "blurb": "Team Spirit先到 10 杀（当时 10-5，16分09秒）。这 10 次击杀里，中单 Larl/Night Stalker 参与 4 次（击杀 3 + 助攻 1），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 5 杀。"
+    },
+    {
+      "game": 3,
+      "matchId": 8957364447,
+      "winner": "TEAM VISION",
+      "score": [
+        12,
+        37
+      ],
+      "f10": "TEAM VISION",
+      "f10Time": 1287,
+      "durationMin": 46.9,
+      "pace": "慢",
+      "stance": "滚雪球",
+      "picks": {
+        "Team Spirit": [
+          "Winter Wyvern",
+          "Invoker",
+          "Underlord",
+          "Lion",
+          "Sven"
+        ],
+        "TEAM VISION": [
+          "Shadow Fiend",
+          "Ember Spirit",
+          "Dark Willow",
+          "Doom",
+          "Mirana"
+        ]
+      },
+      "mid": {
+        "Team Spirit": "Invoker",
+        "TEAM VISION": "Ember Spirit"
+      },
+      "blurb": "TEAM VISION先到 10 杀（当时 4-10，21分27秒）。这 10 次击杀里，中单 No[o]ne-/Ember Spirit 参与 0 次（击杀 0 + 助攻 0），中单+双辅合计参与 4 次。对手当时 4 杀。"
     }
   ],
   "nextMap": {
-    "game": 2,
-    "teamA": "Team Spirit",
-    "teamB": "Team Yandex",
+    "game": 4,
+    "teamA": "TEAM VISION",
+    "teamB": "Team Spirit",
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.518,
-      "pA": 0.518,
-      "pB": 0.482,
-      "breakEven": 1.93,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.636,
+      "pA": 0.636,
+      "pB": 0.364,
+      "breakEven": 1.57,
       "market": null,
-      "why": "本届胜率 Team Spirit 62% / Team Yandex 58%；先到10杀 62% / 52%；H2H 1.9 局；Team Spirit 中单爱拿 Ember Spirit"
+      "why": "本届胜率 TEAM VISION 70% / Team Spirit 63%；先到10杀 58% / 63%；H2H 5.9 局；TEAM VISION 中单爱拿 Ember Spirit"
     },
     "f10": {
       "team": "Team Spirit",
       "tag": "Spirit",
-      "p": 0.603,
-      "pA": 0.603,
-      "pB": 0.397,
-      "breakEven": 1.66,
+      "p": 0.556,
+      "pA": 0.444,
+      "pB": 0.556,
+      "breakEven": 1.8,
       "market": null,
       "why": ""
     }
   },
   "seriesLean": {
-    "team": "Team Yandex",
-    "tag": "TY",
-    "p": 0.725,
-    "pA": 0.275,
-    "pB": 0.725,
-    "breakEven": 1.38,
-    "market": null,
-    "why": "本届胜率 Team Spirit 62% / Team Yandex 58%；先到10杀 62% / 52%；H2H 1.9 局；Team Spirit 中单爱拿 Ember Spirit"
+    "team": "TEAM VISION",
+    "tag": "VSN",
+    "p": 0.861,
+    "pA": 0.861,
+    "pB": 0.139,
+    "breakEven": 1.16,
+    "market": {
+      "outcomes": [
+        "TEAM VISION",
+        "Team Spirit"
+      ],
+      "prices": [
+        1.0,
+        0.0
+      ]
+    },
+    "why": "本届胜率 TEAM VISION 70% / Team Spirit 63%；先到10杀 58% / 63%；H2H 5.9 局；TEAM VISION 中单爱拿 Ember Spirit"
   },
   "previous": null,
   "next": {
-    "id": "lbf",
-    "round": "败者组决赛",
+    "id": "gf",
+    "round": "总决赛",
     "day": "2026-08-23",
-    "when": "2026-08-23 10:00",
-    "format": "Bo3",
-    "teamA": "Team Spirit",
-    "teamB": "Team Yandex",
-    "teamALabel": "Team Spirit",
-    "teamBLabel": "Team Yandex",
+    "when": "2026-08-23 13:00",
+    "format": "Bo5",
+    "teamA": "TEAM VISION",
+    "teamB": "Team Spirit",
+    "teamALabel": "TEAM VISION",
+    "teamBLabel": "Team Spirit",
     "status": "live",
-    "score": "0-1",
+    "score": "2-1",
     "winner": null,
-    "polySlug": "dota2-ty-ts8-2026-08-22",
-    "mapsPlayed": 1,
+    "polySlug": "dota2-ts8-vsn2-2026-08-21",
+    "mapsPlayed": 3,
     "lean": {
-      "team": "Team Yandex",
-      "tag": "TY",
-      "p": 0.725,
-      "pA": 0.275,
-      "pB": 0.725,
-      "breakEven": 1.38,
-      "market": null,
-      "why": "本届胜率 Team Spirit 62% / Team Yandex 58%；先到10杀 62% / 52%；H2H 1.9 局；Team Spirit 中单爱拿 Ember Spirit"
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.861,
+      "pA": 0.861,
+      "pB": 0.139,
+      "breakEven": 1.16,
+      "market": {
+        "outcomes": [
+          "TEAM VISION",
+          "Team Spirit"
+        ],
+        "prices": [
+          1.0,
+          0.0
+        ]
+      },
+      "why": "本届胜率 TEAM VISION 70% / Team Spirit 63%；先到10杀 58% / 63%；H2H 5.9 局；TEAM VISION 中单爱拿 Ember Spirit"
     }
   },
   "focus": {
-    "id": "lbf",
-    "round": "败者组决赛",
+    "id": "gf",
+    "round": "总决赛",
     "day": "2026-08-23",
-    "when": "2026-08-23 10:00",
-    "format": "Bo3",
-    "teamA": "Team Spirit",
-    "teamB": "Team Yandex",
-    "teamALabel": "Team Spirit",
-    "teamBLabel": "Team Yandex",
+    "when": "2026-08-23 13:00",
+    "format": "Bo5",
+    "teamA": "TEAM VISION",
+    "teamB": "Team Spirit",
+    "teamALabel": "TEAM VISION",
+    "teamBLabel": "Team Spirit",
     "status": "live",
-    "score": "0-1",
+    "score": "2-1",
     "winner": null,
-    "polySlug": "dota2-ty-ts8-2026-08-22",
-    "mapsPlayed": 1
+    "polySlug": "dota2-ts8-vsn2-2026-08-21",
+    "mapsPlayed": 3
   },
-  "todayResults": [],
+  "todayResults": [
+    {
+      "id": "lbf",
+      "round": "败者组决赛",
+      "day": "2026-08-23",
+      "when": "2026-08-23 10:00",
+      "format": "Bo3",
+      "teamA": "Team Spirit",
+      "teamB": "Team Yandex",
+      "teamALabel": "Team Spirit",
+      "teamBLabel": "Team Yandex",
+      "status": "completed",
+      "score": "2-0",
+      "winner": "Team Spirit",
+      "polySlug": "dota2-ty-ts8-2026-08-22",
+      "mapsPlayed": 2
+    }
+  ],
   "newMapIds": [
-    8960365292
+    8960411225
   ]
 }
