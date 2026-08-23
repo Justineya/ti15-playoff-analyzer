@@ -1,5 +1,5 @@
-# TI15 局间战报 · 2026-08-23 17:58 CST
+# TI15 局间战报 · 2026-08-23 18:21 CST
 
-第5局 VSN 赢了，先到10杀 Spirit，64.5分钟。淘汰赛还没开打。局一打完会写下局看好谁。
+第6局 Spirit 赢了，先到10杀 VSN，45.9分钟。淘汰赛还没开打。局一打完会写下局看好谁。
 
-第5局 VSN 赢了，先到10杀 Spirit，64.5分钟。上一局阵容 VSN Earth Spirit、Enchantress、Rubick / Spirit Shadow Fiend、Slardar、Hoodwink。淘汰赛还没开打。局一打完会写下局看好谁。
+第6局 Spirit 赢了，先到10杀 VSN，45.9分钟。上一局阵容 Spirit Nature's Prophet、Dark Willow、Tusk / VSN Shadow Fiend、Enchantress、Slardar。淘汰赛还没开打。局一打完会写下局看好谁。
