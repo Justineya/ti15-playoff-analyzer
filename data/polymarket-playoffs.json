@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23T05:56Z",
+  "asOf": "2026-08-23T06:26Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 6680598.714295,
+      "volume": 6680598.714295001,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
