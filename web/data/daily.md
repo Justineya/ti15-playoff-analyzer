@@ -1,5 +1,5 @@
-# TI15 局间战报 · 2026-08-23 21:29 CST
+# TI15 局间战报 · 2026-08-23 21:55 CST
 
-第7局 VSN 赢了，先到10杀 VSN，44.3分钟。淘汰赛还没开打。局一打完会写下局看好谁。
+第6局 Spirit 赢了，先到10杀 VSN，64.4分钟。淘汰赛还没开打。局一打完会写下局看好谁。
 
-第7局 VSN 赢了，先到10杀 VSN，44.3分钟。上一局阵容 VSN Keeper of the Light、Doom、Lifestealer / Spirit Winter Wyvern、Centaur Warrunner、Clockwerk。淘汰赛还没开打。局一打完会写下局看好谁。
+第6局 Spirit 赢了，先到10杀 VSN，64.4分钟。上一局阵容 VSN Invoker、Rubick、Axe / Spirit Bane、Pangolier、Mirana。淘汰赛还没开打。局一打完会写下局看好谁。
