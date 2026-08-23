@@ -7,7 +7,7 @@
   "groupStage": "2026-08-13 ~ 2026-08-16",
   "playoffs": "2026-08-20 ~ 2026-08-23",
   "timezone": "Asia/Shanghai",
-  "asOf": "2026-08-23 15:11 CST",
+  "asOf": "2026-08-23 15:46 CST",
   "note": "对阵图按液体百科排好，后续场次队伍会随结果填入。开赛时间跟液体百科，主办方改点后这里跟着改。时间均为北京时间。",
   "swissTop3": [
     "TEAM VISION",
@@ -503,17 +503,18 @@
       "teamB": "Team Spirit",
       "status": "live",
       "polyTitle": "TEAM VISION vs Team Spirit",
-      "mapsPlayed": 3,
-      "score": "2-1",
+      "mapsPlayed": 4,
+      "score": "2-2",
       "matchIds": [
         8957180942,
         8957272720,
-        8957364447
+        8957364447,
+        8960577698
       ],
       "polySlug": "dota2-ts8-vsn2-2026-08-21"
     }
   ],
-  "scheduleAsOf": "2026-08-23 15:11 CST",
+  "scheduleAsOf": "2026-08-23 15:46 CST",
   "scheduleSource": "https://liquipedia.net/dota2/The_International/2026/Main_Event",
   "scheduleError": "parsed 2 slots"
 }
