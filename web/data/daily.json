@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23 12:23 CST",
+  "asOf": "2026-08-23 12:59 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
   "headline": "第3局 VSN 赢了，先到10杀 VSN，46.9分钟。下一局第4局按上一局重算后看好 VSN（64%）。现场赔率至少 1.57。",
@@ -260,7 +260,5 @@
       "mapsPlayed": 2
     }
   ],
-  "newMapIds": [
-    8960411225
-  ]
+  "newMapIds": []
 }

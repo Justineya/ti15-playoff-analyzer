@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23T04:23Z",
+  "asOf": "2026-08-23T04:59Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11840828.804969994,
+      "volume": 11840828.804969998,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 6680598.714294998,
+      "volume": 6680598.714295001,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4709,7 +4709,7 @@
     {
       "slug": "dota2-ty-ts8-2026-08-22",
       "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 10424924.827151,
+      "volume": 10519433.027150998,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
@@ -4729,8 +4729,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4740,8 +4740,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4751,8 +4751,8 @@
             "Under"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4817,8 +4817,8 @@
             "No"
           ],
           "prices": [
-            "0.995",
-            "0.005"
+            "1",
+            "0"
           ]
         },
         {
@@ -4828,8 +4828,8 @@
             "No"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4839,8 +4839,8 @@
             "No"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4850,8 +4850,8 @@
             "No"
           ],
           "prices": [
-            "0.995",
-            "0.005"
+            "1",
+            "0"
           ]
         },
         {
@@ -4861,8 +4861,8 @@
             "No"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -4894,8 +4894,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -4927,8 +4927,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -4949,8 +4949,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -4971,8 +4971,8 @@
             "Under"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -5004,8 +5004,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.0005",
-            "0.9995"
+            "0",
+            "1"
           ]
         },
         {
@@ -5026,8 +5026,8 @@
             "Under"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -5037,8 +5037,8 @@
             "Under"
           ],
           "prices": [
-            "0.9995",
-            "0.0005"
+            "1",
+            "0"
           ]
         },
         {
@@ -5048,8 +5048,8 @@
             "Under"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -5059,8 +5059,8 @@
             "Under"
           ],
           "prices": [
-            "0.005",
-            "0.995"
+            "0",
+            "1"
           ]
         },
         {
@@ -5070,8 +5070,8 @@
             "Under"
           ],
           "prices": [
-            "0.004",
-            "0.996"
+            "0",
+            "1"
           ]
         }
       ]
