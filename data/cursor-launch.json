@@ -1,10 +1,8 @@
 {
   "launch": false,
   "fresh": false,
-  "reason": "launched",
-  "newMapIds": [
-    "8960991322"
-  ],
+  "reason": "no new playoff map",
+  "newMapIds": [],
   "series": {
     "ubsf1": "1-2",
     "lbsf": "0-2",
