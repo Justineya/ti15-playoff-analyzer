@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23 20:05 CST",
+  "asOf": "2026-08-23 20:57 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -6462,108 +6462,38 @@
       "when": "2026-08-21 18:20",
       "status": "scheduled",
       "polySlug": "dota2-vsn2-ts8-2026-08-15",
-      "poly": {
-        "g1": {
-          "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
-          ],
-          "prices": [
-            0.0,
-            1.0
-          ],
-          "question": "Dota 2: Team Spirit vs TEAM VISION - Game 1 Winner"
-        },
-        "g2": {
-          "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
-          ],
-          "prices": [
-            1.0,
-            0.0
-          ],
-          "question": "Dota 2: Team Spirit vs TEAM VISION - Game 2 Winner"
-        },
-        "series": {
-          "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
-          ],
-          "prices": [
-            0.0,
-            1.0
-          ],
-          "question": "Dota 2: Team Spirit vs TEAM VISION (BO3) - The International Playoffs"
-        },
-        "ou25": {
-          "outcomes": [
-            "Over",
-            "Under"
-          ],
-          "prices": [
-            1.0,
-            0.0
-          ],
-          "question": "Games Total: O/U 2.5"
-        },
-        "handicap": {
-          "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
-          ],
-          "prices": [
-            0.0,
-            1.0
-          ],
-          "question": "Game Handicap: TS (-1.5) vs TEAM VISION (+1.5)"
-        }
-      },
+      "poly": {},
       "betting": {
         "rows": [
           {
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.66,
-            "marketP": 1.0,
-            "odds": 1.0,
-            "roi": -0.34,
-            "ev": -0.34,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 1.0，模型 0.66，期望回报率 -34.0%"
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
           },
           {
             "market": "第一局",
             "pick": "TEAM VISION",
             "modelP": 0.617,
-            "marketP": 1.0,
-            "odds": 1.0,
-            "roi": -0.383,
-            "ev": -0.383,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 1.0，模型 0.617，期望回报率 -38.3%"
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
           },
           {
             "market": "总局数 O/U 2.5",
             "pick": "Over 2.5",
             "modelP": 0.476,
-            "marketP": 1.0,
-            "odds": 1.0,
-            "roi": -0.524,
-            "ev": -0.524,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 1.0，模型 0.476，期望回报率 -52.4%"
-          },
-          {
-            "market": "让分",
-            "pick": "TEAM VISION +1.5",
-            "modelP": 0.847,
-            "marketP": 1.0,
-            "odds": 1.0,
-            "roi": -0.153,
-            "ev": -0.153,
-            "action": "市场更贵，不买",
-            "note": "买 YES 成本 1.0，模型 0.847，期望回报率 -15.3%"
+            "marketP": null,
+            "roi": null,
+            "ev": null,
+            "action": "无盘口",
+            "note": "Polymarket 没有这格"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -13502,8 +13432,8 @@
             "Team Spirit"
           ],
           "prices": [
-            0.0,
-            1.0
+            1.0,
+            0.0
           ],
           "question": "Dota 2: TEAM VISION vs Team Spirit - Game 1 Winner"
         },
@@ -13518,16 +13448,38 @@
           ],
           "question": "Dota 2: TEAM VISION vs Team Spirit - Game 2 Winner"
         },
-        "handicap": {
+        "series": {
           "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
+            "TEAM VISION",
+            "Team Spirit"
           ],
           "prices": [
-            0.0005,
-            0.9995
+            1.0,
+            0.0
           ],
-          "question": "Game Handicap: TS (-2.5) vs TEAM VISION (+2.5)"
+          "question": "Dota 2: TEAM VISION vs Team Spirit (BO3) - The International Group Stage"
+        },
+        "ou25": {
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            0.0,
+            1.0
+          ],
+          "question": "Games Total: O/U 2.5"
+        },
+        "handicap": {
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            1.0,
+            0.0
+          ],
+          "question": "Game Handicap: VSN (-1.5) vs Team Spirit (+1.5)"
         }
       },
       "betting": {
@@ -13536,42 +13488,45 @@
             "market": "系列胜者",
             "pick": "TEAM VISION",
             "modelP": 0.679,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.321,
+            "ev": -0.321,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.679，期望回报率 -32.1%"
           },
           {
             "market": "第一局",
             "pick": "TEAM VISION",
             "modelP": 0.61,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.39,
+            "ev": -0.39,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.61，期望回报率 -39.0%"
           },
           {
             "market": "总局数 O/U 2.5",
-            "pick": "Over 2.5",
-            "modelP": 0.347,
-            "marketP": null,
-            "roi": null,
-            "ev": null,
-            "action": "无盘口",
-            "note": "Polymarket 没有这格"
+            "pick": "Under 2.5",
+            "modelP": 0.653,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.347,
+            "ev": -0.347,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.653，期望回报率 -34.7%"
           },
           {
             "market": "让分",
-            "pick": "Team Spirit +1.5",
-            "modelP": 0.786,
-            "marketP": 0.001,
-            "odds": 2000.0,
-            "roi": 1571.0,
-            "ev": 0.786,
-            "action": "观察 / 极小注",
-            "note": "买 YES 成本 0.001，模型 0.786，期望回报率 157100.0%"
+            "pick": "TEAM VISION -1.5",
+            "modelP": 0.214,
+            "marketP": 1.0,
+            "odds": 1.0,
+            "roi": -0.786,
+            "ev": -0.786,
+            "action": "市场更贵，不买",
+            "note": "买 YES 成本 1.0，模型 0.214，期望回报率 -78.6%"
           },
           {
             "market": "先到 10 杀（无盘，仅模型）",
@@ -13605,7 +13560,8 @@
       "lbqf2": "Team Spirit",
       "ubf": "TEAM VISION",
       "lbsf": "Team Spirit",
-      "lbf": "Team Spirit"
+      "lbf": "Team Spirit",
+      "gf": "TEAM VISION"
     },
     "pMap": {
       "BoomBoys vs Team Yandex": 0.48,
@@ -13640,19 +13596,14 @@
     "champion": [
       {
         "name": "TEAM VISION",
-        "n": 675,
-        "p": 0.675
-      },
-      {
-        "name": "Team Spirit",
-        "n": 325,
-        "p": 0.325
+        "n": 1000,
+        "p": 1.0
       }
     ],
     "place": {
       "TEAM VISION": {
-        "1": 0.675,
-        "2": 0.325,
+        "1": 1.0,
+        "2": 0.0,
         "3": 0.0,
         "4": 0.0,
         "5-6": 0.0,
@@ -13675,8 +13626,8 @@
         "7-8": 0.0
       },
       "Team Spirit": {
-        "1": 0.325,
-        "2": 0.675,
+        "1": 0.0,
+        "2": 1.0,
         "3": 0.0,
         "4": 0.0,
         "5-6": 0.0,
@@ -13928,13 +13879,8 @@
         "winners": [
           {
             "name": "TEAM VISION",
-            "n": 675,
-            "p": 0.675
-          },
-          {
-            "name": "Team Spirit",
-            "n": 325,
-            "p": 0.325
+            "n": 1000,
+            "p": 1.0
           }
         ],
         "pairings": [
@@ -14095,17 +14041,17 @@
         "round": "总决赛",
         "when": "2026-08-23 13:00",
         "winner": "TEAM VISION",
-        "p": 0.675,
-        "n": 675,
+        "p": 1.0,
+        "n": 1000,
         "of": 1000,
         "topPair": "TEAM VISION vs Team Spirit",
-        "scoreMode": "TEAM VISION 3-1"
+        "scoreMode": "TEAM VISION 3-2"
       }
     ],
     "topTrees": [
       {
-        "n": 675,
-        "p": 0.675,
+        "n": 1000,
+        "p": 1.0,
         "winners": {
           "ubqf1": "Team Spirit",
           "ubqf2": "TEAM VISION",
@@ -14121,26 +14067,6 @@
           "lbsf": "Team Spirit",
           "lbf": "Team Spirit",
           "gf": "TEAM VISION"
-        }
-      },
-      {
-        "n": 325,
-        "p": 0.325,
-        "winners": {
-          "ubqf1": "Team Spirit",
-          "ubqf2": "TEAM VISION",
-          "ubqf3": "Team Yandex",
-          "ubqf4": "Nigma Galaxy",
-          "lbr1a": "BoomBoys",
-          "lbr1b": "Team Liquid",
-          "ubsf1": "TEAM VISION",
-          "ubsf2": "Team Yandex",
-          "lbqf2": "Team Spirit",
-          "lbqf1": "BoomBoys",
-          "ubf": "TEAM VISION",
-          "lbsf": "Team Spirit",
-          "lbf": "Team Spirit",
-          "gf": "Team Spirit"
         }
       }
     ],
