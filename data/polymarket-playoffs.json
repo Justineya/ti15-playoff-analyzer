@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23T04:59Z",
+  "asOf": "2026-08-23T05:29Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11840828.804969998,
+      "volume": 11840828.804969994,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
