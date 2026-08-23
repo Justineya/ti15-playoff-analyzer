@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23T12:57Z",
+  "asOf": "2026-08-23T13:29Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -5079,7 +5079,7 @@
     {
       "slug": "dota2-vsn2-ts8-2026-08-23",
       "title": "Dota 2: TEAM VISION vs Team Spirit (BO5) - The International Playoffs",
-      "volume": 22466582.44359399,
+      "volume": 23416522.693619017,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Spirit - Game 1 Winner",
@@ -5132,8 +5132,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.68",
-            "0.32"
+            "0.67",
+            "0.33"
           ]
         },
         {
@@ -5286,8 +5286,8 @@
             "Under"
           ],
           "prices": [
-            "0.505",
-            "0.495"
+            "0.995",
+            "0.005"
           ]
         },
         {
@@ -5528,8 +5528,8 @@
             "No"
           ],
           "prices": [
-            "0.495",
-            "0.505"
+            "0.505",
+            "0.495"
           ]
         },
         {
