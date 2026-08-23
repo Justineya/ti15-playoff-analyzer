@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23T02:52Z",
+  "asOf": "2026-08-23T03:40Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11840828.804969992,
+      "volume": 11840828.80496999,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 6680598.714295,
+      "volume": 6680598.714295001,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4709,7 +4709,7 @@
     {
       "slug": "dota2-ty-ts8-2026-08-22",
       "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 4473957.509332,
+      "volume": 7084282.392822003,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
@@ -4718,8 +4718,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.08",
-            "0.92"
+            "0",
+            "1"
           ]
         },
         {
@@ -4729,8 +4729,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.395",
-            "0.605"
+            "0.375",
+            "0.625"
           ]
         },
         {
@@ -4740,8 +4740,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.19",
-            "0.81"
+            "0.195",
+            "0.805"
           ]
         },
         {
@@ -4751,8 +4751,8 @@
             "Under"
           ],
           "prices": [
-            "0.415",
-            "0.585"
+            "0.365",
+            "0.635"
           ]
         },
         {
@@ -4762,8 +4762,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -4773,8 +4773,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -4784,8 +4784,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -4795,8 +4795,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -4806,8 +4806,8 @@
             "No"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -4927,8 +4927,8 @@
             "Team Yandex"
           ],
           "prices": [
-            "0.355",
-            "0.645"
+            "0.62",
+            "0.38"
           ]
         },
         {
@@ -4938,8 +4938,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.0045",
-            "0.9955"
+            "0",
+            "1"
           ]
         },
         {
@@ -4949,8 +4949,8 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -4960,8 +4960,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -4971,8 +4971,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.7",
+            "0.3"
           ]
         },
         {
@@ -4982,8 +4982,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -4993,8 +4993,8 @@
             "Under"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0",
+            "1"
           ]
         },
         {
@@ -5004,12 +5004,23 @@
             "Team Spirit"
           ],
           "prices": [
-            "0.5",
-            "0.5"
+            "0.0005",
+            "0.9995"
           ]
         },
         {
           "question": "Total Kills Over/Under 45.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 2?",
           "outcomes": [
             "Over",
             "Under"
