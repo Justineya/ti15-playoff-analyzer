@@ -503,14 +503,12 @@
       "teamB": "Team Spirit",
       "status": "live",
       "polyTitle": "TEAM VISION vs Team Spirit",
-      "mapsPlayed": 3,
-      "score": "2-1",
+      "mapsPlayed": 1,
+      "score": "0-1",
       "matchIds": [
-        8957180942,
-        8957272720,
-        8957364447
+        8960577698
       ],
-      "polySlug": "dota2-ts8-vsn2-2026-08-21"
+      "polySlug": "dota2-vsn2-ts8-2026-08-23"
     }
   ],
   "scheduleAsOf": "2026-08-23 15:11 CST",

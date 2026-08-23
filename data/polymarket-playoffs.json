@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-23T07:11Z",
+  "asOf": "2026-08-23T08:10Z",
   "source": "https://gamma-api.polymarket.com",
   "events": [
     {
@@ -3925,7 +3925,7 @@
     {
       "slug": "dota2-vsn2-ty-2026-08-22",
       "title": "Dota 2: TEAM VISION vs Team Yandex (BO3) - The International Playoffs",
-      "volume": 11840828.804969994,
+      "volume": 11840828.804969998,
       "markets": [
         {
           "question": "Dota 2: TEAM VISION vs Team Yandex - Game 1 Winner",
@@ -4317,7 +4317,7 @@
     {
       "slug": "dota2-boombo-ts8-2026-08-22",
       "title": "Dota 2: BoomBoys vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 6680598.714294999,
+      "volume": 6680598.714295001,
       "markets": [
         {
           "question": "Dota 2: BoomBoys vs Team Spirit - Game 1 Winner",
@@ -4709,7 +4709,7 @@
     {
       "slug": "dota2-ty-ts8-2026-08-22",
       "title": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "volume": 10519433.027150996,
+      "volume": 10519433.027151,
       "markets": [
         {
           "question": "Dota 2: Team Yandex vs Team Spirit - Game 1 Winner",
@@ -5077,56 +5077,12 @@
       ]
     },
     {
-      "slug": "dota2-ts8-vsn2-2026-08-21",
-      "title": "Dota 2: Team Spirit vs TEAM VISION (BO3) - The International Playoffs",
-      "volume": 11344160.62291001,
+      "slug": "dota2-vsn2-ts8-2026-08-23",
+      "title": "Dota 2: TEAM VISION vs Team Spirit (BO5) - The International Playoffs",
+      "volume": 10798005.656249,
       "markets": [
         {
-          "question": "Dota 2: Team Spirit vs TEAM VISION - Game 1 Winner",
-          "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
-          ],
-          "prices": [
-            "0",
-            "1"
-          ]
-        },
-        {
-          "question": "Dota 2: Team Spirit vs TEAM VISION - Game 2 Winner",
-          "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
-          ],
-          "prices": [
-            "1",
-            "0"
-          ]
-        },
-        {
-          "question": "Dota 2: Team Spirit vs TEAM VISION (BO3) - The International Playoffs",
-          "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
-          ],
-          "prices": [
-            "0",
-            "1"
-          ]
-        },
-        {
-          "question": "Games Total: O/U 2.5",
-          "outcomes": [
-            "Over",
-            "Under"
-          ],
-          "prices": [
-            "1",
-            "0"
-          ]
-        },
-        {
-          "question": "Game Handicap: VSN (-1.5) vs Team Spirit (+1.5)",
+          "question": "Dota 2: TEAM VISION vs Team Spirit - Game 1 Winner",
           "outcomes": [
             "TEAM VISION",
             "Team Spirit"
@@ -5137,14 +5093,212 @@
           ]
         },
         {
+          "question": "Dota 2: TEAM VISION vs Team Spirit - Game 2 Winner",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.22",
+            "0.78"
+          ]
+        },
+        {
+          "question": "Dota 2: TEAM VISION vs Team Spirit - Game 3 Winner",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.525",
+            "0.475"
+          ]
+        },
+        {
+          "question": "Dota 2: TEAM VISION vs Team Spirit - Game 4 Winner",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.525",
+            "0.475"
+          ]
+        },
+        {
+          "question": "Dota 2: TEAM VISION vs Team Spirit (BO5) - The International Playoffs",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.23",
+            "0.77"
+          ]
+        },
+        {
+          "question": "Games Total: O/U 3.5",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.66",
+            "0.34"
+          ]
+        },
+        {
+          "question": "Games Total: O/U 4.5",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.215",
+            "0.785"
+          ]
+        },
+        {
+          "question": "Game Handicap: VSN (-2.5) vs Team Spirit (+2.5)",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.0005",
+            "0.9995"
+          ]
+        },
+        {
+          "question": "Game Handicap: VSN (-1.5) vs Team Spirit (+1.5)",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.075",
+            "0.925"
+          ]
+        },
+        {
+          "question": "First Blood in Game 1?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "question": "First Blood in Game 2?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.003",
+            "0.997"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.505",
+            "0.495"
+          ]
+        },
+        {
+          "question": "First Blood in Game 3?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 3?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.68",
+            "0.32"
+          ]
+        },
+        {
+          "question": "First Blood in Game 4?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 4?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "First Blood in Game 5?",
+          "outcomes": [
+            "TEAM VISION",
+            "Team Spirit"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 50.5 in Game 5?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
           "question": "Game 1: Ends in Daytime?",
           "outcomes": [
             "Yes",
             "No"
           ],
           "prices": [
-            "1",
-            "0"
+            "0",
+            "1"
           ]
         },
         {
@@ -5176,8 +5330,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "1",
+            "0"
           ]
         },
         {
@@ -5187,8 +5341,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "1",
+            "0"
           ]
         },
         {
@@ -5198,8 +5352,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -5209,8 +5363,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -5220,8 +5374,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.365",
+            "0.635"
           ]
         },
         {
@@ -5231,8 +5385,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.495",
+            "0.505"
           ]
         },
         {
@@ -5242,8 +5396,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.2155",
+            "0.7845"
           ]
         },
         {
@@ -5253,8 +5407,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -5264,8 +5418,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.325",
+            "0.675"
           ]
         },
         {
@@ -5275,8 +5429,8 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.33",
+            "0.67"
           ]
         },
         {
@@ -5286,8 +5440,8 @@
             "No"
           ],
           "prices": [
-            "1",
-            "0"
+            "0.29",
+            "0.71"
           ]
         },
         {
@@ -5297,85 +5451,118 @@
             "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.225",
+            "0.775"
           ]
         },
         {
-          "question": "First Blood in Game 2?",
+          "question": "Game 4: Ends in Daytime?",
           "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
+            "Yes",
+            "No"
           ],
           "prices": [
-            "1",
-            "0"
+            "0.5",
+            "0.5"
           ]
         },
         {
-          "question": "First Blood in Game 1?",
+          "question": "Game 4: Both Teams Beat Roshan?",
           "outcomes": [
-            "Team Spirit",
-            "TEAM VISION"
+            "Yes",
+            "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
           ]
         },
         {
-          "question": "Total Kills Over/Under 55.5 in Game 2?",
+          "question": "Game 4: Both Teams Destroy Barracks?",
           "outcomes": [
-            "Over",
-            "Under"
+            "Yes",
+            "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
           ]
         },
         {
-          "question": "Total Kills Over/Under 55.5 in Game 1?",
+          "question": "Game 4: Any Player Ultra Kill?",
           "outcomes": [
-            "Over",
-            "Under"
+            "Yes",
+            "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
           ]
         },
         {
-          "question": "Total Kills Over/Under 50.5 in Game 1?",
+          "question": "Game 4: Any Player Rampage?",
           "outcomes": [
-            "Over",
-            "Under"
+            "Yes",
+            "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
           ]
         },
         {
-          "question": "Total Kills Over/Under 50.5 in Game 2?",
+          "question": "Game 5: Ends in Daytime?",
           "outcomes": [
-            "Over",
-            "Under"
+            "Yes",
+            "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
           ]
         },
         {
-          "question": "Total Kills Over/Under 60.5 in Game 1?",
+          "question": "Game 5: Both Teams Beat Roshan?",
           "outcomes": [
-            "Over",
-            "Under"
+            "Yes",
+            "No"
           ],
           "prices": [
-            "0",
-            "1"
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 5: Both Teams Destroy Barracks?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 5: Any Player Ultra Kill?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Game 5: Any Player Rampage?",
+          "outcomes": [
+            "Yes",
+            "No"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
           ]
         },
         {
@@ -5390,36 +5577,14 @@
           ]
         },
         {
-          "question": "Total Kills Over/Under 65.5 in Game 1?",
+          "question": "Total Kills Over/Under 55.5 in Game 1?",
           "outcomes": [
             "Over",
             "Under"
           ],
           "prices": [
-            "0",
-            "1"
-          ]
-        },
-        {
-          "question": "Total Kills Over/Under 60.5 in Game 2?",
-          "outcomes": [
-            "Over",
-            "Under"
-          ],
-          "prices": [
-            "0",
-            "1"
-          ]
-        },
-        {
-          "question": "Total Kills Over/Under 65.5 in Game 2?",
-          "outcomes": [
-            "Over",
-            "Under"
-          ],
-          "prices": [
-            "0",
-            "1"
+            "1",
+            "0"
           ]
         },
         {
@@ -5429,8 +5594,74 @@
             "TEAM VISION"
           ],
           "prices": [
+            "0.8",
+            "0.2"
+          ]
+        },
+        {
+          "question": "Game Handicap: TS (-2.5) vs TEAM VISION (+2.5)",
+          "outcomes": [
+            "Team Spirit",
+            "TEAM VISION"
+          ],
+          "prices": [
+            "0.585",
+            "0.415"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
             "0",
             "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 70.5 in Game 1?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 55.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.275",
+            "0.725"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 60.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
+          ]
+        },
+        {
+          "question": "Total Kills Over/Under 65.5 in Game 2?",
+          "outcomes": [
+            "Over",
+            "Under"
+          ],
+          "prices": [
+            "0.5",
+            "0.5"
           ]
         }
       ]

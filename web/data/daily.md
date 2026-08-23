@@ -1,5 +1,7 @@
-# TI15 局间战报 · 2026-08-23 15:11 CST
+# TI15 局间战报 · 2026-08-23 16:10 CST
 
-第3局 VSN 赢了，先到10杀 VSN，46.9分钟。下一局第4局按上一局重算后看好 VSN（64%）。现场赔率至少 1.57。
+总决赛第1局 Spirit 赢了，先到10杀 Spirit，46.2分钟滚雪球 42-17。第2局重算后模型看好 VSN（57%，门槛 1.75）；Polymarket 这局 Spirit 0.78 / VSN 0.22。
 
-第3局 VSN 赢了，先到10杀 VSN，46.9分钟。上一局阵容 Spirit Winter Wyvern、Invoker、Underlord / VSN Shadow Fiend、Ember Spirit、Dark Willow。下一局第4局按上一局重算后看好 VSN（64%）。现场赔率至少 1.57。系列现在看好 VSN（86%）。先到10杀看好 Spirit。本届胜率 TEAM VISION 70% / Team Spirit 63%；先到10杀 58% / 63%；H2H 5.9 局；TEAM VISION 中单爱拿 Ember Spirit。
+不要把 8/21 胜者组半决赛三局当成总决赛局分。那轮 Bo3：VSN 先 28-20 赢（42.8 分钟慢节奏拉锯，先到10杀却是 Spirit，Larl/灰烬中辅驱动）；Spirit 再 29-8 赢（28.6 分钟，中单夜魔，先到10杀 Spirit）；VSN 37-12 拿下第三局（46.9 分钟滚雪球，先到10杀 VSN）。VSN 2-1 晋级，Spirit 掉败者组。H2H 已进模型，但总决赛是新系列。
+
+总决赛液体百科现在 0-1。刚打完的第1局 Spirit 天辉 42-17，第一手 Slark、第二手暗柳，13分46秒先到 10 杀（10-6）；VSN 中单第三手才锁 Io，灰烬在边，对线被压后没翻过来。因为上一局 Io 中被前期带走，第2局 VSN 必须换中路答案。Bo5 变成 0-1 后，系列改看成 Spirit 56%。第2局单局模型仍略看 VSN 57%（门槛 1.75），先到10杀看 Spirit 58%（无公开盘）。Polymarket 第2局价 Spirit 0.78 / VSN 0.22，系列价 Spirit 0.77 / VSN 0.23。市场比模型更信 Spirit 连拿这局。第2局已在选人/进行，尚未出胜者。这不是投注建议。
