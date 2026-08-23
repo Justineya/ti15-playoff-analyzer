@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-23 20:04 CST",
-  "n": 117,
+  "asOf": "2026-08-23 21:45 CST",
+  "n": 118,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -35926,6 +35926,313 @@
         "mid_support": "天辉中单 No[o]ne-/Sand King 参与 6 次（击杀2+助攻4），辅Dukalis/Mirana 参与 6 次，中辅合计17 · 中辅驱动；夜魇中单 Larl/Storm Spirit 参与 2 次（击杀1+助攻1），辅not_me/Clockwerk 参与 2 次，中辅合计6。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/8960882635",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 8960991322,
+      "series_id": 1133004,
+      "start_time": 1787486918,
+      "duration": 3862,
+      "parsed": true,
+      "radiant": "TEAM VISION",
+      "dire": "Team Spirit",
+      "radiant_team_id": 9572001,
+      "dire_team_id": 7119388,
+      "winner": "Team Spirit",
+      "radiant_win": false,
+      "score": [
+        31,
+        34
+      ],
+      "pace": "正常",
+      "length": "超长",
+      "stance": "来回拉锯",
+      "f10k": {
+        "side": "radiant",
+        "time": 787,
+        "score": {
+          "radiant": 10,
+          "dire": 4
+        },
+        "completing_killer": "Dukalis",
+        "completing_hero": "Hoodwink"
+      },
+      "f10k_mid_share": 1,
+      "first_tower": {
+        "time": 772,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": 1064,
+        "m10": 987,
+        "m15": 3102,
+        "m20": 2912
+      },
+      "kills_8min": 7,
+      "kills_15min": 20,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            },
+            {
+              "order": 5,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 6,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 11,
+              "hero": "Slardar",
+              "hero_id": 28
+            },
+            {
+              "order": 19,
+              "hero": "Centaur Warrunner",
+              "hero_id": 96
+            },
+            {
+              "order": 21,
+              "hero": "Puck",
+              "hero_id": 13
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 12,
+              "hero": "Rubick",
+              "hero_id": 86
+            },
+            {
+              "order": 15,
+              "hero": "Axe",
+              "hero_id": 2
+            },
+            {
+              "order": 16,
+              "hero": "Hoodwink",
+              "hero_id": 123
+            },
+            {
+              "order": 23,
+              "hero": "Juggernaut",
+              "hero_id": 8
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Treant Protector",
+              "hero_id": 83
+            },
+            {
+              "order": 3,
+              "hero": "Shadow Fiend",
+              "hero_id": 11
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 12,
+              "hero": "Rubick",
+              "hero_id": 86
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 4,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 9,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            },
+            {
+              "order": 10,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 18,
+              "hero": "Faceless Void",
+              "hero_id": 41
+            },
+            {
+              "order": 20,
+              "hero": "Terrorblade",
+              "hero_id": 109
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 13,
+              "hero": "Pangolier",
+              "hero_id": 120
+            },
+            {
+              "order": 14,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 17,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            },
+            {
+              "order": 22,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 13,
+              "hero": "Pangolier",
+              "hero_id": 120
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Invoker",
+            "hero_id": 74,
+            "gold_t10": 3730,
+            "xp_t10": 4040,
+            "kills": 1,
+            "kills_before_10": 0,
+            "assists_before_10": 1,
+            "participate_before_10": 1
+          },
+          "pos4": {
+            "player": "Dukalis",
+            "hero": "Hoodwink",
+            "kills": 8,
+            "kills_before_10": 6,
+            "assists_before_10": 0,
+            "participate_before_10": 6
+          },
+          "pos5": {
+            "player": "9Class",
+            "hero": "Rubick",
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 7,
+          "first10_mid_sup_ka": 11,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Larl",
+            "hero": "Pangolier",
+            "hero_id": 120,
+            "gold_t10": 4211,
+            "xp_t10": 4576,
+            "kills": 12,
+            "kills_before_10": 2,
+            "assists_before_10": 1,
+            "participate_before_10": 3
+          },
+          "pos4": {
+            "player": "not_me",
+            "hero": "Mirana",
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "pos5": {
+            "player": "rue",
+            "hero": "Bane",
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 4,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 7,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Treant Protector、Shadow Fiend；前两手Invoker、Rubick；中单Invoker第1手拿",
+          "dire": "一阶段禁Bounty Hunter、Nature's Prophet；前两手Bane、Pangolier；中单Pangolier第2手拿"
+        },
+        "pace": "正常节奏 / 超长局（64分22秒）；先到10杀出现在 13分07秒",
+        "stance": "来回拉锯",
+        "f10k": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。",
+        "mid_support": "天辉中单 No[o]ne-/Invoker 参与 1 次（击杀0+助攻1），辅Dukalis/Hoodwink 参与 6 次，中辅合计11 · 中辅驱动；夜魇中单 Larl/Pangolier 参与 3 次（击杀2+助攻1），辅not_me/Mirana 参与 2 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/8960991322",
       "source": "ti15",
       "patch": "7.41e"
     }
