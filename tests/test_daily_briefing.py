@@ -83,8 +83,30 @@ def test_previous_context_attaches_parsed_game() -> None:
     assert "parsedGames" in ctx
 
 
+def test_champion_briefing_does_not_say_playoffs_unstarted() -> None:
+    headline, narrative = db.compose(
+        "champion",
+        {"game": 5, "winner": "Team Spirit", "f10": "Team Spirit", "durationMin": 64.4},
+        None,
+        None,
+        {
+            "id": "gf",
+            "teamA": "TEAM VISION",
+            "teamB": "Team Spirit",
+            "winner": "Team Spirit",
+            "score": "2-3",
+        },
+        None,
+    )
+    assert "淘汰赛还没开打" not in headline
+    assert "淘汰赛还没开打" not in narrative
+    assert "冠军 Spirit" in headline or "冠军 Team Spirit" in headline
+    assert "2-3" in headline
+
+
 if __name__ == "__main__":
     test_live_1_0_switches_briefing_to_game_2()
     test_string_match_ids_find_int_games()
     test_previous_context_attaches_parsed_game()
+    test_champion_briefing_does_not_say_playoffs_unstarted()
     print("test_daily_briefing ok")

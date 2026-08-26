@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-25 01:42 CST",
+  "asOf": "2026-08-26 11:15 CST",
   "seed": 20260817,
   "simsPerMap": 5,
   "definition": {
@@ -13561,7 +13561,7 @@
       "ubf": "TEAM VISION",
       "lbsf": "Team Spirit",
       "lbf": "Team Spirit",
-      "gf": "TEAM VISION"
+      "gf": "Team Spirit"
     },
     "pMap": {
       "BoomBoys vs Team Yandex": 0.481,
@@ -13595,15 +13595,15 @@
     },
     "champion": [
       {
-        "name": "TEAM VISION",
+        "name": "Team Spirit",
         "n": 1000,
         "p": 1.0
       }
     ],
     "place": {
       "TEAM VISION": {
-        "1": 1.0,
-        "2": 0.0,
+        "1": 0.0,
+        "2": 1.0,
         "3": 0.0,
         "4": 0.0,
         "5-6": 0.0,
@@ -13626,8 +13626,8 @@
         "7-8": 0.0
       },
       "Team Spirit": {
-        "1": 0.0,
-        "2": 1.0,
+        "1": 1.0,
+        "2": 0.0,
         "3": 0.0,
         "4": 0.0,
         "5-6": 0.0,
@@ -13878,7 +13878,7 @@
       "gf": {
         "winners": [
           {
-            "name": "TEAM VISION",
+            "name": "Team Spirit",
             "n": 1000,
             "p": 1.0
           }
@@ -14040,12 +14040,12 @@
         "id": "gf",
         "round": "总决赛",
         "when": "2026-08-23 13:00",
-        "winner": "TEAM VISION",
+        "winner": "Team Spirit",
         "p": 1.0,
         "n": 1000,
         "of": 1000,
         "topPair": "TEAM VISION vs Team Spirit",
-        "scoreMode": "TEAM VISION 3-2"
+        "scoreMode": "Team Spirit 2-3"
       }
     ],
     "topTrees": [
@@ -14066,7 +14066,7 @@
           "ubf": "TEAM VISION",
           "lbsf": "Team Spirit",
           "lbf": "Team Spirit",
-          "gf": "TEAM VISION"
+          "gf": "Team Spirit"
         }
       }
     ],

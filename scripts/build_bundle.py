@@ -203,6 +203,7 @@ def main() -> None:
         "heroes": hero_index(),
         "series": series,
         "games": games,
+        "modelBefore": json.loads((ROOT / "data" / "model-before.json").read_text()) if (ROOT / "data" / "model-before.json").exists() else None,
     }
     out = ROOT / "web" / "data" / "bundle.json"
     out.parent.mkdir(parents=True, exist_ok=True)

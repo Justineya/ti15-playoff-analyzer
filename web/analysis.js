@@ -890,7 +890,9 @@ function focusMatch(matches, preferId, nowMs) {
     if (!t) continue;
     if (now < t.getTime() + windowMsSafe()) return m;
   }
-  return list.find(namedSides) || list[0] || null;
+  const finished = list.filter((m) => namedSides(m) && !seriesOpen(m));
+  finished.sort((a, b) => String(b.datetime).localeCompare(String(a.datetime)));
+  return finished[0] || list.find(namedSides) || list[0] || null;
 }
 
 const TEAM_META = {};
@@ -1504,7 +1506,23 @@ function renderTreePage(data) {
   }
   const champ = tree.champion || [];
   const top = champ[0];
+  const gfDone = (data.playoffs?.matches || []).find((x) => x.id === "gf" && x.winner);
+  const preChamp = data.modelBefore?.champion || [];
+  const spiritPre = preChamp.find((r) => r.name === "Team Spirit");
+  const lede = gfDone
+    ? `已经打完。冠军是 <b>${TAG[gfDone.winner] || gfDone.winner}</b>。开赛前 1000 次最看好 ${TAG[preChamp[0]?.name] || preChamp[0]?.name || "VSN"} ${pct(preChamp[0]?.p)}，Spirit 只有 ${pct(spiritPre?.p)}。`
+    : `1000 次里冠军出现最多的是 <b>${TAG[top?.name] || top?.name || "—"}</b> ${pct(top?.p)}。下面是名次、最可能一条路、以及每一格谁最常赢。`;
   const bars = champ
+    .map((r) => {
+      const w = Math.max(3, Math.round((r.p || 0) * 100));
+      return `<div class="champ-row">
+        <div class="champ-who">${crest(r.name, "sm")}<span>${TAG[r.name] || r.name}</span></div>
+        <div class="champ-bar"><i style="width:${w}%"></i></div>
+        <b>${pct(r.p)}</b>
+      </div>`;
+    })
+    .join("");
+  const preBars = preChamp
     .map((r) => {
       const w = Math.max(3, Math.round((r.p || 0) * 100));
       return `<div class="champ-row">
@@ -1553,11 +1571,11 @@ function renderTreePage(data) {
   app.innerHTML = `<section class="tree-page">
     <div class="arena-kicker"><span>1000 次整树</span><span>种子 ${tree.seed || ""}</span><span>已锁 ${Object.keys(tree.locked || {}).length} 场</span></div>
     <h1>走向</h1>
-    <p class="lede">1000 次里冠军出现最多的是 <b>${TAG[top?.name] || top?.name || "—"}</b> ${pct(top?.p)}。下面是名次、最可能一条路、以及每一格谁最常赢。</p>
+    <p class="lede">${lede}</p>
     <section class="caveat">
       <h3>模型没算进去的</h3>
       <ol>
-        <li>每局独立同分布：没有连胜、没有败者组复仇、没有一天四场的体力。</li>
+        <li>败者组连胜和同一天多场，模型都当没有。Spirit 从败者组打上来拿了盾。</li>
         <li>总决赛按一场 Bo5，胜者组冠军没有少赢一局。</li>
         <li>样本只有本届八强 80 局 + EWC 45%。很多对子 H2H 是 0。</li>
         <li>BP 用赛前平均阵容。现场锁了英雄，这一页不会立刻改骰子。</li>
@@ -1565,7 +1583,7 @@ function renderTreePage(data) {
         <li>没有伤病/替补，也没有上海主场加减成。</li>
       </ol>
     </section>
-    <h2>冠军</h2>
+    ${gfDone && preBars ? `<h2>开赛前模型</h2><div class="champ-list">${preBars}</div><h2>锁死后的树</h2>` : "<h2>冠军</h2>"}
     <div class="champ-list">${bars}</div>
     <h2>名次</h2>
     <div class="table-wrap"><table class="src-table compact">
@@ -1582,6 +1600,14 @@ function renderTreePage(data) {
 }
 
 function treeTeaser(data) {
+  const gf = (data.playoffs?.matches || []).find((x) => x.id === "gf" && x.winner);
+  const before = (data.modelBefore?.champion || [])[0];
+  if (gf?.winner) {
+    const pre = before ? `开赛前模型最看好 ${TAG[before.name] || before.name} ${pct(before.p)}` : "开赛前模型看走过眼";
+    return `<button type="button" class="tree-teaser" data-tab="tree">
+      实际冠军 <b>${TAG[gf.winner] || gf.winner}</b> ${gf.score || ""} · ${pre} · 对照
+    </button>`;
+  }
   const top = data.simulations?.tree?.champion?.[0];
   if (!top) return "";
   return `<button type="button" class="tree-teaser" data-tab="tree">
@@ -2110,11 +2136,17 @@ function renderNow(data, matchId) {
       <span>${m.round || ""}</span>
       <span>${m.format || "Bo3"}${wins.played ? " · " + (m.score || wins.a + "-" + wins.b) : ""}</span>
     </div>
-    ${clockHtml(m.datetime, { live: inSeries || m.status === "live" || Boolean(data.liveFeed?.game), score: m.score || "", nextGame: seriesDone ? "" : nextGame, gap: intermission, format: m.format || "" })}
+    ${seriesDone && m.id === "gf" && m.winner
+      ? `<div class="champ-banner">
+          <div class="clock-label">TI15 冠军</div>
+          <div class="champ-name">${crest(m.winner)}<h1>${esc(m.winner)}</h1></div>
+          <p>总决赛 ${esc(m.score || "")} 赢了 ${esc(TAG[m.winner === m.teamA ? m.teamB : m.teamA] || (m.winner === m.teamA ? m.teamB : m.teamA) || "")}</p>
+        </div>`
+      : clockHtml(m.datetime, { live: inSeries || m.status === "live" || Boolean(data.liveFeed?.game), score: m.score || "", nextGame: seriesDone ? "" : nextGame, gap: intermission, format: m.format || "" })}
     <div class="live-poster">
       <div class="live-teams">
         <div class="live-team">${namedSides(m) ? crest(m.teamA) : ""}<div class="tagline">${aTag || ""}</div><h2>${aName || "待定"}</h2></div>
-        <div class="live-vs">VS</div>
+        <div class="live-vs">${seriesDone && m.score ? m.score : "VS"}</div>
         <div class="live-team">${namedSides(m) ? crest(m.teamB) : ""}<div class="tagline">${bTag || ""}</div><h2>${bName || "待定"}</h2></div>
       </div>
       ${broadcastHtml(data, m)}
@@ -2126,7 +2158,7 @@ function renderNow(data, matchId) {
     ${heroesStudyHtml(data, m)}
     ${treeTeaser(data)}
     ${dailyHtml(data.daily)}
-    ${namedSides(m) && sim ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}
+    ${namedSides(m) && sim && !seriesDone ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}
   </section>`;
   wireLiveCalc(sim);
   armClock();

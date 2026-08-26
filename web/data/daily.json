@@ -1,152 +1,47 @@
 {
-  "asOf": "2026-08-25 01:42 CST",
+  "asOf": "2026-08-26 11:15 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "next-series",
-  "headline": "第5局 VSN 赢了，先到10杀 Spirit，64.5分钟。淘汰赛还没开打。局一打完会写下局看好谁。",
-  "narrative": "第5局 VSN 赢了，先到10杀 Spirit，64.5分钟。上一局阵容 VSN Earth Spirit、Enchantress、Rubick / Spirit Shadow Fiend、Slardar、Hoodwink。淘汰赛还没开打。局一打完会写下局看好谁。",
+  "kind": "champion",
+  "headline": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
+  "narrative": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
   "previousMap": {
     "game": 5,
-    "matchId": 8960655084,
-    "winner": "TEAM VISION",
+    "matchId": 8960991322,
+    "winner": "Team Spirit",
     "score": [
-      46,
-      48
+      31,
+      34
     ],
-    "f10": "Team Spirit",
-    "f10Time": 610,
-    "durationMin": 64.5,
-    "pace": "快",
-    "stance": "进攻转线",
+    "f10": "TEAM VISION",
+    "f10Time": 787,
+    "durationMin": 64.4,
+    "pace": "正常",
+    "stance": "来回拉锯",
     "picks": {
       "TEAM VISION": [
-        "Earth Spirit",
-        "Enchantress",
+        "Invoker",
         "Rubick",
-        "Underlord",
-        "Lifestealer"
+        "Axe",
+        "Hoodwink",
+        "Juggernaut"
       ],
       "Team Spirit": [
-        "Shadow Fiend",
-        "Slardar",
-        "Hoodwink",
-        "Undying",
-        "Axe"
+        "Bane",
+        "Pangolier",
+        "Mirana",
+        "Lifestealer",
+        "Dark Seer"
       ]
     },
     "mid": {
-      "TEAM VISION": "Earth Spirit",
-      "Team Spirit": "Slardar"
+      "TEAM VISION": "Invoker",
+      "Team Spirit": "Pangolier"
     },
-    "blurb": "Team Spirit先到 10 杀（当时 2-10，10分10秒）。这 10 次击杀里，中单 Larl/Slardar 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 2 杀。"
+    "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 8957180942,
-      "winner": "TEAM VISION",
-      "score": [
-        28,
-        20
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 1068,
-      "durationMin": 42.8,
-      "pace": "慢",
-      "stance": "来回拉锯",
-      "picks": {
-        "TEAM VISION": [
-          "Doom",
-          "Nature's Prophet",
-          "Rubick",
-          "Slark",
-          "Ogre Magi"
-        ],
-        "Team Spirit": [
-          "Ember Spirit",
-          "Undying",
-          "Hoodwink",
-          "Terrorblade",
-          "Night Stalker"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Slark",
-        "Team Spirit": "Ember Spirit"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 7-10，17分48秒）。这 10 次击杀里，中单 Larl/Ember Spirit 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 7 杀。"
-    },
-    {
-      "game": 2,
-      "matchId": 8957272720,
-      "winner": "Team Spirit",
-      "score": [
-        29,
-        8
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 969,
-      "durationMin": 28.6,
-      "pace": "慢",
-      "stance": "来回拉锯",
-      "picks": {
-        "Team Spirit": [
-          "Winter Wyvern",
-          "Doom",
-          "Phantom Lancer",
-          "Clockwerk",
-          "Night Stalker"
-        ],
-        "TEAM VISION": [
-          "Dark Willow",
-          "Drow Ranger",
-          "Undying",
-          "Timbersaw",
-          "Puck"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Night Stalker",
-        "TEAM VISION": "Puck"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 10-5，16分09秒）。这 10 次击杀里，中单 Larl/Night Stalker 参与 4 次（击杀 3 + 助攻 1），中单+双辅合计参与 9 次 · 中辅驱动。对手当时 5 杀。"
-    },
-    {
-      "game": 3,
-      "matchId": 8957364447,
-      "winner": "TEAM VISION",
-      "score": [
-        12,
-        37
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 1287,
-      "durationMin": 46.9,
-      "pace": "慢",
-      "stance": "滚雪球",
-      "picks": {
-        "Team Spirit": [
-          "Winter Wyvern",
-          "Invoker",
-          "Underlord",
-          "Lion",
-          "Sven"
-        ],
-        "TEAM VISION": [
-          "Shadow Fiend",
-          "Ember Spirit",
-          "Dark Willow",
-          "Doom",
-          "Mirana"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Invoker",
-        "TEAM VISION": "Ember Spirit"
-      },
-      "blurb": "TEAM VISION先到 10 杀（当时 4-10，21分27秒）。这 10 次击杀里，中单 No[o]ne-/Ember Spirit 参与 0 次（击杀 0 + 助攻 0），中单+双辅合计参与 4 次。对手当时 4 杀。"
-    },
-    {
-      "game": 4,
       "matchId": 8960577698,
       "winner": "Team Spirit",
       "score": [
@@ -181,7 +76,7 @@
       "blurb": "Team Spirit先到 10 杀（当时 10-6，13分46秒）。这 10 次击杀里，中单 Larl/Slark 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 5 次。对手当时 6 杀。"
     },
     {
-      "game": 5,
+      "game": 2,
       "matchId": 8960655084,
       "winner": "TEAM VISION",
       "score": [
@@ -214,6 +109,111 @@
         "Team Spirit": "Slardar"
       },
       "blurb": "Team Spirit先到 10 杀（当时 2-10，10分10秒）。这 10 次击杀里，中单 Larl/Slardar 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 2 杀。"
+    },
+    {
+      "game": 3,
+      "matchId": 8960762254,
+      "winner": "Team Spirit",
+      "score": [
+        26,
+        24
+      ],
+      "f10": "TEAM VISION",
+      "f10Time": 1537,
+      "durationMin": 45.9,
+      "pace": "慢",
+      "stance": "发育对线",
+      "picks": {
+        "Team Spirit": [
+          "Nature's Prophet",
+          "Dark Willow",
+          "Tusk",
+          "Axe",
+          "Terrorblade"
+        ],
+        "TEAM VISION": [
+          "Shadow Fiend",
+          "Enchantress",
+          "Slardar",
+          "Pangolier",
+          "Marci"
+        ]
+      },
+      "mid": {
+        "Team Spirit": "Nature's Prophet",
+        "TEAM VISION": "Pangolier"
+      },
+      "blurb": "TEAM VISION先到 10 杀（当时 8-10，25分37秒）。这 10 次击杀里，中单 No[o]ne-/Pangolier 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 7 次。对手当时 8 杀。"
+    },
+    {
+      "game": 4,
+      "matchId": 8960882635,
+      "winner": "TEAM VISION",
+      "score": [
+        31,
+        13
+      ],
+      "f10": "TEAM VISION",
+      "f10Time": 1031,
+      "durationMin": 44.3,
+      "pace": "慢",
+      "stance": "来回拉锯",
+      "picks": {
+        "TEAM VISION": [
+          "Keeper of the Light",
+          "Doom",
+          "Lifestealer",
+          "Mirana",
+          "Sand King"
+        ],
+        "Team Spirit": [
+          "Winter Wyvern",
+          "Centaur Warrunner",
+          "Clockwerk",
+          "Templar Assassin",
+          "Storm Spirit"
+        ]
+      },
+      "mid": {
+        "TEAM VISION": "Sand King",
+        "Team Spirit": "Storm Spirit"
+      },
+      "blurb": "TEAM VISION先到 10 杀（当时 10-4，17分11秒）。这 10 次击杀里，中单 No[o]ne-/Sand King 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。"
+    },
+    {
+      "game": 5,
+      "matchId": 8960991322,
+      "winner": "Team Spirit",
+      "score": [
+        31,
+        34
+      ],
+      "f10": "TEAM VISION",
+      "f10Time": 787,
+      "durationMin": 64.4,
+      "pace": "正常",
+      "stance": "来回拉锯",
+      "picks": {
+        "TEAM VISION": [
+          "Invoker",
+          "Rubick",
+          "Axe",
+          "Hoodwink",
+          "Juggernaut"
+        ],
+        "Team Spirit": [
+          "Bane",
+          "Pangolier",
+          "Mirana",
+          "Lifestealer",
+          "Dark Seer"
+        ]
+      },
+      "mid": {
+        "TEAM VISION": "Invoker",
+        "Team Spirit": "Pangolier"
+      },
+      "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
     }
   ],
   "nextMap": null,
@@ -247,8 +247,8 @@
     "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Spirit",
     "status": "completed",
-    "score": "3-2",
-    "winner": "TEAM VISION",
+    "score": "2-3",
+    "winner": "Team Spirit",
     "polySlug": "dota2-vsn2-ts8-2026-08-23",
     "mapsPlayed": 5,
     "lean": {
@@ -283,8 +283,8 @@
     "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Spirit",
     "status": "completed",
-    "score": "3-2",
-    "winner": "TEAM VISION",
+    "score": "2-3",
+    "winner": "Team Spirit",
     "polySlug": "dota2-vsn2-ts8-2026-08-23",
     "mapsPlayed": 5
   },

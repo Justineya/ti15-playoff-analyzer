@@ -73,7 +73,46 @@ def test_live_1_1_does_not_uncomplete_a_finished_series() -> None:
     assert matches[0]["winner"] == "Team Spirit"
 
 
+def test_same_pair_ubsf_and_gf_are_not_one_bo5() -> None:
+    matches = [
+        {
+            "id": "ubsf1",
+            "datetime": "2026-08-21 18:20",
+            "teamA": "Team Spirit",
+            "teamB": "TEAM VISION",
+            "format": "Bo3",
+            "status": "scheduled",
+        },
+        {
+            "id": "gf",
+            "datetime": "2026-08-23 13:00",
+            "teamA": "TEAM VISION",
+            "teamB": "Team Spirit",
+            "format": "Bo5",
+            "status": "scheduled",
+        },
+    ]
+    games = [
+        {"match_id": 1, "start_time": 1787307607, "radiant": "TEAM VISION", "dire": "Team Spirit", "winner": "TEAM VISION"},
+        {"match_id": 2, "start_time": 1787312111, "radiant": "Team Spirit", "dire": "TEAM VISION", "winner": "Team Spirit"},
+        {"match_id": 3, "start_time": 1787315667, "radiant": "Team Spirit", "dire": "TEAM VISION", "winner": "TEAM VISION"},
+        {"match_id": 4, "start_time": 1787465757, "radiant": "Team Spirit", "dire": "TEAM VISION", "winner": "Team Spirit"},
+        {"match_id": 5, "start_time": 1787470563, "radiant": "TEAM VISION", "dire": "Team Spirit", "winner": "TEAM VISION"},
+        {"match_id": 6, "start_time": 1787476452, "radiant": "Team Spirit", "dire": "TEAM VISION", "winner": "Team Spirit"},
+        {"match_id": 7, "start_time": 1787482181, "radiant": "TEAM VISION", "dire": "Team Spirit", "winner": "TEAM VISION"},
+        {"match_id": 8, "start_time": 1787486918, "radiant": "TEAM VISION", "dire": "Team Spirit", "winner": "Team Spirit"},
+    ]
+    rb.apply_results(matches, games)
+    assert matches[0]["winner"] == "TEAM VISION"
+    assert matches[0]["score"] == "1-2"
+    assert matches[0]["matchIds"] == [1, 2, 3]
+    assert matches[1]["winner"] == "Team Spirit"
+    assert matches[1]["score"] == "2-3"
+    assert matches[1]["matchIds"] == [4, 5, 6, 7, 8]
+
+
 if __name__ == "__main__":
     test_liquipedia_2_1_fills_next_round_before_opendota()
     test_live_1_1_does_not_uncomplete_a_finished_series()
+    test_same_pair_ubsf_and_gf_are_not_one_bo5()
     print("test_resolve_bracket ok")

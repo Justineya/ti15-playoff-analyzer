@@ -43,6 +43,16 @@ if (!gfHit || gfHit.id !== "gf") {
   console.error("expected gf still on screen 7h in, got", gfHit && gfHit.id);
   process.exit(3);
 }
+const over = [
+  { id: "ubqf1", datetime: "2026-08-20 10:30", status: "completed", teamA: "Iron Wing", teamB: "Team Spirit", score: "0-2", format: "Bo3" },
+  { id: "gf", datetime: "2026-08-23 13:00", status: "completed", teamA: "TEAM VISION", teamB: "Team Spirit", score: "2-3", format: "Bo5" },
+];
+const afterEvent = Date.UTC(2026, 7, 26, 3, 0);
+const overHit = F.focusMatch(over, "", afterEvent);
+if (!overHit || overHit.id !== "gf") {
+  console.error("expected gf after the event, got", overHit && overHit.id);
+  process.exit(4);
+}
 """
 
 

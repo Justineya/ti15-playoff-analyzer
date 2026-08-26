@@ -379,7 +379,9 @@ def main() -> None:
             prev_series["lean"] = series_lean
             nxt = next_upcoming(packed)
             nxt_series = nxt
-            if nxt and nxt.get("teamA") and nxt.get("teamB"):
+            if not nxt:
+                kind = "champion"
+            elif nxt.get("teamA") and nxt.get("teamB"):
                 src = next((row for row in matches if row.get("id") == nxt["id"]), None)
                 nsim = find_sim(known, src) if src else None
                 nxt["lean"] = lean_from_p(
@@ -476,6 +478,19 @@ def compose(kind, prev_map, next_map, series_lean, prev_series, nxt_series) -> t
         )
         if next_map and next_map.get("lean"):
             bits.append(f"第1局看好 {next_map['lean']['tag']}（{round(next_map['lean']['p'] * 100)}%）。")
+    elif kind == "champion" and prev_series and prev_series.get("winner"):
+        loser = (
+            prev_series.get("teamB")
+            if prev_series.get("winner") == prev_series.get("teamA")
+            else prev_series.get("teamA")
+        )
+        bits = [
+            f"TI15 结束了。冠军 {tag(prev_series['winner'])}，总决赛 {prev_series.get('score') or ''} 赢了 {tag(loser)}。"
+        ]
+        if prev_map and prev_map.get("winner"):
+            f10 = f"，先到10杀 {tag(prev_map['f10'])}" if prev_map.get("f10") else ""
+            dur = f"，{prev_map['durationMin']}分钟" if prev_map.get("durationMin") else ""
+            bits.append(f"决胜局第{prev_map['game']}局 {tag(prev_map['winner'])} 赢了{f10}{dur}。")
     elif nxt_series:
         bits.append(
             f"下一把 {nxt_series.get('when','')[11:16]} {nxt_series.get('round') or ''} "

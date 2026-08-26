@@ -40,8 +40,48 @@ def need_wins(fmt: str) -> int:
     return 3 if (fmt or "").lower() == "bo5" else 2
 
 
-def pair_key(a: str, b: str) -> frozenset:
+def pair_key(a, b) -> frozenset:
     return frozenset({a, b})
+
+
+def parse_kickoff(dt) -> float | None:
+    raw = str(dt or "").strip()
+    if not raw:
+        return None
+    if len(raw) == 16:
+        raw += ":00"
+    try:
+        return datetime.strptime(raw[:19], "%Y-%m-%d %H:%M:%S").replace(tzinfo=CST).timestamp()
+    except ValueError:
+        return None
+
+
+def maps_for_series(match: dict, pool: list[dict], matches: list[dict]) -> list[dict]:
+    """Same two teams can play twice (ubsf then GF). Split by kickoff, not all H2H maps."""
+    a, b = match.get("teamA"), match.get("teamB")
+    start = parse_kickoff(match.get("datetime"))
+    later = []
+    for other in matches:
+        if other.get("id") == match.get("id"):
+            continue
+        oa, ob = other.get("teamA"), other.get("teamB")
+        if not (isinstance(oa, str) and isinstance(ob, str)):
+            continue
+        if pair_key(oa, ob) != pair_key(a, b):
+            continue
+        t = parse_kickoff(other.get("datetime"))
+        if start is not None and t is not None and t > start:
+            later.append(t)
+    end = min(later) if later else None
+    out = []
+    for g in pool:
+        st = int(g.get("start_time") or 0)
+        if start is not None and st < start - 2 * 3600:
+            continue
+        if end is not None and st >= end:
+            continue
+        out.append(g)
+    return out
 
 
 def playoff_games(games: list[dict]) -> list[dict]:
@@ -130,8 +170,12 @@ def apply_live_results(matches: list[dict], live: dict) -> bool:
         have = int(m.get("mapsPlayed") or 0)
         if played < have:
             continue
-        if m.get("status") in {"completed", "complete"} and max(wins_a, wins_b) < need:
-            continue
+        if m.get("status") in {"completed", "complete"} and m.get("winner"):
+            have = int(m.get("mapsPlayed") or 0)
+            if played <= have:
+                continue
+            if max(wins_a, wins_b) < need:
+                continue
         before = (m.get("winner"), m.get("score"), m.get("status"), m.get("mapsPlayed"))
         m["score"] = f"{wins_a}-{wins_b}"
         m["mapsPlayed"] = played
@@ -162,7 +206,7 @@ def apply_results(matches: list[dict], games: list[dict]) -> bool:
         a, b = m.get("teamA"), m.get("teamB")
         if not (isinstance(a, str) and isinstance(b, str)):
             continue
-        maps = indexed.get(pair_key(a, b) or frozenset(), [])
+        maps = maps_for_series(m, indexed.get(pair_key(a, b) or frozenset(), []), matches)
         if not maps:
             continue
         res = series_result(maps, a, b, m.get("format") or "Bo3")
