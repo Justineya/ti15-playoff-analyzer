@@ -1599,6 +1599,31 @@ function renderTreePage(data) {
   </section>`;
 }
 
+function gfRecapHtml(data, m) {
+  const recap = data.gfRecap;
+  if (!recap || m?.id !== "gf" || !m?.winner) return "";
+  const method = (recap.method || [])
+    .map((line) => `<li>${esc(line)}</li>`)
+    .join("");
+  const sections = (recap.sections || [])
+    .map(
+      (s) => `<article class="recap-block">
+        <div class="t">${esc(s.k || "")}</div>
+        <h3>${esc(s.h || "")}</h3>
+        <p>${esc(s.p || "")}</p>
+      </article>`
+    )
+    .join("");
+  return `<section class="gf-recap">
+    <div class="arena-kicker"><span>总决赛复盘</span><span>OpenDota 解析局</span><span>不是赛评腔</span></div>
+    <h2>${esc(recap.title || "复盘")}</h2>
+    <p class="lede">${esc(recap.lede || "")}</p>
+    ${method ? `<ol class="recap-method">${method}</ol>` : ""}
+    <div class="recap-grid">${sections}</div>
+    ${recap.limits ? `<p class="foot-note">${esc(recap.limits)}</p>` : ""}
+  </section>`;
+}
+
 function treeTeaser(data) {
   const gf = (data.playoffs?.matches || []).find((x) => x.id === "gf" && x.winner);
   const before = (data.modelBefore?.champion || [])[0];
@@ -2110,7 +2135,7 @@ function renderNow(data, matchId) {
   const seriesCard = marketCard("系列", m.teamA, m.teamB, pSeriesNow, polyPrice(sim, m.teamA), live);
   const mapCard = marketCard(`第${nextGame}局`, m.teamA, m.teamB, nextMap?.pWinA, gMkt, live, !seriesDone && nextGame > 1);
   const markets =
-    namedSides(m) && sim
+    namedSides(m) && sim && !(seriesDone && m.id === "gf")
       ? `<div class="markets">
         ${
           seriesDone
@@ -2120,7 +2145,9 @@ function renderNow(data, matchId) {
               : seriesCard + mapCard + f10Card
         }
       </div>`
-      : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
+      : namedSides(m) && sim
+        ? ""
+        : `<p class="live-why">对阵还没出来。出线后这里换成看好谁、去哪找价。</p>`;
   const why = shortWhy(sim);
   const inSeries = !seriesDone && wins.played > 0;
   const intermission = inSeries && !data.liveFeed?.game;
@@ -2156,6 +2183,7 @@ function renderNow(data, matchId) {
     </div>
     ${f10kStudyHtml(data, m, sim, seriesDone ? 1 : nextGame)}
     ${heroesStudyHtml(data, m)}
+    ${gfRecapHtml(data, m)}
     ${treeTeaser(data)}
     ${dailyHtml(data.daily)}
     ${namedSides(m) && sim && !seriesDone ? liveCalc(m, sim, data.simulations?.bankroll, seriesDone ? 1 : nextGame, pSeriesNow) : ""}

@@ -1,0 +1,69 @@
+{
+  "asOf": "2026-08-26",
+  "matchId": "gf",
+  "winner": "Team Spirit",
+  "loser": "TEAM VISION",
+  "score": "2-3",
+  "title": "为什么是 Spirit",
+  "lede": "开赛前 1000 次树只给 Spirit 4.2%。他们从胜者组半决赛输掉之后，败者组一张没丢，决赛日先打一场 Bo3 再打满五局。盾不是「更强的那支瑞士第1」拿的，是「更能把 64 分钟打完」的那支拿的。",
+  "method": [
+    "路：怎么进决赛，那天打了几局。",
+    "五局分开看：谁拿了前10杀、20分钟经济、谁赢图。三件事经常不是同一个答案。",
+    "BP：中单和后期核心，不把 Ban 列表写成玄学。",
+    "决胜局单独写。",
+    "模型看不见什么：连胜、败者组复仇、同一天七张图。"
+  ],
+  "sections": [
+    {
+      "k": "路",
+      "h": "决赛日 Spirit 打了七张图",
+      "p": "21 日胜者组半决赛输给 VSN（1-2）掉进败者组。之后 Liquid 0-2、BoomBoys 0-2、23 日上午 Yandex 0-2，六张图全胜。总决赛从 14:15 打到 20:08，五局合计 265 分钟；加上上午败者组决赛 72 分钟，这一天 Spirit 打了约 337 分钟。VSN 是胜者组冠军，22 日打完 Yandex 之后等到决赛。常规叙事是「胜者组更有体力」。结果相反。"
+    },
+    {
+      "k": "五局",
+      "h": "前10杀只解释了两局",
+      "p": "五局里只有 G1、G4 是「先到10杀的人把图拿了」。G2、G3、G5 都反了。两场超过 64 分钟的图（G2、G5）全部跟前10杀相反。这页以前用 F10K 当胜负透镜，总决赛打穿了它。"
+    },
+    {
+      "k": "G1",
+      "h": "第1局 Spirit 42–17 · 46.2 分钟",
+      "p": "Spirit 天辉。Larl 中单 Slark（第1手），Yatoro Shadow Fiend 补上前10杀。13分46秒 10–6，20 分钟经济领先 6300。VSN 中单 Io，后期没打出来。这局是五局里唯一一场「草稿、前10杀、滚雪球」叠在一起的。"
+    },
+    {
+      "k": "G2",
+      "h": "第2局 VSN 赢 · 64.5 分钟 · Spirit 先到10杀",
+      "p": "Spirit 夜魇。10分10秒 2–10，Larl Slardar 参与 7 次击杀，20 分钟经济仍领先约 6600。图还是 VSN 的：Earth Spirit / Enchantress / Rubick / Underlord / Lifestealer，拖到超长局。Spirit 这局 Axe 在辅助，前期能滚，关不了门。VSN 把系列赛从 0-1 拉回 1-1 的方式，不是对线赢，是不让对线的优势变成基地。"
+    },
+    {
+      "k": "G3",
+      "h": "第3局 Spirit 26–24 · 45.9 分钟 · VSN 先到10杀",
+      "p": "Spirit 天辉，Larl Nature's Prophet，Yatoro Terrorblade。VSN 25分37秒才先到 10 杀（8–10），节奏极慢。20 分钟 Spirit 经济落后约 2500，仍然拿图。这局不是雪球，是发育对线里 TB 的后期比 VSN 的 Pangolier / Shadow Fiend 更值钱。"
+    },
+    {
+      "k": "G4",
+      "h": "第4局 VSN 31–13 · 44.3 分钟",
+      "p": "VSN 天辉。Satanic Lifestealer 17分11秒完成前10杀（10–4）。No[o]ne- Sand King 中单 10 分钟经济和经验都压着 Larl Storm。Spirit 夜魇 Templar Assassin + Storm，对线之后没有局。这是五局里 VSN 唯一一场「全程领先」的图，把 Spirit 逼到赛点。"
+    },
+    {
+      "k": "G5",
+      "h": "决胜局 Spirit 34–31 · 64.4 分钟 · VSN 先到10杀",
+      "p": "VSN 天辉。13分07秒 10–4，Dukalis Hoodwink 完成前10杀。20 分钟 VSN 经济领先约 2900。No[o]ne- 中单 Invoker 全场 1 杀。Larl Pangolier 12 杀。Yatoro 这局拿 Lifestealer，Spirit 还有 Dark Seer。64 分 22 秒结束——和 G2 一样长，方向相反：G2 是 Spirit 前期赢了却关不上；G5 是 VSN 前期赢了却关不上。决胜局 Invoker 没有参与前10杀（1 次助攻），中单缺席的那张图，Spirit 把系列赛带走。"
+    },
+    {
+      "k": "中单",
+      "h": "Larl 对 No[o]ne-：不在同一张图上赢",
+      "p": "G1 Slark 对 Io，Spirit 滚起来。G2 Slardar 对 Earth Spirit，Larl 前10杀参与 7 次，图却丢了。G4 Storm 对 Sand King，10 分钟金钱 3646 对 4754，这局废了。G5 Pangolier 对 Invoker，后期 12 杀对 1 杀。Spirit 不是五局中单都赢，是在决胜局把中单换成能打架的 Pangolier，而 VSN 把 Invoker 放在必须赢的那张图上。"
+    },
+    {
+      "k": "BP",
+      "h": "两边 Ban 的是同一类英雄",
+      "p": "Spirit 五局 Ban 里反复出现 Bounty Hunter、Nature's Prophet、Treant 线。VSN 反复 Ban Treant、Clockwerk、Earth Spirit 线。G1 VSN 第3手 Io 中单是这系列代价最高的一次实验。G5 VSN 一阶段 Ban 掉 Shadow Fiend 和 Treant，第1手 Invoker——把决胜局押在中单大核上，对面上的是 Bane / Pangolier / Mirana / Lifestealer / Dark Seer，后期团战位比 Invoker 更好找。"
+    },
+    {
+      "k": "模型",
+      "h": "4.2% 看不见的三件事",
+      "p": "开赛前 1000 次：VSN 42.3%，NGX 20.6%，Spirit 4.2%。模型当每局独立同分布，没有「刚在胜者组半决赛输过同一支队伍」、没有「败者组六张图全胜」、没有「决赛日已经打了两张图还要打满 Bo5」。F10K 透镜在瑞士和小组能用，五局总决赛里三张图跟它反向。Spirit 拿盾的原因，正好是模型声明过不算的那几条。"
+    }
+  ],
+  "limits": "没有录像级眼位和团战回放。Carry / 劣势路没有逐人完整 KDA，只有中单和双辅的前10杀参与。经济只记到 20 分钟，G2、G5 的翻盘都发生在那之后。"
+}
