@@ -1,46 +1,16 @@
 {
   "asOf": "2026-09-02 17:00 CST",
   "source": "seed",
-  "headline": "QQT 复出 19 把 11-8：这版该打中单光法/天穹，不是组排月骑 1",
-  "positioning": "国服 Immortal 榜约 736。当前身份是节奏核：主中、副三。生涯是传统核心，这 19 把不是一号位。",
-  "narrative": "样本是 8/3–9/1 的 19 把排位（11-8），不是 7800 把生涯。中单 6-3，三号位 3-3，一号位月骑 0-2。胜场同分段 GPM 分位约 94%、推塔 79%；负场 GPM 51%、推塔 42%。\n\n7.41e 的 7000+ MMR 路人（D2PT 近 8 天）必须叠进去：光法中 55.5%（中单位第 1）、天穹中 53.0%（第 5）——你 2-0 / 2-0，版本在抬。女王中 46.5%、木头人 3 44.9%——这两把负先算版本坑。余烬中全服 50 分钟后胜率掉到 46.8%，你 61 分钟 20/8/35 仍负，是赢线没收掉。月骑 1 这版 50.8%，能玩；你 GPM 分位 3%–8% 是位置/发挥，不是英雄没环境。\n\n风暴中全服 47% 你仍对线 107% 赢了，说明手还在，但不该当池子。克林克兹 3 是偏门（这版它是 1）。单排 6-5 才是段位，3 黑 3-1 别混进英雄结论。\n\n下一阶段：中单锁光法/天穹，余烬只打能在 40 分钟前推的局；3 用破晓/撼地，丢掉木头人；组排别补一号位。每天北京时间 8 点拉新对局，有新图会再写一版战报。",
+  "headline": "11-8 中6-3",
+  "narrative": "",
+  "positioning": "主中 · 副三",
   "newMatchIds": [],
   "focus": [
-    {
-      "matchId": 8930110320,
-      "hero": "Luna",
-      "role": "pos1",
-      "kind": "wrong_role",
-      "note": "月骑一号位 GPM 分位 3%–8%。这版 7k+ 一号位约 50.8%，是人没打出来。"
-    },
-    {
-      "matchId": 8976107878,
-      "hero": "Ember Spirit",
-      "role": "pos2",
-      "kind": "did_not_close",
-      "note": "余烬 61 分钟数据顶格仍负。高分局 50 分钟后胜率约 46.8%，要中期结束。"
-    },
-    {
-      "matchId": 8927031345,
-      "hero": "Lina",
-      "role": "pos2",
-      "kind": "did_not_close",
-      "note": "火女对线 92%、GPM 92%，推塔只有 36%，52 分钟负。"
-    },
-    {
-      "matchId": 8977410950,
-      "hero": "Timbersaw",
-      "role": "pos3",
-      "kind": "meta_weak",
-      "note": "木头人 3 在 7k+ 约 44.9%，倒数档。农场够了也先换英雄。"
-    },
-    {
-      "matchId": 8941428907,
-      "hero": "Queen of Pain",
-      "role": "pos2",
-      "kind": "meta_weak",
-      "note": "女王中 7k+ 约 46.5%。对线 84% 之后经济掉到 45%。"
-    }
+    {"matchId": 8930110320, "hero": "Luna", "role": "pos1", "kind": "wrong_role", "note": "别打1"},
+    {"matchId": 8976107878, "hero": "Ember Spirit", "role": "pos2", "kind": "did_not_close", "note": "61分没收"},
+    {"matchId": 8927031345, "hero": "Lina", "role": "pos2", "kind": "did_not_close", "note": "塔36%"},
+    {"matchId": 8977410950, "hero": "Timbersaw", "role": "pos3", "kind": "meta_weak", "note": "版本坑"},
+    {"matchId": 8941428907, "hero": "Queen of Pain", "role": "pos2", "kind": "meta_weak", "note": "版本坑"}
   ],
-  "note": "数字 OpenDota；7k+ 位置胜率 D2PT 7.41e 近 8 天。非投注建议。"
+  "note": "非投注建议"
 }

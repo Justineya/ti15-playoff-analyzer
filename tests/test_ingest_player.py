@@ -56,9 +56,10 @@ def sample_match(account_id: int = 203557151, win: bool = True, hero_id: int = 9
 
 def test_extract_mid_kotl() -> None:
     names = {90: "Keeper of the Light"}
-    row = ip.extract_player(sample_match(), 203557151, names)
+    row = ip.extract_player(sample_match(), 203557151, names, {90: "keeper_of_the_light"})
     assert row is not None
     assert row["hero"] == "Keeper of the Light"
+    assert row["heroFile"] == "keeper_of_the_light"
     assert row["role"] == "pos2"
     assert row["win"] is True
     assert row["gpmBr"] == 0.83

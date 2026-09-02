@@ -273,7 +273,8 @@
         "picks": 32755,
         "wins": 17220,
         "wr": 0.5257
-      }
+      },
+      "heroFile": "keeper_of_the_light"
     },
     {
       "matchId": 8977593090,
@@ -312,7 +313,8 @@
         "picks": 7201,
         "wins": 3695,
         "wr": 0.5131
-      }
+      },
+      "heroFile": "lycan"
     },
     {
       "matchId": 8977526658,
@@ -351,7 +353,8 @@
         "picks": 32755,
         "wins": 17220,
         "wr": 0.5257
-      }
+      },
+      "heroFile": "keeper_of_the_light"
     },
     {
       "matchId": 8977469605,
@@ -390,7 +393,8 @@
         "picks": 54062,
         "wins": 27981,
         "wr": 0.5176
-      }
+      },
+      "heroFile": "dawnbreaker"
     },
     {
       "matchId": 8977410950,
@@ -429,7 +433,8 @@
         "picks": 30119,
         "wins": 13454,
         "wr": 0.4467
-      }
+      },
+      "heroFile": "shredder"
     },
     {
       "matchId": 8976107878,
@@ -468,7 +473,8 @@
         "picks": 63879,
         "wins": 31861,
         "wr": 0.4988
-      }
+      },
+      "heroFile": "ember_spirit"
     },
     {
       "matchId": 8966987373,
@@ -507,7 +513,8 @@
         "picks": 54062,
         "wins": 27981,
         "wr": 0.5176
-      }
+      },
+      "heroFile": "dawnbreaker"
     },
     {
       "matchId": 8966822046,
@@ -546,7 +553,8 @@
         "picks": 7201,
         "wins": 3695,
         "wr": 0.5131
-      }
+      },
+      "heroFile": "lycan"
     },
     {
       "matchId": 8966734621,
@@ -585,7 +593,8 @@
         "picks": 37342,
         "wins": 17281,
         "wr": 0.4628
-      }
+      },
+      "heroFile": "storm_spirit"
     },
     {
       "matchId": 8941428907,
@@ -624,7 +633,8 @@
         "picks": 39614,
         "wins": 18563,
         "wr": 0.4686
-      }
+      },
+      "heroFile": "queenofpain"
     },
     {
       "matchId": 8938840338,
@@ -663,7 +673,8 @@
         "picks": 7201,
         "wins": 3695,
         "wr": 0.5131
-      }
+      },
+      "heroFile": "lycan"
     },
     {
       "matchId": 8938742554,
@@ -702,7 +713,8 @@
         "picks": 18274,
         "wins": 9376,
         "wr": 0.5131
-      }
+      },
+      "heroFile": "clinkz"
     },
     {
       "matchId": 8930631744,
@@ -741,7 +753,8 @@
         "picks": 15593,
         "wins": 8400,
         "wr": 0.5387
-      }
+      },
+      "heroFile": "arc_warden"
     },
     {
       "matchId": 8930565338,
@@ -780,7 +793,8 @@
         "picks": 56251,
         "wins": 28333,
         "wr": 0.5037
-      }
+      },
+      "heroFile": "luna"
     },
     {
       "matchId": 8930206038,
@@ -819,7 +833,8 @@
         "picks": 45902,
         "wins": 21838,
         "wr": 0.4758
-      }
+      },
+      "heroFile": "sniper"
     },
     {
       "matchId": 8930167295,
@@ -858,7 +873,8 @@
         "picks": 15593,
         "wins": 8400,
         "wr": 0.5387
-      }
+      },
+      "heroFile": "arc_warden"
     },
     {
       "matchId": 8930132958,
@@ -897,7 +913,8 @@
         "picks": 58976,
         "wins": 30088,
         "wr": 0.5102
-      }
+      },
+      "heroFile": "earthshaker"
     },
     {
       "matchId": 8930110320,
@@ -936,7 +953,8 @@
         "picks": 56251,
         "wins": 28333,
         "wr": 0.5037
-      }
+      },
+      "heroFile": "luna"
     },
     {
       "matchId": 8927031345,
@@ -975,7 +993,8 @@
         "picks": 104917,
         "wins": 52799,
         "wr": 0.5032
-      }
+      },
+      "heroFile": "lina"
     }
   ],
   "note": "只收录 lobby_type=7 排位。Divine 胜率来自 OpenDota 7_pick，不是 7k+ D2PT。"

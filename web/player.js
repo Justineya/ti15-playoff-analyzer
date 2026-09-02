@@ -1,134 +1,174 @@
 (function () {
   const app = document.getElementById("app");
   const asof = document.getElementById("player-asof");
+  const IMG = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/";
+
+  const ROLE = { pos1: "1", pos2: "中", pos3: "3", pos4: "4", pos5: "5" };
+  const KIND = {
+    win: "胜",
+    meta_weak: "版本坑",
+    did_not_close: "没收",
+    wrong_role: "别打这位置",
+    farm_collapse: "崩了",
+    other_loss: "负",
+  };
 
   function pct(v) {
-    if (v == null || Number.isNaN(Number(v))) return "—";
-    return Math.round(Number(v) * 100) + "%";
+    if (v == null || Number.isNaN(Number(v))) return null;
+    return Math.round(Number(v) * 100);
   }
 
-  function kda(g) {
-    return `${g.kills ?? "—"}/${g.deaths ?? "—"}/${g.assists ?? "—"}`;
+  function pctLabel(v) {
+    const n = pct(v);
+    return n == null ? "—" : n + "%";
   }
 
-  function roleLabel(role) {
-    return { pos1: "一号位", pos2: "中单", pos3: "三号位", pos4: "四号位", pos5: "五号位", unknown: "未解析" }[role] || role || "—";
+  function bar(v, cls) {
+    const n = pct(v);
+    const w = n == null ? 0 : Math.max(4, Math.min(100, n));
+    return `<span class="pb ${cls || ""}"><i style="width:${w}%"></i></span>`;
   }
 
-  function kindLabel(kind) {
-    return {
-      win: "胜",
-      meta_weak: "版本偏弱",
-      did_not_close: "赢线没收",
-      wrong_role: "位置/发挥",
-      farm_collapse: "经济崩了",
-      other_loss: "其他负",
-    }[kind] || kind || "";
-  }
-
-  function metaCell(g) {
-    const d = g.divine;
-    if (!d || d.wr == null) return "—";
-    return `Divine ${pct(d.wr)}`;
+  function portrait(file, name) {
+    if (file) {
+      return `<img class="ph" src="${IMG}${file}.png" alt="${name || ""}" width="84" height="47" />`;
+    }
+    return `<span class="ph ph-empty">${(name || "?").slice(0, 2)}</span>`;
   }
 
   function record(s) {
-    if (!s) return "—";
-    const g = s.games || 0;
-    const w = s.wins || 0;
-    return `${w}-${g - w}`;
+    const g = (s && s.games) || 0;
+    const w = (s && s.wins) || 0;
+    return { w, l: g - w, g };
   }
 
   function render(player, brief) {
     const s = player.summary || {};
     const games = player.games || [];
-    const rank = player.leaderboardRank ? `Immortal #${player.leaderboardRank}` : `段位 ${player.rankTier ?? "—"}`;
     const ranked = player.rankedWl || {};
-    asof.textContent = player.asOf || brief.asOf || "";
-    const focus = (brief.focus || [])
-      .map((row) => `<li><span class="player-kind">${kindLabel(row.kind)}</span> ${row.note || row.hero || ""}</li>`)
+    asof.textContent = (player.asOf || "").replace(" CST", "");
+
+    const strip = games
+      .slice()
+      .reverse()
+      .map((g) => `<i class="${g.win ? "w" : "l"}" title="${g.hero}"></i>`)
       .join("");
-    const roleCards = ["pos2", "pos3", "pos1"]
+
+    const roles = ["pos2", "pos3", "pos1"]
       .map((key) => {
-        const row = (s.roles || {})[key] || { games: 0, wins: 0 };
-        return `<div><b>${roleLabel(key)}</b>${record(row)}</div>`;
+        const r = record((s.roles || {})[key]);
+        const dots = games
+          .filter((g) => (g.role || "unknown") === key)
+          .map((g) => `<i class="${g.win ? "w" : "l"}"></i>`)
+          .join("");
+        return `<div class="role-tile">
+          <em>${ROLE[key]}</em>
+          <strong>${r.w}-${r.l}</strong>
+          <span class="dots">${dots || "—"}</span>
+        </div>`;
       })
       .join("");
-    const rows = games
+
+    const cmp = [
+      ["对线", (s.winAvg || {}).laneEfficiency, (s.lossAvg || {}).laneEfficiency],
+      ["GPM", (s.winAvg || {}).gpmBr, (s.lossAvg || {}).gpmBr],
+      ["推塔", (s.winAvg || {}).towerBr, (s.lossAvg || {}).towerBr],
+    ]
+      .map(([lab, a, b]) => `<div class="cmp-row">
+        <span>${lab}</span>
+        ${bar(a, "win")}
+        <b>${pctLabel(a)}</b>
+        ${bar(b, "loss")}
+        <b class="dim">${pctLabel(b)}</b>
+      </div>`)
+      .join("");
+
+    const focusById = {};
+    (brief.focus || []).forEach((row) => {
+      if (row.matchId) focusById[String(row.matchId)] = row;
+    });
+
+    const tags = (brief.focus || [])
+      .map((row) => {
+        const g = games.find((x) => String(x.matchId) === String(row.matchId)) || {};
+        return `<a class="tag tag-${row.kind}" href="${g.opendota || "#"}">
+          ${portrait(g.heroFile || row.heroFile, row.hero)}
+          <span><b>${KIND[row.kind] || row.kind}</b>${row.hero || ""}</span>
+        </a>`;
+      })
+      .join("");
+
+    const cards = games
       .map((g) => {
         const mark = g.win ? "W" : "L";
-        return `<tr class="${g.win ? "is-win" : "is-loss"}">
-          <td>${(g.when || "").slice(5)}</td>
-          <td class="mono">${mark}</td>
-          <td>${g.hero || "—"}</td>
-          <td>${roleLabel(g.role)}</td>
-          <td class="mono">${kda(g)}</td>
-          <td>${g.durationMin ?? "—"}分</td>
-          <td>${pct(g.laneEfficiency)}</td>
-          <td>${pct(g.gpmBr)}</td>
-          <td>${pct(g.towerBr)}</td>
-          <td>${metaCell(g)}</td>
-          <td>${g.partySize > 1 ? g.partySize + "排" : "单"}</td>
-        </tr>`;
+        const tag = focusById[String(g.matchId)];
+        const chip = tag ? `<em class="chip chip-${tag.kind}">${KIND[tag.kind] || tag.note || ""}</em>` : "";
+        return `<a class="mc ${g.win ? "win" : "loss"}" href="${g.opendota || "#"}">
+          ${portrait(g.heroFile, g.hero)}
+          <div class="mc-body">
+            <div class="mc-top">
+              <strong class="wl">${mark}</strong>
+              <span class="nm">${g.hero || "—"}</span>
+              <span class="rl">${ROLE[g.role] || "—"}</span>
+              <span class="kd">${g.kills ?? "—"}/${g.deaths ?? "—"}/${g.assists ?? "—"}</span>
+              ${chip}
+            </div>
+            <div class="mc-bars">
+              <label>线</label>${bar(g.laneEfficiency)}
+              <label>金</label>${bar(g.gpmBr)}
+              <label>塔</label>${bar(g.towerBr, g.win ? "" : "loss")}
+            </div>
+          </div>
+        </a>`;
       })
       .join("");
-    const heroes = (s.heroes || [])
-      .slice(0, 10)
+
+    const pool = (s.heroes || [])
       .map((h) => {
-        const wr = h.divine && h.divine.wr != null ? pct(h.divine.wr) : "—";
-        return `<li>${h.hero} ${h.wins}-${h.games - h.wins} · Divine ${wr}</li>`;
+        const file = (games.find((g) => g.hero === h.hero) || {}).heroFile;
+        const wr = h.divine && h.divine.wr != null ? pctLabel(h.divine.wr) : "—";
+        return `<div class="pool">
+          ${portrait(file, h.hero)}
+          <strong>${h.wins}-${h.games - h.wins}</strong>
+          <span>${wr}</span>
+        </div>`;
       })
       .join("");
+
     app.innerHTML = `
-      <section class="hero">
-        <p class="kicker">个人排位 · ${rank}</p>
-        <h1>${brief.headline || player.name || "QQT"}</h1>
-        <p class="lede">${brief.narrative || "还没有日更战报。"}</p>
-        <p class="player-pos">${brief.positioning || ""}</p>
-        <div class="hero-meta">
-          <div><b>最近样本</b>${s.wins || 0}-${s.losses || 0}</div>
-          <div><b>生涯排位</b>${ranked.win || 0}-${ranked.lose || 0}</div>
-          ${roleCards}
+      <section class="player-head">
+        <div class="score">
+          <b>${s.wins || 0}</b><span>-</span><b class="loss-n">${s.losses || 0}</b>
+        </div>
+        <div class="head-meta">
+          <p class="kicker">Immortal #${player.leaderboardRank || "—"} · ${brief.positioning || "主中"}</p>
+          <div class="strip">${strip}</div>
+          <p class="career">${ranked.win || 0}-${ranked.lose || 0} 生涯排位</p>
         </div>
       </section>
-      <section>
-        <h2>今天盯什么</h2>
-        <ul class="player-focus">${focus || "<li>没有新的负局分类。</li>"}</ul>
+      <section class="role-row">${roles}</section>
+      <section class="cmp">
+        <div class="cmp-lab"><span>胜</span><span class="dim">负</span></div>
+        ${cmp}
       </section>
-      <section>
-        <h2>最近排位</h2>
-        <p class="section-lead">分位是同分段同英雄。Divine 胜率是 OpenDota 高分段桶，7k+ 位置胜率在战报正文里。</p>
-        <div class="player-table-wrap">
-          <table class="player-table">
-            <thead>
-              <tr>
-                <th>时间</th><th></th><th>英雄</th><th>位置</th><th>KDA</th><th>时长</th>
-                <th>对线</th><th>GPM分位</th><th>推塔分位</th><th>Divine</th><th>排</th>
-              </tr>
-            </thead>
-            <tbody>${rows || "<tr><td colspan='11'>还没有解析局</td></tr>"}</tbody>
-          </table>
-        </div>
-      </section>
-      <section>
-        <h2>这批英雄池</h2>
-        <ul class="player-heroes">${heroes || "<li>无</li>"}</ul>
-      </section>
+      <section class="tags">${tags}</section>
+      <section class="mcs">${cards}</section>
+      <section class="pools">${pool}</section>
     `;
   }
 
   Promise.all([
-    fetch("./data/player.json?v=player").then((r) => (r.ok ? r.json() : null)),
-    fetch("./data/player-briefing.json?v=player").then((r) => (r.ok ? r.json() : {})),
+    fetch("./data/player.json?v=scan").then((r) => (r.ok ? r.json() : null)),
+    fetch("./data/player-briefing.json?v=scan").then((r) => (r.ok ? r.json() : {})),
   ])
     .then(([player, brief]) => {
       if (!player) {
-        app.textContent = "还没有战绩文件。等北京时间 8 点的日更，或在 Actions 里手动跑 Player daily scout。";
+        app.textContent = "还没有战绩。";
         return;
       }
       render(player, brief || {});
     })
     .catch(() => {
-      app.textContent = "战绩文件没下来，刷新一下。";
+      app.textContent = "刷新一下。";
     });
 })();

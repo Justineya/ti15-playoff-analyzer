@@ -68,6 +68,16 @@ def hero_names() -> dict[int, str]:
     return out
 
 
+def hero_files() -> dict[int, str]:
+    out = {}
+    for row in load_json(HEROES_PATH, []):
+        hid = row.get("id")
+        name = str(row.get("name") or "")
+        if hid and name.startswith("npc_dota_hero_"):
+            out[int(hid)] = name.replace("npc_dota_hero_", "", 1)
+    return out
+
+
 def won(row: dict) -> bool:
     slot = int(row.get("player_slot") or 0)
     return bool(row.get("radiant_win")) == (slot < 128)
@@ -91,7 +101,7 @@ def first_item(purch: list, names: set[str]):
     return None
 
 
-def extract_player(match: dict, account_id: int, names: dict[int, str]) -> dict | None:
+def extract_player(match: dict, account_id: int, names: dict[int, str], files: dict[int, str] | None = None) -> dict | None:
     me = next((p for p in (match.get("players") or []) if p.get("account_id") == account_id), None)
     if not me:
         return None
@@ -101,14 +111,17 @@ def extract_player(match: dict, account_id: int, names: dict[int, str]) -> dict 
     start = int(match.get("start_time") or 0)
     duration = int(match.get("duration") or 0)
     is_rad = int(me.get("player_slot") or 0) < 128
+    hid = int(me.get("hero_id") or 0)
+    files = files or {}
     return {
         "matchId": match.get("match_id"),
         "when": datetime.fromtimestamp(start, CST).strftime("%Y-%m-%d %H:%M") if start else "",
         "startTime": start,
         "durationMin": round(duration / 60, 1) if duration else None,
         "win": bool(match.get("radiant_win")) == is_rad,
-        "hero": names.get(int(me.get("hero_id") or 0), str(me.get("hero_id"))),
+        "hero": names.get(hid, str(me.get("hero_id"))),
         "heroId": me.get("hero_id"),
+        "heroFile": files.get(hid),
         "role": ROLE.get(lane_role) or (None if lane_role in (None, 0) else f"pos{lane_role}"),
         "laneRole": lane_role,
         "partySize": me.get("party_size") or match.get("party_size") or 1,
@@ -225,31 +238,19 @@ def classify_game(game: dict, divine: dict | None) -> str:
 
 def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list, hero_stats: list) -> dict:
     now = datetime.now(CST).strftime("%Y-%m-%d %H:%M") + " CST"
-    newest = games[:8]
-    lines = []
-    if new_ids:
-        lines.append(f"新对局 {len(new_ids)} 把：{', '.join(str(i) for i in new_ids[:8])}。")
-    else:
-        lines.append("今天没有新的排位。下面仍是最近样本。")
     roles = summary.get("roles") or {}
     pos2 = roles.get("pos2") or {}
     pos3 = roles.get("pos3") or {}
-    pos1 = roles.get("pos1") or {}
-    lines.append(
-        f"最近 {summary.get('n')} 把排位 {summary.get('wins')}-{summary.get('losses')}。"
-        f"中单 {pos2.get('wins', 0)}-{pos2.get('games', 0) - pos2.get('wins', 0)}，"
-        f"三号位 {pos3.get('wins', 0)}-{pos3.get('games', 0) - pos3.get('wins', 0)}，"
-        f"一号位 {pos1.get('wins', 0)}-{pos1.get('games', 0) - pos1.get('wins', 0)}。"
-    )
-    win_avg = summary.get("winAvg") or {}
-    loss_avg = summary.get("lossAvg") or {}
-    if win_avg.get("gpmBr") is not None and loss_avg.get("gpmBr") is not None:
-        lines.append(
-            f"胜场同分段 GPM 分位 {win_avg['gpmBr']:.0%}、推塔 {win_avg.get('towerBr') or 0:.0%}；"
-            f"负场 GPM {loss_avg['gpmBr']:.0%}、推塔 {loss_avg.get('towerBr') or 0:.0%}。"
-        )
+    bits = []
+    if new_ids:
+        bits.append(f"+{len(new_ids)}")
+    bits.append(f"{summary.get('wins')}-{summary.get('losses')}")
+    if pos2.get("games"):
+        bits.append(f"中{pos2.get('wins', 0)}-{pos2.get('games', 0) - pos2.get('wins', 0)}")
+    if pos3.get("games"):
+        bits.append(f"3号{pos3.get('wins', 0)}-{pos3.get('games', 0) - pos3.get('wins', 0)}")
     focus = []
-    for g in newest:
+    for g in games[:10]:
         if g.get("win"):
             continue
         meta = divine_wr(hero_stats, int(g.get("heroId") or 0))
@@ -259,25 +260,22 @@ def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list
             {
                 "matchId": g.get("matchId"),
                 "hero": g.get("hero"),
+                "heroFile": g.get("heroFile"),
                 "role": g.get("role"),
                 "kind": kind,
                 "divineWr": meta,
-                "note": f"{g.get('hero')} {g.get('role')} 负 · Divine胜率 {wr} · {kind}",
+                "note": wr,
             }
         )
-    headline = (
-        f"{profile.get('personaname') or 'QQT'} 最近 {summary.get('n')} 把 "
-        f"{summary.get('wins')}-{summary.get('losses')}"
-    )
     return {
         "asOf": now,
         "source": "stub",
-        "headline": headline,
-        "narrative": " ".join(lines),
-        "positioning": "Immortal 节奏核：主中、副三。一号位先别在组排补。",
+        "headline": " ".join(bits),
+        "narrative": "",
+        "positioning": "主中 · 副三",
         "newMatchIds": new_ids,
         "focus": focus[:6],
-        "note": "数字来自 OpenDota。Cursor 日更会把 narrative 改成完整复盘。非投注建议。",
+        "note": "页面用卡片，不写长文。非投注建议。",
     }
 
 
@@ -298,6 +296,7 @@ def ingest(fetch=get_json) -> dict:
     parse_limit = int(cfg.get("parseLimit") or 25)
     form_days = int(cfg.get("formDays") or 120)
     names = hero_names()
+    files = hero_files()
     profile = try_fetch(fetch, f"{API}/players/{account_id}", {})
     wl = try_fetch(fetch, f"{API}/players/{account_id}/wl?lobby_type={lobby}", {})
     listed = try_fetch(fetch, f"{API}/players/{account_id}/matches?lobby_type={lobby}&limit={list_limit}", [])
@@ -324,7 +323,7 @@ def ingest(fetch=get_json) -> dict:
         except Exception as err:  # noqa: BLE001
             print("match fetch failed", mid, err)
             continue
-        extracted = extract_player(blob if isinstance(blob, dict) else {}, account_id, names)
+        extracted = extract_player(blob if isinstance(blob, dict) else {}, account_id, names, files)
         if extracted:
             extracted["divine"] = divine_wr(hero_stats, int(extracted.get("heroId") or 0))
             games.append(extracted)
