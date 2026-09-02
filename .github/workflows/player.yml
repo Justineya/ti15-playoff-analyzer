@@ -1,0 +1,85 @@
+name: Player daily scout
+
+on:
+  schedule:
+    # 08:00 Beijing = 00:00 UTC. GitHub cron is often late.
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      force_cursor:
+        description: "Launch Cursor even if there is no new ranked game"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: player-scout
+  cancel-in-progress: false
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull ranked games from OpenDota
+        run: python3 scripts/ingest_player.py
+      - name: Launch Cursor if there are new maps
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          FORCE_CURSOR: ${{ github.event.inputs.force_cursor == 'true' && '1' || '' }}
+        run: python3 scripts/launch_player_cursor.py
+      - name: Commit player page data
+        id: commit
+        run: |
+          git config user.name "ti15-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/data/player.json web/data/player-briefing.json web/data/player.md data/player data/player-launch.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "no player changes"
+            exit 0
+          fi
+          git commit -m "Auto-refresh QQT ranked scout."
+          ok=0
+          for wait in 4 8 16 32; do
+            if git pull --rebase origin main && git push; then
+              ok=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep "$wait"
+          done
+          if [ "$ok" != 1 ]; then
+            echo "player push failed after retries"
+            exit 1
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Configure Pages
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload Pages artifact
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+  deploy:
+    needs: scout
+    if: needs.scout.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

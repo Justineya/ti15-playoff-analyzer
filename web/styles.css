@@ -1391,3 +1391,58 @@ footer a { color: var(--gold); }
   .tree-path li { grid-template-columns: 1fr; }
   .clock-cell { min-width: 64px; }
 }
+
+.player-pos {
+  color: var(--gold);
+  font-weight: 600;
+  max-width: 46em;
+}
+.player-focus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.player-focus li {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 10px 14px;
+}
+.player-kind {
+  color: var(--gold);
+  margin-right: 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+.player-table-wrap { overflow-x: auto; }
+.player-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.player-table th {
+  text-align: left;
+  color: var(--mute);
+  font-weight: 500;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.player-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.player-table tr.is-win td:nth-child(2) { color: var(--moss); font-weight: 600; }
+.player-table tr.is-loss td:nth-child(2) { color: var(--blood); font-weight: 600; }
+.player-table .mono { font-variant-numeric: tabular-nums; }
+.player-heroes {
+  columns: 2;
+  padding-left: 18px;
+}
+.player-page .history-btn { text-decoration: none; display: inline-block; }
+@media (max-width: 860px) {
+  .player-heroes { columns: 1; }
+  .player-page .hero-meta { grid-template-columns: 1fr 1fr; }
+}
