@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-09-03 12:08 CST",
-  "source": "stub",
-  "headline": "+6 13-12 中6-3 3号3-3",
+  "asOf": "2026-09-03 12:11 CST",
+  "source": "cursor",
+  "headline": "13-12 中6-3",
   "narrative": "",
   "positioning": "主中 · 副三",
   "newMatchIds": [
@@ -13,71 +13,11 @@
     "8978985728"
   ],
   "focus": [
-    {
-      "matchId": 8979308130,
-      "hero": "Sniper",
-      "heroFile": "sniper",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 42558,
-        "wins": 20192,
-        "wr": 0.4745
-      },
-      "note": "47%"
-    },
-    {
-      "matchId": 8979162667,
-      "hero": "Timbersaw",
-      "heroFile": "shredder",
-      "role": null,
-      "kind": "meta_weak",
-      "divineWr": {
-        "picks": 27469,
-        "wins": 12311,
-        "wr": 0.4482
-      },
-      "note": "45%"
-    },
-    {
-      "matchId": 8979039327,
-      "hero": "Dawnbreaker",
-      "heroFile": "dawnbreaker",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 49958,
-        "wins": 25922,
-        "wr": 0.5189
-      },
-      "note": "52%"
-    },
-    {
-      "matchId": 8978985728,
-      "hero": "Arc Warden",
-      "heroFile": "arc_warden",
-      "role": null,
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 14267,
-        "wins": 7669,
-        "wr": 0.5375
-      },
-      "note": "54%"
-    },
-    {
-      "matchId": 8977469605,
-      "hero": "Dawnbreaker",
-      "heroFile": "dawnbreaker",
-      "role": "pos3",
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 49958,
-        "wins": 25922,
-        "wr": 0.5189
-      },
-      "note": "52%"
-    }
+    {"matchId": 8979308130, "hero": "Sniper", "role": "pos2", "kind": "meta_weak", "note": "版本坑"},
+    {"matchId": 8979162667, "hero": "Timbersaw", "role": "pos3", "kind": "meta_weak", "note": "版本坑"},
+    {"matchId": 8978985728, "hero": "Arc Warden", "role": "pos2", "kind": "farm_collapse", "note": "金崩"},
+    {"matchId": 8979039327, "hero": "Dawnbreaker", "role": "pos3", "kind": "other_loss", "note": "塔0"},
+    {"matchId": 8930110320, "hero": "Luna", "role": "pos1", "kind": "wrong_role", "note": "别打1"}
   ],
-  "note": "页面用卡片，不写长文。非投注建议。"
+  "note": "非投注建议"
 }
