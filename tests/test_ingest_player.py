@@ -113,9 +113,10 @@ def test_stub_briefing_keeps_short_diagnosis() -> None:
     }
     brief = ip.stub_briefing({}, games, summary, ["1"], [])
     assert brief["narrative"] == ""
+    assert brief["sessionMatchIds"] == ["1"]
     assert brief["lede"].startswith("新1把全单排 0-1")
-    assert any("主中" in p for p in brief["points"])
-    assert any("单排 1-1" in p for p in brief["points"])
+    assert any("Timbersaw" in p for p in brief["points"])
+    assert not any("月骑" in p or "主中" in p for p in brief["points"])
     assert brief["focus"][0]["note"] == "版本坑"
 
 
@@ -174,6 +175,7 @@ def test_ingest_detects_new_ids() -> None:
             brief = json.loads((tmp / "web" / "data" / "player-briefing.json").read_text())
             assert brief["points"]
             assert brief["lede"]
+            assert brief["sessionMatchIds"] == ["8977526658"]
             again = ip.ingest(fetch=fake_fetch)
             assert again["newMatchIds"] == []
             assert json.loads(ip.LAUNCH_PATH.read_text())["launch"] is False

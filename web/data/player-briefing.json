@@ -1,17 +1,26 @@
 {
-  "asOf": "2026-09-03 14:55 CST",
+  "asOf": "2026-09-03 15:20 CST",
   "source": "cursor",
-  "headline": "昨夜单排 2-4，窗口 13-12",
-  "lede": "赢仍靠经济碾；输在天穹崩了、木头人版本坑、月骑别打 1。",
+  "headline": "昨夜 2-4：能推就赢，中路两把全黑",
+  "lede": "6 把全单排。赢在尸王/DP 推塔；输在天穹崩了、破晓不打架、木头人/火枪。",
   "narrative": "",
-  "positioning": "主中 · 副三",
+  "positioning": "昨夜偏三",
+  "scopeLabel": "昨夜分析",
   "points": [
-    "昨夜 6 把全单排 2-4，窗口从 11-8 变成 13-12。",
-    "赢靠碾：尸王推塔 94%、DP 71%。输的四把经济 31–56%，破晓塔伤 0。",
-    "位置没变：中 6-3、三号 3-3、月骑 1 号 0-2。昨夜未解析，别改定位。",
-    "胜场 GPM 92% / 推塔 76%；负场 47% / 35%。对线差距小，中期断经济。",
-    "单排 8-9 才是分段；三排 3-1 灌水。",
-    "锁光法中 2-0。天穹昨夜崩了先停。木头人 / 火枪 / 女王扔。月骑别补 1。余烬要 40 分前结束。"
+    "20:03–23:19 连打 6 把单排，2-4。OpenDota 还没解析分路，阵容上看中两把、三号位四把。",
+    "天穹 2/11、GPM 31%、经验 18%。英雄 Divine 54%，这把是崩，不是英雄废。",
+    "破晓 306 刀、塔伤 0、英雄伤害 8%。刀到了，没打地图。",
+    "赢的两把都能推：DP 30 分 8/2/13 推塔 71%；尸王经济/推塔都 94%。",
+    "木头人 Divine 45%，345 刀仍 6/12。火枪伤害 93%、塔 25%，输出是空的。",
+    "这夜结论：能推就赢。木头人/火枪别拿；天穹崩了就停，别连打中。"
+  ],
+  "sessionMatchIds": [
+    "8978985728",
+    "8979039327",
+    "8979102923",
+    "8979162667",
+    "8979238039",
+    "8979308130"
   ],
   "newMatchIds": [
     "8979308130",
@@ -31,22 +40,6 @@
       "note": "金崩"
     },
     {
-      "matchId": 8979162667,
-      "hero": "Timbersaw",
-      "heroFile": "shredder",
-      "role": "pos3",
-      "kind": "meta_weak",
-      "note": "版本坑"
-    },
-    {
-      "matchId": 8979308130,
-      "hero": "Sniper",
-      "heroFile": "sniper",
-      "role": "pos2",
-      "kind": "meta_weak",
-      "note": "版本坑"
-    },
-    {
       "matchId": 8979039327,
       "hero": "Dawnbreaker",
       "heroFile": "dawnbreaker",
@@ -55,21 +48,37 @@
       "note": "塔0"
     },
     {
-      "matchId": 8930110320,
-      "hero": "Luna",
-      "heroFile": "luna",
-      "role": "pos1",
-      "kind": "wrong_role",
-      "note": "别打1"
+      "matchId": 8979102923,
+      "hero": "Death Prophet",
+      "heroFile": "death_prophet",
+      "role": "pos3",
+      "kind": "win",
+      "note": "能推"
     },
     {
-      "matchId": 8976107878,
-      "hero": "Ember Spirit",
-      "heroFile": "ember_spirit",
+      "matchId": 8979162667,
+      "hero": "Timbersaw",
+      "heroFile": "shredder",
+      "role": "pos3",
+      "kind": "meta_weak",
+      "note": "版本坑"
+    },
+    {
+      "matchId": 8979238039,
+      "hero": "Undying",
+      "heroFile": "undying",
+      "role": "pos3",
+      "kind": "win",
+      "note": "碾了"
+    },
+    {
+      "matchId": 8979308130,
+      "hero": "Sniper",
+      "heroFile": "sniper",
       "role": "pos2",
-      "kind": "did_not_close",
-      "note": "61分没收"
+      "kind": "meta_weak",
+      "note": "伤害空"
     }
   ],
-  "note": "数字 OpenDota；Divine 桶不是 7k+ D2PT。非投注建议。"
+  "note": "只复盘 9 月 2 日这 6 把。分路按阵容推断，OpenDota 未解析。非投注建议。"
 }

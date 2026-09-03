@@ -1559,7 +1559,7 @@ footer a { color: var(--gold); }
 .mc.win .wl { color: var(--moss); }
 .mc.loss .wl { color: var(--blood); }
 .nm { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.rl, .kd { color: var(--mute); font-variant-numeric: tabular-nums; }
+.rl, .kd, .dur { color: var(--mute); font-variant-numeric: tabular-nums; }
 .chip {
   margin-left: auto;
   font-style: normal;
