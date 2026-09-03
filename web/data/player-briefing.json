@@ -1,9 +1,18 @@
 {
-  "asOf": "2026-09-03 12:08 CST",
-  "source": "stub",
-  "headline": "+6 13-12 中6-3 3号3-3",
+  "asOf": "2026-09-03 14:55 CST",
+  "source": "cursor",
+  "headline": "昨夜单排 2-4，窗口 13-12",
+  "lede": "赢仍靠经济碾；输在天穹崩了、木头人版本坑、月骑别打 1。",
   "narrative": "",
   "positioning": "主中 · 副三",
+  "points": [
+    "昨夜 6 把全单排 2-4，窗口从 11-8 变成 13-12。",
+    "赢靠碾：尸王推塔 94%、DP 71%。输的四把经济 31–56%，破晓塔伤 0。",
+    "位置没变：中 6-3、三号 3-3、月骑 1 号 0-2。昨夜未解析，别改定位。",
+    "胜场 GPM 92% / 推塔 76%；负场 47% / 35%。对线差距小，中期断经济。",
+    "单排 8-9 才是分段；三排 3-1 灌水。",
+    "锁光法中 2-0。天穹昨夜崩了先停。木头人 / 火枪 / 女王扔。月骑别补 1。余烬要 40 分前结束。"
+  ],
   "newMatchIds": [
     "8979308130",
     "8979238039",
@@ -14,70 +23,53 @@
   ],
   "focus": [
     {
-      "matchId": 8979308130,
-      "hero": "Sniper",
-      "heroFile": "sniper",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 42558,
-        "wins": 20192,
-        "wr": 0.4745
-      },
-      "note": "47%"
+      "matchId": 8978985728,
+      "hero": "Arc Warden",
+      "heroFile": "arc_warden",
+      "role": "pos2",
+      "kind": "farm_collapse",
+      "note": "金崩"
     },
     {
       "matchId": 8979162667,
       "hero": "Timbersaw",
       "heroFile": "shredder",
-      "role": null,
+      "role": "pos3",
       "kind": "meta_weak",
-      "divineWr": {
-        "picks": 27469,
-        "wins": 12311,
-        "wr": 0.4482
-      },
-      "note": "45%"
+      "note": "版本坑"
+    },
+    {
+      "matchId": 8979308130,
+      "hero": "Sniper",
+      "heroFile": "sniper",
+      "role": "pos2",
+      "kind": "meta_weak",
+      "note": "版本坑"
     },
     {
       "matchId": 8979039327,
       "hero": "Dawnbreaker",
       "heroFile": "dawnbreaker",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 49958,
-        "wins": 25922,
-        "wr": 0.5189
-      },
-      "note": "52%"
-    },
-    {
-      "matchId": 8978985728,
-      "hero": "Arc Warden",
-      "heroFile": "arc_warden",
-      "role": null,
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 14267,
-        "wins": 7669,
-        "wr": 0.5375
-      },
-      "note": "54%"
-    },
-    {
-      "matchId": 8977469605,
-      "hero": "Dawnbreaker",
-      "heroFile": "dawnbreaker",
       "role": "pos3",
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 49958,
-        "wins": 25922,
-        "wr": 0.5189
-      },
-      "note": "52%"
+      "kind": "other_loss",
+      "note": "塔0"
+    },
+    {
+      "matchId": 8930110320,
+      "hero": "Luna",
+      "heroFile": "luna",
+      "role": "pos1",
+      "kind": "wrong_role",
+      "note": "别打1"
+    },
+    {
+      "matchId": 8976107878,
+      "hero": "Ember Spirit",
+      "heroFile": "ember_spirit",
+      "role": "pos2",
+      "kind": "did_not_close",
+      "note": "61分没收"
     }
   ],
-  "note": "页面用卡片，不写长文。非投注建议。"
+  "note": "数字 OpenDota；Divine 桶不是 7k+ D2PT。非投注建议。"
 }

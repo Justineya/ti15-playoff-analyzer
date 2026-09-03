@@ -236,6 +236,66 @@ def classify_game(game: dict, divine: dict | None) -> str:
     return "other_loss"
 
 
+KIND_NOTE = {
+    "meta_weak": "版本坑",
+    "did_not_close": "没收",
+    "wrong_role": "别打1",
+    "farm_collapse": "金崩",
+    "other_loss": "负",
+    "win": "胜",
+}
+
+
+def wl(row: dict) -> str:
+    g = int(row.get("games") or 0)
+    w = int(row.get("wins") or 0)
+    return f"{w}-{g - w}"
+
+
+def stub_points(games: list[dict], summary: dict, new_ids: list) -> list[str]:
+    points: list[str] = []
+    idset = {str(x) for x in (new_ids or [])}
+    fresh = [g for g in games if str(g.get("matchId")) in idset]
+    if fresh:
+        w = sum(1 for g in fresh if g.get("win"))
+        l = len(fresh) - w
+        solo = all(int(g.get("partySize") or 1) == 1 for g in fresh)
+        tag = "全单排 " if solo else ""
+        points.append(f"新{len(fresh)}把{tag}{w}-{l}，窗口 {summary.get('wins')}-{summary.get('losses')}。")
+        lost = [g for g in fresh if not g.get("win")]
+        if lost:
+            bits = []
+            for g in lost[:4]:
+                kind = classify_game(g, g.get("divine"))
+                bits.append(f"{g.get('hero') or '?'}{KIND_NOTE.get(kind, '')}")
+            points.append("新负：" + "、".join(bits) + "。")
+    roles = summary.get("roles") or {}
+    pos2, pos3, pos1 = roles.get("pos2") or {}, roles.get("pos3") or {}, roles.get("pos1") or {}
+    role_bits = ["主中 · 副三"]
+    if pos2.get("games"):
+        role_bits.append(f"中{wl(pos2)}")
+    if pos3.get("games"):
+        role_bits.append(f"3号{wl(pos3)}")
+    if pos1.get("games"):
+        role_bits.append(f"1号{wl(pos1)}")
+    points.append("，".join(role_bits) + "。")
+    wa, la = summary.get("winAvg") or {}, summary.get("lossAvg") or {}
+    if wa.get("gpmBr") is not None and la.get("gpmBr") is not None:
+        points.append(
+            f"胜场 GPM {wa['gpmBr']:.0%}、推塔 {(wa.get('towerBr') or 0):.0%}；"
+            f"负场 {la['gpmBr']:.0%} / {(la.get('towerBr') or 0):.0%}。"
+        )
+    party = summary.get("party") or {}
+    solo = party.get("1") or {}
+    stack = party.get("3") or {}
+    if solo.get("games"):
+        line = f"单排 {wl(solo)} 才是分段"
+        if stack.get("games"):
+            line += f"；三排 {wl(stack)} 灌水"
+        points.append(line + "。")
+    return points[:6]
+
+
 def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list, hero_stats: list) -> dict:
     now = datetime.now(CST).strftime("%Y-%m-%d %H:%M") + " CST"
     roles = summary.get("roles") or {}
@@ -246,16 +306,15 @@ def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list
         bits.append(f"+{len(new_ids)}")
     bits.append(f"{summary.get('wins')}-{summary.get('losses')}")
     if pos2.get("games"):
-        bits.append(f"中{pos2.get('wins', 0)}-{pos2.get('games', 0) - pos2.get('wins', 0)}")
+        bits.append(f"中{wl(pos2)}")
     if pos3.get("games"):
-        bits.append(f"3号{pos3.get('wins', 0)}-{pos3.get('games', 0) - pos3.get('wins', 0)}")
+        bits.append(f"3号{wl(pos3)}")
     focus = []
     for g in games[:10]:
         if g.get("win"):
             continue
-        meta = divine_wr(hero_stats, int(g.get("heroId") or 0))
+        meta = g.get("divine") or divine_wr(hero_stats, int(g.get("heroId") or 0))
         kind = classify_game(g, meta)
-        wr = f"{meta['wr']:.0%}" if meta else "?"
         focus.append(
             {
                 "matchId": g.get("matchId"),
@@ -264,18 +323,21 @@ def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list
                 "role": g.get("role"),
                 "kind": kind,
                 "divineWr": meta,
-                "note": wr,
+                "note": KIND_NOTE.get(kind, ""),
             }
         )
+    points = stub_points(games, summary, new_ids)
     return {
         "asOf": now,
         "source": "stub",
         "headline": " ".join(bits),
+        "lede": points[0] if points else "",
         "narrative": "",
         "positioning": "主中 · 副三",
+        "points": points,
         "newMatchIds": new_ids,
         "focus": focus[:6],
-        "note": "页面用卡片，不写长文。非投注建议。",
+        "note": "页面用卡片 + 短诊断。非投注建议。",
     }
 
 

@@ -42,6 +42,28 @@
     return { w, l: g - w, g };
   }
 
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function diagnosis(brief) {
+    const points = (brief.points || []).map((p) => String(p || "").trim()).filter(Boolean);
+    const headline = (brief.headline || "").trim();
+    const lede = (brief.lede || "").trim();
+    if (!headline && !lede && !points.length) return "";
+    const items = points.map((p) => `<li>${esc(p)}</li>`).join("");
+    return `<section class="dx">
+      <p class="dx-k">分析</p>
+      ${headline ? `<p class="dx-h">${esc(headline)}</p>` : ""}
+      ${lede ? `<p class="dx-lede">${esc(lede)}</p>` : ""}
+      ${items ? `<ul class="dx-list">${items}</ul>` : ""}
+    </section>`;
+  }
+
   function render(player, brief) {
     const s = player.summary || {};
     const games = player.games || [];
@@ -147,6 +169,7 @@
         </div>
       </section>
       <section class="role-row">${roles}</section>
+      ${diagnosis(brief)}
       <section class="cmp">
         <div class="cmp-lab"><span>胜</span><span class="dim">负</span></div>
         ${cmp}
@@ -158,8 +181,8 @@
   }
 
   Promise.all([
-    fetch("./data/player.json?v=scan").then((r) => (r.ok ? r.json() : null)),
-    fetch("./data/player-briefing.json?v=scan").then((r) => (r.ok ? r.json() : {})),
+    fetch("./data/player.json?v=dx").then((r) => (r.ok ? r.json() : null)),
+    fetch("./data/player-briefing.json?v=dx").then((r) => (r.ok ? r.json() : {})),
   ])
     .then(([player, brief]) => {
       if (!player) {

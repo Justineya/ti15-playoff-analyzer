@@ -1394,6 +1394,39 @@ footer a { color: var(--gold); }
 
 .player-page .live-main { padding-top: 18px; max-width: 720px; }
 .player-page h1, .player-page h2, .player-page .lede, .player-page .section-lead { display: none; }
+.dx {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 14px 16px 10px;
+  margin: 0 0 16px;
+}
+.dx-k {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+}
+.dx-h {
+  margin: 6px 0 8px;
+  font-family: "Noto Serif SC", serif;
+  font-size: 22px;
+  line-height: 1.3;
+}
+.dx-lede {
+  margin: 0 0 10px;
+  color: var(--paper);
+  font-size: 14px;
+}
+.dx-list {
+  margin: 0;
+  padding: 0 0 4px 18px;
+}
+.dx-list li {
+  margin: 0 0 8px;
+  color: var(--paper);
+  font-size: 14px;
+  line-height: 1.45;
+}
 .player-head {
   display: flex;
   gap: 18px;

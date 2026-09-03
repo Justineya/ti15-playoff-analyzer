@@ -76,6 +76,49 @@ def test_classify_meta_weak_and_did_not_close() -> None:
     assert role == "wrong_role"
 
 
+def test_stub_briefing_keeps_short_diagnosis() -> None:
+    games = [
+        {
+            "matchId": 1,
+            "hero": "Timbersaw",
+            "heroFile": "shredder",
+            "heroId": 98,
+            "win": False,
+            "role": "pos3",
+            "partySize": 1,
+            "gpmBr": 0.56,
+            "towerBr": 0.31,
+            "divine": {"wr": 0.449},
+        },
+        {
+            "matchId": 2,
+            "hero": "Keeper of the Light",
+            "heroFile": "keeper_of_the_light",
+            "heroId": 90,
+            "win": True,
+            "role": "pos2",
+            "partySize": 1,
+            "gpmBr": 0.89,
+            "towerBr": 0.86,
+            "divine": {"wr": 0.53},
+        },
+    ]
+    summary = {
+        "wins": 1,
+        "losses": 1,
+        "roles": {"pos2": {"games": 1, "wins": 1}, "pos3": {"games": 1, "wins": 0}},
+        "party": {"1": {"games": 2, "wins": 1}},
+        "winAvg": {"gpmBr": 0.89, "towerBr": 0.86},
+        "lossAvg": {"gpmBr": 0.56, "towerBr": 0.31},
+    }
+    brief = ip.stub_briefing({}, games, summary, ["1"], [])
+    assert brief["narrative"] == ""
+    assert brief["lede"].startswith("新1把全单排 0-1")
+    assert any("主中" in p for p in brief["points"])
+    assert any("单排 1-1" in p for p in brief["points"])
+    assert brief["focus"][0]["note"] == "版本坑"
+
+
 def test_ingest_detects_new_ids() -> None:
     with tempfile.TemporaryDirectory() as raw:
         tmp = Path(raw)
@@ -128,6 +171,9 @@ def test_ingest_detects_new_ids() -> None:
             launch_blob = json.loads(ip.LAUNCH_PATH.read_text())
             assert launch_blob["launch"] is True
             assert out["games"][0]["hero"] == "Keeper of the Light"
+            brief = json.loads((tmp / "web" / "data" / "player-briefing.json").read_text())
+            assert brief["points"]
+            assert brief["lede"]
             again = ip.ingest(fetch=fake_fetch)
             assert again["newMatchIds"] == []
             assert json.loads(ip.LAUNCH_PATH.read_text())["launch"] is False
@@ -146,6 +192,7 @@ def test_launch_skips_without_new_map(monkey_env=None) -> None:
 if __name__ == "__main__":
     test_extract_mid_kotl()
     test_classify_meta_weak_and_did_not_close()
+    test_stub_briefing_keeps_short_diagnosis()
     test_ingest_detects_new_ids()
     test_launch_skips_without_new_map()
     print("test_ingest_player ok")
