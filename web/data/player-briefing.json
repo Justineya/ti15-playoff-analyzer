@@ -1,24 +1,27 @@
 {
   "asOf": "2026-09-04 12:15 CST",
-  "source": "stub",
-  "headline": "+7 15-10 中3-5 3号8-5",
-  "lede": "新7把全单排 6-1。",
+  "source": "cursor",
+  "headline": "昨夜 6-1：能推就赢，中路一把黑",
+  "lede": "七把全单排。赢在军团/孽主/DP 推塔；输在光法金崩。",
   "narrative": "",
-  "positioning": "主中 · 副三",
+  "positioning": "昨夜偏三",
+  "scopeLabel": "昨夜分析",
   "points": [
-    "新7把全单排 6-1。",
-    "负：Keeper of the Light金崩。",
-    "胜：Legion Commander、Underlord、Death Prophet、Legion Commander。",
-    "这批胜场 GPM 89%、推塔 82%；负场 39% / 17%。"
+    "18:35–23:24 七把单排 6-1：三号连胜，中路光法一把全黑。",
+    "孽主 16/6/38，GPM 100%、塔 91%。7k+ 三号 45%，打赢版本。",
+    "军团连打两把都赢：12/8/25 推塔 95%；5/4/20 三号 GPM 60% 也能推。",
+    "光法中 1/8/5，对线 84% 后崩：GPM 39%、塔伤 0。7k+ 中 56%，不是英雄废。",
+    "DP 13/1/11，24 分钟推塔 93%。孽主再来一把 5/4/16，GPM 94% 28 分钟收。",
+    "收工军团 23/11/26，GPM 98% 推塔 83%。这夜结论：三号能推就赢，中路崩了就停。"
   ],
   "sessionMatchIds": [
-    "8980818515",
-    "8980758645",
-    "8980705560",
-    "8980641805",
-    "8980532281",
+    "8980379819",
     "8980471007",
-    "8980379819"
+    "8980532281",
+    "8980641805",
+    "8980705560",
+    "8980758645",
+    "8980818515"
   ],
   "newMatchIds": [
     "8980818515",
@@ -31,69 +34,12 @@
   ],
   "focus": [
     {
-      "matchId": 8980818515,
-      "hero": "Legion Commander",
-      "heroFile": "legion_commander",
-      "role": "pos3",
-      "kind": "win",
-      "divineWr": {
-        "picks": 39037,
-        "wins": 20667,
-        "wr": 0.5294
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8980758645,
+      "matchId": 8980379819,
       "hero": "Underlord",
       "heroFile": "abyssal_underlord",
       "role": null,
       "kind": "win",
-      "divineWr": {
-        "picks": 65840,
-        "wins": 31514,
-        "wr": 0.4786
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8980705560,
-      "hero": "Death Prophet",
-      "heroFile": "death_prophet",
-      "role": "pos3",
-      "kind": "win",
-      "divineWr": {
-        "picks": 13643,
-        "wins": 6758,
-        "wr": 0.4953
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8980641805,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 29393,
-        "wins": 15479,
-        "wr": 0.5266
-      },
-      "note": "金崩"
-    },
-    {
-      "matchId": 8980532281,
-      "hero": "Legion Commander",
-      "heroFile": "legion_commander",
-      "role": "pos3",
-      "kind": "win",
-      "divineWr": {
-        "picks": 39037,
-        "wins": 20667,
-        "wr": 0.5294
-      },
-      "note": "胜"
+      "note": "打穿"
     },
     {
       "matchId": 8980471007,
@@ -101,13 +47,48 @@
       "heroFile": "legion_commander",
       "role": null,
       "kind": "win",
-      "divineWr": {
-        "picks": 39037,
-        "wins": 20667,
-        "wr": 0.5294
-      },
-      "note": "胜"
+      "note": "能推"
+    },
+    {
+      "matchId": 8980532281,
+      "hero": "Legion Commander",
+      "heroFile": "legion_commander",
+      "role": "pos3",
+      "kind": "win",
+      "note": "能推"
+    },
+    {
+      "matchId": 8980641805,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "farm_collapse",
+      "note": "金崩"
+    },
+    {
+      "matchId": 8980705560,
+      "hero": "Death Prophet",
+      "heroFile": "death_prophet",
+      "role": "pos3",
+      "kind": "win",
+      "note": "速推"
+    },
+    {
+      "matchId": 8980758645,
+      "hero": "Underlord",
+      "heroFile": "abyssal_underlord",
+      "role": null,
+      "kind": "win",
+      "note": "能推"
+    },
+    {
+      "matchId": 8980818515,
+      "hero": "Legion Commander",
+      "heroFile": "legion_commander",
+      "role": "pos3",
+      "kind": "win",
+      "note": "23杀"
     }
   ],
-  "note": "页面用卡片 + 短诊断。有新图就只复盘这批。非投注建议。"
+  "note": "只复盘 9 月 3 日这 7 把。7k+ 胜率来自 D2PT 近 8 天分路。非投注建议。"
 }
