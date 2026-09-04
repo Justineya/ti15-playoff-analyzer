@@ -1,84 +1,113 @@
 {
-  "asOf": "2026-09-03 15:20 CST",
-  "source": "cursor",
-  "headline": "昨夜 2-4：能推就赢，中路两把全黑",
-  "lede": "6 把全单排。赢在尸王/DP 推塔；输在天穹崩了、破晓不打架、木头人/火枪。",
+  "asOf": "2026-09-04 12:15 CST",
+  "source": "stub",
+  "headline": "+7 15-10 中3-5 3号8-5",
+  "lede": "新7把全单排 6-1。",
   "narrative": "",
-  "positioning": "昨夜偏三",
-  "scopeLabel": "昨夜分析",
+  "positioning": "主中 · 副三",
   "points": [
-    "20:03–23:19 连打 6 把单排，2-4。OpenDota 还没解析分路，阵容上看中两把、三号位四把。",
-    "天穹 2/11、GPM 31%、经验 18%。英雄 Divine 54%，这把是崩，不是英雄废。",
-    "破晓 306 刀、塔伤 0、英雄伤害 8%。刀到了，没打地图。",
-    "赢的两把都能推：DP 30 分 8/2/13 推塔 71%；尸王经济/推塔都 94%。",
-    "木头人 Divine 45%，345 刀仍 6/12。火枪伤害 93%、塔 25%，输出是空的。",
-    "这夜结论：能推就赢。木头人/火枪别拿；天穹崩了就停，别连打中。"
+    "新7把全单排 6-1。",
+    "负：Keeper of the Light金崩。",
+    "胜：Legion Commander、Underlord、Death Prophet、Legion Commander。",
+    "这批胜场 GPM 89%、推塔 82%；负场 39% / 17%。"
   ],
   "sessionMatchIds": [
-    "8978985728",
-    "8979039327",
-    "8979102923",
-    "8979162667",
-    "8979238039",
-    "8979308130"
+    "8980818515",
+    "8980758645",
+    "8980705560",
+    "8980641805",
+    "8980532281",
+    "8980471007",
+    "8980379819"
   ],
   "newMatchIds": [
-    "8979308130",
-    "8979238039",
-    "8979162667",
-    "8979102923",
-    "8979039327",
-    "8978985728"
+    "8980818515",
+    "8980758645",
+    "8980705560",
+    "8980641805",
+    "8980532281",
+    "8980471007",
+    "8980379819"
   ],
   "focus": [
     {
-      "matchId": 8978985728,
-      "hero": "Arc Warden",
-      "heroFile": "arc_warden",
-      "role": "pos2",
-      "kind": "farm_collapse",
-      "note": "金崩"
-    },
-    {
-      "matchId": 8979039327,
-      "hero": "Dawnbreaker",
-      "heroFile": "dawnbreaker",
+      "matchId": 8980818515,
+      "hero": "Legion Commander",
+      "heroFile": "legion_commander",
       "role": "pos3",
-      "kind": "other_loss",
-      "note": "塔0"
+      "kind": "win",
+      "divineWr": {
+        "picks": 39037,
+        "wins": 20667,
+        "wr": 0.5294
+      },
+      "note": "胜"
     },
     {
-      "matchId": 8979102923,
+      "matchId": 8980758645,
+      "hero": "Underlord",
+      "heroFile": "abyssal_underlord",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 65840,
+        "wins": 31514,
+        "wr": 0.4786
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 8980705560,
       "hero": "Death Prophet",
       "heroFile": "death_prophet",
       "role": "pos3",
       "kind": "win",
-      "note": "能推"
+      "divineWr": {
+        "picks": 13643,
+        "wins": 6758,
+        "wr": 0.4953
+      },
+      "note": "胜"
     },
     {
-      "matchId": 8979162667,
-      "hero": "Timbersaw",
-      "heroFile": "shredder",
-      "role": "pos3",
-      "kind": "meta_weak",
-      "note": "版本坑"
+      "matchId": 8980641805,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 29393,
+        "wins": 15479,
+        "wr": 0.5266
+      },
+      "note": "金崩"
     },
     {
-      "matchId": 8979238039,
-      "hero": "Undying",
-      "heroFile": "undying",
+      "matchId": 8980532281,
+      "hero": "Legion Commander",
+      "heroFile": "legion_commander",
       "role": "pos3",
       "kind": "win",
-      "note": "碾了"
+      "divineWr": {
+        "picks": 39037,
+        "wins": 20667,
+        "wr": 0.5294
+      },
+      "note": "胜"
     },
     {
-      "matchId": 8979308130,
-      "hero": "Sniper",
-      "heroFile": "sniper",
-      "role": "pos2",
-      "kind": "meta_weak",
-      "note": "伤害空"
+      "matchId": 8980471007,
+      "hero": "Legion Commander",
+      "heroFile": "legion_commander",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 39037,
+        "wins": 20667,
+        "wr": 0.5294
+      },
+      "note": "胜"
     }
   ],
-  "note": "只复盘 9 月 2 日这 6 把。分路按阵容推断，OpenDota 未解析。非投注建议。"
+  "note": "页面用卡片 + 短诊断。有新图就只复盘这批。非投注建议。"
 }
