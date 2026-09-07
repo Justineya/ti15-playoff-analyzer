@@ -58,15 +58,8 @@
     </section>`;
   }
 
-  function sessionOf(player, brief) {
-    const ids = (brief.sessionMatchIds || brief.newMatchIds || []).map(String).filter(Boolean);
-    const all = player.games || [];
-    if (!ids.length) return { games: all, session: false };
-    const set = new Set(ids);
-    const picked = all.filter((g) => set.has(String(g.matchId)));
-    if (!picked.length) return { games: all, session: false };
-    picked.sort((a, b) => (a.startTime || 0) - (b.startTime || 0));
-    return { games: picked, session: true };
+  function highlightIds(brief) {
+    return new Set((brief.sessionMatchIds || brief.newMatchIds || []).map(String).filter(Boolean));
   }
 
   function mean(rows, key) {
@@ -82,23 +75,21 @@
 
   function render(player, brief) {
     const s = player.summary || {};
-    const scoped = sessionOf(player, brief);
-    const games = scoped.games;
+    const ranked = player.rankedWl || {};
+    const games = (player.games || [])
+      .slice()
+      .sort((a, b) => (b.startTime || 0) - (a.startTime || 0));
+    const fresh = highlightIds(brief);
     asof.textContent = (player.asOf || "").replace(" CST", "");
 
     const wins = games.filter((g) => g.win);
     const losses = games.filter((g) => !g.win);
 
     const strip = games
+      .slice()
+      .reverse()
       .map((g) => `<i class="${g.win ? "w" : "l"}" title="${g.hero}"></i>`)
       .join("");
-
-    const first = games[0] || {};
-    const last = games[games.length - 1] || {};
-    const span = [clock(first), clock(last)].filter(Boolean).join("–");
-    const kicker = scoped.session
-      ? `${games.length} 把全单排${span ? " · " + span : ""}`
-      : `Immortal #${player.leaderboardRank || "—"} · ${brief.positioning || "主中"}`;
 
     const cmp = [
       ["对线", mean(wins, "laneEfficiency"), mean(losses, "laneEfficiency")],
@@ -135,10 +126,14 @@
       .map((g) => {
         const mark = g.win ? "W" : "L";
         const tag = focusById[String(g.matchId)];
-        const chip = tag ? `<em class="chip chip-${tag.kind}">${tag.note || KIND[tag.kind] || ""}</em>` : "";
+        const isNew = fresh.has(String(g.matchId));
+        const chipText = (tag && (tag.note || KIND[tag.kind])) || (isNew ? "新" : "");
+        const chip = chipText
+          ? `<em class="chip ${tag ? "chip-" + tag.kind : "chip-new"}">${chipText}</em>`
+          : "";
         const lane = ROLE[g.role] || clock(g) || "—";
         const dur = g.durationMin != null ? Math.round(g.durationMin) + "′" : "";
-        return `<a class="mc ${g.win ? "win" : "loss"}" href="${g.opendota || "#"}">
+        return `<a class="mc ${g.win ? "win" : "loss"}${isNew ? " fresh" : ""}" href="${g.opendota || "#"}">
           ${portrait(g.heroFile, g.hero)}
           <div class="mc-body">
             <div class="mc-top">
@@ -162,17 +157,17 @@
     app.innerHTML = `
       <section class="player-head">
         <div class="score">
-          <b>${wins.length}</b><span>-</span><b class="loss-n">${losses.length}</b>
+          <b>${s.wins || wins.length}</b><span>-</span><b class="loss-n">${s.losses || losses.length}</b>
         </div>
         <div class="head-meta">
-          <p class="kicker">${esc(kicker)}</p>
+          <p class="kicker">Immortal #${player.leaderboardRank || "—"} · ${esc(brief.positioning || "主三")}</p>
           <div class="strip">${strip}</div>
-          <p class="career">${scoped.session ? "窗口 " + (s.wins || 0) + "-" + (s.losses || 0) + " · " : ""}Immortal #${player.leaderboardRank || "—"} · ${esc(brief.positioning || "")}</p>
+          <p class="career">${ranked.win || 0}-${ranked.lose || 0} 生涯排位 · ${games.length} 把近况</p>
         </div>
       </section>
       ${diagnosis(brief)}
       ${cmp ? `<section class="cmp">
-        <div class="cmp-lab"><span>${scoped.session ? "这夜胜" : "胜"}</span><span class="dim">${scoped.session ? "这夜负" : "负"}</span></div>
+        <div class="cmp-lab"><span>胜</span><span class="dim">负</span></div>
         ${cmp}
       </section>` : ""}
       <section class="tags">${tags}</section>
@@ -181,8 +176,8 @@
   }
 
   Promise.all([
-    fetch("./data/player.json?v=night").then((r) => (r.ok ? r.json() : null)),
-    fetch("./data/player-briefing.json?v=night").then((r) => (r.ok ? r.json() : {})),
+    fetch("./data/player.json?v=form").then((r) => (r.ok ? r.json() : null)),
+    fetch("./data/player-briefing.json?v=form").then((r) => (r.ok ? r.json() : {})),
   ])
     .then(([player, brief]) => {
       if (!player) {

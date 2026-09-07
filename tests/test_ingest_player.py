@@ -116,7 +116,10 @@ def test_stub_briefing_keeps_short_diagnosis() -> None:
     assert brief["sessionMatchIds"] == ["1"]
     assert brief["lede"].startswith("新1把全单排 0-1")
     assert any("Timbersaw" in p for p in brief["points"])
-    assert not any("月骑" in p or "主中" in p for p in brief["points"])
+    assert any("窗口 1-1" in p for p in brief["points"])
+    assert any("中1-0" in p for p in brief["points"])
+    assert len(brief["points"]) >= 4
+    assert not any("月骑" in p for p in brief["points"])
     assert brief["focus"][0]["note"] == "版本坑"
 
 

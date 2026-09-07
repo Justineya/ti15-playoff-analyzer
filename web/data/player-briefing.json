@@ -1,13 +1,18 @@
 {
-  "asOf": "2026-09-06 12:19 CST",
-  "source": "stub",
-  "headline": "+2 16-9 中3-5 3号9-4",
-  "lede": "新2把全单排 2-0。",
+  "asOf": "2026-09-07 11:30 CST",
+  "source": "cursor",
+  "headline": "16-9 主三 9-4，中单还在漏",
+  "lede": "近两把 CK / DP 都赢。窗口是三号抬的，不是那两把新图。",
   "narrative": "",
-  "positioning": "主中 · 副三",
+  "positioning": "主三 · 副中",
+  "scopeLabel": "分析",
   "points": [
-    "新2把全单排 2-0。",
-    "胜：Death Prophet、Chaos Knight。"
+    "窗口 25 把 16-9。三号 9-4，中单 3-5。人已经改打三了。",
+    "新两把都赢：5 号夜混沌骑士三号 8/2；今早 DP 12/6/21，经济 83%、伤害 98%。DP 这窗口 3-0。",
+    "真正翻盘是 9/3：军团 3-0、孽主 2-0、DP 再赢。中间夹一把光法中 1/8、经济 29%。",
+    "胜场 GPM 88% / 推塔 77%；负场 50% / 39%。能推就赢，这条没变。",
+    "中单还在漏：光法崩了、天穹 2/11、火枪伤害空。木头人 0-2 继续扔。",
+    "锁 DP / 军团 / 孽主。光法只打能推的，别再 1/8。"
   ],
   "sessionMatchIds": [
     "8985006208",
@@ -22,14 +27,9 @@
       "matchId": 8985006208,
       "hero": "Death Prophet",
       "heroFile": "death_prophet",
-      "role": null,
+      "role": "pos3",
       "kind": "win",
-      "divineWr": {
-        "picks": 13497,
-        "wins": 6653,
-        "wr": 0.4929
-      },
-      "note": "胜"
+      "note": "3-0"
     },
     {
       "matchId": 8983883947,
@@ -37,13 +37,40 @@
       "heroFile": "chaos_knight",
       "role": "pos3",
       "kind": "win",
-      "divineWr": {
-        "picks": 10368,
-        "wins": 5326,
-        "wr": 0.5137
-      },
-      "note": "胜"
+      "note": "能推"
+    },
+    {
+      "matchId": 8980641805,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "farm_collapse",
+      "note": "金崩"
+    },
+    {
+      "matchId": 8978985728,
+      "hero": "Arc Warden",
+      "heroFile": "arc_warden",
+      "role": "pos2",
+      "kind": "farm_collapse",
+      "note": "金崩"
+    },
+    {
+      "matchId": 8979162667,
+      "hero": "Timbersaw",
+      "heroFile": "shredder",
+      "role": "pos3",
+      "kind": "meta_weak",
+      "note": "版本坑"
+    },
+    {
+      "matchId": 8979308130,
+      "hero": "Sniper",
+      "heroFile": "sniper",
+      "role": "pos2",
+      "kind": "meta_weak",
+      "note": "伤害空"
     }
   ],
-  "note": "页面用卡片 + 短诊断。有新图就只复盘这批。非投注建议。"
+  "note": "卡片是近 25 把。新图只做高亮。非投注建议。"
 }

@@ -261,7 +261,6 @@ def stub_points(games: list[dict], summary: dict, new_ids: list) -> list[str]:
     points: list[str] = []
     idset = {str(x) for x in (new_ids or [])}
     fresh = [g for g in games if str(g.get("matchId")) in idset]
-    scope = fresh or games
     if fresh:
         w = sum(1 for g in fresh if g.get("win"))
         l = len(fresh) - w
@@ -278,16 +277,25 @@ def stub_points(games: list[dict], summary: dict, new_ids: list) -> list[str]:
         won = [g for g in fresh if g.get("win")]
         if won:
             points.append("胜：" + "、".join((g.get("hero") or "?") for g in won[:4]) + "。")
-    else:
-        points.append(f"窗口 {summary.get('wins')}-{summary.get('losses')}。")
-    wins = [g for g in scope if g.get("win")]
-    losses = [g for g in scope if not g.get("win")]
+    points.append(f"窗口 {summary.get('wins')}-{summary.get('losses')}。")
+    roles = summary.get("roles") or {}
+    role_bits = []
+    if (roles.get("pos2") or {}).get("games"):
+        role_bits.append(f"中{wl(roles['pos2'])}")
+    if (roles.get("pos3") or {}).get("games"):
+        role_bits.append(f"3号{wl(roles['pos3'])}")
+    if role_bits:
+        points.append("，".join(role_bits) + "。")
+    wins = [g for g in games if g.get("win")]
+    losses = [g for g in games if not g.get("win")]
     wg, wt = avg_br(wins, "gpmBr"), avg_br(wins, "towerBr")
     lg, lt = avg_br(losses, "gpmBr"), avg_br(losses, "towerBr")
     if wg is not None and lg is not None:
         points.append(
-            f"这批胜场 GPM {wg:.0%}、推塔 {(wt or 0):.0%}；负场 {lg:.0%} / {(lt or 0):.0%}。"
+            f"胜场 GPM {wg:.0%}、推塔 {(wt or 0):.0%}；负场 {lg:.0%} / {(lt or 0):.0%}。"
         )
+    elif wg is not None:
+        points.append(f"胜场 GPM {wg:.0%}、推塔 {(wt or 0):.0%}。")
     return points[:6]
 
 
@@ -306,10 +314,13 @@ def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list
         bits.append(f"3号{wl(pos3)}")
     focus = []
     idset = {str(x) for x in (new_ids or [])}
-    scoped = [g for g in games if str(g.get("matchId")) in idset] if idset else games
-    for g in scoped:
-        if not idset and g.get("win"):
-            continue
+    scoped = [g for g in games if str(g.get("matchId")) in idset] if idset else []
+    if idset:
+        extras = [g for g in games if str(g.get("matchId")) not in idset and not g.get("win")][:4]
+        focus_src = scoped + extras
+    else:
+        focus_src = [g for g in games if not g.get("win")]
+    for g in focus_src:
         meta = g.get("divine") or divine_wr(hero_stats, int(g.get("heroId") or 0))
         kind = classify_game(g, meta)
         focus.append(
@@ -323,6 +334,9 @@ def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list
                 "note": KIND_NOTE.get(kind, ""),
             }
         )
+    pos3_n = int(pos3.get("games") or 0)
+    pos2_n = int(pos2.get("games") or 0)
+    positioning = "主三 · 副中" if pos3_n > pos2_n else "主中 · 副三"
     points = stub_points(games, summary, new_ids)
     return {
         "asOf": now,
@@ -330,12 +344,12 @@ def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list
         "headline": " ".join(bits),
         "lede": points[0] if points else "",
         "narrative": "",
-        "positioning": "主中 · 副三",
+        "positioning": positioning,
         "points": points,
         "sessionMatchIds": list(new_ids or []),
         "newMatchIds": new_ids,
         "focus": focus[:6],
-        "note": "页面用卡片 + 短诊断。有新图就只复盘这批。非投注建议。",
+        "note": "卡片是近况全部。新图只做高亮。非投注建议。",
     }
 
 
