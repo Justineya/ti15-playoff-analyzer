@@ -1,62 +1,150 @@
 {
-  "asOf": "2026-09-07 12:00 CST",
+  "asOf": "2026-09-08 03:48 CST",
   "source": "cursor",
-  "headline": "周末 2-2：三号能赢，黑鸟 53 分没 BKB",
-  "lede": "CK / DP 两把三号推赢了。晚上破晓金崩，黑鸟刷了 439 刀伤害只有 26%。",
+  "headline": "16-9 主三 10-4，中单还在漏",
+  "lede": "新5把3-2，主三10-4，中单1-3还在漏。",
   "narrative": "",
   "positioning": "主三 · 副中",
-  "scopeLabel": "周末分析",
   "points": [
-    "周末 4 把全单排 2-2。五号夜混沌骑士、六号早 DP 赢；六号夜破晓 + 黑鸟全黑。",
-    "两把赢都是三号能推：CK 29 分臂章→跳刀→幻影斧；DP 散夜 16 分、BKB 24、冰甲 30。",
-    "破晓相位 + 黯灭 + 鱼叉，3/8，经济 24%、塔伤 186。这窗口破晓 1-3，先停。",
-    "黑鸟 53 分 439 刀（补刀 88%），伤害 26%。对面虚空 / 撼地 / 祸乱 / 玛西，终装踏板、魔龙枪、跳刀、神杖、帕拉斯玛、月圆，没有 BKB。",
-    "7k+ 黑鸟核心是巫妖刀→帕拉斯玛、跳刀、魔龙枪；BKB 约 42%。月圆只有 5%。你在刷，没进场。",
-    "周末结论：锁 DP / 军团 / 孽主 / CK。破晓扔。黑鸟打控制阵必须出 BKB，别把局拖到 50 分。"
+    "新5把全单排3-2：虚灵2-1，鱼人赢，先知对线92%后金32%。",
+    "窗口16-9。主三14把10-4；中单4把1-3，还在漏。",
+    "这批负场：虚灵对线79%金38%塔22%；先知金32%塔39%。",
+    "窗口关键负：破晓金30%；黑鸟53分没推；火枪中46%、锤子三号45%。",
+    "7k+三号：虚灵53%、先知52%、军团52%、鱼人46%。锁前三。",
+    "胜场金85%塔77%，负场金40%塔32%。中单1-3先停；破晓这窗0-2也停。"
   ],
   "sessionMatchIds": [
-    "8985878947",
-    "8985802061",
-    "8985006208",
-    "8983883947"
+    "8987704746",
+    "8987637589",
+    "8987546090",
+    "8987466554",
+    "8987188859"
   ],
   "newMatchIds": [
-    "8985878947",
-    "8985802061"
+    "8987704746",
+    "8987637589",
+    "8987546090",
+    "8987466554",
+    "8987188859"
   ],
   "focus": [
+    {
+      "matchId": 8987704746,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 41522,
+        "wins": 21075,
+        "wr": 0.5076
+      },
+      "note": "能推"
+    },
+    {
+      "matchId": 8987637589,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 41522,
+        "wins": 21075,
+        "wr": 0.5076
+      },
+      "note": "金崩"
+    },
+    {
+      "matchId": 8987546090,
+      "hero": "Slardar",
+      "heroFile": "slardar",
+      "role": "pos3",
+      "kind": "win",
+      "divineWr": {
+        "picks": 36323,
+        "wins": 17433,
+        "wr": 0.4799
+      },
+      "note": "能推"
+    },
+    {
+      "matchId": 8987466554,
+      "hero": "Death Prophet",
+      "heroFile": "death_prophet",
+      "role": "pos3",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 15128,
+        "wins": 7436,
+        "wr": 0.4915
+      },
+      "note": "对线后崩"
+    },
+    {
+      "matchId": 8987188859,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 41522,
+        "wins": 21075,
+        "wr": 0.5076
+      },
+      "note": "金90%"
+    },
     {
       "matchId": 8985878947,
       "hero": "Outworld Destroyer",
       "heroFile": "obsidian_destroyer",
-      "role": "pos2",
+      "role": null,
       "kind": "other_loss",
-      "note": "没BKB"
+      "divineWr": {
+        "picks": 42932,
+        "wins": 22810,
+        "wr": 0.5313
+      },
+      "note": "53分没推"
     },
     {
       "matchId": 8985802061,
       "hero": "Dawnbreaker",
       "heroFile": "dawnbreaker",
-      "role": "pos3",
+      "role": null,
       "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 54035,
+        "wins": 27859,
+        "wr": 0.5156
+      },
       "note": "金崩"
     },
     {
-      "matchId": 8985006208,
-      "hero": "Death Prophet",
-      "heroFile": "death_prophet",
-      "role": "pos3",
-      "kind": "win",
-      "note": "能推"
+      "matchId": 8979308130,
+      "hero": "Sniper",
+      "heroFile": "sniper",
+      "role": "pos2",
+      "kind": "meta_weak",
+      "divineWr": {
+        "picks": 43730,
+        "wins": 20868,
+        "wr": 0.4772
+      },
+      "note": "版本坑"
     },
     {
-      "matchId": 8983883947,
-      "hero": "Chaos Knight",
-      "heroFile": "chaos_knight",
+      "matchId": 8979162667,
+      "hero": "Timbersaw",
+      "heroFile": "shredder",
       "role": "pos3",
-      "kind": "win",
-      "note": "29分"
+      "kind": "meta_weak",
+      "divineWr": {
+        "picks": 25627,
+        "wins": 11394,
+        "wr": 0.4446
+      },
+      "note": "版本坑"
     }
   ],
-  "note": "周末四把。黑鸟终装来自 OpenDota。非投注建议。"
+  "note": "卡片是近况全部。新图只做高亮。7k+来自 D2PT 近8天。非投注建议。"
 }
