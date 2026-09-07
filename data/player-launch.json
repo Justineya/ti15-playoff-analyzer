@@ -1,10 +1,10 @@
 {
   "launch": false,
   "fresh": false,
-  "reason": "launched",
+  "reason": "ingested last-night OD and Dawnbreaker locally",
   "newMatchIds": [
-    "8985006208",
-    "8983883947"
+    "8985878947",
+    "8985802061"
   ],
-  "asOf": "2026-09-06 12:19 CST"
+  "asOf": "2026-09-07 11:50 CST"
 }

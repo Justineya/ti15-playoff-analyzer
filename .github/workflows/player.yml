@@ -4,6 +4,8 @@ on:
   schedule:
     # 08:00 Beijing = 00:00 UTC. GitHub cron is often late.
     - cron: "0 0 * * *"
+    # 00:00 Beijing = 16:00 UTC. Catch the evening session the same night.
+    - cron: "0 16 * * *"
   workflow_dispatch:
     inputs:
       force_cursor:
