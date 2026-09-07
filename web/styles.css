@@ -1548,6 +1548,7 @@ footer a { color: var(--gold); }
 }
 .mc.fresh { outline: 1px solid rgba(201, 162, 39, 0.45); }
 .chip-new { color: var(--gold); }
+.mc.win { border-left: 3px solid var(--moss); }
 .mc.loss { border-left: 3px solid var(--blood); }
 .mc-body { padding: 8px 10px 10px; min-width: 0; }
 .mc-top {
