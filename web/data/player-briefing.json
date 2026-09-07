@@ -1,18 +1,18 @@
 {
-  "asOf": "2026-09-07 12:00 CST",
+  "asOf": "2026-09-07 12:30 CST",
   "source": "cursor",
-  "headline": "周末 2-2：三号能赢，黑鸟 53 分没 BKB",
+  "headline": "周末 2-2：三号能赢，黑鸟 53 分没黑皇杖",
   "lede": "CK / DP 两把三号推赢了。晚上破晓金崩，黑鸟刷了 439 刀伤害只有 26%。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "scopeLabel": "周末分析",
   "points": [
-    "周末 4 把全单排 2-2。五号夜混沌骑士、六号早 DP 赢；六号夜破晓 + 黑鸟全黑。",
-    "两把赢都是三号能推：CK 29 分臂章→跳刀→幻影斧；DP 散夜 16 分、BKB 24、冰甲 30。",
-    "破晓相位 + 黯灭 + 鱼叉，3/8，经济 24%、塔伤 186。这窗口破晓 1-3，先停。",
-    "黑鸟 53 分 439 刀（补刀 88%），伤害 26%。对面虚空 / 撼地 / 祸乱 / 玛西，终装踏板、魔龙枪、跳刀、神杖、帕拉斯玛、月圆，没有 BKB。",
-    "7k+ 黑鸟核心是巫妖刀→帕拉斯玛、跳刀、魔龙枪；BKB 约 42%。月圆只有 5%。你在刷，没进场。",
-    "周末结论：锁 DP / 军团 / 孽主 / CK。破晓扔。黑鸟打控制阵必须出 BKB，别把局拖到 50 分。"
+    "周末 4 把全单排 2-2。五号夜 CK、六号早 DP 赢；六号夜破晓 + 黑鸟全黑。",
+    "两把赢都是三号能推：CK 29 分臂章→跳刀→幻影斧；DP 散慧 16 分、黑皇杖 24、冰甲 30。",
+    "破晓相位鞋 + 黯灭 + 鱼叉，3/8，经济 24%、塔伤 186。这窗口破晓 1-3，先停。",
+    "黑鸟 53 分 439 刀（补刀 88%），伤害 26%。对面虚空 / 小牛 / 祸乱 / 玛西，终装动力鞋、飓风长戟、跳刀、神杖、圣斧、银月，没有黑皇杖。",
+    "7k+ 黑鸟核心是巫师之刃→圣斧、跳刀、飓风长戟；黑皇杖约 42%。银月只有 5%。你在刷，没进场。",
+    "周末结论：锁 DP / 军团 / 孽主 / CK。破晓扔。黑鸟打控制阵必须出黑皇杖，别把局拖到 50 分。"
   ],
   "sessionMatchIds": [
     "8985878947",
@@ -27,15 +27,17 @@
   "focus": [
     {
       "matchId": 8985878947,
-      "hero": "Outworld Destroyer",
+      "hero": "黑鸟",
+      "heroEn": "Outworld Destroyer",
       "heroFile": "obsidian_destroyer",
       "role": "pos2",
       "kind": "other_loss",
-      "note": "没BKB"
+      "note": "没黑皇杖"
     },
     {
       "matchId": 8985802061,
-      "hero": "Dawnbreaker",
+      "hero": "破晓",
+      "heroEn": "Dawnbreaker",
       "heroFile": "dawnbreaker",
       "role": "pos3",
       "kind": "farm_collapse",
@@ -43,7 +45,8 @@
     },
     {
       "matchId": 8985006208,
-      "hero": "Death Prophet",
+      "hero": "DP",
+      "heroEn": "Death Prophet",
       "heroFile": "death_prophet",
       "role": "pos3",
       "kind": "win",
@@ -51,12 +54,13 @@
     },
     {
       "matchId": 8983883947,
-      "hero": "Chaos Knight",
+      "hero": "CK",
+      "heroEn": "Chaos Knight",
       "heroFile": "chaos_knight",
       "role": "pos3",
       "kind": "win",
       "note": "29分"
     }
   ],
-  "note": "周末四把。黑鸟终装来自 OpenDota。非投注建议。"
+  "note": "周末四把。中文名对照 data/dota-zh.json。黑鸟终装来自 OpenDota。非投注建议。"
 }

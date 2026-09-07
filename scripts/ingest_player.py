@@ -9,8 +9,14 @@ import urllib.request
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(Path(__file__).resolve().parent) not in sys.path:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from dota_zh import hero_call  # noqa: E402
+
 CONFIG_PATH = ROOT / "data" / "player" / "config.json"
 STATE_PATH = ROOT / "data" / "player" / "seen.json"
 OUT_PATH = ROOT / "web" / "data" / "player.json"
@@ -113,15 +119,18 @@ def extract_player(match: dict, account_id: int, names: dict[int, str], files: d
     is_rad = int(me.get("player_slot") or 0) < 128
     hid = int(me.get("hero_id") or 0)
     files = files or {}
+    en = names.get(hid, str(me.get("hero_id")))
+    npc = files.get(hid)
     return {
         "matchId": match.get("match_id"),
         "when": datetime.fromtimestamp(start, CST).strftime("%Y-%m-%d %H:%M") if start else "",
         "startTime": start,
         "durationMin": round(duration / 60, 1) if duration else None,
         "win": bool(match.get("radiant_win")) == is_rad,
-        "hero": names.get(hid, str(me.get("hero_id"))),
+        "hero": en,
+        "heroZh": hero_call(hero_id=hid, en=en, npc=npc, fallback=en),
         "heroId": me.get("hero_id"),
-        "heroFile": files.get(hid),
+        "heroFile": npc,
         "role": ROLE.get(lane_role) or (None if lane_role in (None, 0) else f"pos{lane_role}"),
         "laneRole": lane_role,
         "partySize": me.get("party_size") or match.get("party_size") or 1,
@@ -185,10 +194,12 @@ def summarize(games: list[dict], hero_stats: list) -> dict:
     hero_rows = []
     for name, s in sorted(heroes.items(), key=lambda kv: -kv[1]["games"]):
         hid = next((g.get("heroId") for g in games if g.get("hero") == name), None)
+        zh = next((g.get("heroZh") for g in games if g.get("hero") == name and g.get("heroZh")), None)
         meta = divine_wr(hero_stats, int(hid)) if hid else None
         hero_rows.append(
             {
                 "hero": name,
+                "heroZh": zh or hero_call(hero_id=hid, en=name, fallback=name),
                 "games": s["games"],
                 "wins": s["wins"],
                 "roles": dict(s["roles"]),
@@ -246,6 +257,15 @@ KIND_NOTE = {
 }
 
 
+def hero_label(game: dict) -> str:
+    return game.get("heroZh") or hero_call(
+        hero_id=game.get("heroId"),
+        en=game.get("hero"),
+        npc=game.get("heroFile"),
+        fallback=game.get("hero") or "?",
+    )
+
+
 def wl(row: dict) -> str:
     g = int(row.get("games") or 0)
     w = int(row.get("wins") or 0)
@@ -272,11 +292,11 @@ def stub_points(games: list[dict], summary: dict, new_ids: list) -> list[str]:
             bits = []
             for g in lost[:4]:
                 kind = classify_game(g, g.get("divine"))
-                bits.append(f"{g.get('hero') or '?'}{KIND_NOTE.get(kind, '')}")
+                bits.append(f"{hero_label(g)}{KIND_NOTE.get(kind, '')}")
             points.append("负：" + "、".join(bits) + "。")
         won = [g for g in fresh if g.get("win")]
         if won:
-            points.append("胜：" + "、".join((g.get("hero") or "?") for g in won[:4]) + "。")
+            points.append("胜：" + "、".join(hero_label(g) for g in won[:4]) + "。")
     points.append(f"窗口 {summary.get('wins')}-{summary.get('losses')}。")
     roles = summary.get("roles") or {}
     role_bits = []
@@ -326,7 +346,8 @@ def stub_briefing(profile: dict, games: list[dict], summary: dict, new_ids: list
         focus.append(
             {
                 "matchId": g.get("matchId"),
-                "hero": g.get("hero"),
+                "hero": hero_label(g),
+                "heroEn": g.get("hero"),
                 "heroFile": g.get("heroFile"),
                 "role": g.get("role"),
                 "kind": kind,
