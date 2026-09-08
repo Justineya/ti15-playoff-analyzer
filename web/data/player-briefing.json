@@ -1,43 +1,80 @@
 {
-  "asOf": "2026-09-08 03:48 CST",
+  "asOf": "2026-09-09 03:20 CST",
   "source": "stub",
-  "headline": "+5 16-9 中1-3 3号10-4",
-  "lede": "新5把全单排 3-2。",
+  "headline": "+4 15-10 中0-2 3号11-4",
+  "lede": "新4把2-2。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新5把全单排 3-2。",
-    "负：Dark Seer金崩、Death Prophet金崩。",
-    "胜：Dark Seer、Slardar、Dark Seer。",
-    "窗口 16-9。",
-    "中1-3，3号10-4。",
-    "胜场 GPM 85%、推塔 77%；负场 40% / 32%。"
+    "新4把2-2。",
+    "负：Legion Commander负、Chaos Knight负。",
+    "胜：Dark Seer、Dark Seer。",
+    "窗口 15-10。",
+    "中0-2，3号11-4。",
+    "胜场 GPM 86%、推塔 81%；负场 43% / 35%。"
   ],
   "sessionMatchIds": [
-    "8987704746",
-    "8987637589",
-    "8987546090",
-    "8987466554",
-    "8987188859"
+    "8988886937",
+    "8988805428",
+    "8988709324",
+    "8988649228"
   ],
   "newMatchIds": [
-    "8987704746",
-    "8987637589",
-    "8987546090",
-    "8987466554",
-    "8987188859"
+    "8988886937",
+    "8988805428",
+    "8988709324",
+    "8988649228"
   ],
   "focus": [
     {
-      "matchId": 8987704746,
+      "matchId": 8988886937,
       "hero": "Dark Seer",
       "heroFile": "dark_seer",
       "role": null,
       "kind": "win",
       "divineWr": {
-        "picks": 41522,
-        "wins": 21075,
-        "wr": 0.5076
+        "picks": 44459,
+        "wins": 22553,
+        "wr": 0.5073
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 8988805428,
+      "hero": "Legion Commander",
+      "heroFile": "legion_commander",
+      "role": null,
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 44989,
+        "wins": 23683,
+        "wr": 0.5264
+      },
+      "note": "负"
+    },
+    {
+      "matchId": 8988709324,
+      "hero": "Chaos Knight",
+      "heroFile": "chaos_knight",
+      "role": null,
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 12314,
+        "wins": 6372,
+        "wr": 0.5175
+      },
+      "note": "负"
+    },
+    {
+      "matchId": 8988649228,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 44459,
+        "wins": 22553,
+        "wr": 0.5073
       },
       "note": "胜"
     },
@@ -48,24 +85,11 @@
       "role": "pos3",
       "kind": "farm_collapse",
       "divineWr": {
-        "picks": 41522,
-        "wins": 21075,
-        "wr": 0.5076
+        "picks": 44459,
+        "wins": 22553,
+        "wr": 0.5073
       },
       "note": "金崩"
-    },
-    {
-      "matchId": 8987546090,
-      "hero": "Slardar",
-      "heroFile": "slardar",
-      "role": "pos3",
-      "kind": "win",
-      "divineWr": {
-        "picks": 36323,
-        "wins": 17433,
-        "wr": 0.4799
-      },
-      "note": "胜"
     },
     {
       "matchId": 8987466554,
@@ -74,37 +98,11 @@
       "role": "pos3",
       "kind": "farm_collapse",
       "divineWr": {
-        "picks": 15128,
-        "wins": 7436,
-        "wr": 0.4915
+        "picks": 16125,
+        "wins": 7932,
+        "wr": 0.4919
       },
       "note": "金崩"
-    },
-    {
-      "matchId": 8987188859,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": null,
-      "kind": "win",
-      "divineWr": {
-        "picks": 41522,
-        "wins": 21075,
-        "wr": 0.5076
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8985878947,
-      "hero": "Outworld Destroyer",
-      "heroFile": "obsidian_destroyer",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 42932,
-        "wins": 22810,
-        "wr": 0.5313
-      },
-      "note": "负"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
