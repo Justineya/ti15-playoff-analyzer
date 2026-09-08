@@ -1,17 +1,18 @@
 {
-  "asOf": "2026-09-08 03:48 CST",
-  "source": "stub",
-  "headline": "+5 16-9 中1-3 3号10-4",
-  "lede": "新5把全单排 3-2。",
+  "asOf": "2026-09-08 09:30 CST",
+  "source": "cursor",
+  "headline": "16-9 夜里3-2：黑贤2-1",
+  "lede": "夜里五把都是三号，3-2。黑贤两胜；DP 赢线没推。",
   "narrative": "",
   "positioning": "主三 · 副中",
+  "scopeLabel": "夜里分析",
   "points": [
-    "新5把全单排 3-2。",
-    "负：Dark Seer金崩、Death Prophet金崩。",
-    "胜：Dark Seer、Slardar、Dark Seer。",
-    "窗口 16-9。",
-    "中1-3，3号10-4。",
-    "胜场 GPM 85%、推塔 77%；负场 40% / 32%。"
+    "夜里5把全单排3-2：黑贤2-1、大鱼人赢、DP黑。窗口16-9，主三。",
+    "黑贤第一把支配+大鞋+跳刀+冰甲+神杖+黑皇杖，经济90%、塔97%。",
+    "黑贤负场支配9分、大鞋16分都对；35分没跳刀没冰甲，塔伤320。",
+    "DP对线92%，散慧15、黑皇杖23都对；经济26%、塔30%，赢线没推。",
+    "大鱼人跳刀14、魔晶17、黑皇杖29，贴7k。玲珑心冰甲是48分后期。",
+    "夜里结论：黑贤成型看跳刀+冰甲，大鞋不是终点。DP别赢线垮经济。"
   ],
   "sessionMatchIds": [
     "8987704746",
@@ -29,83 +30,50 @@
   ],
   "focus": [
     {
-      "matchId": 8987704746,
-      "hero": "Dark Seer",
+      "matchId": 8987188859,
+      "hero": "黑贤",
+      "heroEn": "Dark Seer",
       "heroFile": "dark_seer",
-      "role": null,
+      "role": "pos3",
       "kind": "win",
-      "divineWr": {
-        "picks": 41522,
-        "wins": 21075,
-        "wr": 0.5076
-      },
-      "note": "胜"
+      "note": "7k线"
     },
     {
       "matchId": 8987637589,
-      "hero": "Dark Seer",
+      "hero": "黑贤",
+      "heroEn": "Dark Seer",
       "heroFile": "dark_seer",
       "role": "pos3",
       "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 41522,
-        "wins": 21075,
-        "wr": 0.5076
-      },
-      "note": "金崩"
-    },
-    {
-      "matchId": 8987546090,
-      "hero": "Slardar",
-      "heroFile": "slardar",
-      "role": "pos3",
-      "kind": "win",
-      "divineWr": {
-        "picks": 36323,
-        "wins": 17433,
-        "wr": 0.4799
-      },
-      "note": "胜"
+      "note": "没跳刀"
     },
     {
       "matchId": 8987466554,
-      "hero": "Death Prophet",
+      "hero": "DP",
+      "heroEn": "Death Prophet",
       "heroFile": "death_prophet",
       "role": "pos3",
       "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 15128,
-        "wins": 7436,
-        "wr": 0.4915
-      },
-      "note": "金崩"
+      "note": "赢线没推"
     },
     {
-      "matchId": 8987188859,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": null,
+      "matchId": 8987546090,
+      "hero": "大鱼人",
+      "heroEn": "Slardar",
+      "heroFile": "slardar",
+      "role": "pos3",
       "kind": "win",
-      "divineWr": {
-        "picks": 41522,
-        "wins": 21075,
-        "wr": 0.5076
-      },
-      "note": "胜"
+      "note": "跳刀准"
     },
     {
-      "matchId": 8985878947,
-      "hero": "Outworld Destroyer",
-      "heroFile": "obsidian_destroyer",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 42932,
-        "wins": 22810,
-        "wr": 0.5313
-      },
-      "note": "负"
+      "matchId": 8987704746,
+      "hero": "黑贤",
+      "heroEn": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "win",
+      "note": "跳刀冰甲"
     }
   ],
-  "note": "卡片是近况全部。新图只做高亮。非投注建议。"
+  "note": "周一晚到周二凌晨五把。中文名对照 data/dota-zh.json。非投注建议。"
 }
