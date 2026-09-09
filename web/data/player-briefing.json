@@ -1,41 +1,79 @@
 {
-  "asOf": "2026-09-09 03:20 CST",
+  "asOf": "2026-09-10 03:10 CST",
   "source": "stub",
-  "headline": "+4 15-10 中0-2 3号11-4",
-  "lede": "新4把2-2。",
+  "headline": "+4 17-8 中0-2 3号12-4",
+  "lede": "新4把全单排 4-0。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新4把2-2。",
-    "负：Legion Commander负、Chaos Knight负。",
-    "胜：Dark Seer、Dark Seer。",
-    "窗口 15-10。",
-    "中0-2，3号11-4。",
-    "胜场 GPM 86%、推塔 81%；负场 43% / 35%。"
+    "新4把全单排 4-0。",
+    "胜：Dark Seer、Dark Seer、Dark Seer、Dawnbreaker。",
+    "窗口 17-8。",
+    "中0-2，3号12-4。",
+    "胜场 GPM 84%、推塔 78%；负场 41% / 36%。"
   ],
   "sessionMatchIds": [
-    "8988886937",
-    "8988805428",
-    "8988709324",
-    "8988649228"
+    "8990271136",
+    "8990211138",
+    "8990156280",
+    "8990107874"
   ],
   "newMatchIds": [
-    "8988886937",
-    "8988805428",
-    "8988709324",
-    "8988649228"
+    "8990271136",
+    "8990211138",
+    "8990156280",
+    "8990107874"
   ],
   "focus": [
     {
-      "matchId": 8988886937,
+      "matchId": 8990271136,
       "hero": "Dark Seer",
       "heroFile": "dark_seer",
       "role": null,
       "kind": "win",
       "divineWr": {
-        "picks": 44459,
-        "wins": 22553,
-        "wr": 0.5073
+        "picks": 42508,
+        "wins": 21635,
+        "wr": 0.509
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 8990211138,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 42508,
+        "wins": 21635,
+        "wr": 0.509
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 8990156280,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 42508,
+        "wins": 21635,
+        "wr": 0.509
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 8990107874,
+      "hero": "Dawnbreaker",
+      "heroFile": "dawnbreaker",
+      "role": "pos3",
+      "kind": "win",
+      "divineWr": {
+        "picks": 54385,
+        "wins": 27976,
+        "wr": 0.5144
       },
       "note": "胜"
     },
@@ -43,12 +81,12 @@
       "matchId": 8988805428,
       "hero": "Legion Commander",
       "heroFile": "legion_commander",
-      "role": null,
+      "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 44989,
-        "wins": 23683,
-        "wr": 0.5264
+        "picks": 43098,
+        "wins": 22701,
+        "wr": 0.5267
       },
       "note": "负"
     },
@@ -56,53 +94,14 @@
       "matchId": 8988709324,
       "hero": "Chaos Knight",
       "heroFile": "chaos_knight",
-      "role": null,
+      "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 12314,
-        "wins": 6372,
-        "wr": 0.5175
+        "picks": 11646,
+        "wins": 5996,
+        "wr": 0.5149
       },
       "note": "负"
-    },
-    {
-      "matchId": 8988649228,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": null,
-      "kind": "win",
-      "divineWr": {
-        "picks": 44459,
-        "wins": 22553,
-        "wr": 0.5073
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8987637589,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 44459,
-        "wins": 22553,
-        "wr": 0.5073
-      },
-      "note": "金崩"
-    },
-    {
-      "matchId": 8987466554,
-      "hero": "Death Prophet",
-      "heroFile": "death_prophet",
-      "role": "pos3",
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 16125,
-        "wins": 7932,
-        "wr": 0.4919
-      },
-      "note": "金崩"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
