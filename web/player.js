@@ -29,6 +29,10 @@
     return `<span class="pb ${cls || ""}"><i style="width:${w}%"></i></span>`;
   }
 
+  function heroName(game, row) {
+    return (game && game.heroZh) || (row && row.heroZh) || (row && row.hero) || (game && game.hero) || "—";
+  }
+
   function portrait(file, name) {
     if (file) {
       return `<img class="ph" src="${IMG}${file}.png" alt="${name || ""}" width="84" height="47" />`;
@@ -88,7 +92,7 @@
     const strip = games
       .slice()
       .reverse()
-      .map((g) => `<i class="${g.win ? "w" : "l"}" title="${g.hero}"></i>`)
+      .map((g) => `<i class="${g.win ? "w" : "l"}" title="${heroName(g)}"></i>`)
       .join("");
 
     const cmp = [
@@ -116,8 +120,8 @@
       .map((row) => {
         const g = games.find((x) => String(x.matchId) === String(row.matchId)) || {};
         return `<a class="tag tag-${row.kind}" href="${g.opendota || "#"}">
-          ${portrait(g.heroFile || row.heroFile, row.hero)}
-          <span><b>${row.note || KIND[row.kind] || row.kind}</b>${row.hero || ""}</span>
+          ${portrait(g.heroFile || row.heroFile, heroName(g, row))}
+          <span><b>${row.note || KIND[row.kind] || row.kind}</b>${heroName(g, row)}</span>
         </a>`;
       })
       .join("");
@@ -134,11 +138,11 @@
         const lane = ROLE[g.role] || clock(g) || "—";
         const dur = g.durationMin != null ? Math.round(g.durationMin) + "′" : "";
         return `<a class="mc ${g.win ? "win" : "loss"}${isNew ? " fresh" : ""}" href="${g.opendota || "#"}">
-          ${portrait(g.heroFile, g.hero)}
+          ${portrait(g.heroFile, heroName(g, tag))}
           <div class="mc-body">
             <div class="mc-top">
               <strong class="wl">${mark}</strong>
-              <span class="nm">${g.hero || "—"}</span>
+              <span class="nm">${heroName(g, tag)}</span>
               <span class="rl">${lane}</span>
               <span class="kd">${g.kills ?? "—"}/${g.deaths ?? "—"}/${g.assists ?? "—"}</span>
               <span class="dur">${dur}</span>
@@ -176,8 +180,8 @@
   }
 
   Promise.all([
-    fetch("./data/player.json?v=wk").then((r) => (r.ok ? r.json() : null)),
-    fetch("./data/player-briefing.json?v=wk").then((r) => (r.ok ? r.json() : {})),
+    fetch("./data/player.json?v=w9").then((r) => (r.ok ? r.json() : null)),
+    fetch("./data/player-briefing.json?v=w9").then((r) => (r.ok ? r.json() : {})),
   ])
     .then(([player, brief]) => {
       if (!player) {
