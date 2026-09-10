@@ -1,16 +1,18 @@
 {
-  "asOf": "2026-09-10 03:10 CST",
-  "source": "stub",
-  "headline": "+4 17-8 中0-2 3号12-4",
-  "lede": "新4把全单排 4-0。",
+  "asOf": "2026-09-10 10:15 CST",
+  "source": "cursor",
+  "headline": "17-8 昨天4-0：黑贤三连",
+  "lede": "昨晚四把全单排4-0。黑贤三连跳刀都出了。",
   "narrative": "",
   "positioning": "主三 · 副中",
+  "scopeLabel": "昨天分析",
   "points": [
-    "新4把全单排 4-0。",
-    "胜：Dark Seer、Dark Seer、Dark Seer、Dawnbreaker。",
-    "窗口 17-8。",
-    "中0-2，3号12-4。",
-    "胜场 GPM 84%、推塔 78%；负场 41% / 36%。"
+    "昨天4把全单排4-0：破晓1、黑贤3。窗口17-8，三号12-4，中仍0-2。",
+    "破晓护腕魂戒相位鞋→回音鱼叉→黑皇杖25再黯灭31，对线69%、经济89%、塔86%。",
+    "黑贤三把都是支配头盔+冰甲+神杖+跳刀，一把力量跳；贴7k三号。",
+    "黑贤第三把30分10/4/23收掉；第二把经济84%、塔91%。",
+    "窗口负场仍是周二军团、CK，不是昨天。中单窗口还是0-2。",
+    "昨晚结论：三号成型对了。继续锁黑贤/军团/孽主/DP。破晓别先黯灭。"
   ],
   "sessionMatchIds": [
     "8990271136",
@@ -27,82 +29,58 @@
   "focus": [
     {
       "matchId": 8990271136,
-      "hero": "Dark Seer",
+      "hero": "黑贤",
+      "heroEn": "Dark Seer",
       "heroFile": "dark_seer",
       "role": null,
       "kind": "win",
-      "divineWr": {
-        "picks": 42508,
-        "wins": 21635,
-        "wr": 0.509
-      },
-      "note": "胜"
+      "note": "30分收"
     },
     {
       "matchId": 8990211138,
-      "hero": "Dark Seer",
+      "hero": "黑贤",
+      "heroEn": "Dark Seer",
       "heroFile": "dark_seer",
       "role": null,
       "kind": "win",
-      "divineWr": {
-        "picks": 42508,
-        "wins": 21635,
-        "wr": 0.509
-      },
-      "note": "胜"
+      "note": "塔91%"
     },
     {
       "matchId": 8990156280,
-      "hero": "Dark Seer",
+      "hero": "黑贤",
+      "heroEn": "Dark Seer",
       "heroFile": "dark_seer",
       "role": null,
       "kind": "win",
-      "divineWr": {
-        "picks": 42508,
-        "wins": 21635,
-        "wr": 0.509
-      },
-      "note": "胜"
+      "note": "力量跳"
     },
     {
       "matchId": 8990107874,
-      "hero": "Dawnbreaker",
+      "hero": "破晓",
+      "heroEn": "Dawnbreaker",
       "heroFile": "dawnbreaker",
       "role": "pos3",
       "kind": "win",
-      "divineWr": {
-        "picks": 54385,
-        "wins": 27976,
-        "wr": 0.5144
-      },
-      "note": "胜"
+      "note": "先黑皇杖"
     },
     {
       "matchId": 8988805428,
-      "hero": "Legion Commander",
+      "hero": "军团",
+      "heroEn": "Legion Commander",
       "heroFile": "legion_commander",
       "role": "pos3",
       "kind": "other_loss",
-      "divineWr": {
-        "picks": 43098,
-        "wins": 22701,
-        "wr": 0.5267
-      },
-      "note": "负"
+      "note": "赢线46分"
     },
     {
       "matchId": 8988709324,
-      "hero": "Chaos Knight",
+      "hero": "CK",
+      "heroEn": "Chaos Knight",
       "heroFile": "chaos_knight",
       "role": "pos3",
       "kind": "other_loss",
-      "divineWr": {
-        "picks": 11646,
-        "wins": 5996,
-        "wr": 0.5149
-      },
-      "note": "负"
+      "note": "52分拖"
     }
   ],
-  "note": "卡片是近况全部。新图只做高亮。非投注建议。"
+  "note": "周三晚四把。中文名对照 data/dota-zh.json。非投注建议。"
 }
