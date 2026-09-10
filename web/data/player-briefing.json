@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-09-11 03:06 CST",
-  "source": "stub",
-  "headline": "+4 14-8 中0-1 3号10-6",
-  "lede": "新4把全单排 1-3。",
+  "asOf": "2026-09-11 03:10 CST",
+  "source": "cursor",
+  "headline": "14-8 主三10-6，新4把1-3",
+  "lede": "新4把单排1-3：先赢黑洞，随后孽主+两把黑洞连崩。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新4把全单排 1-3。",
-    "负：Dark Seer金崩、Dark Seer金崩、Underlord金崩。",
-    "胜：Dark Seer。",
-    "窗口 14-8。",
-    "中0-1，3号10-6。",
-    "胜场 GPM 84%、推塔 76%；负场 33% / 29%。"
+    "新4把单排1-3：先赢一把黑洞5/10/29，随后孽主+两把黑洞连崩。",
+    "窗口14-8。主三16把10-6；中单1把0-1（光法GPM29%）仍漏。",
+    "今晚两把负黑洞GPM都16%：25分2/4/6塔20%；32分1/11/16塔伤0。",
+    "孽主三号33分3/8/7，GPM34%塔伤0。7k+三号45.4%是版本坑。",
+    "近负：军团46分16/9/20伤97%没合；CK 52分GPM33%；7日黑洞GPM36%塔27%。",
+    "黑洞窗口7-3，7k+三号53.4%不是坑。胜GPM84%塔76%，负33%/29%。孽主扔。"
   ],
   "sessionMatchIds": [
     "8991927117",
@@ -37,7 +37,7 @@
         "wins": 21910,
         "wr": 0.5094
       },
-      "note": "金崩"
+      "note": "32分金崩"
     },
     {
       "matchId": 8991871310,
@@ -50,20 +50,20 @@
         "wins": 21910,
         "wr": 0.5094
       },
-      "note": "金崩"
+      "note": "25分金崩"
     },
     {
       "matchId": 8991794265,
       "hero": "Underlord",
       "heroFile": "abyssal_underlord",
       "role": "pos3",
-      "kind": "farm_collapse",
+      "kind": "meta_weak",
       "divineWr": {
         "picks": 69539,
         "wins": 33477,
         "wr": 0.4814
       },
-      "note": "金崩"
+      "note": "版本坑"
     },
     {
       "matchId": 8991708919,
@@ -76,7 +76,7 @@
         "wins": 21910,
         "wr": 0.5094
       },
-      "note": "胜"
+      "note": "42分收"
     },
     {
       "matchId": 8988805428,
@@ -89,7 +89,7 @@
         "wins": 22957,
         "wr": 0.5246
       },
-      "note": "负"
+      "note": "46分空转"
     },
     {
       "matchId": 8988709324,
@@ -102,8 +102,34 @@
         "wins": 6019,
         "wr": 0.5171
       },
+      "note": "52分金崩"
+    },
+    {
+      "matchId": 8987637589,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 43015,
+        "wins": 21910,
+        "wr": 0.5094
+      },
       "note": "金崩"
+    },
+    {
+      "matchId": 8987466554,
+      "hero": "Death Prophet",
+      "heroFile": "death_prophet",
+      "role": "pos3",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 15580,
+        "wins": 7726,
+        "wr": 0.4959
+      },
+      "note": "对线后崩"
     }
   ],
-  "note": "卡片是近况全部。新图只做高亮。非投注建议。"
+  "note": "卡片是近况全部。新图只做高亮。7k+来自 D2PT 近8天。非投注建议。"
 }
