@@ -1,37 +1,53 @@
 {
-  "asOf": "2026-09-12 03:03 CST",
+  "asOf": "2026-09-13 02:14 CST",
   "source": "stub",
-  "headline": "+7 13-12 中1-0 3号7-6",
-  "lede": "新7把全单排 3-4。",
+  "headline": "+2 13-12 中2-0 3号9-7",
+  "lede": "新2把全单排 1-1。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新7把全单排 3-4。",
-    "负：Dark Seer负、Keeper of the Light负、Legion Commander金崩、Weaver负。",
-    "胜：Keeper of the Light、Keeper of the Light、Necrophos。",
+    "新2把全单排 1-1。",
+    "负：Dawnbreaker金崩。",
+    "胜：Keeper of the Light。",
     "窗口 13-12。",
-    "中1-0，3号7-6。",
-    "胜场 GPM 85%、推塔 81%；负场 42% / 33%。"
+    "中2-0，3号9-7。",
+    "胜场 GPM 85%、推塔 78%；负场 40% / 33%。"
   ],
   "sessionMatchIds": [
-    "8993793823",
-    "8993648177",
-    "8993582121",
-    "8993515345",
-    "8993420525",
-    "8993333325",
-    "8993253978"
+    "8994454991",
+    "8994436718"
   ],
   "newMatchIds": [
-    "8993793823",
-    "8993648177",
-    "8993582121",
-    "8993515345",
-    "8993420525",
-    "8993333325",
-    "8993253978"
+    "8994454991",
+    "8994436718"
   ],
   "focus": [
+    {
+      "matchId": 8994454991,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 31211,
+        "wins": 16399,
+        "wr": 0.5254
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 8994436718,
+      "hero": "Dawnbreaker",
+      "heroFile": "dawnbreaker",
+      "role": null,
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 53688,
+        "wins": 27525,
+        "wr": 0.5127
+      },
+      "note": "金崩"
+    },
     {
       "matchId": 8993793823,
       "hero": "Dark Seer",
@@ -39,9 +55,9 @@
       "role": null,
       "kind": "other_loss",
       "divineWr": {
-        "picks": 42888,
-        "wins": 21874,
-        "wr": 0.51
+        "picks": 42811,
+        "wins": 21824,
+        "wr": 0.5098
       },
       "note": "负"
     },
@@ -52,37 +68,11 @@
       "role": null,
       "kind": "other_loss",
       "divineWr": {
-        "picks": 31659,
-        "wins": 16525,
-        "wr": 0.522
+        "picks": 31211,
+        "wins": 16399,
+        "wr": 0.5254
       },
       "note": "负"
-    },
-    {
-      "matchId": 8993582121,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "win",
-      "divineWr": {
-        "picks": 31659,
-        "wins": 16525,
-        "wr": 0.522
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8993515345,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": null,
-      "kind": "win",
-      "divineWr": {
-        "picks": 31659,
-        "wins": 16525,
-        "wr": 0.522
-      },
-      "note": "胜"
     },
     {
       "matchId": 8993420525,
@@ -91,24 +81,24 @@
       "role": null,
       "kind": "farm_collapse",
       "divineWr": {
-        "picks": 43290,
-        "wins": 22689,
-        "wr": 0.5241
+        "picks": 43107,
+        "wins": 22481,
+        "wr": 0.5215
       },
       "note": "金崩"
     },
     {
-      "matchId": 8993333325,
-      "hero": "Necrophos",
-      "heroFile": "necrolyte",
+      "matchId": 8993253978,
+      "hero": "Weaver",
+      "heroFile": "weaver",
       "role": "pos1",
-      "kind": "win",
+      "kind": "other_loss",
       "divineWr": {
-        "picks": 68892,
-        "wins": 34406,
-        "wr": 0.4994
+        "picks": 17066,
+        "wins": 8051,
+        "wr": 0.4718
       },
-      "note": "胜"
+      "note": "负"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
