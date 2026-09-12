@@ -1,37 +1,53 @@
 {
-  "asOf": "2026-09-12 03:03 CST",
-  "source": "stub",
-  "headline": "+7 13-12 中1-0 3号7-6",
-  "lede": "新7把全单排 3-4。",
+  "asOf": "2026-09-13 02:18 CST",
+  "source": "cursor",
+  "headline": "13-12 主三9-7，新2把1-1",
+  "lede": "新2把单排1-1：光法32分收，破晓21分金崩。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新7把全单排 3-4。",
-    "负：Dark Seer负、Keeper of the Light负、Legion Commander金崩、Weaver负。",
-    "胜：Keeper of the Light、Keeper of the Light、Necrophos。",
-    "窗口 13-12。",
-    "中1-0，3号7-6。",
-    "胜场 GPM 85%、推塔 81%；负场 42% / 33%。"
+    "新2把单排1-1：光法32分6/2/20 GPM78%收；破晓21分0/4/1 GPM5%塔20%崩。",
+    "窗口13-12。主三16把9-7；中单2-2（光法）。一号2把1-1。",
+    "破晓未解析，21分伤0%塔20%。7k+三号49%不是坑，是金崩。",
+    "近负：黑洞36分13/8/12塔10%；光法70分伤97%空转；军团35分GPM28%崩。",
+    "织梦者一号7k+仅42%是版本坑。黑洞窗口7-4，7k+三号53%能打。",
+    "胜场GPM85%塔78%，负40%/33%。锁黑洞和光法中。扔织梦者一号。"
   ],
   "sessionMatchIds": [
-    "8993793823",
-    "8993648177",
-    "8993582121",
-    "8993515345",
-    "8993420525",
-    "8993333325",
-    "8993253978"
+    "8994454991",
+    "8994436718"
   ],
   "newMatchIds": [
-    "8993793823",
-    "8993648177",
-    "8993582121",
-    "8993515345",
-    "8993420525",
-    "8993333325",
-    "8993253978"
+    "8994454991",
+    "8994436718"
   ],
   "focus": [
+    {
+      "matchId": 8994454991,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 31211,
+        "wins": 16399,
+        "wr": 0.5254
+      },
+      "note": "32分收"
+    },
+    {
+      "matchId": 8994436718,
+      "hero": "Dawnbreaker",
+      "heroFile": "dawnbreaker",
+      "role": null,
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 53688,
+        "wins": 27525,
+        "wr": 0.5127
+      },
+      "note": "21分金崩"
+    },
     {
       "matchId": 8993793823,
       "hero": "Dark Seer",
@@ -39,11 +55,11 @@
       "role": null,
       "kind": "other_loss",
       "divineWr": {
-        "picks": 42888,
-        "wins": 21874,
-        "wr": 0.51
+        "picks": 42811,
+        "wins": 21824,
+        "wr": 0.5098
       },
-      "note": "负"
+      "note": "塔伤0"
     },
     {
       "matchId": 8993648177,
@@ -52,37 +68,11 @@
       "role": null,
       "kind": "other_loss",
       "divineWr": {
-        "picks": 31659,
-        "wins": 16525,
-        "wr": 0.522
+        "picks": 31211,
+        "wins": 16399,
+        "wr": 0.5254
       },
-      "note": "负"
-    },
-    {
-      "matchId": 8993582121,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "win",
-      "divineWr": {
-        "picks": 31659,
-        "wins": 16525,
-        "wr": 0.522
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8993515345,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": null,
-      "kind": "win",
-      "divineWr": {
-        "picks": 31659,
-        "wins": 16525,
-        "wr": 0.522
-      },
-      "note": "胜"
+      "note": "70分空转"
     },
     {
       "matchId": 8993420525,
@@ -91,25 +81,25 @@
       "role": null,
       "kind": "farm_collapse",
       "divineWr": {
-        "picks": 43290,
-        "wins": 22689,
-        "wr": 0.5241
+        "picks": 43107,
+        "wins": 22481,
+        "wr": 0.5215
       },
-      "note": "金崩"
+      "note": "35分金崩"
     },
     {
-      "matchId": 8993333325,
-      "hero": "Necrophos",
-      "heroFile": "necrolyte",
+      "matchId": 8993253978,
+      "hero": "Weaver",
+      "heroFile": "weaver",
       "role": "pos1",
-      "kind": "win",
+      "kind": "meta_weak",
       "divineWr": {
-        "picks": 68892,
-        "wins": 34406,
-        "wr": 0.4994
+        "picks": 17066,
+        "wins": 8051,
+        "wr": 0.4718
       },
-      "note": "胜"
+      "note": "版本坑"
     }
   ],
-  "note": "卡片是近况全部。新图只做高亮。非投注建议。"
+  "note": "卡片是近况全部。新图只做高亮。7k+来自 D2PT 近8天。非投注建议。"
 }
