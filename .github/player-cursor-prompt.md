@@ -4,6 +4,19 @@
 
 只做个人排位复盘。不要改 TI15 对阵、模型、daily.json、live.json、CSS、player.js、player.html。
 
+中文名铁律（写错会被骂）：
+- 打开 `data/dota-zh.json`。英雄、物品只准用里面的 `call`（玩家口头）或 `official`（国服客户端）。
+- 禁止英文直译、禁止自创译名。先查词典，查不到就写英文原名，不要猜。
+- 易混，写错一次就不许再犯：
+  - Moon Shard = 银月 / 银月之晶，没有「月圆」
+  - Hurricane Pike = 飓风长戟（大推推）。魔龙枪是 Dragon Lance，合成材料
+  - Witch Blade = 巫师之刃，升级成 圣斧（Parasma）。没有「巫妖刀」；巫妖是英雄 Lich
+  - Kaya and Sange = 散慧 / 散慧对剑。散夜是 Sange and Yasha（散华+夜叉）
+  - Hoodwink = 松鼠 / 森海飞霞。小精灵是艾欧 Io
+  - 猛犸只等于 Magnus 马格纳斯。Mars = 玛尔斯。Tidehunter = 潮汐
+  - 黑鸟 = 殁境神蚀者 OD。夜魔 = 暗夜魔王 NS
+- `focus.hero` 和 `points` 用 `call`（黑鸟、破晓、DP、CK、军团），不要写英文全名。
+
 必须做：
 
 1. 打开 `web/data/player.json`。数字以这份为准，不要编比分、KDA、分位。
