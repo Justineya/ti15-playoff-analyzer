@@ -1,22 +1,32 @@
 {
-  "asOf": "2026-09-15 04:13 CST",
-  "source": "stub",
-  "headline": "+3 14-11 中3-1 3号8-7",
-  "lede": "新3把全单排 2-1。",
+  "asOf": "2026-09-15 17:50 CST",
+  "source": "cursor",
+  "headline": "14-11 光法中4-1 三号1-4",
+  "lede": "周四之后12把6-6。光法中真的；三号在漏。",
   "narrative": "",
   "positioning": "主三 · 副中",
+  "scopeLabel": "这几天分析",
   "points": [
-    "新3把全单排 2-1。",
-    "负：Rubick负。",
-    "胜：Keeper of the Light、Lycan。",
-    "窗口 14-11。",
-    "中3-1，3号8-7。",
-    "胜场 GPM 85%、推塔 79%；负场 41% / 30%。"
+    "周四后12把6-6。窗口14-11：光法中4-1，三号狼人赢、拉比克/破晓/黑贤/军团负。",
+    "光法中骨灰→飞鞋→玲珑心。赢场经济94%+、塔98%；70分那把伤害100%仍负。",
+    "黑贤对线88%，支配8、跳刀18、冰甲25、神杖34；塔伤0。赢线没推。",
+    "破晓20分0/4/1，10分团队-5千。军团7/13经济26%。",
+    "狼人三号统御14、强袭26、神杖32，塔82%翻盘。拉比克三号达贡神杖，塔0。",
+    "结论：这几天靠光法中。三号别锁拉比克当核；黑贤赢线要拆。蚂蚁一号别再锁。"
   ],
   "sessionMatchIds": [
     "8998791276",
     "8998731784",
-    "8998656513"
+    "8998656513",
+    "8994454991",
+    "8994436718",
+    "8993793823",
+    "8993648177",
+    "8993582121",
+    "8993515345",
+    "8993420525",
+    "8993333325",
+    "8993253978"
   ],
   "newMatchIds": [
     "8998791276",
@@ -26,82 +36,76 @@
   "focus": [
     {
       "matchId": 8998791276,
-      "hero": "Keeper of the Light",
+      "hero": "光法",
+      "heroEn": "Keeper of the Light",
       "heroFile": "keeper_of_the_light",
-      "role": null,
+      "role": "pos2",
       "kind": "win",
-      "divineWr": {
-        "picks": 34195,
-        "wins": 18038,
-        "wr": 0.5275
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 8998731784,
-      "hero": "Rubick",
-      "heroFile": "rubick",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 129592,
-        "wins": 64763,
-        "wr": 0.4997
-      },
-      "note": "负"
+      "note": "中98%"
     },
     {
       "matchId": 8998656513,
-      "hero": "Lycan",
+      "hero": "狼人",
+      "heroEn": "Lycan",
       "heroFile": "lycan",
-      "role": null,
+      "role": "pos3",
       "kind": "win",
-      "divineWr": {
-        "picks": 7006,
-        "wins": 3663,
-        "wr": 0.5228
-      },
-      "note": "胜"
+      "note": "统御翻盘"
     },
     {
-      "matchId": 8994436718,
-      "hero": "Dawnbreaker",
-      "heroFile": "dawnbreaker",
-      "role": "pos3",
-      "kind": "farm_collapse",
-      "divineWr": {
-        "picks": 58717,
-        "wins": 30319,
-        "wr": 0.5164
-      },
-      "note": "金崩"
+      "matchId": 8993515345,
+      "hero": "光法",
+      "heroEn": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "win",
+      "note": "11/1"
     },
     {
       "matchId": 8993793823,
-      "hero": "Dark Seer",
+      "hero": "黑贤",
+      "heroEn": "Dark Seer",
       "heroFile": "dark_seer",
       "role": "pos3",
       "kind": "other_loss",
-      "divineWr": {
-        "picks": 46834,
-        "wins": 23892,
-        "wr": 0.5101
-      },
-      "note": "负"
+      "note": "赢线塔0"
+    },
+    {
+      "matchId": 8994436718,
+      "hero": "破晓",
+      "heroEn": "Dawnbreaker",
+      "heroFile": "dawnbreaker",
+      "role": "pos3",
+      "kind": "farm_collapse",
+      "note": "20分崩"
+    },
+    {
+      "matchId": 8998731784,
+      "hero": "拉比克",
+      "heroEn": "Rubick",
+      "heroFile": "rubick",
+      "role": "pos3",
+      "kind": "farm_collapse",
+      "note": "塔0"
     },
     {
       "matchId": 8993648177,
-      "hero": "Keeper of the Light",
+      "hero": "光法",
+      "heroEn": "Keeper of the Light",
       "heroFile": "keeper_of_the_light",
       "role": "pos2",
       "kind": "other_loss",
-      "divineWr": {
-        "picks": 34195,
-        "wins": 18038,
-        "wr": 0.5275
-      },
-      "note": "负"
+      "note": "70分"
+    },
+    {
+      "matchId": 8993420525,
+      "hero": "军团",
+      "heroEn": "Legion Commander",
+      "heroFile": "legion_commander",
+      "role": null,
+      "kind": "farm_collapse",
+      "note": "7/13"
     }
   ],
-  "note": "卡片是近况全部。新图只做高亮。非投注建议。"
+  "note": "周四晚之后到周一。中文名对照 data/dota-zh.json。非投注建议。"
 }

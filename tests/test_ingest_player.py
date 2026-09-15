@@ -59,6 +59,7 @@ def test_extract_mid_kotl() -> None:
     row = ip.extract_player(sample_match(), 203557151, names, {90: "keeper_of_the_light"})
     assert row is not None
     assert row["hero"] == "Keeper of the Light"
+    assert row["heroZh"] == "光法"
     assert row["heroFile"] == "keeper_of_the_light"
     assert row["role"] == "pos2"
     assert row["win"] is True
@@ -115,7 +116,7 @@ def test_stub_briefing_keeps_short_diagnosis() -> None:
     assert brief["narrative"] == ""
     assert brief["sessionMatchIds"] == ["1"]
     assert brief["lede"].startswith("新1把全单排 0-1")
-    assert any("Timbersaw" in p for p in brief["points"])
+    assert any("伐木机" in p for p in brief["points"])
     assert any("窗口 1-1" in p for p in brief["points"])
     assert any("中1-0" in p for p in brief["points"])
     assert len(brief["points"]) >= 4
@@ -175,6 +176,7 @@ def test_ingest_detects_new_ids() -> None:
             launch_blob = json.loads(ip.LAUNCH_PATH.read_text())
             assert launch_blob["launch"] is True
             assert out["games"][0]["hero"] == "Keeper of the Light"
+            assert out["games"][0]["heroZh"] == "光法"
             brief = json.loads((tmp / "web" / "data" / "player-briefing.json").read_text())
             assert brief["points"]
             assert brief["lede"]
