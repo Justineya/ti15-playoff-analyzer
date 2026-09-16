@@ -98,7 +98,7 @@
     const cmp = [
       ["对线", mean(wins, "laneEfficiency"), mean(losses, "laneEfficiency")],
       ["GPM", mean(wins, "gpmBr"), mean(losses, "gpmBr")],
-      ["推塔", mean(wins, "towerBr"), mean(losses, "towerBr")],
+      ["团战", mean(wins, "teamfight"), mean(losses, "teamfight")],
     ]
       .filter(([, a, b]) => a != null || b != null)
       .map(([lab, a, b]) => `<div class="cmp-row">
@@ -150,7 +150,7 @@
             </div>
             <div class="mc-bars">
               <label>金</label>${bar(g.gpmBr)}
-              <label>塔</label>${bar(g.towerBr, g.win ? "" : "loss")}
+              <label>团</label>${bar(g.teamfight, g.win ? "" : "loss")}
               <label>伤</label>${bar(g.damageBr, g.win ? "" : "loss")}
             </div>
           </div>
