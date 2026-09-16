@@ -1,18 +1,18 @@
 {
-  "asOf": "2026-09-16 09:43 CST",
+  "asOf": "2026-09-16 10:16 CST",
   "source": "cursor",
   "headline": "14-11 光法中4-1 三号1-4",
-  "lede": "周四后12把6-6。按本职看：光法中真的，三号漏在团。",
+  "lede": "周四后12把6-6。光法中能开图；三号几把钟不在这边。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "scopeLabel": "这几天分析",
   "points": [
     "周四后12把6-6。窗口14-11：光法中4-1；三号狼人赢，拉比克/破晓/黑贤/军团负。",
-    "黑贤壳108涌92真空16墙8跳22。10分团队-3.9千全队塔0。本职在，没人拆。",
-    "拉比克偷10次（毒狗/孽主/火猫/冰龙/小鱼人），团86%助攻5%分位。不是拆塔的。",
-    "光法本职照亮/查克拉/大骨灰。赢场经济94%+；70分伤害100%仍负，塔是剑圣的。",
-    "狼人嚎36变身8统御18次，塔1.3万——这英雄才看塔。破晓锤32团25%。军团7/13。",
-    "结论：锁光法中。三号看真空墙和偷，别用塔伤骂。蚂蚁一号对线94%伤害8%扔。"
+    "黑贤幽鬼线。对线赢了，5分图已-2千。团能赢，钟在小骷髅，7分拆中一。",
+    "拉比克占三号，对面孽主占线。15分-7千三路一塔。偷10次补不了没有3。",
+    "光法赢场是10分推掉中塔开图。70分那把31分丢中路兵营，买活打穿。",
+    "狼人24分被拆中路兵营还-9千。统御带着火女流浪把图抢回来才翻。",
+    "破晓9分三路一塔没打。蚂蚁10分+3.7千，25分倒了，一号没打出威胁。"
   ],
   "sessionMatchIds": [
     "8998791276",
@@ -41,7 +41,7 @@
       "heroFile": "keeper_of_the_light",
       "role": "pos2",
       "kind": "win",
-      "note": "照亮大骨灰"
+      "note": "10分开中塔"
     },
     {
       "matchId": 8998656513,
@@ -50,7 +50,7 @@
       "heroFile": "lycan",
       "role": "pos3",
       "kind": "win",
-      "note": "统御拆家"
+      "note": "兵营后翻盘"
     },
     {
       "matchId": 8998731784,
@@ -58,8 +58,8 @@
       "heroEn": "Rubick",
       "heroFile": "rubick",
       "role": "pos3",
-      "kind": "other_loss",
-      "note": "偷10次团86%"
+      "kind": "wrong_role",
+      "note": "三号没人占"
     },
     {
       "matchId": 8993793823,
@@ -68,7 +68,7 @@
       "heroFile": "dark_seer",
       "role": "pos3",
       "kind": "other_loss",
-      "note": "本职在没拆"
+      "note": "团赢图输"
     },
     {
       "matchId": 8994436718,
@@ -77,7 +77,7 @@
       "heroFile": "dawnbreaker",
       "role": "pos3",
       "kind": "farm_collapse",
-      "note": "20分团25%"
+      "note": "9分三路塔"
     },
     {
       "matchId": 8993648177,
@@ -86,17 +86,17 @@
       "heroFile": "keeper_of_the_light",
       "role": "pos2",
       "kind": "other_loss",
-      "note": "照亮伤满70"
+      "note": "31分丢兵营"
     },
     {
-      "matchId": 8993420525,
-      "hero": "军团",
-      "heroEn": "Legion Commander",
-      "heroFile": "legion_commander",
-      "role": null,
-      "kind": "farm_collapse",
-      "note": "7/13金26%"
+      "matchId": 8993253978,
+      "hero": "蚂蚁",
+      "heroEn": "Weaver",
+      "heroFile": "weaver",
+      "role": "pos1",
+      "kind": "other_loss",
+      "note": "领先后倒了"
     }
   ],
-  "note": "周四晚之后到周一。按本职看，不用塔伤量黑贤/拉比克。中文名对照 data/dota-zh.json。非投注建议。"
+  "note": "周四晚之后到周一。看这把钟在谁那边，不要数技能、不要用塔伤量所有人。中文名对照 data/dota-zh.json。非投注建议。"
 }
