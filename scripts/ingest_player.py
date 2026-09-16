@@ -31,6 +31,95 @@ UA = {
 }
 API = "https://api.opendota.com/api"
 ROLE = {1: "pos1", 2: "pos2", 3: "pos3", 4: "pos4", 5: "pos5"}
+# Win condition includes hitting buildings. Aura / initiator / steal heroes are not here.
+PUSH_NPC = frozenset(
+    {
+        "lycan",
+        "furion",
+        "beastmaster",
+        "broodmother",
+        "lone_druid",
+        "naga_siren",
+        "terrorblade",
+        "clinkz",
+        "death_prophet",
+        "venomancer",
+        "shadow_shaman",
+        "pugna",
+        "leshrac",
+        "razor",
+        "huskar",
+        "dragon_knight",
+        "chaos_knight",
+        "sven",
+        "tiny",
+        "visage",
+        "tinker",
+        "phantom_lancer",
+        "meepo",
+        "weaver",
+        "antimage",
+        "medusa",
+        "drow_ranger",
+        "sniper",
+        "nevermore",
+        "templar_assassin",
+        "obsidian_destroyer",
+        "alchemist",
+        "gyrocopter",
+        "luna",
+        "morphling",
+        "faceless_void",
+        "slark",
+        "ursa",
+        "troll_warlord",
+        "phantom_assassin",
+        "juggernaut",
+        "life_stealer",
+        "skeleton_king",
+        "spectre",
+        "arc_warden",
+        "riki",
+        "monkey_king",
+        "marci",
+        "muerta",
+        "kez",
+        "lina",
+        "viper",
+        "queenofpain",
+        "pangolier",
+    }
+)
+SKIP_ABILITIES = frozenset(
+    {
+        "ability_lamp_use",
+        "ability_capture",
+        "twin_gate_portal_warp",
+        "plus_high_five",
+        "plus_guild_banner",
+    }
+)
+KEY_ITEM_USES = frozenset(
+    {
+        "blink",
+        "helm_of_the_dominator",
+        "helm_of_the_overlord",
+        "shivas_guard",
+        "spirit_vessel",
+        "black_king_bar",
+        "sheepstick",
+        "dagon",
+        "dagon_2",
+        "dagon_3",
+        "dagon_4",
+        "dagon_5",
+        "assault",
+        "radiance",
+        "heart",
+        "octarine_core",
+        "ultimate_scepter",
+    }
+)
 
 
 def load_json(path: Path, default):
@@ -107,6 +196,67 @@ def first_item(purch: list, names: set[str]):
     return None
 
 
+def team_gold_delta(players, is_rad: bool, minute: int):
+    tot = 0
+    saw = False
+    for p in players or []:
+        gt = p.get("gold_t") or []
+        if len(gt) <= minute:
+            continue
+        saw = True
+        rad = int(p.get("player_slot") or 0) < 128
+        tot += gt[minute] if rad == is_rad else -gt[minute]
+    return tot if saw else None
+
+
+def extract_job(match: dict, me: dict, is_rad: bool) -> dict | None:
+    if not match.get("version"):
+        return None
+    players = match.get("players") or []
+    ab = me.get("ability_uses") or {}
+    abilities = {
+        k: v
+        for k, v in sorted(ab.items(), key=lambda kv: -int(kv[1] or 0))
+        if k not in SKIP_ABILITIES and v
+    }
+    abilities = dict(list(abilities.items())[:8])
+    items = {
+        k: v for k, v in (me.get("item_uses") or {}).items() if k in KEY_ITEM_USES and v
+    }
+    team_td = 0
+    enemy_td = 0
+    for p in players:
+        rad = int(p.get("player_slot") or 0) < 128
+        td = int(p.get("tower_damage") or 0)
+        if rad == is_rad:
+            team_td += td
+        else:
+            enemy_td += td
+    stolen = None
+    if int(me.get("hero_id") or 0) == 86:
+        stolen = (me.get("ability_targets") or {}).get("rubick_spell_steal") or None
+    stuns = me.get("stuns")
+    return {
+        "stuns": round(float(stuns), 1) if stuns is not None else None,
+        "campsStacked": me.get("camps_stacked"),
+        "ancientKills": me.get("ancient_kills"),
+        "abilityUses": abilities or None,
+        "itemUses": items or None,
+        "stolen": stolen,
+        "teamGold10": team_gold_delta(players, is_rad, 10),
+        "teamGold15": team_gold_delta(players, is_rad, 15),
+        "teamGold20": team_gold_delta(players, is_rad, 20),
+        "teamTower": team_td,
+        "enemyTower": enemy_td,
+    }
+
+
+def job_is_towers(game: dict) -> bool:
+    if game.get("role") == "pos1":
+        return True
+    return str(game.get("heroFile") or "") in PUSH_NPC
+
+
 def extract_player(match: dict, account_id: int, names: dict[int, str], files: dict[int, str] | None = None) -> dict | None:
     me = next((p for p in (match.get("players") or []) if p.get("account_id") == account_id), None)
     if not me:
@@ -156,6 +306,7 @@ def extract_player(match: dict, account_id: int, names: dict[int, str], files: d
         "boots": first_item(purch, {"boots", "power_treads", "phase_boots", "arcane_boots", "tranquil_boots", "travel_boots"}),
         "bkb": first_item(purch, {"black_king_bar"}),
         "opendota": f"https://www.opendota.com/matches/{match.get('match_id')}",
+        "job": extract_job(match, me, is_rad),
     }
 
 
@@ -234,14 +385,27 @@ def classify_game(game: dict, divine: dict | None) -> str:
     role = game.get("role")
     gpm_br = game.get("gpmBr")
     tower_br = game.get("towerBr")
+    tf = game.get("teamfight")
+    dmg_br = game.get("damageBr")
     if game.get("win"):
         return "win"
     if wr is not None and wr <= 0.47:
         return "meta_weak"
     if role == "pos1" and gpm_br is not None and gpm_br < 0.2:
         return "wrong_role"
-    if gpm_br is not None and gpm_br >= 0.8 and tower_br is not None and tower_br < 0.5:
-        return "did_not_close"
+    if gpm_br is not None and gpm_br >= 0.8:
+        if job_is_towers(game) and tower_br is not None and tower_br < 0.5:
+            return "did_not_close"
+        if not job_is_towers(game) and tf is not None and tf < 0.45:
+            return "did_not_close"
+        if (
+            not job_is_towers(game)
+            and dmg_br is not None
+            and dmg_br < 0.35
+            and tf is not None
+            and tf < 0.55
+        ):
+            return "did_not_close"
     if gpm_br is not None and gpm_br < 0.4:
         return "farm_collapse"
     return "other_loss"
@@ -308,14 +472,14 @@ def stub_points(games: list[dict], summary: dict, new_ids: list) -> list[str]:
         points.append("，".join(role_bits) + "。")
     wins = [g for g in games if g.get("win")]
     losses = [g for g in games if not g.get("win")]
-    wg, wt = avg_br(wins, "gpmBr"), avg_br(wins, "towerBr")
-    lg, lt = avg_br(losses, "gpmBr"), avg_br(losses, "towerBr")
+    wg, wt = avg_br(wins, "gpmBr"), avg_br(wins, "teamfight")
+    lg, lt = avg_br(losses, "gpmBr"), avg_br(losses, "teamfight")
     if wg is not None and lg is not None:
         points.append(
-            f"胜场 GPM {wg:.0%}、推塔 {(wt or 0):.0%}；负场 {lg:.0%} / {(lt or 0):.0%}。"
+            f"胜场 GPM {wg:.0%}、团战 {(wt or 0):.0%}；负场 {lg:.0%} / {(lt or 0):.0%}。"
         )
     elif wg is not None:
-        points.append(f"胜场 GPM {wg:.0%}、推塔 {(wt or 0):.0%}。")
+        points.append(f"胜场 GPM {wg:.0%}、团战 {(wt or 0):.0%}。")
     return points[:6]
 
 

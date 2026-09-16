@@ -240,7 +240,32 @@
         "wins": 15272,
         "wr": 0.5284
       },
-      "heroZh": "光法"
+      "heroZh": "光法",
+      "job": {
+        "stuns": 13.1,
+        "campsStacked": 4,
+        "ancientKills": 15,
+        "abilityUses": {
+          "keeper_of_the_light_illuminate": 215,
+          "keeper_of_the_light_chakra_magic": 139,
+          "keeper_of_the_light_blinding_light": 101,
+          "keeper_of_the_light_radiant_bind": 51,
+          "keeper_of_the_light_spirit_form": 29,
+          "keeper_of_the_light_will_o_wisp": 20,
+          "keeper_of_the_light_illuminate_end": 15
+        },
+        "itemUses": {
+          "spirit_vessel": 32,
+          "black_king_bar": 2,
+          "sheepstick": 5
+        },
+        "stolen": null,
+        "teamGold10": -96,
+        "teamGold15": 161,
+        "teamGold20": 5693,
+        "teamTower": 29160,
+        "enemyTower": 2681
+      }
     },
     {
       "matchId": 8998731784,
@@ -281,7 +306,37 @@
         "wins": 54901,
         "wr": 0.5001
       },
-      "heroZh": "拉比克"
+      "heroZh": "拉比克",
+      "job": {
+        "stuns": 8.8,
+        "campsStacked": 1,
+        "ancientKills": 10,
+        "abilityUses": {
+          "rubick_fade_bolt": 52,
+          "venomancer_plague_ward": 13,
+          "abyssal_underlord_firestorm": 12,
+          "rubick_telekinesis_land": 11,
+          "rubick_spell_steal": 10,
+          "rubick_telekinesis": 8,
+          "ember_spirit_flame_guard": 7,
+          "winter_wyvern_splinter_blast": 7
+        },
+        "itemUses": {
+          "dagon": 6
+        },
+        "stolen": {
+          "npc_dota_hero_winter_wyvern": 1,
+          "npc_dota_hero_venomancer": 1,
+          "npc_dota_hero_abyssal_underlord": 3,
+          "npc_dota_hero_ember_spirit": 3,
+          "npc_dota_hero_slark": 2
+        },
+        "teamGold10": -1707,
+        "teamGold15": -7657,
+        "teamGold20": -14031,
+        "teamTower": 295,
+        "enemyTower": 19263
+      }
     },
     {
       "matchId": 8998656513,
@@ -322,7 +377,29 @@
         "wins": 3049,
         "wr": 0.517
       },
-      "heroZh": "狼人"
+      "heroZh": "狼人",
+      "job": {
+        "stuns": 0.6,
+        "campsStacked": 1,
+        "ancientKills": 19,
+        "abilityUses": {
+          "lycan_summon_wolves": 53,
+          "lycan_howl": 36,
+          "lycan_shapeshift": 8,
+          "lycan_wolf_bite": 3
+        },
+        "itemUses": {
+          "black_king_bar": 1,
+          "helm_of_the_dominator": 5,
+          "helm_of_the_overlord": 18
+        },
+        "stolen": null,
+        "teamGold10": -2119,
+        "teamGold15": -1573,
+        "teamGold20": -4221,
+        "teamTower": 36354,
+        "enemyTower": 14899
+      }
     },
     {
       "matchId": 8994454991,
@@ -363,7 +440,30 @@
         "wins": 15272,
         "wr": 0.5284
       },
-      "heroZh": "光法"
+      "heroZh": "光法",
+      "job": {
+        "stuns": 0.0,
+        "campsStacked": 4,
+        "ancientKills": 6,
+        "abilityUses": {
+          "keeper_of_the_light_illuminate": 147,
+          "keeper_of_the_light_chakra_magic": 103,
+          "keeper_of_the_light_blinding_light": 59,
+          "keeper_of_the_light_radiant_bind": 35,
+          "keeper_of_the_light_spirit_form": 20,
+          "keeper_of_the_light_illuminate_end": 12,
+          "keeper_of_the_light_will_o_wisp": 6
+        },
+        "itemUses": {
+          "spirit_vessel": 26
+        },
+        "stolen": null,
+        "teamGold10": 2644,
+        "teamGold15": 5508,
+        "teamGold20": 9224,
+        "teamTower": 25738,
+        "enemyTower": 0
+      }
     },
     {
       "matchId": 8994436718,
@@ -404,7 +504,25 @@
         "wins": 25780,
         "wr": 0.518
       },
-      "heroZh": "破晓"
+      "heroZh": "破晓",
+      "job": {
+        "stuns": 4.3,
+        "campsStacked": 3,
+        "ancientKills": 0,
+        "abilityUses": {
+          "dawnbreaker_celestial_hammer": 32,
+          "dawnbreaker_converge": 21,
+          "dawnbreaker_fire_wreath": 19,
+          "dawnbreaker_solar_guardian": 1
+        },
+        "itemUses": null,
+        "stolen": null,
+        "teamGold10": -4967,
+        "teamGold15": -11662,
+        "teamGold20": -25351,
+        "teamTower": 0,
+        "enemyTower": 28769
+      }
     },
     {
       "matchId": 8993793823,
@@ -445,7 +563,29 @@
         "wins": 20125,
         "wr": 0.5105
       },
-      "heroZh": "黑贤"
+      "heroZh": "黑贤",
+      "job": {
+        "stuns": 13.5,
+        "campsStacked": 4,
+        "ancientKills": 12,
+        "abilityUses": {
+          "dark_seer_ion_shell": 108,
+          "dark_seer_surge": 92,
+          "dark_seer_vacuum": 16,
+          "dark_seer_wall_of_replica": 8
+        },
+        "itemUses": {
+          "shivas_guard": 7,
+          "blink": 22,
+          "helm_of_the_dominator": 17
+        },
+        "stolen": null,
+        "teamGold10": -3901,
+        "teamGold15": -2938,
+        "teamGold20": -3203,
+        "teamTower": 0,
+        "enemyTower": 30157
+      }
     },
     {
       "matchId": 8993648177,
@@ -486,7 +626,32 @@
         "wins": 15272,
         "wr": 0.5284
       },
-      "heroZh": "光法"
+      "heroZh": "光法",
+      "job": {
+        "stuns": 28.2,
+        "campsStacked": 7,
+        "ancientKills": 16,
+        "abilityUses": {
+          "keeper_of_the_light_illuminate": 309,
+          "keeper_of_the_light_chakra_magic": 198,
+          "keeper_of_the_light_blinding_light": 165,
+          "keeper_of_the_light_radiant_bind": 93,
+          "keeper_of_the_light_spirit_form": 50,
+          "keeper_of_the_light_will_o_wisp": 38,
+          "keeper_of_the_light_illuminate_end": 31
+        },
+        "itemUses": {
+          "spirit_vessel": 53,
+          "black_king_bar": 15,
+          "sheepstick": 11
+        },
+        "stolen": null,
+        "teamGold10": -118,
+        "teamGold15": -679,
+        "teamGold20": -4989,
+        "teamTower": 23964,
+        "enemyTower": 31829
+      }
     },
     {
       "matchId": 8993582121,
@@ -527,7 +692,33 @@
         "wins": 15272,
         "wr": 0.5284
       },
-      "heroZh": "光法"
+      "heroZh": "光法",
+      "job": {
+        "stuns": 0.0,
+        "campsStacked": 4,
+        "ancientKills": 0,
+        "abilityUses": {
+          "keeper_of_the_light_illuminate": 138,
+          "keeper_of_the_light_chakra_magic": 97,
+          "keeper_of_the_light_blinding_light": 53,
+          "keeper_of_the_light_radiant_bind": 32,
+          "keeper_of_the_light_spirit_form": 17,
+          "keeper_of_the_light_illuminate_end": 11
+        },
+        "itemUses": {
+          "spirit_vessel": 17,
+          "dagon": 3,
+          "dagon_2": 3,
+          "dagon_3": 1,
+          "dagon_5": 8
+        },
+        "stolen": null,
+        "teamGold10": 2650,
+        "teamGold15": 5542,
+        "teamGold20": 8331,
+        "teamTower": 27136,
+        "enemyTower": 758
+      }
     },
     {
       "matchId": 8993515345,
@@ -568,7 +759,31 @@
         "wins": 15272,
         "wr": 0.5284
       },
-      "heroZh": "光法"
+      "heroZh": "光法",
+      "job": {
+        "stuns": 0.0,
+        "campsStacked": 6,
+        "ancientKills": 9,
+        "abilityUses": {
+          "keeper_of_the_light_illuminate": 139,
+          "keeper_of_the_light_chakra_magic": 91,
+          "keeper_of_the_light_blinding_light": 53,
+          "keeper_of_the_light_radiant_bind": 26,
+          "keeper_of_the_light_spirit_form": 16,
+          "keeper_of_the_light_illuminate_end": 14,
+          "keeper_of_the_light_will_o_wisp": 3
+        },
+        "itemUses": {
+          "spirit_vessel": 19,
+          "black_king_bar": 2
+        },
+        "stolen": null,
+        "teamGold10": 3277,
+        "teamGold15": 5796,
+        "teamGold20": 8314,
+        "teamTower": 30564,
+        "enemyTower": 305
+      }
     },
     {
       "matchId": 8993420525,
@@ -609,7 +824,8 @@
         "wins": 20800,
         "wr": 0.5189
       },
-      "heroZh": "军团"
+      "heroZh": "军团",
+      "job": null
     },
     {
       "matchId": 8993333325,
@@ -650,7 +866,25 @@
         "wins": 31429,
         "wr": 0.4994
       },
-      "heroZh": "NEC"
+      "heroZh": "NEC",
+      "job": {
+        "stuns": 7.7,
+        "campsStacked": 5,
+        "ancientKills": 1,
+        "abilityUses": {
+          "necrolyte_death_pulse": 141,
+          "necrolyte_death_seeker": 20,
+          "necrolyte_ghost_shroud": 14,
+          "necrolyte_reapers_scythe": 7
+        },
+        "itemUses": null,
+        "stolen": null,
+        "teamGold10": 1227,
+        "teamGold15": 3172,
+        "teamGold20": 13701,
+        "teamTower": 28352,
+        "enemyTower": 414
+      }
     },
     {
       "matchId": 8993253978,
@@ -691,7 +925,24 @@
         "wins": 7539,
         "wr": 0.4729
       },
-      "heroZh": "蚂蚁"
+      "heroZh": "蚂蚁",
+      "job": {
+        "stuns": 0.0,
+        "campsStacked": 0,
+        "ancientKills": 20,
+        "abilityUses": {
+          "weaver_shukuchi": 146,
+          "weaver_the_swarm": 10,
+          "weaver_time_lapse": 1
+        },
+        "itemUses": null,
+        "stolen": null,
+        "teamGold10": 3710,
+        "teamGold15": 1392,
+        "teamGold20": 1271,
+        "teamTower": 4414,
+        "enemyTower": 25452
+      }
     },
     {
       "matchId": 8991927117,

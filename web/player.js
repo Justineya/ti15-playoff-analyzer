@@ -180,8 +180,8 @@
   }
 
   Promise.all([
-    fetch("./data/player.json?v=s15").then((r) => (r.ok ? r.json() : null)),
-    fetch("./data/player-briefing.json?v=s15").then((r) => (r.ok ? r.json() : {})),
+    fetch("./data/player.json?v=s16").then((r) => (r.ok ? r.json() : null)),
+    fetch("./data/player-briefing.json?v=s16").then((r) => (r.ok ? r.json() : {})),
   ])
     .then(([player, brief]) => {
       if (!player) {

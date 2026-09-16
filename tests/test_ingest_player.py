@@ -66,13 +66,44 @@ def test_extract_mid_kotl() -> None:
     assert row["gpmBr"] == 0.83
     assert row["lh10"] == 59
     assert row["boots"] == 43
+    assert row["job"] is not None
+    assert row["job"]["teamTower"] == 3464
 
 
 def test_classify_meta_weak_and_did_not_close() -> None:
     weak = ip.classify_game({"win": False, "role": "pos3", "gpmBr": 0.94, "towerBr": 0.82}, {"wr": 0.449})
     assert weak == "meta_weak"
-    close = ip.classify_game({"win": False, "role": "pos2", "gpmBr": 0.92, "towerBr": 0.36}, {"wr": 0.50})
+    close = ip.classify_game(
+        {"win": False, "role": "pos3", "heroFile": "lycan", "gpmBr": 0.92, "towerBr": 0.36},
+        {"wr": 0.50},
+    )
     assert close == "did_not_close"
+    ds = ip.classify_game(
+        {
+            "win": False,
+            "role": "pos3",
+            "heroFile": "dark_seer",
+            "gpmBr": 0.92,
+            "towerBr": 0.12,
+            "teamfight": 0.67,
+            "damageBr": 0.82,
+        },
+        {"wr": 0.51},
+    )
+    assert ds == "other_loss"
+    steal = ip.classify_game(
+        {
+            "win": False,
+            "role": "pos3",
+            "heroFile": "rubick",
+            "gpmBr": 0.88,
+            "towerBr": 0.10,
+            "teamfight": 0.30,
+            "damageBr": 0.20,
+        },
+        {"wr": 0.50},
+    )
+    assert steal == "did_not_close"
     role = ip.classify_game({"win": False, "role": "pos1", "gpmBr": 0.03, "towerBr": 0.15}, {"wr": 0.508})
     assert role == "wrong_role"
 

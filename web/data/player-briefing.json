@@ -1,18 +1,18 @@
 {
-  "asOf": "2026-09-15 17:50 CST",
+  "asOf": "2026-09-16 09:43 CST",
   "source": "cursor",
   "headline": "14-11 光法中4-1 三号1-4",
-  "lede": "周四之后12把6-6。光法中真的；三号在漏。",
+  "lede": "周四后12把6-6。按本职看：光法中真的，三号漏在团。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "scopeLabel": "这几天分析",
   "points": [
-    "周四后12把6-6。窗口14-11：光法中4-1，三号狼人赢、拉比克/破晓/黑贤/军团负。",
-    "光法中骨灰→飞鞋→玲珑心。赢场经济94%+、塔98%；70分那把伤害100%仍负。",
-    "黑贤对线88%，支配8、跳刀18、冰甲25、神杖34；塔伤0。赢线没推。",
-    "破晓20分0/4/1，10分团队-5千。军团7/13经济26%。",
-    "狼人三号统御14、强袭26、神杖32，塔82%翻盘。拉比克三号达贡神杖，塔0。",
-    "结论：这几天靠光法中。三号别锁拉比克当核；黑贤赢线要拆。蚂蚁一号别再锁。"
+    "周四后12把6-6。窗口14-11：光法中4-1；三号狼人赢，拉比克/破晓/黑贤/军团负。",
+    "黑贤壳108涌92真空16墙8跳22。10分团队-3.9千全队塔0。本职在，没人拆。",
+    "拉比克偷10次（毒狗/孽主/火猫/冰龙/小鱼人），团86%助攻5%分位。不是拆塔的。",
+    "光法本职照亮/查克拉/大骨灰。赢场经济94%+；70分伤害100%仍负，塔是剑圣的。",
+    "狼人嚎36变身8统御18次，塔1.3万——这英雄才看塔。破晓锤32团25%。军团7/13。",
+    "结论：锁光法中。三号看真空墙和偷，别用塔伤骂。蚂蚁一号对线94%伤害8%扔。"
   ],
   "sessionMatchIds": [
     "8998791276",
@@ -41,7 +41,7 @@
       "heroFile": "keeper_of_the_light",
       "role": "pos2",
       "kind": "win",
-      "note": "中98%"
+      "note": "照亮大骨灰"
     },
     {
       "matchId": 8998656513,
@@ -50,16 +50,16 @@
       "heroFile": "lycan",
       "role": "pos3",
       "kind": "win",
-      "note": "统御翻盘"
+      "note": "统御拆家"
     },
     {
-      "matchId": 8993515345,
-      "hero": "光法",
-      "heroEn": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "win",
-      "note": "11/1"
+      "matchId": 8998731784,
+      "hero": "拉比克",
+      "heroEn": "Rubick",
+      "heroFile": "rubick",
+      "role": "pos3",
+      "kind": "other_loss",
+      "note": "偷10次团86%"
     },
     {
       "matchId": 8993793823,
@@ -68,7 +68,7 @@
       "heroFile": "dark_seer",
       "role": "pos3",
       "kind": "other_loss",
-      "note": "赢线塔0"
+      "note": "本职在没拆"
     },
     {
       "matchId": 8994436718,
@@ -77,16 +77,7 @@
       "heroFile": "dawnbreaker",
       "role": "pos3",
       "kind": "farm_collapse",
-      "note": "20分崩"
-    },
-    {
-      "matchId": 8998731784,
-      "hero": "拉比克",
-      "heroEn": "Rubick",
-      "heroFile": "rubick",
-      "role": "pos3",
-      "kind": "farm_collapse",
-      "note": "塔0"
+      "note": "20分团25%"
     },
     {
       "matchId": 8993648177,
@@ -95,7 +86,7 @@
       "heroFile": "keeper_of_the_light",
       "role": "pos2",
       "kind": "other_loss",
-      "note": "70分"
+      "note": "照亮伤满70"
     },
     {
       "matchId": 8993420525,
@@ -104,8 +95,8 @@
       "heroFile": "legion_commander",
       "role": null,
       "kind": "farm_collapse",
-      "note": "7/13"
+      "note": "7/13金26%"
     }
   ],
-  "note": "周四晚之后到周一。中文名对照 data/dota-zh.json。非投注建议。"
+  "note": "周四晚之后到周一。按本职看，不用塔伤量黑贤/拉比克。中文名对照 data/dota-zh.json。非投注建议。"
 }
