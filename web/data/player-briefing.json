@@ -1,52 +1,49 @@
 {
-  "asOf": "2026-09-22 04:19 CST",
+  "asOf": "2026-09-24 03:34 CST",
   "source": "stub",
-  "headline": "+2 13-12 中5-1 3号7-8",
-  "lede": "新2把全单排 1-1。",
+  "headline": "+1 14-11 中5-2 3号7-7",
+  "lede": "新1把全单排 1-0。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新2把全单排 1-1。",
-    "负：Keeper of the Light负。",
+    "新1把全单排 1-0。",
     "胜：Keeper of the Light。",
-    "窗口 13-12。",
-    "中5-1，3号7-8。",
-    "胜场 GPM 83%、推塔 76%；负场 46% / 37%。"
+    "窗口 14-11。",
+    "中5-2，3号7-7。",
+    "胜场 GPM 81%、推塔 77%；负场 45% / 36%。"
   ],
   "sessionMatchIds": [
-    "9009661701",
-    "9009601427"
+    "9012559573"
   ],
   "newMatchIds": [
-    "9009661701",
-    "9009601427"
+    "9012559573"
   ],
   "focus": [
+    {
+      "matchId": 9012559573,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 29583,
+        "wins": 15240,
+        "wr": 0.5152
+      },
+      "note": "胜"
+    },
     {
       "matchId": 9009661701,
       "hero": "Keeper of the Light",
       "heroFile": "keeper_of_the_light",
-      "role": null,
+      "role": "pos2",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 28854,
-        "wins": 14942,
-        "wr": 0.5178
+        "picks": 29583,
+        "wins": 15240,
+        "wr": 0.5152
       },
       "note": "负"
-    },
-    {
-      "matchId": 9009601427,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "win",
-      "divineWr": {
-        "picks": 28854,
-        "wins": 14942,
-        "wr": 0.5178
-      },
-      "note": "胜"
     },
     {
       "matchId": 8998731784,
@@ -55,9 +52,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 118245,
-        "wins": 59556,
-        "wr": 0.5037
+        "picks": 123509,
+        "wins": 62040,
+        "wr": 0.5023
       },
       "note": "负"
     },
@@ -68,9 +65,9 @@
       "role": "pos3",
       "kind": "farm_collapse",
       "divineWr": {
-        "picks": 56775,
-        "wins": 29629,
-        "wr": 0.5219
+        "picks": 60189,
+        "wins": 31446,
+        "wr": 0.5225
       },
       "note": "金崩"
     },
@@ -81,22 +78,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 43247,
-        "wins": 22169,
-        "wr": 0.5126
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 8993648177,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 28854,
-        "wins": 14942,
-        "wr": 0.5178
+        "picks": 44902,
+        "wins": 22883,
+        "wr": 0.5096
       },
       "note": "负"
     }
