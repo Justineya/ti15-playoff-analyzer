@@ -1,17 +1,17 @@
 {
   "asOf": "2026-09-29 05:42 CST",
-  "source": "stub",
-  "headline": "+5 13-12 中6-2 3号3-6",
-  "lede": "新5把全单排 3-2。",
+  "source": "cursor",
+  "headline": "13-12 主三3-6，新5把3-2",
+  "lede": "新5把全单排3-2，光法0助攻没收，三号窗口仍是3-6。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新5把全单排 3-2。",
-    "负：Keeper of the Light负、Dark Seer负。",
-    "胜：Keeper of the Light、Keeper of the Light、Dark Seer。",
-    "窗口 13-12。",
-    "中6-2，3号3-6。",
-    "胜场 GPM 82%、推塔 84%；负场 48% / 32%。"
+    "新5把全单排3-2：光法2-1、黑洞1-1，两把负的塔分位35%和11%。",
+    "窗口13-12：三号3-6、中单6-2、一号1-1，这5把位置都还没解析。",
+    "光法负9/5/0、助攻0、塔伤101；黑洞负6/4/8、补刀90%、经验21%、塔伤0。",
+    "光法两胜金74%、76%，塔88%、87%；黑洞胜10/4/14，塔伤6208、塔分位98%。",
+    "近负：光法56分金94%仍负、70分12死；拉比克2/5/4塔0；破晓0/4/1金2%崩。",
+    "7k近8天大树三45%、蚁群一号43.8%坑；光法中53%、黑洞三51.7%，两把金18%崩。"
   ],
   "sessionMatchIds": [
     "9020431984",
@@ -39,7 +39,7 @@
         "wins": 12951,
         "wr": 0.5099
       },
-      "note": "胜"
+      "note": "10/7/17"
     },
     {
       "matchId": 9020376436,
@@ -52,7 +52,7 @@
         "wins": 12951,
         "wr": 0.5099
       },
-      "note": "负"
+      "note": "0助攻"
     },
     {
       "matchId": 9020177686,
@@ -65,7 +65,7 @@
         "wins": 12951,
         "wr": 0.5099
       },
-      "note": "胜"
+      "note": "8/0/10"
     },
     {
       "matchId": 9020132275,
@@ -78,7 +78,7 @@
         "wins": 20982,
         "wr": 0.5118
       },
-      "note": "负"
+      "note": "塔伤0"
     },
     {
       "matchId": 9020096639,
@@ -91,7 +91,7 @@
         "wins": 20982,
         "wr": 0.5118
       },
-      "note": "胜"
+      "note": "塔6208"
     },
     {
       "matchId": 9009661701,
@@ -104,7 +104,46 @@
         "wins": 12951,
         "wr": 0.5099
       },
-      "note": "负"
+      "note": "56分仍负"
+    },
+    {
+      "matchId": 8993648177,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 25398,
+        "wins": 12951,
+        "wr": 0.5099
+      },
+      "note": "70分12死"
+    },
+    {
+      "matchId": 8994436718,
+      "hero": "Dawnbreaker",
+      "heroFile": "dawnbreaker",
+      "role": "pos3",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 57419,
+        "wins": 29863,
+        "wr": 0.5201
+      },
+      "note": "金崩"
+    },
+    {
+      "matchId": 8991794265,
+      "hero": "Underlord",
+      "heroFile": "abyssal_underlord",
+      "role": "pos3",
+      "kind": "meta_weak",
+      "divineWr": {
+        "picks": 32165,
+        "wins": 14807,
+        "wr": 0.4603
+      },
+      "note": "45%坑"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
