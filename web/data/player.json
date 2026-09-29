@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-29 13:31 CST",
+  "asOf": "2026-09-30 04:33 CST",
   "accountId": 203557151,
   "name": "QQT",
   "personaname": "Narcissus",
@@ -22,16 +22,16 @@
         "wins": 1
       },
       "pos2": {
-        "games": 8,
-        "wins": 6
+        "games": 10,
+        "wins": 7
       },
       "pos3": {
-        "games": 9,
-        "wins": 3
+        "games": 11,
+        "wins": 4
       },
       "unknown": {
-        "games": 6,
-        "wins": 3
+        "games": 2,
+        "wins": 1
       }
     },
     "party": {
@@ -46,13 +46,13 @@
         "games": 11,
         "wins": 8,
         "roles": {
-          "unknown": 3,
-          "pos2": 8
+          "pos2": 10,
+          "unknown": 1
         },
         "divine": {
-          "picks": 22316,
-          "wins": 11385,
-          "wr": 0.5102
+          "picks": 24710,
+          "wins": 12620,
+          "wr": 0.5107
         }
       },
       {
@@ -60,13 +60,12 @@
         "games": 7,
         "wins": 3,
         "roles": {
-          "unknown": 2,
-          "pos3": 5
+          "pos3": 7
         },
         "divine": {
-          "picks": 36409,
-          "wins": 18669,
-          "wr": 0.5128
+          "picks": 40420,
+          "wins": 20689,
+          "wr": 0.5119
         }
       },
       {
@@ -77,9 +76,9 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 104981,
-          "wins": 52496,
-          "wr": 0.5001
+          "picks": 116068,
+          "wins": 58037,
+          "wr": 0.5
         }
       },
       {
@@ -90,9 +89,9 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 6397,
-          "wins": 3279,
-          "wr": 0.5126
+          "picks": 7132,
+          "wins": 3643,
+          "wr": 0.5108
         }
       },
       {
@@ -103,9 +102,9 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 51585,
-          "wins": 26736,
-          "wr": 0.5183
+          "picks": 56945,
+          "wins": 29511,
+          "wr": 0.5182
         }
       },
       {
@@ -116,9 +115,9 @@
           "unknown": 1
         },
         "divine": {
-          "picks": 44329,
-          "wins": 23155,
-          "wr": 0.5223
+          "picks": 48929,
+          "wins": 25586,
+          "wr": 0.5229
         }
       },
       {
@@ -129,9 +128,9 @@
           "pos1": 1
         },
         "divine": {
-          "picks": 55642,
-          "wins": 27510,
-          "wr": 0.4944
+          "picks": 61581,
+          "wins": 30492,
+          "wr": 0.4952
         }
       },
       {
@@ -142,9 +141,9 @@
           "pos1": 1
         },
         "divine": {
-          "picks": 16748,
-          "wins": 7890,
-          "wr": 0.4711
+          "picks": 18482,
+          "wins": 8687,
+          "wr": 0.47
         }
       },
       {
@@ -155,22 +154,22 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 28474,
-          "wins": 13129,
-          "wr": 0.4611
+          "picks": 31184,
+          "wins": 14405,
+          "wr": 0.4619
         }
       }
     ],
     "winAvg": {
-      "laneEfficiency": 0.925,
-      "gpmBr": 0.88,
-      "towerBr": 0.812,
+      "laneEfficiency": 0.923,
+      "gpmBr": 0.789,
+      "towerBr": 0.839,
       "deaths": 3.308
     },
     "lossAvg": {
-      "laneEfficiency": 0.805,
-      "gpmBr": 0.502,
-      "towerBr": 0.301,
+      "laneEfficiency": 0.822,
+      "gpmBr": 0.466,
+      "towerBr": 0.328,
       "deaths": 7.0
     }
   },
@@ -184,8 +183,8 @@
       "hero": "Keeper of the Light",
       "heroId": 90,
       "heroFile": "keeper_of_the_light",
-      "role": null,
-      "laneRole": null,
+      "role": "pos2",
+      "laneRole": 2,
       "partySize": 1,
       "kills": 10,
       "deaths": 7,
@@ -193,26 +192,26 @@
       "gpm": 656,
       "xpm": 811,
       "lastHits": 265,
-      "laneEfficiency": null,
+      "laneEfficiency": 0.7886014551333872,
       "towerDamage": 2014,
       "heroDamage": 36564,
-      "teamfight": null,
-      "lh10": null,
-      "gold10": null,
-      "parsed": false,
-      "gpmBr": 0.8840579710144928,
-      "xpmBr": 0.7971014492753623,
-      "deathsBr": 0.2753623188405797,
-      "lhBr": 0.782608695652174,
-      "damageBr": 0.9420289855072463,
-      "towerBr": 0.8695652173913043,
-      "boots": null,
-      "bkb": null,
+      "teamfight": 0.6,
+      "lh10": 65,
+      "gold10": 3902,
+      "parsed": true,
+      "gpmBr": 0.75,
+      "xpmBr": 0.665,
+      "deathsBr": 0.24,
+      "lhBr": 0.625,
+      "damageBr": 0.935,
+      "towerBr": 0.92,
+      "boots": 8,
+      "bkb": 1427,
       "opendota": "https://www.opendota.com/matches/9020431984",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -224,8 +223,8 @@
       "hero": "Keeper of the Light",
       "heroId": 90,
       "heroFile": "keeper_of_the_light",
-      "role": null,
-      "laneRole": null,
+      "role": "pos2",
+      "laneRole": 2,
       "partySize": 1,
       "kills": 9,
       "deaths": 5,
@@ -233,26 +232,26 @@
       "gpm": 652,
       "xpm": 705,
       "lastHits": 241,
-      "laneEfficiency": null,
+      "laneEfficiency": 1.0121261115602262,
       "towerDamage": 101,
       "heroDamage": 13517,
-      "teamfight": null,
-      "lh10": null,
-      "gold10": null,
-      "parsed": false,
-      "gpmBr": 0.8695652173913043,
-      "xpmBr": 0.5652173913043478,
-      "deathsBr": 0.3188405797101449,
-      "lhBr": 0.9710144927536232,
-      "damageBr": 0.4782608695652174,
-      "towerBr": 0.2898550724637681,
-      "boots": null,
+      "teamfight": 0.42857143,
+      "lh10": 80,
+      "gold10": 5008,
+      "parsed": true,
+      "gpmBr": 0.745,
+      "xpmBr": 0.465,
+      "deathsBr": 0.26,
+      "lhBr": 0.825,
+      "damageBr": 0.405,
+      "towerBr": 0.355,
+      "boots": 15,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9020376436",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -280,19 +279,19 @@
       "lh10": null,
       "gold10": null,
       "parsed": false,
-      "gpmBr": 0.8840579710144928,
-      "xpmBr": 0.7681159420289855,
-      "deathsBr": 0.9710144927536232,
-      "lhBr": 0.9710144927536232,
-      "damageBr": 0.4927536231884058,
-      "towerBr": 0.8695652173913043,
+      "gpmBr": 0.76,
+      "xpmBr": 0.645,
+      "deathsBr": 0.96,
+      "lhBr": 0.795,
+      "damageBr": 0.415,
+      "towerBr": 0.91,
       "boots": null,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9020177686",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -304,8 +303,8 @@
       "hero": "Dark Seer",
       "heroId": 55,
       "heroFile": "dark_seer",
-      "role": null,
-      "laneRole": null,
+      "role": "pos3",
+      "laneRole": 3,
       "partySize": 1,
       "kills": 6,
       "deaths": 4,
@@ -313,26 +312,26 @@
       "gpm": 567,
       "xpm": 532,
       "lastHits": 305,
-      "laneEfficiency": null,
+      "laneEfficiency": 0.7782942603071948,
       "towerDamage": 0,
       "heroDamage": 17947,
-      "teamfight": null,
-      "lh10": null,
-      "gold10": null,
-      "parsed": false,
-      "gpmBr": 0.49193548387096775,
-      "xpmBr": 0.21774193548387097,
-      "deathsBr": 0.782258064516129,
-      "lhBr": 0.8951612903225806,
-      "damageBr": 0.27419354838709675,
-      "towerBr": 0.08064516129032258,
-      "boots": null,
-      "bkb": null,
+      "teamfight": 0.7,
+      "lh10": 62,
+      "gold10": 3851,
+      "parsed": true,
+      "gpmBr": 0.42452830188679247,
+      "xpmBr": 0.18553459119496854,
+      "deathsBr": 0.7232704402515724,
+      "lhBr": 0.8679245283018868,
+      "damageBr": 0.24528301886792453,
+      "towerBr": 0.11949685534591195,
+      "boots": 576,
+      "bkb": 1743,
       "opendota": "https://www.opendota.com/matches/9020132275",
       "divine": {
-        "picks": 36409,
-        "wins": 18669,
-        "wr": 0.5128
+        "picks": 40420,
+        "wins": 20689,
+        "wr": 0.5119
       }
     },
     {
@@ -344,8 +343,8 @@
       "hero": "Dark Seer",
       "heroId": 55,
       "heroFile": "dark_seer",
-      "role": null,
-      "laneRole": null,
+      "role": "pos3",
+      "laneRole": 3,
       "partySize": 1,
       "kills": 10,
       "deaths": 4,
@@ -353,26 +352,26 @@
       "gpm": 664,
       "xpm": 667,
       "lastHits": 207,
-      "laneEfficiency": null,
+      "laneEfficiency": 1.0379951495553759,
       "towerDamage": 6208,
       "heroDamage": 21269,
-      "teamfight": null,
-      "lh10": null,
-      "gold10": null,
-      "parsed": false,
-      "gpmBr": 0.7903225806451613,
-      "xpmBr": 0.4032258064516129,
-      "deathsBr": 0.6209677419354839,
-      "lhBr": 0.717741935483871,
-      "damageBr": 0.7419354838709677,
-      "towerBr": 0.9838709677419355,
-      "boots": null,
+      "teamfight": 0.7741935,
+      "lh10": 56,
+      "gold10": 5136,
+      "parsed": true,
+      "gpmBr": 0.6949685534591195,
+      "xpmBr": 0.4119496855345912,
+      "deathsBr": 0.5566037735849056,
+      "lhBr": 0.60062893081761,
+      "damageBr": 0.7012578616352201,
+      "towerBr": 0.9685534591194969,
+      "boots": 472,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9020096639",
       "divine": {
-        "picks": 36409,
-        "wins": 18669,
-        "wr": 0.5128
+        "picks": 40420,
+        "wins": 20689,
+        "wr": 0.5119
       }
     },
     {
@@ -400,19 +399,19 @@
       "lh10": 93,
       "gold10": 4648,
       "parsed": true,
-      "gpmBr": 0.8695652173913043,
-      "xpmBr": 0.8985507246376812,
-      "deathsBr": 0.9130434782608696,
-      "lhBr": 0.9855072463768116,
-      "damageBr": 0.8840579710144928,
-      "towerBr": 0.8405797101449275,
+      "gpmBr": 0.745,
+      "xpmBr": 0.805,
+      "deathsBr": 0.92,
+      "lhBr": 0.865,
+      "damageBr": 0.81,
+      "towerBr": 0.89,
       "boots": -1,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9012559573",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -440,19 +439,19 @@
       "lh10": 76,
       "gold10": 4917,
       "parsed": true,
-      "gpmBr": 1,
-      "xpmBr": 0.9855072463768116,
-      "deathsBr": 0.6521739130434783,
-      "lhBr": 1,
-      "damageBr": 0.9855072463768116,
-      "towerBr": 0.927536231884058,
+      "gpmBr": 0.945,
+      "xpmBr": 0.955,
+      "deathsBr": 0.6,
+      "lhBr": 0.92,
+      "damageBr": 1,
+      "towerBr": 0.98,
       "boots": 78,
       "bkb": 1431,
       "opendota": "https://www.opendota.com/matches/9009661701",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -480,19 +479,19 @@
       "lh10": 95,
       "gold10": 4977,
       "parsed": true,
-      "gpmBr": 0.9130434782608695,
-      "xpmBr": 0.8405797101449275,
-      "deathsBr": 0.9130434782608696,
-      "lhBr": 1,
-      "damageBr": 0.7681159420289855,
-      "towerBr": 0.927536231884058,
+      "gpmBr": 0.835,
+      "xpmBr": 0.685,
+      "deathsBr": 0.92,
+      "lhBr": 0.905,
+      "damageBr": 0.68,
+      "towerBr": 0.98,
       "boots": 98,
       "bkb": 1481,
       "opendota": "https://www.opendota.com/matches/9009601427",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -520,19 +519,19 @@
       "lh10": 87,
       "gold10": 4628,
       "parsed": true,
-      "gpmBr": 0.9710144927536232,
-      "xpmBr": 0.8985507246376812,
-      "deathsBr": 0.855072463768116,
-      "lhBr": 1,
-      "damageBr": 0.8985507246376812,
-      "towerBr": 0.9130434782608695,
+      "gpmBr": 0.9,
+      "xpmBr": 0.82,
+      "deathsBr": 0.855,
+      "lhBr": 0.905,
+      "damageBr": 0.9,
+      "towerBr": 0.935,
       "boots": 91,
       "bkb": 2001,
       "opendota": "https://www.opendota.com/matches/8998791276",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -560,19 +559,19 @@
       "lh10": 57,
       "gold10": 3688,
       "parsed": true,
-      "gpmBr": 0.5320088300220751,
-      "xpmBr": 0.2141280353200883,
-      "deathsBr": 0.6512141280353201,
-      "lhBr": 0.9735099337748344,
-      "damageBr": 0.33112582781456956,
-      "towerBr": 0.2052980132450331,
+      "gpmBr": 0.5330444203683641,
+      "xpmBr": 0.21018418201516792,
+      "deathsBr": 0.6977248104008668,
+      "lhBr": 0.952329360780065,
+      "damageBr": 0.38028169014084506,
+      "towerBr": 0.24052004333694474,
       "boots": 107,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8998731784",
       "divine": {
-        "picks": 104981,
-        "wins": 52496,
-        "wr": 0.5001
+        "picks": 116068,
+        "wins": 58037,
+        "wr": 0.5
       }
     },
     {
@@ -600,19 +599,19 @@
       "lh10": 50,
       "gold10": 3956,
       "parsed": true,
-      "gpmBr": 0.72,
-      "xpmBr": 0.52,
-      "deathsBr": 0.6,
-      "lhBr": 0.96,
-      "damageBr": 0.16,
-      "towerBr": 0.64,
+      "gpmBr": 0.6140350877192983,
+      "xpmBr": 0.5263157894736842,
+      "deathsBr": 0.45614035087719296,
+      "lhBr": 0.8421052631578947,
+      "damageBr": 0.21052631578947367,
+      "towerBr": 0.6491228070175439,
       "boots": 2053,
       "bkb": 2201,
       "opendota": "https://www.opendota.com/matches/8998656513",
       "divine": {
-        "picks": 6397,
-        "wins": 3279,
-        "wr": 0.5126
+        "picks": 7132,
+        "wins": 3643,
+        "wr": 0.5108
       }
     },
     {
@@ -640,19 +639,19 @@
       "lh10": 89,
       "gold10": 5021,
       "parsed": true,
-      "gpmBr": 0.8840579710144928,
-      "xpmBr": 0.8260869565217391,
-      "deathsBr": 0.8695652173913043,
-      "lhBr": 1,
-      "damageBr": 0.782608695652174,
-      "towerBr": 0.5507246376811594,
+      "gpmBr": 0.775,
+      "xpmBr": 0.685,
+      "deathsBr": 0.87,
+      "lhBr": 0.905,
+      "damageBr": 0.68,
+      "towerBr": 0.645,
       "boots": 100,
       "bkb": 1873,
       "opendota": "https://www.opendota.com/matches/8994454991",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -680,19 +679,19 @@
       "lh10": 51,
       "gold10": 2807,
       "parsed": true,
-      "gpmBr": 0.03167420814479638,
-      "xpmBr": 0.058823529411764705,
-      "deathsBr": 0.43891402714932126,
-      "lhBr": 0.6923076923076923,
-      "damageBr": 0.004524886877828055,
-      "towerBr": 0.18099547511312217,
+      "gpmBr": 0.029978586723768737,
+      "xpmBr": 0.027837259100642397,
+      "deathsBr": 0.42398286937901497,
+      "lhBr": 0.6573875802997858,
+      "damageBr": 0,
+      "towerBr": 0.17987152034261242,
       "boots": 390,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8994436718",
       "divine": {
-        "picks": 51585,
-        "wins": 26736,
-        "wr": 0.5183
+        "picks": 56945,
+        "wins": 29511,
+        "wr": 0.5182
       }
     },
     {
@@ -720,19 +719,19 @@
       "lh10": 72,
       "gold10": 4336,
       "parsed": true,
-      "gpmBr": 0.6370967741935484,
-      "xpmBr": 0.5806451612903226,
-      "deathsBr": 0.2983870967741935,
-      "lhBr": 0.8306451612903226,
-      "damageBr": 0.8064516129032258,
-      "towerBr": 0.08064516129032258,
+      "gpmBr": 0.5566037735849056,
+      "xpmBr": 0.5314465408805031,
+      "deathsBr": 0.2735849056603774,
+      "lhBr": 0.7452830188679245,
+      "damageBr": 0.7672955974842768,
+      "towerBr": 0.11949685534591195,
       "boots": 533,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8993793823",
       "divine": {
-        "picks": 36409,
-        "wins": 18669,
-        "wr": 0.5128
+        "picks": 40420,
+        "wins": 20689,
+        "wr": 0.5119
       }
     },
     {
@@ -760,19 +759,19 @@
       "lh10": 70,
       "gold10": 4186,
       "parsed": true,
-      "gpmBr": 0.7681159420289855,
-      "xpmBr": 0.8405797101449275,
-      "deathsBr": 0.3623188405797102,
-      "lhBr": 0.8985507246376812,
-      "damageBr": 0.9855072463768116,
-      "towerBr": 0.7681159420289855,
+      "gpmBr": 0.685,
+      "xpmBr": 0.72,
+      "deathsBr": 0.37,
+      "lhBr": 0.72,
+      "damageBr": 0.995,
+      "towerBr": 0.835,
       "boots": 11,
       "bkb": 1085,
       "opendota": "https://www.opendota.com/matches/8993648177",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -800,19 +799,19 @@
       "lh10": 90,
       "gold10": 4446,
       "parsed": true,
-      "gpmBr": 0.9855072463768116,
-      "xpmBr": 0.9130434782608695,
-      "deathsBr": 0.9130434782608696,
-      "lhBr": 1,
-      "damageBr": 0.8695652173913043,
-      "towerBr": 0.927536231884058,
+      "gpmBr": 0.905,
+      "xpmBr": 0.875,
+      "deathsBr": 0.915,
+      "lhBr": 0.91,
+      "damageBr": 0.775,
+      "towerBr": 0.965,
       "boots": 96,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8993582121",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -840,19 +839,19 @@
       "lh10": 93,
       "gold10": 5135,
       "parsed": true,
-      "gpmBr": 0.9420289855072463,
-      "xpmBr": 0.8985507246376812,
-      "deathsBr": 0.8985507246376812,
-      "lhBr": 0.9855072463768116,
-      "damageBr": 0.7101449275362319,
-      "towerBr": 0.927536231884058,
+      "gpmBr": 0.85,
+      "xpmBr": 0.79,
+      "deathsBr": 0.915,
+      "lhBr": 0.87,
+      "damageBr": 0.67,
+      "towerBr": 0.975,
       "boots": 89,
       "bkb": 1375,
       "opendota": "https://www.opendota.com/matches/8993515345",
       "divine": {
-        "picks": 22316,
-        "wins": 11385,
-        "wr": 0.5102
+        "picks": 24710,
+        "wins": 12620,
+        "wr": 0.5107
       }
     },
     {
@@ -880,19 +879,19 @@
       "lh10": null,
       "gold10": null,
       "parsed": false,
-      "gpmBr": 0.30256410256410254,
-      "xpmBr": 0.16923076923076924,
-      "deathsBr": 0.08205128205128209,
-      "lhBr": 0.6666666666666666,
-      "damageBr": 0.39487179487179486,
-      "towerBr": 0.2564102564102564,
+      "gpmBr": 0.25753424657534246,
+      "xpmBr": 0.136986301369863,
+      "deathsBr": 0.06301369863013695,
+      "lhBr": 0.6602739726027397,
+      "damageBr": 0.33972602739726027,
+      "towerBr": 0.2136986301369863,
       "boots": null,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8993420525",
       "divine": {
-        "picks": 44329,
-        "wins": 23155,
-        "wr": 0.5223
+        "picks": 48929,
+        "wins": 25586,
+        "wr": 0.5229
       }
     },
     {
@@ -920,19 +919,19 @@
       "lh10": 67,
       "gold10": 4034,
       "parsed": true,
-      "gpmBr": 0.9250936329588015,
-      "xpmBr": 0.5842696629213483,
-      "deathsBr": 0.6853932584269663,
-      "lhBr": 0.8801498127340824,
-      "damageBr": 0.6891385767790262,
-      "towerBr": 0.7415730337078652,
+      "gpmBr": 0.9243119266055045,
+      "xpmBr": 0.5504587155963303,
+      "deathsBr": 0.676605504587156,
+      "lhBr": 0.9013761467889908,
+      "damageBr": 0.6536697247706422,
+      "towerBr": 0.7293577981651376,
       "boots": 89,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8993333325",
       "divine": {
-        "picks": 55642,
-        "wins": 27510,
-        "wr": 0.4944
+        "picks": 61581,
+        "wins": 30492,
+        "wr": 0.4952
       }
     },
     {
@@ -960,19 +959,19 @@
       "lh10": 56,
       "gold10": 4654,
       "parsed": true,
-      "gpmBr": 0.6881720430107527,
-      "xpmBr": 0.4946236559139785,
-      "deathsBr": 0.8817204301075269,
-      "lhBr": 0.8924731182795699,
-      "damageBr": 0.15053763440860216,
-      "towerBr": 0.40860215053763443,
+      "gpmBr": 0.7055214723926381,
+      "xpmBr": 0.34355828220858897,
+      "deathsBr": 0.8588957055214724,
+      "lhBr": 0.8650306748466258,
+      "damageBr": 0.1411042944785276,
+      "towerBr": 0.3803680981595092,
       "boots": 337,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8993253978",
       "divine": {
-        "picks": 16748,
-        "wins": 7890,
-        "wr": 0.4711
+        "picks": 18482,
+        "wins": 8687,
+        "wr": 0.47
       }
     },
     {
@@ -1000,19 +999,19 @@
       "lh10": 47,
       "gold10": 3904,
       "parsed": true,
-      "gpmBr": 0.1532258064516129,
-      "xpmBr": 0.23387096774193547,
-      "deathsBr": 0.06451612903225812,
-      "lhBr": 0.5887096774193549,
-      "damageBr": 0.49193548387096775,
-      "towerBr": 0.08064516129032258,
+      "gpmBr": 0.13522012578616352,
+      "xpmBr": 0.2610062893081761,
+      "deathsBr": 0.04402515723270439,
+      "lhBr": 0.44654088050314467,
+      "damageBr": 0.46855345911949686,
+      "towerBr": 0.11949685534591195,
       "boots": 584,
       "bkb": 1869,
       "opendota": "https://www.opendota.com/matches/8991927117",
       "divine": {
-        "picks": 36409,
-        "wins": 18669,
-        "wr": 0.5128
+        "picks": 40420,
+        "wins": 20689,
+        "wr": 0.5119
       }
     },
     {
@@ -1040,19 +1039,19 @@
       "lh10": 69,
       "gold10": 3640,
       "parsed": true,
-      "gpmBr": 0.1532258064516129,
-      "xpmBr": 0.12903225806451613,
-      "deathsBr": 0.6209677419354839,
-      "lhBr": 0.6693548387096774,
-      "damageBr": 0.03225806451612903,
-      "towerBr": 0.1774193548387097,
+      "gpmBr": 0.13522012578616352,
+      "xpmBr": 0.1069182389937107,
+      "deathsBr": 0.559748427672956,
+      "lhBr": 0.5062893081761006,
+      "damageBr": 0.040880503144654086,
+      "towerBr": 0.20125786163522014,
       "boots": 534,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8991871310",
       "divine": {
-        "picks": 36409,
-        "wins": 18669,
-        "wr": 0.5128
+        "picks": 40420,
+        "wins": 20689,
+        "wr": 0.5119
       }
     },
     {
@@ -1080,19 +1079,19 @@
       "lh10": 65,
       "gold10": 3738,
       "parsed": true,
-      "gpmBr": 0.4,
-      "xpmBr": 0.31724137931034485,
-      "deathsBr": 0.23448275862068968,
-      "lhBr": 0.8,
-      "damageBr": 0.20689655172413793,
-      "towerBr": 0.15862068965517243,
+      "gpmBr": 0.43575418994413406,
+      "xpmBr": 0.36312849162011174,
+      "deathsBr": 0.3072625698324022,
+      "lhBr": 0.7653631284916201,
+      "damageBr": 0.21787709497206703,
+      "towerBr": 0.18994413407821228,
       "boots": 240,
       "bkb": 1610,
       "opendota": "https://www.opendota.com/matches/8991794265",
       "divine": {
-        "picks": 28474,
-        "wins": 13129,
-        "wr": 0.4611
+        "picks": 31184,
+        "wins": 14405,
+        "wr": 0.4619
       }
     },
     {
@@ -1120,19 +1119,19 @@
       "lh10": 60,
       "gold10": 4248,
       "parsed": true,
-      "gpmBr": 0.782258064516129,
-      "xpmBr": 0.75,
-      "deathsBr": 0.27419354838709675,
-      "lhBr": 0.8306451612903226,
-      "damageBr": 0.8709677419354839,
-      "towerBr": 0.6774193548387096,
+      "gpmBr": 0.6729559748427673,
+      "xpmBr": 0.6918238993710691,
+      "deathsBr": 0.23584905660377353,
+      "lhBr": 0.7547169811320755,
+      "damageBr": 0.8270440251572327,
+      "towerBr": 0.6698113207547169,
       "boots": 536,
       "bkb": 1379,
       "opendota": "https://www.opendota.com/matches/8991708919",
       "divine": {
-        "picks": 36409,
-        "wins": 18669,
-        "wr": 0.5128
+        "picks": 40420,
+        "wins": 20689,
+        "wr": 0.5119
       }
     },
     {
@@ -1160,19 +1159,19 @@
       "lh10": 67,
       "gold10": 4692,
       "parsed": true,
-      "gpmBr": 0.8951612903225806,
-      "xpmBr": 0.6290322580645161,
-      "deathsBr": 0.75,
-      "lhBr": 0.9354838709677419,
-      "damageBr": 0.9758064516129032,
-      "towerBr": 0.6854838709677419,
+      "gpmBr": 0.8364779874213837,
+      "xpmBr": 0.5628930817610063,
+      "deathsBr": 0.7012578616352201,
+      "lhBr": 0.89937106918239,
+      "damageBr": 0.9433962264150944,
+      "towerBr": 0.6761006289308176,
       "boots": 449,
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/8990271136",
       "divine": {
-        "picks": 36409,
-        "wins": 18669,
-        "wr": 0.5128
+        "picks": 40420,
+        "wins": 20689,
+        "wr": 0.5119
       }
     }
   ],
