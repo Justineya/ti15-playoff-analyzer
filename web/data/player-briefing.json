@@ -1,16 +1,17 @@
 {
   "asOf": "2026-10-04 03:06 CST",
-  "source": "stub",
-  "headline": "+5 15-10 中10-5 3号3-4",
-  "lede": "新5把全单排 2-3。",
+  "source": "cursor",
+  "headline": "15-10 新5把2-3，三号还在漏",
+  "lede": "主中10-5、三号3-4，新5把黑贤两胜，潮汐破晓光法负。",
   "narrative": "",
   "positioning": "主中 · 副三",
   "points": [
-    "新5把全单排 2-3。",
-    "负：Tidehunter负、Dawnbreaker负、Keeper of the Light负。",
-    "胜：Dark Seer、Dark Seer。",
-    "窗口 15-10。",
-    "中10-5，3号3-4。"
+    "新5把全单排2-3：黑贤47分14/9/28、37.8分7/6/26胜，潮汐破晓光法负。",
+    "窗口15-10全单排：中单15把10-5，三号7把3-4，未出位置3把2-1。",
+    "潮汐三号41.5分13/7/13，10分钟43刀、塔277没BKB，7k+三号46.1%。",
+    "光法新负36.8分13/8/15对线109%塔32；同日18.9分0/6/0，29.6分塔47没BKB。",
+    "黑贤7把4-3：46.5分塔600没BKB，39.2分9死BKB38分，31.6分塔伤0。",
+    "7k+光法中53.1%、黑贤三51.6%不是坑；破晓34.7分8/9/12未出位，各位置高于47%。"
   ],
   "sessionMatchIds": [
     "9027616609",
@@ -38,7 +39,7 @@
         "wins": 19789,
         "wr": 0.5094
       },
-      "note": "胜"
+      "note": "14/9/28"
     },
     {
       "matchId": 9027472567,
@@ -51,20 +52,20 @@
         "wins": 19789,
         "wr": 0.5094
       },
-      "note": "胜"
+      "note": "7/6/26"
     },
     {
       "matchId": 9027228375,
       "hero": "Tidehunter",
       "heroFile": "tidehunter",
       "role": "pos3",
-      "kind": "other_loss",
+      "kind": "meta_weak",
       "divineWr": {
         "picks": 25097,
         "wins": 12270,
         "wr": 0.4889
       },
-      "note": "负"
+      "note": "46%版本坑"
     },
     {
       "matchId": 9027181315,
@@ -77,7 +78,7 @@
         "wins": 28400,
         "wr": 0.5207
       },
-      "note": "负"
+      "note": "九死未出位"
     },
     {
       "matchId": 9027132772,
@@ -90,10 +91,23 @@
         "wins": 11627,
         "wr": 0.5117
       },
-      "note": "负"
+      "note": "塔伤32"
     },
     {
       "matchId": 9026869314,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 22722,
+        "wins": 11627,
+        "wr": 0.5117
+      },
+      "note": "0/6/0塔0"
+    },
+    {
+      "matchId": 9026823377,
       "hero": "Keeper of the Light",
       "heroFile": "keeper_of_the_light",
       "role": "pos2",
@@ -103,7 +117,33 @@
         "wins": 11627,
         "wr": 0.5117
       },
-      "note": "负"
+      "note": "塔47没BKB"
+    },
+    {
+      "matchId": 9026102031,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 38845,
+        "wins": 19789,
+        "wr": 0.5094
+      },
+      "note": "塔600没BKB"
+    },
+    {
+      "matchId": 9025715868,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 38845,
+        "wins": 19789,
+        "wr": 0.5094
+      },
+      "note": "九死晚BKB"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
