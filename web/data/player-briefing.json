@@ -1,16 +1,17 @@
 {
   "asOf": "2026-10-03 13:04 CST",
-  "source": "stub",
-  "headline": "+4 15-10 中10-3 3号3-6",
-  "lede": "新4把全单排 2-2。",
+  "source": "cursor",
+  "headline": "15-10 新4把2-2，三号还在漏",
+  "lede": "主中10-3、三号3-6，新光法2-2，19分那把0/6/0塔0。",
   "narrative": "",
   "positioning": "主中 · 副三",
   "points": [
-    "新4把全单排 2-2。",
-    "负：Keeper of the Light负、Keeper of the Light负。",
-    "胜：Keeper of the Light、Keeper of the Light。",
-    "窗口 15-10。",
-    "中10-3，3号3-6。"
+    "新4把全单排光法2-2：19分中单0/6/0、GPM288塔0，32分9/2/17、GPM689。",
+    "另两把位置未出：29.6分11/8/13塔47负，46.8分19/6/25塔4676胜。",
+    "窗口15-10全单排：中单13把10-3，三号9把3-6，光法16把12-4。",
+    "黑贤6把2-4：46分塔600没BKB，39分9死、BKB到38分，另两负塔伤0。",
+    "光法另两负：25分9/5/0助攻0塔101，56分16/7/23塔3079、伤害97360仍负。",
+    "7k+光法中52.7%、黑贤三51.5%不是坑，负场均死6.2，拉比克三号46.7%。"
   ],
   "sessionMatchIds": [
     "9026869314",
@@ -30,13 +31,13 @@
       "hero": "Keeper of the Light",
       "heroFile": "keeper_of_the_light",
       "role": "pos2",
-      "kind": "other_loss",
+      "kind": "farm_collapse",
       "divineWr": {
         "picks": 20469,
         "wins": 10379,
         "wr": 0.5071
       },
-      "note": "负"
+      "note": "19分0/6/0"
     },
     {
       "matchId": 9026845410,
@@ -49,7 +50,7 @@
         "wins": 10379,
         "wr": 0.5071
       },
-      "note": "胜"
+      "note": "9/2/17"
     },
     {
       "matchId": 9026823377,
@@ -62,7 +63,7 @@
         "wins": 10379,
         "wr": 0.5071
       },
-      "note": "负"
+      "note": "八死塔47"
     },
     {
       "matchId": 9026788073,
@@ -75,7 +76,7 @@
         "wins": 10379,
         "wr": 0.5071
       },
-      "note": "胜"
+      "note": "塔4676"
     },
     {
       "matchId": 9026102031,
@@ -88,7 +89,7 @@
         "wins": 17899,
         "wr": 0.5083
       },
-      "note": "负"
+      "note": "塔600没BKB"
     },
     {
       "matchId": 9025715868,
@@ -101,7 +102,33 @@
         "wins": 17899,
         "wr": 0.5083
       },
-      "note": "负"
+      "note": "九死晚BKB"
+    },
+    {
+      "matchId": 9020376436,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 20469,
+        "wins": 10379,
+        "wr": 0.5071
+      },
+      "note": "助攻0没塔"
+    },
+    {
+      "matchId": 9020132275,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 35212,
+        "wins": 17899,
+        "wr": 0.5083
+      },
+      "note": "塔伤为0"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
