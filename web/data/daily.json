@@ -1,293 +1,244 @@
 {
-  "asOf": "2026-08-26 11:15 CST",
+  "asOf": "2026-10-02 00:45 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "champion",
-  "headline": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
-  "narrative": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
+  "kind": "next-map",
+  "headline": "BLAST 小组赛 0-2：第2局 Yandex 赢了 BoomBoys，先到10杀 BoomBoys，46.7分钟。种子赛第1局模型看好 Spirit 56.3%，Polymarket 这局 Yandex 0.715。",
+  "narrative": "第1局 Yandex 赢了，人头 21-41（BoomBoys 21，Yandex 41），37.3分钟，快节奏，进攻转线。先到10杀是 Yandex，9分40秒，当时 7-10。中单 CHIRA_JUNIOR 的 Invoker 第1手拿下，这10次击杀参与7次（击杀1+助攻6），中辅驱动。BoomBoys 中单是 Save- 的 Outworld Destroyer，阵容 Dark Willow、Winter Wyvern、Outworld Destroyer、Dawnbreaker、Sven。Yandex 阵容 Invoker、Hoodwink、Dazzle、Nature's Prophet、Viper。\n\n第2局 9024489311 还是 Yandex 赢，人头 25-34（BoomBoys 25，Yandex 34），46.7分钟，快节奏，进攻转线。Invoker 到了 BoomBoys，Save- 拿来打中；Yandex 中单改成 Pangolier。BoomBoys 7分32秒先到10杀（当时 10-4），中单 Invoker 参与6次，中辅驱动，对手当时只有4杀，但这波没有滚成胜势。BoomBoys 阵容 Lone Druid、Windranger、Crystal Maiden、Invoker、Doom；Yandex 是 Necrophos、Witch Doctor、Rubick、Pangolier、Tiny。Bo3 变成 0-2，没有第3局。OpenDota 观战里这张图已结束，没有新的选人房间。\n\n所以下一场是 BLAST SLAM VIII 种子赛第1局，Team Spirit 对 Team Yandex，Bo3，2026-10-04 00:00 CST。这两张图属于联赛 19102，脚本按八强队伍写进样本之后，Yandex 胜率从 57% 到 59%，先到10杀仍是 50%；BoomBoys 胜率从 55% 到 53%。Spirit 对 Yandex 的直接交手还是 2.9 局，变的是队伍胜率和英雄池。重算后第1局模型看好 Spirit 56.3%，门槛 1.78；先到10杀看好 Spirit 58.6%，没有公开盘。Polymarket 这局价 Spirit 0.285、Yandex 0.715（dota2-ts8-ty-2026-10-03）。系列从 0-0 算，模型看好 Spirit 59.7%，门槛 1.68；盘口 Spirit 0.375、Yandex 0.625。这不是投注建议。TI15 总决赛已是 Spirit 2-3。",
   "previousMap": {
-    "game": 5,
-    "matchId": 8960991322,
-    "winner": "Team Spirit",
+    "game": 2,
+    "matchId": 9024489311,
+    "winner": "Team Yandex",
     "score": [
-      31,
+      25,
       34
     ],
-    "f10": "TEAM VISION",
-    "f10Time": 787,
-    "durationMin": 64.4,
-    "pace": "正常",
-    "stance": "来回拉锯",
+    "f10": "BoomBoys",
+    "f10Time": 452,
+    "durationMin": 46.7,
+    "pace": "快",
+    "stance": "进攻转线",
     "picks": {
-      "TEAM VISION": [
+      "BoomBoys": [
+        "Lone Druid",
+        "Windranger",
+        "Crystal Maiden",
         "Invoker",
-        "Rubick",
-        "Axe",
-        "Hoodwink",
-        "Juggernaut"
+        "Doom"
       ],
-      "Team Spirit": [
-        "Bane",
+      "Team Yandex": [
+        "Necrophos",
+        "Witch Doctor",
+        "Rubick",
         "Pangolier",
-        "Mirana",
-        "Lifestealer",
-        "Dark Seer"
+        "Tiny"
       ]
     },
     "mid": {
-      "TEAM VISION": "Invoker",
-      "Team Spirit": "Pangolier"
+      "BoomBoys": "Invoker",
+      "Team Yandex": "Pangolier"
     },
-    "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
+    "blurb": "BoomBoys先到 10 杀（当时 10-4，7分32秒）。这 10 次击杀里，中单 Save-/Invoker 参与 6 次（击杀 1 + 助攻 5），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 4 杀。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 8960577698,
-      "winner": "Team Spirit",
+      "matchId": 9024384432,
+      "winner": "Team Yandex",
       "score": [
-        42,
-        17
+        21,
+        41
       ],
-      "f10": "Team Spirit",
-      "f10Time": 826,
-      "durationMin": 46.2,
-      "pace": "正常",
-      "stance": "滚雪球",
-      "picks": {
-        "Team Spirit": [
-          "Slark",
-          "Dark Willow",
-          "Shadow Fiend",
-          "Disruptor",
-          "Undying"
-        ],
-        "TEAM VISION": [
-          "Ember Spirit",
-          "Mirana",
-          "Io",
-          "Axe",
-          "Hoodwink"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Slark",
-        "TEAM VISION": "Io"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 10-6，13分46秒）。这 10 次击杀里，中单 Larl/Slark 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 5 次。对手当时 6 杀。"
-    },
-    {
-      "game": 2,
-      "matchId": 8960655084,
-      "winner": "TEAM VISION",
-      "score": [
-        46,
-        48
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 610,
-      "durationMin": 64.5,
+      "f10": "Team Yandex",
+      "f10Time": 580,
+      "durationMin": 37.3,
       "pace": "快",
       "stance": "进攻转线",
       "picks": {
-        "TEAM VISION": [
-          "Earth Spirit",
-          "Enchantress",
-          "Rubick",
-          "Underlord",
-          "Lifestealer"
-        ],
-        "Team Spirit": [
-          "Shadow Fiend",
-          "Slardar",
-          "Hoodwink",
-          "Undying",
-          "Axe"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Earth Spirit",
-        "Team Spirit": "Slardar"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 2-10，10分10秒）。这 10 次击杀里，中单 Larl/Slardar 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 2 杀。"
-    },
-    {
-      "game": 3,
-      "matchId": 8960762254,
-      "winner": "Team Spirit",
-      "score": [
-        26,
-        24
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 1537,
-      "durationMin": 45.9,
-      "pace": "慢",
-      "stance": "发育对线",
-      "picks": {
-        "Team Spirit": [
-          "Nature's Prophet",
+        "BoomBoys": [
           "Dark Willow",
-          "Tusk",
-          "Axe",
-          "Terrorblade"
-        ],
-        "TEAM VISION": [
-          "Shadow Fiend",
-          "Enchantress",
-          "Slardar",
-          "Pangolier",
-          "Marci"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Nature's Prophet",
-        "TEAM VISION": "Pangolier"
-      },
-      "blurb": "TEAM VISION先到 10 杀（当时 8-10，25分37秒）。这 10 次击杀里，中单 No[o]ne-/Pangolier 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 7 次。对手当时 8 杀。"
-    },
-    {
-      "game": 4,
-      "matchId": 8960882635,
-      "winner": "TEAM VISION",
-      "score": [
-        31,
-        13
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 1031,
-      "durationMin": 44.3,
-      "pace": "慢",
-      "stance": "来回拉锯",
-      "picks": {
-        "TEAM VISION": [
-          "Keeper of the Light",
-          "Doom",
-          "Lifestealer",
-          "Mirana",
-          "Sand King"
-        ],
-        "Team Spirit": [
           "Winter Wyvern",
-          "Centaur Warrunner",
-          "Clockwerk",
-          "Templar Assassin",
-          "Storm Spirit"
+          "Outworld Destroyer",
+          "Dawnbreaker",
+          "Sven"
+        ],
+        "Team Yandex": [
+          "Invoker",
+          "Hoodwink",
+          "Dazzle",
+          "Nature's Prophet",
+          "Viper"
         ]
       },
       "mid": {
-        "TEAM VISION": "Sand King",
-        "Team Spirit": "Storm Spirit"
+        "BoomBoys": "Outworld Destroyer",
+        "Team Yandex": "Invoker"
       },
-      "blurb": "TEAM VISION先到 10 杀（当时 10-4，17分11秒）。这 10 次击杀里，中单 No[o]ne-/Sand King 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。"
+      "blurb": "Team Yandex先到 10 杀（当时 7-10，9分40秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Invoker 参与 7 次（击杀 1 + 助攻 6），中单+双辅合计参与 23 次 · 中辅驱动。对手当时 7 杀。"
     },
     {
-      "game": 5,
-      "matchId": 8960991322,
-      "winner": "Team Spirit",
+      "game": 2,
+      "matchId": 9024489311,
+      "winner": "Team Yandex",
       "score": [
-        31,
+        25,
         34
       ],
-      "f10": "TEAM VISION",
-      "f10Time": 787,
-      "durationMin": 64.4,
-      "pace": "正常",
-      "stance": "来回拉锯",
+      "f10": "BoomBoys",
+      "f10Time": 452,
+      "durationMin": 46.7,
+      "pace": "快",
+      "stance": "进攻转线",
       "picks": {
-        "TEAM VISION": [
+        "BoomBoys": [
+          "Lone Druid",
+          "Windranger",
+          "Crystal Maiden",
           "Invoker",
-          "Rubick",
-          "Axe",
-          "Hoodwink",
-          "Juggernaut"
+          "Doom"
         ],
-        "Team Spirit": [
-          "Bane",
+        "Team Yandex": [
+          "Necrophos",
+          "Witch Doctor",
+          "Rubick",
           "Pangolier",
-          "Mirana",
-          "Lifestealer",
-          "Dark Seer"
+          "Tiny"
         ]
       },
       "mid": {
-        "TEAM VISION": "Invoker",
-        "Team Spirit": "Pangolier"
+        "BoomBoys": "Invoker",
+        "Team Yandex": "Pangolier"
       },
-      "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
+      "blurb": "BoomBoys先到 10 杀（当时 10-4，7分32秒）。这 10 次击杀里，中单 Save-/Invoker 参与 6 次（击杀 1 + 助攻 5），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 4 杀。"
     }
   ],
-  "nextMap": null,
-  "seriesLean": {
-    "team": "TEAM VISION",
-    "tag": "VSN",
-    "p": 0.616,
-    "pA": 0.616,
-    "pB": 0.384,
-    "breakEven": 1.62,
-    "market": {
-      "outcomes": [
-        "TEAM VISION",
-        "Team Spirit"
-      ],
-      "prices": [
-        1.0,
-        0.0
-      ]
-    },
-    "why": "本届胜率 TEAM VISION 66% / Team Spirit 62%；先到10杀 58% / 60%；H2H 10.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
-  },
-  "previous": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
-    "status": "completed",
-    "score": "2-3",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5,
+  "nextMap": {
+    "game": 1,
+    "teamA": "Team Spirit",
+    "teamB": "Team Yandex",
+    "when": "2026-10-04 00:00 CST",
+    "format": "Bo3",
+    "round": "BLAST SLAM VIII 种子赛",
+    "polySlug": "dota2-ts8-ty-2026-10-03",
     "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.616,
-      "pA": 0.616,
-      "pB": 0.384,
-      "breakEven": 1.62,
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.563,
+      "pA": 0.563,
+      "pB": 0.437,
+      "breakEven": 1.78,
       "market": {
         "outcomes": [
-          "TEAM VISION",
-          "Team Spirit"
+          "Team Spirit",
+          "Team Yandex"
         ],
         "prices": [
-          1.0,
-          0.0
+          0.285,
+          0.715
         ]
       },
-      "why": "本届胜率 TEAM VISION 66% / Team Spirit 62%；先到10杀 58% / 60%；H2H 10.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
+      "why": "两张 BLAST 图写入后，本届胜率 Team Spirit 62% / Team Yandex 59%；先到10杀 60% / 50%；Spirit 对 Yandex 的 H2H 仍是 2.9 局；Team Spirit 中单爱拿 Pangolier。"
+    },
+    "f10": {
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.586,
+      "pA": 0.586,
+      "pB": 0.414,
+      "breakEven": 1.71,
+      "market": null,
+      "why": "先到10杀没有公开盘。"
     }
   },
-  "next": null,
-  "focus": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
+  "seriesLean": {
+    "team": "Team Spirit",
+    "tag": "Spirit",
+    "p": 0.597,
+    "pA": 0.597,
+    "pB": 0.403,
+    "breakEven": 1.68,
+    "market": {
+      "outcomes": [
+        "Team Spirit",
+        "Team Yandex"
+      ],
+      "prices": [
+        0.375,
+        0.625
+      ]
+    },
+    "why": "两张 BLAST 图写入后，本届胜率 Team Spirit 62% / Team Yandex 59%；先到10杀 60% / 50%；Spirit 对 Yandex 的 H2H 仍是 2.9 局；Team Spirit 中单爱拿 Pangolier。"
+  },
+  "previous": {
+    "id": "blast-c",
+    "round": "BLAST SLAM VIII 小组赛",
+    "day": "2026-10-01",
+    "when": "2026-10-01 20:56",
+    "format": "Bo3",
+    "teamA": "BoomBoys",
+    "teamB": "Team Yandex",
+    "teamALabel": "BoomBoys",
+    "teamBLabel": "Team Yandex",
     "status": "completed",
-    "score": "2-3",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5
+    "score": "0-2",
+    "winner": "Team Yandex",
+    "mapsPlayed": 2,
+    "leagueId": 19102,
+    "seriesId": 1149063
+  },
+  "next": {
+    "id": "blast-seed",
+    "round": "BLAST SLAM VIII 种子赛",
+    "day": "2026-10-04",
+    "when": "2026-10-04 00:00",
+    "format": "Bo3",
+    "teamA": "Team Spirit",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Spirit",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
+    "winner": null,
+    "polySlug": "dota2-ts8-ty-2026-10-03",
+    "mapsPlayed": 0,
+    "lean": {
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.597,
+      "pA": 0.597,
+      "pB": 0.403,
+      "breakEven": 1.68,
+      "market": {
+        "outcomes": [
+          "Team Spirit",
+          "Team Yandex"
+        ],
+        "prices": [
+          0.375,
+          0.625
+        ]
+      },
+      "why": "两张 BLAST 图写入后，本届胜率 Team Spirit 62% / Team Yandex 59%；先到10杀 60% / 50%；Spirit 对 Yandex 的 H2H 仍是 2.9 局；Team Spirit 中单爱拿 Pangolier。"
+    }
+  },
+  "focus": {
+    "id": "blast-seed",
+    "round": "BLAST SLAM VIII 种子赛",
+    "day": "2026-10-04",
+    "when": "2026-10-04 00:00",
+    "format": "Bo3",
+    "teamA": "Team Spirit",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Spirit",
+    "teamBLabel": "Team Yandex",
+    "status": "scheduled",
+    "score": null,
+    "winner": null,
+    "polySlug": "dota2-ts8-ty-2026-10-03",
+    "mapsPlayed": 0
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    9024384432,
+    9024489311
+  ]
 }
