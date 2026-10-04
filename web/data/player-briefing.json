@@ -1,107 +1,111 @@
 {
-  "asOf": "2026-10-04 13:36 CST",
+  "asOf": "2026-10-05 03:23 CST",
   "source": "stub",
-  "headline": "+4 14-11 中7-4 3号4-5",
-  "lede": "新4把全单排 2-2。",
+  "headline": "+6 13-12 中6-3 3号4-7",
+  "lede": "新6把全单排 3-3。",
   "narrative": "",
-  "positioning": "主中 · 副三",
+  "positioning": "主三 · 副中",
   "points": [
-    "新4把全单排 2-2。",
-    "负：Dark Seer负、Dark Seer负。",
-    "胜：Dark Seer、Dark Seer。",
-    "窗口 14-11。",
-    "中7-4，3号4-5。"
+    "新6把全单排 3-3。",
+    "负：Dark Seer负、Tidehunter负、Dark Seer负。",
+    "胜：Dark Seer、Dark Seer、Dawnbreaker。",
+    "窗口 13-12。",
+    "中6-3，3号4-7。"
   ],
   "sessionMatchIds": [
-    "9028522982",
-    "9028491200",
-    "9028471429",
-    "9028444445"
+    "9029290353",
+    "9029222399",
+    "9029168095",
+    "9029058335",
+    "9028911799",
+    "9028619249"
   ],
   "newMatchIds": [
-    "9028522982",
-    "9028491200",
-    "9028471429",
-    "9028444445"
+    "9029290353",
+    "9029222399",
+    "9029168095",
+    "9029058335",
+    "9028911799",
+    "9028619249"
   ],
   "focus": [
     {
-      "matchId": 9028522982,
+      "matchId": 9029290353,
       "hero": "Dark Seer",
       "heroFile": "dark_seer",
-      "role": null,
+      "role": "pos3",
       "kind": "win",
       "divineWr": {
-        "picks": 34582,
-        "wins": 17617,
-        "wr": 0.5094
+        "picks": 38807,
+        "wins": 19750,
+        "wr": 0.5089
       },
       "note": "胜"
     },
     {
-      "matchId": 9028491200,
+      "matchId": 9029222399,
       "hero": "Dark Seer",
       "heroFile": "dark_seer",
-      "role": null,
-      "kind": "win",
-      "divineWr": {
-        "picks": 34582,
-        "wins": 17617,
-        "wr": 0.5094
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 9028471429,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": null,
+      "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 34582,
-        "wins": 17617,
-        "wr": 0.5094
+        "picks": 38807,
+        "wins": 19750,
+        "wr": 0.5089
       },
       "note": "负"
     },
     {
-      "matchId": 9028444445,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 34582,
-        "wins": 17617,
-        "wr": 0.5094
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9027228375,
+      "matchId": 9029168095,
       "hero": "Tidehunter",
       "heroFile": "tidehunter",
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 22324,
-        "wins": 10892,
-        "wr": 0.4879
+        "picks": 24807,
+        "wins": 12064,
+        "wr": 0.4863
       },
       "note": "负"
     },
     {
-      "matchId": 9027181315,
-      "hero": "Dawnbreaker",
-      "heroFile": "dawnbreaker",
+      "matchId": 9029058335,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 49177,
-        "wins": 25626,
-        "wr": 0.5211
+        "picks": 38807,
+        "wins": 19750,
+        "wr": 0.5089
       },
       "note": "负"
+    },
+    {
+      "matchId": 9028911799,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 38807,
+        "wins": 19750,
+        "wr": 0.5089
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 9028619249,
+      "hero": "Dawnbreaker",
+      "heroFile": "dawnbreaker",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 54702,
+        "wins": 28429,
+        "wr": 0.5197
+      },
+      "note": "胜"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
