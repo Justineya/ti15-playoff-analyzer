@@ -1,16 +1,17 @@
 {
   "asOf": "2026-10-04 13:36 CST",
-  "source": "stub",
-  "headline": "+4 14-11 中7-4 3号4-5",
-  "lede": "新4把全单排 2-2。",
+  "source": "cursor",
+  "headline": "14-11 主中7-4，今天黑鸟2-2",
+  "lede": "今天单排黑鸟 2-2，24 分金崩、35 分塔伤 0，三号窗口 4-5。",
   "narrative": "",
   "positioning": "主中 · 副三",
   "points": [
-    "新4把全单排 2-2。",
-    "负：Dark Seer负、Dark Seer负。",
-    "胜：Dark Seer、Dark Seer。",
-    "窗口 14-11。",
-    "中7-4，3号4-5。"
+    "新4把全是单排黑鸟 2-2：14/2/24、9/5/21 胜，4/8/2、5/9/12 负。",
+    "窗口 14-11，中单 7-4、三号 4-5，黑鸟 11 把 6-5，光法 12 把 8-4。",
+    "今天两负：24 分 4/8/2、经济 417、塔伤 139，35 分补刀 296、塔伤 0。",
+    "D2PT 近 8 天 7k+：光法中单 53.3%，黑鸟三号 51.6%，潮汐三号 46.4%。",
+    "潮汐 13/7/13、塔伤 277 是版本坑，破晓 8/9/12、经济 537。",
+    "光法 17:21 对线 109%、塔伤 32，12:26 是 0/6/0、经济 288、19 分钟。"
   ],
   "sessionMatchIds": [
     "9028522982",
@@ -36,7 +37,7 @@
         "wins": 17617,
         "wr": 0.5094
       },
-      "note": "胜"
+      "note": "14/2/24"
     },
     {
       "matchId": 9028491200,
@@ -49,20 +50,20 @@
         "wins": 17617,
         "wr": 0.5094
       },
-      "note": "胜"
+      "note": "9/5/21"
     },
     {
       "matchId": 9028471429,
       "hero": "Dark Seer",
       "heroFile": "dark_seer",
       "role": null,
-      "kind": "other_loss",
+      "kind": "farm_collapse",
       "divineWr": {
         "picks": 34582,
         "wins": 17617,
         "wr": 0.5094
       },
-      "note": "负"
+      "note": "4/8经济崩"
     },
     {
       "matchId": 9028444445,
@@ -75,20 +76,20 @@
         "wins": 17617,
         "wr": 0.5094
       },
-      "note": "负"
+      "note": "35分塔伤0"
     },
     {
       "matchId": 9027228375,
       "hero": "Tidehunter",
       "heroFile": "tidehunter",
       "role": "pos3",
-      "kind": "other_loss",
+      "kind": "meta_weak",
       "divineWr": {
         "picks": 22324,
         "wins": 10892,
         "wr": 0.4879
       },
-      "note": "负"
+      "note": "三号46.4%"
     },
     {
       "matchId": 9027181315,
@@ -101,7 +102,33 @@
         "wins": 25626,
         "wr": 0.5211
       },
-      "note": "负"
+      "note": "8/9经济537"
+    },
+    {
+      "matchId": 9027132772,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 20341,
+        "wins": 10436,
+        "wr": 0.5131
+      },
+      "note": "线109%塔32"
+    },
+    {
+      "matchId": 9026869314,
+      "hero": "Keeper of the Light",
+      "heroFile": "keeper_of_the_light",
+      "role": "pos2",
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 20341,
+        "wins": 10436,
+        "wr": 0.5131
+      },
+      "note": "0/6/0金崩"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
