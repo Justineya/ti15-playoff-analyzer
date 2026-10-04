@@ -1,57 +1,81 @@
 {
-  "asOf": "2026-10-04 03:06 CST",
+  "asOf": "2026-10-04 13:36 CST",
   "source": "stub",
-  "headline": "+5 15-10 中10-5 3号3-4",
-  "lede": "新5把全单排 2-3。",
+  "headline": "+4 14-11 中7-4 3号4-5",
+  "lede": "新4把全单排 2-2。",
   "narrative": "",
   "positioning": "主中 · 副三",
   "points": [
-    "新5把全单排 2-3。",
-    "负：Tidehunter负、Dawnbreaker负、Keeper of the Light负。",
+    "新4把全单排 2-2。",
+    "负：Dark Seer负、Dark Seer负。",
     "胜：Dark Seer、Dark Seer。",
-    "窗口 15-10。",
-    "中10-5，3号3-4。"
+    "窗口 14-11。",
+    "中7-4，3号4-5。"
   ],
   "sessionMatchIds": [
-    "9027616609",
-    "9027472567",
-    "9027228375",
-    "9027181315",
-    "9027132772"
+    "9028522982",
+    "9028491200",
+    "9028471429",
+    "9028444445"
   ],
   "newMatchIds": [
-    "9027616609",
-    "9027472567",
-    "9027228375",
-    "9027181315",
-    "9027132772"
+    "9028522982",
+    "9028491200",
+    "9028471429",
+    "9028444445"
   ],
   "focus": [
     {
-      "matchId": 9027616609,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "kind": "win",
-      "divineWr": {
-        "picks": 38845,
-        "wins": 19789,
-        "wr": 0.5094
-      },
-      "note": "胜"
-    },
-    {
-      "matchId": 9027472567,
+      "matchId": 9028522982,
       "hero": "Dark Seer",
       "heroFile": "dark_seer",
       "role": null,
       "kind": "win",
       "divineWr": {
-        "picks": 38845,
-        "wins": 19789,
+        "picks": 34582,
+        "wins": 17617,
         "wr": 0.5094
       },
       "note": "胜"
+    },
+    {
+      "matchId": 9028491200,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 34582,
+        "wins": 17617,
+        "wr": 0.5094
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 9028471429,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 34582,
+        "wins": 17617,
+        "wr": 0.5094
+      },
+      "note": "负"
+    },
+    {
+      "matchId": 9028444445,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 34582,
+        "wins": 17617,
+        "wr": 0.5094
+      },
+      "note": "负"
     },
     {
       "matchId": 9027228375,
@@ -60,9 +84,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 25097,
-        "wins": 12270,
-        "wr": 0.4889
+        "picks": 22324,
+        "wins": 10892,
+        "wr": 0.4879
       },
       "note": "负"
     },
@@ -70,38 +94,12 @@
       "matchId": 9027181315,
       "hero": "Dawnbreaker",
       "heroFile": "dawnbreaker",
-      "role": null,
+      "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 54538,
-        "wins": 28400,
-        "wr": 0.5207
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9027132772,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 22722,
-        "wins": 11627,
-        "wr": 0.5117
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9026869314,
-      "hero": "Keeper of the Light",
-      "heroFile": "keeper_of_the_light",
-      "role": "pos2",
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 22722,
-        "wins": 11627,
-        "wr": 0.5117
+        "picks": 49177,
+        "wins": 25626,
+        "wr": 0.5211
       },
       "note": "负"
     }
