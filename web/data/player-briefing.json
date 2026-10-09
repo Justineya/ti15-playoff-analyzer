@@ -1,38 +1,33 @@
 {
-  "asOf": "2026-10-06 06:23 CST",
+  "asOf": "2026-10-10 04:41 CST",
   "source": "stub",
-  "headline": "+3 12-13 中4-3 3号8-10",
-  "lede": "新3把全单排 1-2。",
+  "headline": "+1 12-13 中3-3 3号8-10",
+  "lede": "新1把全单排 1-0。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新3把全单排 1-2。",
-    "负：Dark Seer负、Dark Seer负。",
-    "胜：Dragon Knight。",
+    "新1把全单排 1-0。",
+    "胜：Ember Spirit。",
     "窗口 12-13。",
-    "中4-3，3号8-10。"
+    "中3-3，3号8-10。"
   ],
   "sessionMatchIds": [
-    "9030733066",
-    "9030675826",
-    "9030611196"
+    "9037002606"
   ],
   "newMatchIds": [
-    "9030733066",
-    "9030675826",
-    "9030611196"
+    "9037002606"
   ],
   "focus": [
     {
-      "matchId": 9030733066,
-      "hero": "Dragon Knight",
-      "heroFile": "dragon_knight",
-      "role": "pos3",
+      "matchId": 9037002606,
+      "hero": "Ember Spirit",
+      "heroFile": "ember_spirit",
+      "role": null,
       "kind": "win",
       "divineWr": {
-        "picks": 75838,
-        "wins": 39694,
-        "wr": 0.5234
+        "picks": 46935,
+        "wins": 23665,
+        "wr": 0.5042
       },
       "note": "胜"
     },
@@ -43,9 +38,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 39579,
-        "wins": 20168,
-        "wr": 0.5096
+        "picks": 37814,
+        "wins": 19359,
+        "wr": 0.512
       },
       "note": "负"
     },
@@ -56,9 +51,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 39579,
-        "wins": 20168,
-        "wr": 0.5096
+        "picks": 37814,
+        "wins": 19359,
+        "wr": 0.512
       },
       "note": "负"
     },
@@ -69,9 +64,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 39579,
-        "wins": 20168,
-        "wr": 0.5096
+        "picks": 37814,
+        "wins": 19359,
+        "wr": 0.512
       },
       "note": "负"
     },
@@ -82,22 +77,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 25275,
-        "wins": 12260,
-        "wr": 0.4851
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9029058335,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 39579,
-        "wins": 20168,
-        "wr": 0.5096
+        "picks": 44778,
+        "wins": 21396,
+        "wr": 0.4778
       },
       "note": "负"
     }
