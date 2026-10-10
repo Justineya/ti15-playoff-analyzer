@@ -1,293 +1,188 @@
 {
-  "asOf": "2026-08-26 11:15 CST",
+  "asOf": "2026-10-10 01:18 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "champion",
-  "headline": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
-  "narrative": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
+  "kind": "next-map",
+  "headline": "第1局 VSN 赢了 IW，先到10杀 VSN（19分28秒），49分32秒。系列 IW 0-1 VSN，第2局重算后看好 VSN（67%），系列胜率 89%。",
+  "narrative": "BLAST Slam VIII 败者组四分之一决赛，Bo3。1win 记作 Iron Wing，PARIVISION 记作 TEAM VISION。已经打完的只有第1局（9036629814）：VSN 赢，IW 20 杀、VSN 40 杀。先到 10 杀是 VSN，19分28秒，当时 8-10，第 10 杀是 Satanic 的 Anti-Mage。整局 49分32秒，慢节奏，发育对线。IW 选出 Brewmaster、Witch Doctor、Dark Willow、Earthshaker、Luna，中单 bzm/Earthshaker，先到 10 杀参与 4 次（0 杀 4 助攻）。VSN 选出 Rubick、Techies、Anti-Mage、Dragon Knight、Tidehunter，中单 No[o]ne-/Dragon Knight，参与 5 次（2 杀 3 助攻），中单加双辅合计 17 次，中辅驱动。VSN 在 7分55秒拿下 IW 中路一塔。经济 5 分钟 IW 落后 201，10 分钟反超 221，15 分钟落后 1796，20 分钟落后 4551。\n\n第1局 10 杀来得晚，优势是中辅慢慢滚出来的。这张图进样本后，模型里的直接交手从 0 局变成 1 局，赢家是 VSN。单局胜率从 IW 41% / VSN 59% 变成 IW 33% / VSN 67%。开赛前系列看好 VSN 64%；现在局分 IW 0-1 VSN，IW 得连赢两局，系列胜率变成 VSN 89%（IW 11%）。第2局的针对性来自上一局：VSN 中单 No[o]ne- 拿了上一局 bzm 用过的 Earthshaker，bzm 改拿 Tiny；VSN 留下 Rubick（9Class），IW 拿了上一局 VSN 用过的 Techies（Whitemon）。其余英雄：VSN 还有 Slardar、Nature's Prophet、Winter Wyvern；IW 还有 Templar Assassin、Timbersaw、Keeper of the Light。观战记分 13分17秒是 VSN 13 杀、IW 3 杀，VSN 经济领先 3081，杀得比第1局快，这局还没结束。\n\n第2局模型看好 VSN，胜率 67%，门槛 1.49。先到 10 杀看好 VSN 59%，没有公开盘。Polymarket 第2局胜者报价 1win 0 / PARIVISION 1.00，这张合约已关闭。还在交易的是系列盘：1win 20.5% / PARIVISION 79.5%，PARIVISION 这个价的门槛是 1.26。模型系列胜率 89%，比系列盘更偏 VSN。这不是投注建议。Polymarket 第1局胜者合约结算价是 1win 1.00 / PARIVISION 0；OpenDota 解析是 VSN 赢，IW 20 杀、VSN 40 杀。已打完的局分以解析为准。",
   "previousMap": {
-    "game": 5,
-    "matchId": 8960991322,
-    "winner": "Team Spirit",
+    "game": 1,
+    "matchId": 9036629814,
+    "winner": "TEAM VISION",
     "score": [
-      31,
-      34
+      20,
+      40
     ],
     "f10": "TEAM VISION",
-    "f10Time": 787,
-    "durationMin": 64.4,
-    "pace": "正常",
-    "stance": "来回拉锯",
+    "f10Time": 1168,
+    "durationMin": 49.5,
+    "pace": "慢",
+    "stance": "发育对线",
     "picks": {
-      "TEAM VISION": [
-        "Invoker",
-        "Rubick",
-        "Axe",
-        "Hoodwink",
-        "Juggernaut"
+      "Iron Wing": [
+        "Brewmaster",
+        "Witch Doctor",
+        "Dark Willow",
+        "Earthshaker",
+        "Luna"
       ],
-      "Team Spirit": [
-        "Bane",
-        "Pangolier",
-        "Mirana",
-        "Lifestealer",
-        "Dark Seer"
+      "TEAM VISION": [
+        "Rubick",
+        "Techies",
+        "Anti-Mage",
+        "Dragon Knight",
+        "Tidehunter"
       ]
     },
     "mid": {
-      "TEAM VISION": "Invoker",
-      "Team Spirit": "Pangolier"
+      "Iron Wing": "Earthshaker",
+      "TEAM VISION": "Dragon Knight"
     },
-    "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
+    "blurb": "TEAM VISION先到 10 杀（当时 8-10，19分28秒）。这 10 次击杀里，中单 No[o]ne-/Dragon Knight 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 8 杀。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 8960577698,
-      "winner": "Team Spirit",
-      "score": [
-        42,
-        17
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 826,
-      "durationMin": 46.2,
-      "pace": "正常",
-      "stance": "滚雪球",
-      "picks": {
-        "Team Spirit": [
-          "Slark",
-          "Dark Willow",
-          "Shadow Fiend",
-          "Disruptor",
-          "Undying"
-        ],
-        "TEAM VISION": [
-          "Ember Spirit",
-          "Mirana",
-          "Io",
-          "Axe",
-          "Hoodwink"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Slark",
-        "TEAM VISION": "Io"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 10-6，13分46秒）。这 10 次击杀里，中单 Larl/Slark 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 5 次。对手当时 6 杀。"
-    },
-    {
-      "game": 2,
-      "matchId": 8960655084,
+      "matchId": 9036629814,
       "winner": "TEAM VISION",
       "score": [
-        46,
-        48
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 610,
-      "durationMin": 64.5,
-      "pace": "快",
-      "stance": "进攻转线",
-      "picks": {
-        "TEAM VISION": [
-          "Earth Spirit",
-          "Enchantress",
-          "Rubick",
-          "Underlord",
-          "Lifestealer"
-        ],
-        "Team Spirit": [
-          "Shadow Fiend",
-          "Slardar",
-          "Hoodwink",
-          "Undying",
-          "Axe"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Earth Spirit",
-        "Team Spirit": "Slardar"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 2-10，10分10秒）。这 10 次击杀里，中单 Larl/Slardar 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 2 杀。"
-    },
-    {
-      "game": 3,
-      "matchId": 8960762254,
-      "winner": "Team Spirit",
-      "score": [
-        26,
-        24
+        20,
+        40
       ],
       "f10": "TEAM VISION",
-      "f10Time": 1537,
-      "durationMin": 45.9,
+      "f10Time": 1168,
+      "durationMin": 49.5,
       "pace": "慢",
       "stance": "发育对线",
       "picks": {
-        "Team Spirit": [
-          "Nature's Prophet",
+        "Iron Wing": [
+          "Brewmaster",
+          "Witch Doctor",
           "Dark Willow",
-          "Tusk",
-          "Axe",
-          "Terrorblade"
+          "Earthshaker",
+          "Luna"
         ],
         "TEAM VISION": [
-          "Shadow Fiend",
-          "Enchantress",
-          "Slardar",
-          "Pangolier",
-          "Marci"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Nature's Prophet",
-        "TEAM VISION": "Pangolier"
-      },
-      "blurb": "TEAM VISION先到 10 杀（当时 8-10，25分37秒）。这 10 次击杀里，中单 No[o]ne-/Pangolier 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 7 次。对手当时 8 杀。"
-    },
-    {
-      "game": 4,
-      "matchId": 8960882635,
-      "winner": "TEAM VISION",
-      "score": [
-        31,
-        13
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 1031,
-      "durationMin": 44.3,
-      "pace": "慢",
-      "stance": "来回拉锯",
-      "picks": {
-        "TEAM VISION": [
-          "Keeper of the Light",
-          "Doom",
-          "Lifestealer",
-          "Mirana",
-          "Sand King"
-        ],
-        "Team Spirit": [
-          "Winter Wyvern",
-          "Centaur Warrunner",
-          "Clockwerk",
-          "Templar Assassin",
-          "Storm Spirit"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Sand King",
-        "Team Spirit": "Storm Spirit"
-      },
-      "blurb": "TEAM VISION先到 10 杀（当时 10-4，17分11秒）。这 10 次击杀里，中单 No[o]ne-/Sand King 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。"
-    },
-    {
-      "game": 5,
-      "matchId": 8960991322,
-      "winner": "Team Spirit",
-      "score": [
-        31,
-        34
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 787,
-      "durationMin": 64.4,
-      "pace": "正常",
-      "stance": "来回拉锯",
-      "picks": {
-        "TEAM VISION": [
-          "Invoker",
           "Rubick",
-          "Axe",
-          "Hoodwink",
-          "Juggernaut"
-        ],
-        "Team Spirit": [
-          "Bane",
-          "Pangolier",
-          "Mirana",
-          "Lifestealer",
-          "Dark Seer"
+          "Techies",
+          "Anti-Mage",
+          "Dragon Knight",
+          "Tidehunter"
         ]
       },
       "mid": {
-        "TEAM VISION": "Invoker",
-        "Team Spirit": "Pangolier"
+        "Iron Wing": "Earthshaker",
+        "TEAM VISION": "Dragon Knight"
       },
-      "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
+      "blurb": "TEAM VISION先到 10 杀（当时 8-10，19分28秒）。这 10 次击杀里，中单 No[o]ne-/Dragon Knight 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 8 杀。"
     }
   ],
-  "nextMap": null,
-  "seriesLean": {
-    "team": "TEAM VISION",
-    "tag": "VSN",
-    "p": 0.616,
-    "pA": 0.616,
-    "pB": 0.384,
-    "breakEven": 1.62,
-    "market": {
-      "outcomes": [
-        "TEAM VISION",
-        "Team Spirit"
-      ],
-      "prices": [
-        1.0,
-        0.0
-      ]
-    },
-    "why": "本届胜率 TEAM VISION 66% / Team Spirit 62%；先到10杀 58% / 60%；H2H 10.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
-  },
-  "previous": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
-    "status": "completed",
-    "score": "2-3",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5,
+  "nextMap": {
+    "game": 2,
+    "teamA": "Iron Wing",
+    "teamB": "TEAM VISION",
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.616,
-      "pA": 0.616,
-      "pB": 0.384,
-      "breakEven": 1.62,
+      "p": 0.671,
+      "pA": 0.329,
+      "pB": 0.671,
+      "breakEven": 1.49,
       "market": {
         "outcomes": [
-          "TEAM VISION",
-          "Team Spirit"
+          "1win",
+          "PARIVISION"
         ],
         "prices": [
-          1.0,
-          0.0
+          0.0,
+          1.0
         ]
       },
-      "why": "本届胜率 TEAM VISION 66% / Team Spirit 62%；先到10杀 58% / 60%；H2H 10.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Iron Wing 52% / TEAM VISION 67%；先到10杀 48% / 59%；H2H 1 局；Iron Wing 中单爱拿 Earth Spirit"
+    },
+    "f10": {
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.593,
+      "pA": 0.407,
+      "pB": 0.593,
+      "breakEven": 1.69,
+      "market": null,
+      "why": ""
     }
   },
-  "next": null,
+  "seriesLean": {
+    "team": "TEAM VISION",
+    "tag": "VSN",
+    "p": 0.892,
+    "pA": 0.108,
+    "pB": 0.892,
+    "breakEven": 1.12,
+    "market": {
+      "outcomes": [
+        "1win",
+        "PARIVISION"
+      ],
+      "prices": [
+        0.205,
+        0.795
+      ]
+    },
+    "why": "本届胜率 Iron Wing 52% / TEAM VISION 67%；先到10杀 48% / 59%；H2H 1 局；Iron Wing 中单爱拿 Earth Spirit"
+  },
+  "previous": null,
+  "next": {
+    "id": "blast-lbqf2",
+    "round": "BLAST Slam VIII 败者组四分之一决赛",
+    "day": "2026-10-09",
+    "when": "2026-10-09 23:18",
+    "format": "Bo3",
+    "teamA": "Iron Wing",
+    "teamB": "TEAM VISION",
+    "teamALabel": "Iron Wing",
+    "teamBLabel": "TEAM VISION",
+    "status": "live",
+    "score": "0-1",
+    "winner": null,
+    "polySlug": "dota2-1win-pari-2026-10-09",
+    "mapsPlayed": 1,
+    "lean": {
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.892,
+      "pA": 0.108,
+      "pB": 0.892,
+      "breakEven": 1.12,
+      "market": {
+        "outcomes": [
+          "1win",
+          "PARIVISION"
+        ],
+        "prices": [
+          0.205,
+          0.795
+        ]
+      },
+      "why": "本届胜率 Iron Wing 52% / TEAM VISION 67%；先到10杀 48% / 59%；H2H 1 局；Iron Wing 中单爱拿 Earth Spirit"
+    }
+  },
   "focus": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
-    "status": "completed",
-    "score": "2-3",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5
+    "id": "blast-lbqf2",
+    "round": "BLAST Slam VIII 败者组四分之一决赛",
+    "day": "2026-10-09",
+    "when": "2026-10-09 23:18",
+    "format": "Bo3",
+    "teamA": "Iron Wing",
+    "teamB": "TEAM VISION",
+    "teamALabel": "Iron Wing",
+    "teamBLabel": "TEAM VISION",
+    "status": "live",
+    "score": "0-1",
+    "winner": null,
+    "polySlug": "dota2-1win-pari-2026-10-09",
+    "mapsPlayed": 1
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    9036629814
+  ]
 }
