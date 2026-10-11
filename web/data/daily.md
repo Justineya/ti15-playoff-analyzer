@@ -1,5 +1,9 @@
-# TI15 局间战报 · 2026-08-26 11:15 CST
+# TI15 局间战报 · 2026-10-11 21:20 CST
 
-TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。
+败者组决赛 Spirit 2-1 赢了 VSN。总决赛第1局重算后看好 Spirit（59.1%），Polymarket 这局 Yandex 63%、Spirit 37%。
 
-TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。
+TI 总决赛五张图已经结束，比分 VSN 2-3 Spirit。第1局 Spirit 赢，46.2 分钟，正常节奏、滚雪球，Spirit 先到 10 杀（13分46秒，10-6），中单 Slark 对 Io。第2局 VSN 赢，64.5 分钟，快节奏、进攻转线，先到 10 杀仍是 Spirit（10分10秒，2-10），中单 Larl/Slardar 参与 7 次，对面中单 Earth Spirit。第3局 Spirit 赢，45.9 分钟，慢节奏、发育对线，VSN 先到 10 杀（25分37秒，8-10），中单 Nature's Prophet 对 Pangolier。第4局 VSN 赢，44.3 分钟，慢节奏、来回拉锯，VSN 先到 10 杀（17分11秒，10-4），中单 Sand King 对 Storm Spirit。第5局 Spirit 赢，64.4 分钟，正常节奏、来回拉锯，VSN 先到 10 杀（13分07秒，10-4），中单 Invoker 对 Pangolier。
+
+今天进模型的三张图是 BLAST SLAM VIII 败者组决赛（Bo3，series 1153213）。BLAST 官方比分 Spirit 2-1，系列已经结束。第1局 9039619076 VSN 赢，33-17，38.2 分钟，慢、来回拉锯，VSN 先到 10 杀（18分10秒，10-8）；VSN 选 Rubick、Terrorblade、Dragon Knight、Grimstroke、Primal Beast，中单 No[o]ne-/Dragon Knight 参与 5 次，中辅合计 14 次；Spirit 选 Techies、Hoodwink、Pangolier、Doom、Phantom Lancer，中单 Pangolier。第2局 9039730583 Spirit 赢，15-26，40.0 分钟，慢、发育对线，先到 10 杀还是 VSN（22分02秒，10-8）；VSN 选 Earth Spirit、Enchantress、Rubick、Lifestealer、Beastmaster，中单 Earth Spirit 参与 6 次；Spirit 选 Ember Spirit、Dark Willow、Largo、Bane、Kez，中单 Ember Spirit。第3局 9039847755 Spirit 赢，15-30，43.0 分钟，节奏未知、来回拉锯，没有队伍先到 10 杀；VSN 选 Rubick、Grimstroke、Ember Spirit、Tidehunter、Ursa，中单 Ember Spirit 第3手；Spirit 选 Earth Spirit、Hoodwink、Lycan、Shadow Demon、Anti-Mage，中单 Earth Spirit 第1手。上一局 VSN 把第2局 Spirit 用来赢图的 Ember Spirit 拿了回去，Spirit 则把 VSN 第2局先到 10 杀的 Earth Spirit 抢成第一手；两边都没堆到 10 杀，Spirit 以 30-15 收掉系列，所以没有第4局可预览。记分板上的 ubsf1 1-0 和 gf 0-1 是这张图被套进两场已经结束的 TI 系列，液体百科地图赢家是空的。TI 总决赛系列分保持 2-3，胜者组半决赛保持 1-2。
+
+下一场改写 BLAST 总决赛第 1 局：Yandex 对 Spirit，Bo5，当前 0-0。整棵模型重算后单局胜率 Spirit 58.8%、Yandex 41.2%，第1局看好 Spirit 59.1%，先到 10 杀看好 Spirit 55.5%（先到 10 杀没有公开盘）。把单局 58.8% 放进现有 Bo5 系列公式，0-0 时系列看好 Spirit 66.2%，门槛 1.51。理由：本届胜率 Spirit 63% / Yandex 57%；先到 10 杀 56% / 50%；H2H 2.9 局；Spirit 中单爱拿 Pangolier。Polymarket dota2-ty-ts8-2026-10-11 未封盘，第1局价 Yandex 63% / Spirit 37%，系列价 Yandex 67.5% / Spirit 32.5%。模型第1局门槛 1.69。这不是投注建议。
