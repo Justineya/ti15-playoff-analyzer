@@ -1,23 +1,68 @@
 {
-  "asOf": "2026-10-15 04:04 CST",
-  "source": "stub",
-  "headline": "+1 12-13 中2-1 3号10-12",
-  "lede": "新1把全单排 0-1。",
+  "asOf": "2026-10-16 03:46 CST",
+  "source": "cursor",
+  "headline": "13-12 主三 10-11，新黑贤2-1",
+  "lede": "新3把单排黑贤2-1，负场对线106.9%塔伤668。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新1把全单排 0-1。",
-    "负：Keeper of the Light负。",
-    "窗口 12-13。",
-    "中2-1，3号10-12。"
+    "新3把全单排黑贤2-1：胜7/6/32塔5141；负3/7/11、34.5分塔668没BKB。",
+    "窗口13-12，三号10-11、中单2-1；未解析胜22.5分6/4/13塔4108。",
+    "负场对线106.9%、10分钟101刀，团战56%，线优没转成推塔。",
+    "黑贤17把8-9，D2PT三号52.2%；13日11死、塔37没BKB，11日BKB1737秒塔958。",
+    "光法中负8/6/10塔伤216，7k+中单53.6%；潮汐三号45.0%，窗口0-1。",
+    "胜场对线92.2%、均死5.3；负场对线80%、均死8.2。"
   ],
   "sessionMatchIds": [
-    "9044511799"
+    "9046020114",
+    "9045962392",
+    "9045890397"
   ],
   "newMatchIds": [
-    "9044511799"
+    "9046020114",
+    "9045962392",
+    "9045890397"
   ],
   "focus": [
+    {
+      "matchId": 9046020114,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "win",
+      "divineWr": {
+        "picks": 35659,
+        "wins": 18140,
+        "wr": 0.5087
+      },
+      "note": "塔伤5141"
+    },
+    {
+      "matchId": 9045962392,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 35659,
+        "wins": 18140,
+        "wr": 0.5087
+      },
+      "note": "没BKB塔668"
+    },
+    {
+      "matchId": 9045890397,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 35659,
+        "wins": 18140,
+        "wr": 0.5087
+      },
+      "note": "塔伤4108"
+    },
     {
       "matchId": 9044511799,
       "hero": "Keeper of the Light",
@@ -25,11 +70,11 @@
       "role": "pos2",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 21506,
-        "wins": 11026,
-        "wr": 0.5127
+        "picks": 21187,
+        "wins": 10867,
+        "wr": 0.5129
       },
-      "note": "负"
+      "note": "塔伤216"
     },
     {
       "matchId": 9043177550,
@@ -38,11 +83,11 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 35857,
-        "wins": 18371,
-        "wr": 0.5123
+        "picks": 35659,
+        "wins": 18140,
+        "wr": 0.5087
       },
-      "note": "负"
+      "note": "11死没BKB"
     },
     {
       "matchId": 9040197634,
@@ -51,37 +96,24 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 35857,
-        "wins": 18371,
-        "wr": 0.5123
+        "picks": 35659,
+        "wins": 18140,
+        "wr": 0.5087
       },
-      "note": "负"
+      "note": "BKB1737秒"
     },
     {
-      "matchId": 9039965166,
-      "hero": "Dragon Knight",
-      "heroFile": "dragon_knight",
+      "matchId": 9029168095,
+      "hero": "Tidehunter",
+      "heroFile": "tidehunter",
       "role": "pos3",
-      "kind": "other_loss",
+      "kind": "meta_weak",
       "divineWr": {
-        "picks": 81282,
-        "wins": 42994,
-        "wr": 0.5289
+        "picks": 69042,
+        "wins": 32767,
+        "wr": 0.4746
       },
-      "note": "负"
-    },
-    {
-      "matchId": 9030675826,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 35857,
-        "wins": 18371,
-        "wr": 0.5123
-      },
-      "note": "负"
+      "note": "7k+45.0%"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
