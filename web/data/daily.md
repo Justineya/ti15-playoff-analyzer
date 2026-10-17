@@ -1,5 +1,9 @@
-# TI15 局间战报 · 2026-08-26 11:15 CST
+# TI15 局间战报 · 2026-10-10 22:00 CST
 
-TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。
+第1局 Yandex 赢了，先到10杀 Yandex，33.9分钟。系列 0-1，下一局第2局重算后单局仍略看好 Spirit（53.9%），系列胜率转到 Yandex（71.5%）。
 
-TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。
+败者组这场 Spirit 对 Yandex，液体百科局分是 0-1，maps 里没有逐图 winner，挂着的已结束图是 9037980041。第1局 Yandex 赢了，人头 49-16，33分56秒，正常节奏，滚雪球。先到 10 杀是 Yandex，14分38秒，当时 10-8：中单 CHIRA_JUNIOR 的 Viper 参与 5 次（击杀 2 + 助攻 3），中单加双辅合计 14 次，中辅驱动，对手当时 8 杀。Yandex 的选人是 Techies、Pangolier、Windranger、Viper、Shadow Demon，中单是第4手 Viper；Spirit 是 Nyx Assassin、Witch Doctor、Batrider、Dragon Knight、Terrorblade，中单是第4手 Larl 的 Dragon Knight。10 分钟经济 Viper 3942，龙骑士 2557。一阶段 Yandex 禁 Hoodwink、Slark，Spirit 禁 Lone Druid、Bounty Hunter。
+
+这局 Yandex 用滚雪球把人头拉开到 49-16。Viper 中单目前只出现在这张图。TI 图里 Yandex 中单场次更高的是 Earth Spirit、Invoker、Snapfire，各 5 场；Spirit 最高的仍是 Pangolier，5 场。这张图写进样本后，TI 地图从 118 张到 119 张，H2H 从 2.9 局到 3.9 局，Spirit 单图胜率从 57.8% 到 53.4%，0-0 时的系列胜率从 61.6% 到 55.1%。当前局分是 Spirit 0、Yandex 1，Bo3 里 Spirit 还要连赢两局。按重算后的单图胜率 53.4% 往下乘，Spirit 系列胜率 28.5%，Yandex 71.5%，门槛 1.40。系列现在看好 Yandex。
+
+下一局是第2局。重算后的模型看好 Spirit 拿下这一局，胜率 53.9%，Yandex 46.1%，打平这条概率的小数赔率门槛是 1.86。先到 10 杀看好 Spirit 57.8%，Yandex 42.2%，没有公开盘。Polymarket 这场 Game 2 Winner 标价是 Yandex 0、Spirit 1，系列盘也是 Yandex 0、Spirit 1，两条都停在结算价。Spirit 这局模型 53.9% 对上标价 1.0，期望回报率约 -46.1%；观察档大约从期望回报率 8% 起，这条结算价在门槛下面。这不是投注建议。模型理由：本届胜率 Spirit 61% / Yandex 58%；先到10杀 59% / 51%；H2H 3.9 局；Spirit 中单爱拿 Pangolier。
