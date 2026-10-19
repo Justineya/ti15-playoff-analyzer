@@ -1,10 +1,13 @@
 {
   "launch": false,
   "fresh": false,
-  "reason": "no new playoff map",
-  "newMapIds": [],
+  "reason": "launched",
+  "newMapIds": [
+    "9037980041"
+  ],
   "series": {
     "lbsf": "0-2",
+    "lbf": "2-0",
     "ubqf1": "0-2",
     "ubqf2": "2-1",
     "ubqf3": "0-2",
@@ -16,8 +19,7 @@
     "lbqf1": "2-1",
     "lbqf2": "0-2",
     "ubf": "2-1",
-    "lbf": "2-0",
     "gf": "2-3"
   },
-  "asOf": "2026-08-26 11:15 CST"
+  "asOf": "2026-10-10 21:50 CST"
 }
