@@ -1,54 +1,87 @@
 {
-  "asOf": "2026-10-20 12:34 CST",
+  "asOf": "2026-10-21 03:55 CST",
   "accountId": 203557151,
   "name": "QQT",
   "personaname": "Narcissus",
   "rankTier": 80,
-  "leaderboardRank": 663,
+  "leaderboardRank": 660,
   "rankedWl": {
-    "win": 1608,
-    "lose": 1295
+    "win": 1609,
+    "lose": 1298
   },
   "opendota": "https://www.opendota.com/players/203557151",
-  "newMatchIds": [],
+  "newMatchIds": [
+    "9053846920",
+    "9053772531",
+    "9053700463",
+    "9053618022"
+  ],
   "summary": {
     "n": 25,
-    "wins": 13,
-    "losses": 12,
-    "wr": 0.52,
+    "wins": 12,
+    "losses": 13,
+    "wr": 0.48,
     "roles": {
       "pos2": {
         "games": 3,
         "wins": 2
       },
       "pos3": {
-        "games": 21,
-        "wins": 10
+        "games": 17,
+        "wins": 8
       },
       "unknown": {
-        "games": 1,
-        "wins": 1
+        "games": 5,
+        "wins": 2
       }
     },
     "party": {
       "1": {
         "games": 25,
-        "wins": 13
+        "wins": 12
       }
     },
     "heroes": [
       {
         "hero": "Dark Seer",
-        "games": 17,
-        "wins": 8,
+        "games": 14,
+        "wins": 6,
         "roles": {
-          "unknown": 1,
-          "pos3": 16
+          "unknown": 2,
+          "pos3": 12
         },
         "divine": {
-          "picks": 31467,
-          "wins": 15905,
-          "wr": 0.5055
+          "picks": 34713,
+          "wins": 17542,
+          "wr": 0.5053
+        }
+      },
+      {
+        "hero": "Dawnbreaker",
+        "games": 3,
+        "wins": 2,
+        "roles": {
+          "unknown": 1,
+          "pos3": 2
+        },
+        "divine": {
+          "picks": 54167,
+          "wins": 28149,
+          "wr": 0.5197
+        }
+      },
+      {
+        "hero": "Dragon Knight",
+        "games": 3,
+        "wins": 2,
+        "roles": {
+          "unknown": 1,
+          "pos3": 2
+        },
+        "divine": {
+          "picks": 84579,
+          "wins": 44435,
+          "wr": 0.5254
         }
       },
       {
@@ -59,35 +92,22 @@
           "pos2": 2
         },
         "divine": {
-          "picks": 18251,
-          "wins": 9428,
-          "wr": 0.5166
+          "picks": 20132,
+          "wins": 10399,
+          "wr": 0.5165
         }
       },
       {
-        "hero": "Dawnbreaker",
-        "games": 2,
-        "wins": 2,
+        "hero": "Windranger",
+        "games": 1,
+        "wins": 0,
         "roles": {
-          "pos3": 2
+          "unknown": 1
         },
         "divine": {
-          "picks": 49156,
-          "wins": 25573,
-          "wr": 0.5202
-        }
-      },
-      {
-        "hero": "Dragon Knight",
-        "games": 2,
-        "wins": 1,
-        "roles": {
-          "pos3": 2
-        },
-        "divine": {
-          "picks": 76341,
-          "wins": 40152,
-          "wr": 0.526
+          "picks": 85098,
+          "wins": 41591,
+          "wr": 0.4887
         }
       },
       {
@@ -98,9 +118,9 @@
           "pos2": 1
         },
         "divine": {
-          "picks": 42123,
-          "wins": 21038,
-          "wr": 0.4994
+          "picks": 46697,
+          "wins": 23223,
+          "wr": 0.4973
         }
       },
       {
@@ -111,26 +131,186 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 53454,
-          "wins": 25505,
-          "wr": 0.4771
+          "picks": 58639,
+          "wins": 27936,
+          "wr": 0.4764
         }
       }
     ],
     "winAvg": {
-      "laneEfficiency": 0.907,
+      "laneEfficiency": 0.866,
       "gpmBr": null,
       "towerBr": null,
-      "deaths": 5.308
+      "deaths": 5.667
     },
     "lossAvg": {
-      "laneEfficiency": 0.8,
+      "laneEfficiency": 0.808,
       "gpmBr": null,
       "towerBr": null,
-      "deaths": 8.167
+      "deaths": 8.231
     }
   },
   "games": [
+    {
+      "matchId": 9053846920,
+      "when": "2026-10-20 21:43",
+      "startTime": 1792503817,
+      "durationMin": 36.1,
+      "win": false,
+      "hero": "Dawnbreaker",
+      "heroId": 135,
+      "heroFile": "dawnbreaker",
+      "role": null,
+      "laneRole": null,
+      "partySize": 1,
+      "kills": 10,
+      "deaths": 11,
+      "assists": 15,
+      "gpm": 504,
+      "xpm": 712,
+      "lastHits": 240,
+      "laneEfficiency": null,
+      "towerDamage": 428,
+      "heroDamage": 28300,
+      "teamfight": null,
+      "lh10": null,
+      "gold10": null,
+      "parsed": false,
+      "gpmBr": null,
+      "xpmBr": null,
+      "deathsBr": null,
+      "lhBr": null,
+      "damageBr": null,
+      "towerBr": null,
+      "boots": null,
+      "bkb": null,
+      "opendota": "https://www.opendota.com/matches/9053846920",
+      "divine": {
+        "picks": 54167,
+        "wins": 28149,
+        "wr": 0.5197
+      }
+    },
+    {
+      "matchId": 9053772531,
+      "when": "2026-10-20 20:53",
+      "startTime": 1792500826,
+      "durationMin": 38.0,
+      "win": true,
+      "hero": "Dragon Knight",
+      "heroId": 49,
+      "heroFile": "dragon_knight",
+      "role": null,
+      "laneRole": null,
+      "partySize": 1,
+      "kills": 6,
+      "deaths": 6,
+      "assists": 22,
+      "gpm": 632,
+      "xpm": 870,
+      "lastHits": 278,
+      "laneEfficiency": null,
+      "towerDamage": 6568,
+      "heroDamage": 28395,
+      "teamfight": null,
+      "lh10": null,
+      "gold10": null,
+      "parsed": false,
+      "gpmBr": null,
+      "xpmBr": null,
+      "deathsBr": null,
+      "lhBr": null,
+      "damageBr": null,
+      "towerBr": null,
+      "boots": null,
+      "bkb": null,
+      "opendota": "https://www.opendota.com/matches/9053772531",
+      "divine": {
+        "picks": 84579,
+        "wins": 44435,
+        "wr": 0.5254
+      }
+    },
+    {
+      "matchId": 9053700463,
+      "when": "2026-10-20 19:59",
+      "startTime": 1792497576,
+      "durationMin": 41.2,
+      "win": false,
+      "hero": "Dark Seer",
+      "heroId": 55,
+      "heroFile": "dark_seer",
+      "role": null,
+      "laneRole": null,
+      "partySize": 1,
+      "kills": 7,
+      "deaths": 9,
+      "assists": 9,
+      "gpm": 532,
+      "xpm": 655,
+      "lastHits": 348,
+      "laneEfficiency": null,
+      "towerDamage": 321,
+      "heroDamage": 45103,
+      "teamfight": null,
+      "lh10": null,
+      "gold10": null,
+      "parsed": false,
+      "gpmBr": null,
+      "xpmBr": null,
+      "deathsBr": null,
+      "lhBr": null,
+      "damageBr": null,
+      "towerBr": null,
+      "boots": null,
+      "bkb": null,
+      "opendota": "https://www.opendota.com/matches/9053700463",
+      "divine": {
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
+      }
+    },
+    {
+      "matchId": 9053618022,
+      "when": "2026-10-20 18:42",
+      "startTime": 1792492956,
+      "durationMin": 29.2,
+      "win": false,
+      "hero": "Windranger",
+      "heroId": 21,
+      "heroFile": "windrunner",
+      "role": null,
+      "laneRole": null,
+      "partySize": 1,
+      "kills": 6,
+      "deaths": 6,
+      "assists": 3,
+      "gpm": 461,
+      "xpm": 510,
+      "lastHits": 195,
+      "laneEfficiency": null,
+      "towerDamage": 1775,
+      "heroDamage": 14422,
+      "teamfight": null,
+      "lh10": null,
+      "gold10": null,
+      "parsed": false,
+      "gpmBr": null,
+      "xpmBr": null,
+      "deathsBr": null,
+      "lhBr": null,
+      "damageBr": null,
+      "towerBr": null,
+      "boots": null,
+      "bkb": null,
+      "opendota": "https://www.opendota.com/matches/9053618022",
+      "divine": {
+        "picks": 85098,
+        "wins": 41591,
+        "wr": 0.4887
+      }
+    },
     {
       "matchId": 9052276352,
       "when": "2026-10-19 19:18",
@@ -166,9 +346,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9052276352",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -206,9 +386,9 @@
       "bkb": 1914,
       "opendota": "https://www.opendota.com/matches/9046020114",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -246,9 +426,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9045962392",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -286,9 +466,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9045890397",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -326,9 +506,9 @@
       "bkb": 1078,
       "opendota": "https://www.opendota.com/matches/9044511799",
       "divine": {
-        "picks": 18251,
-        "wins": 9428,
-        "wr": 0.5166
+        "picks": 20132,
+        "wins": 10399,
+        "wr": 0.5165
       }
     },
     {
@@ -366,9 +546,9 @@
       "bkb": 1683,
       "opendota": "https://www.opendota.com/matches/9043253102",
       "divine": {
-        "picks": 49156,
-        "wins": 25573,
-        "wr": 0.5202
+        "picks": 54167,
+        "wins": 28149,
+        "wr": 0.5197
       }
     },
     {
@@ -406,9 +586,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9043177550",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -446,9 +626,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9043101243",
       "divine": {
-        "picks": 18251,
-        "wins": 9428,
-        "wr": 0.5166
+        "picks": 20132,
+        "wins": 10399,
+        "wr": 0.5165
       }
     },
     {
@@ -486,9 +666,9 @@
       "bkb": 1737,
       "opendota": "https://www.opendota.com/matches/9040197634",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -526,9 +706,9 @@
       "bkb": 1725,
       "opendota": "https://www.opendota.com/matches/9040039857",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -566,9 +746,9 @@
       "bkb": 1343,
       "opendota": "https://www.opendota.com/matches/9039965166",
       "divine": {
-        "picks": 76341,
-        "wins": 40152,
-        "wr": 0.526
+        "picks": 84579,
+        "wins": 44435,
+        "wr": 0.5254
       }
     },
     {
@@ -606,9 +786,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9037002606",
       "divine": {
-        "picks": 42123,
-        "wins": 21038,
-        "wr": 0.4994
+        "picks": 46697,
+        "wins": 23223,
+        "wr": 0.4973
       }
     },
     {
@@ -646,9 +826,9 @@
       "bkb": 1699,
       "opendota": "https://www.opendota.com/matches/9030733066",
       "divine": {
-        "picks": 76341,
-        "wins": 40152,
-        "wr": 0.526
+        "picks": 84579,
+        "wins": 44435,
+        "wr": 0.5254
       }
     },
     {
@@ -686,9 +866,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9030675826",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -726,9 +906,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9030611196",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -766,9 +946,9 @@
       "bkb": 1580,
       "opendota": "https://www.opendota.com/matches/9029290353",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -806,9 +986,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9029222399",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -846,9 +1026,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9029168095",
       "divine": {
-        "picks": 53454,
-        "wins": 25505,
-        "wr": 0.4771
+        "picks": 58639,
+        "wins": 27936,
+        "wr": 0.4764
       }
     },
     {
@@ -886,9 +1066,9 @@
       "bkb": 2191,
       "opendota": "https://www.opendota.com/matches/9029058335",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -926,9 +1106,9 @@
       "bkb": 2075,
       "opendota": "https://www.opendota.com/matches/9028911799",
       "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 34713,
+        "wins": 17542,
+        "wr": 0.5053
       }
     },
     {
@@ -966,169 +1146,9 @@
       "bkb": 1864,
       "opendota": "https://www.opendota.com/matches/9028619249",
       "divine": {
-        "picks": 49156,
-        "wins": 25573,
-        "wr": 0.5202
-      }
-    },
-    {
-      "matchId": 9028522982,
-      "when": "2026-10-04 12:36",
-      "startTime": 1791088614,
-      "durationMin": 34.0,
-      "win": true,
-      "hero": "Dark Seer",
-      "heroId": 55,
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "laneRole": 3,
-      "partySize": 1,
-      "kills": 14,
-      "deaths": 2,
-      "assists": 24,
-      "gpm": 746,
-      "xpm": 846,
-      "lastHits": 296,
-      "laneEfficiency": 1.1364187550525464,
-      "towerDamage": 6413,
-      "heroDamage": 39832,
-      "teamfight": 0.76,
-      "lh10": 66,
-      "gold10": 5623,
-      "parsed": true,
-      "gpmBr": null,
-      "xpmBr": null,
-      "deathsBr": null,
-      "lhBr": null,
-      "damageBr": null,
-      "towerBr": null,
-      "boots": 413,
-      "bkb": null,
-      "opendota": "https://www.opendota.com/matches/9028522982",
-      "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
-      }
-    },
-    {
-      "matchId": 9028491200,
-      "when": "2026-10-04 11:50",
-      "startTime": 1791085828,
-      "durationMin": 34.3,
-      "win": true,
-      "hero": "Dark Seer",
-      "heroId": 55,
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "laneRole": 3,
-      "partySize": 1,
-      "kills": 9,
-      "deaths": 5,
-      "assists": 21,
-      "gpm": 776,
-      "xpm": 956,
-      "lastHits": 365,
-      "laneEfficiency": 1.08589329021827,
-      "towerDamage": 1920,
-      "heroDamage": 35265,
-      "teamfight": 0.6976744,
-      "lh10": 99,
-      "gold10": 5373,
-      "parsed": true,
-      "gpmBr": null,
-      "xpmBr": null,
-      "deathsBr": null,
-      "lhBr": null,
-      "damageBr": null,
-      "towerBr": null,
-      "boots": 458,
-      "bkb": null,
-      "opendota": "https://www.opendota.com/matches/9028491200",
-      "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
-      }
-    },
-    {
-      "matchId": 9028471429,
-      "when": "2026-10-04 11:21",
-      "startTime": 1791084078,
-      "durationMin": 23.6,
-      "win": false,
-      "hero": "Dark Seer",
-      "heroId": 55,
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "laneRole": 3,
-      "partySize": 1,
-      "kills": 4,
-      "deaths": 8,
-      "assists": 2,
-      "gpm": 417,
-      "xpm": 327,
-      "lastHits": 161,
-      "laneEfficiency": 0.8306386418755053,
-      "towerDamage": 139,
-      "heroDamage": 12431,
-      "teamfight": 0.5,
-      "lh10": 70,
-      "gold10": 4110,
-      "parsed": true,
-      "gpmBr": null,
-      "xpmBr": null,
-      "deathsBr": null,
-      "lhBr": null,
-      "damageBr": null,
-      "towerBr": null,
-      "boots": 500,
-      "bkb": null,
-      "opendota": "https://www.opendota.com/matches/9028471429",
-      "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
-      }
-    },
-    {
-      "matchId": 9028444445,
-      "when": "2026-10-04 10:40",
-      "startTime": 1791081633,
-      "durationMin": 34.8,
-      "win": false,
-      "hero": "Dark Seer",
-      "heroId": 55,
-      "heroFile": "dark_seer",
-      "role": "pos3",
-      "laneRole": 3,
-      "partySize": 1,
-      "kills": 5,
-      "deaths": 9,
-      "assists": 12,
-      "gpm": 535,
-      "xpm": 563,
-      "lastHits": 296,
-      "laneEfficiency": 0.688965238480194,
-      "towerDamage": 0,
-      "heroDamage": 30611,
-      "teamfight": 0.7083333,
-      "lh10": 69,
-      "gold10": 3409,
-      "parsed": true,
-      "gpmBr": null,
-      "xpmBr": null,
-      "deathsBr": null,
-      "lhBr": null,
-      "damageBr": null,
-      "towerBr": null,
-      "boots": 600,
-      "bkb": 1807,
-      "opendota": "https://www.opendota.com/matches/9028444445",
-      "divine": {
-        "picks": 31467,
-        "wins": 15905,
-        "wr": 0.5055
+        "picks": 54167,
+        "wins": 28149,
+        "wr": 0.5197
       }
     }
   ],
