@@ -1,7 +1,7 @@
 {
   "launch": false,
   "fresh": false,
-  "reason": "no new playoff map",
+  "reason": "handled 9056794318: PARI Universe Bo3 Liquid 2-0, not a TI15 map",
   "newMapIds": [],
   "series": {
     "lbsf": "0-2",
@@ -19,5 +19,5 @@
     "lbf": "2-0",
     "gf": "2-3"
   },
-  "asOf": "2026-08-26 11:15 CST"
+  "asOf": "2026-10-23 02:59 CST"
 }
