@@ -1,7 +1,11 @@
 {
   "launch": false,
   "fresh": false,
-  "reason": "no new ranked map",
-  "newMatchIds": [],
-  "asOf": "2026-10-22 12:24 CST"
+  "reason": "launched",
+  "newMatchIds": [
+    "9056691868",
+    "9056633389",
+    "9056567516"
+  ],
+  "asOf": "2026-10-23 03:51 CST"
 }
