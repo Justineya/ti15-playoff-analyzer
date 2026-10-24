@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-25 00:58 CST",
+  "asOf": "2026-10-25 03:21 CST",
   "n": 120,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
@@ -36548,7 +36548,7 @@
       "series_id": 1158959,
       "start_time": 1792857192,
       "duration": 1935,
-      "parsed": false,
+      "parsed": true,
       "radiant": "BoomBoys",
       "dire": "Team Spirit",
       "radiant_team_id": 8255888,
@@ -36559,20 +36559,33 @@
         13,
         49
       ],
-      "pace": "未知",
+      "pace": "正常",
       "length": "标准",
       "stance": "来回拉锯",
-      "f10k": null,
-      "f10k_mid_share": 0,
-      "first_tower": null,
-      "gold": {
-        "m5": null,
-        "m10": null,
-        "m15": null,
-        "m20": null
+      "f10k": {
+        "side": "radiant",
+        "time": 888,
+        "score": {
+          "radiant": 10,
+          "dire": 9
+        },
+        "completing_killer": "MieRo",
+        "completing_hero": "Doom"
       },
-      "kills_8min": 0,
-      "kills_15min": 0,
+      "f10k_mid_share": 3,
+      "first_tower": {
+        "time": 615,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_top"
+      },
+      "gold": {
+        "m5": -163,
+        "m10": -409,
+        "m15": -1101,
+        "m20": -6520
+      },
+      "kills_8min": 8,
+      "kills_15min": 19,
       "draft": {
         "radiant": {
           "bans": [
@@ -36758,44 +36771,44 @@
       "sides": {
         "radiant": {
           "mid": {
-            "player": "Kiritych~",
-            "hero": "Lifestealer",
-            "hero_id": 54,
-            "gold_t10": null,
-            "xp_t10": null,
-            "kills": 4,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "player": "Save-",
+            "hero": "Keeper of the Light",
+            "hero_id": 90,
+            "gold_t10": 4078,
+            "xp_t10": 4796,
+            "kills": 2,
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
           },
           "pos4": {
-            "player": "swedenstrong",
-            "hero": "Windranger",
-            "kills": 1,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
-          },
-          "pos5": {
             "player": "Kataomi`",
             "hero": "Bane",
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills": 2,
+            "kills_before_10": 2,
+            "assists_before_10": 3,
+            "participate_before_10": 5
+          },
+          "pos5": {
+            "player": "swedenstrong",
+            "hero": "Windranger",
+            "kills_before_10": 1,
+            "assists_before_10": 1,
+            "participate_before_10": 2
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
-          "mid_sup_driven": false
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 10,
+          "mid_sup_driven": true
         },
         "dire": {
           "mid": {
             "player": "Larl",
             "hero": "Sand King",
             "hero_id": 16,
-            "gold_t10": null,
-            "xp_t10": null,
+            "gold_t10": 4573,
+            "xp_t10": 5293,
             "kills": 9,
             "kills_before_10": 0,
             "assists_before_10": 0,
@@ -36805,33 +36818,33 @@
             "player": "not_me",
             "hero": "Hoodwink",
             "kills": 13,
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 2,
+            "assists_before_10": 2,
+            "participate_before_10": 4
           },
           "pos5": {
             "player": "rue",
             "hero": "Witch Doctor",
-            "kills_before_10": 0,
-            "assists_before_10": 0,
-            "participate_before_10": 0
+            "kills_before_10": 2,
+            "assists_before_10": 1,
+            "participate_before_10": 3
           },
           "mid_support_fights_12min": 0,
-          "kills_at_f10k": 0,
-          "first10_mid_sup_kills": 0,
-          "first10_mid_sup_ka": 0,
+          "kills_at_f10k": 9,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 7,
           "mid_sup_driven": false
         }
       },
       "blurb": {
         "bp": {
-          "radiant": "一阶段禁Slark、Nature's Prophet；前两手Keeper of the Light、Bane；中单Lifestealer第4手拿",
+          "radiant": "一阶段禁Slark、Nature's Prophet；前两手Keeper of the Light、Bane；中单Keeper of the Light第1手拿",
           "dire": "一阶段禁Lone Druid、Earth Spirit；前两手Witch Doctor、Hoodwink；中单Sand King第3手拿"
         },
-        "pace": "未知节奏 / 标准局（32分15秒）；先到10杀出现在 ?分",
+        "pace": "正常节奏 / 标准局（32分15秒）；先到10杀出现在 14分48秒",
         "stance": "来回拉锯",
-        "f10k": "没有队伍先堆到 10 杀",
-        "mid_support": "天辉中单 Kiritych~/Lifestealer 参与 0 次（击杀0+助攻0），辅swedenstrong/Windranger 参与 0 次，中辅合计0；夜魇中单 Larl/Sand King 参与 0 次（击杀0+助攻0），辅not_me/Hoodwink 参与 0 次，中辅合计0。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+        "f10k": "BoomBoys先到 10 杀（当时 10-9，14分48秒）。这 10 次击杀里，中单 Save-/Keeper of the Light 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 9 杀。",
+        "mid_support": "天辉中单 Save-/Keeper of the Light 参与 3 次（击杀1+助攻2），辅Kataomi`/Bane 参与 5 次，中辅合计10 · 中辅驱动；夜魇中单 Larl/Sand King 参与 0 次（击杀0+助攻0），辅not_me/Hoodwink 参与 4 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/9059855376",
       "source": "ti15",
