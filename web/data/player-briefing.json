@@ -1,105 +1,111 @@
 {
-  "asOf": "2026-10-23 03:51 CST",
+  "asOf": "2026-10-24 12:20 CST",
   "source": "stub",
-  "headline": "+3 11-14 中2-1 3号5-8",
-  "lede": "新3把全单排 1-2。",
+  "headline": "+6 12-13 中1-1 3号7-6",
+  "lede": "新6把全单排 4-2。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新3把全单排 1-2。",
-    "负：Dark Seer负、Dragon Knight负。",
-    "胜：Dawnbreaker。",
-    "窗口 11-14。",
-    "中2-1，3号5-8。"
+    "新6把全单排 4-2。",
+    "负：Night Stalker负、Drow Ranger版本坑。",
+    "胜：Dark Seer、Death Prophet、Dawnbreaker、Dawnbreaker。",
+    "窗口 12-13。",
+    "中1-1，3号7-6。"
   ],
   "sessionMatchIds": [
-    "9056691868",
-    "9056633389",
-    "9056567516"
+    "9058811473",
+    "9058775531",
+    "9058741409",
+    "9058112950",
+    "9058015225",
+    "9057889105"
   ],
   "newMatchIds": [
-    "9056691868",
-    "9056633389",
-    "9056567516"
+    "9058811473",
+    "9058775531",
+    "9058741409",
+    "9058112950",
+    "9058015225",
+    "9057889105"
   ],
   "focus": [
     {
-      "matchId": 9056691868,
+      "matchId": 9058811473,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "win",
+      "divineWr": {
+        "picks": 28531,
+        "wins": 14398,
+        "wr": 0.5046
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 9058775531,
+      "hero": "Death Prophet",
+      "heroFile": "death_prophet",
+      "role": "pos3",
+      "kind": "win",
+      "divineWr": {
+        "picks": 19566,
+        "wins": 9755,
+        "wr": 0.4986
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 9058741409,
+      "hero": "Night Stalker",
+      "heroFile": "night_stalker",
+      "role": "pos3",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 37835,
+        "wins": 19911,
+        "wr": 0.5263
+      },
+      "note": "负"
+    },
+    {
+      "matchId": 9058112950,
+      "hero": "Dawnbreaker",
+      "heroFile": "dawnbreaker",
+      "role": "pos3",
+      "kind": "win",
+      "divineWr": {
+        "picks": 46922,
+        "wins": 24312,
+        "wr": 0.5181
+      },
+      "note": "胜"
+    },
+    {
+      "matchId": 9058015225,
+      "hero": "Drow Ranger",
+      "heroFile": "drow_ranger",
+      "role": "pos1",
+      "kind": "meta_weak",
+      "divineWr": {
+        "picks": 47207,
+        "wins": 21018,
+        "wr": 0.4452
+      },
+      "note": "版本坑"
+    },
+    {
+      "matchId": 9057889105,
       "hero": "Dawnbreaker",
       "heroFile": "dawnbreaker",
       "role": null,
       "kind": "win",
       "divineWr": {
-        "picks": 53537,
-        "wins": 27694,
-        "wr": 0.5173
+        "picks": 46922,
+        "wins": 24312,
+        "wr": 0.5181
       },
       "note": "胜"
-    },
-    {
-      "matchId": 9056633389,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 33523,
-        "wins": 16999,
-        "wr": 0.5071
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9056567516,
-      "hero": "Dragon Knight",
-      "heroFile": "dragon_knight",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 83618,
-        "wins": 43926,
-        "wr": 0.5253
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9055116316,
-      "hero": "Tidehunter",
-      "heroFile": "tidehunter",
-      "role": "pos3",
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 55794,
-        "wins": 26610,
-        "wr": 0.4769
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9055074477,
-      "hero": "Dark Seer",
-      "heroFile": "dark_seer",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 33523,
-        "wins": 16999,
-        "wr": 0.5071
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9053846920,
-      "hero": "Dawnbreaker",
-      "heroFile": "dawnbreaker",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 53537,
-        "wins": 27694,
-        "wr": 0.5173
-      },
-      "note": "负"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
