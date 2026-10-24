@@ -1,16 +1,17 @@
 {
   "asOf": "2026-10-24 12:20 CST",
-  "source": "stub",
-  "headline": "+6 12-13 中1-1 3号7-6",
-  "lede": "新6把全单排 4-2。",
+  "source": "cursor",
+  "headline": "12-13 主三 7-6，新6把4-2",
+  "lede": "新6把全单排4-2，近8天7k+里黑鸟4-6仍不收塔。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
-    "新6把全单排 4-2。",
-    "负：Night Stalker负、Drow Ranger版本坑。",
-    "胜：Dark Seer、Death Prophet、Dawnbreaker、Dawnbreaker。",
-    "窗口 12-13。",
-    "中1-1，3号7-6。"
+    "新6把全单排4-2：胜黑鸟、死亡先知、破晓两场，负夜魔和卓尔。",
+    "窗口12-13，三号7-6、中单1-1、一号0-2，胜场对线86%均死5.0，负场78%均死9.1。",
+    "黑鸟10把4-6，近8天7k+三号51.6%，22日14死塔0，20日伤45103塔321没BKB。",
+    "夜魔7k+三号52.4%，这把6/9/5、GPM389、塔23，龙骑12死、GPM489，核心过51%。",
+    "卓尔一号7k+43.9%、42.8分塔0，风行一号7k+52.9%、6/6/3、GPM461。",
+    "潮汐7k+三号46.2%，55.5分塔275且没BKB，破晓6把5-1，胜场塔伤3763起、负场428。"
   ],
   "sessionMatchIds": [
     "9058811473",
@@ -40,7 +41,7 @@
         "wins": 14398,
         "wr": 0.5046
       },
-      "note": "胜"
+      "note": "4/2/13收塔"
     },
     {
       "matchId": 9058775531,
@@ -53,20 +54,20 @@
         "wins": 9755,
         "wr": 0.4986
       },
-      "note": "胜"
+      "note": "塔伤9235"
     },
     {
       "matchId": 9058741409,
       "hero": "Night Stalker",
       "heroFile": "night_stalker",
       "role": "pos3",
-      "kind": "other_loss",
+      "kind": "farm_collapse",
       "divineWr": {
         "picks": 37835,
         "wins": 19911,
         "wr": 0.5263
       },
-      "note": "负"
+      "note": "对线64%崩"
     },
     {
       "matchId": 9058112950,
@@ -79,7 +80,7 @@
         "wins": 24312,
         "wr": 0.5181
       },
-      "note": "胜"
+      "note": "16/5/20收塔"
     },
     {
       "matchId": 9058015225,
@@ -92,7 +93,7 @@
         "wins": 21018,
         "wr": 0.4452
       },
-      "note": "版本坑"
+      "note": "一号43.9%"
     },
     {
       "matchId": 9057889105,
@@ -105,7 +106,59 @@
         "wins": 24312,
         "wr": 0.5181
       },
-      "note": "胜"
+      "note": "塔伤7453"
+    },
+    {
+      "matchId": 9056633389,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": null,
+      "kind": "farm_collapse",
+      "divineWr": {
+        "picks": 28531,
+        "wins": 14398,
+        "wr": 0.5046
+      },
+      "note": "14死GPM398"
+    },
+    {
+      "matchId": 9056567516,
+      "hero": "Dragon Knight",
+      "heroFile": "dragon_knight",
+      "role": null,
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 73359,
+        "wins": 38329,
+        "wr": 0.5225
+      },
+      "note": "12死GPM489"
+    },
+    {
+      "matchId": 9055116316,
+      "hero": "Tidehunter",
+      "heroFile": "tidehunter",
+      "role": "pos3",
+      "kind": "meta_weak",
+      "divineWr": {
+        "picks": 47165,
+        "wins": 22548,
+        "wr": 0.4781
+      },
+      "note": "三号46.2%"
+    },
+    {
+      "matchId": 9053700463,
+      "hero": "Dark Seer",
+      "heroFile": "dark_seer",
+      "role": "pos3",
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 28531,
+        "wins": 14398,
+        "wr": 0.5046
+      },
+      "note": "塔321没BKB"
     }
   ],
   "note": "卡片是近况全部。新图只做高亮。非投注建议。"
