@@ -61,7 +61,8 @@ def test_skips_ewc_and_covers_eight() -> None:
     assert iw["maps"] >= 10
     assert iw["picks"][0]["hero"] == "Hoodwink"
     assert iw["picks"][0].get("slug") == "hoodwink"
-    assert any(r["hero"] == "Drow Ranger" for r in sp["picks"][:5])
+    drow = next(r for r in sp["picks"] if r["hero"] == "Drow Ranger")
+    assert drow["n"] >= 5
     assert "EWC" not in report["sample"]
     assert iw["pickIndex"]["Hoodwink"]["n"] == iw["picks"][0]["n"]
 

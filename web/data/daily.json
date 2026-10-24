@@ -1,293 +1,216 @@
 {
-  "asOf": "2026-08-26 11:15 CST",
+  "asOf": "2026-10-25 01:03 CST",
   "timezone": "Asia/Shanghai",
-  "kind": "champion",
-  "headline": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
-  "narrative": "TI15 结束了。冠军 Spirit，总决赛 2-3 赢了 VSN。决胜局第5局 Spirit 赢了，先到10杀 VSN，64.4分钟。",
+  "kind": "next-map",
+  "headline": "Spirit 2-0 结束对 BoomBoys。第1局先到10杀 Spirit、45.9分钟；第2局 32.3分钟、人头 13-49，先到10杀没解析。没有第3局。",
+  "narrative": "第1局 9059726836，Spirit 赢 BoomBoys，人头 39-24。慢节奏、来回拉锯，45.9 分钟。先到 10 杀是 Spirit，18分00秒，当时 10-9。中单是 Larl/Pangolier 对 Save-/Keeper of the Light。Spirit 拿了 Witch Doctor、Pangolier、Dark Willow、Weaver、Mars；BoomBoys 拿了 Keeper of the Light、Hoodwink、Brewmaster、Windranger、Sven。这 10 次击杀里 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单加双辅合计 15 次，中辅驱动，对手当时 9 杀。\n\n第2局 9059855376 还是 Spirit 赢，人头 13-49，32.3 分钟。回放没解析，节奏记为未知，姿态仍是来回拉锯，没有先到 10 杀时间。第1局 BoomBoys 把 Keeper of the Light 放中单，先到 10 杀参与 6 次，局还是 45.9 分钟、24-39 输掉；所以第2局他们仍第一手拿 Keeper of the Light，中单换成 Kiritych~/Lifestealer，旁边是 Bane、Windranger、Doom。Spirit 继续第一手 Witch Doctor，中单 Larl 从 Pangolier 换成 Sand King，并把第1局 BoomBoys 用过的 Hoodwink 拿过来，再加上 Largo、Phantom Lancer。人头从 39-24 拉开到 13-49。\n\n重算后 BoomBoys 单局胜率 31.5%（上一版 39.8%），Spirit 68.5%；先到 10 杀 BoomBoys 40.5%、Spirit 59.5%。从 0-0 再开系列，Spirit 76.5%（上一版 65.1%），门槛 1.31。H2H 从 1 局变成 3 局，三张都是 Spirit 赢。本届胜率 BoomBoys 53% / Spirit 64%，先到 10 杀 49% / 60%。模型仍写 BoomBoys 中单爱拿 Lina，这两局实际中单是 Keeper of the Light 和 Lifestealer。液体百科败者组半决赛比分 0-2，两张图 winner 都是 2；百科时长是 35分28秒和 30分12秒，英雄不是这两张新阵容。新图是 series 1158959、联赛 PARI UNIVERSE by FISSURE，观战源因同队并进这一格。0-2 之后 Bo3 结束，条件系列胜率 Spirit 100%，门槛 1.00。没有第3局，也没有下一场系列的第1局。模型表上的第3局只是样本：Spirit 胜率 68.5%、先到 10 杀 58.9%，门槛 1.46；Polymarket 没有第3局胜者价。八月盘 dota2-boombo-ts8-2026-08-22 的第1局、第2局和系列都已结算为 Spirit 1.00、BoomBoys 0.00。先到 10 杀没有公开盘。这不是投注建议。TI 总决赛仍是 Spirit 2-3 赢 VSN。八月 8959362208 OpenDota 返回 404，没进样本。",
   "previousMap": {
-    "game": 5,
-    "matchId": 8960991322,
+    "game": 2,
+    "matchId": 9059855376,
     "winner": "Team Spirit",
     "score": [
-      31,
-      34
+      13,
+      49
     ],
-    "f10": "TEAM VISION",
-    "f10Time": 787,
-    "durationMin": 64.4,
-    "pace": "正常",
+    "f10": null,
+    "f10Time": null,
+    "durationMin": 32.3,
+    "pace": "未知",
     "stance": "来回拉锯",
     "picks": {
-      "TEAM VISION": [
-        "Invoker",
-        "Rubick",
-        "Axe",
-        "Hoodwink",
-        "Juggernaut"
+      "BoomBoys": [
+        "Keeper of the Light",
+        "Bane",
+        "Windranger",
+        "Lifestealer",
+        "Doom"
       ],
       "Team Spirit": [
-        "Bane",
-        "Pangolier",
-        "Mirana",
-        "Lifestealer",
-        "Dark Seer"
+        "Witch Doctor",
+        "Hoodwink",
+        "Sand King",
+        "Largo",
+        "Phantom Lancer"
       ]
     },
     "mid": {
-      "TEAM VISION": "Invoker",
-      "Team Spirit": "Pangolier"
+      "BoomBoys": "Lifestealer",
+      "Team Spirit": "Sand King"
     },
-    "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
+    "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 8960577698,
+      "matchId": 9059726836,
       "winner": "Team Spirit",
       "score": [
-        42,
-        17
+        39,
+        24
       ],
       "f10": "Team Spirit",
-      "f10Time": 826,
-      "durationMin": 46.2,
-      "pace": "正常",
-      "stance": "滚雪球",
+      "f10Time": 1080,
+      "durationMin": 45.9,
+      "pace": "慢",
+      "stance": "来回拉锯",
       "picks": {
         "Team Spirit": [
-          "Slark",
+          "Witch Doctor",
+          "Pangolier",
           "Dark Willow",
-          "Shadow Fiend",
-          "Disruptor",
-          "Undying"
+          "Weaver",
+          "Mars"
         ],
-        "TEAM VISION": [
-          "Ember Spirit",
-          "Mirana",
-          "Io",
-          "Axe",
-          "Hoodwink"
+        "BoomBoys": [
+          "Keeper of the Light",
+          "Hoodwink",
+          "Brewmaster",
+          "Windranger",
+          "Sven"
         ]
       },
       "mid": {
-        "Team Spirit": "Slark",
-        "TEAM VISION": "Io"
+        "Team Spirit": "Pangolier",
+        "BoomBoys": "Keeper of the Light"
       },
-      "blurb": "Team Spirit先到 10 杀（当时 10-6，13分46秒）。这 10 次击杀里，中单 Larl/Slark 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 5 次。对手当时 6 杀。"
+      "blurb": "Team Spirit先到 10 杀（当时 10-9，18分00秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 9 杀。"
     },
     {
       "game": 2,
-      "matchId": 8960655084,
-      "winner": "TEAM VISION",
-      "score": [
-        46,
-        48
-      ],
-      "f10": "Team Spirit",
-      "f10Time": 610,
-      "durationMin": 64.5,
-      "pace": "快",
-      "stance": "进攻转线",
-      "picks": {
-        "TEAM VISION": [
-          "Earth Spirit",
-          "Enchantress",
-          "Rubick",
-          "Underlord",
-          "Lifestealer"
-        ],
-        "Team Spirit": [
-          "Shadow Fiend",
-          "Slardar",
-          "Hoodwink",
-          "Undying",
-          "Axe"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Earth Spirit",
-        "Team Spirit": "Slardar"
-      },
-      "blurb": "Team Spirit先到 10 杀（当时 2-10，10分10秒）。这 10 次击杀里，中单 Larl/Slardar 参与 7 次（击杀 4 + 助攻 3），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 2 杀。"
-    },
-    {
-      "game": 3,
-      "matchId": 8960762254,
+      "matchId": 9059855376,
       "winner": "Team Spirit",
       "score": [
-        26,
-        24
+        13,
+        49
       ],
-      "f10": "TEAM VISION",
-      "f10Time": 1537,
-      "durationMin": 45.9,
-      "pace": "慢",
-      "stance": "发育对线",
-      "picks": {
-        "Team Spirit": [
-          "Nature's Prophet",
-          "Dark Willow",
-          "Tusk",
-          "Axe",
-          "Terrorblade"
-        ],
-        "TEAM VISION": [
-          "Shadow Fiend",
-          "Enchantress",
-          "Slardar",
-          "Pangolier",
-          "Marci"
-        ]
-      },
-      "mid": {
-        "Team Spirit": "Nature's Prophet",
-        "TEAM VISION": "Pangolier"
-      },
-      "blurb": "TEAM VISION先到 10 杀（当时 8-10，25分37秒）。这 10 次击杀里，中单 No[o]ne-/Pangolier 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 7 次。对手当时 8 杀。"
-    },
-    {
-      "game": 4,
-      "matchId": 8960882635,
-      "winner": "TEAM VISION",
-      "score": [
-        31,
-        13
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 1031,
-      "durationMin": 44.3,
-      "pace": "慢",
+      "f10": null,
+      "f10Time": null,
+      "durationMin": 32.3,
+      "pace": "未知",
       "stance": "来回拉锯",
       "picks": {
-        "TEAM VISION": [
+        "BoomBoys": [
           "Keeper of the Light",
-          "Doom",
-          "Lifestealer",
-          "Mirana",
-          "Sand King"
-        ],
-        "Team Spirit": [
-          "Winter Wyvern",
-          "Centaur Warrunner",
-          "Clockwerk",
-          "Templar Assassin",
-          "Storm Spirit"
-        ]
-      },
-      "mid": {
-        "TEAM VISION": "Sand King",
-        "Team Spirit": "Storm Spirit"
-      },
-      "blurb": "TEAM VISION先到 10 杀（当时 10-4，17分11秒）。这 10 次击杀里，中单 No[o]ne-/Sand King 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。"
-    },
-    {
-      "game": 5,
-      "matchId": 8960991322,
-      "winner": "Team Spirit",
-      "score": [
-        31,
-        34
-      ],
-      "f10": "TEAM VISION",
-      "f10Time": 787,
-      "durationMin": 64.4,
-      "pace": "正常",
-      "stance": "来回拉锯",
-      "picks": {
-        "TEAM VISION": [
-          "Invoker",
-          "Rubick",
-          "Axe",
-          "Hoodwink",
-          "Juggernaut"
-        ],
-        "Team Spirit": [
           "Bane",
-          "Pangolier",
-          "Mirana",
+          "Windranger",
           "Lifestealer",
-          "Dark Seer"
+          "Doom"
+        ],
+        "Team Spirit": [
+          "Witch Doctor",
+          "Hoodwink",
+          "Sand King",
+          "Largo",
+          "Phantom Lancer"
         ]
       },
       "mid": {
-        "TEAM VISION": "Invoker",
-        "Team Spirit": "Pangolier"
+        "BoomBoys": "Lifestealer",
+        "Team Spirit": "Sand King"
       },
-      "blurb": "TEAM VISION先到 10 杀（当时 10-4，13分07秒）。这 10 次击杀里，中单 No[o]ne-/Invoker 参与 1 次（击杀 0 + 助攻 1），中单+双辅合计参与 11 次 · 中辅驱动。对手当时 4 杀。"
+      "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
     }
   ],
-  "nextMap": null,
+  "nextMap": {
+    "game": 3,
+    "teamA": "BoomBoys",
+    "teamB": "Team Spirit",
+    "scheduled": false,
+    "lean": {
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.685,
+      "pA": 0.315,
+      "pB": 0.685,
+      "breakEven": 1.46,
+      "market": null,
+      "why": "Bo3 已 0-2 结束，第3局不会打。这是重算后的第3局模型：Spirit 68.5%，门槛 1.46。Polymarket 没有第3局胜者价。"
+    },
+    "f10": {
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 0.589,
+      "pA": 0.411,
+      "pB": 0.589,
+      "breakEven": null,
+      "market": null,
+      "why": "先到10杀没有公开盘。模型第3局先到10杀 Spirit 58.9%。"
+    }
+  },
   "seriesLean": {
-    "team": "TEAM VISION",
-    "tag": "VSN",
-    "p": 0.616,
-    "pA": 0.616,
-    "pB": 0.384,
-    "breakEven": 1.62,
+    "team": "Team Spirit",
+    "tag": "Spirit",
+    "p": 1.0,
+    "pA": 0.0,
+    "pB": 1.0,
+    "breakEven": 1.0,
     "market": {
       "outcomes": [
-        "TEAM VISION",
+        "BoomBoys",
         "Team Spirit"
       ],
       "prices": [
-        1.0,
-        0.0
+        0.0,
+        1.0
       ]
     },
-    "why": "本届胜率 TEAM VISION 66% / Team Spirit 62%；先到10杀 58% / 60%；H2H 10.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
+    "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
   },
   "previous": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
-    "teamA": "TEAM VISION",
+    "id": "lbsf",
+    "round": "败者组半决赛",
+    "day": "2026-08-22",
+    "when": "2026-08-22 19:00",
+    "format": "Bo3",
+    "teamA": "BoomBoys",
     "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
+    "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
     "status": "completed",
-    "score": "2-3",
+    "score": "0-2",
     "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5,
+    "polySlug": "dota2-boombo-ts8-2026-08-22",
+    "mapsPlayed": 2,
     "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.616,
-      "pA": 0.616,
-      "pB": 0.384,
-      "breakEven": 1.62,
+      "team": "Team Spirit",
+      "tag": "Spirit",
+      "p": 1.0,
+      "pA": 0.0,
+      "pB": 1.0,
+      "breakEven": 1.0,
       "market": {
         "outcomes": [
-          "TEAM VISION",
+          "BoomBoys",
           "Team Spirit"
         ],
         "prices": [
-          1.0,
-          0.0
+          0.0,
+          1.0
         ]
       },
-      "why": "本届胜率 TEAM VISION 66% / Team Spirit 62%；先到10杀 58% / 60%；H2H 10.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
+      "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
     }
   },
   "next": null,
   "focus": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
-    "teamA": "TEAM VISION",
+    "id": "lbsf",
+    "round": "败者组半决赛",
+    "day": "2026-08-22",
+    "when": "2026-08-22 19:00",
+    "format": "Bo3",
+    "teamA": "BoomBoys",
     "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
+    "teamALabel": "BoomBoys",
     "teamBLabel": "Team Spirit",
     "status": "completed",
-    "score": "2-3",
+    "score": "0-2",
     "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5
+    "polySlug": "dota2-boombo-ts8-2026-08-22",
+    "mapsPlayed": 2
   },
   "todayResults": [],
-  "newMapIds": []
+  "newMapIds": [
+    9059726836,
+    9059855376
+  ]
 }
