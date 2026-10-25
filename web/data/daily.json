@@ -1,216 +1,258 @@
 {
-  "asOf": "2026-10-25 01:03 CST",
+  "asOf": "2026-10-26 00:52 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "Spirit 2-0 结束对 BoomBoys。第1局先到10杀 Spirit、45.9分钟；第2局 32.3分钟、人头 13-49，先到10杀没解析。没有第3局。",
-  "narrative": "第1局 9059726836，Spirit 赢 BoomBoys，人头 39-24。慢节奏、来回拉锯，45.9 分钟。先到 10 杀是 Spirit，18分00秒，当时 10-9。中单是 Larl/Pangolier 对 Save-/Keeper of the Light。Spirit 拿了 Witch Doctor、Pangolier、Dark Willow、Weaver、Mars；BoomBoys 拿了 Keeper of the Light、Hoodwink、Brewmaster、Windranger、Sven。这 10 次击杀里 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单加双辅合计 15 次，中辅驱动，对手当时 9 杀。\n\n第2局 9059855376 还是 Spirit 赢，人头 13-49，32.3 分钟。回放没解析，节奏记为未知，姿态仍是来回拉锯，没有先到 10 杀时间。第1局 BoomBoys 把 Keeper of the Light 放中单，先到 10 杀参与 6 次，局还是 45.9 分钟、24-39 输掉；所以第2局他们仍第一手拿 Keeper of the Light，中单换成 Kiritych~/Lifestealer，旁边是 Bane、Windranger、Doom。Spirit 继续第一手 Witch Doctor，中单 Larl 从 Pangolier 换成 Sand King，并把第1局 BoomBoys 用过的 Hoodwink 拿过来，再加上 Largo、Phantom Lancer。人头从 39-24 拉开到 13-49。\n\n重算后 BoomBoys 单局胜率 31.5%（上一版 39.8%），Spirit 68.5%；先到 10 杀 BoomBoys 40.5%、Spirit 59.5%。从 0-0 再开系列，Spirit 76.5%（上一版 65.1%），门槛 1.31。H2H 从 1 局变成 3 局，三张都是 Spirit 赢。本届胜率 BoomBoys 53% / Spirit 64%，先到 10 杀 49% / 60%。模型仍写 BoomBoys 中单爱拿 Lina，这两局实际中单是 Keeper of the Light 和 Lifestealer。液体百科败者组半决赛比分 0-2，两张图 winner 都是 2；百科时长是 35分28秒和 30分12秒，英雄不是这两张新阵容。新图是 series 1158959、联赛 PARI UNIVERSE by FISSURE，观战源因同队并进这一格。0-2 之后 Bo3 结束，条件系列胜率 Spirit 100%，门槛 1.00。没有第3局，也没有下一场系列的第1局。模型表上的第3局只是样本：Spirit 胜率 68.5%、先到 10 杀 58.9%，门槛 1.46；Polymarket 没有第3局胜者价。八月盘 dota2-boombo-ts8-2026-08-22 的第1局、第2局和系列都已结算为 Spirit 1.00、BoomBoys 0.00。先到 10 杀没有公开盘。这不是投注建议。TI 总决赛仍是 Spirit 2-3 赢 VSN。八月 8959362208 OpenDota 返回 404，没进样本。",
+  "headline": "Yandex 2-0 结束对 Iron Wing（1win）。下一场系列第1局对 Liquid，重算后看好 Yandex 57.6%。",
+  "narrative": "第1局 9061299814，Yandex 赢 Iron Wing（OpenDota 记成 1win），人头 39-20。慢节奏、发育对线，33分58秒。先到 10 杀是 Yandex，16分24秒，当时 10-9，收刀 医者watson`/Tiny。中单是 CHIRA_JUNIOR/Sand King 对 bzm/Slark。Yandex 拿了 Techies、Grimstroke、Sand King、Tiny、Necrophos；Iron Wing 拿了 Slark、Witch Doctor、Nyx Assassin、Dark Seer、Io。这 10 次击杀里 Sand King 参与 3 次（击杀 3 + 助攻 0），中单加双辅合计 6 次；Slark 参与 5 次（击杀 3 + 助攻 2）。对手当时 9 杀。\n\n第2局 9061429763 还是 Yandex 赢，人头 Iron Wing 11、Yandex 27。正常节奏、来回拉锯，24分23秒。先到 10 杀还是 Yandex，12分55秒，当时 9-10，收刀 Saksa/Nature's Prophet。第1局 Slark 中单参与了 5 次先到 10 杀，局仍以 20-39 输掉，所以第2局 Iron Wing 改禁 Slark，中单换成 bzm/Dragon Knight，只参与 2 次。Yandex 两局一阶段都禁 Invoker、Largo，中单从 Sand King 换成 CHIRA_JUNIOR/Ember Spirit，前两手改拿 Nature's Prophet、Witch Doctor。Ember 参与 5 次（击杀 0 + 助攻 5），中单加双辅合计 22 次，中辅驱动。系列 2-0。Polymarket dota2-ty-1win-2026-10-25 的第1局、第2局和系列都结算为 Yandex 1.00、1win 0.00，总局数 Under 2.5 结算，Bo3 以 2-0 结束。同一触发里 Spirit 对 BoomBoys 也是 2-0（9059726836、9059855376）。第2局回放现已解析：BoomBoys 先到 10 杀（14分48秒，10-9），中单 Save-/Keeper of the Light 参与 3 次（击杀 1 + 助攻 2），中单加双辅合计 10 次，人头 13-49，Spirit 赢，32分15秒。\n\n下一场系列从 0-0 写第1局：PARI UNIVERSE Group A，Yandex 对 Liquid。重算后第1局看好 Yandex 57.6%（上一版 55.4%），门槛 1.74。先到 10 杀看好 Liquid 52.2%（上一版 53.7%），Yandex 47.8%。系列看好 Yandex 61.6%（上一版 58.9%），门槛 1.62。本届胜率 Yandex 59% / Liquid 52%，先到 10 杀 53% / 54%；上一版是 57% / 52% 和 50% / 54%。对 Liquid 的 H2H 仍是 5 局。模型写 Yandex 中单爱拿 Invoker，刚结束的两局实际是 Sand King 和 Ember Spirit。Polymarket dota2-ty-liquid-2026-10-26 第1局价 Yandex 0.51 / Liquid 0.49，系列价 0.765 / 0.235。先到 10 杀没有公开盘。这不是投注建议。TI 总决赛仍是 Spirit 2-3 赢 VSN。观战源里没有这局的选人。",
   "previousMap": {
     "game": 2,
-    "matchId": 9059855376,
-    "winner": "Team Spirit",
+    "matchId": 9061429763,
+    "winner": "Team Yandex",
     "score": [
-      13,
-      49
+      11,
+      27
     ],
-    "f10": null,
-    "f10Time": null,
-    "durationMin": 32.3,
-    "pace": "未知",
+    "f10": "Team Yandex",
+    "f10Time": 775,
+    "durationMin": 24.4,
+    "pace": "正常",
     "stance": "来回拉锯",
     "picks": {
-      "BoomBoys": [
-        "Keeper of the Light",
-        "Bane",
+      "Iron Wing": [
+        "Dazzle",
         "Windranger",
-        "Lifestealer",
-        "Doom"
+        "Lycan",
+        "Dragon Knight",
+        "Luna"
       ],
-      "Team Spirit": [
+      "Team Yandex": [
+        "Nature's Prophet",
         "Witch Doctor",
-        "Hoodwink",
-        "Sand King",
-        "Largo",
-        "Phantom Lancer"
+        "Naga Siren",
+        "Ember Spirit",
+        "Centaur Warrunner"
       ]
     },
     "mid": {
-      "BoomBoys": "Lifestealer",
-      "Team Spirit": "Sand King"
+      "Iron Wing": "Dragon Knight",
+      "Team Yandex": "Ember Spirit"
     },
-    "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
+    "blurb": "Team Yandex先到 10 杀（当时 9-10，12分55秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Ember Spirit 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 9 杀。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 9059726836,
-      "winner": "Team Spirit",
+      "matchId": 9061299814,
+      "winner": "Team Yandex",
       "score": [
         39,
-        24
+        20
       ],
-      "f10": "Team Spirit",
-      "f10Time": 1080,
-      "durationMin": 45.9,
+      "f10": "Team Yandex",
+      "f10Time": 984,
+      "durationMin": 34.0,
       "pace": "慢",
-      "stance": "来回拉锯",
+      "stance": "发育对线",
       "picks": {
-        "Team Spirit": [
-          "Witch Doctor",
-          "Pangolier",
-          "Dark Willow",
-          "Weaver",
-          "Mars"
+        "Team Yandex": [
+          "Techies",
+          "Grimstroke",
+          "Sand King",
+          "Tiny",
+          "Necrophos"
         ],
-        "BoomBoys": [
-          "Keeper of the Light",
-          "Hoodwink",
-          "Brewmaster",
-          "Windranger",
-          "Sven"
+        "Iron Wing": [
+          "Slark",
+          "Witch Doctor",
+          "Nyx Assassin",
+          "Dark Seer",
+          "Io"
         ]
       },
       "mid": {
-        "Team Spirit": "Pangolier",
-        "BoomBoys": "Keeper of the Light"
+        "Team Yandex": "Sand King",
+        "Iron Wing": "Slark"
       },
-      "blurb": "Team Spirit先到 10 杀（当时 10-9，18分00秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 9 杀。"
+      "blurb": "Team Yandex先到 10 杀（当时 10-9，16分24秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Sand King 参与 3 次（击杀 3 + 助攻 0），中单+双辅合计参与 6 次。对手当时 9 杀。"
     },
     {
       "game": 2,
-      "matchId": 9059855376,
-      "winner": "Team Spirit",
+      "matchId": 9061429763,
+      "winner": "Team Yandex",
       "score": [
-        13,
-        49
+        11,
+        27
       ],
-      "f10": null,
-      "f10Time": null,
-      "durationMin": 32.3,
-      "pace": "未知",
+      "f10": "Team Yandex",
+      "f10Time": 775,
+      "durationMin": 24.4,
+      "pace": "正常",
       "stance": "来回拉锯",
       "picks": {
-        "BoomBoys": [
-          "Keeper of the Light",
-          "Bane",
+        "Iron Wing": [
+          "Dazzle",
           "Windranger",
-          "Lifestealer",
-          "Doom"
+          "Lycan",
+          "Dragon Knight",
+          "Luna"
         ],
-        "Team Spirit": [
+        "Team Yandex": [
+          "Nature's Prophet",
           "Witch Doctor",
-          "Hoodwink",
-          "Sand King",
-          "Largo",
-          "Phantom Lancer"
+          "Naga Siren",
+          "Ember Spirit",
+          "Centaur Warrunner"
         ]
       },
       "mid": {
-        "BoomBoys": "Lifestealer",
-        "Team Spirit": "Sand King"
+        "Iron Wing": "Dragon Knight",
+        "Team Yandex": "Ember Spirit"
       },
-      "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
+      "blurb": "Team Yandex先到 10 杀（当时 9-10，12分55秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Ember Spirit 参与 5 次（击杀 0 + 助攻 5），中单+双辅合计参与 22 次 · 中辅驱动。对手当时 9 杀。"
     }
   ],
   "nextMap": {
-    "game": 3,
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "scheduled": false,
+    "game": 1,
+    "teamA": "Team Yandex",
+    "teamB": "Team Liquid",
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.685,
-      "pA": 0.315,
-      "pB": 0.685,
-      "breakEven": 1.46,
-      "market": null,
-      "why": "Bo3 已 0-2 结束，第3局不会打。这是重算后的第3局模型：Spirit 68.5%，门槛 1.46。Polymarket 没有第3局胜者价。"
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.576,
+      "pA": 0.576,
+      "pB": 0.424,
+      "breakEven": 1.74,
+      "market": {
+        "outcomes": [
+          "Team Yandex",
+          "Team Liquid"
+        ],
+        "prices": [
+          0.51,
+          0.49
+        ]
+      },
+      "why": "0-0 重开后的第1局。本届胜率 Team Yandex 59% / Team Liquid 52%；先到10杀 53% / 54%；H2H 5 局；Team Yandex 中单爱拿 Invoker。上一版第1局 Yandex 55.4%。"
     },
     "f10": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.589,
-      "pA": 0.411,
-      "pB": 0.589,
+      "team": "Team Liquid",
+      "tag": "Liquid",
+      "p": 0.522,
+      "pA": 0.478,
+      "pB": 0.522,
       "breakEven": null,
       "market": null,
-      "why": "先到10杀没有公开盘。模型第3局先到10杀 Spirit 58.9%。"
+      "why": "先到10杀没有公开盘。第1局模型 Liquid 52.2%，Yandex 47.8%。上一版 Liquid 53.7%。"
     }
   },
   "seriesLean": {
-    "team": "Team Spirit",
-    "tag": "Spirit",
-    "p": 1.0,
-    "pA": 0.0,
-    "pB": 1.0,
-    "breakEven": 1.0,
+    "team": "Team Yandex",
+    "tag": "TY",
+    "p": 0.616,
+    "pA": 0.616,
+    "pB": 0.384,
+    "breakEven": 1.62,
     "market": {
       "outcomes": [
-        "BoomBoys",
-        "Team Spirit"
+        "Team Yandex",
+        "Team Liquid"
       ],
       "prices": [
-        0.0,
-        1.0
+        0.765,
+        0.235
       ]
     },
-    "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
+    "why": "0-0 重开。本届胜率 Team Yandex 59% / Team Liquid 52%；先到10杀 53% / 54%；H2H 5 局；Team Yandex 中单爱拿 Invoker。上一版系列 Yandex 58.9%。"
   },
   "previous": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
+    "id": "pari-ty-iw",
+    "round": "PARI UNIVERSE Group A",
+    "day": "2026-10-25",
+    "when": null,
     "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Team Spirit",
+    "teamA": "Team Yandex",
+    "teamB": "Iron Wing",
+    "teamALabel": "Team Yandex",
+    "teamBLabel": "Iron Wing",
     "status": "completed",
-    "score": "0-2",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
+    "score": "2-0",
+    "winner": "Team Yandex",
+    "polySlug": "dota2-ty-1win-2026-10-25",
     "mapsPlayed": 2,
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
+      "team": "Team Yandex",
+      "tag": "TY",
       "p": 1.0,
-      "pA": 0.0,
-      "pB": 1.0,
+      "pA": 1.0,
+      "pB": 0.0,
       "breakEven": 1.0,
       "market": {
         "outcomes": [
-          "BoomBoys",
-          "Team Spirit"
+          "Team Yandex",
+          "1win"
         ],
         "prices": [
-          0.0,
-          1.0
+          1.0,
+          0.0
         ]
       },
-      "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
+      "why": "Bo3 已 2-0 结束。Polymarket 系列结算为 Yandex 1.00、1win 0.00。"
     }
   },
-  "next": null,
-  "focus": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
+  "next": {
+    "id": "pari-ty-liquid",
+    "round": "PARI UNIVERSE Group A",
+    "day": "2026-10-26",
+    "when": null,
     "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Team Spirit",
-    "status": "completed",
-    "score": "0-2",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 2
+    "teamA": "Team Yandex",
+    "teamB": "Team Liquid",
+    "teamALabel": "Team Yandex",
+    "teamBLabel": "Team Liquid",
+    "status": "scheduled",
+    "score": "0-0",
+    "winner": null,
+    "polySlug": "dota2-ty-liquid-2026-10-26",
+    "mapsPlayed": 0,
+    "lean": {
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.616,
+      "pA": 0.616,
+      "pB": 0.384,
+      "breakEven": 1.62,
+      "market": {
+        "outcomes": [
+          "Team Yandex",
+          "Team Liquid"
+        ],
+        "prices": [
+          0.765,
+          0.235
+        ]
+      },
+      "why": "0-0 重开。本届胜率 Team Yandex 59% / Team Liquid 52%；先到10杀 53% / 54%；H2H 5 局；Team Yandex 中单爱拿 Invoker。上一版系列 Yandex 58.9%。"
+    }
+  },
+  "focus": {
+    "id": "pari-ty-liquid",
+    "round": "PARI UNIVERSE Group A",
+    "day": "2026-10-26",
+    "when": null,
+    "format": "Bo3",
+    "teamA": "Team Yandex",
+    "teamB": "Team Liquid",
+    "teamALabel": "Team Yandex",
+    "teamBLabel": "Team Liquid",
+    "status": "scheduled",
+    "score": "0-0",
+    "winner": null,
+    "polySlug": "dota2-ty-liquid-2026-10-26",
+    "mapsPlayed": 0
   },
   "todayResults": [],
   "newMapIds": [
-    9059726836,
-    9059855376
+    9061299814,
+    9061429763
   ]
 }
