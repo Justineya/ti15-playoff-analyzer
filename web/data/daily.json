@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-10-25 01:03 CST",
+  "asOf": "2026-10-26 06:03 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "Spirit 2-0 结束对 BoomBoys。第1局先到10杀 Spirit、45.9分钟；第2局 32.3分钟、人头 13-49，先到10杀没解析。没有第3局。",
-  "narrative": "第1局 9059726836，Spirit 赢 BoomBoys，人头 39-24。慢节奏、来回拉锯，45.9 分钟。先到 10 杀是 Spirit，18分00秒，当时 10-9。中单是 Larl/Pangolier 对 Save-/Keeper of the Light。Spirit 拿了 Witch Doctor、Pangolier、Dark Willow、Weaver、Mars；BoomBoys 拿了 Keeper of the Light、Hoodwink、Brewmaster、Windranger、Sven。这 10 次击杀里 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单加双辅合计 15 次，中辅驱动，对手当时 9 杀。\n\n第2局 9059855376 还是 Spirit 赢，人头 13-49，32.3 分钟。回放没解析，节奏记为未知，姿态仍是来回拉锯，没有先到 10 杀时间。第1局 BoomBoys 把 Keeper of the Light 放中单，先到 10 杀参与 6 次，局还是 45.9 分钟、24-39 输掉；所以第2局他们仍第一手拿 Keeper of the Light，中单换成 Kiritych~/Lifestealer，旁边是 Bane、Windranger、Doom。Spirit 继续第一手 Witch Doctor，中单 Larl 从 Pangolier 换成 Sand King，并把第1局 BoomBoys 用过的 Hoodwink 拿过来，再加上 Largo、Phantom Lancer。人头从 39-24 拉开到 13-49。\n\n重算后 BoomBoys 单局胜率 31.5%（上一版 39.8%），Spirit 68.5%；先到 10 杀 BoomBoys 40.5%、Spirit 59.5%。从 0-0 再开系列，Spirit 76.5%（上一版 65.1%），门槛 1.31。H2H 从 1 局变成 3 局，三张都是 Spirit 赢。本届胜率 BoomBoys 53% / Spirit 64%，先到 10 杀 49% / 60%。模型仍写 BoomBoys 中单爱拿 Lina，这两局实际中单是 Keeper of the Light 和 Lifestealer。液体百科败者组半决赛比分 0-2，两张图 winner 都是 2；百科时长是 35分28秒和 30分12秒，英雄不是这两张新阵容。新图是 series 1158959、联赛 PARI UNIVERSE by FISSURE，观战源因同队并进这一格。0-2 之后 Bo3 结束，条件系列胜率 Spirit 100%，门槛 1.00。没有第3局，也没有下一场系列的第1局。模型表上的第3局只是样本：Spirit 胜率 68.5%、先到 10 杀 58.9%，门槛 1.46；Polymarket 没有第3局胜者价。八月盘 dota2-boombo-ts8-2026-08-22 的第1局、第2局和系列都已结算为 Spirit 1.00、BoomBoys 0.00。先到 10 杀没有公开盘。这不是投注建议。TI 总决赛仍是 Spirit 2-3 赢 VSN。八月 8959362208 OpenDota 返回 404，没进样本。",
+  "headline": "Spirit 2-0 赢下 BoomBoys。第2局 BoomBoys 先到10杀，32.3分钟人头13-49仍输。同组下一场第1局也已经结束。",
+  "narrative": "第1局 9059726836，Spirit 赢 BoomBoys，人头 39-24。慢节奏、来回拉锯，45.9 分钟。先到 10 杀是 Spirit，18分00秒，当时 10-9，收刀 Batyuk/Mars。中单是 Larl/Pangolier 对 Save-/Keeper of the Light。Spirit 拿了 Witch Doctor、Pangolier、Dark Willow、Weaver、Mars；BoomBoys 拿了 Keeper of the Light、Hoodwink、Brewmaster、Windranger、Sven。这 10 次击杀里 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单加双辅合计 15 次，中辅驱动。Save-/Keeper of the Light 参与 6 次（击杀 3 + 助攻 3）。对手当时 9 杀。\n\n第2局 9059855376，Spirit 再赢，人头 BoomBoys 13、Spirit 49。正常节奏、来回拉锯，32.3 分钟。先到 10 杀换成 BoomBoys，14分48秒，当时 10-9，收刀 MieRo/Doom。第1局 BoomBoys 的中单 Keeper of the Light 参与了 6 次，局还是 45.9 分钟、39-24 输掉，所以第2局他们仍第一手拿 Keeper of the Light，中单还是 Save-，并禁掉第1局 Spirit 的 Pangolier 和 Dark Willow，旁边换成 Bane、Windranger、Lifestealer、Doom。Spirit 继续第一手 Witch Doctor，中单 Larl 从 Pangolier 换成 Sand King（第3手），把第1局 BoomBoys 用过的 Hoodwink 拿过来，再加上 Largo、Phantom Lancer。先到 10 杀时 Larl/Sand King 参与 0 次，Save-/Keeper of the Light 参与 3 次（击杀 1 + 助攻 2），BoomBoys 中辅合计 10 次。10 分钟经济 Spirit 领先 409，15 分钟领先 1101，20 分钟领先 6520，结束人头 13-49。\n\n这场 Bo3 是 0-2，系列已经结束，当前局分后的 seriesLean 是 Spirit，条件胜率 100%，门槛 1.00。重算后 BoomBoys 单局胜率仍是 31.5%、Spirit 68.5%，门槛 1.46；先到 10 杀从上一版 40.5% / 59.5% 改成 BoomBoys 42.4%、Spirit 57.6%，因为第2局先到 10 杀记进了 BoomBoys。从 0-0 再开的系列样本是 Spirit 76.5%，门槛 1.31。H2H 3 局都是 Spirit 赢。本届胜率 BoomBoys 53% / Spirit 64%，先到 10 杀 51% / 60%。模型仍写 BoomBoys 中单爱拿 Lina，这两局实际中单都是 Keeper of the Light。Polymarket dota2-ts8-bb4-2026-10-24（PARI Universe B 组）第1局、第2局和系列都结算为 Spirit 1.00、BetBoom 0.00，O/U 2.5 结算 Under。没有第3局胜者盘。先到 10 杀没有公开盘。系列结束后的下一场第1局也已经打完，观战列表是空的。Spirit 对 Astra Invicta（dota2-ts8-ai1-2026-10-25）第1局、第2局、系列都是 Spirit 1.00；OpenDota 9061551205 时长 28.3 分钟，9061650142 时长 55.2 分钟，两张都是 Spirit 赢，阵容和先到 10 杀没进这次样本。八强这边 PARIVISION 对 BoomBoys（dota2-pari-bb4-2026-10-25）第1局结算 PARIVISION 1.00、BetBoom 0.00，门槛按结算价是 1.00；第2局和系列同样是 PARIVISION 1.00。OpenDota 9061829018 时长 24.4 分钟，9061909460 时长 36.6 分钟。重算后的本届样本把 PARIVISION 记成 TEAM VISION，第1局看好 TEAM VISION 67.4%，先到 10 杀 56.2%，系列 75.8%，系列门槛 1.32；刚打完的这两张没有进样本，先到 10 杀没有公开盘。这不是投注建议。TI 总决赛仍是 Spirit 2-3 赢 VSN。八月图 8959362208 拉 OpenDota 返回 404，没进 H2H。",
   "previousMap": {
     "game": 2,
     "matchId": 9059855376,
@@ -12,10 +12,10 @@
       13,
       49
     ],
-    "f10": null,
-    "f10Time": null,
-    "durationMin": 32.3,
-    "pace": "未知",
+    "f10": "BoomBoys",
+    "f10Time": 888,
+    "durationMin": 32.2,
+    "pace": "正常",
     "stance": "来回拉锯",
     "picks": {
       "BoomBoys": [
@@ -34,10 +34,10 @@
       ]
     },
     "mid": {
-      "BoomBoys": "Lifestealer",
+      "BoomBoys": "Keeper of the Light",
       "Team Spirit": "Sand King"
     },
-    "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
+    "blurb": "BoomBoys先到 10 杀（当时 10-9，14分48秒）。这 10 次击杀里，中单 Save-/Keeper of the Light 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 9 杀。"
   },
   "previousMaps": [
     {
@@ -83,10 +83,10 @@
         13,
         49
       ],
-      "f10": null,
-      "f10Time": null,
-      "durationMin": 32.3,
-      "pace": "未知",
+      "f10": "BoomBoys",
+      "f10Time": 888,
+      "durationMin": 32.2,
+      "pace": "正常",
       "stance": "来回拉锯",
       "picks": {
         "BoomBoys": [
@@ -105,36 +105,46 @@
         ]
       },
       "mid": {
-        "BoomBoys": "Lifestealer",
+        "BoomBoys": "Keeper of the Light",
         "Team Spirit": "Sand King"
       },
-      "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
+      "blurb": "BoomBoys先到 10 杀（当时 10-9，14分48秒）。这 10 次击杀里，中单 Save-/Keeper of the Light 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 10 次 · 中辅驱动。对手当时 9 杀。"
     }
   ],
   "nextMap": {
-    "game": 3,
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
+    "game": 1,
+    "teamA": "PARIVISION",
+    "teamB": "BoomBoys",
     "scheduled": false,
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.685,
-      "pA": 0.315,
-      "pB": 0.685,
-      "breakEven": 1.46,
-      "market": null,
-      "why": "Bo3 已 0-2 结束，第3局不会打。这是重算后的第3局模型：Spirit 68.5%，门槛 1.46。Polymarket 没有第3局胜者价。"
+      "team": "PARIVISION",
+      "tag": "PARI",
+      "p": 0.674,
+      "pA": 0.674,
+      "pB": 0.326,
+      "breakEven": 1.48,
+      "market": {
+        "outcomes": [
+          "PARIVISION",
+          "BetBoom Team"
+        ],
+        "prices": [
+          1.0,
+          0.0
+        ],
+        "slug": "dota2-pari-bb4-2026-10-25"
+      },
+      "why": "下一场第1局已经打完。Polymarket 结算 PARIVISION 1.00、BetBoom 0.00。重算后的本届样本把 PARIVISION 记成 TEAM VISION，第1局 67.4%，门槛 1.48；先到10杀 56.2%。刚结束的两张地图没有进样本。"
     },
     "f10": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.589,
-      "pA": 0.411,
-      "pB": 0.589,
+      "team": "PARIVISION",
+      "tag": "PARI",
+      "p": 0.562,
+      "pA": 0.562,
+      "pB": 0.438,
       "breakEven": null,
       "market": null,
-      "why": "先到10杀没有公开盘。模型第3局先到10杀 Spirit 58.9%。"
+      "why": "先到10杀没有公开盘。样本第1局先到10杀 TEAM VISION 56.2%。"
     }
   },
   "seriesLean": {
@@ -146,67 +156,68 @@
     "breakEven": 1.0,
     "market": {
       "outcomes": [
-        "BoomBoys",
-        "Team Spirit"
+        "Team Spirit",
+        "BetBoom Team"
       ],
       "prices": [
-        0.0,
-        1.0
-      ]
+        1.0,
+        0.0
+      ],
+      "slug": "dota2-ts8-bb4-2026-10-24"
     },
-    "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
+    "why": "BoomBoys 0-2 Spirit，Bo3 已结束，条件系列胜率 Spirit 100%，门槛 1.00。重算的 0-0 系列样本是 Spirit 76.5%，门槛 1.31。单局 68.5% / 31.5%，先到10杀 57.6% / 42.4%。"
   },
   "previous": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
-    "format": "Bo3",
-    "teamA": "BoomBoys",
+    "id": "gf",
+    "round": "总决赛",
+    "day": "2026-08-23",
+    "when": "2026-08-23 13:00",
+    "format": "Bo5",
+    "teamA": "TEAM VISION",
     "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
+    "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Spirit",
     "status": "completed",
-    "score": "0-2",
+    "score": "2-3",
     "winner": "Team Spirit",
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 2,
+    "polySlug": "dota2-vsn2-ts8-2026-08-23",
+    "mapsPlayed": 5,
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 1.0,
-      "pA": 0.0,
-      "pB": 1.0,
-      "breakEven": 1.0,
+      "team": "TEAM VISION",
+      "tag": "VSN",
+      "p": 0.594,
+      "pA": 0.594,
+      "pB": 0.406,
+      "breakEven": 1.68,
       "market": {
         "outcomes": [
-          "BoomBoys",
+          "TEAM VISION",
           "Team Spirit"
         ],
         "prices": [
-          0.0,
-          1.0
+          1.0,
+          0.0
         ]
       },
-      "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
+      "why": "本届胜率 TEAM VISION 66% / Team Spirit 64%；先到10杀 58% / 60%；H2H 10.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
     }
   },
   "next": null,
   "focus": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
-    "format": "Bo3",
-    "teamA": "BoomBoys",
+    "id": "gf",
+    "round": "总决赛",
+    "day": "2026-08-23",
+    "when": "2026-08-23 13:00",
+    "format": "Bo5",
+    "teamA": "TEAM VISION",
     "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
+    "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Spirit",
     "status": "completed",
-    "score": "0-2",
+    "score": "2-3",
     "winner": "Team Spirit",
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 2
+    "polySlug": "dota2-vsn2-ts8-2026-08-23",
+    "mapsPlayed": 5
   },
   "todayResults": [],
   "newMapIds": [
