@@ -1,216 +1,224 @@
 {
-  "asOf": "2026-10-25 01:03 CST",
+  "asOf": "2026-10-26 23:17 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "Spirit 2-0 结束对 BoomBoys。第1局先到10杀 Spirit、45.9分钟；第2局 32.3分钟、人头 13-49，先到10杀没解析。没有第3局。",
-  "narrative": "第1局 9059726836，Spirit 赢 BoomBoys，人头 39-24。慢节奏、来回拉锯，45.9 分钟。先到 10 杀是 Spirit，18分00秒，当时 10-9。中单是 Larl/Pangolier 对 Save-/Keeper of the Light。Spirit 拿了 Witch Doctor、Pangolier、Dark Willow、Weaver、Mars；BoomBoys 拿了 Keeper of the Light、Hoodwink、Brewmaster、Windranger、Sven。这 10 次击杀里 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单加双辅合计 15 次，中辅驱动，对手当时 9 杀。\n\n第2局 9059855376 还是 Spirit 赢，人头 13-49，32.3 分钟。回放没解析，节奏记为未知，姿态仍是来回拉锯，没有先到 10 杀时间。第1局 BoomBoys 把 Keeper of the Light 放中单，先到 10 杀参与 6 次，局还是 45.9 分钟、24-39 输掉；所以第2局他们仍第一手拿 Keeper of the Light，中单换成 Kiritych~/Lifestealer，旁边是 Bane、Windranger、Doom。Spirit 继续第一手 Witch Doctor，中单 Larl 从 Pangolier 换成 Sand King，并把第1局 BoomBoys 用过的 Hoodwink 拿过来，再加上 Largo、Phantom Lancer。人头从 39-24 拉开到 13-49。\n\n重算后 BoomBoys 单局胜率 31.5%（上一版 39.8%），Spirit 68.5%；先到 10 杀 BoomBoys 40.5%、Spirit 59.5%。从 0-0 再开系列，Spirit 76.5%（上一版 65.1%），门槛 1.31。H2H 从 1 局变成 3 局，三张都是 Spirit 赢。本届胜率 BoomBoys 53% / Spirit 64%，先到 10 杀 49% / 60%。模型仍写 BoomBoys 中单爱拿 Lina，这两局实际中单是 Keeper of the Light 和 Lifestealer。液体百科败者组半决赛比分 0-2，两张图 winner 都是 2；百科时长是 35分28秒和 30分12秒，英雄不是这两张新阵容。新图是 series 1158959、联赛 PARI UNIVERSE by FISSURE，观战源因同队并进这一格。0-2 之后 Bo3 结束，条件系列胜率 Spirit 100%，门槛 1.00。没有第3局，也没有下一场系列的第1局。模型表上的第3局只是样本：Spirit 胜率 68.5%、先到 10 杀 58.9%，门槛 1.46；Polymarket 没有第3局胜者价。八月盘 dota2-boombo-ts8-2026-08-22 的第1局、第2局和系列都已结算为 Spirit 1.00、BoomBoys 0.00。先到 10 杀没有公开盘。这不是投注建议。TI 总决赛仍是 Spirit 2-3 赢 VSN。八月 8959362208 OpenDota 返回 404，没进样本。",
+  "headline": "第1局 Yandex 赢、先到10杀 Liquid，37.9分钟。第2局记分牌 Liquid 37-16，回放未解析。第3局重算后看好 Yandex 58.5%，先到10杀看好 Liquid 56.1%。",
+  "narrative": "第1局 9062824489，Yandex 赢 Liquid。OpenDota 人头 21-28（天辉 Liquid，夜魇 Yandex），观战记分牌停在 22-28。正常节奏，来回拉锯，37分54秒。先到 10 杀是 Liquid，14分34秒，当时 10-4。中单是 Malr1ne/Sand King 对 CHIRA_JUNIOR/Pangolier。Liquid 拿了 Nature's Prophet、Hoodwink、Sand King、Mirana、Largo，一阶段禁 Earth Spirit、Bounty Hunter，前两手 Nature's Prophet、Hoodwink，中单 Sand King 第3手。Yandex 拿了 Techies、Pangolier、Keeper of the Light、Kez、Dawnbreaker，一阶段禁 Enigma、Earthshaker，前两手 Techies、Pangolier，中单第2手。这 10 次击杀里 Malr1ne/Sand King 参与 6 次（击杀 2 + 助攻 4），中单加双辅合计 17 次，中辅驱动，对手当时 4 杀。Yandex 中单 Pangolier 参与 3 次（击杀 0 + 助攻 3），中辅合计 10 次，局仍是 Yandex 拿下。\n\n第2局 9062920598 观战房已关闭，38分25秒，记分牌 Liquid 37、Yandex 16。radiant_win 为空，OpenDota 比赛接口 404，没有先到 10 杀，没进 games.json。英雄来自观战源，不是选人顺序：Liquid 是 Lifestealer、Spirit Breaker、Dark Seer、Earthshaker、Witch Doctor；Yandex 是 Dragon Knight、Huskar、Windranger、Lone Druid、Bane。第1局 Yandex 禁了 Earthshaker，Liquid 自己禁了模型常写的 Earth Spirit，中单 Malr1ne 的 Sand King 先到 10 杀却输掉；第2局 Malr1ne 锁定 Earthshaker，CHIRA_JUNIOR 从 Pangolier 换成 Dragon Knight，Saksa 从 Keeper of the Light 换成 Windranger。先到 10 杀没有滚成第1局的胜势，记分牌改成 37-16。\n\n下一局是第3局。重算只吃进已解析的第1局，不含 37-16。地图均胜率 Liquid 从 44.0% 降到 40.5%，Yandex 59.5%；先到 10 杀率 Liquid 从 54% 到 55%，Yandex 从 50% 到 49%。H2H 从 5.0 局变成 6.0 局，已解析 6 局是 Yandex 4 胜、Liquid 2 胜。本届胜率 Liquid 51% / Yandex 58%。模型仍写 Liquid 常用中单 Earth Spirit，这两局没有。开赛前第1局样本是 Liquid 胜率 44.6%、先到 10 杀 53.7%、从 0-0 的系列 41.1%，那组数不用。第2局开打前的重算是 Liquid 胜率 38.4%（上一版 42.6%）、先到 10 杀 55.0%（上一版 51.9%），这张已经关房。第3局样本：Liquid 胜率 41.5%（上一版 44.9%），Yandex 58.5%，门槛 1.71；先到 10 杀 Liquid 56.1%（上一版 53.7%），Yandex 43.9%，门槛 1.78，没有公开盘。记分牌 1-1。按这格 Bo3，系列胜率用地图均胜率，Yandex 59.5%，门槛 1.68。自动局分仍写 0-1，因为第2局胜者没解析；停在 0-1 的话 Yandex 系列胜率 83.6%，门槛 1.20。液体百科 R1M3 没有 maps[].winner，也没有比分。八月胜者组首轮仍是 Yandex 2-0，比赛 8955549026、8955653541。Polymarket 八月盘 dota2-liquid-ty-2026-08-20 的第1局、第2局和系列都已结算为 Yandex 1.00、Liquid 0.00，没有第3局胜者价。联赛 20395 PARI UNIVERSE by FISSURE，series 1160053。还没有第3局观战房。从 0-0 再开的系列胜率 Liquid 从 41.1% 降到 35.9%，这场已经不是 0-0。先到 10 杀没有公开盘。这不是投注建议。9059726836 和 9059855376 仍是 Spirit 2-0 BoomBoys。8959362208 仍是 404。TI 总决赛仍是 Spirit 2-3 赢 VSN。",
   "previousMap": {
     "game": 2,
-    "matchId": 9059855376,
-    "winner": "Team Spirit",
+    "matchId": 9062920598,
+    "winner": "Team Liquid",
     "score": [
-      13,
-      49
+      37,
+      16
     ],
     "f10": null,
     "f10Time": null,
-    "durationMin": 32.3,
-    "pace": "未知",
-    "stance": "来回拉锯",
+    "durationMin": 38.4,
+    "pace": null,
+    "stance": null,
     "picks": {
-      "BoomBoys": [
-        "Keeper of the Light",
-        "Bane",
-        "Windranger",
+      "Team Liquid": [
         "Lifestealer",
-        "Doom"
+        "Spirit Breaker",
+        "Dark Seer",
+        "Earthshaker",
+        "Witch Doctor"
       ],
-      "Team Spirit": [
-        "Witch Doctor",
-        "Hoodwink",
-        "Sand King",
-        "Largo",
-        "Phantom Lancer"
+      "Team Yandex": [
+        "Dragon Knight",
+        "Huskar",
+        "Windranger",
+        "Lone Druid",
+        "Bane"
       ]
     },
-    "mid": {
-      "BoomBoys": "Lifestealer",
-      "Team Spirit": "Sand King"
-    },
-    "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
+    "mid": {},
+    "blurb": "观战记分牌 Liquid 37、Yandex 16，时长 38分25秒，lobby 已关闭。radiant_win 为空，OpenDota 比赛接口 404，没有先到 10 杀，英雄不是选人顺序。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 9059726836,
-      "winner": "Team Spirit",
+      "matchId": 9062824489,
+      "winner": "Team Yandex",
       "score": [
-        39,
-        24
+        21,
+        28
       ],
-      "f10": "Team Spirit",
-      "f10Time": 1080,
-      "durationMin": 45.9,
-      "pace": "慢",
+      "f10": "Team Liquid",
+      "f10Time": 874,
+      "durationMin": 37.9,
+      "pace": "正常",
       "stance": "来回拉锯",
       "picks": {
-        "Team Spirit": [
-          "Witch Doctor",
-          "Pangolier",
-          "Dark Willow",
-          "Weaver",
-          "Mars"
-        ],
-        "BoomBoys": [
-          "Keeper of the Light",
+        "Team Liquid": [
+          "Nature's Prophet",
           "Hoodwink",
-          "Brewmaster",
-          "Windranger",
-          "Sven"
+          "Sand King",
+          "Mirana",
+          "Largo"
+        ],
+        "Team Yandex": [
+          "Techies",
+          "Pangolier",
+          "Keeper of the Light",
+          "Kez",
+          "Dawnbreaker"
         ]
       },
       "mid": {
-        "Team Spirit": "Pangolier",
-        "BoomBoys": "Keeper of the Light"
+        "Team Liquid": "Sand King",
+        "Team Yandex": "Pangolier"
       },
-      "blurb": "Team Spirit先到 10 杀（当时 10-9，18分00秒）。这 10 次击杀里，中单 Larl/Pangolier 参与 5 次（击杀 4 + 助攻 1），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 9 杀。"
+      "blurb": "Team Liquid先到 10 杀（当时 10-4，14分34秒）。这 10 次击杀里，中单 Malr1ne/Sand King 参与 6 次（击杀 2 + 助攻 4），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。"
     },
     {
       "game": 2,
-      "matchId": 9059855376,
-      "winner": "Team Spirit",
+      "matchId": 9062920598,
+      "winner": "Team Liquid",
       "score": [
-        13,
-        49
+        37,
+        16
       ],
       "f10": null,
       "f10Time": null,
-      "durationMin": 32.3,
-      "pace": "未知",
-      "stance": "来回拉锯",
+      "durationMin": 38.4,
+      "pace": null,
+      "stance": null,
       "picks": {
-        "BoomBoys": [
-          "Keeper of the Light",
-          "Bane",
-          "Windranger",
+        "Team Liquid": [
           "Lifestealer",
-          "Doom"
+          "Spirit Breaker",
+          "Dark Seer",
+          "Earthshaker",
+          "Witch Doctor"
         ],
-        "Team Spirit": [
-          "Witch Doctor",
-          "Hoodwink",
-          "Sand King",
-          "Largo",
-          "Phantom Lancer"
+        "Team Yandex": [
+          "Dragon Knight",
+          "Huskar",
+          "Windranger",
+          "Lone Druid",
+          "Bane"
         ]
       },
-      "mid": {
-        "BoomBoys": "Lifestealer",
-        "Team Spirit": "Sand King"
-      },
-      "blurb": "回放未解析，没有先到 10 杀时间。人头 13-49。"
+      "mid": {},
+      "blurb": "观战记分牌 Liquid 37、Yandex 16，时长 38分25秒，lobby 已关闭。radiant_win 为空，OpenDota 比赛接口 404，没有先到 10 杀，英雄不是选人顺序。"
     }
   ],
   "nextMap": {
     "game": 3,
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "scheduled": false,
+    "teamA": "Team Liquid",
+    "teamB": "Team Yandex",
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.685,
-      "pA": 0.315,
-      "pB": 0.685,
-      "breakEven": 1.46,
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.585,
+      "pA": 0.415,
+      "pB": 0.585,
+      "breakEven": 1.71,
       "market": null,
-      "why": "Bo3 已 0-2 结束，第3局不会打。这是重算后的第3局模型：Spirit 68.5%，门槛 1.46。Polymarket 没有第3局胜者价。"
+      "why": "本届胜率 Team Liquid 51% / Team Yandex 58%；先到10杀 55% / 49%；H2H 6.0 局；Team Liquid 常用中单 Earth Spirit"
     },
     "f10": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.589,
-      "pA": 0.411,
-      "pB": 0.589,
-      "breakEven": null,
-      "market": null,
-      "why": "先到10杀没有公开盘。模型第3局先到10杀 Spirit 58.9%。"
+      "team": "Team Liquid",
+      "tag": "Liquid",
+      "p": 0.561,
+      "pA": 0.561,
+      "pB": 0.439,
+      "breakEven": 1.78,
+      "market": null
     }
   },
   "seriesLean": {
-    "team": "Team Spirit",
-    "tag": "Spirit",
-    "p": 1.0,
-    "pA": 0.0,
-    "pB": 1.0,
-    "breakEven": 1.0,
+    "team": "Team Yandex",
+    "tag": "TY",
+    "p": 0.595,
+    "pA": 0.405,
+    "pB": 0.595,
+    "breakEven": 1.68,
     "market": {
       "outcomes": [
-        "BoomBoys",
-        "Team Spirit"
+        "Team Liquid",
+        "Team Yandex"
       ],
       "prices": [
         0.0,
         1.0
       ]
     },
-    "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
+    "why": "本届胜率 Team Liquid 51% / Team Yandex 58%；先到10杀 55% / 49%；H2H 6.0 局；Team Liquid 常用中单 Earth Spirit"
   },
-  "previous": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
+  "previous": null,
+  "next": {
+    "id": "ubqf3",
+    "round": "胜者组首轮",
+    "day": "2026-08-20",
+    "when": "2026-08-20 18:30",
     "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Team Spirit",
-    "status": "completed",
-    "score": "0-2",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
+    "teamA": "Team Liquid",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Yandex",
+    "status": "live",
+    "score": "1-1",
+    "winner": null,
+    "polySlug": "dota2-liquid-ty-2026-08-20",
     "mapsPlayed": 2,
+    "seriesId": 1160053,
+    "leagueId": 20395,
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 1.0,
-      "pA": 0.0,
-      "pB": 1.0,
-      "breakEven": 1.0,
+      "team": "Team Yandex",
+      "tag": "TY",
+      "p": 0.595,
+      "pA": 0.405,
+      "pB": 0.595,
+      "breakEven": 1.68,
       "market": {
         "outcomes": [
-          "BoomBoys",
-          "Team Spirit"
+          "Team Liquid",
+          "Team Yandex"
         ],
         "prices": [
           0.0,
           1.0
         ]
       },
-      "why": "本届胜率 BoomBoys 53% / Team Spirit 64%；先到10杀 49% / 60%；H2H 3 局；BoomBoys 中单爱拿 Lina。0-2 后 Bo3 已结束。"
+      "why": "本届胜率 Team Liquid 51% / Team Yandex 58%；先到10杀 55% / 49%；H2H 6.0 局；Team Liquid 常用中单 Earth Spirit"
     }
   },
-  "next": null,
   "focus": {
-    "id": "lbsf",
-    "round": "败者组半决赛",
-    "day": "2026-08-22",
-    "when": "2026-08-22 19:00",
+    "id": "ubqf3",
+    "round": "胜者组首轮",
+    "day": "2026-08-20",
+    "when": "2026-08-20 18:30",
     "format": "Bo3",
-    "teamA": "BoomBoys",
-    "teamB": "Team Spirit",
-    "teamALabel": "BoomBoys",
-    "teamBLabel": "Team Spirit",
-    "status": "completed",
-    "score": "0-2",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-boombo-ts8-2026-08-22",
-    "mapsPlayed": 2
+    "teamA": "Team Liquid",
+    "teamB": "Team Yandex",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "Team Yandex",
+    "status": "live",
+    "score": "1-1",
+    "winner": null,
+    "polySlug": "dota2-liquid-ty-2026-08-20",
+    "mapsPlayed": 2,
+    "seriesId": 1160053,
+    "leagueId": 20395
   },
   "todayResults": [],
   "newMapIds": [
-    9059726836,
-    9059855376
-  ]
+    9062824489,
+    9062920598
+  ],
+  "notes": {
+    "opendota404": [
+      9062920598,
+      8959362208
+    ],
+    "liveScore": "0-1",
+    "scoreboard": "1-1",
+    "modelIncludes": [
+      9062824489
+    ],
+    "liquipedia": "R1M3 empty, no maps[].winner"
+  }
 }
