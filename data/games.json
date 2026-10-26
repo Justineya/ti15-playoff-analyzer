@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-26 23:14 CST",
-  "n": 121,
+  "asOf": "2026-10-27 04:31 CST",
+  "n": 123,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -37141,6 +37141,620 @@
         "mid_support": "天辉中单 Malr1ne/Sand King 参与 6 次（击杀2+助攻4），辅tOfu/Mirana 参与 7 次，中辅合计17 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Pangolier 参与 3 次（击杀0+助攻3），辅Saksa/Keeper of the Light 参与 3 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/9062824489",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 9062920598,
+      "series_id": 1160053,
+      "start_time": 1793024228,
+      "duration": 2305,
+      "parsed": true,
+      "radiant": "Team Liquid",
+      "dire": "Team Yandex",
+      "radiant_team_id": 2163,
+      "dire_team_id": 9823272,
+      "winner": "Team Liquid",
+      "radiant_win": true,
+      "score": [
+        37,
+        16
+      ],
+      "pace": "正常",
+      "length": "偏长",
+      "stance": "来回拉锯",
+      "f10k": {
+        "side": "radiant",
+        "time": 783,
+        "score": {
+          "radiant": 10,
+          "dire": 8
+        },
+        "completing_killer": "Malr1ne",
+        "completing_hero": "Earthshaker"
+      },
+      "f10k_mid_share": 3,
+      "first_tower": {
+        "time": 441,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_top"
+      },
+      "gold": {
+        "m5": -1913,
+        "m10": -3786,
+        "m15": -3729,
+        "m20": -1286
+      },
+      "kills_8min": 8,
+      "kills_15min": 18,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 1,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 4,
+              "hero": "Anti-Mage",
+              "hero_id": 1
+            },
+            {
+              "order": 9,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 10,
+              "hero": "Viper",
+              "hero_id": 47
+            },
+            {
+              "order": 18,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 20,
+              "hero": "Doom",
+              "hero_id": 69
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Earthshaker",
+              "hero_id": 7
+            },
+            {
+              "order": 13,
+              "hero": "Witch Doctor",
+              "hero_id": 30
+            },
+            {
+              "order": 14,
+              "hero": "Spirit Breaker",
+              "hero_id": 71
+            },
+            {
+              "order": 17,
+              "hero": "Dark Seer",
+              "hero_id": 55
+            },
+            {
+              "order": 22,
+              "hero": "Lifestealer",
+              "hero_id": 54
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Necrophos",
+              "hero_id": 36
+            },
+            {
+              "order": 1,
+              "hero": "Slark",
+              "hero_id": 93
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Earthshaker",
+              "hero_id": 7
+            },
+            {
+              "order": 13,
+              "hero": "Witch Doctor",
+              "hero_id": 30
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 5,
+              "hero": "Enigma",
+              "hero_id": 33
+            },
+            {
+              "order": 6,
+              "hero": "Techies",
+              "hero_id": 105
+            },
+            {
+              "order": 11,
+              "hero": "Batrider",
+              "hero_id": 65
+            },
+            {
+              "order": 19,
+              "hero": "Kez",
+              "hero_id": 145
+            },
+            {
+              "order": 21,
+              "hero": "Tiny",
+              "hero_id": 19
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 12,
+              "hero": "Windranger",
+              "hero_id": 21
+            },
+            {
+              "order": 15,
+              "hero": "Dragon Knight",
+              "hero_id": 49
+            },
+            {
+              "order": 16,
+              "hero": "Bane",
+              "hero_id": 3
+            },
+            {
+              "order": 23,
+              "hero": "Huskar",
+              "hero_id": 59
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 12,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "Malr1ne",
+            "hero": "Earthshaker",
+            "hero_id": 7,
+            "gold_t10": 3585,
+            "xp_t10": 4180,
+            "kills": 5,
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
+          },
+          "pos4": {
+            "player": "tOfu",
+            "hero": "Witch Doctor",
+            "kills": 9,
+            "kills_before_10": 4,
+            "assists_before_10": 2,
+            "participate_before_10": 6
+          },
+          "pos5": {
+            "player": "Boxi",
+            "hero": "Spirit Breaker",
+            "kills_before_10": 1,
+            "assists_before_10": 5,
+            "participate_before_10": 6
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 15,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Dragon Knight",
+            "hero_id": 49,
+            "gold_t10": 3548,
+            "xp_t10": 4379,
+            "kills": 1,
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
+          },
+          "pos4": {
+            "player": "Saksa",
+            "hero": "Windranger",
+            "kills": 2,
+            "kills_before_10": 2,
+            "assists_before_10": 2,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "Maladych",
+            "hero": "Bane",
+            "kills_before_10": 0,
+            "assists_before_10": 0,
+            "participate_before_10": 0
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 8,
+          "first10_mid_sup_kills": 3,
+          "first10_mid_sup_ka": 7,
+          "mid_sup_driven": false
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Necrophos、Slark；前两手Earthshaker、Witch Doctor；中单Earthshaker第1手拿",
+          "dire": "一阶段禁Bounty Hunter、Earth Spirit；前两手Lone Druid、Windranger；中单Dragon Knight第3手拿"
+        },
+        "pace": "正常节奏 / 偏长局（38分25秒）；先到10杀出现在 13分03秒",
+        "stance": "来回拉锯",
+        "f10k": "Team Liquid先到 10 杀（当时 10-8，13分03秒）。这 10 次击杀里，中单 Malr1ne/Earthshaker 参与 3 次（击杀 1 + 助攻 2），中单+双辅合计参与 15 次 · 中辅驱动。对手当时 8 杀。",
+        "mid_support": "天辉中单 Malr1ne/Earthshaker 参与 3 次（击杀1+助攻2），辅tOfu/Witch Doctor 参与 6 次，中辅合计15 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Dragon Knight 参与 3 次（击杀1+助攻2），辅Saksa/Windranger 参与 4 次，中辅合计7。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/9062920598",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 9063353533,
+      "series_id": 1160125,
+      "start_time": 1793041090,
+      "duration": 1922,
+      "parsed": true,
+      "radiant": "TEAM VISION",
+      "dire": "Team Spirit",
+      "radiant_team_id": 9824702,
+      "dire_team_id": 7119388,
+      "winner": "Team Spirit",
+      "radiant_win": false,
+      "score": [
+        11,
+        37
+      ],
+      "pace": "快",
+      "length": "标准",
+      "stance": "杀人不转塔",
+      "f10k": {
+        "side": "dire",
+        "time": 664,
+        "score": {
+          "radiant": 5,
+          "dire": 10
+        },
+        "completing_killer": "not_me",
+        "completing_hero": "Dark Willow"
+      },
+      "f10k_mid_share": 7,
+      "first_tower": {
+        "time": 922,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -1069,
+        "m10": 18,
+        "m15": -445,
+        "m20": -3967
+      },
+      "kills_8min": 7,
+      "kills_15min": 22,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 1,
+              "hero": "Brewmaster",
+              "hero_id": 78
+            },
+            {
+              "order": 4,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 9,
+              "hero": "Doom",
+              "hero_id": 69
+            },
+            {
+              "order": 10,
+              "hero": "Pangolier",
+              "hero_id": 120
+            },
+            {
+              "order": 18,
+              "hero": "Ursa",
+              "hero_id": 70
+            },
+            {
+              "order": 20,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Witch Doctor",
+              "hero_id": 30
+            },
+            {
+              "order": 13,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 14,
+              "hero": "Io",
+              "hero_id": 91
+            },
+            {
+              "order": 17,
+              "hero": "Earthshaker",
+              "hero_id": 7
+            },
+            {
+              "order": 22,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 1,
+              "hero": "Brewmaster",
+              "hero_id": 78
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Witch Doctor",
+              "hero_id": 30
+            },
+            {
+              "order": 13,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Techies",
+              "hero_id": 105
+            },
+            {
+              "order": 3,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 5,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 6,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 11,
+              "hero": "Keeper of the Light",
+              "hero_id": 90
+            },
+            {
+              "order": 19,
+              "hero": "Rubick",
+              "hero_id": 86
+            },
+            {
+              "order": 21,
+              "hero": "Kez",
+              "hero_id": 145
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Dazzle",
+              "hero_id": 50
+            },
+            {
+              "order": 12,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 15,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 16,
+              "hero": "Undying",
+              "hero_id": 85
+            },
+            {
+              "order": 23,
+              "hero": "Outworld Destroyer",
+              "hero_id": 76
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Techies",
+              "hero_id": 105
+            },
+            {
+              "order": 3,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Dazzle",
+              "hero_id": 50
+            },
+            {
+              "order": 12,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "No[o]ne-",
+            "hero": "Earthshaker",
+            "hero_id": 7,
+            "gold_t10": 4119,
+            "xp_t10": 5267,
+            "kills": 4,
+            "kills_before_10": 2,
+            "assists_before_10": 2,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "9Class",
+            "hero": "Windranger",
+            "kills": 1,
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "Dukalis",
+            "hero": "Witch Doctor",
+            "kills_before_10": 0,
+            "assists_before_10": 2,
+            "participate_before_10": 2
+          },
+          "mid_support_fights_12min": 0,
+          "kills_at_f10k": 5,
+          "first10_mid_sup_kills": 3,
+          "first10_mid_sup_ka": 10,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "Larl",
+            "hero": "Nature's Prophet",
+            "hero_id": 53,
+            "gold_t10": 4356,
+            "xp_t10": 4546,
+            "kills": 15,
+            "kills_before_10": 5,
+            "assists_before_10": 2,
+            "participate_before_10": 7
+          },
+          "pos4": {
+            "player": "rue",
+            "hero": "Dazzle",
+            "kills": 3,
+            "kills_before_10": 2,
+            "assists_before_10": 4,
+            "participate_before_10": 6
+          },
+          "pos5": {
+            "player": "not_me",
+            "hero": "Dark Willow",
+            "kills_before_10": 1,
+            "assists_before_10": 3,
+            "participate_before_10": 4
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 8,
+          "first10_mid_sup_ka": 17,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Largo、Brewmaster；前两手Witch Doctor、Timbersaw；中单Earthshaker第4手拿",
+          "dire": "一阶段禁Techies、Bounty Hunter；前两手Dazzle、Nature's Prophet；中单Nature's Prophet第2手拿"
+        },
+        "pace": "快节奏 / 标准局（32分02秒）；先到10杀出现在 11分04秒",
+        "stance": "杀人不转塔",
+        "f10k": "Team Spirit先到 10 杀（当时 5-10，11分04秒）。这 10 次击杀里，中单 Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 5 杀。",
+        "mid_support": "天辉中单 No[o]ne-/Earthshaker 参与 4 次（击杀2+助攻2），辅9Class/Windranger 参与 4 次，中辅合计10 · 中辅驱动；夜魇中单 Larl/Nature's Prophet 参与 7 次（击杀5+助攻2），辅rue/Dazzle 参与 6 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/9063353533",
       "source": "ti15",
       "patch": "7.41e"
     }
