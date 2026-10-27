@@ -1,47 +1,117 @@
 {
-  "asOf": "2026-10-27 04:36 CST",
+  "asOf": "2026-10-28 00:02 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 Spirit 赢、先到10杀 Spirit，32.0分钟。第2局重算后看好 VSN 50.4%，先到10杀看好 Spirit 54.6%。系列 0-1 看好 Spirit 72.4%。",
-  "narrative": "第1局 9063353533，series 1160125，联赛 20395 PARI UNIVERSE by FISSURE，OpenDota series_type 1。天辉 TEAM VISION（接口名 PARIVISION）11，夜魇 Team Spirit 37，Spirit 赢。快节奏，杀人不转塔，32分02秒。先到 10 杀是 Spirit，11分04秒，当时 5-10，完成击杀的是 not_me/Dark Willow。中单 Larl/Nature's Prophet 对 No[o]ne-/Earthshaker。Spirit 拿了 Dazzle、Nature's Prophet、Dark Willow、Undying、Outworld Destroyer，一阶段禁 Techies、Bounty Hunter，前两手 Dazzle、Nature's Prophet，中单第2手。VSN 拿了 Witch Doctor、Timbersaw、Io、Earthshaker、Windranger，一阶段禁 Largo、Brewmaster，前两手 Witch Doctor、Timbersaw，中单 Earthshaker 第4手。这 10 次击杀里 Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中单加双辅合计 17 次，中辅驱动，对手当时 5 杀。VSN 中单 Earthshaker 参与 4 次（击杀 2 + 助攻 2），中辅合计 10 次。局分 0-1，Spirit 领先。八月总决赛是另外 5 局，比分 2-3，Spirit 夺冠，赛程里没有第 6 局。第1局 8960577698 Team Spirit 赢，先到10杀 Team Spirit（13分46秒），46.2分钟，正常，滚雪球，中单 Spirit/Slark 对 VSN/Io。第2局 8960655084 TEAM VISION 赢，先到10杀 Team Spirit（10分10秒），64.5分钟，快，进攻转线，中单 VSN/Earth Spirit 对 Spirit/Slardar。第3局 8960762254 Team Spirit 赢，先到10杀 TEAM VISION（25分37秒），45.9分钟，慢，发育对线，中单 Spirit/Nature's Prophet 对 VSN/Pangolier。第4局 8960882635 TEAM VISION 赢，先到10杀 TEAM VISION（17分11秒），44.3分钟，慢，来回拉锯，中单 VSN/Sand King 对 Spirit/Storm Spirit。第5局 8960991322 Team Spirit 赢，先到10杀 TEAM VISION（13分07秒），64.4分钟，正常，来回拉锯，中单 VSN/Invoker 对 Spirit/Pangolier。液体百科 lbsf 仍是 0-2，maps 有 winner；9063353533 没有 maps[].winner。观战源把这一局同时挂上 ubsf1（写成 1-0）和 gf（写成 0-1），只是队名对上旧签表。触发里的八月局分仍是 ubsf1 1-2、gf 2-3。\n\n这一局 Spirit 在 11分04秒先到 10 杀，Larl 的 Nature's Prophet 是第2手，中辅参与把人头差拉开，VSN 的 Earthshaker 第4手才上中单，Io 在阵容里，32分钟以 11-37 结束。下一局是 series 1160125 的第2局。重算已经吃进 9063353533。第2局地图胜率 VSN 50.4%（上一版 53.4%），门槛 1.98，Spirit 49.6%。先到 10 杀 Spirit 54.6%（上一版 52.0%），门槛 1.83，VSN 45.4%。H2H 从 10.9 局到 11.9 局。本届胜率两边都是 65%（上一版 VSN 66% / Spirit 64%），先到10杀率 VSN 57% / Spirit 61%（上一版 58% / 60%）。模型仍写 VSN 常用中单 Earth Spirit，这一局中单是 Earthshaker。开赛前第1局样本是 VSN 胜率 55.5%、先到10杀 47.2%、从 0-0 的系列 59.2%，这组开赛前样本不拿来当第2局。从 0-0 再开的系列胜率 VSN 从 59.2% 降到 54.7%。当前局分 0-1，按 series_type 1、先到 2 胜，系列胜率 Spirit 72.4%，门槛 1.38，VSN 27.6%。Polymarket 没有 series 1160125 的第2局价。八月总决赛盘 dota2-vsn2-ts8-2026-08-23 的第2局和系列都已结算为 VSN 1.00、Spirit 0.00，对应 8 月 23 日。先到 10 杀没有公开盘。观战源里还没有第2局房间。\n\n同一次入库还有四张别的图。9059726836 Spirit 赢 BoomBoys，39-24，先到10杀 Spirit（18分00秒，10-9），45分52秒，慢，来回拉锯，中单 Larl/Pangolier 对 Save-/Keeper of the Light。9059855376 Spirit 再赢，13-49，32分15秒，回放未解析，没有先到10杀，中单 Kiritych~/Lifestealer 对 Larl/Sand King，series 1158959 为 2-0。9062824489 Yandex 赢 Liquid，解析人头 21-28，先到10杀 Liquid（14分34秒，10-4），37分54秒，正常，来回拉锯，中单 Malr1ne/Sand King 对 CHIRA_JUNIOR/Pangolier。9062920598 这次解析成功：Liquid 赢，37-16，先到10杀 Liquid（13分03秒，10-8），38分25秒，正常，来回拉锯，中单 Malr1ne/Earthshaker 对 CHIRA_JUNIOR/Dragon Knight。series 1160053 记分牌 1-1。第3局 Liquid 胜率 46.1%（上一版 41.5%），Yandex 53.9%，门槛 1.86；先到10杀 Liquid 57.7%（上一版 56.1%），门槛 1.73。没有第3局观战房，下一局按刚结束的 VSN 对 Spirit 写第2局。8959362208 仍然 404，没有写入 games.json。这不是投注建议。",
+  "headline": "Spirit 对 VSN 已经 2-1 结束，9063353533 是第3局。下一局是 BoomBoys 对 LEGION 的 BO1 第1局。TI 模型没有 LEGION；Polymarket 这局价 BetBoom 0.585 / LEGION 0.415。",
+  "narrative": "series 1160125，联赛 20395 PARI UNIVERSE by FISSURE，OpenDota series_type 1，先到 2 胜，三局都已打完，比分 VSN 1-2 Spirit。第1局 9063131170，10月27日 00:37 CST。天辉 TEAM VISION 14，夜魇 Team Spirit 22，Spirit 赢。慢节奏，滚雪球，32分28秒。先到10杀是 VSN，20分44秒，当时 10-7，完成击杀的是 Satanic/Terrorblade。中单 No[o]ne-/Viper 对 Larl/Sand King。VSN 拿了 Witch Doctor、Beastmaster、Keeper of the Light、Terrorblade、Viper，一阶段禁 Brewmaster、Lycan，前两手 Witch Doctor、Beastmaster，中单第5手。Spirit 拿了 Slark、Hoodwink、Warlock、Doom、Sand King，一阶段禁 Techies、Earth Spirit，前两手 Slark、Hoodwink，中单第5手。这 10 次击杀里 No[o]ne-/Viper 参与 6 次（击杀 4 + 助攻 2），中单加双辅合计 13 次，中辅驱动，对手当时 7 杀。第2局 9063230342，01:41。天辉 Spirit 16，夜魇 VSN 29，VSN 赢。慢节奏，来回拉锯，48分47秒。先到10杀是 VSN，20分04秒，当时 9-10，完成击杀的是 No[o]ne-/Dragon Knight。中单 Larl/Sand King 对 No[o]ne-/Dragon Knight。Spirit 拿了 Techies、Pangolier、Hoodwink、Sand King、Morphling，一阶段禁 Lone Druid、Keeper of the Light，前两手 Techies、Pangolier，中单第4手。VSN 拿了 Brewmaster、Rubick、Dragon Knight、Winter Wyvern、Nature's Prophet，一阶段禁 Bounty Hunter、Earth Spirit，前两手 Brewmaster、Rubick，中单第3手。Dragon Knight 参与 8 次（击杀 1 + 助攻 7），中辅合计 20 次，中辅驱动，对手当时 9 杀。第3局 9063353533，02:58。天辉 VSN 11，夜魇 Spirit 37，Spirit 赢。快节奏，杀人不转塔，32分02秒。先到10杀是 Spirit，11分04秒，当时 5-10，完成击杀的是 not_me/Dark Willow。中单 Larl/Nature's Prophet 对 No[o]ne-/Earthshaker。Spirit 拿了 Dazzle、Nature's Prophet、Dark Willow、Undying、Outworld Destroyer，一阶段禁 Techies、Bounty Hunter，前两手 Dazzle、Nature's Prophet，中单第2手。VSN 拿了 Witch Doctor、Timbersaw、Io、Earthshaker、Windranger，一阶段禁 Largo、Brewmaster，前两手 Witch Doctor、Timbersaw，中单第4手。Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中辅合计 17 次，中辅驱动，对手当时 5 杀。VSN 中单 Earthshaker 参与 4 次（击杀 2 + 助攻 2）。前两局先到10杀都在 20 分钟以后，而且都是 VSN，VSN 只赢下其中第2局；第3局 Spirit 在 11分04秒把人头差拉开，系列就此 2-1。这两局补进样本后，H2H 从 11.9 局到 13.9 局。本届胜率两边都是 64%（上一版 65% / 65%），先到10杀率 VSN 59% / Spirit 58%（上一版 57% / 61%）。从 0-0 再开的地图胜率 VSN 51.7%（上一版 52.5%），门槛 1.93，Spirit 48.3%。上一版把第3局当成第1局之后，模拟出来的「第2局」先到10杀看好 Spirit 54.6%；吃进第1、第2局之后，同一格先到10杀是 VSN 50.8%、Spirit 49.2%。模型仍写 VSN 常用中单 Earth Spirit，这一系列中单实际是 Viper、Dragon Knight、Earthshaker。系列没有第4局，这组 0-0 模拟不拿来当下一局。Polymarket dota2-ts8-pari-2026-10-26 已结算：第1局 Spirit 1.00，第2局 PARIVISION 1.00，系列 Spirit 1.00、PARIVISION 0.00。八月总决赛是另外 5 局，比分 2-3，自动稿里的冠军句对的是那场。\n\nseries 1160053 也已经打完，比分 Liquid 1-2 Yandex。第1局 9062824489，天辉 Liquid 21，夜魇 Yandex 28，Yandex 赢。正常节奏，来回拉锯，37分54秒。先到10杀 Liquid，14分34秒，当时 10-4。中单 Malr1ne/Sand King 对 CHIRA_JUNIOR/Pangolier。第2局 9062920598，天辉 Liquid 37，夜魇 Yandex 16，Liquid 赢。正常节奏，来回拉锯，38分25秒。先到10杀 Liquid，13分03秒，当时 10-8。中单 Malr1ne/Earthshaker 对 CHIRA_JUNIOR/Dragon Knight。第3局 9063026856，10月26日 23:25 CST。天辉 Liquid 10，夜魇 Yandex 35，Yandex 赢。慢节奏，来回拉锯，28分16秒。先到10杀 Yandex，16分49秒，当时 4-10，完成击杀的是 医者watson`/Tiny。中单 Malr1ne/Lina 对 CHIRA_JUNIOR/Invoker。Liquid 拿了 Techies、Dark Seer、Spirit Breaker、Lifestealer、Lina，一阶段禁 Necrophos、Slark，前两手 Techies、Dark Seer，中单第5手。Yandex 拿了 Nature's Prophet、Dark Willow、Tiny、Invoker、Huskar，一阶段禁 Bounty Hunter、Earthshaker，前两手 Nature's Prophet、Dark Willow，中单第4手。Invoker 参与 4 次（击杀 2 + 助攻 2），中辅合计 13 次，中辅驱动，对手当时 4 杀。第3局补进之后，H2H 从 7.0 局到 8.0 局。地图胜率 Liquid 42.3%（上一版 45.0%），Yandex 57.7%，门槛 1.73。先到10杀率 Liquid 55% / Yandex 49%（上一版 56% / 48%）。上一版模拟第3局格子是 Liquid 46.1%、先到10杀 57.7%；重算后同一格是 44.3%、56.9%。系列没有第4局。Polymarket dota2-ty-liquid-2026-10-26 已结算：第1局 Yandex 1.00，第2局 Liquid 1.00，系列 Yandex 1.00。触发里另外两张图是更早的 series 1158959，Spirit 2-0 BoomBoys，同样没有下一局。第1局 9059726836 Spirit 赢，天辉 39、夜魇 24，先到10杀 Spirit（18分00秒，10-9），45分52秒，慢，来回拉锯，中单 Larl/Pangolier 对 Save-/Keeper of the Light。第2局 9059855376 回放这次解析成功：Spirit 赢，天辉 BoomBoys 13、夜魇 Spirit 49，32分15秒，正常，来回拉锯。先到10杀是 BoomBoys，14分48秒，当时 10-9，完成击杀的是 MieRo/Doom。中单 Save-/Keeper of the Light 对 Larl/Sand King。BoomBoys 拿了 Keeper of the Light、Bane、Windranger、Lifestealer、Doom，一阶段禁 Slark、Nature's Prophet，前两手 Keeper of the Light、Bane，中单第1手。Spirit 拿了 Witch Doctor、Hoodwink、Sand King、Largo、Phantom Lancer，一阶段禁 Lone Druid、Earth Spirit，前两手 Witch Doctor、Hoodwink，中单第3手。Save-/Keeper of the Light 参与 3 次（击杀 1 + 助攻 2），中辅合计 10 次，中辅驱动，对手当时 9 杀。BoomBoys 先到10杀率因此从 49% 到 51%，本届胜率仍是 53%。8959362208 仍然 404，没有写入 games.json。液体百科 TI 页 lbsf 仍是 0-2，两张 map 都有 winner；今晚这些 FISSURE 图不在那张签表上，观战列表里也没有未结束的八强房间。\n\n刚打完的是小组 B 加赛 BO1 9064337890，10月27日 22:30 CST 开打，约 23:55 结束。天辉 Astra Invicta 40，夜魇 BoomBoys（接口名 BETBOOM TEAM）13，Astra 赢。正常节奏，来回拉锯，51分52秒。先到10杀是 Astra，15分02秒，当时 10-4，完成击杀的是 GH/Techies。中单 lorenof/Slark 对 Save-/Invoker。Astra 拿了 Enigma、Techies、Clockwerk、Ursa、Slark，一阶段禁 Keeper of the Light、Brewmaster，前两手 Enigma、Techies，中单第5手。BoomBoys 拿了 Winter Wyvern、Dark Willow、Bristleback、Invoker、Dragon Knight，一阶段禁 Bounty Hunter、Io，前两手 Winter Wyvern、Dark Willow，中单第4手。Slark 在这 10 次击杀里参与 5 次（击杀 3 + 助攻 2），中辅合计 16 次，中辅驱动，对手当时 4 杀。Save-/Invoker 参与 3 次。赛程和 Polymarket 都把这场标成 BO1，打完系列就结束，没有第2局。今天 21:01 的上一场加赛 9064215798 是天辉 LEGION 25、夜魇 Astra 9，LEGION 赢，34分01秒，慢，来回拉锯，先到10杀 LEGION（18分55秒，10-4），中单 Stojkov/Lina 对 lorenof/Pangolier。因为 Astra 刚以 40-13 赢下 BoomBoys，而 LEGION 更早赢了 Astra，BoomBoys 还剩一场加赛要打。下一局是 2026-10-28 00:00 CST（16:00 UTC）BoomBoys 对 LEGION 的 BO1 第1局，局分 0-0。写到 00:02 CST，OpenDota 观战源还没有这局房间。TI15 地图加 EWC 八强样本里没有 LEGION，模型不算这局胜率，也不算先到10杀，门槛留空。Spirit 对 VSN 重算后的 51.7% 留在已经结束的那条系列上。Polymarket dota2-bb4-legion1-2026-10-27 这局价 BetBoom 0.585、LEGION 0.415，门槛 1.71 / 2.41，盘口还没关闭。刚结束的 Astra 盘 dota2-bb4-ai1-2026-10-27 价是 BetBoom 0.0005、Astra 0.9995，标记仍是未关闭。先到10杀没有公开盘。这不是投注建议。",
   "previousMap": {
     "game": 1,
-    "matchId": 9063353533,
-    "winner": "Team Spirit",
+    "matchId": 9064337890,
+    "winner": "Astra Invicta",
     "score": [
-      11,
-      37
+      40,
+      13
     ],
-    "f10": "Team Spirit",
-    "f10Time": 664,
-    "durationMin": 32.0,
-    "pace": "快",
-    "stance": "杀人不转塔",
+    "f10": "Astra Invicta",
+    "f10Time": 902,
+    "durationMin": 51.9,
+    "pace": "正常",
+    "stance": "来回拉锯",
     "picks": {
-      "TEAM VISION": [
-        "Witch Doctor",
-        "Timbersaw",
-        "Io",
-        "Earthshaker",
-        "Windranger"
+      "Astra Invicta": [
+        "Enigma",
+        "Techies",
+        "Clockwerk",
+        "Ursa",
+        "Slark"
       ],
-      "Team Spirit": [
-        "Dazzle",
-        "Nature's Prophet",
+      "BoomBoys": [
+        "Winter Wyvern",
         "Dark Willow",
-        "Undying",
-        "Outworld Destroyer"
+        "Bristleback",
+        "Invoker",
+        "Dragon Knight"
       ]
     },
     "mid": {
-      "TEAM VISION": "Earthshaker",
-      "Team Spirit": "Nature's Prophet"
+      "Astra Invicta": "Slark",
+      "BoomBoys": "Invoker"
     },
-    "blurb": "Team Spirit先到 10 杀（当时 5-10，11分04秒）。这 10 次击杀里，中单 Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 5 杀。"
+    "blurb": "Astra Invicta先到 10 杀（当时 10-4，15分02秒）。这 10 次击杀里，中单 lorenof/Slark 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 4 杀。"
   },
   "previousMaps": [
     {
       "game": 1,
+      "matchId": 9063131170,
+      "winner": "Team Spirit",
+      "score": [
+        14,
+        22
+      ],
+      "f10": "TEAM VISION",
+      "f10Time": 1244,
+      "durationMin": 32.5,
+      "pace": "慢",
+      "stance": "滚雪球",
+      "seriesId": 1160125,
+      "picks": {
+        "TEAM VISION": [
+          "Witch Doctor",
+          "Beastmaster",
+          "Keeper of the Light",
+          "Terrorblade",
+          "Viper"
+        ],
+        "Team Spirit": [
+          "Slark",
+          "Hoodwink",
+          "Warlock",
+          "Doom",
+          "Sand King"
+        ]
+      },
+      "mid": {
+        "TEAM VISION": "Viper",
+        "Team Spirit": "Sand King"
+      }
+    },
+    {
+      "game": 2,
+      "matchId": 9063230342,
+      "winner": "TEAM VISION",
+      "score": [
+        16,
+        29
+      ],
+      "f10": "TEAM VISION",
+      "f10Time": 1204,
+      "durationMin": 48.8,
+      "pace": "慢",
+      "stance": "来回拉锯",
+      "seriesId": 1160125,
+      "picks": {
+        "Team Spirit": [
+          "Techies",
+          "Pangolier",
+          "Hoodwink",
+          "Sand King",
+          "Morphling"
+        ],
+        "TEAM VISION": [
+          "Brewmaster",
+          "Rubick",
+          "Dragon Knight",
+          "Winter Wyvern",
+          "Nature's Prophet"
+        ]
+      },
+      "mid": {
+        "Team Spirit": "Sand King",
+        "TEAM VISION": "Dragon Knight"
+      }
+    },
+    {
+      "game": 3,
       "matchId": 9063353533,
       "winner": "Team Spirit",
       "score": [
@@ -53,6 +123,7 @@
       "durationMin": 32.0,
       "pace": "快",
       "stance": "杀人不转塔",
+      "seriesId": 1160125,
       "picks": {
         "TEAM VISION": [
           "Witch Doctor",
@@ -72,144 +143,187 @@
       "mid": {
         "TEAM VISION": "Earthshaker",
         "Team Spirit": "Nature's Prophet"
+      }
+    },
+    {
+      "game": 1,
+      "matchId": 9064337890,
+      "winner": "Astra Invicta",
+      "score": [
+        40,
+        13
+      ],
+      "f10": "Astra Invicta",
+      "f10Time": 902,
+      "durationMin": 51.9,
+      "pace": "正常",
+      "stance": "来回拉锯",
+      "picks": {
+        "Astra Invicta": [
+          "Enigma",
+          "Techies",
+          "Clockwerk",
+          "Ursa",
+          "Slark"
+        ],
+        "BoomBoys": [
+          "Winter Wyvern",
+          "Dark Willow",
+          "Bristleback",
+          "Invoker",
+          "Dragon Knight"
+        ]
       },
-      "blurb": "Team Spirit先到 10 杀（当时 5-10，11分04秒）。这 10 次击杀里，中单 Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 5 杀。"
+      "mid": {
+        "Astra Invicta": "Slark",
+        "BoomBoys": "Invoker"
+      },
+      "blurb": "Astra Invicta先到 10 杀（当时 10-4，15分02秒）。这 10 次击杀里，中单 lorenof/Slark 参与 5 次（击杀 3 + 助攻 2），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 4 杀。"
     }
   ],
   "nextMap": {
-    "game": 2,
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
+    "game": 1,
+    "teamA": "BoomBoys",
+    "teamB": "LEGION",
+    "format": "Bo1",
     "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.504,
-      "pA": 0.504,
-      "pB": 0.496,
-      "breakEven": 1.98,
-      "market": null,
-      "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.9 局；TEAM VISION 中单爱拿 Earth Spirit"
+      "team": null,
+      "tag": null,
+      "p": null,
+      "pA": null,
+      "pB": null,
+      "breakEven": null,
+      "market": {
+        "outcomes": [
+          "BetBoom Team",
+          "LEGION"
+        ],
+        "prices": [
+          0.585,
+          0.415
+        ],
+        "slug": "dota2-bb4-legion1-2026-10-27"
+      },
+      "why": "TI15+EWC 样本里没有 LEGION，模型不算这局胜率和先到10杀。Polymarket BO1 价 BetBoom 0.585 / LEGION 0.415，门槛 1.71 / 2.41。局分 0-0。"
     },
-    "f10": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.546,
-      "pA": 0.454,
-      "pB": 0.546,
-      "breakEven": 1.83,
-      "market": null
-    }
+    "f10": null
   },
   "seriesLean": {
-    "team": "Team Spirit",
-    "tag": "Spirit",
-    "p": 0.724,
-    "pA": 0.276,
-    "pB": 0.724,
-    "breakEven": 1.38,
-    "market": null,
-    "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.9 局；TEAM VISION 中单爱拿 Earth Spirit。当前局分 VSN 0-1 Spirit，series_type 1，先到 2 胜。"
+    "team": null,
+    "tag": null,
+    "p": null,
+    "pA": null,
+    "pB": null,
+    "breakEven": null,
+    "market": {
+      "outcomes": [
+        "BetBoom Team",
+        "LEGION"
+      ],
+      "prices": [
+        0.585,
+        0.415
+      ],
+      "slug": "dota2-bb4-legion1-2026-10-27"
+    },
+    "why": "TI15+EWC 样本里没有 LEGION，模型不算这局胜率和先到10杀。Polymarket BO1 价 BetBoom 0.585 / LEGION 0.415，门槛 1.71 / 2.41。局分 0-0。",
+    "score": "0-0",
+    "format": "Bo1"
   },
   "previous": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
+    "id": "fissure-1160125",
+    "round": "PARI UNIVERSE by FISSURE 小组B",
+    "day": "2026-10-27",
+    "when": "2026-10-27 00:37",
+    "format": "Bo3",
     "teamA": "TEAM VISION",
     "teamB": "Team Spirit",
     "teamALabel": "TEAM VISION",
     "teamBLabel": "Team Spirit",
     "status": "completed",
-    "score": "2-3",
+    "score": "1-2",
     "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5,
-    "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.547,
-      "pA": 0.547,
-      "pB": 0.453,
-      "breakEven": 1.83,
-      "market": {
-        "outcomes": [
-          "TEAM VISION",
-          "Team Spirit"
-        ],
-        "prices": [
-          1.0,
-          0.0
-        ]
-      },
-      "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
-    }
-  },
-  "next": {
-    "id": "fissure-1160125",
-    "round": "PARI UNIVERSE by FISSURE",
-    "day": "2026-10-27",
-    "when": "2026-10-27 02:58",
-    "format": "Bo3",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
-    "status": "live",
-    "score": "0-1",
-    "winner": null,
-    "polySlug": null,
-    "mapsPlayed": 1,
-    "seriesId": 1160125,
-    "leagueId": 20395,
-    "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.724,
-      "pA": 0.276,
-      "pB": 0.724,
-      "breakEven": 1.38,
-      "market": null,
-      "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.9 局；TEAM VISION 中单爱拿 Earth Spirit。当前局分 VSN 0-1 Spirit，series_type 1，先到 2 胜。"
-    }
-  },
-  "focus": {
-    "id": "fissure-1160125",
-    "round": "PARI UNIVERSE by FISSURE",
-    "day": "2026-10-27",
-    "when": "2026-10-27 02:58",
-    "format": "Bo3",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
-    "status": "live",
-    "score": "0-1",
-    "winner": null,
-    "polySlug": null,
-    "mapsPlayed": 1,
+    "polySlug": "dota2-ts8-pari-2026-10-26",
+    "mapsPlayed": 3,
     "seriesId": 1160125,
     "leagueId": 20395
   },
+  "next": {
+    "id": "fissure-1160-bb-legion",
+    "round": "PARI UNIVERSE by FISSURE 小组B加赛",
+    "day": "2026-10-28",
+    "when": "2026-10-28 00:00",
+    "format": "Bo1",
+    "teamA": "BoomBoys",
+    "teamB": "LEGION",
+    "teamALabel": "BoomBoys",
+    "teamBLabel": "LEGION",
+    "status": "scheduled",
+    "score": "0-0",
+    "winner": null,
+    "polySlug": "dota2-bb4-legion1-2026-10-27",
+    "mapsPlayed": 0,
+    "lean": {
+      "team": null,
+      "tag": null,
+      "p": null,
+      "pA": null,
+      "pB": null,
+      "breakEven": null,
+      "market": {
+        "outcomes": [
+          "BetBoom Team",
+          "LEGION"
+        ],
+        "prices": [
+          0.585,
+          0.415
+        ],
+        "slug": "dota2-bb4-legion1-2026-10-27"
+      },
+      "why": "TI15+EWC 样本里没有 LEGION，模型不算这局胜率和先到10杀。Polymarket BO1 价 BetBoom 0.585 / LEGION 0.415，门槛 1.71 / 2.41。局分 0-0。"
+    }
+  },
+  "focus": {
+    "id": "fissure-1160-bb-legion",
+    "round": "PARI UNIVERSE by FISSURE 小组B加赛",
+    "day": "2026-10-28",
+    "when": "2026-10-28 00:00",
+    "format": "Bo1",
+    "teamA": "BoomBoys",
+    "teamB": "LEGION",
+    "teamALabel": "BoomBoys",
+    "teamBLabel": "LEGION",
+    "status": "scheduled",
+    "score": "0-0",
+    "winner": null,
+    "polySlug": "dota2-bb4-legion1-2026-10-27",
+    "mapsPlayed": 0
+  },
   "todayResults": [],
   "newMapIds": [
-    9062920598,
-    9063353533
+    9063026856,
+    9063131170,
+    9063230342
   ],
   "notes": {
     "opendota404": [
       8959362208
     ],
     "parsedNow": [
-      9062920598,
-      9063353533
+      9059855376,
+      9063026856,
+      9063131170,
+      9063230342,
+      9064337890
     ],
     "augustGf": "2-3",
-    "liveMisfile": {
-      "ubsf1": "1-0",
-      "gf": "0-1"
-    },
-    "series1160125": "0-1",
-    "series1160053": "1-1"
+    "series1160125": "1-2",
+    "series1160053": "1-2",
+    "series1158959": "0-2",
+    "justFinishedBo1": 9064337890,
+    "nextBo1": "BoomBoys vs LEGION 2026-10-28 00:00 CST",
+    "liveLobby": null,
+    "modelHasLegion": false
   }
 }
