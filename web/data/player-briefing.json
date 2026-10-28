@@ -1,23 +1,36 @@
 {
-  "asOf": "2026-10-27 04:56 CST",
+  "asOf": "2026-10-29 04:52 CST",
   "source": "stub",
-  "headline": "+1 12-13 中1-2 3号7-6",
+  "headline": "+1 11-14 中0-2 3号8-6",
   "lede": "新1把全单排 0-1。",
   "narrative": "",
   "positioning": "主三 · 副中",
   "points": [
     "新1把全单排 0-1。",
-    "负：Pangolier负。",
-    "窗口 12-13。",
-    "中1-2，3号7-6。"
+    "负：Gyrocopter负。",
+    "窗口 11-14。",
+    "中0-2，3号8-6。"
   ],
   "sessionMatchIds": [
-    "9062775609"
+    "9066194439"
   ],
   "newMatchIds": [
-    "9062775609"
+    "9066194439"
   ],
   "focus": [
+    {
+      "matchId": 9066194439,
+      "hero": "Gyrocopter",
+      "heroFile": "gyrocopter",
+      "role": null,
+      "kind": "other_loss",
+      "divineWr": {
+        "picks": 21640,
+        "wins": 10337,
+        "wr": 0.4777
+      },
+      "note": "负"
+    },
     {
       "matchId": 9062775609,
       "hero": "Pangolier",
@@ -25,9 +38,9 @@
       "role": "pos2",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 25506,
+        "picks": 25536,
         "wins": 12014,
-        "wr": 0.471
+        "wr": 0.4705
       },
       "note": "负"
     },
@@ -38,9 +51,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 43076,
-        "wins": 22798,
-        "wr": 0.5293
+        "picks": 42466,
+        "wins": 22357,
+        "wr": 0.5265
       },
       "note": "负"
     },
@@ -51,9 +64,9 @@
       "role": "pos1",
       "kind": "meta_weak",
       "divineWr": {
-        "picks": 51925,
-        "wins": 23130,
-        "wr": 0.4455
+        "picks": 49688,
+        "wins": 22092,
+        "wr": 0.4446
       },
       "note": "版本坑"
     },
@@ -64,22 +77,9 @@
       "role": "pos3",
       "kind": "other_loss",
       "divineWr": {
-        "picks": 31031,
-        "wins": 15694,
-        "wr": 0.5058
-      },
-      "note": "负"
-    },
-    {
-      "matchId": 9056567516,
-      "hero": "Dragon Knight",
-      "heroFile": "dragon_knight",
-      "role": null,
-      "kind": "other_loss",
-      "divineWr": {
-        "picks": 83571,
-        "wins": 43566,
-        "wr": 0.5213
+        "picks": 30336,
+        "wins": 15299,
+        "wr": 0.5043
       },
       "note": "负"
     }
