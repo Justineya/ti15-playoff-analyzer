@@ -1,215 +1,170 @@
 {
-  "asOf": "2026-10-27 04:36 CST",
+  "asOf": "2026-10-28 18:17 CST",
   "timezone": "Asia/Shanghai",
   "kind": "next-map",
-  "headline": "第1局 Spirit 赢、先到10杀 Spirit，32.0分钟。第2局重算后看好 VSN 50.4%，先到10杀看好 Spirit 54.6%。系列 0-1 看好 Spirit 72.4%。",
-  "narrative": "第1局 9063353533，series 1160125，联赛 20395 PARI UNIVERSE by FISSURE，OpenDota series_type 1。天辉 TEAM VISION（接口名 PARIVISION）11，夜魇 Team Spirit 37，Spirit 赢。快节奏，杀人不转塔，32分02秒。先到 10 杀是 Spirit，11分04秒，当时 5-10，完成击杀的是 not_me/Dark Willow。中单 Larl/Nature's Prophet 对 No[o]ne-/Earthshaker。Spirit 拿了 Dazzle、Nature's Prophet、Dark Willow、Undying、Outworld Destroyer，一阶段禁 Techies、Bounty Hunter，前两手 Dazzle、Nature's Prophet，中单第2手。VSN 拿了 Witch Doctor、Timbersaw、Io、Earthshaker、Windranger，一阶段禁 Largo、Brewmaster，前两手 Witch Doctor、Timbersaw，中单 Earthshaker 第4手。这 10 次击杀里 Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中单加双辅合计 17 次，中辅驱动，对手当时 5 杀。VSN 中单 Earthshaker 参与 4 次（击杀 2 + 助攻 2），中辅合计 10 次。局分 0-1，Spirit 领先。八月总决赛是另外 5 局，比分 2-3，Spirit 夺冠，赛程里没有第 6 局。第1局 8960577698 Team Spirit 赢，先到10杀 Team Spirit（13分46秒），46.2分钟，正常，滚雪球，中单 Spirit/Slark 对 VSN/Io。第2局 8960655084 TEAM VISION 赢，先到10杀 Team Spirit（10分10秒），64.5分钟，快，进攻转线，中单 VSN/Earth Spirit 对 Spirit/Slardar。第3局 8960762254 Team Spirit 赢，先到10杀 TEAM VISION（25分37秒），45.9分钟，慢，发育对线，中单 Spirit/Nature's Prophet 对 VSN/Pangolier。第4局 8960882635 TEAM VISION 赢，先到10杀 TEAM VISION（17分11秒），44.3分钟，慢，来回拉锯，中单 VSN/Sand King 对 Spirit/Storm Spirit。第5局 8960991322 Team Spirit 赢，先到10杀 TEAM VISION（13分07秒），64.4分钟，正常，来回拉锯，中单 VSN/Invoker 对 Spirit/Pangolier。液体百科 lbsf 仍是 0-2，maps 有 winner；9063353533 没有 maps[].winner。观战源把这一局同时挂上 ubsf1（写成 1-0）和 gf（写成 0-1），只是队名对上旧签表。触发里的八月局分仍是 ubsf1 1-2、gf 2-3。\n\n这一局 Spirit 在 11分04秒先到 10 杀，Larl 的 Nature's Prophet 是第2手，中辅参与把人头差拉开，VSN 的 Earthshaker 第4手才上中单，Io 在阵容里，32分钟以 11-37 结束。下一局是 series 1160125 的第2局。重算已经吃进 9063353533。第2局地图胜率 VSN 50.4%（上一版 53.4%），门槛 1.98，Spirit 49.6%。先到 10 杀 Spirit 54.6%（上一版 52.0%），门槛 1.83，VSN 45.4%。H2H 从 10.9 局到 11.9 局。本届胜率两边都是 65%（上一版 VSN 66% / Spirit 64%），先到10杀率 VSN 57% / Spirit 61%（上一版 58% / 60%）。模型仍写 VSN 常用中单 Earth Spirit，这一局中单是 Earthshaker。开赛前第1局样本是 VSN 胜率 55.5%、先到10杀 47.2%、从 0-0 的系列 59.2%，这组开赛前样本不拿来当第2局。从 0-0 再开的系列胜率 VSN 从 59.2% 降到 54.7%。当前局分 0-1，按 series_type 1、先到 2 胜，系列胜率 Spirit 72.4%，门槛 1.38，VSN 27.6%。Polymarket 没有 series 1160125 的第2局价。八月总决赛盘 dota2-vsn2-ts8-2026-08-23 的第2局和系列都已结算为 VSN 1.00、Spirit 0.00，对应 8 月 23 日。先到 10 杀没有公开盘。观战源里还没有第2局房间。\n\n同一次入库还有四张别的图。9059726836 Spirit 赢 BoomBoys，39-24，先到10杀 Spirit（18分00秒，10-9），45分52秒，慢，来回拉锯，中单 Larl/Pangolier 对 Save-/Keeper of the Light。9059855376 Spirit 再赢，13-49，32分15秒，回放未解析，没有先到10杀，中单 Kiritych~/Lifestealer 对 Larl/Sand King，series 1158959 为 2-0。9062824489 Yandex 赢 Liquid，解析人头 21-28，先到10杀 Liquid（14分34秒，10-4），37分54秒，正常，来回拉锯，中单 Malr1ne/Sand King 对 CHIRA_JUNIOR/Pangolier。9062920598 这次解析成功：Liquid 赢，37-16，先到10杀 Liquid（13分03秒，10-8），38分25秒，正常，来回拉锯，中单 Malr1ne/Earthshaker 对 CHIRA_JUNIOR/Dragon Knight。series 1160053 记分牌 1-1。第3局 Liquid 胜率 46.1%（上一版 41.5%），Yandex 53.9%，门槛 1.86；先到10杀 Liquid 57.7%（上一版 56.1%），门槛 1.73。没有第3局观战房，下一局按刚结束的 VSN 对 Spirit 写第2局。8959362208 仍然 404，没有写入 games.json。这不是投注建议。",
+  "headline": "第1局 Liquid 赢，50.4分钟，回放未解析、先到10杀没有结果。第2局重算后看好 VSN 52.7%，先到10杀看好 VSN 54.6%。系列 1-0 看好 Liquid 72.3%。",
+  "narrative": "第1局 9065380598，series 1160851，联赛 20395 PARI UNIVERSE by FISSURE，OpenDota series_type 1。天辉 Team Liquid 33，夜魇 TEAM VISION 22，Liquid 赢，50分21秒。比赛接口 radiant_win 为真。回放还没有 version，先到 10 杀没有解析；人头已经是 33-22，两边都超过 10 杀，谁先到没有写下来。中单 Malr1ne/Pangolier 对 No[o]ne-/Ember Spirit。Liquid 拿了 Enigma、Pangolier、Dark Willow、Witch Doctor、Lifestealer，一阶段禁 Bounty Hunter、Earth Spirit，前两手 Enigma、Pangolier，中单 Pangolier 第2手。VSN 拿了 Hoodwink、Kez、Ember Spirit、Brewmaster、Keeper of the Light，一阶段禁 Earthshaker、Nature's Prophet，前两手 Hoodwink、Kez，中单 Ember Spirit 第3手。局分 Liquid 1-0。\n\n这一局 VSN 禁了 Earthshaker 和 Nature's Prophet。他们上一场系列 1160125 对 Spirit 以 1-2 结束。第3局 9063353533 Spirit 赢，人头 11-37，先到10杀 Spirit（11分04秒，当时天辉 5、夜魇 10），32分02秒，快，杀人不转塔。Spirit 中单 Larl 的 Nature's Prophet 是第2手，这 10 杀参与 7 次（击杀 5 + 助攻 2），中辅合计 17 次，中辅驱动。VSN 中单 Earthshaker 是第4手，阵里还有 Io、Timbersaw。第2局按吃进 9065380598 之后的模型重算。第2局地图胜率 VSN 52.7%（吃进这一局之前的第2局模拟是 VSN 61.0%），门槛 1.90，Liquid 47.3%。先到10杀 VSN 54.6%（吃进前的第2局模拟 54.1%），门槛 1.83，Liquid 45.4%。H2H 从 0 局到 1 局，这一局是 Liquid 赢的。本届胜率 Liquid 52% / VSN 63%（吃进前 51% / 64%），先到10杀率 54% / 57%（吃进前 55% / 59%）。模型仍写 Liquid 中单爱拿 Earth Spirit，这一局中单是 Pangolier。开赛前第1局样本是 VSN 地图 59.7%、先到10杀 51.4%、从 0-0 的系列 64.6%，这组开赛前样本不拿来当第2局。当前局分 1-0，series_type 1、先到 2 胜，按地图胜率 Liquid 47.4% 往后算，系列胜率 Liquid 72.3%，门槛 1.38，VSN 27.7%。Polymarket 没有 series 1160851 的第2局价。八月总决赛盘 dota2-vsn2-ts8-2026-08-23 的系列价是 VSN 0、Spirit 1，对应 8 月 23 日已结算的 2-3。先到 10 杀没有公开盘。18:16 CST 观战源里还只有已结束的 9065380598，没有第2局房间。\n\n系列 1160125 的前两局也已经进模型。第1局 9063131170 Spirit 赢，人头 14-22（天辉 VSN），先到10杀 VSN（20分44秒，当时天辉 10、夜魇 7），32分28秒，慢，滚雪球，中单 VSN/Viper 对 Spirit/Sand King。局分 VSN 0-1 Spirit。第2局 9063230342 VSN 赢，人头 16-29（天辉 Spirit），先到10杀 VSN（20分04秒，当时天辉 9、夜魇 10），48分47秒，慢，来回拉锯，中单 Spirit/Sand King 对 VSN/Dragon Knight。局分 1-1。第3局 9063353533 见上，系列 VSN 1-2 Spirit。同一联赛里 Liquid 对 Yandex 的 series 1160053 也是先到 2 胜，比分 Liquid 1-2 Yandex。第1局 9062824489 TY 赢，人头 21-28（天辉 Liquid），先到10杀 Liquid（14分34秒，当时天辉 10、夜魇 4），37分54秒，正常，来回拉锯，中单 Liquid/Sand King 对 TY/Pangolier。第2局 9062920598 Liquid 赢，人头 37-16（天辉 Liquid），先到10杀 Liquid（13分03秒，当时天辉 10、夜魇 8），38分25秒，正常，来回拉锯，中单 Liquid/Earthshaker 对 TY/Dragon Knight。第3局 9063026856 TY 赢，人头 10-35（天辉 Liquid），先到10杀 TY（16分49秒，当时天辉 4、夜魇 10），28分16秒，慢，来回拉锯，中单 Liquid/Lina 对 TY/Invoker。Spirit 对 BoomBoys 的 series 1158959 是 2-0。第1局 9059726836 Spirit 赢，人头 39-24（天辉 Spirit），先到10杀 Spirit（18分00秒，当时天辉 10、夜魇 9），45分52秒，慢，来回拉锯，中单 Spirit/Pangolier 对 BB/Keeper of the Light。第2局 9059855376 Spirit 赢，人头 13-49（天辉 BB），回放未解析，先到10杀没有结果，32分15秒，中单 BB/Lifestealer 对 Spirit/Sand King。八月总决赛是另外 5 局，比分 VSN 2-3 Spirit，没有第6局。第1局 8960577698 Spirit 赢，人头 42-17（天辉 Spirit），先到10杀 Spirit（13分46秒，当时天辉 10、夜魇 6），46分15秒，正常，滚雪球，中单 Spirit/Slark 对 VSN/Io。第2局 8960655084 VSN 赢，人头 46-48（天辉 VSN），先到10杀 Spirit（10分10秒，当时天辉 2、夜魇 10），64分29秒，快，进攻转线，中单 VSN/Earth Spirit 对 Spirit/Slardar。第3局 8960762254 Spirit 赢，人头 26-24（天辉 Spirit），先到10杀 VSN（25分37秒，当时天辉 8、夜魇 10），45分56秒，慢，发育对线，中单 Spirit/Nature's Prophet 对 VSN/Pangolier。第4局 8960882635 VSN 赢，人头 31-13（天辉 VSN），先到10杀 VSN（17分11秒，当时天辉 10、夜魇 4），44分18秒，慢，来回拉锯，中单 VSN/Sand King 对 Spirit/Storm Spirit。第5局 8960991322 Spirit 赢，人头 31-34（天辉 VSN），先到10杀 VSN（13分07秒，当时天辉 10、夜魇 4），64分22秒，正常，来回拉锯，中单 VSN/Invoker 对 Spirit/Pangolier。液体百科 lbsf 仍是 0-2，maps 有 winner。8959362208 仍然 404，没有写入 games.json。这不是投注建议。",
   "previousMap": {
     "game": 1,
-    "matchId": 9063353533,
-    "winner": "Team Spirit",
+    "matchId": 9065380598,
+    "winner": "Team Liquid",
     "score": [
-      11,
-      37
+      33,
+      22
     ],
-    "f10": "Team Spirit",
-    "f10Time": 664,
-    "durationMin": 32.0,
-    "pace": "快",
-    "stance": "杀人不转塔",
+    "f10": null,
+    "f10Time": null,
+    "durationMin": 50.4,
+    "pace": "未知",
+    "stance": null,
     "picks": {
-      "TEAM VISION": [
-        "Witch Doctor",
-        "Timbersaw",
-        "Io",
-        "Earthshaker",
-        "Windranger"
-      ],
-      "Team Spirit": [
-        "Dazzle",
-        "Nature's Prophet",
+      "Team Liquid": [
+        "Enigma",
+        "Pangolier",
         "Dark Willow",
-        "Undying",
-        "Outworld Destroyer"
+        "Witch Doctor",
+        "Lifestealer"
+      ],
+      "TEAM VISION": [
+        "Hoodwink",
+        "Kez",
+        "Ember Spirit",
+        "Brewmaster",
+        "Keeper of the Light"
       ]
     },
     "mid": {
-      "TEAM VISION": "Earthshaker",
-      "Team Spirit": "Nature's Prophet"
+      "Team Liquid": "Pangolier",
+      "TEAM VISION": "Ember Spirit"
     },
-    "blurb": "Team Spirit先到 10 杀（当时 5-10，11分04秒）。这 10 次击杀里，中单 Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 5 杀。"
+    "blurb": "回放未解析，先到10杀没有结果。人头 33-22，两边都已经超过 10 杀。"
   },
   "previousMaps": [
     {
       "game": 1,
-      "matchId": 9063353533,
-      "winner": "Team Spirit",
+      "matchId": 9065380598,
+      "winner": "Team Liquid",
       "score": [
-        11,
-        37
+        33,
+        22
       ],
-      "f10": "Team Spirit",
-      "f10Time": 664,
-      "durationMin": 32.0,
-      "pace": "快",
-      "stance": "杀人不转塔",
+      "f10": null,
+      "f10Time": null,
+      "durationMin": 50.4,
+      "pace": "未知",
+      "stance": null,
       "picks": {
-        "TEAM VISION": [
-          "Witch Doctor",
-          "Timbersaw",
-          "Io",
-          "Earthshaker",
-          "Windranger"
-        ],
-        "Team Spirit": [
-          "Dazzle",
-          "Nature's Prophet",
+        "Team Liquid": [
+          "Enigma",
+          "Pangolier",
           "Dark Willow",
-          "Undying",
-          "Outworld Destroyer"
+          "Witch Doctor",
+          "Lifestealer"
+        ],
+        "TEAM VISION": [
+          "Hoodwink",
+          "Kez",
+          "Ember Spirit",
+          "Brewmaster",
+          "Keeper of the Light"
         ]
       },
       "mid": {
-        "TEAM VISION": "Earthshaker",
-        "Team Spirit": "Nature's Prophet"
+        "Team Liquid": "Pangolier",
+        "TEAM VISION": "Ember Spirit"
       },
-      "blurb": "Team Spirit先到 10 杀（当时 5-10，11分04秒）。这 10 次击杀里，中单 Larl/Nature's Prophet 参与 7 次（击杀 5 + 助攻 2），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 5 杀。"
+      "blurb": "回放未解析，先到10杀没有结果。人头 33-22，两边都已经超过 10 杀。"
     }
   ],
   "nextMap": {
     "game": 2,
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
+    "teamA": "Team Liquid",
+    "teamB": "TEAM VISION",
     "lean": {
       "team": "TEAM VISION",
       "tag": "VSN",
-      "p": 0.504,
-      "pA": 0.504,
-      "pB": 0.496,
-      "breakEven": 1.98,
+      "p": 0.527,
+      "pA": 0.473,
+      "pB": 0.527,
+      "breakEven": 1.9,
       "market": null,
-      "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.9 局；TEAM VISION 中单爱拿 Earth Spirit"
+      "why": "本届胜率 Team Liquid 52% / TEAM VISION 63%；先到10杀 54% / 57%；H2H 1 局；Team Liquid 中单爱拿 Earth Spirit"
     },
     "f10": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
+      "team": "TEAM VISION",
+      "tag": "VSN",
       "p": 0.546,
       "pA": 0.454,
       "pB": 0.546,
       "breakEven": 1.83,
-      "market": null
+      "market": null,
+      "why": ""
     }
   },
   "seriesLean": {
-    "team": "Team Spirit",
-    "tag": "Spirit",
-    "p": 0.724,
-    "pA": 0.276,
-    "pB": 0.724,
+    "team": "Team Liquid",
+    "tag": "Liquid",
+    "p": 0.723,
+    "pA": 0.723,
+    "pB": 0.277,
     "breakEven": 1.38,
     "market": null,
-    "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.9 局；TEAM VISION 中单爱拿 Earth Spirit。当前局分 VSN 0-1 Spirit，series_type 1，先到 2 胜。"
+    "why": "本届胜率 Team Liquid 52% / TEAM VISION 63%；先到10杀 54% / 57%；H2H 1 局；Team Liquid 中单爱拿 Earth Spirit"
   },
-  "previous": {
-    "id": "gf",
-    "round": "总决赛",
-    "day": "2026-08-23",
-    "when": "2026-08-23 13:00",
-    "format": "Bo5",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
-    "status": "completed",
-    "score": "2-3",
-    "winner": "Team Spirit",
-    "polySlug": "dota2-vsn2-ts8-2026-08-23",
-    "mapsPlayed": 5,
-    "lean": {
-      "team": "TEAM VISION",
-      "tag": "VSN",
-      "p": 0.547,
-      "pA": 0.547,
-      "pB": 0.453,
-      "breakEven": 1.83,
-      "market": {
-        "outcomes": [
-          "TEAM VISION",
-          "Team Spirit"
-        ],
-        "prices": [
-          1.0,
-          0.0
-        ]
-      },
-      "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.899999999999999 局；TEAM VISION 中单爱拿 Earth Spirit"
-    }
-  },
+  "previous": null,
   "next": {
-    "id": "fissure-1160125",
+    "id": "1160851",
     "round": "PARI UNIVERSE by FISSURE",
-    "day": "2026-10-27",
-    "when": "2026-10-27 02:58",
+    "day": "2026-10-28",
+    "when": "2026-10-28 18:13",
     "format": "Bo3",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
+    "teamA": "Team Liquid",
+    "teamB": "TEAM VISION",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "TEAM VISION",
     "status": "live",
-    "score": "0-1",
+    "score": "1-0",
     "winner": null,
     "polySlug": null,
     "mapsPlayed": 1,
-    "seriesId": 1160125,
+    "seriesId": 1160851,
+    "seriesType": 1,
     "leagueId": 20395,
     "lean": {
-      "team": "Team Spirit",
-      "tag": "Spirit",
-      "p": 0.724,
-      "pA": 0.276,
-      "pB": 0.724,
+      "team": "Team Liquid",
+      "tag": "Liquid",
+      "p": 0.723,
+      "pA": 0.723,
+      "pB": 0.277,
       "breakEven": 1.38,
       "market": null,
-      "why": "本届胜率 TEAM VISION 65% / Team Spirit 65%；先到10杀 57% / 61%；H2H 11.9 局；TEAM VISION 中单爱拿 Earth Spirit。当前局分 VSN 0-1 Spirit，series_type 1，先到 2 胜。"
+      "why": "本届胜率 Team Liquid 52% / TEAM VISION 63%；先到10杀 54% / 57%；H2H 1 局；Team Liquid 中单爱拿 Earth Spirit"
     }
   },
   "focus": {
-    "id": "fissure-1160125",
+    "id": "1160851",
     "round": "PARI UNIVERSE by FISSURE",
-    "day": "2026-10-27",
-    "when": "2026-10-27 02:58",
+    "day": "2026-10-28",
+    "when": "2026-10-28 18:13",
     "format": "Bo3",
-    "teamA": "TEAM VISION",
-    "teamB": "Team Spirit",
-    "teamALabel": "TEAM VISION",
-    "teamBLabel": "Team Spirit",
+    "teamA": "Team Liquid",
+    "teamB": "TEAM VISION",
+    "teamALabel": "Team Liquid",
+    "teamBLabel": "TEAM VISION",
     "status": "live",
-    "score": "0-1",
+    "score": "1-0",
     "winner": null,
     "polySlug": null,
     "mapsPlayed": 1,
-    "seriesId": 1160125,
+    "seriesId": 1160851,
+    "seriesType": 1,
     "leagueId": 20395
   },
   "todayResults": [],
   "newMapIds": [
-    9062920598,
-    9063353533
-  ],
-  "notes": {
-    "opendota404": [
-      8959362208
-    ],
-    "parsedNow": [
-      9062920598,
-      9063353533
-    ],
-    "augustGf": "2-3",
-    "liveMisfile": {
-      "ubsf1": "1-0",
-      "gf": "0-1"
-    },
-    "series1160125": "0-1",
-    "series1160053": "1-1"
-  }
+    9063131170,
+    9063230342,
+    9063026856,
+    9065380598
+  ]
 }
