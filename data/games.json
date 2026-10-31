@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-31 08:23 CST",
-  "n": 140,
+  "asOf": "2026-11-01 01:18 CST",
+  "n": 142,
   "definition": {
     "f10k": "哪支队伍先获得 10 次英雄击杀（先到10杀），不是全局第10个击杀的收刀人",
     "participate": "参与次数 = 击杀 + 助攻。助攻来自同一波 OpenDota 团战里出过伤害，或同一波 25 秒团里的击杀/阵亡",
@@ -42974,6 +42974,620 @@
         "mid_support": "天辉中单 Larl/Snapfire 参与 9 次（击杀2+助攻7），辅rue/Techies 参与 9 次，中辅合计26 · 中辅驱动；夜魇中单 Malr1ne/Timbersaw 参与 4 次（击杀2+助攻2），辅Boxi/Dark Willow 参与 3 次，中辅合计10 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
       },
       "opendota": "https://www.opendota.com/matches/9069021061",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 9069952836,
+      "series_id": 1162416,
+      "start_time": 1793451642,
+      "duration": 2255,
+      "parsed": true,
+      "radiant": "GamerLegion",
+      "dire": "Team Yandex",
+      "radiant_team_id": 9964962,
+      "dire_team_id": 9823272,
+      "winner": "Team Yandex",
+      "radiant_win": false,
+      "score": [
+        23,
+        40
+      ],
+      "pace": "快",
+      "length": "偏长",
+      "stance": "进攻转线",
+      "f10k": {
+        "side": "dire",
+        "time": 384,
+        "score": {
+          "radiant": 4,
+          "dire": 10
+        },
+        "completing_killer": "CHIRA_JUNIOR",
+        "completing_hero": "Storm Spirit"
+      },
+      "f10k_mid_share": 5,
+      "first_tower": {
+        "time": 907,
+        "taker": "dire",
+        "key": "npc_dota_goodguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -2485,
+        "m10": -3624,
+        "m15": -4700,
+        "m20": -6245
+      },
+      "kills_8min": 15,
+      "kills_15min": 28,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Pangolier",
+              "hero_id": 120
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 4,
+              "hero": "Windranger",
+              "hero_id": 21
+            },
+            {
+              "order": 9,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 10,
+              "hero": "Sand King",
+              "hero_id": 16
+            },
+            {
+              "order": 18,
+              "hero": "Ember Spirit",
+              "hero_id": 106
+            },
+            {
+              "order": 20,
+              "hero": "Earthshaker",
+              "hero_id": 7
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Viper",
+              "hero_id": 47
+            },
+            {
+              "order": 13,
+              "hero": "Dragon Knight",
+              "hero_id": 49
+            },
+            {
+              "order": 14,
+              "hero": "Techies",
+              "hero_id": 105
+            },
+            {
+              "order": 17,
+              "hero": "Dawnbreaker",
+              "hero_id": 135
+            },
+            {
+              "order": 22,
+              "hero": "Winter Wyvern",
+              "hero_id": 112
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Pangolier",
+              "hero_id": 120
+            },
+            {
+              "order": 1,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Viper",
+              "hero_id": 47
+            },
+            {
+              "order": 13,
+              "hero": "Dragon Knight",
+              "hero_id": 49
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Enigma",
+              "hero_id": 33
+            },
+            {
+              "order": 5,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 6,
+              "hero": "Brewmaster",
+              "hero_id": 78
+            },
+            {
+              "order": 11,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 19,
+              "hero": "Mirana",
+              "hero_id": 9
+            },
+            {
+              "order": 21,
+              "hero": "Dazzle",
+              "hero_id": 50
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 12,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 15,
+              "hero": "Shadow Demon",
+              "hero_id": 79
+            },
+            {
+              "order": 16,
+              "hero": "Magnus",
+              "hero_id": 97
+            },
+            {
+              "order": 23,
+              "hero": "Storm Spirit",
+              "hero_id": 17
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Enigma",
+              "hero_id": 33
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 12,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "RCY",
+            "hero": "Dragon Knight",
+            "hero_id": 49,
+            "gold_t10": 3935,
+            "xp_t10": 4439,
+            "kills": 8,
+            "kills_before_10": 1,
+            "assists_before_10": 2,
+            "participate_before_10": 3
+          },
+          "pos4": {
+            "player": "Speeed",
+            "hero": "Winter Wyvern",
+            "kills": 5,
+            "kills_before_10": 3,
+            "assists_before_10": 1,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "Bignum",
+            "hero": "Techies",
+            "kills_before_10": 0,
+            "assists_before_10": 3,
+            "participate_before_10": 3
+          },
+          "mid_support_fights_12min": 2,
+          "kills_at_f10k": 4,
+          "first10_mid_sup_kills": 4,
+          "first10_mid_sup_ka": 10,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Storm Spirit",
+            "hero_id": 17,
+            "gold_t10": 4371,
+            "xp_t10": 4865,
+            "kills": 13,
+            "kills_before_10": 2,
+            "assists_before_10": 3,
+            "participate_before_10": 5
+          },
+          "pos4": {
+            "player": "Maladych",
+            "hero": "Dark Willow",
+            "kills": 4,
+            "kills_before_10": 2,
+            "assists_before_10": 5,
+            "participate_before_10": 7
+          },
+          "pos5": {
+            "player": "Saksa",
+            "hero": "Shadow Demon",
+            "kills_before_10": 2,
+            "assists_before_10": 3,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 17,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Pangolier、Nature's Prophet；前两手Viper、Dragon Knight；中单Dragon Knight第2手拿",
+          "dire": "一阶段禁Bounty Hunter、Enigma；前两手Lone Druid、Dark Willow；中单Storm Spirit第5手拿"
+        },
+        "pace": "快节奏 / 偏长局（37分35秒）；先到10杀出现在 6分24秒",
+        "stance": "进攻转线",
+        "f10k": "Team Yandex先到 10 杀（当时 4-10，6分24秒）。这 10 次击杀里，中单 CHIRA_JUNIOR/Storm Spirit 参与 5 次（击杀 2 + 助攻 3），中单+双辅合计参与 17 次 · 中辅驱动。对手当时 4 杀。",
+        "mid_support": "天辉中单 RCY/Dragon Knight 参与 3 次（击杀1+助攻2），辅Speeed/Winter Wyvern 参与 4 次，中辅合计10 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Storm Spirit 参与 5 次（击杀2+助攻3），辅Maladych/Dark Willow 参与 7 次，中辅合计17 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/9069952836",
+      "source": "ti15",
+      "patch": "7.41e"
+    },
+    {
+      "match_id": 9070062078,
+      "series_id": 1162416,
+      "start_time": 1793455888,
+      "duration": 3162,
+      "parsed": true,
+      "radiant": "GamerLegion",
+      "dire": "Team Yandex",
+      "radiant_team_id": 9964962,
+      "dire_team_id": 9823272,
+      "winner": "Team Yandex",
+      "radiant_win": false,
+      "score": [
+        35,
+        37
+      ],
+      "pace": "正常",
+      "length": "超长",
+      "stance": "来回拉锯",
+      "f10k": {
+        "side": "radiant",
+        "time": 732,
+        "score": {
+          "radiant": 10,
+          "dire": 7
+        },
+        "completing_killer": "Speeed",
+        "completing_hero": "Silencer"
+      },
+      "f10k_mid_share": 5,
+      "first_tower": {
+        "time": 443,
+        "taker": "radiant",
+        "key": "npc_dota_badguys_tower1_mid"
+      },
+      "gold": {
+        "m5": -1153,
+        "m10": -660,
+        "m15": -1819,
+        "m20": 428
+      },
+      "kills_8min": 9,
+      "kills_15min": 19,
+      "draft": {
+        "radiant": {
+          "bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            },
+            {
+              "order": 5,
+              "hero": "Slark",
+              "hero_id": 93
+            },
+            {
+              "order": 6,
+              "hero": "Lone Druid",
+              "hero_id": 80
+            },
+            {
+              "order": 11,
+              "hero": "Pangolier",
+              "hero_id": 120
+            },
+            {
+              "order": 19,
+              "hero": "Templar Assassin",
+              "hero_id": 46
+            },
+            {
+              "order": 21,
+              "hero": "Terrorblade",
+              "hero_id": 109
+            }
+          ],
+          "picks": [
+            {
+              "order": 8,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 12,
+              "hero": "Windranger",
+              "hero_id": 21
+            },
+            {
+              "order": 15,
+              "hero": "Earthshaker",
+              "hero_id": 7
+            },
+            {
+              "order": 16,
+              "hero": "Night Stalker",
+              "hero_id": 60
+            },
+            {
+              "order": 23,
+              "hero": "Silencer",
+              "hero_id": 75
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 2,
+              "hero": "Bounty Hunter",
+              "hero_id": 62
+            },
+            {
+              "order": 3,
+              "hero": "Nature's Prophet",
+              "hero_id": 53
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 8,
+              "hero": "Dark Willow",
+              "hero_id": 119
+            },
+            {
+              "order": 12,
+              "hero": "Windranger",
+              "hero_id": 21
+            }
+          ]
+        },
+        "dire": {
+          "bans": [
+            {
+              "order": 0,
+              "hero": "Enigma",
+              "hero_id": 33
+            },
+            {
+              "order": 1,
+              "hero": "Brewmaster",
+              "hero_id": 78
+            },
+            {
+              "order": 4,
+              "hero": "Invoker",
+              "hero_id": 74
+            },
+            {
+              "order": 9,
+              "hero": "Largo",
+              "hero_id": 155
+            },
+            {
+              "order": 10,
+              "hero": "Earth Spirit",
+              "hero_id": 107
+            },
+            {
+              "order": 18,
+              "hero": "Ursa",
+              "hero_id": 70
+            },
+            {
+              "order": 20,
+              "hero": "Clinkz",
+              "hero_id": 56
+            }
+          ],
+          "picks": [
+            {
+              "order": 7,
+              "hero": "Techies",
+              "hero_id": 105
+            },
+            {
+              "order": 13,
+              "hero": "Sand King",
+              "hero_id": 16
+            },
+            {
+              "order": 14,
+              "hero": "Shadow Demon",
+              "hero_id": 79
+            },
+            {
+              "order": 17,
+              "hero": "Timbersaw",
+              "hero_id": 98
+            },
+            {
+              "order": 22,
+              "hero": "Naga Siren",
+              "hero_id": 89
+            }
+          ],
+          "phase1_bans": [
+            {
+              "order": 0,
+              "hero": "Enigma",
+              "hero_id": 33
+            },
+            {
+              "order": 1,
+              "hero": "Brewmaster",
+              "hero_id": 78
+            }
+          ],
+          "first_picks": [
+            {
+              "order": 7,
+              "hero": "Techies",
+              "hero_id": 105
+            },
+            {
+              "order": 13,
+              "hero": "Sand King",
+              "hero_id": 16
+            }
+          ]
+        }
+      },
+      "sides": {
+        "radiant": {
+          "mid": {
+            "player": "Fayde",
+            "hero": "Night Stalker",
+            "hero_id": 60,
+            "gold_t10": 3468,
+            "xp_t10": 3787,
+            "kills": 6,
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
+          },
+          "pos4": {
+            "player": "Bignum",
+            "hero": "Dark Willow",
+            "kills": 5,
+            "kills_before_10": 3,
+            "assists_before_10": 2,
+            "participate_before_10": 5
+          },
+          "pos5": {
+            "player": "Speeed",
+            "hero": "Silencer",
+            "kills_before_10": 2,
+            "assists_before_10": 4,
+            "participate_before_10": 6
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 10,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 16,
+          "mid_sup_driven": true
+        },
+        "dire": {
+          "mid": {
+            "player": "CHIRA_JUNIOR",
+            "hero": "Sand King",
+            "hero_id": 16,
+            "gold_t10": 4768,
+            "xp_t10": 6104,
+            "kills": 13,
+            "kills_before_10": 3,
+            "assists_before_10": 1,
+            "participate_before_10": 4
+          },
+          "pos4": {
+            "player": "Maladych",
+            "hero": "Techies",
+            "kills": 5,
+            "kills_before_10": 2,
+            "assists_before_10": 2,
+            "participate_before_10": 4
+          },
+          "pos5": {
+            "player": "Saksa",
+            "hero": "Shadow Demon",
+            "kills_before_10": 1,
+            "assists_before_10": 4,
+            "participate_before_10": 5
+          },
+          "mid_support_fights_12min": 1,
+          "kills_at_f10k": 7,
+          "first10_mid_sup_kills": 6,
+          "first10_mid_sup_ka": 13,
+          "mid_sup_driven": true
+        }
+      },
+      "blurb": {
+        "bp": {
+          "radiant": "一阶段禁Bounty Hunter、Nature's Prophet；前两手Dark Willow、Windranger；中单Night Stalker第4手拿",
+          "dire": "一阶段禁Enigma、Brewmaster；前两手Techies、Sand King；中单Sand King第2手拿"
+        },
+        "pace": "正常节奏 / 超长局（52分42秒）；先到10杀出现在 12分12秒",
+        "stance": "来回拉锯",
+        "f10k": "GamerLegion先到 10 杀（当时 10-7，12分12秒）。这 10 次击杀里，中单 Fayde/Night Stalker 参与 5 次（击杀 1 + 助攻 4），中单+双辅合计参与 16 次 · 中辅驱动。对手当时 7 杀。",
+        "mid_support": "天辉中单 Fayde/Night Stalker 参与 5 次（击杀1+助攻4），辅Bignum/Dark Willow 参与 5 次，中辅合计16 · 中辅驱动；夜魇中单 CHIRA_JUNIOR/Sand King 参与 4 次（击杀3+助攻1），辅Maladych/Techies 参与 4 次，中辅合计13 · 中辅驱动。助攻按同一波团战伤害或同团阵亡估算，OpenDota 没有逐次助攻日志。"
+      },
+      "opendota": "https://www.opendota.com/matches/9070062078",
       "source": "ti15",
       "patch": "7.41e"
     }
