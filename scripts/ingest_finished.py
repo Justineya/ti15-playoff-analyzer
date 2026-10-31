@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 GAMES_PATH = ROOT / "data" / "games.json"
 LIVE_PATH = ROOT / "web" / "data" / "live.json"
 LAUNCH_PATH = ROOT / "data" / "cursor-launch.json"
-TEAM_MAP = {**ig.EIGHT, **ig.EWC_EIGHT}
+TEAM_MAP = {**ig.EIGHT, **ig.EWC_EIGHT, 9964962: "GamerLegion"}
 
 
 def as_int(value) -> int | None:
