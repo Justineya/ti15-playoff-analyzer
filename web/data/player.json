@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-05 14:23 CST",
+  "asOf": "2026-11-06 05:50 CST",
   "accountId": 203557151,
   "name": "QQT",
   "personaname": "Narcissus",
@@ -54,9 +54,9 @@
           "unknown": 2
         },
         "divine": {
-          "picks": 24602,
-          "wins": 12526,
-          "wr": 0.5091
+          "picks": 27096,
+          "wins": 13791,
+          "wr": 0.509
         }
       },
       {
@@ -68,9 +68,9 @@
           "unknown": 3
         },
         "divine": {
-          "picks": 47167,
-          "wins": 24592,
-          "wr": 0.5214
+          "picks": 51901,
+          "wins": 27080,
+          "wr": 0.5218
         }
       },
       {
@@ -81,9 +81,9 @@
           "pos3": 2
         },
         "divine": {
-          "picks": 73220,
-          "wins": 38227,
-          "wr": 0.5221
+          "picks": 80757,
+          "wins": 42225,
+          "wr": 0.5229
         }
       },
       {
@@ -94,9 +94,9 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 19124,
-          "wins": 8836,
-          "wr": 0.462
+          "picks": 21174,
+          "wins": 9779,
+          "wr": 0.4618
         }
       },
       {
@@ -107,9 +107,9 @@
           "pos2": 1
         },
         "divine": {
-          "picks": 22585,
-          "wins": 10517,
-          "wr": 0.4657
+          "picks": 24808,
+          "wins": 11494,
+          "wr": 0.4633
         }
       },
       {
@@ -120,9 +120,9 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 19571,
-          "wins": 9619,
-          "wr": 0.4915
+          "picks": 21534,
+          "wins": 10571,
+          "wr": 0.4909
         }
       },
       {
@@ -133,9 +133,9 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 37302,
-          "wins": 19802,
-          "wr": 0.5309
+          "picks": 41227,
+          "wins": 21871,
+          "wr": 0.5305
         }
       },
       {
@@ -146,9 +146,9 @@
           "pos1": 1
         },
         "divine": {
-          "picks": 38076,
-          "wins": 17156,
-          "wr": 0.4506
+          "picks": 41735,
+          "wins": 18772,
+          "wr": 0.4498
         }
       },
       {
@@ -159,9 +159,9 @@
           "pos3": 1
         },
         "divine": {
-          "picks": 40912,
-          "wins": 19516,
-          "wr": 0.477
+          "picks": 44883,
+          "wins": 21391,
+          "wr": 0.4766
         }
       },
       {
@@ -172,8 +172,8 @@
           "pos1": 1
         },
         "divine": {
-          "picks": 70634,
-          "wins": 34572,
+          "picks": 77786,
+          "wins": 38076,
           "wr": 0.4895
         }
       },
@@ -185,9 +185,9 @@
           "pos2": 1
         },
         "divine": {
-          "picks": 16794,
-          "wins": 8620,
-          "wr": 0.5133
+          "picks": 18541,
+          "wins": 9529,
+          "wr": 0.5139
         }
       }
     ],
@@ -240,9 +240,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9066194439",
       "divine": {
-        "picks": 19124,
-        "wins": 8836,
-        "wr": 0.462
+        "picks": 21174,
+        "wins": 9779,
+        "wr": 0.4618
       }
     },
     {
@@ -280,9 +280,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9062775609",
       "divine": {
-        "picks": 22585,
-        "wins": 10517,
-        "wr": 0.4657
+        "picks": 24808,
+        "wins": 11494,
+        "wr": 0.4633
       }
     },
     {
@@ -320,9 +320,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9058811473",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -360,9 +360,9 @@
       "bkb": 1240,
       "opendota": "https://www.opendota.com/matches/9058775531",
       "divine": {
-        "picks": 19571,
-        "wins": 9619,
-        "wr": 0.4915
+        "picks": 21534,
+        "wins": 10571,
+        "wr": 0.4909
       }
     },
     {
@@ -400,9 +400,9 @@
       "bkb": 1684,
       "opendota": "https://www.opendota.com/matches/9058741409",
       "divine": {
-        "picks": 37302,
-        "wins": 19802,
-        "wr": 0.5309
+        "picks": 41227,
+        "wins": 21871,
+        "wr": 0.5305
       }
     },
     {
@@ -440,9 +440,9 @@
       "bkb": 1295,
       "opendota": "https://www.opendota.com/matches/9058112950",
       "divine": {
-        "picks": 47167,
-        "wins": 24592,
-        "wr": 0.5214
+        "picks": 51901,
+        "wins": 27080,
+        "wr": 0.5218
       }
     },
     {
@@ -480,9 +480,9 @@
       "bkb": 2060,
       "opendota": "https://www.opendota.com/matches/9058015225",
       "divine": {
-        "picks": 38076,
-        "wins": 17156,
-        "wr": 0.4506
+        "picks": 41735,
+        "wins": 18772,
+        "wr": 0.4498
       }
     },
     {
@@ -520,9 +520,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9057889105",
       "divine": {
-        "picks": 47167,
-        "wins": 24592,
-        "wr": 0.5214
+        "picks": 51901,
+        "wins": 27080,
+        "wr": 0.5218
       }
     },
     {
@@ -560,9 +560,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9056691868",
       "divine": {
-        "picks": 47167,
-        "wins": 24592,
-        "wr": 0.5214
+        "picks": 51901,
+        "wins": 27080,
+        "wr": 0.5218
       }
     },
     {
@@ -600,9 +600,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9056633389",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -640,9 +640,9 @@
       "bkb": 1781,
       "opendota": "https://www.opendota.com/matches/9056567516",
       "divine": {
-        "picks": 73220,
-        "wins": 38227,
-        "wr": 0.5221
+        "picks": 80757,
+        "wins": 42225,
+        "wr": 0.5229
       }
     },
     {
@@ -680,9 +680,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9055116316",
       "divine": {
-        "picks": 40912,
-        "wins": 19516,
-        "wr": 0.477
+        "picks": 44883,
+        "wins": 21391,
+        "wr": 0.4766
       }
     },
     {
@@ -720,9 +720,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9055074477",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -760,9 +760,9 @@
       "bkb": 1250,
       "opendota": "https://www.opendota.com/matches/9054986620",
       "divine": {
-        "picks": 47167,
-        "wins": 24592,
-        "wr": 0.5214
+        "picks": 51901,
+        "wins": 27080,
+        "wr": 0.5218
       }
     },
     {
@@ -800,9 +800,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9053846920",
       "divine": {
-        "picks": 47167,
-        "wins": 24592,
-        "wr": 0.5214
+        "picks": 51901,
+        "wins": 27080,
+        "wr": 0.5218
       }
     },
     {
@@ -840,9 +840,9 @@
       "bkb": 1435,
       "opendota": "https://www.opendota.com/matches/9053772531",
       "divine": {
-        "picks": 73220,
-        "wins": 38227,
-        "wr": 0.5221
+        "picks": 80757,
+        "wins": 42225,
+        "wr": 0.5229
       }
     },
     {
@@ -880,9 +880,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9053700463",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -920,8 +920,8 @@
       "bkb": 1541,
       "opendota": "https://www.opendota.com/matches/9053618022",
       "divine": {
-        "picks": 70634,
-        "wins": 34572,
+        "picks": 77786,
+        "wins": 38076,
         "wr": 0.4895
       }
     },
@@ -960,9 +960,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9052276352",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -1000,9 +1000,9 @@
       "bkb": 1914,
       "opendota": "https://www.opendota.com/matches/9046020114",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -1040,9 +1040,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9045962392",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -1080,9 +1080,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9045890397",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     },
     {
@@ -1120,9 +1120,9 @@
       "bkb": 1078,
       "opendota": "https://www.opendota.com/matches/9044511799",
       "divine": {
-        "picks": 16794,
-        "wins": 8620,
-        "wr": 0.5133
+        "picks": 18541,
+        "wins": 9529,
+        "wr": 0.5139
       }
     },
     {
@@ -1160,9 +1160,9 @@
       "bkb": 1683,
       "opendota": "https://www.opendota.com/matches/9043253102",
       "divine": {
-        "picks": 47167,
-        "wins": 24592,
-        "wr": 0.5214
+        "picks": 51901,
+        "wins": 27080,
+        "wr": 0.5218
       }
     },
     {
@@ -1200,9 +1200,9 @@
       "bkb": null,
       "opendota": "https://www.opendota.com/matches/9043177550",
       "divine": {
-        "picks": 24602,
-        "wins": 12526,
-        "wr": 0.5091
+        "picks": 27096,
+        "wins": 13791,
+        "wr": 0.509
       }
     }
   ],
