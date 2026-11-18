@@ -1,9 +1,7 @@
 name: Refresh playoff data
 
 on:
-  schedule:
-    # Catch G1→G2 in the draft pause. Window step still skips off-event.
-    - cron: "*/5 * * * *"
+  # TI15 is over. No cron — keep a manual button.
   workflow_dispatch:
 
 permissions:
